@@ -15,7 +15,8 @@
  *   @selam     → kelime grubundaki herhangi bir kelime (grupta da yap- ve +fiil kullanılabilir)
  * when sırası önemlidir: "X, Y" ile "Y, X" farklı kurallardır. when boşsa kural "yedek cevap"tır.
  * reply: seçeneklerden biri rastgele; "||" ayrı baloncuk; {sen} kullanıcının, {ben} karakterin adı.
- * traits: karakterde HEPSİ olmalı. chars: sadece bu adlar (tam ad ya da ilk ad).
+ * traits: karakterde HEPSİ olmalı; bir öğede "|" ile alternatifler (ör. "Pussy Size: Tight|Pussy Size: Very Tight" = biri yeter).
+ * chars: sadece bu adlar (tam ad ya da ilk ad).
  * Eşleşenler arasında en özel kural kazanır: daha çok kelime > kişilik şartı > karakter şartı. Eşitlikte rastgele.
  */
 window.Stories = window.Stories || {};
@@ -77,7 +78,7 @@ Stories.Bot = (() => {
 
   function fits(rule, ch) {
     const traits = (rule.traits || []).filter(Boolean);
-    if (traits.length && !traits.every(t => (ch.traits || []).some(x => lower(x) === lower(t)))) return false;
+    if (traits.length && !traits.every(t => String(t).split('|').some(a => (ch.traits || []).some(x => lower(x) === lower(a))))) return false;
     const names = (rule.chars || []).map(lower).filter(Boolean);
     if (names.length) {
       const full = lower(ch.name), first = full.split(' ')[0];
@@ -130,10 +131,18 @@ Stories.Bot = (() => {
   // Bir kelime/mesaj bir terimi yakalıyor mu? (editördeki "dene" kutuları için)
   const catches = (text, term, data) => inOrder(norm(text), [term], asData(data));
 
-  // Kuraldan cevap: baloncuk dizisi
-  function reply(rule, vars) {
+  // Kuraldan cevap: baloncuk dizisi. recent (isteğe bağlı): bu kuralın son seçilen cevapları; onlar tekrar seçilmez
+  // (en fazla 10, cevapların yarısından fazlası dışlanmaz) ve seçilen sona eklenir
+  function reply(rule, vars, recent) {
     const opts = (rule.reply || []).map(String).filter(x => x.trim());
-    const txt = pick(opts).replace(/\{sen\}/gi, vars.sen || 'sen').replace(/\{ben\}/gi, vars.ben || '');
+    const fresh = recent ? opts.filter(x => !recent.includes(x)) : opts;
+    const raw = pick(fresh.length ? fresh : opts);
+    if (recent) {
+      recent.push(raw);
+      const keep = Math.min(10, Math.floor(opts.length / 2));
+      while (recent.length > keep) recent.shift();
+    }
+    const txt = raw.replace(/\{sen\}/gi, vars.sen || 'sen').replace(/\{ben\}/gi, vars.ben || '');
     return txt.split('||').map(s => s.trim()).filter(Boolean);
   }
 

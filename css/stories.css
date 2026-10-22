@@ -975,43 +975,40 @@ button.mo-cat-head { display: flex; align-items: center; gap: 6px; width: 100%; 
 .mu-pick { width: 100%; text-align: left; }
 .mu-pick.on { background: #fff; box-shadow: inset 0 0 0 2px var(--blue); }
 /* ---------- 📜 olay ve 🎲 sonuç kartları (sohbet) ---------- */
-.chat .msg .bubble.ev-bubble, .msg .bubble.ev-bubble {
-  --evc: #0089c4;
-  position: relative; overflow: hidden; max-width: min(84%, 420px); padding: 0; color: #1d2433;
-  background: linear-gradient(160deg, #fff, color-mix(in srgb, var(--evc) 10%, #fff));
-  border: 2px solid var(--evc); border-radius: 20px 20px 6px 20px;
-  box-shadow: 0 8px 26px color-mix(in srgb, var(--evc) 40%, transparent);
-  animation: evPop .5s cubic-bezier(.2, 1.3, .4, 1) both;
+/* mesaj balonunun kendisi: rengi, yazısı ve köşeleri sohbet temasından (ev = senin tarafın, sonuç = onun);
+ * olay rengi (--evc) sadece soldaki ince çizgide ve küçük başlıkta */
+.chat .msg .bubble.ev-bubble, .msg .bubble.ev-bubble, .chat .msg .bubble.oc-bubble, .msg .bubble.oc-bubble {
+  position: relative; overflow: hidden; max-width: min(72%, 340px); padding: 7px 12px 8px 14px;
+  animation: evPop .4s cubic-bezier(.2, 1.3, .4, 1) both;
 }
-.ev-bubble::before { content: ''; position: absolute; inset: 0 0 auto 0; height: 4px; background: linear-gradient(90deg, var(--evc), #c2185b, var(--evc)); background-size: 200% 100%; animation: evShine 3s linear infinite; }
-.ev-bubble .evb-h { display: flex; align-items: center; gap: 10px; padding: 12px 14px 6px; }
-.ev-bubble .evb-ic { flex: none; width: 38px; height: 38px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 20px; background: color-mix(in srgb, var(--evc) 16%, #fff); box-shadow: inset 0 0 0 1.5px color-mix(in srgb, var(--evc) 35%, transparent); }
+.msg .bubble.ev-bubble { --evc: currentColor; }
+.msg .bubble.oc-bubble { --evc: currentColor; animation-delay: .08s; }
+.ev-bubble::before, .oc-bubble::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 3px; background: var(--evc); opacity: .85; }
+.oc-bubble::before { background: linear-gradient(var(--blue, #0089c4), var(--pink, #c2185b)); }
+.ev-bubble .evb-h { display: flex; align-items: center; gap: 6px; }
+.ev-bubble .evb-ic { flex: none; font-size: 15px; line-height: 1; }
 .ev-bubble .evb-ti { display: flex; flex-direction: column; min-width: 0; }
-.ev-bubble .evb-ti small { font-size: 10.5px; font-weight: 700; letter-spacing: .6px; text-transform: uppercase; color: var(--evc); }
-.ev-bubble .evb-ti b { font-size: 15.5px; font-weight: 700; line-height: 1.2; }
-.ev-bubble .evb-t { padding: 2px 14px 12px; font-size: 15px; line-height: 1.45; white-space: pre-wrap; }
-.chat .msg .bubble.oc-bubble, .msg .bubble.oc-bubble {
-  position: relative; max-width: min(84%, 420px); padding: 10px 14px 12px; color: #fff;
-  background: linear-gradient(160deg, #13233d, #2a1230) padding-box, var(--grad) border-box;
-  border: 2px solid transparent; border-radius: 20px 20px 20px 6px;
-  box-shadow: 0 8px 26px rgba(194, 24, 91, .35);
-  animation: evPop .55s .1s cubic-bezier(.2, 1.3, .4, 1) both;
-}
-.oc-bubble .ocb-h, .sc-out-h { display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; letter-spacing: .6px; text-transform: uppercase; opacity: .9; }
-.ocb-dice { display: inline-flex; width: 28px; height: 28px; align-items: center; justify-content: center; border-radius: 9px; background: rgba(255, 255, 255, .14); font-size: 16px; animation: diceRoll .9s cubic-bezier(.2, .9, .3, 1.2) both; }
-.oc-bubble .ocb-t { margin-top: 8px; font-size: 15.5px; font-weight: 600; line-height: 1.4; white-space: pre-wrap; }
-.oc-chgs { display: flex; flex-direction: column; gap: 6px; margin-top: 10px; }
-.oc-chg { display: flex; align-items: center; gap: 8px; padding: 6px 10px; border-radius: 12px; background: rgba(255, 255, 255, .1); font-size: 13px; animation: pageIn .4s var(--ease) both; }
-.oc-chg:nth-child(2) { animation-delay: .1s; } .oc-chg:nth-child(3) { animation-delay: .2s; } .oc-chg:nth-child(n+4) { animation-delay: .3s; }
-.oc-chg i { flex: none; width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-style: normal; font-size: 10px; color: #fff; }
-.oc-chg.up i { background: #16b36e; box-shadow: 0 0 10px rgba(22, 179, 110, .6); }
-.oc-chg.down i { background: #e5484d; box-shadow: 0 0 10px rgba(229, 72, 77, .6); }
-.oc-chg > span:nth-child(2) { flex: 1; min-width: 0; display: flex; flex-direction: column; line-height: 1.15; }
-.oc-chg small { font-size: 10.5px; opacity: .7; }
-.oc-chg .oc-ft { display: flex; align-items: center; gap: 5px; font-weight: 700; white-space: nowrap; }
-.oc-chg .oc-ft s { opacity: .55; font-weight: 500; }
-.oc-chg.up .oc-ft em { color: #5ff0a8; font-style: normal; }
-.oc-chg.down .oc-ft em { color: #ff8a8e; font-style: normal; }
+.ev-bubble .evb-ti small, .oc-bubble .ocb-h small { font-size: 9.5px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; opacity: .7; }
+.ev-bubble .evb-ti b { font-size: 14px; font-weight: 700; line-height: 1.25; }
+.ev-bubble .evb-t { margin-top: 3px; font-size: 13.5px; line-height: 1.4; white-space: pre-wrap; opacity: .9; }
+.oc-bubble .ocb-h, .sc-out-h { display: flex; align-items: center; gap: 6px; font-size: 9.5px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; }
+.ocb-dice { display: inline-flex; font-size: 14px; line-height: 1; animation: diceRoll .8s cubic-bezier(.2, .9, .3, 1.2) both; }
+.oc-bubble .ocb-t { margin-top: 3px; font-size: 14px; font-weight: 500; line-height: 1.4; white-space: pre-wrap; }
+/* 📈 değişimler: balonun yazı renginden yarı saydam küçük haplar */
+.oc-chgs { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+.oc-chg { display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px 2px 3px; border-radius: 999px; background: color-mix(in srgb, currentColor 13%, transparent); font-size: 11.5px; animation: pageIn .35s var(--ease) both; }
+.oc-chg:nth-child(2) { animation-delay: .06s; } .oc-chg:nth-child(3) { animation-delay: .12s; } .oc-chg:nth-child(n+4) { animation-delay: .18s; }
+.oc-chg i { flex: none; width: 15px; height: 15px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-style: normal; font-size: 7px; color: #fff; }
+.oc-chg.up i { background: #16b36e; }
+.oc-chg.down i { background: #e5484d; }
+.oc-chg > span:nth-child(2) { display: inline-flex; align-items: baseline; gap: 3px; min-width: 0; line-height: 1.2; }
+.oc-chg small { font-size: 10.5px; opacity: .65; }
+.oc-chg b { font-weight: 600; }
+.oc-chg .oc-ft { display: inline-flex; align-items: center; gap: 3px; font-weight: 700; white-space: nowrap; }
+.oc-chg .oc-ft s { opacity: .5; font-weight: 500; }
+.oc-chg .oc-ft em { font-style: normal; }
+.oc-chg.up .oc-ft em { color: color-mix(in srgb, #16b36e 75%, currentColor); }
+.oc-chg.down .oc-ft em { color: color-mix(in srgb, #e5484d 75%, currentColor); }
 /* senaryo olay kartındaki sonuç kutusu */
 .scene-card .sc-out { margin-top: 10px; padding: 10px 12px; border-radius: 14px; color: #fff; background: linear-gradient(160deg, rgba(19, 35, 61, .92), rgba(42, 18, 48, .92)); box-shadow: inset 0 0 0 1.5px rgba(255, 255, 255, .14); animation: pageIn .45s .15s var(--ease) both; }
 .scene-card .sc-out p { margin: 6px 0 0; font-weight: 600; font-size: 14.5px; }
@@ -1064,6 +1061,14 @@ button.mo-cat-head { display: flex; align-items: center; gap: 6px; width: 100%; 
 .tr-row .tr-ev { flex: 1 1 150px; }
 .tr-row .tr-arrow { font-weight: 700; color: var(--carmen); }
 .tr-row [data-trm] { opacity: .6; padding: 0 6px; }
+.tr-row .cs-more { width: 34px; height: 34px; }
+.tr-row.open .cs-more { background: var(--purple-soft); color: var(--purple); }
+.tr-sum { flex: 1 1 100%; display: flex; flex-wrap: wrap; gap: 5px; align-items: center; }
+.tr-msg { font-style: normal; font-size: 12px; padding: 2px 8px; border-radius: 999px; background: #fff; color: #3c4356; max-width: 100%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tr-tools { flex: 1 1 100%; }
+.tr-row .tr-tools input.tr-text { flex: 1; width: auto; min-width: 140px; }
+.tr-row .tr-tools select, .tr-row .tr-tools input { height: 30px; font-size: 12.5px; }
+.tr-row .tr-tools input[type="number"] { width: 56px; }
 /* 🎲 sebep → sonuç özeti */
 .cs-list { display: flex; flex-direction: column; gap: 10px; }
 .cs-item { padding: 10px; border-radius: 16px; background: var(--chip); animation: pageIn .35s var(--ease) both; }
@@ -1103,8 +1108,8 @@ button.mo-cat-head { display: flex; align-items: center; gap: 6px; width: 100%; 
 .gr-evs { display: flex; flex-wrap: wrap; gap: 5px; }
 .gr-evs .mo-chip { font-size: 12px; padding: 4px 9px; }
 /* ⚡ sohbette eşik olayı satırı */
-.oc-fires { display: flex; flex-direction: column; gap: 5px; margin-top: 10px; }
-.oc-fire { padding: 7px 10px; border-radius: 12px; font-size: 13px; font-weight: 600; color: #3a2600; background: linear-gradient(135deg, #ffd36b, #ffb72b); box-shadow: 0 0 14px rgba(255, 183, 43, .5); animation: evPop .5s .25s cubic-bezier(.2, 1.3, .4, 1) both; }
+.oc-fires { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+.oc-fire { padding: 2px 9px; border-radius: 999px; font-size: 11.5px; font-weight: 600; color: #3a2600; background: linear-gradient(135deg, #ffd36b, #ffb72b); animation: evPop .4s .2s cubic-bezier(.2, 1.3, .4, 1) both; }
 /* 🪜 alt derecenin rengi / emojisi */
 .mo-sub-row { grid-template-columns: 24px 1fr auto; border-left: 4px solid var(--sbc, transparent); }
 .mo-sub-row .sb-n { background: var(--sbc, var(--grad)); }
@@ -1137,15 +1142,16 @@ button.mo-cat-head { display: flex; align-items: center; gap: 6px; width: 100%; 
 .cond-chip.had { background: #16b36e !important; color: #fff; }
 .cond-chip.p { background: #ffb72b !important; color: #3a2600; }
 .cs-cond { font-style: normal; font-size: 11.5px; font-weight: 700; padding: 2px 8px; border-radius: 999px; background: rgba(255, 183, 43, .2); color: #8a5a00; }
-.oc-bubble.blocked { background: linear-gradient(160deg, #2a2f3a, #1d2028) padding-box, linear-gradient(135deg, #8b8b99, #5d6577) border-box !important; box-shadow: 0 8px 22px rgba(0, 0, 0, .3) !important; }
+.chat .msg .bubble.oc-bubble.blocked { opacity: .78; }
+.oc-bubble.blocked::before { background: #8b8b99; }
 .oc-bubble.blocked .ocb-t, .sc-out.blocked p { text-decoration: line-through; opacity: .6; }
-.oc-why { margin-top: 8px; padding: 6px 10px; border-radius: 10px; background: rgba(255, 255, 255, .1); font-size: 12.5px; font-weight: 600; }
+.oc-why { margin-top: 5px; padding: 3px 8px; border-radius: 8px; background: color-mix(in srgb, currentColor 10%, transparent); font-size: 11.5px; font-weight: 600; }
 .scene-card .sc-out.blocked { background: linear-gradient(160deg, rgba(42, 47, 58, .94), rgba(29, 32, 40, .94)); }
 /* ⭐ varsayılan sonuç · 🛡️ yerine geçilen sonuç · 🔘 durumlar · ⭐ üstteki olaylar */
 .mo-out .oc-def { grid-column: 1 / -1; justify-self: start; font-size: 12.5px; padding: 4px 10px; }
 .mo-out .oc-def.on { background: linear-gradient(135deg, #ffd36b, #ffb72b); color: #3a2600; box-shadow: 0 3px 10px rgba(255, 183, 43, .35); }
 .cs-def { font-style: normal; font-size: 11.5px; font-weight: 700; padding: 2px 8px; border-radius: 999px; background: linear-gradient(135deg, #ffd36b, #ffb72b); color: #3a2600; }
-.oc-miss { margin-top: 8px; padding: 6px 10px; border-radius: 10px; background: rgba(255, 255, 255, .08); font-size: 13px; }
+.oc-miss { margin-top: 5px; padding: 3px 8px; border-radius: 8px; background: color-mix(in srgb, currentColor 8%, transparent); font-size: 11.5px; }
 .oc-miss s { opacity: .6; }
 .oc-miss small { opacity: .75; }
 .cond-chip.b { background: #8b5cf6 !important; color: #fff; }
@@ -1211,12 +1217,12 @@ button.cs-eff { border: 0; cursor: pointer; }
 .chat-light .hcard .mood-btn, .chat-light .hcard .mood-btn small, .chat-light .hcard .mood-btn span { color: #5d6577; }
 
 /* ⚡ olay olunca etkileri */
-.ev-bubble .evb-on { padding: 0 14px 12px; }
-.evb-on > small { display: block; font-size: 10.5px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; color: var(--evc, #0089c4); margin-bottom: 4px; }
+.ev-bubble .evb-on { margin-top: 6px; }
+.evb-on > small { display: block; font-size: 9.5px; font-weight: 700; letter-spacing: .5px; text-transform: uppercase; opacity: .7; margin-bottom: 3px; }
 .evb-on .oc-chgs { margin-top: 0; }
-.ev-bubble .evb-on .oc-chg, .chat-light .scene-card .sc-on .oc-chg { background: color-mix(in srgb, var(--evc, #0089c4) 10%, #fff); color: #1d2433; }
-.ev-bubble .evb-on .oc-chg.up .oc-ft em, .chat-light .sc-on .oc-chg.up .oc-ft em { color: #0f8a52; }
-.ev-bubble .evb-on .oc-chg.down .oc-ft em, .chat-light .sc-on .oc-chg.down .oc-ft em { color: #c2343a; }
+.chat-light .scene-card .sc-on .oc-chg { background: color-mix(in srgb, var(--evc, #0089c4) 10%, #fff); color: #1d2433; }
+.chat-light .sc-on .oc-chg.up .oc-ft em { color: #0f8a52; }
+.chat-light .sc-on .oc-chg.down .oc-ft em { color: #c2343a; }
 .scene-card .sc-on { padding: 8px 0 0; }
 .scene-card .sc-on span { font-style: normal; display: flex; }
 .cs-on { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; margin: -2px 0 8px; }
@@ -1281,6 +1287,62 @@ button.cs-cond { border: 0; cursor: pointer; }
 .bot-page { display: flex; flex-direction: column; gap: 10px; }
 .bot-frame { width: 100%; height: calc(100vh - var(--nav-h) - 120px); min-height: 480px; border: 0; border-radius: 16px; background: #fff; box-shadow: 0 6px 24px rgba(20, 40, 80, .08); }
 /* 🙋 senin parametrelerin: sohbetin sağ üstünde dikey can barları (🙋 ile açılıp kapanır) */
+/* 🕰️ sohbet saati: sol üstte küçük hap */
+.chat-clock { position: absolute; top: 8px; left: 10px; z-index: 4; display: flex; align-items: center; gap: 5px; padding: 4px 10px; border-radius: 999px; background: rgba(255, 255, 255, .88); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); box-shadow: 0 4px 14px rgba(20, 40, 80, .14); font-size: 13px; color: #2b3245; animation: hsIn .25s ease-out; }
+.chat-clock b { font-variant-numeric: tabular-nums; font-weight: 700; letter-spacing: .3px; }
+.chat-clock small { font-size: 11px; color: var(--muted); }
+.chat-clock.off { opacity: .5; padding: 4px 8px; }
+.chat-clock:active { transform: scale(.94); }
+.ck-set { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-bottom: 8px; font-size: 13px; }
+.ck-set label { display: flex; align-items: center; gap: 6px; }
+.ck-set input[type="time"], .ck-set input[type="number"] { height: 34px; border-radius: 10px; border: 1px solid var(--line); background: #fff; padding: 0 8px; font-size: 13px; }
+.ck-set input[type="number"] { width: 64px; }
+.ck-row input[type="time"] { width: 96px; }
+.ck-row .ck-p { flex: 1 1 130px; }
+/* 📖 Carmen Kitabı */
+.book-toc { display: flex; flex-direction: column; gap: 6px; }
+.book-toc button { display: grid; grid-template-columns: 24px 30px 1fr; grid-template-rows: auto auto; column-gap: 8px; align-items: center; text-align: left; padding: 9px 12px; border-radius: 14px; background: var(--chip); transition: transform .15s var(--ease), background .2s; }
+.book-toc button:active { transform: scale(.98); }
+.book-toc button.on { background: var(--purple-soft); }
+.book-toc .bk-n { grid-row: span 2; font-size: 12px; font-weight: 700; color: var(--muted); text-align: center; }
+.book-toc .bk-ic { grid-row: span 2; font-size: 22px; }
+.book-toc b { font-size: 14px; font-weight: 600; }
+.book-toc small { font-size: 12px; color: var(--muted); }
+.sheet.book-sheet { background: linear-gradient(#fffdf8, #fbf6ec); }
+.book { font-family: Georgia, 'Times New Roman', serif; color: #2f2a24; }
+.bk-head { display: flex; align-items: center; gap: 12px; padding-bottom: 10px; margin-bottom: 12px; border-bottom: 2px solid rgba(194, 24, 91, .18); }
+.bk-head .bk-ic { font-size: 34px; }
+.bk-head small { font-family: var(--font); font-size: 12px; color: #9a8f80; letter-spacing: .4px; text-transform: uppercase; }
+.bk-head h3 { margin: 2px 0 0; font-size: 21px; }
+.bk-body { font-size: 15.5px; line-height: 1.62; }
+.bk-body p { margin: 0 0 12px; }
+.bk-body ul, .bk-body ol { margin: 0 0 12px; padding-left: 20px; }
+.bk-body li { margin-bottom: 6px; }
+.bk-body code { font-family: var(--font); font-size: 13px; background: rgba(0, 137, 196, .1); color: #075f87; border-radius: 6px; padding: 1px 6px; }
+.bk-body.turn-next { animation: bkNext .32s var(--ease) both; }
+.bk-body.turn-prev { animation: bkPrev .32s var(--ease) both; }
+@keyframes bkNext { from { opacity: 0; transform: translateX(26px) rotateY(-8deg); } }
+@keyframes bkPrev { from { opacity: 0; transform: translateX(-26px) rotateY(8deg); } }
+.bk-t { width: 100%; border-collapse: collapse; margin: 0 0 12px; font-family: var(--font); font-size: 13px; }
+.bk-t th { text-align: left; font-weight: 700; color: #8a5a00; border-bottom: 2px solid rgba(255, 183, 43, .45); padding: 4px 6px; }
+.bk-t td { border-bottom: 1px solid rgba(0, 0, 0, .06); padding: 5px 6px; vertical-align: top; }
+.bk-foot { display: grid; grid-template-columns: 1fr auto 1fr; gap: 8px; margin-top: 16px; padding-top: 12px; border-top: 1px dashed rgba(0, 0, 0, .12); font-family: var(--font); }
+.bk-foot button { padding: 9px 10px; border-radius: 12px; background: #fff; box-shadow: 0 2px 8px rgba(20, 40, 80, .07); font-size: 13px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.bk-foot button:first-child { text-align: left; }
+.bk-foot button:last-child { text-align: right; }
+.bk-foot button:disabled { visibility: hidden; }
+
+/* 🎚️ değere göre olay */
+.bd-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 8px; }
+.bd-rule { padding: 10px; border-radius: 14px; background: linear-gradient(135deg, rgba(0, 137, 196, .1), rgba(194, 24, 91, .08)); }
+.bd-h { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; margin-bottom: 8px; }
+.bd-h select { flex: 1 1 150px; height: 34px; border-radius: 10px; border: 1px solid var(--line); background: #fff; font-size: 13px; min-width: 0; }
+.bd-bands { display: flex; flex-direction: column; gap: 5px; margin-bottom: 6px; }
+.bd-band { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; padding: 5px 8px; border-radius: 10px; background: #fff; }
+.bd-band input { width: 56px; height: 30px; border-radius: 9px; border: 1px solid var(--line); background: var(--chip); text-align: center; font-size: 12.5px; }
+.bd-band select { flex: 1 1 150px; height: 30px; border-radius: 9px; border: 1px solid var(--line); background: var(--chip); font-size: 12.5px; min-width: 0; }
+.bd-band [data-bdbrm] { opacity: .6; padding: 0 6px; }
+.bd-rule .chip { font-size: 12px; padding: 4px 10px; }
 .me-hud { position: absolute; top: 8px; right: 10px; z-index: 4; display: flex; flex-direction: column; align-items: flex-end; gap: 6px; pointer-events: none; animation: hsIn .25s ease-out; }
 .hud-tog { pointer-events: auto; display: inline-flex; align-items: center; gap: 2px; height: 26px; padding: 0 8px; border-radius: 999px; font-size: 14px; color: #fff; background: rgba(10, 20, 40, .6); border: 1.5px solid rgba(255, 255, 255, .8); box-shadow: 0 2px 8px rgba(0, 0, 0, .25); }
 .hud-tog small { font-size: 10px; }
@@ -1309,6 +1371,26 @@ button.cs-cond { border: 0; cursor: pointer; }
 .cs-grp-evs > small { font-size: 11px; font-weight: 700; color: var(--muted); width: 100%; }
 .cs-grp-evs .mo-chip { font-size: 12px; padding: 3px 9px; }
 .cs-grp-evs .cs-gin { width: 90px; flex-basis: 90px; }
+/* 🎲 sonuç satırı: metin + ⋯; seçenekler açılınca */
+.cs-body { grid-template-columns: 1fr; gap: 5px; }
+.cs-line { display: flex; gap: 6px; align-items: center; min-width: 0; }
+.cs-line .cs-t { flex: 1; }
+.cs-more { flex: none; width: 32px; height: 32px; border-radius: 10px; background: #fff; color: var(--muted); font-size: 16px; font-weight: 700; transition: background .2s, color .2s, transform .15s var(--ease); }
+.cs-more:active { transform: scale(.9); }
+.cs-out.open .cs-more { background: var(--purple-soft); color: var(--purple); }
+.cs-defb { font-style: normal; font-size: 11.5px; font-weight: 700; padding: 2px 8px; border-radius: 999px; background: linear-gradient(135deg, #ffd36b, #ffb72b); color: #3a2600; }
+.cs-nxb { font-style: normal; font-size: 11.5px; font-weight: 700; padding: 2px 8px; border-radius: 999px; background: var(--purple-soft); color: var(--purple); }
+.cs-tools { display: flex; flex-direction: column; gap: 6px; padding: 8px; border-radius: 12px; background: #fff; box-shadow: 0 2px 10px rgba(20, 40, 80, .06); animation: pageIn .22s var(--ease) both; }
+.cs-tools .cs-add { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; }
+.cs-tools .cs-add select, .cs-tools .cs-add input { background: var(--chip); border-color: transparent; }
+.cs-body .cs-tools .cs-conds { border-top: 0; padding-top: 0; }
+.cs-lbl { flex: none; width: 64px; font-size: 11.5px; font-weight: 700; color: var(--muted); }
+.cs-acts { display: flex; flex-wrap: wrap; gap: 5px; padding-bottom: 6px; border-bottom: 1px dashed var(--line); }
+.cs-acts button { font-size: 12px; padding: 4px 10px; border-radius: 999px; background: var(--chip); }
+.cs-acts button.on { background: linear-gradient(135deg, #ffd36b, #ffb72b); color: #3a2600; }
+.cs-acts .danger { color: #ff2d55; margin-left: auto; }
+.cs-grp-tags select { height: 30px; max-width: 170px; border-radius: 9px; border: 1px solid var(--line); background: #fff; font-size: 12px; padding: 0 6px; }
+.cs-tagn { font-style: normal; font-size: 11.5px; font-weight: 700; color: var(--purple); background: var(--purple-soft); border-radius: 999px; padding: 2px 8px; }
 .cs-item.cs-grp { border-left: 3px solid var(--purple); }
 .cs-note { font-size: 12px; color: #075f87; background: var(--purple-soft); border-radius: 10px; padding: 5px 9px; margin: 4px 0 6px; }
 .cs-item.cs-shared .cs-outs { opacity: .45; }
@@ -1489,4 +1571,131 @@ button.cs-cond { border: 0; cursor: pointer; }
 .hp-nav span { display: flex; gap: 4px; }
 .hp-nav i { width: 6px; height: 6px; border-radius: 50%; background: var(--line); transition: width .25s, background .25s; }
 .hp-nav i.on { width: 16px; border-radius: 3px; background: var(--pink); }
+.hp-book { display: block; width: 100%; margin-top: 10px; padding: 9px 12px; border-radius: 14px; background: linear-gradient(135deg, #fffaf0, #fbefe0); color: #6b4a1e; font-size: 13px; text-align: left; box-shadow: inset 0 0 0 1px rgba(194, 120, 24, .18); }
+.hp-book b { font-weight: 700; }
+/* 💡 sohbette Lia önerileri */
+.lia-bar { display: flex; align-items: flex-start; gap: 8px; margin: 0 10px 6px; padding: 8px 8px 8px 10px; border-radius: 18px; background: linear-gradient(135deg, rgba(255, 250, 240, .97), rgba(253, 236, 245, .97)); box-shadow: 0 4px 16px rgba(20, 40, 80, .1); animation: pageIn .3s var(--ease) both; }
+.lia-ava { flex: none; width: 30px; height: 30px; border-radius: 50%; overflow: hidden; display: flex; align-items: center; justify-content: center; font-size: 18px; background: #fff; box-shadow: 0 0 0 2px #fff, 0 2px 8px rgba(194, 24, 91, .25); }
+.lia-ava img { width: 100%; height: 100%; object-fit: cover; }
+.lia-body { flex: 1; min-width: 0; }
+.lia-body p { margin: 0 0 6px; font-size: 13px; line-height: 1.4; color: #3c3346; }
+.lia-chips { display: flex; gap: 5px; overflow-x: auto; scrollbar-width: none; padding-bottom: 2px; }
+.lia-chips::-webkit-scrollbar { display: none; }
+.lia-chips .mo-chip { flex: none; font-size: 12.5px; padding: 4px 10px; }
+.lia-more { flex: none; font-size: 12px; padding: 4px 10px; border-radius: 999px; background: rgba(255, 255, 255, .8); color: #6b4a1e; }
+.lia-x { flex: none; width: 24px; height: 24px; border-radius: 50%; font-size: 12px; color: var(--muted); background: rgba(255, 255, 255, .7); }
 .hp-hide { display: block; margin: 8px auto 0; font-size: 12px; font-weight: 700; color: var(--muted); background: none; }
+/* 📏 kurallar: çoklu şart ve küme düğmeleri */
+.cr-and { font-style: normal; font-size: 11px; font-weight: 900; color: var(--muted); text-transform: uppercase; }
+.cr-ifc { background: var(--grad); color: #fff; }
+.cr-sets { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; margin-top: 8px; padding-top: 8px; border-top: 1px dashed var(--line); }
+.cr-sets small { font-weight: 800; color: var(--muted); font-size: 11.5px; min-width: 58px; }
+.cr-setb { font-size: 12px; padding: 4px 10px; background: var(--chip); border: 1px dashed rgba(0, 137, 196, .4); }
+.cr-setb:hover { background: var(--purple-soft); }
+.cr-set { background: linear-gradient(135deg, #ffd36b, #ffb72b) !important; color: #5a3a00 !important; }
+.cr-clear { font-size: 12px; padding: 4px 10px; color: #c2343a; background: rgba(229, 72, 77, .1); }
+/* ve ⇄ veya bağlacı (dokununca değişir) */
+button.cr-and { padding: 3px 9px; border-radius: 999px; background: var(--purple-soft); color: #075f87; font-size: 11px; font-weight: 900; text-transform: uppercase; border: 1px solid rgba(0, 137, 196, .3); transition: background .2s, transform .15s; }
+button.cr-and.or { background: var(--pink-soft); color: var(--pink); border-color: rgba(194, 24, 91, .35); margin: 0 4px; }
+button.cr-and:active { transform: scale(.9); }
+/* 🌱 doğurganlık */
+.cf-fert .cf-in em { font-style: normal; font-size: 11.5px; font-weight: 800; padding: 2px 8px; border-radius: 999px; background: rgba(47, 209, 122, .15); color: #0f8a52; white-space: nowrap; }
+.st-tr.st-fert { background: rgba(47, 209, 122, .25); }
+.chat-light .st-tr.st-fert { background: rgba(47, 209, 122, .15); color: #0f8a52; }
+
+/* ---------- ⚙️ İzin ayarları (Oluştur → ✅ İzinler) ---------- */
+.pc-range { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; padding: 10px 12px; margin-bottom: 6px; border-radius: 14px; background: var(--chip); }
+.pc-range > span { flex: 1 1 120px; font-weight: 600; font-size: 14px; }
+.pc-range label { display: flex; align-items: center; gap: 4px; font-size: 12.5px; color: var(--muted); }
+.pc-range input { width: 56px; height: 34px; border-radius: 10px; border: 1px solid var(--line); background: #fff; text-align: center; font-size: 15px; }
+.pc-rules { display: flex; flex-direction: column; gap: 8px; }
+.pc-rule { padding: 10px; border-radius: 14px; background: var(--chip); }
+.pc-if, .pc-not { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.pc-not { margin-top: 8px; }
+.pc-rule small { font-weight: 700; color: var(--muted); font-size: 12px; }
+.pc-rule select { flex: 1; min-width: 140px; height: 36px; border-radius: 10px; border: 1px solid var(--line); background: #fff; font-size: 13px; padding: 0 8px; }
+.pc-if .icon-btn { flex: none; }
+
+/* ---------- 🎬 Senaryo sayfası: özet şeridi, sekmeler, 📜 olay zaman çizelgesi ---------- */
+.sc-sum { display: flex; gap: 6px; overflow-x: auto; scrollbar-width: none; margin: -2px 0 12px; padding: 2px; }
+.sc-sum::-webkit-scrollbar { display: none; }
+.sc-sum button { flex: 0 0 auto; max-width: 75%; display: flex; align-items: center; gap: 6px; padding: 6px 12px 6px 8px; border-radius: 999px; background: #fff; box-shadow: 0 2px 8px rgba(20, 40, 80, .07); font-size: 13px; color: #3c4356; transition: transform .18s var(--ease); }
+.sc-sum button:active { transform: scale(.95); }
+.sc-sum i { font-style: normal; display: flex; }
+.sc-sum i .ava { border: 2px solid #fff; margin-left: -7px; }
+.sc-sum i .ava:first-child { margin-left: 0; }
+.sc-sum span { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sc-badge { display: inline-block; min-width: 20px; padding: 0 6px; margin-left: 3px; border-radius: 999px; background: var(--purple-soft); color: var(--purple); font-size: 12px; }
+.mo-tabs a.on .sc-badge { background: rgba(255, 255, 255, .28); color: #fff; }
+
+.tl-stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 10px; }
+.tl-stats > div { display: flex; flex-direction: column; align-items: center; padding: 8px 4px; border-radius: 14px; background: #fff; box-shadow: 0 2px 10px rgba(20, 40, 80, .06); }
+.tl-stats b { font-size: 18px; color: var(--purple); }
+.tl-stats small { font-size: 11.5px; color: var(--muted); }
+.tl-add { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 8px; }
+.tl-add button { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 12px 6px; border-radius: 16px; background: #fff; box-shadow: 0 2px 10px rgba(20, 40, 80, .06); transition: transform .18s var(--ease), box-shadow .2s; }
+.tl-add button:active { transform: scale(.95); }
+.tl-add i { font-style: normal; font-size: 22px; }
+.tl-add b { font-size: 13.5px; }
+.tl-add small { font-size: 11px; color: var(--muted); text-align: center; }
+.sheet .tl-add button { background: var(--chip); box-shadow: none; }
+.sc-page .pk-search { margin-bottom: 14px; }
+
+.tl { position: relative; padding: 2px 0 4px; }
+.tl::before { content: ''; position: absolute; left: 17px; top: 18px; bottom: 18px; width: 3px; border-radius: 3px; background: linear-gradient(var(--purple), var(--pink)); opacity: .35; }
+.tl-cap { position: relative; display: flex; align-items: center; gap: 12px; }
+.tl-cap i { flex: none; width: 37px; height: 37px; border-radius: 50%; background: var(--grad); color: #fff; font-style: normal; font-size: 17px; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 12px rgba(0, 137, 196, .25); }
+.tl-cap b { display: block; font-size: 14px; }
+.tl-cap small { display: block; font-size: 12.5px; color: var(--muted); }
+.tl-cap.end { margin-top: 4px; }
+.tl-empty { margin: 14px 0 14px 49px; padding: 18px 14px; border-radius: 16px; border: 2px dashed var(--line); text-align: center; }
+.tl-empty b { display: block; }
+.tl-empty small { color: var(--muted); font-size: 12.5px; }
+.tl-ins { position: relative; height: 26px; display: flex; align-items: center; }
+.tl-ins button { width: 25px; height: 25px; margin-left: 6px; border-radius: 50%; background: #fff; border: 2px solid var(--line); color: var(--muted); font-size: 15px; line-height: 1; display: flex; align-items: center; justify-content: center; opacity: .55; transition: opacity .2s, transform .18s var(--ease), border-color .2s, color .2s; }
+.tl-ins button:hover, .tl-ins button:focus-visible { opacity: 1; border-color: var(--purple); color: var(--purple); transform: scale(1.12); }
+.tl-move { position: relative; margin: 0 0 6px 49px; }
+.tl-move span { display: inline-block; font-size: 12px; padding: 2px 10px; border-radius: 999px; background: var(--purple-soft); color: var(--purple); }
+.tl-move::before { content: '↪'; position: absolute; left: -33px; top: 0; font-size: 13px; color: var(--purple); }
+
+.tl-ev { --evc: var(--purple); position: relative; display: flex; align-items: flex-start; gap: 12px; transition: transform .2s var(--ease), opacity .2s; }
+.tl-node { flex: none; position: relative; z-index: 1; width: 37px; height: 37px; margin-top: 6px; border-radius: 50%; background: #fff; border: 3px solid var(--evc); color: var(--evc); font-weight: 700; font-size: 15px; display: flex; align-items: center; justify-content: center; box-shadow: 0 3px 10px color-mix(in srgb, var(--evc) 30%, transparent); }
+.tl-card { flex: 1; min-width: 0; padding: 10px 12px; border-radius: 16px; background: #fff; border-left: 4px solid var(--evc); box-shadow: 0 2px 12px rgba(20, 40, 80, .07); cursor: pointer; transition: box-shadow .2s, background .2s; }
+.tl-ev.has-color .tl-card { background: color-mix(in srgb, var(--evc) 7%, #fff); }
+.tl-ev.open .tl-card { box-shadow: 0 6px 22px color-mix(in srgb, var(--evc) 22%, transparent); }
+.tl-head { display: flex; align-items: center; gap: 8px; }
+.tl-head b { flex: 1; min-width: 0; font-size: 14.5px; font-weight: 600; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.tl-ev.open .tl-head b { white-space: normal; }
+.tl-n { flex: none; font-size: 11px; font-weight: 700; color: var(--evc); background: color-mix(in srgb, var(--evc) 12%, #fff); border-radius: 999px; padding: 1px 7px; }
+.tl-rnd { font-style: normal; font-size: 13px; }
+.tl-grip { flex: none; touch-action: none; cursor: grab; font-size: 18px; line-height: 1; padding: 4px 2px 4px 8px; color: var(--muted); }
+.tl-meta { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+.tl-meta em { font-style: normal; font-size: 11.5px; padding: 1px 8px; border-radius: 999px; background: color-mix(in srgb, var(--evc) 10%, #fff); color: color-mix(in srgb, var(--evc) 75%, #222); }
+.tl-text { margin-top: 6px; font-size: 13.5px; line-height: 1.45; color: #4a5164; white-space: pre-line; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.tl-ev.open .tl-text { -webkit-line-clamp: unset; display: block; }
+.tl-more { margin-top: 10px; padding-top: 10px; border-top: 1px dashed color-mix(in srgb, var(--evc) 30%, var(--line)); cursor: default; animation: pageIn .25s var(--ease) both; }
+.tl-desc { font-size: 12.5px; color: var(--muted); margin-bottom: 8px; white-space: pre-line; }
+.tl-ocs { display: flex; flex-direction: column; gap: 5px; margin-bottom: 8px; }
+.tl-oc { position: relative; display: flex; align-items: center; gap: 8px; padding: 5px 10px; border-radius: 10px; background: var(--chip); overflow: hidden; font-size: 12.5px; }
+.tl-oc i { position: absolute; left: 0; top: 0; bottom: 0; background: color-mix(in srgb, var(--evc) 22%, transparent); border-radius: inherit; }
+.tl-oc span { position: relative; flex: 1; min-width: 0; }
+.tl-oc b { position: relative; flex: none; color: color-mix(in srgb, var(--evc) 80%, #222); }
+.tl-subrow { display: flex; align-items: center; gap: 6px; font-size: 12.5px; margin-bottom: 8px; }
+.tl-subrow .mo-subsel { max-width: none; flex: 1; }
+.tl-acts { display: flex; flex-wrap: wrap; gap: 6px; }
+.tl-acts button { font-size: 12.5px; padding: 5px 10px; border-radius: 999px; background: var(--chip); transition: transform .15s var(--ease); }
+.tl-acts button:active { transform: scale(.93); }
+.tl-acts .danger { color: #ff2d55; }
+.tl-ev.fresh { animation: tlIn .45s var(--ease) both; }
+.tl-ev.gone { opacity: 0; transform: translateX(30px) scale(.96); }
+@keyframes tlIn { from { opacity: 0; transform: translateY(-8px) scale(.97); } }
+.tl.drag-on .tl-ins, .tl.drag-on .tl-move { display: none; }
+.tl.drag-on .tl-ev { margin-bottom: 10px; }
+.tl.drag-on .tl-ev:not(.dragging) { transition: transform .2s var(--ease); }
+.tl-ev.dragging { z-index: 5; transition: none; }
+.tl-ev.dragging .tl-card { box-shadow: 0 14px 34px rgba(20, 40, 80, .22); }
+.tl-ev.dragging .tl-grip { cursor: grabbing; }
+.tl-ev.shift-down { transform: translateY(var(--sh)); }
+.tl-ev.shift-up { transform: translateY(calc(-1 * var(--sh))); }
+.tl-tools { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin-top: 12px; }
+.tl-tools small { flex: 1 1 100%; font-size: 12px; color: var(--muted); }

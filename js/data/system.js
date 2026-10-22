@@ -5,7 +5,7 @@ Stories.SYSTEM = {
   {
    "id": "mvgkvtgs4970g",
    "title": "Kissing",
-   "cat": "extra",
+   "cat": "c:mvgm5g7q1xopl",
    "text": "",
    "steps": [],
    "opener": "",
@@ -23,7 +23,7 @@ Stories.SYSTEM = {
   {
    "id": "mvgkvy3u008hc",
    "title": "Missionary",
-   "cat": "extra",
+   "cat": "c:mvglvwdtam0h7",
    "text": "",
    "steps": [],
    "opener": "",
@@ -35,28 +35,10 @@ Stories.SYSTEM = {
    "place": "",
    "mix": [],
    "tags": [
-    "penetrasyon"
+    "penetrasyon",
+    "vajinal"
    ],
    "base": "b:extra:Missionary"
-  },
-  {
-   "id": "mvgkx0orlrk5b",
-   "title": "Kondomlu Anal",
-   "cat": "extra",
-   "text": "",
-   "steps": [],
-   "opener": "",
-   "starter": "",
-   "tones": [],
-   "note": "",
-   "part": "",
-   "when": "",
-   "place": "",
-   "mix": [],
-   "tags": [
-    "anal",
-    "kondom"
-   ]
   },
   {
    "id": "mvglz4rsqnt81",
@@ -76,44 +58,6 @@ Stories.SYSTEM = {
    "desc": "",
    "color": "#8b8b99",
    "emojis": "❌"
-  },
-  {
-   "id": "mvglzdskea205",
-   "title": "Tight Condom",
-   "cat": "c:mvglyw2ax79uj",
-   "text": "",
-   "steps": [],
-   "opener": "",
-   "starter": "",
-   "tones": [],
-   "note": "",
-   "part": "",
-   "when": "",
-   "place": "",
-   "mix": [],
-   "tags": [],
-   "desc": "",
-   "color": "#ff5f5f",
-   "emojis": "🎈"
-  },
-  {
-   "id": "mvgm1e6dgi3ef",
-   "title": "Control Pill",
-   "cat": "c:mvglyw2ax79uj",
-   "text": "",
-   "steps": [],
-   "opener": "",
-   "starter": "",
-   "tones": [],
-   "note": "",
-   "part": "",
-   "when": "",
-   "place": "",
-   "mix": [],
-   "tags": [],
-   "desc": "",
-   "color": "#8b8b99",
-   "emojis": "💊"
   },
   {
    "id": "mvgm2puicwzpe",
@@ -184,7 +128,9 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "vajinal"
+   ],
    "desc": "",
    "base": "b:extra:Cowgirl",
    "color": "#ff5f5f",
@@ -204,26 +150,15 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "vajinal"
+   ],
    "desc": "",
    "base": "b:extra:Ondesk",
    "color": "#ff5f5f",
    "emojis": "🔥",
    "level": "",
-   "outcomes": [
-    {
-     "id": "mvjmffsl40sot",
-     "text": "",
-     "pct": 20,
-     "next": "mvgu4y0tl5jpn",
-     "effects": [
-      {
-       "p": "p:umvjoe339asss4",
-       "d": 5
-      }
-     ]
-    }
-   ],
+   "outcomes": [],
    "subs": [],
    "sub": "",
    "onEffects": []
@@ -242,7 +177,9 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "vajinal"
+   ],
    "desc": "",
    "base": "b:extra:Full Nelson",
    "color": "#ff5f5f",
@@ -262,7 +199,9 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "vajinal"
+   ],
    "desc": "",
    "base": "b:extra:Doggy",
    "color": "#ff5f5f",
@@ -320,7 +259,9 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "anal"
+   ],
    "desc": "",
    "base": "b:extra:Anal",
    "color": "#ff8a65",
@@ -340,7 +281,9 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "anal"
+   ],
    "desc": "",
    "color": "#ff5f5f",
    "emojis": "🍑"
@@ -359,7 +302,9 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "anal"
+   ],
    "desc": "",
    "color": "#ff5f5f",
    "emojis": "🍑🔥"
@@ -416,7 +361,9 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "bacak"
+   ],
    "desc": "",
    "color": "#c86bff",
    "emojis": "🔥",
@@ -436,7 +383,9 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "el"
+   ],
    "desc": "",
    "color": "#c86bff",
    "emojis": "✋🏻",
@@ -456,7 +405,9 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "göğüs"
+   ],
    "desc": "",
    "color": "#c86bff",
    "emojis": "🍒",
@@ -476,7 +427,9 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "kalça"
+   ],
    "desc": "",
    "color": "#c86bff",
    "emojis": "🍑",
@@ -496,7 +449,9 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "oral"
+   ],
    "desc": "",
    "color": "#c86bff",
    "emojis": "🔥😮",
@@ -516,7 +471,9 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "oral"
+   ],
    "desc": "",
    "color": "#c86bff",
    "emojis": "👅",
@@ -536,7 +493,9 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "oral"
+   ],
    "desc": "",
    "color": "#c86bff",
    "emojis": "😮",
@@ -560,7 +519,17 @@ Stories.SYSTEM = {
    "desc": "",
    "color": "#ff5f5f",
    "emojis": "👅",
-   "base": "b:extra:Cunnilingus"
+   "base": "b:extra:Cunnilingus",
+   "onEffects": [
+    {
+     "p": "p:umvjzd17hys1oy",
+     "d": 25
+    },
+    {
+     "p": "p:sehvet",
+     "d": 10
+    }
+   ]
   },
   {
    "id": "mvgtgu2y894f9",
@@ -576,7 +545,9 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "oral"
+   ],
    "desc": "",
    "color": "#c86bff",
    "emojis": "🔥😮",
@@ -600,7 +571,17 @@ Stories.SYSTEM = {
    "desc": "",
    "color": "#5f8bff",
    "emojis": "👅💦",
-   "base": "b:extra:Squirt"
+   "base": "b:extra:Squirt",
+   "onEffects": [
+    {
+     "p": "p:umvjzd17hys1oy",
+     "d": 40
+    },
+    {
+     "p": "p:sehvet",
+     "d": 10
+    }
+   ]
   },
   {
    "id": "mvgthjlf8outn",
@@ -619,7 +600,17 @@ Stories.SYSTEM = {
    "tags": [],
    "desc": "",
    "color": "#ff5f5f",
-   "emojis": "👅"
+   "emojis": "👅",
+   "onEffects": [
+    {
+     "p": "p:umvjzd17hys1oy",
+     "d": 15
+    },
+    {
+     "p": "p:sehvet",
+     "d": 10
+    }
+   ]
   },
   {
    "id": "mvgtiho6kigfy",
@@ -635,7 +626,9 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "bacak"
+   ],
    "desc": "",
    "color": "#c86bff",
    "emojis": "🍑"
@@ -658,7 +651,17 @@ Stories.SYSTEM = {
    "desc": "",
    "color": "#ffb72b",
    "emojis": "🤤",
-   "base": "b:extra:Facesitting"
+   "base": "b:extra:Facesitting",
+   "onEffects": [
+    {
+     "p": "p:umvjzd17hys1oy",
+     "d": 20
+    },
+    {
+     "p": "p:sehvet",
+     "d": 10
+    }
+   ]
   },
   {
    "id": "mvgtp4d6qsdhd",
@@ -674,7 +677,9 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "el"
+   ],
    "desc": "",
    "color": "#c86bff",
    "emojis": "✋🏻",
@@ -694,7 +699,9 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "vajinal"
+   ],
    "desc": "",
    "color": "#ff5f5f",
    "emojis": "🔥"
@@ -713,7 +720,9 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "anal"
+   ],
    "desc": "",
    "color": "#ff8a65",
    "emojis": "🍑"
@@ -732,7 +741,9 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "vajinal"
+   ],
    "desc": "",
    "color": "#ff5f5f",
    "emojis": "🔥"
@@ -751,7 +762,9 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "anal"
+   ],
    "desc": "",
    "color": "#ff5f5f",
    "emojis": "🍑"
@@ -770,7 +783,9 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "vajinal"
+   ],
    "desc": "",
    "color": "#ff5f5f",
    "emojis": "🔥"
@@ -808,7 +823,9 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "göğüs"
+   ],
    "desc": "",
    "color": "#c86bff",
    "emojis": "🍒"
@@ -827,7 +844,10 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "vajinal",
+    "boşalma"
+   ],
    "desc": "",
    "color": "#5f8bff",
    "emojis": "💦",
@@ -854,7 +874,17 @@ Stories.SYSTEM = {
     }
    ],
    "subs": [],
-   "sub": ""
+   "sub": "",
+   "onEffects": [
+    {
+     "p": "p:umvjy7ucpiosps",
+     "d": 1
+    },
+    {
+     "p": "p:umvjof3wzh5hej",
+     "d": -30
+    }
+   ]
   },
   {
    "id": "mvgu5a768360j",
@@ -870,10 +900,19 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "anal",
+    "boşalma"
+   ],
    "desc": "",
    "color": "#5f8bff",
-   "emojis": "💦"
+   "emojis": "💦",
+   "onEffects": [
+    {
+     "p": "p:umvjy7ucpiosps",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgu6r4b1y7zl",
@@ -889,10 +928,19 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "kalça",
+    "boşalma"
+   ],
    "desc": "",
    "color": "#5f8bff",
-   "emojis": "💦🍑"
+   "emojis": "💦🍑",
+   "onEffects": [
+    {
+     "p": "p:umvjy7ucpiosps",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgu7pcp4c4ss",
@@ -908,10 +956,19 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "göğüs",
+    "boşalma"
+   ],
    "desc": "",
    "color": "#5f8bff",
-   "emojis": "💦🍒"
+   "emojis": "💦🍒",
+   "onEffects": [
+    {
+     "p": "p:umvjy7ucpiosps",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgu898zzawrr",
@@ -927,10 +984,19 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "oral",
+    "boşalma"
+   ],
    "desc": "",
    "color": "#5f8bff",
-   "emojis": "💦"
+   "emojis": "💦",
+   "onEffects": [
+    {
+     "p": "p:umvjy7ucpiosps",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgue22vzkuxu",
@@ -946,10 +1012,20 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "oral",
+    "el",
+    "boşalma"
+   ],
    "desc": "",
    "color": "#5f8bff",
-   "emojis": "💦😮"
+   "emojis": "💦😮",
+   "onEffects": [
+    {
+     "p": "p:umvjy7ucpiosps",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgukoh3qem64",
@@ -970,14 +1046,7 @@ Stories.SYSTEM = {
    "color": "#ff5f5f",
    "emojis": "🔥",
    "level": "",
-   "outcomes": [
-    {
-     "id": "mvjiytuecm544",
-     "text": "tutmakta zorlandı.",
-     "pct": 20,
-     "next": "mvgu4y0tl5jpn"
-    }
-   ],
+   "outcomes": [],
    "subs": [],
    "sub": ""
   },
@@ -1185,10 +1254,19 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "bacak",
+    "boşalma"
+   ],
    "desc": "",
    "color": "#5f8bff",
-   "emojis": "💦"
+   "emojis": "💦",
+   "onEffects": [
+    {
+     "p": "p:umvjy7ucpiosps",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgvj450bf5mr",
@@ -1228,14 +1306,7 @@ Stories.SYSTEM = {
    "color": "#ff5f5f",
    "emojis": "🔥🥵",
    "level": "",
-   "outcomes": [
-    {
-     "id": "mvjiznmtp2ay8",
-     "text": "tutamadı.",
-     "pct": 70,
-     "next": "mvgu4y0tl5jpn"
-    }
-   ],
+   "outcomes": [],
    "subs": [],
    "sub": ""
   },
@@ -1788,10 +1859,19 @@ Stories.SYSTEM = {
    "when": "",
    "place": "",
    "mix": [],
-   "tags": [],
+   "tags": [
+    "bacak",
+    "boşalma"
+   ],
    "desc": "",
    "color": "#5f8bff",
-   "emojis": "💦"
+   "emojis": "💦",
+   "onEffects": [
+    {
+     "p": "p:umvjy7ucpiosps",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvh11d9dirsb3",
@@ -1875,9 +1955,47 @@ Stories.SYSTEM = {
    "onEffects": []
   },
   {
-   "id": "mvgkurulqwcex",
-   "title": "Kondomlu Önden",
-   "cat": "extra",
+   "id": "mvglzdskea205",
+   "title": "Tight Condom",
+   "cat": "c:mvglyw2ax79uj",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [],
+   "desc": "",
+   "color": "#ff5f5f",
+   "emojis": "🎈"
+  },
+  {
+   "id": "mvgm1e6dgi3ef",
+   "title": "Control Pill",
+   "cat": "c:mvglyw2ax79uj",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [],
+   "desc": "",
+   "color": "#8b8b99",
+   "emojis": "💊"
+  },
+  {
+   "id": "mvjxgtrb8rg33",
+   "title": "Face Cumming",
+   "cat": "c:mvgu3rsuko7km",
    "text": "",
    "steps": [],
    "opener": "",
@@ -1889,14 +2007,28 @@ Stories.SYSTEM = {
    "place": "",
    "mix": [],
    "tags": [
-    "penetrasyon",
-    "kondom"
+    "oral",
+    "el",
+    "boşalma"
+   ],
+   "desc": "",
+   "color": "#5f8bff",
+   "emojis": "💦",
+   "level": "",
+   "outcomes": [],
+   "subs": [],
+   "sub": "",
+   "onEffects": [
+    {
+     "p": "p:umvjy7ucpiosps",
+     "d": 1
+    }
    ]
   },
   {
-   "id": "mvgkv87yjjta3",
-   "title": "Kondomsuz Önden",
-   "cat": "extra",
+   "id": "mvjxhqpfs1h66",
+   "title": "Mouth Cumming",
+   "cat": "c:mvgu3rsuko7km",
    "text": "",
    "steps": [],
    "opener": "",
@@ -1908,12 +2040,234 @@ Stories.SYSTEM = {
    "place": "",
    "mix": [],
    "tags": [
-    "penetrasyon"
+    "oral",
+    "boşalma"
+   ],
+   "desc": "",
+   "color": "#5f8bff",
+   "emojis": "💦",
+   "level": "",
+   "outcomes": [],
+   "subs": [],
+   "sub": "",
+   "onEffects": [
+    {
+     "p": "p:umvjy7ucpiosps",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "id": "mvjzd17h6h94v",
+   "title": "Orgazm",
+   "text": "",
+   "cat": "c:mvgwupu3we8yl",
+   "emojis": "💗",
+   "tags": [
+    "orgazm"
+   ],
+   "desc": "Karşı tarafın orgazmı (💗 Uyarılma eşiğinden gelir)",
+   "onEffects": [
+    {
+     "p": "p:umvjzd17h5twc2",
+     "d": -30
+    }
    ]
   }
  ],
  "places": [],
- "scenarios": [],
+ "scenarios": [
+  {
+   "id": "mvjuq2gkl4g0t",
+   "title": "Yeni senaryo",
+   "chars": [],
+   "part": "",
+   "day": "",
+   "season": "",
+   "timeNote": "",
+   "place": "",
+   "placeName": "",
+   "placeIcon": "",
+   "events": [],
+   "created": 1792692324596
+  },
+  {
+   "id": "mvjthr2ebcq1b",
+   "title": "Yeni senaryo",
+   "chars": [],
+   "part": "",
+   "day": "",
+   "season": "",
+   "timeNote": "",
+   "place": "",
+   "placeName": "",
+   "placeIcon": "",
+   "events": [
+    {
+     "id": "mvjti2fahpywy",
+     "src": "mvgth2g0puosh",
+     "title": "Squirt",
+     "cat": "c:mvgtgdbp6e8xv",
+     "steps": [],
+     "tones": [],
+     "mix": [],
+     "tags": [],
+     "color": "#5f8bff",
+     "emojis": "👅💦",
+     "text": ""
+    },
+    {
+     "id": "mvjtig9fn1yfs",
+     "src": "mvgu4y0tl5jpn",
+     "title": "Vaginal Creampie",
+     "cat": "c:mvgu3rsuko7km",
+     "steps": [],
+     "tones": [],
+     "mix": [],
+     "tags": [],
+     "color": "#5f8bff",
+     "emojis": "💦",
+     "outcomes": [
+      {
+       "id": "mvjixvrbsc3zl",
+       "text": "{ben} hamile kaldı",
+       "pct": 50,
+       "next": "",
+       "effects": [
+        {
+         "p": "f:hamile",
+         "d": 1
+        }
+       ],
+       "conds": [
+        {
+         "k": "not",
+         "ev": "mvh1h70jral7v"
+        }
+       ]
+      }
+     ],
+     "subs": [],
+     "text": ""
+    }
+   ],
+   "created": 1792690256966,
+   "cover": "characters/Defne/01be3a5ed966923255222dd491d1f006.jpg"
+  },
+  {
+   "id": "mvjoa2yikryj2",
+   "title": "🏕️ Kampta",
+   "chars": [
+    "mvjjbzrrfw8s6"
+   ],
+   "part": "gece",
+   "day": "Tatil günü",
+   "season": "",
+   "timeNote": "",
+   "place": "kamp",
+   "placeName": "",
+   "placeIcon": "",
+   "events": [
+    {
+     "id": "mvjoa2yiwmkd3",
+     "src": "mvgmfjwle8osk",
+     "title": "Show Tits",
+     "cat": "c:mvgm5g7q1xopl",
+     "steps": [],
+     "tones": [],
+     "mix": [],
+     "tags": [],
+     "color": "#5f8bff",
+     "emojis": "🤩🍒",
+     "text": ""
+    },
+    {
+     "id": "mvjoa2yit1e6d",
+     "src": "mvgvtw4qycpem",
+     "title": "Passionate",
+     "cat": "c:mvgvrcewukjlt",
+     "steps": [],
+     "tones": [],
+     "mix": [],
+     "tags": [],
+     "color": "#ff6fa8",
+     "emojis": "🥰",
+     "text": ""
+    },
+    {
+     "id": "mvjoa2yi5licx",
+     "src": "b:genel:Doğruluk mu cesaret mi",
+     "title": "Doğruluk mu cesaret mi",
+     "text": "{ben} doğruluk mu cesaret mi oynamak istiyor.",
+     "cat": "genel"
+    }
+   ],
+   "created": 1792681501050
+  },
+  {
+   "id": "mvjl647gw8z72",
+   "title": "🏖️ Tatilde",
+   "chars": [
+    "mvjjbzrrfw8s6"
+   ],
+   "part": "gece",
+   "day": "Yılbaşı",
+   "season": "",
+   "timeNote": "",
+   "place": "tatil",
+   "placeName": "",
+   "placeIcon": "",
+   "events": [
+    {
+     "id": "mvjlgcxmixhwr",
+     "src": "mvgx7acjikwgv",
+     "title": "Squirt Milk",
+     "cat": "c:mvgwupu3we8yl",
+     "steps": [],
+     "tones": [],
+     "mix": [],
+     "tags": [],
+     "color": "#8b5cf6",
+     "emojis": "🍒💦",
+     "text": ""
+    },
+    {
+     "id": "mvjlgdt5qf1cs",
+     "src": "mvgu0061fziue",
+     "title": "Reverse Titfuck",
+     "cat": "c:mvgn2ubfw2eoh",
+     "steps": [],
+     "tones": [],
+     "mix": [],
+     "tags": [],
+     "color": "#c86bff",
+     "emojis": "🍒",
+     "text": ""
+    },
+    {
+     "id": "mvjlge6elja0t",
+     "src": "b:extra:Exhibitionism",
+     "title": "Exhibitionism",
+     "cat": "extra",
+     "text": ""
+    },
+    {
+     "id": "mvjlgejp7sw2b",
+     "src": "mvgx27px2ab58",
+     "title": "High-volume Woter",
+     "cat": "c:mvgwupu3we8yl",
+     "steps": [],
+     "tones": [],
+     "mix": [],
+     "tags": [],
+     "color": "#5f8bff",
+     "emojis": "🍒💦",
+     "text": ""
+    }
+   ],
+   "created": 1792676277196
+  }
+ ],
  "groups": [],
  "tags": {
   "scenario": [],
@@ -1923,7 +2277,14 @@ Stories.SYSTEM = {
    "oral",
    "sürtme",
    "kondom",
-   "ön_sevişme"
+   "ön_sevişme",
+   "vajinal",
+   "bacak",
+   "göğüs",
+   "kalça",
+   "el",
+   "boşalma",
+   "orgazm"
   ]
  },
  "cats": [
@@ -1979,7 +2340,9 @@ Stories.SYSTEM = {
    "id": "c:mvgu3rsuko7km",
    "icon": "💦",
    "label": "Cumming",
-   "tags": []
+   "tags": [
+    "result"
+   ]
   },
   {
    "id": "c:mvguxicvzx0iq",
@@ -2031,6 +2394,16 @@ Stories.SYSTEM = {
    "icon": "🛡️",
    "label": "Korunma",
    "type": "toggle"
+  },
+  {
+   "id": "dogurganlik",
+   "icon": "🌱",
+   "label": "Doğurganlık",
+   "type": "range",
+   "min": 0,
+   "max": 100,
+   "start": 50,
+   "unit": "%"
   }
  ],
  "evGroups": [],
@@ -2092,9 +2465,61 @@ Stories.SYSTEM = {
    "max": 100,
    "start": 100,
    "who": "me"
+  },
+  {
+   "id": "umvjy7ucpiosps",
+   "icon": "🔁",
+   "label": "Cumming sayısı",
+   "min": 0,
+   "max": 20,
+   "start": 0,
+   "who": "me"
+  },
+  {
+   "id": "umvjzd17hys1oy",
+   "icon": "💗",
+   "label": "Uyarılma",
+   "min": 0,
+   "max": 100,
+   "start": 0
+  },
+  {
+   "id": "umvjzd17h5twc2",
+   "icon": "🍼",
+   "label": "Süt",
+   "min": 0,
+   "max": 100,
+   "start": 30
   }
  ],
- "triggers": [],
+ "triggers": [
+  {
+   "id": "mvjw5mggh7giz",
+   "p": "p:umvjoe339asss4",
+   "op": ">=",
+   "v": 80,
+   "ev": "match:c:mvgu3rsuko7km",
+   "effects": [
+    {
+     "p": "p:umvjoe339asss4",
+     "d": -100
+    }
+   ]
+  },
+  {
+   "id": "mvjzd17h65yt1",
+   "p": "p:umvjzd17hys1oy",
+   "op": ">=",
+   "v": 80,
+   "ev": "mvjzd17h6h94v",
+   "effects": [
+    {
+     "p": "p:umvjzd17hys1oy",
+     "d": -100
+    }
+   ]
+  }
+ ],
  "catOrder": [
   "c:mvglyw2ax79uj",
   "c:mvgm5g7q1xopl",
@@ -2102,9 +2527,9 @@ Stories.SYSTEM = {
   "c:mvgm9ihwda8f5",
   "c:mvgn2ubfw2eoh",
   "c:mvgtgdbp6e8xv",
+  "c:mvgu3rsuko7km",
   "genel",
   "extra",
-  "c:mvgu3rsuko7km",
   "c:mvguxicvzx0iq",
   "c:mvgvrcewukjlt",
   "c:mvgwj75108lqd",
@@ -2115,7 +2540,9 @@ Stories.SYSTEM = {
  "crRules": [
   {
    "id": "mvjotftphm9b3",
-   "if": "Experience: Virgo",
+   "ifs": [
+    "Experience: Virgo"
+   ],
    "not": [
     "Pussy Size: Very Loose",
     "Pussy Size: Loose",
@@ -2133,7 +2560,9 @@ Stories.SYSTEM = {
   },
   {
    "id": "mvjovv9h0m0p6",
-   "if": "Experience: Great",
+   "ifs": [
+    "Experience: Great"
+   ],
    "not": [
     "Pussy Size: Extremely Tight",
     "Pussy Size: Tight"
@@ -2142,29 +2571,323 @@ Stories.SYSTEM = {
  ],
  "sharedOuts": [
   {
-   "id": "mvjp3izy6l994",
-   "title": "Ondesk sonuçları",
-   "evs": [
-    "mvgm3rau8do5q",
-    "mvgm3n600ricr",
-    "mvgm4iruwu659",
-    "mvgm7k1qvkwtd",
-    "mvgtr1ypdfvys",
-    "mvgtrthg45zj1",
-    "mvgtvhpg1479j"
+   "id": "mvjv3iiyvtlef",
+   "title": "Cumming",
+   "evs": [],
+   "ctags": [
+    "result"
    ],
    "outs": [
     {
-     "id": "mvjmffsl40sot",
+     "id": "mvjv3iiyhywva",
+     "text": "",
+     "pct": 20,
+     "next": "",
+     "effects": [
+      {
+       "p": "p:umvjof3wzh5hej",
+       "d": -10
+      }
+     ]
+    },
+    {
+     "id": "mvjv4ws57tmy6",
+     "text": "",
+     "pct": 20,
+     "next": "",
+     "effects": [
+      {
+       "p": "p:umvjof3wzh5hej",
+       "d": -20
+      }
+     ]
+    },
+    {
+     "id": "mvjv58xjtcm4v",
+     "text": "",
+     "pct": 20,
+     "next": "",
+     "effects": [
+      {
+       "p": "p:umvjof3wzh5hej",
+       "d": -30
+      }
+     ]
+    },
+    {
+     "id": "mvjv5gxe4sbz4",
+     "text": "",
+     "pct": 20,
+     "next": "",
+     "effects": [
+      {
+       "p": "p:umvjof3wzh5hej",
+       "d": -40
+      }
+     ]
+    },
+    {
+     "id": "mvjv5ofkamw9r",
+     "text": "",
+     "pct": 20,
+     "next": "",
+     "effects": [
+      {
+       "p": "p:umvjof3wzh5hej",
+       "d": -50
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mvjwwxmzg30by",
+   "title": "Etiket sonuçları",
+   "evs": [],
+   "ctags": [
+    "event"
+   ],
+   "outs": [
+    {
+     "id": "mvjwwxmzere4w",
      "text": "",
      "pct": 100,
-     "next": "mvgu4y0tl5jpn",
+     "next": "",
      "effects": [
       {
        "p": "p:umvjoe339asss4",
-       "d": 5
+       "d": 20
       }
      ]
+    }
+   ]
+  }
+ ],
+ "permCfg": {
+  "allow": [
+   1,
+   3
+  ],
+  "deny": [
+   1,
+   3
+  ],
+  "rules": [
+   {
+    "id": "mvjucd11jzrrm",
+    "ifs": [
+     "a:mvglz4rsqnt81"
+    ],
+    "not": [
+     "*d",
+     "*a"
+    ]
+   },
+   {
+    "id": "mvjucizyc4ht9",
+    "ifs": [
+     "d:mvglz4rsqnt81"
+    ],
+    "not": [
+     "*a",
+     "*d"
+    ]
+   },
+   {
+    "id": "mvjudh6lffgrh",
+    "ifs": [
+     "a:mvgm2puicwzpe"
+    ],
+    "not": [
+     "d:mvglz4rsqnt81"
+    ]
+   },
+   {
+    "id": "mvjue0nrd6fo9",
+    "ifs": [
+     "a:mvgm31460f6iq"
+    ],
+    "not": [
+     "d:mvglz4rsqnt81"
+    ]
+   },
+   {
+    "id": "mvjue9b3nanag",
+    "ifs": [
+     "a:mvh1h70jral7v"
+    ],
+    "not": [
+     "d:mvglz4rsqnt81"
+    ]
+   }
+  ]
+ },
+ "clock": {
+  "on": true,
+  "start": "20:00",
+  "step": 5,
+  "rules": [
+   {
+    "id": "mvjy7ucrnxuzi",
+    "every": "hour",
+    "from": "00:00",
+    "to": "00:00",
+    "p": "p:umvjof3wzh5hej",
+    "d": 10
+   },
+   {
+    "id": "mvjy7ucr1na8h",
+    "every": "hour",
+    "from": "00:00",
+    "to": "00:00",
+    "p": "p:umvjy7ucpiosps",
+    "d": -1
+   },
+   {
+    "id": "mvjzd17ilcm1f",
+    "every": "hour",
+    "from": "00:00",
+    "to": "00:00",
+    "p": "p:umvjzd17h5twc2",
+    "d": 5
+   },
+   {
+    "id": "mvjzd17i76wxy",
+    "every": "hour",
+    "from": "00:00",
+    "to": "00:00",
+    "p": "p:sehvet",
+    "d": -5
+   }
+  ]
+ },
+ "bandRules": [
+  {
+   "id": "mvjy7ucr8l8cj",
+   "when": "tag:boşalma",
+   "p": "p:umvjof3wzh5hej",
+   "bands": [
+    {
+     "ev": "mvgv5570hd9os",
+     "min": 0,
+     "max": 14
+    },
+    {
+     "ev": "mvgv5v1k1wum9",
+     "min": 15,
+     "max": 39
+    },
+    {
+     "ev": "mvgv6hp36aiut",
+     "min": 40,
+     "max": 69
+    },
+    {
+     "ev": "mvgv781wh6idt",
+     "min": 70,
+     "max": 89
+    },
+    {
+     "ev": "mvgv7ship92jq",
+     "min": 90,
+     "max": 100
+    }
+   ]
+  },
+  {
+   "id": "mvjy7ucrhqb0l",
+   "when": "tag:boşalma",
+   "p": "p:umvjy7ucpiosps",
+   "bands": [
+    {
+     "ev": "mvgvcln6k69ve",
+     "min": 0,
+     "max": 0
+    },
+    {
+     "ev": "mvgvbsz440ofl",
+     "min": 1,
+     "max": 1
+    },
+    {
+     "ev": "mvgv9zekg688s",
+     "min": 2,
+     "max": 2
+    },
+    {
+     "ev": "mvgvaoxk61cw9",
+     "min": 3,
+     "max": 4
+    },
+    {
+     "ev": "mvgv9n3cjnh4u",
+     "min": 5,
+     "max": 20
+    }
+   ]
+  },
+  {
+   "id": "mvjzd17ibqlqg",
+   "when": "tag:orgazm",
+   "p": "p:sehvet",
+   "bands": [
+    {
+     "ev": "mvgwzy2jdzfjv",
+     "min": 0,
+     "max": 19
+    },
+    {
+     "ev": "mvgx0dmh0v58w",
+     "min": 20,
+     "max": 44
+    },
+    {
+     "ev": "mvgx1ebr66qy1",
+     "min": 45,
+     "max": 69
+    },
+    {
+     "ev": "mvgx27px2ab58",
+     "min": 70,
+     "max": 89
+    },
+    {
+     "ev": "mvgx2f834ey9m",
+     "min": 90,
+     "max": 100
+    }
+   ]
+  },
+  {
+   "id": "mvjzd17ikjd9y",
+   "when": "tag:orgazm",
+   "p": "p:umvjzd17h5twc2",
+   "if": "f:hamile",
+   "bands": [
+    {
+     "ev": "mvgx5o11ogsyz",
+     "min": 10,
+     "max": 29
+    },
+    {
+     "ev": "mvgx67ogz2weo",
+     "min": 30,
+     "max": 49
+    },
+    {
+     "ev": "mvgx6llsufjzr",
+     "min": 50,
+     "max": 69
+    },
+    {
+     "ev": "mvgx6ygc4cjpt",
+     "min": 70,
+     "max": 89
+    },
+    {
+     "ev": "mvgx7acjikwgv",
+     "min": 90,
+     "max": 100
     }
    ]
   }

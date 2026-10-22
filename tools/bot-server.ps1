@@ -19,15 +19,19 @@ $MIME = @{
   '.html' = 'text/html; charset=utf-8'; '.js' = 'text/javascript; charset=utf-8'; '.css' = 'text/css; charset=utf-8'
   '.json' = 'application/json; charset=utf-8'; '.png' = 'image/png'; '.jpg' = 'image/jpeg'; '.jpeg' = 'image/jpeg'
   '.webp' = 'image/webp'; '.gif' = 'image/gif'; '.svg' = 'image/svg+xml'; '.ico' = 'image/x-icon'; '.md' = 'text/plain; charset=utf-8'
+  '.mp3' = 'audio/mpeg'; '.m4a' = 'audio/mp4'; '.ogg' = 'audio/ogg'; '.wav' = 'audio/wav'
 }
+# Range answers are capped so one slow media request cannot block this single-threaded server
+$RANGE_CHUNK = 1MB
 
-function Send($ctx, [int]$code, [string]$type, [byte[]]$bytes) {
+function Send($ctx, [int]$code, [string]$type, [byte[]]$bytes, [int]$offset = 0, [int]$count = -1) {
+  if ($count -lt 0) { $count = $bytes.Length - $offset }
   $res = $ctx.Response
   $res.StatusCode = $code
   $res.ContentType = $type
   $res.Headers['Cache-Control'] = 'no-store'
-  $res.ContentLength64 = $bytes.Length
-  $res.OutputStream.Write($bytes, 0, $bytes.Length)
+  $res.ContentLength64 = $count
+  $res.OutputStream.Write($bytes, $offset, $count)
   $res.OutputStream.Close()
 }
 function SendJson($ctx, [int]$code, [string]$json) { Send $ctx $code 'application/json; charset=utf-8' $utf8.GetBytes($json) }
@@ -93,7 +97,27 @@ function ServeFile($ctx, [string]$path) {
   }
   $type = $MIME[[IO.Path]::GetExtension($full).ToLower()]
   if (-not $type) { $type = 'application/octet-stream' }
-  Send $ctx 200 $type ([IO.File]::ReadAllBytes($full))
+  $bytes = [IO.File]::ReadAllBytes($full)
+  $ctx.Response.Headers['Accept-Ranges'] = 'bytes'
+  # audio / video ask for byte ranges ("bytes=start-end")
+  $m = [regex]::Match([string]$ctx.Request.Headers['Range'], '^bytes=(\d*)-(\d*)$')
+  if ($m.Success -and $bytes.Length -gt 0) {
+    $len = $bytes.Length
+    if ($m.Groups[1].Value -eq '') { $start = [Math]::Max(0, $len - [int64]$m.Groups[2].Value); $end = $len - 1 }
+    else {
+      $start = [int64]$m.Groups[1].Value
+      $end = if ($m.Groups[2].Value -eq '') { $start + $RANGE_CHUNK - 1 } else { [int64]$m.Groups[2].Value }
+      $end = [Math]::Min($end, $len - 1)
+    }
+    if ($start -ge $len -or $start -gt $end) {
+      $ctx.Response.Headers['Content-Range'] = "bytes */$len"
+      Send $ctx 416 $type ([byte[]]@()); return
+    }
+    $ctx.Response.Headers['Content-Range'] = "bytes $start-$end/$len"
+    Send $ctx 206 $type $bytes ([int]$start) ([int]($end - $start + 1))
+    return
+  }
+  Send $ctx 200 $type $bytes
 }
 
 # Find a free port
@@ -133,8 +157,11 @@ try {
       elseif ($method -eq 'GET') { ServeFile $ctx $path }
       else { SendJson $ctx 405 '{"error":"not supported"}' }
     } catch {
-      Write-Host ("  error: " + $_.Exception.Message) -ForegroundColor Red
-      try { SendJson $ctx 500 '{"ok":false,"error":"server error"}' } catch { }
+      $msg = $_.Exception.Message
+      # the browser closed the connection (e.g. skipped audio): nothing to answer, just drop it
+      if ($msg -match 'network name is no longer available|connection was|forcibly closed|aborted') { try { $ctx.Response.Abort() } catch { }; continue }
+      Write-Host ("  error: " + $msg) -ForegroundColor Red
+      try { SendJson $ctx 500 '{"ok":false,"error":"server error"}' } catch { try { $ctx.Response.Abort() } catch { } }
     }
   }
 } finally {

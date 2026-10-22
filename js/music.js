@@ -94,18 +94,23 @@ Stories.Music = (() => {
     if (!AC) return false;
     ctx = new AC();
     out = ctx.createGain(); out.gain.value = cfg.vol * .7;
-    comp = ctx.createDynamicsCompressor(); comp.threshold.value = -16; comp.ratio.value = 4;
     analyser = ctx.createAnalyser(); analyser.fftSize = 64; analyser.smoothingTimeConstant = .8;
-    comp.connect(out); out.connect(analyser); analyser.connect(ctx.destination);
-    // yankı: üretilmiş, sönen gürültüden darbe tepkisi
-    verb = ctx.createConvolver();
-    const len = ctx.sampleRate * 2.4, ir = ctx.createBuffer(2, len, ctx.sampleRate);
-    for (let ch = 0; ch < 2; ch++) { const d = ir.getChannelData(ch); for (let i = 0; i < len; i++) d[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / len, 2.6); }
-    verb.buffer = ir;
-    const vg = ctx.createGain(); vg.gain.value = .32; verb.connect(vg); vg.connect(comp);
-    noise = ctx.createBuffer(1, ctx.sampleRate, ctx.sampleRate);
-    const nd = noise.getChannelData(0); for (let i = 0; i < nd.length; i++) nd[i] = Math.random() * 2 - 1;
+    ({ comp, verb, noise } = fxChain(ctx, out));
+    out.connect(analyser); analyser.connect(ctx.destination);
     return true;
+  }
+  // sıkıştırıcı + yankı + gürültü (canlı çalma ve dosyaya işleme aynı sesi versin)
+  function fxChain(c, dest) {
+    const cp = c.createDynamicsCompressor(); cp.threshold.value = -16; cp.ratio.value = 4; cp.connect(dest);
+    // yankı: üretilmiş, sönen gürültüden darbe tepkisi
+    const vb = c.createConvolver();
+    const len = c.sampleRate * 2.4, ir = c.createBuffer(2, len, c.sampleRate);
+    for (let ch = 0; ch < 2; ch++) { const d = ir.getChannelData(ch); for (let i = 0; i < len; i++) d[i] = (Math.random() * 2 - 1) * Math.pow(1 - i / len, 2.6); }
+    vb.buffer = ir;
+    const vg = c.createGain(); vg.gain.value = .32; vb.connect(vg); vg.connect(cp);
+    const nz = c.createBuffer(1, c.sampleRate, c.sampleRate);
+    const nd = nz.getChannelData(0); for (let i = 0; i < nd.length; i++) nd[i] = Math.random() * 2 - 1;
+    return { comp: cp, verb: vb, noise: nz };
   }
 
   function env(g, t, a, peak, d, sus, rel) {
@@ -215,16 +220,18 @@ Stories.Music = (() => {
   }
 
   // 🎧 dosya parçası: <audio> döngüde; Web Audio varsa ses düzeyi ve görselleştirici için ona bağlanır
+  // iOS: Web Audio'ya bağlanan <audio> sessiz kalabiliyor (sessiz anahtarı, askıdaki bağlam) → orada doğrudan çalar
+  const IOS = /iP(hone|ad|od)/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
   let audio = null, media = null, fileGain = null;
   function playFile(tr) {
-    if (!audio) { audio = new Audio(); audio.loop = true; audio.preload = 'auto'; }
-    if (ensure() && !media) {
+    if (!audio) { audio = new Audio(); audio.loop = true; audio.preload = 'auto'; audio.setAttribute('playsinline', ''); }
+    if (!IOS && ensure() && !media) {
       try { media = ctx.createMediaElementSource(audio); fileGain = ctx.createGain(); media.connect(fileGain); fileGain.connect(out); }
       catch (e) { media = null; }
     }
-    if (ctx && ctx.state === 'suspended') ctx.resume();
+    if (ctx && ctx.state !== 'running') ctx.resume();
     if (!audio.src.endsWith(tr.src)) audio.src = tr.src;
-    audio.currentTime = 0;
+    try { audio.currentTime = 0; } catch (e) { /* henüz yüklenmedi */ }
     if (fileGain) { const t = ctx.currentTime; fileGain.gain.cancelScheduledValues(t); fileGain.gain.setValueAtTime(0.0001, t); fileGain.gain.exponentialRampToValueAtTime(1, t + .8); }
     else audio.volume = cfg.vol;
     cur = { tr, file: true };
@@ -241,7 +248,7 @@ Stories.Music = (() => {
     if (tr.file) { stop(true); return playFile(tr); }
     if (!ensure()) return false;
     stop(true);
-    if (ctx.state === 'suspended') ctx.resume();
+    if (ctx.state !== 'running') ctx.resume();
     const bus = ctx.createGain(), wet = ctx.createGain();
     bus.gain.setValueAtTime(0.0001, ctx.currentTime); bus.gain.exponentialRampToValueAtTime(1, ctx.currentTime + .6);
     bus.connect(comp); wet.connect(verb); wet.gain.value = 1;
@@ -281,6 +288,47 @@ Stories.Music = (() => {
     const d = new Uint8Array(analyser.frequencyBinCount); analyser.getByteFrequencyData(d);
     return Array.from({ length: n }, (_, i) => d[Math.min(d.length - 1, 1 + Math.floor(i * (d.length - 2) / n))] / 255);
   }
+  /* ⬇️ indirme: dosya parçası olduğu gibi; üretilen parça sessizce (OfflineAudioContext) iki tur çalınıp WAV'a işlenir.
+   * Dönüş: Promise<{ blob, name }> ya da null */
+  async function exportTrack(tr) {
+    if (typeof tr === 'string') tr = byId(tr);
+    if (!tr) return null;
+    const safe = String(tr.name || 'parca').replace(/[\\/:*?"<>|]+/g, '').trim() || 'parca';
+    if (tr.file) { const r = await fetch(tr.src); if (!r.ok) throw new Error('Dosya okunamadı'); return { blob: await r.blob(), name: tr.src.split('/').pop() }; }
+    const OAC = window.OfflineAudioContext || window.webkitOfflineAudioContext;
+    if (!OAC) throw new Error('Tarayıcı ses işlemeyi desteklemiyor');
+    const st = STYLES[tr.style] || STYLES.lofi, spb = 60 / tr.bpm / 4, steps = 16 * 8 * 2, rate = 44100, dur = steps * spb + 3;
+    const oc = new OAC(2, Math.ceil(dur * rate), rate);
+    // çalma fonksiyonları ctx / cur / comp / verb / noise'u kullanır: işleme süresince geçici olarak bu bağlama geçilir
+    const saved = { ctx, cur, comp, verb, noise };
+    try {
+      const master = oc.createGain(); master.gain.value = .7; master.connect(oc.destination);
+      ctx = oc;
+      ({ comp, verb, noise } = fxChain(oc, master));
+      const bus = oc.createGain(), wet = oc.createGain();
+      bus.connect(comp); wet.connect(verb);
+      cur = { tr, st, ph: phrase(tr, st), bus, wet };
+      for (let s = 0; s < steps; s++) schedule(s, .05 + s * spb);
+      // sonda yumuşak kapanış
+      master.gain.setValueAtTime(.7, dur - 3); master.gain.linearRampToValueAtTime(0, dur - .2);
+    } finally { ({ ctx, cur, comp, verb, noise } = saved); }
+    const buf = await oc.startRendering();
+    return { blob: wav(buf), name: `${safe}.wav` };
+  }
+  // 16 bit stereo WAV
+  function wav(buf) {
+    const n = buf.length, chs = buf.numberOfChannels, data = new DataView(new ArrayBuffer(44 + n * chs * 2));
+    const str = (o, s) => [...s].forEach((c, i) => data.setUint8(o + i, c.charCodeAt(0)));
+    str(0, 'RIFF'); data.setUint32(4, 36 + n * chs * 2, true); str(8, 'WAVE'); str(12, 'fmt ');
+    data.setUint32(16, 16, true); data.setUint16(20, 1, true); data.setUint16(22, chs, true); data.setUint32(24, buf.sampleRate, true);
+    data.setUint32(28, buf.sampleRate * chs * 2, true); data.setUint16(32, chs * 2, true); data.setUint16(34, 16, true);
+    str(36, 'data'); data.setUint32(40, n * chs * 2, true);
+    const ch = [...Array(chs).keys()].map(i => buf.getChannelData(i));
+    let o = 44;
+    for (let i = 0; i < n; i++) for (let c = 0; c < chs; c++) { const v = Math.max(-1, Math.min(1, ch[c][i])); data.setInt16(o, v < 0 ? v * 0x8000 : v * 0x7fff, true); o += 2; }
+    return new Blob([data], { type: 'audio/wav' });
+  }
+
   // 🏠 menü müziği: ne zaman çalacağına uygulama karar verir (app.js syncMusic)
   function background(id, on) {
     if (id !== undefined) cfg.bg = id || '';
@@ -290,7 +338,7 @@ Stories.Music = (() => {
   }
 
   return {
-    list, byId, info, generate, remove, rename, play, stop, volume, levels, background,
+    list, byId, info, generate, remove, rename, play, stop, volume, levels, background, exportTrack,
     playing: () => cur ? cur.tr : null,
     onChange: f => { subs.add(f); return () => subs.delete(f); },
     styles: STYLES
