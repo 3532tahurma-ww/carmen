@@ -1187,7 +1187,13 @@ Stories.BOT_RULES = {
         "Her damlasını hissettim {sen} 💦",
         "Bu kadarını beklemiyordum… cömertsin 😈",
         "Dalga dalga geldi… durmadı 😵‍💫",
-        "Ne güzel boşaldın… gurur duydum seninle 💗"
+        "Ne güzel boşaldın… gurur duydum seninle 💗",
+        "Ahh… sıcak sıcak fışkırdın 🥵💦",
+        "Zonklayarak boşaldın, hepsini hissettim 😩",
+        "Bu kadar azgın boşalmanı seviyorum 😈",
+        "Hâlâ akıyor… durmuyor 😵‍💫💦",
+        "Beni dölünle boyadın 🥵",
+        "Daha fazlasını istiyorum, bitmedi 😈"
       ],
       "traits": [],
       "chars": [],
@@ -1221,7 +1227,13 @@ Stories.BOT_RULES = {
         "Nasıl da birikmişsin, bir anda bıraktın içime 😩",
         "Çıkarınca taşacak… biliyorum 🫣💦",
         "İçimi ısıtıyor, yavaş yavaş yayılıyor 🫠",
-        "Bunca dölü nereye sakladın {sen}? 😈"
+        "Bunca dölü nereye sakladın {sen}? 😈",
+        "İçime fışkırdın… her atışını saydım 😩💦",
+        "Rahmimi doldurdun, taşıyor 🥵",
+        "Dölün içimde kaynıyor 😵‍💫",
+        "Ahh… en derine bıraktın 😩",
+        "Çıkarma! Biraz daha içimde kal 🥺💦",
+        "Sıcacık dolum… bacaklarımdan süzülüyor 😈"
       ],
       "traits": [],
       "chars": [],
@@ -1251,7 +1263,11 @@ Stories.BOT_RULES = {
         "Arkamı ağzına kadar doldurdun 🥵",
         "Yoğun ve sıcak… her yerimde hissediyorum 😵‍💫",
         "Kalçamı sıkıyorum ki bir damla kaçmasın 🍑😈",
-        "Nasıl da birikmişsin, hepsini arkama verdin 😩"
+        "Nasıl da birikmişsin, hepsini arkama verdin 😩",
+        "Arkamı dölle doldurdun 😩💦",
+        "İçimde zonklayarak boşaldın… ahh 🥵",
+        "Arkamdan akıyor, hepsi seninki 😈",
+        "Bu kadar derine boşalmanı seviyorum 😵‍💫"
       ],
       "traits": [],
       "chars": [],
@@ -1283,7 +1299,11 @@ Stories.BOT_RULES = {
         "Yutkunmaya yetişemedim 🥵",
         "Kıvamına bayıldım, çok yoğundu 😈",
         "Dudaklarımdan taştı bile 🫣💦",
-        "Bir yudumda bitmedi, iki kez yuttum 😋"
+        "Bir yudumda bitmedi, iki kez yuttum 😋",
+        "Ağzımı doldurdun, taşırdın 😋💦",
+        "Boğazıma fışkırdın… hepsini yuttum 😈",
+        "Dudaklarımdan süzülüyor, yala istersen 🥵",
+        "Tadın ağzımda… daha ver 😩"
       ],
       "traits": [],
       "chars": [],
@@ -1311,7 +1331,10 @@ Stories.BOT_RULES = {
         "Göğüslerimi bembeyaz boyadın 😏💦",
         "Yoğun ve sıcak, yavaşça süzülüyor 🥵",
         "Ne kadar bol… göğsümde göl oldu 😳",
-        "Parmağımla alıp tadına bakıyorum… mmm 😋"
+        "Parmağımla alıp tadına bakıyorum… mmm 😋",
+        "Göğüslerimi dölle boyadın 😈💦",
+        "Göğsümden süzülüyor, sıcacık 🥵",
+        "Çeneme kadar fışkırdı 😳💦"
       ],
       "traits": [],
       "chars": [],
@@ -1339,7 +1362,10 @@ Stories.BOT_RULES = {
         "Kalçamda bembeyaz izler… 😈💦",
         "Ne kadar çokmuş, belime kadar yayıldı 😳",
         "Sıcacık ve kalın… kayıp gidiyor 🥵",
-        "Bunu temizlemek uzun sürecek 😏💦"
+        "Bunu temizlemek uzun sürecek 😏💦",
+        "Kalçamı dölle kapladın 😈💦",
+        "Belime kadar fışkırdın 🥵",
+        "Kalçamdan akıyor, yala istersen 😏"
       ],
       "traits": [],
       "chars": [],
@@ -1365,7 +1391,13 @@ Stories.BOT_RULES = {
         "Bir daha… yapabilir misin? 🥺",
         "Bu… hayatımın en güzeliydi {sen} 💗",
         "Kendimi kaybettim… 😵‍💫💦",
-        "Bırakma beni… daha geliyor 😩💗"
+        "Bırakma beni… daha geliyor 😩💗",
+        "Ahhh! Geliyorum… geldim… 😵‍💫💦",
+        "Seni sıkarak geliyorum… ahh 😩",
+        "Bütün vücudum kasıldı, fışkırıyorum 🥵💦",
+        "Tanrım… durma… ahhh 😩",
+        "Beni paramparça ettin 😵‍💫",
+        "Hâlâ titriyorum, bir daha getir beni 🥵"
       ],
       "traits": [],
       "chars": [],
@@ -2428,7 +2460,19 @@ Stories.BOT_RULES = {
         "Kasılıyorsun… geliyor işte 😈💦",
         "Kendini tutma, seni boşaltmak istiyorum 😩",
         "Şimdi… şimdi {sen}! 💦",
-        "Bitir beni de seni de… hadi 🔥"
+        "Bitir beni de seni de… hadi 🔥",
+        "Hadi ver hepsini, şimdi! 🥵💦",
+        "Zonkladığını hissediyorum… boşal artık 😩",
+        "Bütün dölünü istiyorum, tutma 😈",
+        "İçimde patla {sen}… 💦",
+        "Gözlerini kapatma, bana bakarak boşal 😈",
+        "Ah, sertleştin… geliyorsun değil mi? 🥵",
+        "Benim için ver hepsini, bir damla saklama 😩💦",
+        "Yalvartma beni, boşal artık 😵‍💫",
+        "Seni sağmak istiyorum son damlana kadar 😈",
+        "Şimdi! Şimdi bırak kendini 💦💦",
+        "Nefesin kesildi, az kaldı… 😩 hadi",
+        "Doldur beni, bekliyorum 🥵"
       ],
       "traits": [],
       "chars": [],
@@ -2616,7 +2660,9 @@ Stories.BOT_RULES = {
         "Nefesimiz aynı anda kesildi 💓💦",
         "Üstümdeyken içime gürce boşaldın… 😩💦",
         "Bacaklarımla seni kilitledim, hepsini içime aldım 😈",
-        "Gözlerime bakarak doldurdun beni… 💗💦"
+        "Gözlerime bakarak doldurdun beni… 💗💦",
+        "Üstümde titreyerek içime boşaldın 😩💦",
+        "Bacaklarımla kilitledim, kaçamadın… hepsi içimde 😈"
       ],
       "traits": [],
       "chars": [],
@@ -2642,7 +2688,9 @@ Stories.BOT_RULES = {
         "Dizlerim çözüldü, yatağa yığıldım 🫠",
         "Arkamdan bütün gücünle doldurdun… 😩💦",
         "Kalçamı çekip en derine bıraktın 😈🍑",
-        "Bu kadar bolunu doggy'de mi saklıyordun? 😏"
+        "Bu kadar bolunu doggy'de mi saklıyordun? 😏",
+        "Kalçamı tutup içime fışkırdın 🥵💦",
+        "Arkamdan inleyerek doldurdun beni 😩"
       ],
       "traits": [],
       "chars": [],
@@ -2668,7 +2716,9 @@ Stories.BOT_RULES = {
         "Ritmi ben tuttum, sonu sen getirdin 💦",
         "Üstündeyken içime fışkırdığını hissettim… 😩💦",
         "Ben indikçe sen doldurdun beni 😈",
-        "İnmeden önce son damlana kadar sağdım seni 😏"
+        "İnmeden önce son damlana kadar sağdım seni 😏",
+        "Üstündeyken içimde patladın 😈💦",
+        "Sağdım seni, son damlana kadar 🥵"
       ],
       "traits": [],
       "chars": [],
@@ -2780,7 +2830,9 @@ Stories.BOT_RULES = {
         "Çıkarma daha… biraz bekle 😩",
         "Arkamı ağzına kadar doldurdun 🥵💦",
         "Derinden, gürce… hepsi arkamda 😩",
-        "Sıcaklığın arkamdan yayılıyor… mmm 🫠"
+        "Sıcaklığın arkamdan yayılıyor… mmm 🫠",
+        "Arkamı ağzına kadar doldurdun 😩💦",
+        "İçimde zonklarken bağırdım 🥵"
       ],
       "traits": [],
       "chars": [],
@@ -2830,7 +2882,9 @@ Stories.BOT_RULES = {
         "Dizlerimin üstünden kalkmadan bitti 😈",
         "Ağzıma kadar dolu… bembeyaz 😋💦",
         "Koyu ve sıcak… hepsini yuttum 😈",
-        "Dilimin üstünde bıraktığın kıvam… mmm 😋"
+        "Dilimin üstünde bıraktığın kıvam… mmm 😋",
+        "Ağzıma boşaldın, hepsini yuttum 😋💦",
+        "Saçımı çekerek ağzıma fışkırdın 😈"
       ],
       "traits": [],
       "chars": [],
@@ -2853,7 +2907,9 @@ Stories.BOT_RULES = {
         "Sıkıştırırken bitirdin… tam istediğim gibi 😈",
         "Göğüslerim sırılsıklam, sen de nefes nefese 🥵",
         "Göğüslerimin arası bembeyaz bir göl oldu 😏💦",
-        "Bu kadar yoğununu göğsüme mi sakladın? 😈"
+        "Bu kadar yoğununu göğsüme mi sakladın? 😈",
+        "Göğüslerimin arasında fışkırdın 🥵💦",
+        "Çeneme kadar sıçradı, bayıldım 😈"
       ],
       "traits": [],
       "chars": [],
@@ -2876,7 +2932,8 @@ Stories.BOT_RULES = {
         "Elimle bitirdim seni, gururluyum 😏",
         "Bileğime kadar… mmm 🥵",
         "Avucumu bembeyaz doldurdun 😏💦",
-        "Parmaklarımdan damla damla akıyor… ne çok 🥵"
+        "Parmaklarımdan damla damla akıyor… ne çok 🥵",
+        "Elimde fışkırdın, parmaklarım sırılsıklam 😈💦"
       ],
       "traits": [],
       "chars": [],
@@ -2948,7 +3005,12 @@ Stories.BOT_RULES = {
         "Ağırlığını hissediyorum içimde… ne kadar çok 🥵",
         "Bembeyaz, yoğun… ağzına kadar doldum 🥵",
         "Bu kadar çok olunca taşıyor 😳💦",
-        "Nasıl da birikmişsin, hepsini verdin 😩"
+        "Nasıl da birikmişsin, hepsini verdin 😩",
+        "Bembeyaz, kalın, sıcak… her damlası benim 😩💦",
+        "Bu kadar bol olacağını tahmin etmemiştim 😳",
+        "Gürce aktın, içim doldu taştı 🥵",
+        "Ağzına kadar doldurdun beni 😵‍💫💦",
+        "Böyle cömert olmana bayılıyorum 😈"
       ],
       "traits": [],
       "chars": [],
@@ -2972,7 +3034,10 @@ Stories.BOT_RULES = {
         "Yumuşacık aktın 🫠",
         "Ne az ne çok… mükemmel 💗",
         "Güzel bir doz, sıcacık 😌💦",
-        "Tam kararında doldurdun 😏"
+        "Tam kararında doldurdun 😏",
+        "Tam kıvamında, içimi ısıttı 😌",
+        "Sıcacık bir doz 😏💦",
+        "Güzel doldurdun beni 🥰"
       ],
       "traits": [],
       "chars": [],
@@ -2996,7 +3061,10 @@ Stories.BOT_RULES = {
         "Az ama sıcacık… yine de seviyorum 🥰",
         "Toparlanınca yine bol bol vereceksin 😏💦",
         "Az ama yine de içimi ısıttı 🥰",
-        "Biraz dinlen, sonra bol bol 😏"
+        "Biraz dinlen, sonra bol bol 😏",
+        "Az aktı ama hissettim 😏",
+        "Bu sefer biraz idareli 😈",
+        "Toparlan, sonra daha bol 😌"
       ],
       "traits": [],
       "chars": [],
@@ -3020,7 +3088,10 @@ Stories.BOT_RULES = {
         "Koyu, ağır… gerçek bir erkek gibi verdin 😏💦",
         "Bir dahakine korunmasız olursak… 🙈",
         "Bu yoğunluk… çok güçlüsün 😈",
-        "Döl dolu doldurdun beni 🥵"
+        "Döl dolu doldurdun beni 🥵",
+        "Koyu ve yoğun… içimde ağır ağır yayılıyor 🥵",
+        "Bu döl çok güçlü 😳",
+        "Böyle yoğun boşalınca bacaklarım titredi 🫠"
       ],
       "traits": [],
       "chars": [],
@@ -3043,7 +3114,10 @@ Stories.BOT_RULES = {
         "Seni tamamen tükettim galiba 😈",
         "Yarına kadar dolarsın, merak etme 😏💦",
         "Berrak berrak… tükendin 😏",
-        "Biraz su iç, toparlan 😌"
+        "Biraz su iç, toparlan 😌",
+        "Biraz sulu bu sefer 😏",
+        "Çok kez boşaldın, yoruldun 😌",
+        "Su iç, dinlen 😈"
       ],
       "traits": [],
       "chars": [],
@@ -3062,7 +3136,9 @@ Stories.BOT_RULES = {
         "Korunuyoruz, istediğin kadar sert 😈",
         "İçinde bitirebilirsin, kondom var nasılsa 😩",
         "Kondomu doldurmanı istiyorum 🥵",
-        "Merak etme, güvendeyiz… devam 💦"
+        "Merak etme, güvendeyiz… devam 💦",
+        "Kondomu taşır, boşal hadi 😈",
+        "Doldur o kondomu 🥵"
       ],
       "traits": [],
       "chars": [],
@@ -3083,7 +3159,10 @@ Stories.BOT_RULES = {
         "Son anda çıkar, söz verdin 🥺",
         "Dikkat… içime değil, dışarı 😩💦",
         "Hissettiğin an çek, tamam mı? 😳",
-        "Göğüslerime boşal, içime değil 😏"
+        "Göğüslerime boşal, içime değil 😏",
+        "Çıkar! Göğüslerime boşal, hemen 😩💦",
+        "Dışarı… ama her yerime boşal 😈",
+        "Son anda çek ve karnımı boya 🥵"
       ],
       "traits": [],
       "chars": [],
@@ -3102,7 +3181,10 @@ Stories.BOT_RULES = {
         "İçime boşal, hapımı içiyorum 😈💦",
         "Korkma, ben korunuyorum… hepsini ver 😩",
         "Hap var, düşünme… doldur beni 🥵",
-        "Çıkarma sakın, hap alıyorum 😏💦"
+        "Çıkarma sakın, hap alıyorum 😏💦",
+        "Hap var, içime fışkırt hepsini 😈💦",
+        "Doldur beni sonuna kadar, korkma 🥵",
+        "İçimde bitir, her damlasını istiyorum 😩"
       ],
       "traits": [],
       "chars": [],
@@ -3139,7 +3221,10 @@ Stories.BOT_RULES = {
         "Çıkarma sakın, içimde bitir 😈",
         "Ne olursa olsun… içime 🥵",
         "Seni olduğun gibi istiyorum, dolu dolu 💦",
-        "Bırakma beni, içime ver hepsini 😩"
+        "Bırakma beni, içime ver hepsini 😩",
+        "İçime! Hepsini içime ver 🥵💦",
+        "Beni dölle doldur 😩",
+        "Çıkarırsan seni öldürürüm, içime 😈"
       ],
       "traits": [],
       "chars": [],
@@ -3158,7 +3243,9 @@ Stories.BOT_RULES = {
         "Sakın içime boşalma, ciddiyim 😣",
         "Yaklaşıyorsan söyle, çıkar 😳",
         "Hiçbir şey kullanmıyoruz… içime olmaz 🙅‍♀️",
-        "Lütfen dikkatli ol {sen} 🥺"
+        "Lütfen dikkatli ol {sen} 🥺",
+        "Sakın içime… ama nasıl istiyorum… 😩",
+        "Of, içime boşalmanı istiyorum ama olmaz 😳"
       ],
       "traits": [],
       "chars": [],
@@ -3197,7 +3284,25 @@ Stories.BOT_RULES = {
         "İçimde senden bir parça var artık 🥺💕",
         "Baba oluyorsun {sen}… 😳🍼",
         "Bunu planlamamıştık ama… mutluyum 🥰",
-        "O kadar dolu doldurdun ki kaçınılmazdı 😩💗"
+        "O kadar dolu doldurdun ki kaçınılmazdı 😩💗",
+        "Yoğun spermin yumurtama girdi sonunda 😳💗",
+        "Senin gibi capcanlı spermlerin yumurtama girdi… ah 🥺",
+        "İçimde bir şey değişti… spermlerin yumurtamı buldu 😩💗",
+        "O kadar yoğun doldurdun ki biri mutlaka yetişti 🫠",
+        "Hissettim… en hızlısı yumurtama girdi 😳",
+        "Döllendim… senin dölünle 🥺💞",
+        "Bu kadar güçlü spermlere dayanamazdı yumurtam 😩",
+        "Rahmime kadar ulaştın, şimdi içimde büyüyecek 🤰",
+        "Bembeyaz dölün içimde yuvasını buldu 💗",
+        "Yumurtam seni bekliyormuş meğer 😏💞",
+        "Spermlerin yarıştı, biri kazandı… bebeğimiz 🥺",
+        "Bu sefer kaçışı yoktu, tam zamanında doldurdun 😳💦",
+        "İçimde can bulduk… senin capcanlı spermlerinle 🤰💗",
+        "Tam doğurgan olduğum an doldurdun beni… 😩",
+        "Rahmim seni kabul etti 🥺💞",
+        "Sıcacık dölün yumurtamı sardı… hissettim 🫠",
+        "Bu kadar dolu boşalınca yumurtamın şansı yoktu 😳",
+        "Spermlerin içimde yolunu buldu… artık ikimizden bir parça var 💗"
       ],
       "traits": [],
       "chars": [],
@@ -4116,13 +4221,17 @@ Stories.BOT_RULES = {
       "name": "Göster / soyun",
       "category": "🗣️ Komutlar",
       "when": [
-        "soyun-|göster-|goster-|çıkar şunu|cikar sunu"
+        "soyun-|göster-|goster-|çıkar şunu|cikar sunu|soyunsana|çıkar kıyafet|cikar kiyafet|üstünü çıkar|ustunu cikar|çırılçıplak|cirilciplak|çıplak ol|ciplak ol"
       ],
       "reply": [
         "Böyle mi? 😏",
         "Yavaşça çıkarıyorum… izle 😈",
         "Beğendin mi? 🙈",
-        "Bak doyasıya 😏"
+        "Bak doyasıya 😏",
+        "Yavaş yavaş soyunuyorum… izle 😈",
+        "Tek tek çıkarıyorum 😏",
+        "Şimdi çıplağım, mutlu musun? 🙈",
+        "Gözlerini benden ayırma 😈"
       ],
       "traits": [],
       "chars": [],
@@ -4426,7 +4535,17 @@ Stories.BOT_RULES = {
         "Az kaldı… sakın durma {sen} 😵‍💫",
         "Bacaklarım titriyor, geliyorum 🫠",
         "Bir dakika daha… ahh 😩💦",
-        "Beni bitirmek üzeresin 🥵"
+        "Beni bitirmek üzeresin 🥵",
+        "Durma! Sakın durma! 😩💦",
+        "Geliyorum… ahh… geliyorum! 😵‍💫",
+        "Bacaklarım kasılıyor, beni bitir 🥵",
+        "Şuraya… tam oraya… ahh 😩",
+        "Bir saniye daha… ahhh 💦",
+        "Seni sıkıyorum, hissediyor musun? 😈",
+        "Bütün vücudum titriyor… az kaldı 🫠",
+        "Beni getir {sen}, lütfen! 🥺💦",
+        "Adını haykıracağım… 😩",
+        "Ahh evet evet evet… 😵‍💫"
       ],
       "traits": [],
       "chars": [],
@@ -10565,7 +10684,10 @@ Stories.BOT_RULES = {
         "Hafif bir ıslaklık, ama nasıl hissettim bir bilsen 😩",
         "Sessiz ama derin bir orgazmdı 🥺💗",
         "Birkaç damla… daha fazlası için uğraşman lazım 😏",
-        "Yavaşça aktı, tatlı bir sızı bıraktı 🫠"
+        "Yavaşça aktı, tatlı bir sızı bıraktı 🫠",
+        "Küçücük bir dalga ama içimi titretti 🫠",
+        "Sessizce geldim… fark ettin mi? 🙈",
+        "Bir iki damla, ama kalbim hâlâ çarpıyor 💓"
       ],
       "traits": [],
       "chars": [],
@@ -10586,7 +10708,10 @@ Stories.BOT_RULES = {
         "Bacaklarımın arası nemli… 🥵",
         "Biraz aktı… utandım 🙈",
         "Hafif bir dalga… daha fazlasını istiyorum 😈",
-        "Çarşafta küçük bir iz bıraktım 🫣"
+        "Çarşafta küçük bir iz bıraktım 🫣",
+        "Islaklığımı hissediyor musun? 😏",
+        "Akmaya başladım, devam et 😩",
+        "Bu kadarla bitmez, biliyorum 😈"
       ],
       "traits": [],
       "chars": [],
@@ -10607,7 +10732,11 @@ Stories.BOT_RULES = {
         "Akıyorum… durduramıyorum 🫠",
         "Bacaklarımdan süzülüyor 🥵",
         "Bu kadar ıslanacağımı bilmiyordum 😳💦",
-        "Her yer ıslak, senin yüzünden 😈"
+        "Her yer ıslak, senin yüzünden 😈",
+        "Tenim kayganlaştı, senin eserin 😈💦",
+        "Islaklığım bacaklarıma kadar indi 🥵",
+        "Böyle akacağımı bilsem havlu serdirdim 😅",
+        "Her kasılmada biraz daha aktım 🫠"
       ],
       "traits": [],
       "chars": [],
@@ -10628,7 +10757,11 @@ Stories.BOT_RULES = {
         "Sel gibi aktım… utanıyorum ama durduramadım 🫣",
         "Bu kadarı hiç olmamıştı 😩💦💦",
         "Yatağı değiştirmemiz lazım 😅💦",
-        "Vücudum boşaldı sanki 🫠💦"
+        "Vücudum boşaldı sanki 🫠💦",
+        "Böyle bir şey hiç başıma gelmemişti 😳💦",
+        "Seni de sırılsıklam ettim 🙈💦",
+        "Bacaklarım sudan çıkmış gibi 🫠",
+        "Bu kadar su nereden geldi?! 😵‍💫"
       ],
       "traits": [],
       "chars": [],
@@ -10650,7 +10783,12 @@ Stories.BOT_RULES = {
         "Seni de ıslattım, özür dilerim 🙈💦",
         "Kontrol edemedim, dalga dalga geldi 🌊😩",
         "Hayatımın en ıslak orgazmı 🥵💦",
-        "Sana fışkırtmayı öğrettin bana 😈💦"
+        "Sana fışkırtmayı öğrettin bana 😈💦",
+        "Duvara kadar sıçradı mı? 😳💦",
+        "Fışkırırken adını haykırdım 😩",
+        "Bunu bir daha yaşamak istiyorum 🥵💦",
+        "Tutamadım… her şey sırılsıklam 🌊",
+        "Beni böyle fışkırtan ilk kişisin 😈"
       ],
       "traits": [],
       "chars": [],
@@ -10671,7 +10809,10 @@ Stories.BOT_RULES = {
         "Orgazm olunca süt akıyor, hissediyor musun? 🍼💦",
         "Göğüslerim ıslandı… 🙈🍼",
         "Tadına bakmak ister misin? 😏🍼",
-        "Bebek için mi yoksa senin için mi bu? 😈🍼"
+        "Bebek için mi yoksa senin için mi bu? 😈🍼",
+        "Orgazm olunca göğüslerim de boşalıyor 😳🍼",
+        "Sütüm göğsümden süzülüyor, yala istersen 😏🍼",
+        "Hem aşağıdan hem yukarıdan… 🙈🍼💦"
       ],
       "traits": [],
       "chars": [],
@@ -10691,7 +10832,10 @@ Stories.BOT_RULES = {
         "Göğüslerimden süt fışkırdı 😳🍼💦",
         "Durduramıyorum, süt akıyor 🍼😩",
         "Her yer süt oldu… 😵‍💫🍼",
-        "Emzir beni… yani sen em 😈🍼"
+        "Emzir beni… yani sen em 😈🍼",
+        "Göğüslerimden süt fıştı, yüzüne geldi mi? 😳🍼",
+        "Bu kadar sütü ben de beklemiyordum 🍼💦",
+        "Göğüslerim boşaldıkça rahatlıyorum 😩🍼"
       ],
       "traits": [],
       "chars": [],
@@ -10710,7 +10854,10 @@ Stories.BOT_RULES = {
         "Bu sefer sulu sulu… seni çok mu yordum? 😏",
         "Su gibi aktı, toparlanman lazım 😌",
         "Berrak ve az… dinlen biraz 😈",
-        "Bitkin düşmüşsün ama hâlâ tatlısın 🥰"
+        "Bitkin düşmüşsün ama hâlâ tatlısın 🥰",
+        "Bu sefer su gibiydi… çok kez mi geldin? 😏",
+        "Berrak berrak, dinlenme lazım 😌",
+        "Sulu ama sıcak 🥰"
       ],
       "traits": [],
       "chars": [],
@@ -10729,7 +10876,10 @@ Stories.BOT_RULES = {
         "Az ama sıcacık 😏",
         "Biraz daha birikmesi lazım 😈",
         "Bugün çok mu harcadın? 🙄",
-        "Az olsun, öz olsun 🥰"
+        "Az olsun, öz olsun 🥰",
+        "Bir yudumluk… 😏",
+        "Biraz daha bekleyince daha çok olur 😈",
+        "Az ama tadı güzel 😋"
       ],
       "traits": [],
       "chars": [],
@@ -10748,7 +10898,10 @@ Stories.BOT_RULES = {
         "Tam kıvamında 😏💦",
         "Güzel bir doz 😈",
         "Ne az ne çok, mükemmel 🥰",
-        "Sıcacık ve tam kararında 😩"
+        "Sıcacık ve tam kararında 😩",
+        "Sıcacık ve tam kıvamında aktı 😌",
+        "Güzel bir boşalma 😈",
+        "Ne fazla ne az 🥰"
       ],
       "traits": [],
       "chars": [],
@@ -10768,7 +10921,11 @@ Stories.BOT_RULES = {
         "Bu kıvam… çok yoğunsun 😩💦",
         "Kremamsı… her yerimde hissediyorum 😈",
         "Bu kadar kalın olunca akmıyor bile 😳",
-        "Nasıl da birikmişsin 🥵"
+        "Nasıl da birikmişsin 🥵",
+        "Akmıyor bile, öyle koyu 😳",
+        "Bembeyaz bir krema gibi 😈",
+        "Bu yoğunluk… seni çok iyi beslemişim 😏",
+        "Teninde iz bıraktı 🥵"
       ],
       "traits": [],
       "chars": [],
@@ -10788,7 +10945,11 @@ Stories.BOT_RULES = {
         "Bu kadarını hiç görmedim 🥵💦",
         "Gürce aktın, durmadın 😩",
         "Beni tamamen doldurdun 😵‍💫💦",
-        "Bunca dölü nerede sakladın? 😈"
+        "Bunca dölü nerede sakladın? 😈",
+        "Bir türlü bitmedi, dalga dalga geldi 😳💦",
+        "Her yer döl oldu 🥵",
+        "Bu kadarını sıkmak için kaç gün bekledin? 😈",
+        "Taştı, aktı, damladı… 😩"
       ],
       "traits": [],
       "chars": [],
@@ -10807,7 +10968,9 @@ Stories.BOT_RULES = {
         "Bu sefer bomboş, seni tükettim 😈",
         "Hiçbir şey kalmadı sende 😏",
         "Dinlenme zamanı 😌",
-        "Kuru kuru… ama yine de güzeldi 🥰"
+        "Kuru kuru… ama yine de güzeldi 🥰",
+        "Kupkuru 😏 seni bitirdim",
+        "Bir damla bile kalmadı 😈"
       ],
       "traits": [],
       "chars": [],
@@ -10825,7 +10988,9 @@ Stories.BOT_RULES = {
       "reply": [
         "Biraz zayıf bu sefer 😏",
         "Çok kez oldu, berraklaştın 😌",
-        "Toparlan, sonra tekrar 😈"
+        "Toparlan, sonra tekrar 😈",
+        "Zayıf ama hâlâ sıcak 😌",
+        "Biraz dinlenmen lazım 😏"
       ],
       "traits": [],
       "chars": [],
@@ -10843,7 +11008,9 @@ Stories.BOT_RULES = {
       "reply": [
         "Sağlıklı ve normal 😏",
         "Tam olması gerektiği gibi 😌",
-        "İyi gidiyorsun 😈"
+        "İyi gidiyorsun 😈",
+        "Sağlıklı bir doz 😌",
+        "Tam olması gerektiği gibi 😏"
       ],
       "traits": [],
       "chars": [],
@@ -10861,7 +11028,9 @@ Stories.BOT_RULES = {
       "reply": [
         "Çok güçlüsün bugün 😈",
         "Bu kadar yoğun… dikkatli olmalıyız 😳",
-        "Döl yüklü 🥵"
+        "Döl yüklü 🥵",
+        "Döl yüklü… dikkat etmeliyiz 😳",
+        "Bu güçte bir boşalma… 🥵"
       ],
       "traits": [],
       "chars": [],
@@ -10881,7 +11050,10 @@ Stories.BOT_RULES = {
         "Tam döl yüklüsün 😈",
         "Bunu tutmak çok zor olacak 🥵",
         "Koyu, ağır… gerçek bir erkek gibi 😏💦",
-        "Bir dahakine korunmasız olursak… 🙈"
+        "Bir dahakine korunmasız olursak… 🙈",
+        "Bu yoğunlukta bir döl… hamile bırakır bu 😳",
+        "Her damlası güçlü 😈",
+        "Bunu içimde hissetmek… 🥵"
       ],
       "traits": [],
       "chars": [],
@@ -10899,7 +11071,10 @@ Stories.BOT_RULES = {
       "reply": [
         "Birkaç damla… ıslanmaya başladım 🙈",
         "Hafif bir nem… devam et 😏",
-        "Damla damla… 🫠"
+        "Damla damla… 🫠",
+        "Damla damla ıslanıyorum… 😳",
+        "Hafif bir ıslaklık, ama sen başlattın 😏",
+        "Daha fazlası gelecek, sabret 😈"
       ],
       "traits": [],
       "chars": [],
@@ -10917,7 +11092,10 @@ Stories.BOT_RULES = {
       "reply": [
         "Islandım biraz 😳",
         "Bacaklarım nemli 🥵",
-        "Devam edersen daha fazlası gelecek 😈"
+        "Devam edersen daha fazlası gelecek 😈",
+        "Külotum ıslandı 🙈",
+        "Islanıyorum, hissediyor musun? 😏",
+        "Bu daha başlangıç 😩"
       ],
       "traits": [],
       "chars": [],
@@ -10935,7 +11113,10 @@ Stories.BOT_RULES = {
       "reply": [
         "Sırılsıklamım 😩",
         "Akıyorum… 🫠💦",
-        "Bu kadar ıslak olduğumu hissediyor musun? 🥵"
+        "Bu kadar ıslak olduğumu hissediyor musun? 🥵",
+        "Islaklığım taşıyor 😩💦",
+        "Her yer kaygan 😈",
+        "Bu kadar ıslak olmam senin suçun 🥵"
       ],
       "traits": [],
       "chars": [],
@@ -10953,7 +11134,10 @@ Stories.BOT_RULES = {
       "reply": [
         "Çarşaflar ıslandı 😵‍💫💦",
         "Sel gibi… 🫣💦",
-        "Durduramıyorum 😩💦"
+        "Durduramıyorum 😩💦",
+        "Çarşafı değiştirmemiz lazım 😅💦",
+        "Su gibi akıyorum 😳💦",
+        "Bu kadarını kontrol edemiyorum 🫠"
       ],
       "traits": [],
       "chars": [],
@@ -10972,7 +11156,10 @@ Stories.BOT_RULES = {
         "Fışkırdım! 😳💦💦",
         "Seni ıslattım 🙈💦",
         "Kontrol edemiyorum… 🌊😩",
-        "Bir daha yap, bir daha fışkırtayım 😈💦"
+        "Bir daha yap, bir daha fışkırtayım 😈💦",
+        "Fışkırttın beni! 😳💦",
+        "Dalga dalga… 🌊😩",
+        "Yüzüne mi geldi? 🙈💦"
       ],
       "traits": [],
       "chars": [],
@@ -10990,7 +11177,9 @@ Stories.BOT_RULES = {
       "reply": [
         "Göğüslerimden birkaç damla süt 🍼🙈",
         "Bak, damlıyor 😳🍼",
-        "Tadına bakmak ister misin? 😏🍼"
+        "Tadına bakmak ister misin? 😏🍼",
+        "Bir damla süt… tadı tatlı 😏🍼",
+        "Göğsümün ucunda bir damla var 🙈🍼"
       ],
       "traits": [],
       "chars": [],
@@ -11008,7 +11197,9 @@ Stories.BOT_RULES = {
       "reply": [
         "Biraz süt geliyor 🍼",
         "Göğüslerim nemlendi 🙈🍼",
-        "Emersen daha çok gelir 😏🍼"
+        "Emersen daha çok gelir 😏🍼",
+        "Göğüslerim yavaş yavaş akıyor 🍼",
+        "Biraz süt geldi, emmek ister misin? 😈🍼"
       ],
       "traits": [],
       "chars": [],
@@ -11026,7 +11217,10 @@ Stories.BOT_RULES = {
       "reply": [
         "Göğüslerim süt doldu 🍼",
         "Sıcacık süt akıyor 😩🍼",
-        "Emzirmek gibi… ama sana 😈🍼"
+        "Emzirmek gibi… ama sana 😈🍼",
+        "Sıcak süt akıyor, yala 😏🍼",
+        "Göğüslerim doldu, boşalt beni 🥺🍼",
+        "Sütüm bitmiyor 😳🍼"
       ],
       "traits": [],
       "chars": [],
@@ -11044,7 +11238,10 @@ Stories.BOT_RULES = {
       "reply": [
         "Göğüslerimden süt akıyor, durmuyor 😳🍼",
         "Her yer süt 🍼💦",
-        "Ağırlaştı göğüslerim, boşalt beni 🥺🍼"
+        "Ağırlaştı göğüslerim, boşalt beni 🥺🍼",
+        "Göğüslerim sızlıyor, çok dolu 😩🍼",
+        "Süt her yerde 🍼💦",
+        "Emzir… yani sen em 😈🍼"
       ],
       "traits": [],
       "chars": [],
@@ -11063,11 +11260,428 @@ Stories.BOT_RULES = {
         "Süt fışkırdı! 😳🍼💦",
         "Göğüslerimden fışkırıyor 😩🍼",
         "Yüzüne geldi mi? 🙈🍼",
-        "Bu kadarını beklemiyordum 😵‍💫🍼"
+        "Bu kadarını beklemiyordum 😵‍💫🍼",
+        "Fışkırdı! Göğsüme bastırınca 😳🍼💦",
+        "Süt yağmuru 🍼🌧️",
+        "Bunu yüzüne mi istersin? 😈🍼"
       ],
       "traits": [],
       "chars": [],
       "note": "Lactation olayı elle yazılınca"
+    },
+    {
+      "id": "r_cmd_meme",
+      "name": "Aç memeni",
+      "category": "🗣️ Komutlar",
+      "when": [
+        "meme-|göğüs-|gogus-|=memeni|sütyen-|sutyen-",
+        "aç-|ac-|göster-|goster-|çıkar-|cikar-|ortaya"
+      ],
+      "reply": [
+        "Böyle mi? 😏🍒",
+        "Açtım… şimdi ne yapacaksın? 😈",
+        "Bakmakla yetinme 😏",
+        "Sütyeni yavaşça çıkarıyorum… 😈",
+        "Bunları mı istiyordun? 🍒"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "→ Show Tits"
+    },
+    {
+      "id": "r_cmd_meme_shy",
+      "name": "Aç memeni (utangaç)",
+      "category": "🗣️ Komutlar",
+      "when": [
+        "meme-|göğüs-|gogus-|=memeni|sütyen-|sutyen-",
+        "aç-|ac-|göster-|goster-|çıkar-|cikar-|ortaya"
+      ],
+      "reply": [
+        "B-bakma öyle… 🙈",
+        "Utanıyorum ama… açıyorum 😳"
+      ],
+      "traits": [
+        "Utangaç"
+      ],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_cmd_meme_kib",
+      "name": "Aç memeni (kibirli)",
+      "category": "🗣️ Komutlar",
+      "when": [
+        "meme-|göğüs-|gogus-|=memeni|sütyen-|sutyen-",
+        "aç-|ac-|göster-|goster-|çıkar-|cikar-|ortaya"
+      ],
+      "reply": [
+        "Bana emir veremezsin 💅… ama bu sefer olsun",
+        "Hak ediyor musun bakalım? 💁‍♀️"
+      ],
+      "traits": [
+        "Kibirli"
+      ],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_cmd_kalca",
+      "name": "Kalçanı göster",
+      "category": "🗣️ Komutlar",
+      "when": [
+        "kalça-|kalca-|popo-|kıç-|kic-|götünü|gotunu",
+        "göster-|goster-|aç-|ac-|çıkar-|cikar-"
+      ],
+      "reply": [
+        "Arkamı dönüyorum… beğendin mi? 😏🍑",
+        "Böyle mi? 😈",
+        "Bakmakla kalma 🍑"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "→ Show Ass"
+    },
+    {
+      "id": "r_cmd_kaldir",
+      "name": "Kalçanı kaldır",
+      "category": "🗣️ Komutlar",
+      "when": [
+        "kalça-|kalca-|popo-|kıç-|kic-|götünü|gotunu",
+        "kaldır-|kaldir-|dik-|havaya"
+      ],
+      "reply": [
+        "Kaldırdım… şimdi gel 😈🍑",
+        "Böyle iyi mi? 😏",
+        "Bekliyorum 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "→ Doggy"
+    },
+    {
+      "id": "r_cmd_dizcok",
+      "name": "Diz çök",
+      "category": "🗣️ Komutlar",
+      "when": [
+        "diz çök-|diz cok-|dizlerinin üstüne|dizlerinin ustune|önümde diz|onumde diz"
+      ],
+      "reply": [
+        "Diz çöktüm… şimdi? 😈",
+        "Önündeyim 😏",
+        "Gözlerine bakarak… 😋"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "→ Blowjob"
+    },
+    {
+      "id": "r_cmd_agiz",
+      "name": "Ağzını aç",
+      "category": "🗣️ Komutlar",
+      "when": [
+        "ağzını aç|agzini ac|dilini çıkar|dilini cikar|aç ağzını|ac agzini"
+      ],
+      "reply": [
+        "Açtım… 😋",
+        "Böyle mi? 😈",
+        "Bekliyorum 😏"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "→ Blowjob"
+    },
+    {
+      "id": "r_cmd_yat",
+      "name": "Yat / uzan",
+      "category": "🗣️ Komutlar",
+      "when": [
+        "=yat|sırtüstü|sirtustu|yatağa uzan|yataga uzan|uzan yatağa|uzan yataga"
+      ],
+      "reply": [
+        "Uzandım… gel 😈",
+        "Sırtüstü, seni bekliyorum 😏",
+        "Bacaklarımı açıyorum 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "→ Missionary"
+    },
+    {
+      "id": "r_cmd_gir",
+      "name": "İçine girmek istiyorum",
+      "category": "🗣️ Komutlar",
+      "when": [
+        "içine|icine|seni sik-|sevişmek|sevismek",
+        "gir-|ist-|=gel"
+      ],
+      "reply": [
+        "Gir… bekliyordum 😩",
+        "Hadi, içime gel 😈",
+        "Yavaş başla… sonra istediğin gibi 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "→ Missionary / Cowgirl / Spooning / Doggy"
+    },
+    {
+      "id": "r_cmd_gogus2",
+      "name": "Memenin arasına",
+      "category": "🗣️ Komutlar",
+      "when": [
+        "meme-|göğüs-|gogus-",
+        "arası|arasi|arasına|arasina|arasında|arasinda"
+      ],
+      "reply": [
+        "{cevap:memearası}"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "→ Titfuck"
+    },
+    {
+      "id": "r_q2_sevboy",
+      "name": "Kaç santim seversin",
+      "category": "❓ Sorular",
+      "when": [
+        "kaç santim|kac santim|ne kadar büyük|ne kadar buyuk|hangi boy|kaç cm|kac cm|büyük mü küçük mü|buyuk mu kucuk mu",
+        "sever-|ist-|hoşlan-|hoslan-|tercih"
+      ],
+      "reply": [
+        "{cevap:sevboy}"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "darlık / deneyim / söylediğin boyut"
+    },
+    {
+      "id": "r_cmd_meme2",
+      "name": "Aç memeni (ters sıra)",
+      "category": "🗣️ Komutlar",
+      "when": [
+        "aç-|ac-|göster-|goster-|çıkar-|cikar-|ortaya",
+        "meme-|göğüs-|gogus-|=memeni|sütyen-|sutyen-"
+      ],
+      "reply": [
+        "Böyle mi? 😏🍒",
+        "Açtım… şimdi ne yapacaksın? 😈",
+        "Bakmakla yetinme 😏",
+        "Sütyeni yavaşça çıkarıyorum… 😈",
+        "Bunları mı istiyordun? 🍒"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "→ Show Tits"
+    },
+    {
+      "id": "r_cmd_kalca2",
+      "name": "Kalçanı göster (ters sıra)",
+      "category": "🗣️ Komutlar",
+      "when": [
+        "göster-|goster-|aç-|ac-|çıkar-|cikar-",
+        "kalça-|kalca-|popo-|kıç-|kic-|götünü|gotunu"
+      ],
+      "reply": [
+        "Arkamı dönüyorum… beğendin mi? 😏🍑",
+        "Böyle mi? 😈",
+        "Bakmakla kalma 🍑"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "→ Show Ass"
+    },
+    {
+      "id": "r_ask_begen",
+      "name": "Soru: beğendin mi?",
+      "category": "❔ Karakterin soruları",
+      "when": [
+        "=sor",
+        "=begen"
+      ],
+      "reply": [
+        "Beğendin mi? 😏",
+        "Böyle iyi mi? 😈",
+        "Hoşuna gidiyor mu? 🥵",
+        "Devam edeyim mi böyle? 😏",
+        "Nasıl, güzel mi? 😩",
+        "Daha mı istiyorsun? 😈",
+        "Bu hoşuna gitti değil mi? 😏",
+        "Böyle mi seviyorsun? 🥺"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "sevişirken; evet → aynı pozisyonla devam, hayır → başka pozisyon"
+    },
+    {
+      "id": "r_ask_begen_shy",
+      "name": "Soru: beğendin mi? (utangaç)",
+      "category": "❔ Karakterin soruları",
+      "when": [
+        "=sor",
+        "=begen"
+      ],
+      "reply": [
+        "B-beğendin mi? 🙈",
+        "İyi yapıyor muyum? 🥺",
+        "Böyle doğru mu? 😳"
+      ],
+      "traits": [
+        "Utangaç"
+      ],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_ask_begen_kib",
+      "name": "Soru: beğendin mi? (kibirli)",
+      "category": "❔ Karakterin soruları",
+      "when": [
+        "=sor",
+        "=begen"
+      ],
+      "reply": [
+        "Bayıldın değil mi? 💅",
+        "Kimse sana böyle yapmadı, itiraf et 💁‍♀️"
+      ],
+      "traits": [
+        "Kibirli"
+      ],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_ask_begen_flo",
+      "name": "Soru: beğendin mi? (flörtöz)",
+      "category": "❔ Karakterin soruları",
+      "when": [
+        "=sor",
+        "=begen"
+      ],
+      "reply": [
+        "Hoşuna gitti mi tatlım? 😘",
+        "Bir daha mı? 😉"
+      ],
+      "traits": [
+        "Flörtöz"
+      ],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_ans_begen_evet",
+      "name": "Cevap: beğen · evet (devam)",
+      "category": "❔ Karakterin soruları",
+      "when": [
+        "=cevap",
+        "=begen",
+        "=evet"
+      ],
+      "reply": [
+        "O zaman durmuyorum 😈",
+        "Ben de bayılıyorum, devam 🥵",
+        "Biliyordum 😏 devam ediyoruz",
+        "Daha da iyisi geliyor 😩",
+        "Tam böyle, söz 😈",
+        "Sesin bana yetiyor, devam 🫠"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "aynı pozisyon tekrar olur"
+    },
+    {
+      "id": "r_ans_begen_evet_shy",
+      "name": "Cevap: beğen · evet (utangaç)",
+      "category": "❔ Karakterin soruları",
+      "when": [
+        "=cevap",
+        "=begen",
+        "=evet"
+      ],
+      "reply": [
+        "Ç-çok sevindim 🙈 devam ediyorum",
+        "Oh, iyi… 😳 o zaman böyle devam"
+      ],
+      "traits": [
+        "Utangaç"
+      ],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_ans_begen_evet_kib",
+      "name": "Cevap: beğen · evet (kibirli)",
+      "category": "❔ Karakterin soruları",
+      "when": [
+        "=cevap",
+        "=begen",
+        "=evet"
+      ],
+      "reply": [
+        "Tabii ki beğendin 💅",
+        "Biliyordum, devam 💁‍♀️"
+      ],
+      "traits": [
+        "Kibirli"
+      ],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_ans_begen_hayir",
+      "name": "Cevap: beğen · hayır (değiştir)",
+      "category": "❔ Karakterin soruları",
+      "when": [
+        "=cevap",
+        "=begen",
+        "=hayir"
+      ],
+      "reply": [
+        "Peki, başka türlü deneyelim 😏",
+        "Tamam, sana daha iyisini göstereyim 😈",
+        "O zaman pozisyon değiştiriyoruz 😏",
+        "Hmm, bunu dene bakalım 😈",
+        "Söyle, nasıl istersin? Yok, ben bilirim 😏"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "başka pozisyon olur (önce ❤️ sevdikleri)"
+    },
+    {
+      "id": "r_ans_begen_hayir_shy",
+      "name": "Cevap: beğen · hayır (utangaç)",
+      "category": "❔ Karakterin soruları",
+      "when": [
+        "=cevap",
+        "=begen",
+        "=hayir"
+      ],
+      "reply": [
+        "Ö-özür dilerim… başka deneyelim 🥺",
+        "Peki… şöyle olur mu? 😳"
+      ],
+      "traits": [
+        "Utangaç"
+      ],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_ans_begen_hayir_kib",
+      "name": "Cevap: beğen · hayır (kibirli)",
+      "category": "❔ Karakterin soruları",
+      "when": [
+        "=cevap",
+        "=begen",
+        "=hayir"
+      ],
+      "reply": [
+        "Beğenmedin mi?! 😤 Al bakalım bunu",
+        "Zevksizsin 💅 ama peki"
+      ],
+      "traits": [
+        "Kibirli"
+      ],
+      "chars": [],
+      "note": ""
     }
   ],
   "addons": [

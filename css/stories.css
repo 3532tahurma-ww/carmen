@@ -1275,6 +1275,17 @@ button.cs-cond { border: 0; cursor: pointer; }
 .st-tr { font-size: 11.5px; padding: 3px 9px; border-radius: 999px; background: rgba(0, 137, 196, .25); }
 .st-card .pv-bars { grid-template-columns: repeat(auto-fill, minmax(78px, 1fr)); gap: 4px; }
 .st-card .pv-bar { height: 22px; background: rgba(255, 255, 255, .12); font-size: 11.5px; }
+.st-feel { justify-self: start; display: inline-flex; align-items: center; gap: 6px; font-size: 11.5px; font-weight: 600; padding: 3px 10px; border-radius: 999px; background: rgba(255, 255, 255, .12); color: inherit; }
+.st-feel i { font-style: normal; opacity: .65; }
+.st-feel.on { background: rgba(0, 137, 196, .3); }
+.st-feels { display: grid; gap: 5px; animation: hsIn .2s ease-out; }
+.st-fl { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+.st-fl small { flex: 0 0 100%; font-size: 10.5px; font-weight: 700; opacity: .7; }
+.st-fe { font-size: 11.5px; padding: 2px 8px; border-radius: 999px; background: rgba(255, 255, 255, .12); }
+.st-fe.has-color { background: color-mix(in srgb, var(--evc) 35%, transparent); }
+.chat-light .st-feel, .chat-light .st-fe { background: rgba(20, 40, 80, .07); }
+.chat-light .st-feel.on { background: rgba(0, 137, 196, .15); }
+.chat-light .st-fe.has-color { background: color-mix(in srgb, var(--evc) 18%, #fff); }
 .chat-light .st-card { background: rgba(255, 255, 255, .72); border-color: rgba(20, 40, 80, .08); box-shadow: 0 4px 16px rgba(20, 40, 80, .06); color: #1d2433; }
 .chat-light .st-bool { background: rgba(20, 40, 80, .07); }
 .chat-light .st-bool.on { background: var(--pink); color: #fff; }
@@ -1299,6 +1310,22 @@ button.cs-cond { border: 0; cursor: pointer; }
 .ck-set input[type="number"] { width: 64px; }
 .ck-row input[type="time"] { width: 96px; }
 .ck-row .ck-p { flex: 1 1 130px; }
+/* 🧪 Bot deneyi */
+.lab-seg { display: flex; gap: 4px; padding: 4px; margin: 8px 0; border-radius: 14px; background: var(--chip); }
+.lab-seg button { flex: 1; padding: 8px 6px; border-radius: 10px; font-size: 13px; font-weight: 600; color: #5d6577; }
+.lab-seg button.on { background: #fff; color: var(--purple); box-shadow: 0 2px 8px rgba(20, 40, 80, .08); }
+.lab-seg.sm button { padding: 5px 6px; font-size: 12px; }
+.lab-out { margin-top: 8px; }
+.lab-out .sec-title { margin: 14px 0 6px; }
+.lab-rule { padding: 10px 12px; margin-bottom: 8px; border-radius: 14px; background: var(--chip); }
+.lab-rule.win { background: var(--purple-soft); box-shadow: inset 0 0 0 1.5px rgba(0, 137, 196, .35); }
+.lab-h b { display: block; font-size: 14px; }
+.lab-h small { font-size: 11.5px; color: var(--muted); }
+.lab-rule ol { margin: 8px 0 6px; padding-left: 20px; font-size: 13px; line-height: 1.45; }
+.lab-rule ol li { margin-bottom: 3px; }
+.lab-rule ol i { color: var(--muted); font-style: normal; }
+.lab-w { display: block; font-size: 11px; color: var(--muted); font-family: ui-monospace, Consolas, monospace; word-break: break-word; }
+
 /* 📖 Carmen Kitabı */
 .book-toc { display: flex; flex-direction: column; gap: 6px; }
 .book-toc button { display: grid; grid-template-columns: 24px 30px 1fr; grid-template-rows: auto auto; column-gap: 8px; align-items: center; text-align: left; padding: 9px 12px; border-radius: 14px; background: var(--chip); transition: transform .15s var(--ease), background .2s; }
