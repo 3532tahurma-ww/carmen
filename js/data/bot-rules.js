@@ -16455,7 +16455,7 @@ Stories.BOT_RULES = {
       "name": "Sütün var mı",
       "category": "❓ Sorular",
       "when": [
-        "süt-|sut-|emzir-"
+        "süt-|sut-"
       ],
       "reply": [
         "{cevap:süt}"
@@ -20971,7 +20971,7 @@ Stories.BOT_RULES = {
       "category": "❓ Sorular",
       "when": [
         "meme-|göğüs-|gogus-|=memeni|memelerini|göğüslerini|goguslerini|=tits",
-        "em-|emme-|emeyim|emebil-|emsem|ağzıma al|agzima al|ağzına al|agzina al"
+        "emebil-|emeyim|emsem|emme-|emmek|emer mi-|emer misin|emsene|ağzıma al|agzima al|ağzına al|agzina al"
       ],
       "reply": [
         "{cevap:memeem}"
@@ -21300,7 +21300,7 @@ Stories.BOT_RULES = {
       "name": "Sütünü içmek",
       "category": "❓ Sorular",
       "when": [
-        "=süt|sütün|sütünü|=sut|sutun|sutunu|emzir-",
+        "=süt|sütün|sütünü|=sut|sutun|sutunu",
         "iç-|ic-|em-|tat-|sağ-|sag-|yut-|ver-"
       ],
       "reply": [
@@ -32080,7 +32080,7 @@ Stories.BOT_RULES = {
       "category": "💐 İltifat",
       "when": [
         "=amın|=amin|amcığın|amcigin|=amcık|kukun|kukuşun|=vajinan|aşağın|asagin|bacak aran|içerin|icerin|içerisi|icerisi|=pipin",
-        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|sıkı-|siki-|ıslak-|islak-|sıcak-|sicak-|pembe"
+        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|=sıkı|sıkıcık|sımsıkı|=siki|sikicik|simsiki|ıslak-|islak-|sıcak-|sicak-|pembe"
       ],
       "reply": [
         "Senin için böyle oldu, sorumlusu sensin 😈",
@@ -32114,7 +32114,7 @@ Stories.BOT_RULES = {
       "category": "💐 İltifat",
       "when": [
         "=amın|=amin|amcığın|amcigin|=amcık|kukun|kukuşun|=vajinan|aşağın|asagin|bacak aran|içerin|icerin|içerisi|icerisi|=pipin",
-        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|sıkı-|siki-|ıslak-|islak-|sıcak-|sicak-|pembe"
+        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|=sıkı|sıkıcık|sımsıkı|=siki|sikicik|simsiki|ıslak-|islak-|sıcak-|sicak-|pembe"
       ],
       "reply": [
         "Senin için bu kadar darım, sımsıkı sararım seni 😩",
@@ -32150,7 +32150,7 @@ Stories.BOT_RULES = {
       "category": "💐 İltifat",
       "when": [
         "=amın|=amin|amcığın|amcigin|=amcık|kukun|kukuşun|=vajinan|aşağın|asagin|bacak aran|içerin|icerin|içerisi|icerisi|=pipin",
-        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|sıkı-|siki-|ıslak-|islak-|sıcak-|sicak-|pembe"
+        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|=sıkı|sıkıcık|sımsıkı|=siki|sikicik|simsiki|ıslak-|islak-|sıcak-|sicak-|pembe"
       ],
       "reply": [
         "Tam sana göre, ne dar ne bol… mükemmel uyum 😈",
@@ -32186,7 +32186,7 @@ Stories.BOT_RULES = {
       "category": "💐 İltifat",
       "when": [
         "=amın|=amin|amcığın|amcigin|=amcık|kukun|kukuşun|=vajinan|aşağın|asagin|bacak aran|içerin|icerin|içerisi|icerisi|=pipin",
-        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|sıkı-|siki-|ıslak-|islak-|sıcak-|sicak-|pembe"
+        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|=sıkı|sıkıcık|sımsıkı|=siki|sikicik|simsiki|ıslak-|islak-|sıcak-|sicak-|pembe"
       ],
       "reply": [
         "Rahat ama seni sımsıkı saracağım, merak etme 😈",
@@ -32222,7 +32222,7 @@ Stories.BOT_RULES = {
       "category": "💐 İltifat",
       "when": [
         "=amın|=amin|amcığın|amcigin|=amcık|kukun|kukuşun|=vajinan|aşağın|asagin|bacak aran|içerin|icerin|içerisi|icerisi|=pipin",
-        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|sıkı-|siki-|ıslak-|islak-|sıcak-|sicak-|pembe"
+        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|=sıkı|sıkıcık|sımsıkı|=siki|sikicik|simsiki|ıslak-|islak-|sıcak-|sicak-|pembe"
       ],
       "reply": [
         "Kimse dokunmadı daha… ilk sen olacaksın 🥺",
@@ -32394,7 +32394,7 @@ Stories.BOT_RULES = {
       "category": "💐 İltifat",
       "when": [
         "=arkan|=arkanı|=arkani|deliğin|deligin|=götün deliği|=gotun deligi|=anüsün",
-        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|sıkı-|siki-|sıcak-|sicak-|pembe"
+        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|=sıkı|sıkıcık|sımsıkı|=siki|sikicik|simsiki|sıcak-|sicak-|pembe"
       ],
       "reply": [
         "Arkamı mı beğendin? Gel tadına bak 😈🍑",
@@ -32428,7 +32428,7 @@ Stories.BOT_RULES = {
       "category": "💐 İltifat",
       "when": [
         "=arkan|=arkanı|=arkani|deliğin|deligin|=götün deliği|=gotun deligi|=anüsün",
-        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|sıkı-|siki-|sıcak-|sicak-|pembe"
+        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|=sıkı|sıkıcık|sımsıkı|=siki|sikicik|simsiki|sıcak-|sicak-|pembe"
       ],
       "reply": [
         "Arkam çok dar, sıkıca sararım seni 😩",
@@ -32464,7 +32464,7 @@ Stories.BOT_RULES = {
       "category": "💐 İltifat",
       "when": [
         "=arkan|=arkanı|=arkani|deliğin|deligin|=götün deliği|=gotun deligi|=anüsün",
-        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|sıkı-|siki-|sıcak-|sicak-|pembe"
+        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|=sıkı|sıkıcık|sımsıkı|=siki|sikicik|simsiki|sıcak-|sicak-|pembe"
       ],
       "reply": [
         "Arkam seni rahatça alır… sonuna kadar 😈",
@@ -32500,7 +32500,7 @@ Stories.BOT_RULES = {
       "category": "💐 İltifat",
       "when": [
         "=arkan|=arkanı|=arkani|deliğin|deligin|=götün deliği|=gotun deligi|=anüsün",
-        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|sıkı-|siki-|sıcak-|sicak-|pembe"
+        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|=sıkı|sıkıcık|sımsıkı|=siki|sikicik|simsiki|sıcak-|sicak-|pembe"
       ],
       "reply": [
         "Oraya hiç kimse… 😳 ilk sen mi olacaksın?",
@@ -32536,7 +32536,7 @@ Stories.BOT_RULES = {
       "category": "💐 İltifat",
       "when": [
         "kalçan|kalcan|kalçaların|kalcalarin|=popon|poponun|=götün|=gotun|=kıçın|=kicin|kalçalarını|=götünü|=gotunu",
-        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|büyük-|buyuk-|dolgun-|yuvarlak-|sıkı-|siki-|kocaman"
+        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|büyük-|buyuk-|dolgun-|yuvarlak-|=sıkı|sıkıcık|sımsıkı|=siki|sikicik|simsiki|kocaman"
       ],
       "reply": [
         "Kalçamı mı beğendin? Şaplak at da gör 😈🍑",
@@ -32570,7 +32570,7 @@ Stories.BOT_RULES = {
       "category": "💐 İltifat",
       "when": [
         "kalçan|kalcan|kalçaların|kalcalarin|=popon|poponun|=götün|=gotun|=kıçın|=kicin|kalçalarını|=götünü|=gotunu",
-        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|büyük-|buyuk-|dolgun-|yuvarlak-|sıkı-|siki-|kocaman"
+        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|büyük-|buyuk-|dolgun-|yuvarlak-|=sıkı|sıkıcık|sımsıkı|=siki|sikicik|simsiki|kocaman"
       ],
       "reply": [
         "Bu kadar büyük kalçayı tek elle tutamazsın 😈🍑",
@@ -32606,7 +32606,7 @@ Stories.BOT_RULES = {
       "category": "💐 İltifat",
       "when": [
         "kalçan|kalcan|kalçaların|kalcalarin|=popon|poponun|=götün|=gotun|=kıçın|=kicin|kalçalarını|=götünü|=gotunu",
-        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|büyük-|buyuk-|dolgun-|yuvarlak-|sıkı-|siki-|kocaman"
+        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|büyük-|buyuk-|dolgun-|yuvarlak-|=sıkı|sıkıcık|sımsıkı|=siki|sikicik|simsiki|kocaman"
       ],
       "reply": [
         "Tam avucuna göre, değil mi? 😏",
@@ -32642,7 +32642,7 @@ Stories.BOT_RULES = {
       "category": "💐 İltifat",
       "when": [
         "kalçan|kalcan|kalçaların|kalcalarin|=popon|poponun|=götün|=gotun|=kıçın|=kicin|kalçalarını|=götünü|=gotunu",
-        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|büyük-|buyuk-|dolgun-|yuvarlak-|sıkı-|siki-|kocaman"
+        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|büyük-|buyuk-|dolgun-|yuvarlak-|=sıkı|sıkıcık|sımsıkı|=siki|sikicik|simsiki|kocaman"
       ],
       "reply": [
         "Küçük ama sımsıkı 😏🍑",
@@ -32848,7 +32848,7 @@ Stories.BOT_RULES = {
       "category": "💐 İltifat",
       "when": [
         "=amın|=amin|amcığın|amcigin|=amcık|kukun|kukuşun|=vajinan|aşağın|asagin|bacak aran|içerin|icerin|içerisi|icerisi|=pipin|=arkan|=arkanı|=arkani|deliğin|deligin|=götün deliği|=gotun deligi|=anüsün|kalçan|kalcan|kalçaların|kalcalarin|=popon|poponun|=götün|=gotun|=kıçın|=kicin|kalçalarını|=götünü|=gotunu|meme-|göğüs-|gogus-|memelerin|göğüslerin|dudakların|bacakların|vücudun|vucudun|=tenin|kokun|uçların",
-        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|sıkı-|siki-|ıslak-|islak-|büyük-|buyuk-"
+        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|=sıkı|sıkıcık|sımsıkı|=siki|sikicik|simsiki|ıslak-|islak-|büyük-|buyuk-"
       ],
       "reply": [
         "Ç-çok utandım şu an 🙈",
@@ -32884,7 +32884,7 @@ Stories.BOT_RULES = {
       "category": "💐 İltifat",
       "when": [
         "=amın|=amin|amcığın|amcigin|=amcık|kukun|kukuşun|=vajinan|aşağın|asagin|bacak aran|içerin|icerin|içerisi|icerisi|=pipin|=arkan|=arkanı|=arkani|deliğin|deligin|=götün deliği|=gotun deligi|=anüsün|kalçan|kalcan|kalçaların|kalcalarin|=popon|poponun|=götün|=gotun|=kıçın|=kicin|kalçalarını|=götünü|=gotunu|meme-|göğüs-|gogus-|memelerin|göğüslerin|dudakların|bacakların|vücudun|vucudun|=tenin|kokun|uçların",
-        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|sıkı-|siki-|ıslak-|islak-|büyük-|buyuk-"
+        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|=sıkı|sıkıcık|sımsıkı|=siki|sikicik|simsiki|ıslak-|islak-|büyük-|buyuk-"
       ],
       "reply": [
         "Biliyorum, mükemmelim 💅",
@@ -32920,7 +32920,7 @@ Stories.BOT_RULES = {
       "category": "💐 İltifat",
       "when": [
         "=amın|=amin|amcığın|amcigin|=amcık|kukun|kukuşun|=vajinan|aşağın|asagin|bacak aran|içerin|icerin|içerisi|icerisi|=pipin|=arkan|=arkanı|=arkani|deliğin|deligin|=götün deliği|=gotun deligi|=anüsün|kalçan|kalcan|kalçaların|kalcalarin|=popon|poponun|=götün|=gotun|=kıçın|=kicin|kalçalarını|=götünü|=gotunu|meme-|göğüs-|gogus-|memelerin|göğüslerin|dudakların|bacakların|vücudun|vucudun|=tenin|kokun|uçların",
-        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|sıkı-|siki-|ıslak-|islak-|büyük-|buyuk-"
+        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|=sıkı|sıkıcık|sımsıkı|=siki|sikicik|simsiki|ıslak-|islak-|büyük-|buyuk-"
       ],
       "reply": [
         "Sadece bakmakla mı yetineceksin? 😘",
@@ -32956,7 +32956,7 @@ Stories.BOT_RULES = {
       "category": "💐 İltifat",
       "when": [
         "=amın|=amin|amcığın|amcigin|=amcık|kukun|kukuşun|=vajinan|aşağın|asagin|bacak aran|içerin|icerin|içerisi|icerisi|=pipin|=arkan|=arkanı|=arkani|deliğin|deligin|=götün deliği|=gotun deligi|=anüsün|kalçan|kalcan|kalçaların|kalcalarin|=popon|poponun|=götün|=gotun|=kıçın|=kicin|kalçalarını|=götünü|=gotunu|meme-|göğüs-|gogus-|memelerin|göğüslerin|dudakların|bacakların|vücudun|vucudun|=tenin|kokun|uçların",
-        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|sıkı-|siki-|ıslak-|islak-|büyük-|buyuk-"
+        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|=sıkı|sıkıcık|sımsıkı|=siki|sikicik|simsiki|ıslak-|islak-|büyük-|buyuk-"
       ],
       "reply": [
         "…Biliyorum.",
@@ -32992,7 +32992,7 @@ Stories.BOT_RULES = {
       "category": "💐 İltifat",
       "when": [
         "=amın|=amin|amcığın|amcigin|=amcık|kukun|kukuşun|=vajinan|aşağın|asagin|bacak aran|içerin|icerin|içerisi|icerisi|=pipin|=arkan|=arkanı|=arkani|deliğin|deligin|=götün deliği|=gotun deligi|=anüsün|kalçan|kalcan|kalçaların|kalcalarin|=popon|poponun|=götün|=gotun|=kıçın|=kicin|kalçalarını|=götünü|=gotunu|meme-|göğüs-|gogus-|memelerin|göğüslerin|dudakların|bacakların|vücudun|vucudun|=tenin|kokun|uçların",
-        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|sıkı-|siki-|ıslak-|islak-|büyük-|buyuk-"
+        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|=sıkı|sıkıcık|sımsıkı|=siki|sikicik|simsiki|ıslak-|islak-|büyük-|buyuk-"
       ],
       "reply": [
         "Bunu senden duymak çok güzel 💗",
@@ -33028,7 +33028,7 @@ Stories.BOT_RULES = {
       "category": "💐 İltifat",
       "when": [
         "=amın|=amin|amcığın|amcigin|=amcık|kukun|kukuşun|=vajinan|aşağın|asagin|bacak aran|içerin|icerin|içerisi|icerisi|=pipin|=arkan|=arkanı|=arkani|deliğin|deligin|=götün deliği|=gotun deligi|=anüsün|kalçan|kalcan|kalçaların|kalcalarin|=popon|poponun|=götün|=gotun|=kıçın|=kicin|kalçalarını|=götünü|=gotunu|meme-|göğüs-|gogus-|memelerin|göğüslerin|dudakların|bacakların|vücudun|vucudun|=tenin|kokun|uçların",
-        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|sıkı-|siki-|ıslak-|islak-|büyük-|buyuk-"
+        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|=sıkı|sıkıcık|sımsıkı|=siki|sikicik|simsiki|ıslak-|islak-|büyük-|buyuk-"
       ],
       "reply": [
         "Biliyorum, şimdi ne yapacaksın? 😤",
@@ -33064,7 +33064,7 @@ Stories.BOT_RULES = {
       "category": "💐 İltifat",
       "when": [
         "=amın|=amin|amcığın|amcigin|=amcık|kukun|kukuşun|=vajinan|aşağın|asagin|bacak aran|içerin|icerin|içerisi|icerisi|=pipin|=arkan|=arkanı|=arkani|deliğin|deligin|=götün deliği|=gotun deligi|=anüsün|kalçan|kalcan|kalçaların|kalcalarin|=popon|poponun|=götün|=gotun|=kıçın|=kicin|kalçalarını|=götünü|=gotunu|meme-|göğüs-|gogus-|memelerin|göğüslerin|dudakların|bacakların|vücudun|vucudun|=tenin|kokun|uçların",
-        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|sıkı-|siki-|ıslak-|islak-|büyük-|buyuk-"
+        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|=sıkı|sıkıcık|sımsıkı|=siki|sikicik|simsiki|ıslak-|islak-|büyük-|buyuk-"
       ],
       "reply": [
         "Elbette, görmen gerekiyordu 😏",
@@ -33100,7 +33100,7 @@ Stories.BOT_RULES = {
       "category": "💐 İltifat",
       "when": [
         "=amın|=amin|amcığın|amcigin|=amcık|kukun|kukuşun|=vajinan|aşağın|asagin|bacak aran|içerin|icerin|içerisi|icerisi|=pipin|=arkan|=arkanı|=arkani|deliğin|deligin|=götün deliği|=gotun deligi|=anüsün|kalçan|kalcan|kalçaların|kalcalarin|=popon|poponun|=götün|=gotun|=kıçın|=kicin|kalçalarını|=götünü|=gotunu|meme-|göğüs-|gogus-|memelerin|göğüslerin|dudakların|bacakların|vücudun|vucudun|=tenin|kokun|uçların",
-        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|sıkı-|siki-|ıslak-|islak-|büyük-|buyuk-"
+        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|=sıkı|sıkıcık|sımsıkı|=siki|sikicik|simsiki|ıslak-|islak-|büyük-|buyuk-"
       ],
       "reply": [
         "Yaa gerçekten mi? 🥺",
@@ -33136,7 +33136,7 @@ Stories.BOT_RULES = {
       "category": "💐 İltifat",
       "when": [
         "=amın|=amin|amcığın|amcigin|=amcık|kukun|kukuşun|=vajinan|aşağın|asagin|bacak aran|içerin|icerin|içerisi|icerisi|=pipin|=arkan|=arkanı|=arkani|deliğin|deligin|=götün deliği|=gotun deligi|=anüsün|kalçan|kalcan|kalçaların|kalcalarin|=popon|poponun|=götün|=gotun|=kıçın|=kicin|kalçalarını|=götünü|=gotunu|meme-|göğüs-|gogus-|memelerin|göğüslerin|dudakların|bacakların|vücudun|vucudun|=tenin|kokun|uçların",
-        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|sıkı-|siki-|ıslak-|islak-|büyük-|buyuk-"
+        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|=sıkı|sıkıcık|sımsıkı|=siki|sikicik|simsiki|ıslak-|islak-|büyük-|buyuk-"
       ],
       "reply": [
         "Gerçekten beğendin mi? Emin misin? 🥺",
@@ -33172,7 +33172,7 @@ Stories.BOT_RULES = {
       "category": "💐 İltifat",
       "when": [
         "=amın|=amin|amcığın|amcigin|=amcık|kukun|kukuşun|=vajinan|aşağın|asagin|bacak aran|içerin|icerin|içerisi|icerisi|=pipin|=arkan|=arkanı|=arkani|deliğin|deligin|=götün deliği|=gotun deligi|=anüsün|kalçan|kalcan|kalçaların|kalcalarin|=popon|poponun|=götün|=gotun|=kıçın|=kicin|kalçalarını|=götünü|=gotunu|meme-|göğüs-|gogus-|memelerin|göğüslerin|dudakların|bacakların|vücudun|vucudun|=tenin|kokun|uçların",
-        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|sıkı-|siki-|ıslak-|islak-|büyük-|buyuk-"
+        "güzel-|guzel-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|tatlı-|tatli-|seksi|enfes|nefis|bayıl-|bayil-|çok iyi|cok iyi|şahane|sahane|efsane|kusursuz|=süper|=super|lezzetli|yumuşak-|yumusak-|=tam|kıvam-|kivam-|deli ediyor|aklımı|aklimi|dar-|=sıkı|sıkıcık|sımsıkı|=siki|sikicik|simsiki|ıslak-|islak-|büyük-|buyuk-"
       ],
       "reply": [
         "Daha çok övebilirsin 💅",
@@ -33631,6 +33631,473 @@ Stories.BOT_RULES = {
       "traits": [],
       "chars": [],
       "note": ""
+    },
+    {
+      "id": "r_ev_breast",
+      "name": "🍼 Breastfeeding",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=eat",
+        "breastfeeding"
+      ],
+      "reply": [
+        "{cevap:emzir}"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "göğüslerini emersin; hamileyse süt"
+    },
+    {
+      "id": "r_cmd_emzir",
+      "name": "🍼 Emzir beni",
+      "category": "🗣️ Komutlar",
+      "when": [
+        "emzir-|sütünü iç-|sutunu ic-|sütünü emeyim|sutunu emeyim|sütünden iç-|sutunden ic-"
+      ],
+      "reply": [
+        "Gel, göğsüme yaslan 🍼",
+        "Uçlarımı ağzına al 😩",
+        "Em beni, yavaşça başla 🥺",
+        "Göğüslerim seni bekliyor 🍼",
+        "Kucağıma uzan, emzireyim seni 😈",
+        "Dudaklarını uçlarıma koy 😏",
+        "Hadi bebeğim, em 🙈",
+        "Göğsümü tutup ağzına veriyorum 🍼",
+        "Emdikçe ben de ıslanıyorum 💦",
+        "Sütümün tadına bak 😈🍼",
+        "Başını okşarken emzireyim 🥰",
+        "Bir göğsüm bitince öbürüne geç 😏",
+        "Ahh… emmeye başla 😩",
+        "Uçlarım dimdik, senin için 🥵",
+        "Sıkı sıkı em 😈",
+        "Göğüslerimi boşalt 🍼",
+        "Bu his beni çıldırtıyor 😩",
+        "Ağzını aç 🍼",
+        "Emdikçe orgazma yaklaşıyorum 🥵",
+        "Gel kucağıma 🤗"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_sx2_em",
+      "name": "😮 Emiyorum seni",
+      "category": "💬 Sevişirken",
+      "when": [
+        "emiyorum|emiyom|emicem|emeceğim|emecegim|=emerim|emiyorum|yalıyorum|yaliyorum|yalıyom|yalıcam|yalicam"
+      ],
+      "reply": [
+        "Ahh… emişin beni eritiyor 😩",
+        "Dilin… durma 🥵",
+        "Öyle em ki bacaklarım titresin 😈",
+        "Mmm… tam orayı 😩",
+        "Emdikçe ıslanıyorum 💦",
+        "Ahh, dudakların çok sıcak 🥵",
+        "Yavaş… sonra hızlı 😩",
+        "Hiç bırakma 😈",
+        "Beni deli ediyorsun 😩",
+        "Ahh evet… em 🥵",
+        "Dişlerini hafif değdir 😳",
+        "Nefesin tenimde 😩",
+        "Saçlarından tutup bastırıyorum 😈",
+        "Off… bu his 🫠",
+        "Daha güçlü em 🥵",
+        "Dilinle daire çiz 😩",
+        "Gelmek üzereyim, durma 💦",
+        "Ahh… ağzın büyülü 😈",
+        "Beni böyle emmeye devam et 🥵",
+        "İnlemeden duramıyorum 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_sx2_meme_em",
+      "name": "😮 Memelerini emiyorum",
+      "category": "💬 Sevişirken",
+      "when": [
+        "meme-|göğüs-|gogus-|=memeni|memelerini|göğüslerini|goguslerini|uçların-|uclarin-|meme uç-|meme uc-",
+        "emiyorum|emiyom|emicem|emeceğim|emecegim|=emerim|emiyorum|yalıyorum|yaliyorum|ısırıyorum|isiriyorum|öpüyorum|opuyorum"
+      ],
+      "reply": [
+        "Ahh… uçlarım çok hassas 😩",
+        "Em, daha sert 🥵",
+        "Göğüslerim ağzında eriyor 🫠",
+        "Hafif ısır… ahh 😳",
+        "Dilin uçlarımda 😩",
+        "Öbürünü de unutma 😏",
+        "Göğsümü avuçlayıp em 🥵",
+        "Emdikçe aşağısı ıslanıyor 💦",
+        "Ahh… böyle emersen gelirim 😩",
+        "Uçlarımı dişlerinle çek 😈",
+        "Göğüslerim senin, doyasıya em 🍒",
+        "Mmm… bebeğin gibi em 🙈",
+        "İkisini birden sıkıp em 🥵",
+        "Ahh evet, tam böyle 😩",
+        "Göğüslerimi bırakma 😈",
+        "Dilinle uçlarımı oyna 🥵",
+        "Ağzın sıcacık 😩",
+        "Uçlarım dimdik oldu 😳",
+        "Off… göğüslerimden aşağı bir ürperti 🫠",
+        "Daha çok em, daha çok 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_sx2_surtun",
+      "name": "🔥 Sana sürtüyorum",
+      "category": "💬 Sevişirken",
+      "when": [
+        "sürtüyorum|surtuyorum|sürtünüyorum|surtunuyorum|sürtüyom|surtuyom|sürtücem|surtucem|sürtüyorum"
+      ],
+      "reply": [
+        "Ahh… sürtündükçe ıslanıyorum 💦",
+        "Sertliğini hissediyorum, devam 🥵",
+        "Böyle sürtünce deli oluyorum 😩",
+        "Daha bastır 😈",
+        "Off… tam üstümde 🥵",
+        "Sürtün, sonra içime gir 😩",
+        "Kalçamı sana bastırıyorum 😈",
+        "Bu sürtünme beni yakıyor 🔥",
+        "Ahh… yavaş yavaş 😩",
+        "Dayanamıyorum artık 🥵",
+        "Aramızda kayıyorsun off 😩",
+        "Sürtündükçe zonkluyorsun 😈",
+        "Bacaklarımın arasına bastır 🥵",
+        "Islaklığımı hissediyor musun? 💦",
+        "Ahh… daha hızlı sürt 😩",
+        "Beni kızdırma, gir artık 😈",
+        "Tenime sürtünmen çok iyi 🥵",
+        "Off… ucun tam orada 😩",
+        "Sürtüne sürtüne bitir beni 😈",
+        "Ahh evet… böyle 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_sx2_sert",
+      "name": "💥 Seni beceriyorum",
+      "category": "💬 Sevişirken",
+      "when": [
+        "becer-|sikiyom|sikicem|köklü-|koklu-|vuruyorum|vuruyom|gömüyorum|gomuyorum|dalıyorum|daliyorum|pompalı-|pompali-|yüklen-|yuklen-"
+      ],
+      "reply": [
+        "Ahh! Evet, böyle 😩",
+        "Her vuruşun içimde yankılanıyor 🥵",
+        "Derine… daha derine 😈",
+        "Off… beni bitiriyorsun 😩",
+        "Durma sakın! 🔥",
+        "Köküne kadar hissediyorum 🥵",
+        "Ahh… yatak sallanıyor 😩",
+        "Böyle al beni 😈",
+        "İçimde zonkluyorsun 🥵",
+        "Ahh evet, evet 😩",
+        "Nefesim kesiliyor 😵‍💫",
+        "Kalçamı tut ve vur 😈",
+        "Her itişte inliyorum 😩",
+        "Daha hızlı 🔥",
+        "Ahh… tam yerine 🥵",
+        "Bana sahip ol 😈",
+        "Çıldırıyorum 😩",
+        "Off… bu ritim 🥵",
+        "Beni parçala 🔥",
+        "Ahh… sonuna kadar 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_sx2_sert_guc",
+      "name": "💥 Tüm gücümle",
+      "category": "💬 Sevişirken",
+      "when": [
+        "tüm gücüm-|tum gucum-|bütün gücüm-|butun gucum-|sertçe|sertce|hızlı hızlı|hizli hizli|deli gibi|acımadan|acimadan|hayvan gibi|var gücüm-|var gucum-",
+        "becer-|sikiyom|sikicem|köklü-|koklu-|vuruyorum|vuruyom|gömüyorum|gomuyorum|dalıyorum|daliyorum|pompalı-|pompali-|yüklen-|yuklen-|giriyorum|giriyom"
+      ],
+      "reply": [
+        "AHH! Evet, bütün gücünle! 😱",
+        "Beni kırarcasına… ahh 🔥",
+        "Yatağa çiviliyorsun beni 😩",
+        "Off… bu kadar sert… bayılıyorum 🥵",
+        "Acıma bana! 😈",
+        "Her vuruşta bağırıyorum 😱",
+        "Bacaklarım titriyor, durma! 😩",
+        "Hayvan gibi al beni 🔥",
+        "Nefes alamıyorum… devam! 😵‍💫",
+        "Ahh! Köküne kadar! 🥵",
+        "Daha! Daha sert! 😩",
+        "Beni paramparça et 😈",
+        "Bu güç beni bitiriyor 🔥",
+        "Saçımı çek ve vur 😩",
+        "Ahh… gözlerim kararıyor 😵‍💫",
+        "Sert sert… tam istediğim 🥵",
+        "Çığlığımı tutamıyorum 😱",
+        "Duvara kadar itiyorsun beni 😩",
+        "Off… bu kadar derin olmaz 🥵",
+        "Durma, durma, durma! 🔥"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_sx2_kalca",
+      "name": "🍑 Kalçanı sıkıyorum",
+      "category": "💬 Sevişirken",
+      "when": [
+        "kalça-|kalca-|götünü|gotunu|=götün|kıçını|kicini|popo-|poponu",
+        "sıkıyorum|sikiyorum|sıkıyom|sıkıcam|sikicam|avuçluyorum|avucluyorum|tutuyorum|şaplak|saplak|vuruyorum|ısırıyorum|isiriyorum|okşuyorum|oksuyorum|yoğuruyorum|yoguruyorum|açıyorum|aciyorum"
+      ],
+      "reply": [
+        "Ahh… sık, daha sıkı 😩🍑",
+        "Kalçam senin avucunda 😈",
+        "Şaplak at, iz kalsın 🥵",
+        "Kalçamı sıkınca daha derin hissediyorum 😩",
+        "Off… parmakların kalçama gömülüyor 🥵",
+        "Kalçamı aç ve devam et 😈",
+        "Ahh… tam böyle tut 😩",
+        "Kalçamı kendine çek 🥵",
+        "Bir şaplak daha 😈🍑",
+        "Isır… ahh 😩",
+        "Kalçam titriyor 🥵",
+        "İki elinle tut 😈",
+        "Kalçamı sıktıkça inliyorum 😩",
+        "Off… kızardı mı? 😏🍑",
+        "Yoğur kalçamı 🥵",
+        "Kalçama vurunca içimde zonkluyorsun 😩",
+        "Kalçamı bırakma 😈",
+        "Ahh… sertçe sık 🥵",
+        "Kalçamı kaldırıyorum sana 🍑",
+        "Böyle tutarak al beni 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_sx2_meme_sik",
+      "name": "🍒 Memelerini sıkıyorum",
+      "category": "💬 Sevişirken",
+      "when": [
+        "meme-|göğüs-|gogus-|=memeni|memelerini|göğüslerini|goguslerini|uçların-|uclarin-|meme uç-|meme uc-",
+        "sıkıyorum|sikiyorum|sıkıyom|sıkıcam|avuçluyorum|avucluyorum|okşuyorum|oksuyorum|yoğuruyorum|yoguruyorum|tutuyorum|mıncıklıyorum|minciklıyorum|minciklıyorum|çimdikliyorum|cimdikliyorum"
+      ],
+      "reply": [
+        "Ahh… göğüslerim avucunda 😩",
+        "Sık, daha sıkı 🥵",
+        "Uçlarımı çimdikle 😈",
+        "Göğüslerimi yoğur 😩",
+        "Off… parmakların uçlarımda 🥵",
+        "Göğüslerim senin 🍒",
+        "Ahh… sıkınca aşağısı zonkluyor 😩",
+        "İkisini birden tut 😈",
+        "Göğsümü kavrayıp vur 🥵",
+        "Mmm… tam böyle 😩",
+        "Uçlarım dimdik oldu 😳",
+        "Göğüslerimi sallayarak sık 😈",
+        "Ahh… acıtmadan ama sert 🥵",
+        "Avuçlarına sığmıyorlar değil mi? 😏",
+        "Göğüslerimi bırakma 😩",
+        "Off… bu his 🫠",
+        "Uçlarımı çek 😈",
+        "Göğüslerimden tutarak sür beni 🥵",
+        "Ahh evet 😩",
+        "Sıktıkça inliyorum 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_sx2_sac",
+      "name": "💇 Saçını çekiyorum",
+      "category": "💬 Sevişirken",
+      "when": [
+        "saç-|sac-",
+        "çekiyorum|cekiyorum|çekiyom|cekiyom|tutuyorum|kavrıyorum|kavriyorum|sarıyorum|sariyorum"
+      ],
+      "reply": [
+        "Ahh! Çek, başımı geri çek 😩",
+        "Saçımdan tutup vur 🥵",
+        "Off… bu beni çıldırtıyor 😈",
+        "Daha sert çek 😩",
+        "Saçım avucunda, ben senin 🥵",
+        "Ahh… boynum açıkta 😈",
+        "Çektikçe inliyorum 😩",
+        "Saçımı bırakma 🥵",
+        "Beni yönet 😈",
+        "Ahh evet… böyle 😩",
+        "Başım geride, ağzım açık 🥵",
+        "Saçımla dizginle beni 🐎",
+        "Off… acıtıyor ama güzel 😩",
+        "Saçımı dola eline 😈",
+        "Ahh… tam istediğim 🥵",
+        "Çek ve derine gir 😩",
+        "Saçımdan tutunca kendimi kaybediyorum 😵‍💫",
+        "Daha… 🥵",
+        "Beni kendine çek 😈",
+        "Ahh! 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_sx2_boyun",
+      "name": "💋 Boynunu öpüyorum",
+      "category": "💬 Sevişirken",
+      "when": [
+        "boyn-|=boynunu|ense-|=enseni|kulağını|kulagini",
+        "öpüyorum|opuyorum|öpüyom|ısırıyorum|isiriyorum|yalıyorum|yaliyorum|emiyorum|kokluyorum"
+      ],
+      "reply": [
+        "Ahh… boynum en zayıf yerim 😩",
+        "Tüylerim diken diken 😳",
+        "Isır… iz bırak 😈",
+        "Nefesin boynumda 🥵",
+        "Off… dizlerim titriyor 😩",
+        "Ensemi öp… ahh 🫠",
+        "Kulağıma fısılda 😏",
+        "Boynumu yalayınca eriyorum 🥵",
+        "Daha… ahh 😩",
+        "Boynumda morluk istiyorum 😈",
+        "Kokumu içine çek 😏",
+        "Ahh… ürperiyorum 😳",
+        "Dudakların boynumda çok sıcak 🥵",
+        "Boynumdan aşağı in 😈",
+        "Off… bu his 🫠",
+        "Kulak memem… ahh 😩",
+        "Boynumu öperken beni de doldur 🥵",
+        "Isırınca inliyorum 😩",
+        "Durma 😈",
+        "Ahh evet 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_sx2_am",
+      "name": "👅 Amını yalıyorum",
+      "category": "💬 Sevişirken",
+      "when": [
+        "=amını|amini|amcığını|amcigini|klitoris-|aşağını|asagini|=kukunu|bacaklarının arası",
+        "yalıyorum|yaliyorum|yalıyom|emiyorum|emiyom|öpüyorum|opuyorum|okşuyorum|oksuyorum|parmaklıyorum|parmakliyorum"
+      ],
+      "reply": [
+        "Ahh… dilin tam orada 😩",
+        "Durma, durma 🥵",
+        "Bacaklarım titriyor 🫠",
+        "Saçlarından tutup bastırıyorum 😈",
+        "Off… sırılsıklamım 💦",
+        "Klitorisimi em… ahh 😩",
+        "Dilini içime sok 🥵",
+        "Böyle devam edersen gelirim 😩",
+        "Ahh evet, tam orası 😈",
+        "Yüzünü göm 🥵",
+        "Islaklığımı tat 💦",
+        "Mmm… yavaş, sonra hızlı 😩",
+        "Kalçamı kaldırıyorum ağzına 🥵",
+        "Dilin büyülü 😈",
+        "Ahh… orgazm geliyor 😩💦",
+        "Bacaklarımı omzuna aldım 🥵",
+        "Off… nefesin orada 😩",
+        "Daha derin yala 😈",
+        "Çığlık atacağım 😱",
+        "Ahh… durma lütfen 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_sx2_parmak",
+      "name": "☝️ Parmağımı sokuyorum",
+      "category": "💬 Sevişirken",
+      "when": [
+        "parmak-|parmağı-|parmagi-",
+        "sokuyorum|sokuyom|giriyorum|=içine|=icine|oynuyorum|oynatıyorum|oynatiyorum|kıvırıyorum|kiviriyorum"
+      ],
+      "reply": [
+        "Ahh… parmakların içimde 😩",
+        "Kıvır… tam orası 🥵",
+        "Bir parmak daha 😈",
+        "Off… ıslaklığımı hissediyor musun? 💦",
+        "Yavaşça… ahh 😩",
+        "Daha hızlı oynat 🥵",
+        "Parmaklarınla beni bitir 😈",
+        "Ahh evet… o nokta 😩",
+        "Bacaklarım kendiliğinden açılıyor 🥵",
+        "Durma 😩",
+        "Parmaklarını emmek istiyorum sonra 😈",
+        "Off… içim zonkluyor 🥵",
+        "Başparmağın klitorisimde 😩",
+        "Ahh… gelmek üzereyim 💦",
+        "Derine… 🥵",
+        "Parmakların kayıyor içimde 😩",
+        "Mmm… böyle 😈",
+        "Sırılsıklam oldum 💦",
+        "Ahh… daha fazla 🥵",
+        "Beni parmaklarınla sür 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_sx2_op",
+      "name": "😘 Öpüyorum seni",
+      "category": "💬 Sevişirken",
+      "when": [
+        "öpüyorum|opuyorum|öpüyom|opuyom|öpücem|opucem|öpeceğim|opecegim"
+      ],
+      "reply": [
+        "Ben de seni öpüyorum 💋",
+        "Mmm… dudakların 😚",
+        "Bir daha öp 💋",
+        "Öpüşün nefesimi kesiyor 🥰",
+        "Dudaklarımı ısır 😈",
+        "Öpücüğün tatlı 😋",
+        "Dilini de ver 😏",
+        "Ahh… eriyorum 🫠",
+        "Seni öpmeye doyamıyorum 💗",
+        "Bırakma dudaklarımı 💋",
+        "Boynumu da öp 😈",
+        "Yavaş yavaş öp 🥰",
+        "Dudakların çok yumuşak 😚",
+        "Öpüşerek devam edelim 💋",
+        "Kalbim hızlandı 💓",
+        "Öp beni, sonra içime gel 😈",
+        "Mmm… bir daha 💋",
+        "Tadın dudaklarımda 😋",
+        "Öpüşlerin bağımlılık 💗",
+        "Sarılarak öp 🥰"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_sx2_bosal",
+      "name": "💦 Boşalıcam, az kaldı",
+      "category": "💬 Sevişirken",
+      "when": [
+        "boşalıca-|bosalica-|boşalacağ-|bosalacag-|boşalıyorum|bosaliyorum|boşalıyom|bosaliyom|gelicem|geleceğim|gelecegim|geliyorum|=az kaldı|=az kaldi|patlıcam|patlicam|patlayacağım|patlayacagim"
+      ],
+      "reply": [
+        "{cevap:boşalıcam}"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "korunmasına göre: içime / kondom / dışarı"
     }
   ],
   "addons": [

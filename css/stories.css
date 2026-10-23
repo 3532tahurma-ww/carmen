@@ -1765,6 +1765,12 @@ button.cs-cond { border: 0; cursor: pointer; }
 /* ⚡ son kullanılan olay kısayolları (mesaj kutusunun üstünde) */
 .ev-quick { display: flex; align-items: center; gap: 6px; margin: 0 10px 6px; padding: 5px 6px 5px 10px; border-radius: 16px; background: rgba(255, 255, 255, .92); box-shadow: 0 3px 12px rgba(20, 40, 80, .08); animation: pageIn .25s var(--ease) both; }
 .ev-quick[hidden] { display: none; }
+/* 📜 # ile seçilip gönderilmeyi bekleyen olaylar */
+.ev-pend { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 0 10px 6px; padding: 5px 10px; border-radius: 16px; background: rgba(255, 255, 255, .92); box-shadow: 0 3px 12px rgba(20, 40, 80, .08); animation: pageIn .25s var(--ease) both; }
+.ev-pend[hidden] { display: none; }
+.ev-pend-it { padding: 3px 10px; border-radius: 999px; font-size: 13px; font-weight: 600; background: #f1ecff; }
+.ev-pend-it b { margin-left: 3px; opacity: .55; font-size: 11px; }
+.ev-pend small { flex: 1 1 100%; font-size: 11px; color: #8a8fa3; }
 .eq-ic { flex: none; font-size: 14px; }
 .eq-row { flex: 1; min-width: 0; display: flex; gap: 5px; overflow-x: auto; scrollbar-width: none; }
 .eq-row::-webkit-scrollbar { display: none; }
@@ -1973,6 +1979,25 @@ button.cr-and:active { transform: scale(.9); }
 .bk-res mark, .bk-body mark { background: rgba(255, 213, 79, .7); color: inherit; border-radius: 3px; padding: 0 2px; }
 .bk-none { padding: 10px; font-style: italic; color: #7a5a35; }
 .bk-link { color: #8e2a1c; text-decoration: underline dotted; text-underline-offset: 3px; cursor: pointer; }
+/* 📘 sözlük terimi ve baloncuğu */
+.bk-term { border-bottom: 2px dotted #b07a2a; cursor: help; }
+.bk-term:hover { background: rgba(176, 122, 42, .12); }
+.bk-tip { position: fixed; z-index: 200; width: min(300px, calc(100vw - 16px)); padding: 10px 12px; border-radius: 12px; background: #2b2118; color: #f6ead6; box-shadow: 0 8px 24px rgba(0, 0, 0, .35); font-size: 13px; line-height: 1.45; animation: bkTipIn .15s; }
+@keyframes bkTipIn { from { opacity: 0; transform: translateY(-4px); } }
+.bk-tip b { display: block; margin-bottom: 3px; color: #ffd27a; }
+.bk-tip p { margin: 0; }
+.bk-tip button { margin-top: 7px; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 700; color: #2b2118; background: #ffd27a; }
+/* 👤 kitapta "senin karakterin" kutusu */
+.bk-me { margin: 16px 4px 4px; padding: 10px 12px; border: 1px solid rgba(142, 42, 28, .25); border-radius: 10px; background: rgba(255, 255, 255, .45); }
+.bk-me-h { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; }
+.bk-me-h select { margin-left: auto; max-width: 45%; padding: 3px 6px; border-radius: 8px; font-size: 13px; }
+.bk-me ul { margin: 0; padding-left: 18px; font-size: 13.5px; line-height: 1.5; }
+.bk-me li + li { margin-top: 3px; }
+/* ❓ bu ekranın kitap bölümü */
+.pg-ctx { position: absolute; top: 12px; left: 60px; color: #fff; background: rgba(255, 255, 255, .2); backdrop-filter: blur(8px); border: 1px solid rgba(255, 255, 255, .35); font-size: 17px; }
+.split-list .pg-ctx { left: 12px; }
+.round-btn.ctx-r { left: 66px; font-size: 18px; }
+.chat-head .ctx-help { font-size: 17px; }
 .bk-try { display: block; margin: 5px 0 0 auto; padding: 2px 9px; border-radius: 999px; font-size: 11px; font-weight: 700; color: #fff; background: rgba(255, 255, 255, .22); }
 .bk-lia { position: relative; display: flex; gap: 10px; align-items: flex-start; margin: 18px 4px 4px 18px; padding: 10px 14px; border-radius: 4px; background: #fff7b8; transform: rotate(-1.2deg); box-shadow: 2px 4px 10px rgba(0, 0, 0, .18); }
 .bk-lia::before { content: ''; position: absolute; top: -9px; left: 50%; width: 46px; height: 16px; margin-left: -23px; background: rgba(255, 255, 255, .55); transform: rotate(3deg); }

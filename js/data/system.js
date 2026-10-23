@@ -2759,6 +2759,27 @@ Stories.SYSTEM = {
    "desc": "Kampüste, ofis saatinde: o hoca, sen öğrenci",
    "color": "#7e57c2",
    "emojis": "👩‍🏫"
+  },
+  {
+   "id": "mvl6mx4zkn5gu",
+   "title": "Hotdogging",
+   "cat": "c:mvgn2ubfw2eoh",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [
+    "kalça"
+   ],
+   "desc": "Kalçanın iki yanağı arasında sürtme (🌭 sosisli gibi): içeri girmeden, kalçaların arasında",
+   "color": "#ff8a65",
+   "emojis": "🍑🌭"
   }
  ],
  "places": [],
@@ -4518,6 +4539,635 @@ Stories.SYSTEM = {
   "r_cmp_yer_pk_flörtöz": [
    {
     "id": "mvl2lpjtdpfsj",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_q3_meme_sev_big": [
+   {
+    "id": "mvl6mx51tmf8w",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_q3_meme_sev_mid": [
+   {
+    "id": "mvl6mx512cs55",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_q3_meme_sev_small": [
+   {
+    "id": "mvl6mx51yiifr",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_q3_meme_sev": [
+   {
+    "id": "mvl6mx5125yvx",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_am": [
+   {
+    "id": "mvl6mx51cut2j",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_am_0": [
+   {
+    "id": "mvl6mx51qcvjs",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_am_1": [
+   {
+    "id": "mvl6mx51limva",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_am_2": [
+   {
+    "id": "mvl6mx51wg2kc",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_am_3": [
+   {
+    "id": "mvl6mx514sbhm",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_dar": [
+   {
+    "id": "mvl6mx51slicp",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_dar_0": [
+   {
+    "id": "mvl6mx51d9tu0",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_dar_1": [
+   {
+    "id": "mvl6mx51mgtbp",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_islak": [
+   {
+    "id": "mvl6mx51npjxy",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_arka": [
+   {
+    "id": "mvl6mx51ti6pd",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_arka_0": [
+   {
+    "id": "mvl6mx5102rub",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_arka_1": [
+   {
+    "id": "mvl6mx51ijudg",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_arka_2": [
+   {
+    "id": "mvl6mx516wo5e",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_kalca": [
+   {
+    "id": "mvl6mx513nsjd",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_kalca_0": [
+   {
+    "id": "mvl6mx51fx65i",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_kalca_1": [
+   {
+    "id": "mvl6mx5111ze4",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_kalca_2": [
+   {
+    "id": "mvl6mx51b01lo",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_uc": [
+   {
+    "id": "mvl6mx51g3i0z",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_dudak": [
+   {
+    "id": "mvl6mx51yxpr4",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_bacak": [
+   {
+    "id": "mvl6mx512gycr",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_vucut": [
+   {
+    "id": "mvl6mx51ljwvz",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_ten": [
+   {
+    "id": "mvl6mx51as2lw",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_pk_utangaç": [
+   {
+    "id": "mvl6mx51ojo18",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_pk_kibirli": [
+   {
+    "id": "mvl6mx51kl92t",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_pk_flörtöz": [
+   {
+    "id": "mvl6mx5149kip",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_pk_soğuk": [
+   {
+    "id": "mvl6mx510fo9w",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_pk_romantik": [
+   {
+    "id": "mvl6mx51prkur",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_pk_asi": [
+   {
+    "id": "mvl6mx51webqi",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_pk_özgüvenli": [
+   {
+    "id": "mvl6mx51q5umv",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_pk_çocuksu": [
+   {
+    "id": "mvl6mx51pcrem",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_pk_güvensiz": [
+   {
+    "id": "mvl6mx51ps4zy",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_pk_şımarık": [
+   {
+    "id": "mvl6mx5141he8",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_bd_uc2": [
+   {
+    "id": "mvl6mx5125uxr",
     "text": "",
     "pct": 100,
     "effects": [
