@@ -2360,7 +2360,9 @@ Stories.SYSTEM = {
    "id": "c:mvgwj75108lqd",
    "icon": "🦄",
    "label": "Fantesy",
-   "tags": []
+   "tags": [
+    "fantesy"
+   ]
   },
   {
    "id": "c:mvgwupu3we8yl",
@@ -2656,7 +2658,7 @@ Stories.SYSTEM = {
      "effects": [
       {
        "p": "p:umvjoe339asss4",
-       "d": 20
+       "d": 8
       }
      ]
     }

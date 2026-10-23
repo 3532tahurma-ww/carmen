@@ -18,6 +18,7 @@
  * traits: karakterde HEPSİ olmalı; bir öğede "|" ile alternatifler (ör. "Pussy Size: Tight|Pussy Size: Very Tight" = biri yeter).
  * chars: sadece bu adlar (tam ad ya da ilk ad).
  * Eşleşenler arasında en özel kural kazanır: daha çok kelime > kişilik şartı > karakter şartı. Eşitlikte rastgele.
+ * best(..., loose) ile sırası farklı ya da (3+ kelimede) bir kelimesi eksik kurallar da düşük puanla yarışır.
  */
 window.Stories = window.Stories || {};
 
@@ -92,17 +93,35 @@ Stories.Bot = (() => {
   const pick = a => a[Math.floor(Math.random() * a.length)];
   const asData = d => (Array.isArray(d) ? { rules: d } : (d || { rules: [] }));
 
-  // Mesaja ve karaktere göre en iyi kural: { rule, score, fallback } ya da null.  data: BOT_RULES (ya da sadece kural dizisi)
-  function best(data, text, ch) {
+  // 🔓 Gevşek eşleşme (kullanıcının yazdığı mesajda): kelimeler başka sırada da olabilir (−30 puan), 3+ kelimelik
+  // kuralda biri eksik olabilir (eksik kelimenin puanı yok, −60). İç sorgu kuralları (=evt, =durum, =sor, =cevap) hariç
+  const INNER = ['=evt', '=durum', '=sor', '=cevap'];
+  function looseScore(msg, r, data) {
+    const w = words(r);
+    if (w.some(t => INNER.includes(t))) return -1;
+    const got = w.filter(t => inOrder(msg, [t], data)).length;
+    if (got === w.length) return score(r) - 30;
+    if (w.length >= 3 && got === w.length - 1) return score(r) - 160;
+    return -1;
+  }
+
+  // Mesaja ve karaktere göre en iyi kural: { rule, score, fallback, loose } ya da null.  data: BOT_RULES (ya da sadece kural dizisi)
+  // loose: true → tam tutmayan kurallar da gevşek puanıyla yarışır
+  function best(data, text, ch, loose) {
     data = asData(data);
     const msg = norm(text);
     const usable = (data.rules || []).filter(r => (r.reply || []).some(x => String(x).trim()) && fits(r, ch));
-    const hit = usable.filter(r => words(r).length && inOrder(msg, words(r), data));
-    const pool = hit.length ? hit : usable.filter(r => !words(r).length);
+    const hit = usable.filter(r => words(r).length && inOrder(msg, words(r), data)).map(r => ({ r, s: score(r) }));
+    if (loose) usable.forEach(r => {
+      if (!words(r).length || hit.some(x => x.r === r)) return;
+      const s = looseScore(msg, r, data);
+      if (s > 0) hit.push({ r, s, loose: true });
+    });
+    const pool = hit.length ? hit : usable.filter(r => !words(r).length).map(r => ({ r, s: score(r) }));
     if (!pool.length) return null;
-    const top = Math.max(...pool.map(score));
-    const rule = pick(pool.filter(r => score(r) === top));
-    return { rule, score: top, fallback: !hit.length };
+    const top = Math.max(...pool.map(x => x.s));
+    const w = pick(pool.filter(x => x.s === top));
+    return { rule: w.r, score: top, fallback: !hit.length, loose: !!w.loose };
   }
 
   /* 🪄 Otomatik ekler: karakterin yazdığı mesaja göre ek.
@@ -146,5 +165,5 @@ Stories.Bot = (() => {
     return txt.split('||').map(s => s.trim()).filter(Boolean);
   }
 
-  return { norm, expand, inOrder, fits, best, reply, score, catches, addons, addText, ADD_MODES };
+  return { norm, expand, inOrder, fits, best, reply, score, looseScore, catches, addons, addText, ADD_MODES };
 })();

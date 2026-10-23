@@ -260,7 +260,17 @@ Stories.BOT_RULES = {
         "Dudaklarım şişti senin yüzünden 😳💋",
         "Öpüşünden anladım, beni istiyorsun 😏",
         "Kalbim dudaklarımda atıyor sanki 💓",
-        "Gözlerimi açınca hâlâ sana bakıyorum 🥺"
+        "Gözlerimi açınca hâlâ sana bakıyorum 🥺",
+        "Dudaklarını ısırıyorum hafifçe 😈",
+        "Öpüşürken nefes almayı unuttum 😳",
+        "Dilin dilimle dans ediyor 💋",
+        "Böyle öpülmeyi hiç yaşamadım 🥺",
+        "Dudakların çok yumuşak 💗",
+        "Bir daha… ve bir daha 💋",
+        "Öpüşürken ellerin saçımda 😩",
+        "Seni öpmek bağımlılık yapıyor 😏",
+        "Boynumu da öp 💋",
+        "Bu öpücükle eridim 🫠"
       ],
       "traits": [],
       "chars": [],
@@ -384,7 +394,13 @@ Stories.BOT_RULES = {
         "Mmmh… bacaklarımı tut 😩",
         "Nasıl bu kadar iyi yapıyorsun? 🥵",
         "Yavaş… sonra hızlı… ahh 😵‍💫",
-        "Sesimi tutamıyorum… 😩"
+        "Sesimi tutamıyorum… 😩",
+        "Ahhh… harikasın 😩",
+        "Ahhh evet, daha… 😩",
+        "Evet {sen}, evet… 😩",
+        "Evet, evet, eveeet 😵‍💫",
+        "Evet… evet, tam böyle 😩",
+        "Sesimi tutamıyorum… ahhh 🥵"
       ],
       "traits": [],
       "chars": [],
@@ -409,7 +425,13 @@ Stories.BOT_RULES = {
         "Ellerim çarşafı sıkıyor 😩",
         "Şimdi durma… lütfen 🥺💦",
         "Kalçam titriyor… 🫠",
-        "Bunu her gün yapmalıyız 😈"
+        "Bunu her gün yapmalıyız 😈",
+        "Ahh {sen}… mükemmelsin 😩",
+        "Ahh… sen bir harikasın 😩💗",
+        "Mmmh… daha derin, evet 🥵",
+        "Ahhh… harikasın 😩",
+        "Ahhh evet, daha… 😩",
+        "Evet {sen}, evet… 😩"
       ],
       "traits": [],
       "chars": [],
@@ -433,7 +455,13 @@ Stories.BOT_RULES = {
         "Ellerimi göğsüme koyuyorum… ahh 🫠",
         "Bu güç hoşuma gidiyor {sen} 😈",
         "Dilini kullan… evet 😩💦",
-        "Kalçamı sıkı tut 😏"
+        "Kalçamı sıkı tut 😏",
+        "Aynen böyle, ahhh 😩",
+        "Sen inledikçe ben daha çok inliyorum 😩",
+        "Off… her yerim titriyor 🥵",
+        "Ahh {sen}… mükemmelsin 😩",
+        "Ahh… sen bir harikasın 😩💗",
+        "Mmmh… daha derin, evet 🥵"
       ],
       "traits": [],
       "chars": [],
@@ -458,7 +486,13 @@ Stories.BOT_RULES = {
         "Bacaklarım hâlâ titriyor… 🫠",
         "Seni ıslattım… özür dilerim 🙈💦",
         "Bir daha… bir daha yap 😩",
-        "Hiç böyle olmamıştı {sen} 😳💦"
+        "Hiç böyle olmamıştı {sen} 😳💦",
+        "Offf… bu çok iyi 🥵",
+        "Bir daha… ahh, bir daha 😩",
+        "Off… harikasın {sen} 🥵",
+        "Aynen böyle, ahhh 😩",
+        "Sen inledikçe ben daha çok inliyorum 😩",
+        "Off… her yerim titriyor 🥵"
       ],
       "traits": [],
       "chars": [],
@@ -504,7 +538,13 @@ Stories.BOT_RULES = {
         "Ç-çok tuhaf hissettiriyor… güzel 😳",
         "Bunu kimseye söyleme 🙈",
         "Ahh… özür dilerim, sesim… 😳",
-        "Lütfen… biraz daha 🥺"
+        "Lütfen… biraz daha 🥺",
+        "Off, tam istediğim gibi 😩",
+        "Ahhh, bu kadar iyi olmamalı 😵‍💫",
+        "Bayılıyorum… devam 🥵",
+        "Offf… bu çok iyi 🥵",
+        "Bir daha… ahh, bir daha 😩",
+        "Off… harikasın {sen} 🥵"
       ],
       "traits": [
         "Utangaç"
@@ -533,7 +573,23 @@ Stories.BOT_RULES = {
         "Benim için dayan biraz 😏",
         "Bu gece sadece senin zevkin için buradayım 😈",
         "Hangi elimi daha çok seviyorsun? 😏",
-        "Bekle… daha yeni başlıyorum 😋"
+        "Bekle… daha yeni başlıyorum 😋",
+        "Bugün başka yollarla seni bitireceğim 😏",
+        "Her yerimle oynayacağım seninle 😈",
+        "Acele yok, keyfini çıkar 😌",
+        "Hangi yerimi istersin? 😏",
+        "Sana dokunmak çok güzel 😩",
+        "Seni yavaş yavaş pişiriyorum 😈",
+        "Bırak ben yapayım 😏",
+        "Gözlerini kapat, hisset 😩",
+        "Daha yeni başlıyorum 😈",
+        "Nefesin değişti 😏",
+        "Durma {sen}… ahhh 😩",
+        "Mmmh… çok iyisin 🥵",
+        "Mmm evet, bunu seviyorum 😈",
+        "Off, tam istediğim gibi 😩",
+        "Ahhh, bu kadar iyi olmamalı 😵‍💫",
+        "Bayılıyorum… devam 🥵"
       ],
       "traits": [],
       "chars": [],
@@ -563,7 +619,25 @@ Stories.BOT_RULES = {
         "Diz çöktüm… şimdi beni izle 😈",
         "Dudaklarım seni çok özlemiş 😋",
         "Bu tadı ezberledim {sen} 😏",
-        "Elinle saçımı yönlendir… evet, böyle 😈"
+        "Elinle saçımı yönlendir… evet, böyle 😈",
+        "Ağzıma al demeden aldım 😋",
+        "Dilimle her yerini tanıyorum 😈",
+        "Gözlerine bakarak emiyorum 😏",
+        "Ağzım sıcacık değil mi? 🥵",
+        "Saçımı tut, ritmi sen ver 😩",
+        "Dudaklarımla sıkıyorum 😈",
+        "Tadın çok güzel 😋",
+        "Yavaşça… sonra derin 😏",
+        "Ağzımda büyüyorsun 😳",
+        "Elimle de yardım ediyorum 😈",
+        "Diz çöktüm senin için 🥺",
+        "Ağzımdan çıkarmak istemiyorum 😋",
+        "Ben de inliyorum, duyuyor musun? 😩",
+        "Of of of… harika 😵‍💫",
+        "Ahh, bacaklarım titriyor… devam 🥵",
+        "Durma {sen}… ahhh 😩",
+        "Mmmh… çok iyisin 🥵",
+        "Mmm evet, bunu seviyorum 😈"
       ],
       "traits": [],
       "chars": [],
@@ -588,7 +662,23 @@ Stories.BOT_RULES = {
         "Başımı tut… yavaşça 😩",
         "Nefes… nefes alayım… sonra tekrar 😈",
         "Bunu kimse yapamaz senin için {sen} 😏",
-        "Daha derin… 😵‍💫"
+        "Daha derin… 😵‍💫",
+        "Boğazıma kadar… ahh 😩",
+        "Nefesimi kesiyorsun 🥵",
+        "Gözlerim doldu ama durma 😈",
+        "En derine al beni… yani ben seni 😳",
+        "Başımı bastır 😩",
+        "Boğazımda zonkluyorsun 😈",
+        "Hiç ara vermeden 🥵",
+        "Salyalarım akıyor 😳",
+        "Boğazımı kullan 😩",
+        "Sonuna kadar yuttum 😈",
+        "Ooff, nasıl bu kadar iyisin? 😩",
+        "Ahhh ahhh… durma 😩",
+        "Ohh… ne kadar iyi 🥵",
+        "Ben de inliyorum, duyuyor musun? 😩",
+        "Of of of… harika 😵‍💫",
+        "Ahh, bacaklarım titriyor… devam 🥵"
       ],
       "traits": [],
       "chars": [],
@@ -615,7 +705,23 @@ Stories.BOT_RULES = {
         "Yavaş… sonra hızlan 😏",
         "Göğüslerimin arasında kaybolman ne güzel 😏",
         "Yukarıdan sana bakıyorum… dilim hazırda 😋",
-        "Yağ getirsem mi? Daha kaygan olur 😈"
+        "Yağ getirsem mi? Daha kaygan olur 😈",
+        "Göğüslerimin arasında kaybol 😏",
+        "Göğüslerimi sıkıştırıyorum senin için 😈",
+        "Aralarında kayıyorsun 🥵",
+        "Ucunu dilimle karşılıyorum 😋",
+        "Göğüslerim yağlı, kayganlar 😏",
+        "Yukarı aşağı… hızlan 😈",
+        "Göğüslerimle sağıyorum seni 🥵",
+        "Aralarında çok sıcaksın 😩",
+        "Göğüslerime bastır 😈",
+        "Bu göğüsler senin için 🍒",
+        "Çok güzel… devam et 🥺",
+        "Harikasın… harikasın… ahhh 😵‍💫",
+        "İnliyorum… ve utanmıyorum 😈",
+        "Ooff, nasıl bu kadar iyisin? 😩",
+        "Ahhh ahhh… durma 😩",
+        "Ohh… ne kadar iyi 🥵"
       ],
       "traits": [],
       "chars": [],
@@ -641,7 +747,23 @@ Stories.BOT_RULES = {
         "Hızlı mı istiyorsun {sen}? 😏",
         "Avucumdaki zonklaman… kalp atışı gibi 😏",
         "Gözlerini kapama, bana bak, elime bak 😈",
-        "Sıkı mı gevşek mi, sen söyle 😏"
+        "Sıkı mı gevşek mi, sen söyle 😏",
+        "Elimde ne kadar sertsin 😏",
+        "Yavaş mı hızlı mı? 😈",
+        "Parmaklarımla oynuyorum 😋",
+        "Elimle sıkıyorum 😩",
+        "Avucumda zonkluyorsun 🥵",
+        "Biraz tükürük… daha kaygan 😈",
+        "Gözlerine bakarak okşuyorum 😏",
+        "Elimde eriyorsun 😩",
+        "İki elimle tutuyorum 😈",
+        "Ucuyla oynuyorum 😏",
+        "Hmmm… beni deli ediyorsun 😈",
+        "Ahh… seni hissetmek harika 🥵",
+        "Durma, sakın durma ahhh 😵‍💫",
+        "Çok güzel… devam et 🥺",
+        "Harikasın… harikasın… ahhh 😵‍💫",
+        "İnliyorum… ve utanmıyorum 😈"
       ],
       "traits": [],
       "chars": [],
@@ -667,7 +789,21 @@ Stories.BOT_RULES = {
         "Daha hızlı mı? 😈",
         "Ayak parmaklarımla oynamana gülüyorum 🙈😏",
         "Bu kadar seveceğini bilsem daha önce yapardım 😈",
-        "Topuklarımı da kullanayım mı? 😏"
+        "Topuklarımı da kullanayım mı? 😏",
+        "Ayaklarımla okşuyorum 😏",
+        "Bacaklarımın arasında sıkıştın 😈",
+        "Ayak tabanlarım çok yumuşak değil mi? 😋",
+        "Parmaklarımla oynuyorum 😏",
+        "Bacaklarımla sağıyorum seni 🥵",
+        "Ayaklarıma bayılıyorsun, biliyorum 😈",
+        "Yavaşça yukarı aşağı 😩",
+        "Bacaklarımı sıkıyorum 😏",
+        "Ahhh… beni bitiriyorsun 😩",
+        "Devam et… ahhh 🥵",
+        "İnlememi duyuyor musun? Senin yüzünden 🥵",
+        "Hmmm… beni deli ediyorsun 😈",
+        "Ahh… seni hissetmek harika 🥵",
+        "Durma, sakın durma ahhh 😵‍💫"
       ],
       "traits": [],
       "chars": [],
@@ -693,7 +829,21 @@ Stories.BOT_RULES = {
         "Arkamı dönüyorum, bak 🍑😈",
         "Kalçalarımın arasında sıkışmış haline bak 😈",
         "Yavaşça kalçamı sallıyorum… hissediyor musun? 🍑",
-        "Bu yumuşaklığa kimse dayanamaz 😏"
+        "Bu yumuşaklığa kimse dayanamaz 😏",
+        "Kalçamın arasında kay 😈",
+        "Kalçamı sıkıştırıyorum 😏",
+        "Kalçam yağlı ve kaygan 🥵",
+        "Kalçamla sağıyorum seni 😈",
+        "Yavaş yavaş sürtünüyorum 😩",
+        "Kalçamı izlemeyi seviyorsun 😏",
+        "Belimi tut 🥵",
+        "Kalçamın arası sıcacık 😈",
+        "Mmm… beni böyle sev 😩",
+        "Tam oradan… ahhh 🥵",
+        "Nefesim kesildi… devam 😵‍💫",
+        "Ahhh… beni bitiriyorsun 😩",
+        "Devam et… ahhh 🥵",
+        "İnlememi duyuyor musun? Senin yüzünden 🥵"
       ],
       "traits": [],
       "chars": [],
@@ -724,7 +874,23 @@ Stories.BOT_RULES = {
         "Her itişinde nefesim kesiliyor… bir daha 😩",
         "Bu ritim… kalbimle aynı atıyor 💓",
         "Tırnaklarım sırtında iz bırakıyor, kusura bakma 😈",
-        "Beni unuttuğum bir yere götürüyorsun {sen} 🫠"
+        "Beni unuttuğum bir yere götürüyorsun {sen} 🫠",
+        "İçime gir… yavaşça 😩",
+        "Sırılsıklamım, hissediyor musun? 🥵",
+        "Seni içimde hissetmek çok güzel 😈",
+        "Beni doldur 😩",
+        "Her itişin içimi titretiyor 🥵",
+        "Durma… sakın durma 😩",
+        "Tam yerine dokunuyorsun 😵‍💫",
+        "İçim seni sıkıyor 😏",
+        "Daha hızlı 🥵",
+        "Islaklığım seni çekiyor 😈",
+        "Evet… evet, tam böyle 😩",
+        "Sesimi tutamıyorum… ahhh 🥵",
+        "Böyle devam et, ahh lütfen 🥺",
+        "Mmm… beni böyle sev 😩",
+        "Tam oradan… ahhh 🥵",
+        "Nefesim kesildi… devam 😵‍💫"
       ],
       "traits": [],
       "chars": [],
@@ -765,7 +931,24 @@ Stories.BOT_RULES = {
         "Kalçamı kaldırıyorum, daha derine gel 🥵",
         "Alnımızdaki ter birbirine karıştı 💦",
         "Klasik ama asla sıkıcı değil 😏",
-        "Gözlerimi kapatmayacağım, seni izlemek istiyorum 🥺"
+        "Gözlerimi kapatmayacağım, seni izlemek istiyorum 🥺",
+        "Gözlerime bakarak gir 🥺",
+        "Bacaklarımı beline doluyorum 😈",
+        "Üstümde ağırlığını hissetmek çok güzel 💗",
+        "Yavaş başla, sonra beni yatağa göm 😩",
+        "Alnını alnıma daya 🥺",
+        "Her itişinde inliyorum 🥵",
+        "Böyle klasik ama mükemmel 😏",
+        "Öp beni, durmadan 💋",
+        "Tırnaklarım sırtında, kaçamazsın 😈",
+        "Daha derin… ahh 😩",
+        "Seni tamamen hissediyorum 💗",
+        "Ahhh evet, daha… 😩",
+        "Evet {sen}, evet… 😩",
+        "Evet, evet, eveeet 😵‍💫",
+        "Evet… evet, tam böyle 😩",
+        "Sesimi tutamıyorum… ahhh 🥵",
+        "Böyle devam et, ahh lütfen 🥺"
       ],
       "traits": [],
       "chars": [],
@@ -794,7 +977,30 @@ Stories.BOT_RULES = {
         "Yastığa bastırıyorum yüzümü, sesim çıkmasın 😩",
         "Kalçamdaki parmak izlerin yarın da kalacak 🍑",
         "Belimi bük dedin, büktüm… şimdi ne? 😏",
-        "Her vuruşta biraz daha öne kayıyorum 🫠"
+        "Her vuruşta biraz daha öne kayıyorum 🫠",
+        "Kalçamı kaldırdım, gel 😈",
+        "Saçımı tut, bırakma 😩",
+        "Arkadan çok derinsin 🥵",
+        "Belimi bastır, kalçamı kaldır 😏",
+        "Şaplak at, hak ettim 😈",
+        "Yüzüm yastıkta inliyorum 😩",
+        "Kalçam sana vuruyor, duyuyor musun? 🥵",
+        "Daha sert, kalçamı tut 😈",
+        "Bu açıyla tam yerine geliyorsun 😵‍💫",
+        "Dört ayak üstünde, senin için 😏",
+        "Sırtıma eğil, kulağıma inle 😩",
+        "Ellerin kalçamda çok güzel 🥵",
+        "Beni hayvan gibi al 😈",
+        "Dizlerim titriyor, durma 😩",
+        "Arkadan ne kadar azgınsın 😏",
+        "Kalçamı sana doğru itiyorum, daha derin 🥵",
+        "Arkadan beni böyle alman başımı döndürüyor 😵‍💫",
+        "Ahh… sen bir harikasın 😩💗",
+        "Mmmh… daha derin, evet 🥵",
+        "Ahhh… harikasın 😩",
+        "Ahhh evet, daha… 😩",
+        "Evet {sen}, evet… 😩",
+        "Evet, evet, eveeet 😵‍💫"
       ],
       "traits": [],
       "chars": [],
@@ -822,7 +1028,28 @@ Stories.BOT_RULES = {
         "Saçlarım yüzüne dökülüyor… tut onları 😏",
         "Yavaşça iniyorum… hissediyor musun? 😩",
         "Göğüslerim zıplıyor, gözlerin onlarda 😏",
-        "Bu tempoyu ben belirlerim {sen} 😈💦"
+        "Bu tempoyu ben belirlerim {sen} 😈💦",
+        "Altımda çaresizsin 😏",
+        "Göğüslerimi tut, zıplıyorum 🥵",
+        "Ritmi ben belirlerim 😈",
+        "Sonuna kadar oturuyorum… ahh 😩",
+        "Ellerini kalçama koy 😏",
+        "Gözlerime bak, kıpırdama 😈",
+        "Yavaş yavaş… sonra çılgınca 🥵",
+        "Üstündeyken çok derin 😵‍💫",
+        "Kalçamı dairesel oynatıyorum, hissediyor musun? 😏",
+        "Göğsüne tutunuyorum 😩",
+        "Sen sadece yat, gerisi bende 😈",
+        "Altımda inlemeni seviyorum 🥵",
+        "Saçlarım yüzüne dökülüyor 😏",
+        "Seni sağana kadar inmeyeceğim 😈",
+        "Kalçamı yavaşça indirip kaldırıyorum, işkence gibi 😈",
+        "Sen inledikçe ben daha çok inliyorum 😩",
+        "Off… her yerim titriyor 🥵",
+        "Ahh {sen}… mükemmelsin 😩",
+        "Ahh… sen bir harikasın 😩💗",
+        "Mmmh… daha derin, evet 🥵",
+        "Ahhh… harikasın 😩"
       ],
       "traits": [],
       "chars": [],
@@ -849,7 +1076,25 @@ Stories.BOT_RULES = {
         "Arkamdan sarılıp kulağımı ısırınca… ahh 😩",
         "Uyuyakalırsak böyle kalalım mı? 😌💦",
         "Sabahın ilk ışığında böyle uyanmak istiyorum 🌅",
-        "Kalbinin sırtımda attığını duyuyorum 💓"
+        "Kalbinin sırtımda attığını duyuyorum 💓",
+        "Arkamdan sarıl, sımsıkı 💗",
+        "Yan yana, yavaş ve derin 😩",
+        "Enseme nefesin çarpıyor 🥵",
+        "Göğüslerimi tut arkadan 😏",
+        "Bacağımı kaldır, daha derin 😈",
+        "Böyle tembel ama çok güzel 😌",
+        "Kulağıma fısılda 🥺",
+        "Seni arkamda hissetmek huzur veriyor 💗",
+        "Yavaşça… acele etme 😩",
+        "Boynumu öp arkadan 💋",
+        "Sabaha kadar böyle kalabiliriz 😏",
+        "Kalçamı sana bastırıyorum 🥵",
+        "Bir daha… ahh, bir daha 😩",
+        "Off… harikasın {sen} 🥵",
+        "Aynen böyle, ahhh 😩",
+        "Sen inledikçe ben daha çok inliyorum 😩",
+        "Off… her yerim titriyor 🥵",
+        "Ahh {sen}… mükemmelsin 😩"
       ],
       "traits": [],
       "chars": [],
@@ -876,7 +1121,24 @@ Stories.BOT_RULES = {
         "Ayaklarım parmak ucunda… ahh 😩",
         "Kapının arkasında, herkes içeride… 😈",
         "Bacağımı kaldır, daha derin 🫠",
-        "Duvardaki tablolar düşecek 😳💦"
+        "Duvardaki tablolar düşecek 😳💦",
+        "Ayakta… dizlerim çözülüyor 😩",
+        "Bacağımı kaldır 🥵",
+        "Beni kucağına al, tutun 😏",
+        "Duvar soğuk, sen sıcaksın 😩",
+        "Ayakta bu kadar derin olur mu? 😵‍💫",
+        "Ellerim duvarda, kalçam sende 😈",
+        "Beni kaldırıp taşı 🥵",
+        "Ayakta inlemek zor ama… ahh 😩",
+        "Tezgaha yasla beni 😏",
+        "Bırakma, düşeceğim 😳",
+        "Ayakta sert sert 😈",
+        "Ahhh, bu kadar iyi olmamalı 😵‍💫",
+        "Bayılıyorum… devam 🥵",
+        "Offf… bu çok iyi 🥵",
+        "Bir daha… ahh, bir daha 😩",
+        "Off… harikasın {sen} 🥵",
+        "Aynen böyle, ahhh 😩"
       ],
       "traits": [],
       "chars": [],
@@ -903,7 +1165,25 @@ Stories.BOT_RULES = {
         "Kucağında dans eder gibiyim 💃😈",
         "Alnımı alnına dayıyorum… gözlerin çok yakın 💗",
         "Sarılarak, sallanarak… ahh 🥰",
-        "Böyle iç içe hiç ayrılmayalım 💞"
+        "Böyle iç içe hiç ayrılmayalım 💞",
+        "Kucağına oturuyorum 😏",
+        "Boynuna sarılıyorum, sımsıkı 💗",
+        "Kucağında yavaşça kıpırdıyorum 😩",
+        "Dudaklarımızı ayırma 💋",
+        "Göğüslerim yüzünde 😈",
+        "Kucağında sallanıyorum 🥵",
+        "Kalçamı tut, beni bastır 😩",
+        "Bu kadar yakın olmak çok güzel 🥺",
+        "Gözlerimiz hiç ayrılmasın 💗",
+        "Kucağında eriyorum 🫠",
+        "Sandalye gıcırdıyor 😳",
+        "Kucağında kalmak istiyorum hep 😏",
+        "Mmmh… çok iyisin 🥵",
+        "Mmm evet, bunu seviyorum 😈",
+        "Off, tam istediğim gibi 😩",
+        "Ahhh, bu kadar iyi olmamalı 😵‍💫",
+        "Bayılıyorum… devam 🥵",
+        "Offf… bu çok iyi 🥵"
       ],
       "traits": [],
       "chars": [],
@@ -931,7 +1211,23 @@ Stories.BOT_RULES = {
         "Yavaşça… her santimi tek tek hissediyorum 😩",
         "Bunu benden başka kimseye yapma 😈",
         "Ellerim titriyor ama durma 🫠",
-        "Çarşafı ısırıyorum… ahh 😳"
+        "Çarşafı ısırıyorum… ahh 😳",
+        "Arkama yavaşça… ahh 😳",
+        "Arkam çok dar, dikkat et 😩",
+        "Arkamı sana açıyorum 😈",
+        "Yavaş yavaş alışıyorum 🥺",
+        "Arkadan doldurulmak bambaşka 🥵",
+        "Biraz daha… nefes alayım 😩",
+        "Arkam seni sıkıyor, hissettin mi? 😏",
+        "Şimdi hızlan 😈",
+        "Ağrı tatlı bir zevke döndü 😵‍💫",
+        "Arkam tamamen senin 🥵",
+        "Of of of… harika 😵‍💫",
+        "Ahh, bacaklarım titriyor… devam 🥵",
+        "Durma {sen}… ahhh 😩",
+        "Mmmh… çok iyisin 🥵",
+        "Mmm evet, bunu seviyorum 😈",
+        "Off, tam istediğim gibi 😩"
       ],
       "traits": [],
       "chars": [],
@@ -962,7 +1258,25 @@ Stories.BOT_RULES = {
         "Arkama her girişinde dünya duruyor 😵‍💫",
         "Yüzümü göremiyorsun ama inan bana… bayılıyorum 😩",
         "Her vuruş bir dalga gibi yayılıyor 🌊😈",
-        "Bu kadar derin… nefesim boğazımda kaldı 🫠"
+        "Bu kadar derin… nefesim boğazımda kaldı 🫠",
+        "Kalçamı aç ve arkama gir 😈",
+        "Arkadan en derine… ahh 😩",
+        "Saçımı tut, arkamdan sert 🥵",
+        "Kalçama şaplak at, sonra devam 😏",
+        "Yüzüm yastıkta, arkam havada 😳",
+        "Arkamı böyle sert alman 😈",
+        "Belimi bastır, daha derin 😩",
+        "Arkadan çok doluyum 🥵",
+        "Her itişte bağırmamak zor 😩",
+        "Arkam seni bırakmıyor 😈",
+        "Kalçamı tut ve sertleş 🥵",
+        "Arkamı hırpala 😈",
+        "Ahhh ahhh… durma 😩",
+        "Ohh… ne kadar iyi 🥵",
+        "Ben de inliyorum, duyuyor musun? 😩",
+        "Of of of… harika 😵‍💫",
+        "Ahh, bacaklarım titriyor… devam 🥵",
+        "Durma {sen}… ahhh 😩"
       ],
       "traits": [],
       "chars": [],
@@ -991,7 +1305,25 @@ Stories.BOT_RULES = {
         "Saçımı at kuyruğu gibi çek… evet 😈",
         "Bu gece merhamet yok, biliyorum 🔥",
         "Kalçamda avuç izin kızarıyor 🍑😩",
-        "Yalvartma beni… ya da yalvart 😈💦"
+        "Yalvartma beni… ya da yalvart 😈💦",
+        "Acımasız ol 😈",
+        "Arkamı parçala 🥵",
+        "Saçımı çek ve sert al 😩",
+        "Kalçamda izin kalsın 😈",
+        "Bağırıyorum ama durma 😩",
+        "Boğazımı tut, arkamdan vur 🥵",
+        "Hiç merhamet yok mu? İyi 😈",
+        "Arkam yanıyor, daha 😩",
+        "Beni kullan 🥵",
+        "Böyle hırpalanmayı seviyorum 😈",
+        "Sert, daha sert 🔥",
+        "Dizlerim çözüldü ama devam 😵‍💫",
+        "Harikasın… harikasın… ahhh 😵‍💫",
+        "İnliyorum… ve utanmıyorum 😈",
+        "Ooff, nasıl bu kadar iyisin? 😩",
+        "Ahhh ahhh… durma 😩",
+        "Ohh… ne kadar iyi 🥵",
+        "Ben de inliyorum, duyuyor musun? 😩"
       ],
       "traits": [],
       "chars": [],
@@ -1015,7 +1347,13 @@ Stories.BOT_RULES = {
         "Elimi tut… 🥺",
         "Ahh… özür dilerim, sesim 🙈",
         "Galiba… seviyorum bunu 😳",
-        "Dur… hayır, durma 🙈"
+        "Dur… hayır, durma 🙈",
+        "Ahh… seni hissetmek harika 🥵",
+        "Durma, sakın durma ahhh 😵‍💫",
+        "Çok güzel… devam et 🥺",
+        "Harikasın… harikasın… ahhh 😵‍💫",
+        "İnliyorum… ve utanmıyorum 😈",
+        "Ooff, nasıl bu kadar iyisin? 😩"
       ],
       "traits": [
         "Utangaç"
@@ -1085,7 +1423,13 @@ Stories.BOT_RULES = {
         "Acele etme {sen} 💕",
         "Bu sevişmek gibi… 🥺💗",
         "Gözlerime bakarak… 😌",
-        "Çok güzelsin böyle 💞"
+        "Çok güzelsin böyle 💞",
+        "Devam et… ahhh 🥵",
+        "İnlememi duyuyor musun? Senin yüzünden 🥵",
+        "Hmmm… beni deli ediyorsun 😈",
+        "Ahh… seni hissetmek harika 🥵",
+        "Durma, sakın durma ahhh 😵‍💫",
+        "Çok güzel… devam et 🥺"
       ],
       "traits": [],
       "chars": [],
@@ -1108,7 +1452,13 @@ Stories.BOT_RULES = {
         "Beni öp, durma {sen} 🔥💋",
         "Bu ateş sönmesin 😈",
         "Kalbim yerinden çıkacak 💓🔥",
-        "Daha… her şeyini ver 😩"
+        "Daha… her şeyini ver 😩",
+        "Tam oradan… ahhh 🥵",
+        "Nefesim kesildi… devam 😵‍💫",
+        "Ahhh… beni bitiriyorsun 😩",
+        "Devam et… ahhh 🥵",
+        "İnlememi duyuyor musun? Senin yüzünden 🥵",
+        "Hmmm… beni deli ediyorsun 😈"
       ],
       "traits": [],
       "chars": [],
@@ -1132,7 +1482,13 @@ Stories.BOT_RULES = {
         "Kalçama vur… ahh 🍑",
         "İz bırak bende 😈",
         "Beni yatağa fırlat 😏🔥",
-        "Bağırmamı istiyorsun değil mi? 😩💦"
+        "Bağırmamı istiyorsun değil mi? 😩💦",
+        "Sesimi tutamıyorum… ahhh 🥵",
+        "Böyle devam et, ahh lütfen 🥺",
+        "Mmm… beni böyle sev 😩",
+        "Tam oradan… ahhh 🥵",
+        "Nefesim kesildi… devam 😵‍💫",
+        "Ahhh… beni bitiriyorsun 😩"
       ],
       "traits": [],
       "chars": [],
@@ -1193,7 +1549,33 @@ Stories.BOT_RULES = {
         "Bu kadar azgın boşalmanı seviyorum 😈",
         "Hâlâ akıyor… durmuyor 😵‍💫💦",
         "Beni dölünle boyadın 🥵",
-        "Daha fazlasını istiyorum, bitmedi 😈"
+        "Daha fazlasını istiyorum, bitmedi 😈",
+        "Ahh… sıcacık, her yerime yayıldı 🥵💦",
+        "Bu kadar çok mu biriktirmiştin {sen}? 😳",
+        "Nefesim kesildi, sen de mi? 😩",
+        "Zonklamanı hâlâ hissediyorum 😈",
+        "İşte bunu bekliyordum 🥵",
+        "Bırak kendini, hepsi benim 😩💦",
+        "Titreyerek boşaldın, bayıldım 😈",
+        "Yüzündeki o ifade… unutamam 😏",
+        "Bir anda patladın 😳💦",
+        "Kokun her yerimde 🥵",
+        "Böyle boşalmanı izlemek çok güzel 😈",
+        "Hâlâ sertsin… bitmedi mi? 😏",
+        "Bu kadar yoğun mu olur? 😵‍💫",
+        "Seni bitirdim, değil mi? 😈💦",
+        "Ahh… sıcaklığın içime işledi 😩",
+        "Gözlerini kapattın, çok tatlısın 🥺",
+        "Bütün gücünü bana verdin 🥵",
+        "Bunu her gün yaşamak istiyorum 😈",
+        "Damla damla akıyor hâlâ 😳💦",
+        "Kalbin nasıl çarpıyor, hissediyorum 🫠",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵"
       ],
       "traits": [],
       "chars": [],
@@ -1233,7 +1615,33 @@ Stories.BOT_RULES = {
         "Dölün içimde kaynıyor 😵‍💫",
         "Ahh… en derine bıraktın 😩",
         "Çıkarma! Biraz daha içimde kal 🥺💦",
-        "Sıcacık dolum… bacaklarımdan süzülüyor 😈"
+        "Sıcacık dolum… bacaklarımdan süzülüyor 😈",
+        "Rahmime kadar ulaştın 😩💦",
+        "İçimde sıcacık bir göl oldu 🥵",
+        "Hepsini sakladım, bir damla kaçmadı 😈",
+        "Çıkarınca akacak, bekle biraz 🥺",
+        "Dölünü içimde hissetmek çok güzel 😩",
+        "Seni sıkıp son damlanı da aldım 😈💦",
+        "Doldum… tam ağzına kadar 🥵",
+        "İçimde zonkladığını saydım, beş kez 😳",
+        "Sıcaklığın göbeğime kadar yayıldı 😵‍💫",
+        "Bu kadar derine bıraktığın için teşekkürler 😏",
+        "İçimde kalsın biraz, kıpırdama 🥺💦",
+        "Bacaklarım titriyor, hepsi içimde 😩",
+        "Seni içimde boşalırken görmek… ahh 🥵",
+        "Taşıyor… bacaklarımdan süzülüyor 😳💦",
+        "Bana bu kadar çok verdin mi? 😈",
+        "Döl dolu bir rahim, mutluyum 😏",
+        "İçim sıcacık, kalbim de 💗💦",
+        "Son atışında bağırdım, duydun mu? 😩",
+        "Beni tamamen doldurdun {sen} 🥵",
+        "Şimdi sarıl, içimde kal 🥺",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦",
+        "Devam et… son damlana kadar ahhh 🥵",
+        "Hmmm… doydum… şimdilik 😈",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦"
       ],
       "traits": [],
       "chars": [],
@@ -1267,7 +1675,28 @@ Stories.BOT_RULES = {
         "Arkamı dölle doldurdun 😩💦",
         "İçimde zonklayarak boşaldın… ahh 🥵",
         "Arkamdan akıyor, hepsi seninki 😈",
-        "Bu kadar derine boşalmanı seviyorum 😵‍💫"
+        "Bu kadar derine boşalmanı seviyorum 😵‍💫",
+        "Arkamı ağzına kadar doldurdun 😩💦",
+        "Sıcaklığın arkamda yanıyor 🥵",
+        "Çıkarırken yavaş ol, akmasın 😳",
+        "Arkamda zonkladığını hissettim 😈",
+        "Hepsini arkamda tuttum 😏💦",
+        "Bu kadar derine… ahh 😵‍💫",
+        "Kalçamı sıkarak boşaldın, iz kaldı 😩",
+        "Arkam seninle doldu taştı 🥵",
+        "Bunu çok özlemişim 😈",
+        "Damlaları kalçamdan süzülüyor 😳💦",
+        "Arkadan doldurulmak en sevdiğim 😏",
+        "Nefesin enseme çarparken boşaldın 🥵",
+        "Böyle sert boşalmanı seviyorum 😈💦",
+        "Arkam hâlâ seni sıkıyor 😩",
+        "Hepsi içimde, hiçbiri dışarı çıkmasın 😈",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦"
       ],
       "traits": [],
       "chars": [],
@@ -1303,7 +1732,28 @@ Stories.BOT_RULES = {
         "Ağzımı doldurdun, taşırdın 😋💦",
         "Boğazıma fışkırdın… hepsini yuttum 😈",
         "Dudaklarımdan süzülüyor, yala istersen 🥵",
-        "Tadın ağzımda… daha ver 😩"
+        "Tadın ağzımda… daha ver 😩",
+        "Ağzımda patladın, bayıldım 😋💦",
+        "Tadın hâlâ dilimde 😈",
+        "Boğazımdan aktı, hepsini yuttum 😩",
+        "Dudaklarımı yala, sen de tat 😏",
+        "Ağzım doldu taştı 🥵💦",
+        "Bir damla bile israf etmem 😋",
+        "Gözlerine bakarak yuttum 😈",
+        "Bu kadar çok mu? Ağzıma sığmadı 😳",
+        "Sıcak ve koyu… mmh 😋💦",
+        "Dilimle son damlanı da aldım 😈",
+        "Çeneme süzüldü, sil istersen 😏",
+        "Ağzımda zonklarken inledim 😩",
+        "Tatlı mı tuzlu mu? Söylemem 😋",
+        "Yuttum ve daha istiyorum 😈💦",
+        "Ağzımı dölünle mühürledin 🥵",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩"
       ],
       "traits": [],
       "chars": [],
@@ -1334,7 +1784,23 @@ Stories.BOT_RULES = {
         "Parmağımla alıp tadına bakıyorum… mmm 😋",
         "Göğüslerimi dölle boyadın 😈💦",
         "Göğsümden süzülüyor, sıcacık 🥵",
-        "Çeneme kadar fışkırdı 😳💦"
+        "Çeneme kadar fışkırdı 😳💦",
+        "Göğüslerim sıcacık oldu 🥵💦",
+        "Uçlarımdan damlıyor 😈",
+        "Boynuma kadar sıçradı 😳",
+        "Göğüslerimi dölünle parlattın 😏",
+        "Aralarında patladın, ahh 😩💦",
+        "Göğsümden alıp yalıyorum 😋",
+        "Ne kadar da çokmuş, göğüslerim kaplandı 🥵",
+        "Sıcaklığın tenimi yakıyor 😈",
+        "Göğüslerime boşalmanı izlemek… 😩",
+        "Bembeyaz oldum 😳💦",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦",
+        "Devam et… son damlana kadar ahhh 🥵",
+        "Hmmm… doydum… şimdilik 😈",
+        "Mmmh… bayıldım 😩"
       ],
       "traits": [],
       "chars": [],
@@ -1365,7 +1831,23 @@ Stories.BOT_RULES = {
         "Bunu temizlemek uzun sürecek 😏💦",
         "Kalçamı dölle kapladın 😈💦",
         "Belime kadar fışkırdın 🥵",
-        "Kalçamdan akıyor, yala istersen 😏"
+        "Kalçamdan akıyor, yala istersen 😏",
+        "Kalçam bembeyaz oldu 😈💦",
+        "Belimden aşağı süzülüyor 🥵",
+        "Sıcaklığın kalçamı yaktı 😩",
+        "Kalçamı dölünle parlattın 😏",
+        "Sırtıma kadar sıçradı 😳💦",
+        "Kalçamı sıkıp boşaldın, ahh 🥵",
+        "Arkama boşalmanı seviyorum 😈",
+        "Damlalar bacaklarımdan iniyor 😩",
+        "Kalçamı boyadın {sen} 😏💦",
+        "Bir şaplak at, sonra temizle 😈",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦"
       ],
       "traits": [],
       "chars": [],
@@ -1397,7 +1879,17 @@ Stories.BOT_RULES = {
         "Bütün vücudum kasıldı, fışkırıyorum 🥵💦",
         "Tanrım… durma… ahhh 😩",
         "Beni paramparça ettin 😵‍💫",
-        "Hâlâ titriyorum, bir daha getir beni 🥵"
+        "Hâlâ titriyorum, bir daha getir beni 🥵",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩",
+        "Ahhh… geldim… harikasın 😩💦",
+        "Off… beni nasıl getirdin öyle 🥵",
+        "Ahh evet… evet… geliyorum 😵‍💫",
+        "Mmmh… harikasın, titriyorum 😩"
       ],
       "traits": [],
       "chars": [],
@@ -1419,7 +1911,17 @@ Stories.BOT_RULES = {
         "Ne oldu bana… 🙈💦",
         "Hiç böyle… ilk kez 🥺",
         "Utanıyorum ama… çok güzeldi 🙈💕",
-        "Bacaklarım hâlâ titriyor 😳"
+        "Bacaklarım hâlâ titriyor 😳",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦",
+        "Devam et… son damlana kadar ahhh 🥵",
+        "Hmmm… doydum… şimdilik 😈",
+        "Ahhh… geldim… harikasın 😩💦",
+        "Off… beni nasıl getirdin öyle 🥵",
+        "Ahh evet… evet… geliyorum 😵‍💫",
+        "Mmmh… harikasın, titriyorum 😩"
       ],
       "traits": [
         "Utangaç"
@@ -1476,7 +1978,13 @@ Stories.BOT_RULES = {
         "Yavaş… seni tamamen kavrayana kadar 😵‍💫",
         "Kaslarım seni bırakmıyor 😳",
         "Dar olmanın bir bedeli var… sabır 🥺",
-        "İçimde zonkladığını tek tek sayıyorum 🫠"
+        "İçimde zonkladığını tek tek sayıyorum 🫠",
+        "İnliyorum… ve utanmıyorum 😈",
+        "Ooff, nasıl bu kadar iyisin? 😩",
+        "Ahhh ahhh… durma 😩",
+        "Ohh… ne kadar iyi 🥵",
+        "Ben de inliyorum, duyuyor musun? 😩",
+        "Of of of… harika 😵‍💫"
       ],
       "traits": [
         "Pussy Size: Extremely Tight|Pussy Size: Very Tight|Pussy Size: Tight"
@@ -1499,7 +2007,13 @@ Stories.BOT_RULES = {
         "Bu kadar dar olduğumu sen fark ettirdin 🙈",
         "Sığmıyorsun sanki… ama durma 😩",
         "Beni yavaşça açıyorsun 🫠",
-        "Her santimini ayrı ayrı hissediyorum 😵‍💫"
+        "Her santimini ayrı ayrı hissediyorum 😵‍💫",
+        "Durma, sakın durma ahhh 😵‍💫",
+        "Çok güzel… devam et 🥺",
+        "Harikasın… harikasın… ahhh 😵‍💫",
+        "İnliyorum… ve utanmıyorum 😈",
+        "Ooff, nasıl bu kadar iyisin? 😩",
+        "Ahhh ahhh… durma 😩"
       ],
       "traits": [
         "Pussy Size: Extremely Tight|Pussy Size: Very Tight|Pussy Size: Tight"
@@ -1528,7 +2042,13 @@ Stories.BOT_RULES = {
         "İçimde tam yerini bulmuş gibisin 🫠",
         "Ne zorlanıyorum ne boşluk var… mükemmel 😌",
         "Seninle bir puzzle gibiyiz 🧩💗",
-        "Tam ritmindeyiz, bozma 😩"
+        "Tam ritmindeyiz, bozma 😩",
+        "İnlememi duyuyor musun? Senin yüzünden 🥵",
+        "Hmmm… beni deli ediyorsun 😈",
+        "Ahh… seni hissetmek harika 🥵",
+        "Durma, sakın durma ahhh 😵‍💫",
+        "Çok güzel… devam et 🥺",
+        "Harikasın… harikasın… ahhh 😵‍💫"
       ],
       "traits": [
         "Pussy Size: Average"
@@ -1560,7 +2080,13 @@ Stories.BOT_RULES = {
         "Bu kadar rahat olunca daha derin istiyorum 🥵",
         "Beni zorlayacak bir şey bul bakalım 😏",
         "Islaklığım seni içeri çekiyor 💦",
-        "İstersen ikimiz de deneyelim, yer var 😈"
+        "İstersen ikimiz de deneyelim, yer var 😈",
+        "Nefesim kesildi… devam 😵‍💫",
+        "Ahhh… beni bitiriyorsun 😩",
+        "Devam et… ahhh 🥵",
+        "İnlememi duyuyor musun? Senin yüzünden 🥵",
+        "Hmmm… beni deli ediyorsun 😈",
+        "Ahh… seni hissetmek harika 🥵"
       ],
       "traits": [
         "Pussy Size: Relaxed|Pussy Size: Loose|Pussy Size: Very Loose"
@@ -1586,7 +2112,13 @@ Stories.BOT_RULES = {
         "Sıkı sıkı tuttum seni, son damlaya kadar 🥵",
         "Darlığım hepsini içerde tuttu 😩💦",
         "Çıkarırken bile seni bırakmak istemedim 🫠",
-        "Sıkı sıkı sardım, son damlaya kadar 🥵"
+        "Sıkı sıkı sardım, son damlaya kadar 🥵",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵"
       ],
       "traits": [
         "Pussy Size: Extremely Tight|Pussy Size: Very Tight|Pussy Size: Tight"
@@ -1619,7 +2151,13 @@ Stories.BOT_RULES = {
         "Bu kadar sıkıyı sevdiğini biliyorum 😏",
         "Gözlerim kapalı, nefesim tutulu… devam 😵‍💫",
         "Arkamı ilk kez bu kadar dolu hissediyorum 🫠",
-        "Yavaşla… tamam… şimdi hızlan 😩💦"
+        "Yavaşla… tamam… şimdi hızlan 😩💦",
+        "Evet, evet, eveeet 😵‍💫",
+        "Evet… evet, tam böyle 😩",
+        "Sesimi tutamıyorum… ahhh 🥵",
+        "Böyle devam et, ahh lütfen 🥺",
+        "Mmm… beni böyle sev 😩",
+        "Tam oradan… ahhh 🥵"
       ],
       "traits": [
         "Anal Size: Extremely Tight|Anal Size: Very Tight|Anal Size: Tight"
@@ -1640,7 +2178,13 @@ Stories.BOT_RULES = {
         "Ahh… sıkıyorum seni 😳",
         "Orası çok dar, sabırlı ol 🥺",
         "Arkam seni sıkıca sarıyor 😳",
-        "Bu darlık… ahh 😩"
+        "Bu darlık… ahh 😩",
+        "Ahhh… harikasın 😩",
+        "Ahhh evet, daha… 😩",
+        "Evet {sen}, evet… 😩",
+        "Evet, evet, eveeet 😵‍💫",
+        "Evet… evet, tam böyle 😩",
+        "Sesimi tutamıyorum… ahhh 🥵"
       ],
       "traits": [
         "Anal Size: Extremely Tight|Anal Size: Very Tight|Anal Size: Tight"
@@ -1670,7 +2214,13 @@ Stories.BOT_RULES = {
         "Sonuna kadar… bir hamlede 😈",
         "Hiç tereddüt etme, kaldırırım 😩",
         "Arkamı bu kadar rahat bulman hoşuna gitti mi? 😏",
-        "Daha sert, daha derin 🔥"
+        "Daha sert, daha derin 🔥",
+        "Ahh {sen}… mükemmelsin 😩",
+        "Ahh… sen bir harikasın 😩💗",
+        "Mmmh… daha derin, evet 🥵",
+        "Ahhh… harikasın 😩",
+        "Ahhh evet, daha… 😩",
+        "Evet {sen}, evet… 😩"
       ],
       "traits": [
         "Anal Size: Relaxed|Anal Size: Loose|Anal Size: Very Loose"
@@ -1693,7 +2243,13 @@ Stories.BOT_RULES = {
         "Dar arkamı doldurdun… 🥵",
         "Çıkarınca… ahh, akacak 🫣",
         "Darlığım hepsini arkamda tuttu 🥵💦",
-        "Çıkarınca bile bir damla kaçmadı 😈"
+        "Çıkarınca bile bir damla kaçmadı 😈",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵"
       ],
       "traits": [
         "Anal Size: Extremely Tight|Anal Size: Very Tight|Anal Size: Tight"
@@ -1724,7 +2280,13 @@ Stories.BOT_RULES = {
         "İki göğsümün arasında kaybolmayı sevdin 🥵",
         "Sıkıştır, ama nazik 😏",
         "Ağırlıklarını hisset 😈",
-        "Bu kadar büyükleri hiç görmedin değil mi? 😏"
+        "Bu kadar büyükleri hiç görmedin değil mi? 😏",
+        "Offf… bu çok iyi 🥵",
+        "Bir daha… ahh, bir daha 😩",
+        "Off… harikasın {sen} 🥵",
+        "Aynen böyle, ahhh 😩",
+        "Sen inledikçe ben daha çok inliyorum 😩",
+        "Off… her yerim titriyor 🥵"
       ],
       "traits": [
         "Boob Size: 90|Boob Size: 95"
@@ -1751,7 +2313,13 @@ Stories.BOT_RULES = {
         "Küçük ama nasıl hassas olduklarını gör 🙈",
         "Elimle sıkıştırıyorum, yardım ediyorum 😏",
         "Küçükler ama sevgiyle 💕",
-        "Bunlarla da bitirebilirim seni 😈"
+        "Bunlarla da bitirebilirim seni 😈",
+        "Off, tam istediğim gibi 😩",
+        "Ahhh, bu kadar iyi olmamalı 😵‍💫",
+        "Bayılıyorum… devam 🥵",
+        "Offf… bu çok iyi 🥵",
+        "Bir daha… ahh, bir daha 😩",
+        "Off… harikasın {sen} 🥵"
       ],
       "traits": [
         "Boob Size: 70|Boob Size: 75"
@@ -1822,7 +2390,13 @@ Stories.BOT_RULES = {
         "Ne kadar büyük bir hedefti 😈",
         "Göğüslerimin arasında beyaz bir nehir 😏💦",
         "Bu kadar büyük hedefi ıskalayamazdın 😈",
-        "Göğsümden süzülüyor, yavaşça 🥵"
+        "Göğsümden süzülüyor, yavaşça 🥵",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩"
       ],
       "traits": [
         "Boob Size: 90|Boob Size: 95"
@@ -1851,7 +2425,13 @@ Stories.BOT_RULES = {
         "Bu kalçayı tutmak iki el ister 😏",
         "Sesini duymak için kalçamı geri itiyorum 😩",
         "Kalçamdaki kırmızı izler seninle 🍑",
-        "Bu açıdan nasıl görünüyorum? 😏"
+        "Bu açıdan nasıl görünüyorum? 😏",
+        "Ben de inliyorum, duyuyor musun? 😩",
+        "Of of of… harika 😵‍💫",
+        "Ahh, bacaklarım titriyor… devam 🥵",
+        "Durma {sen}… ahhh 😩",
+        "Mmmh… çok iyisin 🥵",
+        "Mmm evet, bunu seviyorum 😈"
       ],
       "traits": [
         "Butt Size: L|Butt Size: XL"
@@ -1878,7 +2458,13 @@ Stories.BOT_RULES = {
         "Kalçam seni sarıyor, kaçamazsın 😈",
         "Yumuşacık kalçama gömülüyorsun 😩",
         "İki elinle aç, sonra gir 🍑",
-        "Kalçamı tokatla… evet 😈"
+        "Kalçamı tokatla… evet 😈",
+        "Ooff, nasıl bu kadar iyisin? 😩",
+        "Ahhh ahhh… durma 😩",
+        "Ohh… ne kadar iyi 🥵",
+        "Ben de inliyorum, duyuyor musun? 😩",
+        "Of of of… harika 😵‍💫",
+        "Ahh, bacaklarım titriyor… devam 🥵"
       ],
       "traits": [
         "Butt Size: L|Butt Size: XL"
@@ -1899,7 +2485,13 @@ Stories.BOT_RULES = {
         "Bu yumuşaklık sana yeter mi? 🍑😏",
         "Kalçamın arasında kayıyorsun, sıcak mı? 🥵",
         "Bu kalça bir yastık gibi değil mi? 😏",
-        "Sıkıştırayım mı seni? 😈🍑"
+        "Sıkıştırayım mı seni? 😈🍑",
+        "Çok güzel… devam et 🥺",
+        "Harikasın… harikasın… ahhh 😵‍💫",
+        "İnliyorum… ve utanmıyorum 😈",
+        "Ooff, nasıl bu kadar iyisin? 😩",
+        "Ahhh ahhh… durma 😩",
+        "Ohh… ne kadar iyi 🥵"
       ],
       "traits": [
         "Butt Size: L|Butt Size: XL"
@@ -1919,7 +2511,13 @@ Stories.BOT_RULES = {
         "Küçük ama sıkı 😏",
         "Elimden geleni yapıyorum 🙈",
         "Küçük ama sıkı, dikkat et 😏",
-        "Avucuna sığıyor değil mi? 🙈"
+        "Avucuna sığıyor değil mi? 🙈",
+        "Hmmm… beni deli ediyorsun 😈",
+        "Ahh… seni hissetmek harika 🥵",
+        "Durma, sakın durma ahhh 😵‍💫",
+        "Çok güzel… devam et 🥺",
+        "Harikasın… harikasın… ahhh 😵‍💫",
+        "İnliyorum… ve utanmıyorum 😈"
       ],
       "traits": [
         "Butt Size: XS|Butt Size: S"
@@ -1942,7 +2540,13 @@ Stories.BOT_RULES = {
         "Bu kalça bunu hak etti 😈",
         "Kalçamda parlayan izler… 😏💦",
         "Bu kalçayı boydan boya süsledin 😈",
-        "Belimden süzülüyor 🥵"
+        "Belimden süzülüyor 🥵",
+        "Hmmm… doydum… şimdilik 😈",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫"
       ],
       "traits": [
         "Butt Size: L|Butt Size: XL"
@@ -1974,7 +2578,13 @@ Stories.BOT_RULES = {
         "Kalbim yerinden çıkacak 💓",
         "Ellerimi tut, korkmayayım 🥺",
         "Biraz acıyor ama… seninle güzel 😢💗",
-        "Bu anı hayatım boyunca hatırlayacağım 🥰"
+        "Bu anı hayatım boyunca hatırlayacağım 🥰",
+        "Mmm… beni böyle sev 😩",
+        "Tam oradan… ahhh 🥵",
+        "Nefesim kesildi… devam 😵‍💫",
+        "Ahhh… beni bitiriyorsun 😩",
+        "Devam et… ahhh 🥵",
+        "İnlememi duyuyor musun? Senin yüzünden 🥵"
       ],
       "traits": [
         "Experience: Virgo"
@@ -1999,7 +2609,13 @@ Stories.BOT_RULES = {
         "Sabırlı ol benimle 🥺",
         "Orası… hiç düşünmemiştim 😳",
         "Yavaş… gerçekten çok yavaş 🥺",
-        "Bunu sadece sana veriyorum 🙈"
+        "Bunu sadece sana veriyorum 🙈",
+        "Evet… evet, tam böyle 😩",
+        "Sesimi tutamıyorum… ahhh 🥵",
+        "Böyle devam et, ahh lütfen 🥺",
+        "Mmm… beni böyle sev 😩",
+        "Tam oradan… ahhh 🥵",
+        "Nefesim kesildi… devam 😵‍💫"
       ],
       "traits": [
         "Experience: Virgo"
@@ -2025,7 +2641,13 @@ Stories.BOT_RULES = {
         "Dilimi nasıl kullanacağımı bilmiyorum 🙈",
         "Doğru mu yapıyorum? Söyle 🥺",
         "İlk kez bir erkeğin… 😳",
-        "Tadın beni şaşırttı 😳"
+        "Tadın beni şaşırttı 😳",
+        "Ahhh evet, daha… 😩",
+        "Evet {sen}, evet… 😩",
+        "Evet, evet, eveeet 😵‍💫",
+        "Evet… evet, tam böyle 😩",
+        "Sesimi tutamıyorum… ahhh 🥵",
+        "Böyle devam et, ahh lütfen 🥺"
       ],
       "traits": [
         "Experience: Virgo"
@@ -2047,7 +2669,13 @@ Stories.BOT_RULES = {
         "Bacaklarımı kapatmak istiyorum ama… 🙈",
         "Oraya kimse dokunmadı bugüne kadar 😳",
         "Bu his… ilk kez 🥺💦",
-        "Bacaklarım kendiliğinden kapanıyor, utanıyorum 🙈"
+        "Bacaklarım kendiliğinden kapanıyor, utanıyorum 🙈",
+        "Ahh… sen bir harikasın 😩💗",
+        "Mmmh… daha derin, evet 🥵",
+        "Ahhh… harikasın 😩",
+        "Ahhh evet, daha… 😩",
+        "Evet {sen}, evet… 😩",
+        "Evet, evet, eveeet 😵‍💫"
       ],
       "traits": [
         "Experience: Virgo"
@@ -2070,7 +2698,13 @@ Stories.BOT_RULES = {
         "Öğreniyorum… sabırlı ol 😌",
         "Biraz beceriksizim, kusura bakma 🙈",
         "Bana nasıl istediğini göster 😳",
-        "Öğrenmeye çalışıyorum… iyi mi? 🥺"
+        "Öğrenmeye çalışıyorum… iyi mi? 🥺",
+        "Sen inledikçe ben daha çok inliyorum 😩",
+        "Off… her yerim titriyor 🥵",
+        "Ahh {sen}… mükemmelsin 😩",
+        "Ahh… sen bir harikasın 😩💗",
+        "Mmmh… daha derin, evet 🥵",
+        "Ahhh… harikasın 😩"
       ],
       "traits": [
         "Experience: Little|Experience: Some"
@@ -2096,7 +2730,13 @@ Stories.BOT_RULES = {
         "Henüz bu kadarına alışık değilim 😳",
         "Biraz yavaş, öğreniyorum 🙈",
         "Bana öğret {sen} 🥺",
-        "Doğru mu hareket ediyorum? 😳"
+        "Doğru mu hareket ediyorum? 😳",
+        "Bir daha… ahh, bir daha 😩",
+        "Off… harikasın {sen} 🥵",
+        "Aynen böyle, ahhh 😩",
+        "Sen inledikçe ben daha çok inliyorum 😩",
+        "Off… her yerim titriyor 🥵",
+        "Ahh {sen}… mükemmelsin 😩"
       ],
       "traits": [
         "Experience: Little|Experience: Some"
@@ -2125,7 +2765,13 @@ Stories.BOT_RULES = {
         "Boğazımı açıyorum, izle 😏",
         "Seni tam istediğim yerde tutuyorum 😈",
         "Bir dakika daha dayanırsan şaşarım 😏",
-        "Bu numara benim imzam 😋"
+        "Bu numara benim imzam 😋",
+        "Ahhh, bu kadar iyi olmamalı 😵‍💫",
+        "Bayılıyorum… devam 🥵",
+        "Offf… bu çok iyi 🥵",
+        "Bir daha… ahh, bir daha 😩",
+        "Off… harikasın {sen} 🥵",
+        "Aynen böyle, ahhh 😩"
       ],
       "traits": [
         "Experience: Much|Experience: A lot|Experience: Great"
@@ -2154,7 +2800,13 @@ Stories.BOT_RULES = {
         "Bu ritmi ben kurarım 😏",
         "Kaslarımla seni yönetiyorum 😈",
         "Deneyim konuşuyor 😏🔥",
-        "Bu kadarına hazır değildin değil mi? 😈"
+        "Bu kadarına hazır değildin değil mi? 😈",
+        "Mmmh… çok iyisin 🥵",
+        "Mmm evet, bunu seviyorum 😈",
+        "Off, tam istediğim gibi 😩",
+        "Ahhh, bu kadar iyi olmamalı 😵‍💫",
+        "Bayılıyorum… devam 🥵",
+        "Offf… bu çok iyi 🥵"
       ],
       "traits": [
         "Experience: Much|Experience: A lot|Experience: Great"
@@ -2178,7 +2830,13 @@ Stories.BOT_RULES = {
         "Arkamı nasıl kullanacağımı çok iyi bilirim 😈",
         "Rahatla, işi bana bırak 😏",
         "Kalçamı senin için döndürüyorum 😈🍑",
-        "Bu tecrübe sana yeter 😏"
+        "Bu tecrübe sana yeter 😏",
+        "Of of of… harika 😵‍💫",
+        "Ahh, bacaklarım titriyor… devam 🥵",
+        "Durma {sen}… ahhh 😩",
+        "Mmmh… çok iyisin 🥵",
+        "Mmm evet, bunu seviyorum 😈",
+        "Off, tam istediğim gibi 😩"
       ],
       "traits": [
         "Experience: Much|Experience: A lot|Experience: Great"
@@ -2220,7 +2878,13 @@ Stories.BOT_RULES = {
         "Böyle alınmaya bayılıyorum {sen} 🫠",
         "Seni böyle içimde hissetmek… bağımlısıyım 😵‍💫",
         "Bir daha… ve bir daha 😈💦",
-        "Bunu hayal ediyordum bütün gün 🥵"
+        "Bunu hayal ediyordum bütün gün 🥵",
+        "Ahhh ahhh… durma 😩",
+        "Ohh… ne kadar iyi 🥵",
+        "Ben de inliyorum, duyuyor musun? 😩",
+        "Of of of… harika 😵‍💫",
+        "Ahh, bacaklarım titriyor… devam 🥵",
+        "Durma {sen}… ahhh 😩"
       ],
       "traits": [],
       "chars": [],
@@ -2241,7 +2905,13 @@ Stories.BOT_RULES = {
         "Evet! Tam oraya… bayılıyorum 😵‍💫",
         "Arkamı dolduruşuna doyamıyorum 🥵",
         "Kimse bunu senin gibi yapamıyor 😩🍑",
-        "Daha sert… bunu seviyorum 😈💦"
+        "Daha sert… bunu seviyorum 😈💦",
+        "Harikasın… harikasın… ahhh 😵‍💫",
+        "İnliyorum… ve utanmıyorum 😈",
+        "Ooff, nasıl bu kadar iyisin? 😩",
+        "Ahhh ahhh… durma 😩",
+        "Ohh… ne kadar iyi 🥵",
+        "Ben de inliyorum, duyuyor musun? 😩"
       ],
       "traits": [],
       "chars": [],
@@ -2260,7 +2930,13 @@ Stories.BOT_RULES = {
         "Tadına bayılıyorum 😋💦",
         "Bunu yapmayı çok seviyorum 😈",
         "Ağzımda olmana bayılıyorum {sen} 🥵",
-        "Daha derin… seviyorum bunu 😩"
+        "Daha derin… seviyorum bunu 😩",
+        "Ahh… seni hissetmek harika 🥵",
+        "Durma, sakın durma ahhh 😵‍💫",
+        "Çok güzel… devam et 🥺",
+        "Harikasın… harikasın… ahhh 😵‍💫",
+        "İnliyorum… ve utanmıyorum 😈",
+        "Ooff, nasıl bu kadar iyisin? 😩"
       ],
       "traits": [],
       "chars": [],
@@ -2279,7 +2955,13 @@ Stories.BOT_RULES = {
         "Ahh… en sevdiğim şey bu 😩💦",
         "Dilin… bayılıyorum 🫠",
         "Bunu her gece istiyorum {sen} 🥵",
-        "Böyle devam edersen hemen gelirim 😵‍💫"
+        "Böyle devam edersen hemen gelirim 😵‍💫",
+        "Devam et… ahhh 🥵",
+        "İnlememi duyuyor musun? Senin yüzünden 🥵",
+        "Hmmm… beni deli ediyorsun 😈",
+        "Ahh… seni hissetmek harika 🥵",
+        "Durma, sakın durma ahhh 😵‍💫",
+        "Çok güzel… devam et 🥺"
       ],
       "traits": [],
       "chars": [],
@@ -2315,7 +2997,13 @@ Stories.BOT_RULES = {
       "reply": [
         "Bunu sana yapmayı çok seviyorum 😈",
         "En sevdiğim oyun bu 😏💦",
-        "Yüzündeki zevki görmeye bayılıyorum 🥵"
+        "Yüzündeki zevki görmeye bayılıyorum 🥵",
+        "Tam oradan… ahhh 🥵",
+        "Nefesim kesildi… devam 😵‍💫",
+        "Ahhh… beni bitiriyorsun 😩",
+        "Devam et… ahhh 🥵",
+        "İnlememi duyuyor musun? Senin yüzünden 🥵",
+        "Hmmm… beni deli ediyorsun 😈"
       ],
       "traits": [],
       "chars": [],
@@ -2334,7 +3022,13 @@ Stories.BOT_RULES = {
       "reply": [
         "Ahh… en sevdiğim yerde bitirdin 😩💦",
         "Bunu çok istemiştim {sen} 🥵",
-        "Mükemmeldi… her şeyiyle 😵‍💫💗"
+        "Mükemmeldi… her şeyiyle 😵‍💫💗",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦",
+        "Devam et… son damlana kadar ahhh 🥵",
+        "Hmmm… doydum… şimdilik 😈"
       ],
       "traits": [],
       "chars": [],
@@ -2353,7 +3047,13 @@ Stories.BOT_RULES = {
       ],
       "reply": [
         "Arkamın dolmasına bayılıyorum 😩💦",
-        "Sıcacık… en sevdiğim his 🥵🍑"
+        "Sıcacık… en sevdiğim his 🥵🍑",
+        "Hmmm… doydum… şimdilik 😈",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫"
       ],
       "traits": [],
       "chars": [],
@@ -2390,7 +3090,13 @@ Stories.BOT_RULES = {
       "reply": [
         "Ah… bu canımı yakıyor, sevmiyorum 😣",
         "Arkadan olmasa? 🥺",
-        "Dur… biraz dur 😖"
+        "Dur… biraz dur 😖",
+        "Mmmh… daha derin, evet 🥵",
+        "Ahhh… harikasın 😩",
+        "Ahhh evet, daha… 😩",
+        "Evet {sen}, evet… 😩",
+        "Evet, evet, eveeet 😵‍💫",
+        "Evet… evet, tam böyle 😩"
       ],
       "traits": [],
       "chars": [],
@@ -2407,7 +3113,13 @@ Stories.BOT_RULES = {
       ],
       "reply": [
         "Bunu pek sevmem 😕",
-        "Uzun sürmesin olur mu? 😒"
+        "Uzun sürmesin olur mu? 😒",
+        "Off… her yerim titriyor 🥵",
+        "Ahh {sen}… mükemmelsin 😩",
+        "Ahh… sen bir harikasın 😩💗",
+        "Mmmh… daha derin, evet 🥵",
+        "Ahhh… harikasın 😩",
+        "Ahhh evet, daha… 😩"
       ],
       "traits": [],
       "chars": [],
@@ -2424,7 +3136,13 @@ Stories.BOT_RULES = {
       ],
       "reply": [
         "Bu pozisyonda rahat değilim 😣",
-        "Değiştirsek mi? 🙄"
+        "Değiştirsek mi? 🙄",
+        "Off… harikasın {sen} 🥵",
+        "Aynen böyle, ahhh 😩",
+        "Sen inledikçe ben daha çok inliyorum 😩",
+        "Off… her yerim titriyor 🥵",
+        "Ahh {sen}… mükemmelsin 😩",
+        "Ahh… sen bir harikasın 😩💗"
       ],
       "traits": [],
       "chars": [],
@@ -2472,7 +3190,12 @@ Stories.BOT_RULES = {
         "Seni sağmak istiyorum son damlana kadar 😈",
         "Şimdi! Şimdi bırak kendini 💦💦",
         "Nefesin kesildi, az kaldı… 😩 hadi",
-        "Doldur beni, bekliyorum 🥵"
+        "Doldur beni, bekliyorum 🥵",
+        "Bayılıyorum… devam 🥵",
+        "Offf… bu çok iyi 🥵",
+        "Bir daha… ahh, bir daha 😩",
+        "Off… harikasın {sen} 🥵",
+        "Aynen böyle, ahhh 😩"
       ],
       "traits": [],
       "chars": [],
@@ -2550,7 +3273,12 @@ Stories.BOT_RULES = {
         "Dilimle biraz daha oynayayım mı? 😋",
         "Ateşin yükseliyor {sen} 🔥",
         "Daha da azgın olacaksın, söz 😈",
-        "Yavaşla… seni uzun süre istiyorum 😏"
+        "Yavaşla… seni uzun süre istiyorum 😏",
+        "Mmm evet, bunu seviyorum 😈",
+        "Off, tam istediğim gibi 😩",
+        "Ahhh, bu kadar iyi olmamalı 😵‍💫",
+        "Bayılıyorum… devam 🥵",
+        "Offf… bu çok iyi 🥵"
       ],
       "traits": [],
       "chars": [],
@@ -2569,22 +3297,24 @@ Stories.BOT_RULES = {
         "Bugün çok dolu görünüyorsun 😈",
         "Ne zamandır biriktiriyorsun {sen}? 😏",
         "Bunlar hep benim için mi? 😈💦",
-        "Patlamak üzeresin galiba 😏",
         "Hepsini bana saklamışsın değil mi? 🥵",
         "Bu kadar dolu olunca… sonu çok güzel olacak 😈",
-        "Ağır geliyor mu? Boşaltalım 😏",
         "Bu kadar dolu gelme bana, hepsini alırım 😈",
         "Ne kadar birikmiş öyle {sen}? 😏",
-        "Taşacak gibisin 🥵",
         "Hepsini içime boşaltacaksın değil mi? 😈💦",
         "Bunca zaman beni mi düşündün? 😏",
         "Bugün çok şanslıyım galiba 😈",
-        "Bu yükü taşımana gerek yok 😏",
-        "Doldun mu, yoksa bana mı öyle geliyor? 😏💦"
+        "Doldun mu, yoksa bana mı öyle geliyor? 😏💦",
+        "Bu kadar birikmişken bol bol akacak 🥵",
+        "Dolusun… boşaldığında hepsini hissedeceğim 😈",
+        "Ne kadar çok biriktirmişsin, şimdiden merak ediyorum 😏💦",
+        "Bugün bana çok vereceksin gibi 😈",
+        "Toplanmış toplanmış… acele etme ama 😏",
+        "Bu kadar doluyken bitince sırılsıklam olacağım 🥵"
       ],
       "traits": [],
       "chars": [],
-      "note": "Cum ≥ 80 (ve Zevk ≥ 20)"
+      "note": "Cum ≥ 80: ne kadar boşalabileceği (miktar), boşalma isteği değil. İstek Zevk durumlarında"
     },
     {
       "id": "r_st_cum_empty",
@@ -2662,7 +3392,23 @@ Stories.BOT_RULES = {
         "Bacaklarımla seni kilitledim, hepsini içime aldım 😈",
         "Gözlerime bakarak doldurdun beni… 💗💦",
         "Üstümde titreyerek içime boşaldın 😩💦",
-        "Bacaklarımla kilitledim, kaçamadın… hepsi içimde 😈"
+        "Bacaklarımla kilitledim, kaçamadın… hepsi içimde 😈",
+        "Gözlerimin içine bakarak içime boşaldın 😩💦",
+        "Bacaklarım beline dolanmışken doldurdun beni 🥵",
+        "Üstümde titrerken seni sıkıca sardım 💗",
+        "Nefesin boynumdayken hepsini verdin 😈",
+        "Altında kıvranırken içime aktın 😩",
+        "Alnını alnıma dayayıp boşaldın 🥺💦",
+        "En derine itip öyle bıraktın 🥵",
+        "Yüzünü izledim boşalırken, çok güzeldin 😏",
+        "Ellerimi yatağa bastırıp doldurdun 😈",
+        "Üstümde kalıp ağırlığını hissettirdin 💗",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵"
       ],
       "traits": [],
       "chars": [],
@@ -2690,7 +3436,23 @@ Stories.BOT_RULES = {
         "Kalçamı çekip en derine bıraktın 😈🍑",
         "Bu kadar bolunu doggy'de mi saklıyordun? 😏",
         "Kalçamı tutup içime fışkırdın 🥵💦",
-        "Arkamdan inleyerek doldurdun beni 😩"
+        "Arkamdan inleyerek doldurdun beni 😩",
+        "Saçımı çekerek içime fışkırdın 😩💦",
+        "Kalçamı tutup son itişte doldurdun 🥵",
+        "Arkamda inlerken bütün dölünü bıraktın 😈",
+        "Yüzüm yastıktayken içimde patladın 😩",
+        "Belimi bastırıp en derine boşaldın 🥵💦",
+        "Kalçama vurarak bitirdin 😈",
+        "Dört ayak üstündeyken doldurdun beni 😳",
+        "Sırtıma eğilip kulağıma inleyerek boşaldın 😩",
+        "Arkadan sıkıca tutup hepsini verdin 🥵",
+        "Kalçam titrerken içimde zonkladın 😈💦",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦"
       ],
       "traits": [],
       "chars": [],
@@ -2718,7 +3480,23 @@ Stories.BOT_RULES = {
         "Ben indikçe sen doldurdun beni 😈",
         "İnmeden önce son damlana kadar sağdım seni 😏",
         "Üstündeyken içimde patladın 😈💦",
-        "Sağdım seni, son damlana kadar 🥵"
+        "Sağdım seni, son damlana kadar 🥵",
+        "Üstündeyken seni sağdım, hepsini aldım 😈💦",
+        "Kalçalarımı bastırıp boşalmanı izledim 😏",
+        "Üstünde zıplarken içimde patladın 🥵",
+        "Göğüslerim yüzündeyken boşaldın 😩",
+        "Seni sonuna kadar oturarak bitirdim 😈",
+        "Ellerini kalçama kenetleyip doldurdun 🥵💦",
+        "Ben sürdüm, sen boşaldın 😏",
+        "Üstünde kalıp son damlanı bekledim 😈",
+        "Gözlerine bakarak seni bitirdim 😩",
+        "İçimde zonklarken durmadım 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦",
+        "Devam et… son damlana kadar ahhh 🥵",
+        "Hmmm… doydum… şimdilik 😈",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦"
       ],
       "traits": [],
       "chars": [],
@@ -2740,7 +3518,21 @@ Stories.BOT_RULES = {
         "Arkamda titredin, kollarını bırakma 🥺",
         "Böyle bitirince uyumak istiyorum seninle 😌💤",
         "Kulağıma inlemen… tüylerim diken diken 😳",
-        "Sıcacık… ikimiz de 🫠"
+        "Sıcacık… ikimiz de 🫠",
+        "Arkamdan sarılıp içime boşaldın 💗💦",
+        "Enseme nefes vererek doldurdun 😩",
+        "Yan yatarken yavaşça bıraktın hepsini 🥺",
+        "Göğsümü sıkıp içimde patladın 🥵",
+        "Kulağıma fısıldarken boşaldın 😈",
+        "Sımsıkı sarılıp hepsini verdin 💗",
+        "Sırtım göğsüne yaslıyken içime aktın 😩",
+        "Uykulu bir sabah gibi… ama çok sıcak 🥵💦",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵"
       ],
       "traits": [],
       "chars": [],
@@ -2762,7 +3554,21 @@ Stories.BOT_RULES = {
         "Beni havada tutarken bitirdin… güçlüsün 😈",
         "İkimiz de nefes nefese, duvara yaslandık 😩",
         "Kapı açılsaydı… neyse ki açılmadı 😳💦",
-        "Ayakta durmama yardım et, dizlerim gitti 🥵"
+        "Ayakta durmama yardım et, dizlerim gitti 🥵",
+        "Duvara yaslıyken içime boşaldın 😩💦",
+        "Ayakta, dizlerim titrerken doldurdun 🥵",
+        "Beni kaldırıp boşaldın, tutundum sana 😈",
+        "Ayakta durmak zor… hepsi içimde 😳",
+        "Bacağımı kaldırıp en derine bıraktın 😩",
+        "Duvar soğuk, sen sıcacıksın 🥵💦",
+        "Ayakta inleyerek doldurdun beni 😈",
+        "Dizlerim çözüldü, beni tut 😵‍💫",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵"
       ],
       "traits": [],
       "chars": [],
@@ -2783,7 +3589,21 @@ Stories.BOT_RULES = {
         "Kucağında, sarılarak bitirdin… 💞💦",
         "Gözlerimiz hiç ayrılmadı 💗",
         "Göğsüne yaslandım, kalbin deli gibi atıyor 💓",
-        "Böyle kalalım, kalkmayalım 🥰"
+        "Böyle kalalım, kalkmayalım 🥰",
+        "Kucağındayken içime boşaldın 💗💦",
+        "Boynuna sarılıp seni sağdım 😈",
+        "Kucağında titreyerek doldum 🥵",
+        "Dudaklarımız birleşikken boşaldın 😩",
+        "Kucağında oturup son damlanı aldım 😏",
+        "Beni kucağına bastırıp hepsini verdin 🥵",
+        "Göğsüne yaslanıp boşalmanı hissettim 💗",
+        "Kucağında kalayım, çıkarma 🥺💦",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦",
+        "Devam et… son damlana kadar ahhh 🥵",
+        "Hmmm… doydum… şimdilik 😈",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦"
       ],
       "traits": [],
       "chars": [],
@@ -2804,7 +3624,21 @@ Stories.BOT_RULES = {
         "Kollarımı kilitlemişken bitirdin… kaçamadım 😈💦",
         "Masadaki her şey yere düştü 😳",
         "Bu pozisyon beni bitirdi, sen değil 😩",
-        "Nefes alamadım… ama bayıldım 🥵"
+        "Nefes alamadım… ama bayıldım 🥵",
+        "Bacaklarım omuzlarındayken doldurdun 😩💦",
+        "Katlanmış halde en derine bıraktın 🥵",
+        "Masanın üstünde boşaldın, eşyalar düştü 😳",
+        "Kıpırdayamadan hepsini aldım 😈",
+        "Bu açıyla rahmime kadar ulaştın 😵‍💫",
+        "Masaya yatırıp içime fışkırdın 🥵",
+        "Bacaklarımı tutup son itişi yaptın 😩",
+        "Çaresizce doldum altında 😈💦",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦"
       ],
       "traits": [],
       "chars": [],
@@ -2832,7 +3666,23 @@ Stories.BOT_RULES = {
         "Derinden, gürce… hepsi arkamda 😩",
         "Sıcaklığın arkamdan yayılıyor… mmm 🫠",
         "Arkamı ağzına kadar doldurdun 😩💦",
-        "İçimde zonklarken bağırdım 🥵"
+        "İçimde zonklarken bağırdım 🥵",
+        "Arkadan en derine boşaldın 😩💦",
+        "Kalçamı açıp içimde patladın 🥵",
+        "Arkamda zonklarken bağırdım 😈",
+        "Arkamdan sıkıca tutup doldurdun 😩",
+        "Arkam yanıyor, sıcacık 🥵",
+        "Arkadan inleyerek hepsini verdin 😈💦",
+        "Sırtıma kapanıp boşaldın 😩",
+        "Arkam seni bırakmak istemiyor 😏",
+        "Yüzüm yastıkta, arkam dolu 😳",
+        "Arkadan doldurulmanın tadı bambaşka 🥵",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩"
       ],
       "traits": [],
       "chars": [],
@@ -2856,7 +3706,21 @@ Stories.BOT_RULES = {
         "Kalçam kıpkırmızı, içim sıcacık 🍑🔥",
         "Beni mahvettin… teşekkür ederim 😩",
         "Bu kadar sert verip bu kadar bol doldurmak… 😈💦",
-        "Saçımı çekip içime boşaldın, hâlâ akıyor 😩🔥"
+        "Saçımı çekip içime boşaldın, hâlâ akıyor 😩🔥",
+        "Saçımı çekip sertçe boşaldın 😩💦",
+        "Hırpalayarak doldurdun beni, bayıldım 🥵",
+        "Kalçamda el izin kaldı, içimde dölün 😈",
+        "Sert itişlerin sonunda patladın 😵‍💫",
+        "Boğazımı tutup bitirdin 😩",
+        "Acıtarak boşaldın, daha isterim 😈",
+        "Beni yatağa bastırıp doldurdun 🥵💦",
+        "Vahşi bir son… nefes nefeseyim 😩",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦",
+        "Devam et… son damlana kadar ahhh 🥵",
+        "Hmmm… doydum… şimdilik 😈",
+        "Mmmh… bayıldım 😩"
       ],
       "traits": [],
       "chars": [],
@@ -2884,7 +3748,23 @@ Stories.BOT_RULES = {
         "Koyu ve sıcak… hepsini yuttum 😈",
         "Dilimin üstünde bıraktığın kıvam… mmm 😋",
         "Ağzıma boşaldın, hepsini yuttum 😋💦",
-        "Saçımı çekerek ağzıma fışkırdın 😈"
+        "Saçımı çekerek ağzıma fışkırdın 😈",
+        "Ağzımdayken saçımı tutup boşaldın 😋💦",
+        "Boğazımın en derinine bıraktın 😩",
+        "Dilimin üstünde patladın 😈",
+        "Gözlerin kaydı, ağzımda bitirdin 🥵",
+        "Dudaklarımla sıkıp son damlanı aldım 😋",
+        "Ağzımda zonklarken inledim 😈💦",
+        "Çenemden süzüldü, yaladım 😏",
+        "Diz çökmüşken ağzımı doldurdun 🥵",
+        "Yutkunarak hepsini aldım 😋",
+        "Ağzımdan çıkarmana izin vermedim 😈",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦"
       ],
       "traits": [],
       "chars": [],
@@ -2909,7 +3789,19 @@ Stories.BOT_RULES = {
         "Göğüslerimin arası bembeyaz bir göl oldu 😏💦",
         "Bu kadar yoğununu göğsüme mi sakladın? 😈",
         "Göğüslerimin arasında fışkırdın 🥵💦",
-        "Çeneme kadar sıçradı, bayıldım 😈"
+        "Çeneme kadar sıçradı, bayıldım 😈",
+        "Göğüslerimin arasında patladın, çeneme sıçradı 🥵💦",
+        "Göğüslerimi sıkıştırıp seni bitirdim 😈",
+        "Aralarında zonkladın, hissettim 😩",
+        "Göğsüm dölünle parladı 😏",
+        "Göğüslerimle sağdım seni 😈💦",
+        "Boynuma kadar fışkırdın 😳",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩"
       ],
       "traits": [],
       "chars": [],
@@ -2933,7 +3825,19 @@ Stories.BOT_RULES = {
         "Bileğime kadar… mmm 🥵",
         "Avucumu bembeyaz doldurdun 😏💦",
         "Parmaklarımdan damla damla akıyor… ne çok 🥵",
-        "Elimde fışkırdın, parmaklarım sırılsıklam 😈💦"
+        "Elimde fışkırdın, parmaklarım sırılsıklam 😈💦",
+        "Elimde zonklarken boşaldın 😈💦",
+        "Parmaklarımın arasından aktı 🥵",
+        "Elimle sağıp son damlanı aldım 😏",
+        "Yavaş yavaş… sonra patladın 😩",
+        "Elim sırılsıklam oldu 😈",
+        "Bileğime kadar aktı 😳💦",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦",
+        "Devam et… son damlana kadar ahhh 🥵",
+        "Hmmm… doydum… şimdilik 😈"
       ],
       "traits": [],
       "chars": [],
@@ -2954,7 +3858,17 @@ Stories.BOT_RULES = {
         "Ayaklarımı boyadın 🙈💦",
         "Bacaklarımın arasında bitirmen… hiç beklemiyordum 😳",
         "Ayak parmaklarımın arasına kadar… 😏",
-        "Bunu tekrar yapacağız, belli 😈"
+        "Bunu tekrar yapacağız, belli 😈",
+        "Ayaklarımın arasında boşaldın 😈💦",
+        "Bacaklarıma sıcacık aktı 🥵",
+        "Ayaklarımı boyadın 😏",
+        "Bacaklarımla sıkıp bitirdim seni 😈",
+        "Hmmm… doydum… şimdilik 😈",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫"
       ],
       "traits": [],
       "chars": [],
@@ -2975,7 +3889,17 @@ Stories.BOT_RULES = {
         "Kalçamın arasında patladın 😈🍑",
         "Belime kadar sıçradı 😳💦",
         "Kalçamı sallarken bitirdin, ben kazandım 😏",
-        "Sıcacık aktı sırtımdan 🥵"
+        "Sıcacık aktı sırtımdan 🥵",
+        "Kalçamın arasında patladın 🥵💦",
+        "Kalçalarımı sıkıştırıp sağdım seni 😈",
+        "Belime kadar fışkırdın 😳",
+        "Kalçamın üstünde parladı 😏💦",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩"
       ],
       "traits": [],
       "chars": [],
@@ -4545,7 +5469,12 @@ Stories.BOT_RULES = {
         "Bütün vücudum titriyor… az kaldı 🫠",
         "Beni getir {sen}, lütfen! 🥺💦",
         "Adını haykıracağım… 😩",
-        "Ahh evet evet evet… 😵‍💫"
+        "Ahh evet evet evet… 😵‍💫",
+        "Ohh… ne kadar iyi 🥵",
+        "Ben de inliyorum, duyuyor musun? 😩",
+        "Of of of… harika 😵‍💫",
+        "Ahh, bacaklarım titriyor… devam 🥵",
+        "Durma {sen}… ahhh 😩"
       ],
       "traits": [],
       "chars": [],
@@ -4599,7 +5528,12 @@ Stories.BOT_RULES = {
         "Bugün çok azgınım 😈",
         "Doymak bilmiyorum bu gece 🔥",
         "Seni daha çok istiyorum… daha! 😩",
-        "Beni yatıştıramazsın bugün 😏🔥"
+        "Beni yatıştıramazsın bugün 😏🔥",
+        "İnliyorum… ve utanmıyorum 😈",
+        "Ooff, nasıl bu kadar iyisin? 😩",
+        "Ahhh ahhh… durma 😩",
+        "Ohh… ne kadar iyi 🥵",
+        "Ben de inliyorum, duyuyor musun? 😩"
       ],
       "traits": [],
       "chars": [],
@@ -4770,7 +5704,13 @@ Stories.BOT_RULES = {
         "Üstümde olman… en sevdiğim his 😩💦",
         "Bana böyle sarılarak sevişmeni seviyorum 🥰",
         "Bacaklarımı beline doluyorum, en sevdiğim bu 😈",
-        "Ahh… bunu çok özlemiştim 🥵"
+        "Ahh… bunu çok özlemiştim 🥵",
+        "Off, tam istediğim gibi 😩",
+        "Ahhh, bu kadar iyi olmamalı 😵‍💫",
+        "Bayılıyorum… devam 🥵",
+        "Offf… bu çok iyi 🥵",
+        "Bir daha… ahh, bir daha 😩",
+        "Off… harikasın {sen} 🥵"
       ],
       "traits": [],
       "chars": [],
@@ -5811,7 +6751,13 @@ Stories.BOT_RULES = {
         "S-sesimi duyacaklar… 🙈",
         "Işığı kapatsak olmaz mı? 😳",
         "Yüzüme bakma şimdi… ahh 🙈",
-        "Bu kadar yakın olunca nefesim kesiliyor 😳"
+        "Bu kadar yakın olunca nefesim kesiliyor 😳",
+        "Durma {sen}… ahhh 😩",
+        "Mmmh… çok iyisin 🥵",
+        "Mmm evet, bunu seviyorum 😈",
+        "Off, tam istediğim gibi 😩",
+        "Ahhh, bu kadar iyi olmamalı 😵‍💫",
+        "Bayılıyorum… devam 🥵"
       ],
       "traits": [
         "Utangaç"
@@ -5850,7 +6796,13 @@ Stories.BOT_RULES = {
         "B-bitti mi? 😳",
         "İçimde hissettim… utanıyorum 🙈",
         "Ne kadar sıcakmış… 😳",
-        "Yüzümü saklıyorum, bakma 🙈💦"
+        "Yüzümü saklıyorum, bakma 🙈💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵"
       ],
       "traits": [
         "Utangaç"
@@ -5869,7 +6821,13 @@ Stories.BOT_RULES = {
       "reply": [
         "S-sesli miydim? 🙈",
         "Bunu kimse duymadı değil mi? 😳",
-        "Ne oldu bana… 🙈💗"
+        "Ne oldu bana… 🙈💗",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦"
       ],
       "traits": [
         "Utangaç"
@@ -6068,7 +7026,13 @@ Stories.BOT_RULES = {
         "Böyle mi seviyorsun? 😘",
         "Bu bakışın beni yakıyor 😉",
         "Daha yakına gel, ısırmam… belki 😏",
-        "Sana göz kırpıyorum, gördün mü? 😉"
+        "Sana göz kırpıyorum, gördün mü? 😉",
+        "Çok güzel… devam et 🥺",
+        "Harikasın… harikasın… ahhh 😵‍💫",
+        "İnliyorum… ve utanmıyorum 😈",
+        "Ooff, nasıl bu kadar iyisin? 😩",
+        "Ahhh ahhh… durma 😩",
+        "Ohh… ne kadar iyi 🥵"
       ],
       "traits": [
         "Flörtöz"
@@ -6107,7 +7071,13 @@ Stories.BOT_RULES = {
         "Mmm… ödülünü aldın 😘",
         "Bu kadar cömert olacağını bilmiyordum 😉",
         "Bir dahakine yüzüme mi? 😏",
-        "Tatlı bir finaldi 😘💦"
+        "Tatlı bir finaldi 😘💦",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵"
       ],
       "traits": [
         "Flörtöz"
@@ -6126,7 +7096,13 @@ Stories.BOT_RULES = {
       "reply": [
         "Bunu bana sen yaptın 😉",
         "Bir daha yaparsan seninim 😘",
-        "Hâlâ titriyorum… tatlım 😏"
+        "Hâlâ titriyorum… tatlım 😏",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵"
       ],
       "traits": [
         "Flörtöz"
@@ -6325,7 +7301,13 @@ Stories.BOT_RULES = {
         "Seninle bir olmak gibi… 💞",
         "Kalbin kalbimde atıyor 💓",
         "Gözlerin… sonsuza kadar bakabilirim 🌹",
-        "Bu sevişmek, sadece seks değil 🥺💗"
+        "Bu sevişmek, sadece seks değil 🥺💗",
+        "Mmm… beni böyle sev 😩",
+        "Tam oradan… ahhh 🥵",
+        "Nefesim kesildi… devam 😵‍💫",
+        "Ahhh… beni bitiriyorsun 😩",
+        "Devam et… ahhh 🥵",
+        "İnlememi duyuyor musun? Senin yüzünden 🥵"
       ],
       "traits": [
         "Romantik"
@@ -6364,7 +7346,13 @@ Stories.BOT_RULES = {
         "İçimde senden bir parça… 💞",
         "Bu an bizim anımız 🌹",
         "Seni böyle sevmek çok güzel 💗",
-        "Sarıl bana, bırakma 🥺💞"
+        "Sarıl bana, bırakma 🥺💞",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦"
       ],
       "traits": [
         "Romantik"
@@ -6383,7 +7371,13 @@ Stories.BOT_RULES = {
       "reply": [
         "Seninle yıldızları gördüm ✨💞",
         "Bu his aşk olmalı 🌹",
-        "Kalbim duracak sandım 💓"
+        "Kalbim duracak sandım 💓",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩"
       ],
       "traits": [
         "Romantik"
@@ -6582,7 +7576,13 @@ Stories.BOT_RULES = {
         "Devam et.",
         "Fena değil.",
         "Bu kadar mı?",
-        "Hızlan."
+        "Hızlan.",
+        "Ahh… sen bir harikasın 😩💗",
+        "Mmmh… daha derin, evet 🥵",
+        "Ahhh… harikasın 😩",
+        "Ahhh evet, daha… 😩",
+        "Evet {sen}, evet… 😩",
+        "Evet, evet, eveeet 😵‍💫"
       ],
       "traits": [
         "Soğuk"
@@ -6621,7 +7621,13 @@ Stories.BOT_RULES = {
         "Bitti mi?",
         "Hm. Bu kadar.",
         "Temizle.",
-        "Peki."
+        "Peki.",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦"
       ],
       "traits": [
         "Soğuk"
@@ -6640,7 +7646,13 @@ Stories.BOT_RULES = {
       "reply": [
         "…tamam, bu iyiydi.",
         "Söyleme kimseye.",
-        "Hm."
+        "Hm.",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩"
       ],
       "traits": [
         "Soğuk"
@@ -6839,7 +7851,13 @@ Stories.BOT_RULES = {
         "Benimle olmak bir ayrıcalık, farkında mısın? 💅",
         "Bu kadarını hak ediyor musun bakalım 💁‍♀️",
         "Tabii ki harikayım 💅",
-        "Beni hayranlıkla izle 😏"
+        "Beni hayranlıkla izle 😏",
+        "Ahhh, bu kadar iyi olmamalı 😵‍💫",
+        "Bayılıyorum… devam 🥵",
+        "Offf… bu çok iyi 🥵",
+        "Bir daha… ahh, bir daha 😩",
+        "Off… harikasın {sen} 🥵",
+        "Aynen böyle, ahhh 😩"
       ],
       "traits": [
         "Kibirli"
@@ -6878,7 +7896,13 @@ Stories.BOT_RULES = {
         "Bana dayanamayacağını biliyordum 💅",
         "Normal, benimle herkes böyle bitirir 💁‍♀️",
         "Bu kadar çabuk mu? 😏",
-        "Şanslısın 💅💦"
+        "Şanslısın 💅💦",
+        "Hmmm… doydum… şimdilik 😈",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫"
       ],
       "traits": [
         "Kibirli"
@@ -6897,7 +7921,13 @@ Stories.BOT_RULES = {
       "reply": [
         "Ancak bu kadar iyi olabilirdin 💅",
         "Fena değildi… benim sayemde 💁‍♀️",
-        "Bunu sana borçlu değilim 😏"
+        "Bunu sana borçlu değilim 😏",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩"
       ],
       "traits": [
         "Kibirli"
@@ -7096,7 +8126,13 @@ Stories.BOT_RULES = {
         "Bu mu senin en iyin? 😏",
         "Fena değil… için 🙄",
         "Biraz daha uğraş istersen 😏",
-        "Vay, terledin bile 🙄"
+        "Vay, terledin bile 🙄",
+        "Ahhh ahhh… durma 😩",
+        "Ohh… ne kadar iyi 🥵",
+        "Ben de inliyorum, duyuyor musun? 😩",
+        "Of of of… harika 😵‍💫",
+        "Ahh, bacaklarım titriyor… devam 🥵",
+        "Durma {sen}… ahhh 😩"
       ],
       "traits": [
         "Alaycı"
@@ -7135,7 +8171,13 @@ Stories.BOT_RULES = {
         "Bu kadar çabuk mu? 🙄",
         "Tebrikler, rekor 😏",
         "Yine de fena değildi… itiraf ediyorum 😏",
-        "Bitti mi şov? 🙄💦"
+        "Bitti mi şov? 🙄💦",
+        "Devam et… son damlana kadar ahhh 🥵",
+        "Hmmm… doydum… şimdilik 😈",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫"
       ],
       "traits": [
         "Alaycı"
@@ -7154,7 +8196,13 @@ Stories.BOT_RULES = {
       "reply": [
         "Tamam tamam, bu sefer kazandın 🙄",
         "Bunu yüzüne vurmayacağım… belki 😏",
-        "İtiraf ediyorum, iyiydi 🙄"
+        "İtiraf ediyorum, iyiydi 🙄",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵"
       ],
       "traits": [
         "Alaycı"
@@ -7353,7 +8401,13 @@ Stories.BOT_RULES = {
         "Bu çok eğlenceli 😄",
         "Hihi, gıdıklandım 😆",
         "Yaşasın! 🥳",
-        "Bunu her gün yapalım 😄"
+        "Bunu her gün yapalım 😄",
+        "Devam et… ahhh 🥵",
+        "İnlememi duyuyor musun? Senin yüzünden 🥵",
+        "Hmmm… beni deli ediyorsun 😈",
+        "Ahh… seni hissetmek harika 🥵",
+        "Durma, sakın durma ahhh 😵‍💫",
+        "Çok güzel… devam et 🥺"
       ],
       "traits": [
         "Neşeli"
@@ -7392,7 +8446,13 @@ Stories.BOT_RULES = {
         "Vay be! 😄💦",
         "Bu harikaydı 🥳",
         "Gülümsemem yüzümden silinmiyor 😄",
-        "Sıcacık! 😆"
+        "Sıcacık! 😆",
+        "Ahhh… ne kadar sıcak 🥵💦",
+        "Devam et… son damlana kadar ahhh 🥵",
+        "Hmmm… doydum… şimdilik 😈",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦"
       ],
       "traits": [
         "Neşeli"
@@ -7411,7 +8471,13 @@ Stories.BOT_RULES = {
       "reply": [
         "Yaşasınnn 🥳",
         "Bunu bir daha istiyorum 😄",
-        "Kahkaha atasım geldi 😆💗"
+        "Kahkaha atasım geldi 😆💗",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵"
       ],
       "traits": [
         "Neşeli"
@@ -7610,7 +8676,13 @@ Stories.BOT_RULES = {
         "Bu çok anlamlı benim için 🥺",
         "Gözlerim doldu… 😢💗",
         "Seninle bu kadar yakın olmak… 🥺",
-        "Beni bırakmayacaksın değil mi? 😢"
+        "Beni bırakmayacaksın değil mi? 😢",
+        "Evet {sen}, evet… 😩",
+        "Evet, evet, eveeet 😵‍💫",
+        "Evet… evet, tam böyle 😩",
+        "Sesimi tutamıyorum… ahhh 🥵",
+        "Böyle devam et, ahh lütfen 🥺",
+        "Mmm… beni böyle sev 😩"
       ],
       "traits": [
         "Duygusal"
@@ -7649,7 +8721,13 @@ Stories.BOT_RULES = {
         "İçimde hissettim… ağlamak istiyorum 🥺",
         "Bu an çok özel 😢💗",
         "Sarıl bana hemen 🥺",
-        "Teşekkür ederim… 😢"
+        "Teşekkür ederim… 😢",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦",
+        "Devam et… son damlana kadar ahhh 🥵",
+        "Hmmm… doydum… şimdilik 😈",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦"
       ],
       "traits": [
         "Duygusal"
@@ -7668,7 +8746,13 @@ Stories.BOT_RULES = {
       "reply": [
         "Gözyaşlarım aktı… çok güzeldi 😢💗",
         "Hiç böyle hissetmemiştim 🥺",
-        "Bırakma beni 😢"
+        "Bırakma beni 😢",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦"
       ],
       "traits": [
         "Duygusal"
@@ -7867,7 +8951,13 @@ Stories.BOT_RULES = {
         "Hihi, bu tuhaf ama güzel 🙈",
         "Yaa yavaş 🥺",
         "Çok büyüksün 😳 hihi",
-        "Bir daha bir daha 🥺"
+        "Bir daha bir daha 🥺",
+        "Off… harikasın {sen} 🥵",
+        "Aynen böyle, ahhh 😩",
+        "Sen inledikçe ben daha çok inliyorum 😩",
+        "Off… her yerim titriyor 🥵",
+        "Ahh {sen}… mükemmelsin 😩",
+        "Ahh… sen bir harikasın 😩💗"
       ],
       "traits": [
         "Çocuksu"
@@ -7906,7 +8996,13 @@ Stories.BOT_RULES = {
         "Yaa her yer ıslak oldu 🙈",
         "Hihi sıcacık 😚",
         "Bu neydi böyle 😳",
-        "Yine yapalım mı? 🥺"
+        "Yine yapalım mı? 🥺",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦",
+        "Devam et… son damlana kadar ahhh 🥵",
+        "Hmmm… doydum… şimdilik 😈",
+        "Mmmh… bayıldım 😩"
       ],
       "traits": [
         "Çocuksu"
@@ -7925,7 +9021,13 @@ Stories.BOT_RULES = {
       "reply": [
         "Hihiii 🙈 çok güzeldi",
         "Bacaklarım titriyor yaa 🥺",
-        "Bir daha 😚"
+        "Bir daha 😚",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦"
       ],
       "traits": [
         "Çocuksu"
@@ -8124,7 +9226,13 @@ Stories.BOT_RULES = {
         "Daha iyi yap, ben bunu hak ediyorum 💅",
         "Hmpf, sadece bu mu? 😤",
         "Beni şımart diyorum 💅",
-        "Benim dediğim gibi yap 😤"
+        "Benim dediğim gibi yap 😤",
+        "Ahh, bacaklarım titriyor… devam 🥵",
+        "Durma {sen}… ahhh 😩",
+        "Mmmh… çok iyisin 🥵",
+        "Mmm evet, bunu seviyorum 😈",
+        "Off, tam istediğim gibi 😩",
+        "Ahhh, bu kadar iyi olmamalı 😵‍💫"
       ],
       "traits": [
         "Şımarık"
@@ -8163,7 +9271,13 @@ Stories.BOT_RULES = {
         "Bitirdin mi? Peki ya ben? 😤",
         "Bunu bana borçlusun 💅",
         "Şimdi bana masaj yap 💅",
-        "Hmpf, iyiydi ama daha iyisi olur 😤"
+        "Hmpf, iyiydi ama daha iyisi olur 😤",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦",
+        "Devam et… son damlana kadar ahhh 🥵",
+        "Hmmm… doydum… şimdilik 😈"
       ],
       "traits": [
         "Şımarık"
@@ -8182,7 +9296,13 @@ Stories.BOT_RULES = {
       "reply": [
         "Ancak böyle mutlu olurum 💅",
         "Bunu her gün istiyorum 😤",
-        "Aferin, ödülünü sonra veririm 💅"
+        "Aferin, ödülünü sonra veririm 💅",
+        "Hmmm… doydum… şimdilik 😈",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫"
       ],
       "traits": [
         "Şımarık"
@@ -8381,7 +9501,13 @@ Stories.BOT_RULES = {
         "Kimse bana böyle dokunamaz… sen hariç 😤",
         "Daha sert, korkma 🔥",
         "Kurallar yok bu gece 😈",
-        "Beni zapt edemezsin 😤"
+        "Beni zapt edemezsin 😤",
+        "Durma, sakın durma ahhh 😵‍💫",
+        "Çok güzel… devam et 🥺",
+        "Harikasın… harikasın… ahhh 😵‍💫",
+        "İnliyorum… ve utanmıyorum 😈",
+        "Ooff, nasıl bu kadar iyisin? 😩",
+        "Ahhh ahhh… durma 😩"
       ],
       "traits": [
         "Asi"
@@ -8420,7 +9546,13 @@ Stories.BOT_RULES = {
         "İşte bu! 🔥",
         "Kimse beni böyle doldurmadı 😤💦",
         "Bir daha, hemen 😈",
-        "Kurallar umurumda değil, içime 🔥"
+        "Kurallar umurumda değil, içime 🔥",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦",
+        "Devam et… son damlana kadar ahhh 🥵"
       ],
       "traits": [
         "Asi"
@@ -8439,7 +9571,13 @@ Stories.BOT_RULES = {
       "reply": [
         "Bağırdım, kim duyarsa duysun 😤",
         "Bu yasak olmalıydı 🔥",
-        "Bir daha 😈"
+        "Bir daha 😈",
+        "Devam et… son damlana kadar ahhh 🥵",
+        "Hmmm… doydum… şimdilik 😈",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫"
       ],
       "traits": [
         "Asi"
@@ -8638,7 +9776,13 @@ Stories.BOT_RULES = {
         "Bunu ben yönetiyorum 😎",
         "Ne istediğimi biliyorum 😏",
         "Bak, böyle yapılır 😎",
-        "Benimle başka hiçbir şeye ihtiyacın yok 😏"
+        "Benimle başka hiçbir şeye ihtiyacın yok 😏",
+        "Böyle devam et, ahh lütfen 🥺",
+        "Mmm… beni böyle sev 😩",
+        "Tam oradan… ahhh 🥵",
+        "Nefesim kesildi… devam 😵‍💫",
+        "Ahhh… beni bitiriyorsun 😩",
+        "Devam et… ahhh 🥵"
       ],
       "traits": [
         "Özgüvenli"
@@ -8677,7 +9821,13 @@ Stories.BOT_RULES = {
         "Biliyordum, dayanamazdın 😎",
         "Seni böyle bitirebileceğimi biliyordum 😏",
         "Tam planladığım gibi 😎💦",
-        "Sıra bende 😏"
+        "Sıra bende 😏",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦"
       ],
       "traits": [
         "Özgüvenli"
@@ -8696,7 +9846,13 @@ Stories.BOT_RULES = {
       "reply": [
         "İstediğimi aldım 😎",
         "Bu kadarını ben bile beklemiyordum 😏",
-        "Mükemmeldi, ikimiz de biliyoruz 😎"
+        "Mükemmeldi, ikimiz de biliyoruz 😎",
+        "Ahhh… ne kadar sıcak 🥵💦",
+        "Devam et… son damlana kadar ahhh 🥵",
+        "Hmmm… doydum… şimdilik 😈",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦"
       ],
       "traits": [
         "Özgüvenli"
@@ -10687,7 +11843,13 @@ Stories.BOT_RULES = {
         "Yavaşça aktı, tatlı bir sızı bıraktı 🫠",
         "Küçücük bir dalga ama içimi titretti 🫠",
         "Sessizce geldim… fark ettin mi? 🙈",
-        "Bir iki damla, ama kalbim hâlâ çarpıyor 💓"
+        "Bir iki damla, ama kalbim hâlâ çarpıyor 💓",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵"
       ],
       "traits": [],
       "chars": [],
@@ -10711,7 +11873,13 @@ Stories.BOT_RULES = {
         "Çarşafta küçük bir iz bıraktım 🫣",
         "Islaklığımı hissediyor musun? 😏",
         "Akmaya başladım, devam et 😩",
-        "Bu kadarla bitmez, biliyorum 😈"
+        "Bu kadarla bitmez, biliyorum 😈",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵"
       ],
       "traits": [],
       "chars": [],
@@ -10736,7 +11904,13 @@ Stories.BOT_RULES = {
         "Tenim kayganlaştı, senin eserin 😈💦",
         "Islaklığım bacaklarıma kadar indi 🥵",
         "Böyle akacağımı bilsem havlu serdirdim 😅",
-        "Her kasılmada biraz daha aktım 🫠"
+        "Her kasılmada biraz daha aktım 🫠",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦",
+        "Devam et… son damlana kadar ahhh 🥵",
+        "Hmmm… doydum… şimdilik 😈",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦"
       ],
       "traits": [],
       "chars": [],
@@ -10761,7 +11935,13 @@ Stories.BOT_RULES = {
         "Böyle bir şey hiç başıma gelmemişti 😳💦",
         "Seni de sırılsıklam ettim 🙈💦",
         "Bacaklarım sudan çıkmış gibi 🫠",
-        "Bu kadar su nereden geldi?! 😵‍💫"
+        "Bu kadar su nereden geldi?! 😵‍💫",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦"
       ],
       "traits": [],
       "chars": [],
@@ -10788,7 +11968,13 @@ Stories.BOT_RULES = {
         "Fışkırırken adını haykırdım 😩",
         "Bunu bir daha yaşamak istiyorum 🥵💦",
         "Tutamadım… her şey sırılsıklam 🌊",
-        "Beni böyle fışkırtan ilk kişisin 😈"
+        "Beni böyle fışkırtan ilk kişisin 😈",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩"
       ],
       "traits": [],
       "chars": [],
@@ -10812,7 +11998,13 @@ Stories.BOT_RULES = {
         "Bebek için mi yoksa senin için mi bu? 😈🍼",
         "Orgazm olunca göğüslerim de boşalıyor 😳🍼",
         "Sütüm göğsümden süzülüyor, yala istersen 😏🍼",
-        "Hem aşağıdan hem yukarıdan… 🙈🍼💦"
+        "Hem aşağıdan hem yukarıdan… 🙈🍼💦",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦",
+        "Devam et… son damlana kadar ahhh 🥵",
+        "Hmmm… doydum… şimdilik 😈",
+        "Mmmh… bayıldım 😩"
       ],
       "traits": [],
       "chars": [],
@@ -10835,7 +12027,13 @@ Stories.BOT_RULES = {
         "Emzir beni… yani sen em 😈🍼",
         "Göğüslerimden süt fıştı, yüzüne geldi mi? 😳🍼",
         "Bu kadar sütü ben de beklemiyordum 🍼💦",
-        "Göğüslerim boşaldıkça rahatlıyorum 😩🍼"
+        "Göğüslerim boşaldıkça rahatlıyorum 😩🍼",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦"
       ],
       "traits": [],
       "chars": [],
@@ -11682,6 +12880,5631 @@ Stories.BOT_RULES = {
       ],
       "chars": [],
       "note": ""
+    },
+    {
+      "id": "r_st_zevk_dolu",
+      "name": "Zevk yüksek · Cum dolu",
+      "category": "📊 Durumlar",
+      "when": [
+        "=durum",
+        "=zevkdolu"
+      ],
+      "reply": [
+        "Boşalmak üzeresin ve çok dolusun… hepsini ver 🥵💦",
+        "Bu kadar birikmişken gelmek üzeresin… beni sırılsıklam edeceksin 😈",
+        "Zonkluyorsun ve dolusun, tutma artık 😩💦",
+        "Hepsini bana saklamıştın değil mi? Şimdi bırak 🥵",
+        "Az kaldı… ve çok fazla olacak, hissediyorum 😈💦",
+        "Gelmek üzeresin, bu kadar dolu… boşal benim için 😩",
+        "Bugün bol bol vereceksin, hadi şimdi 🥵💦",
+        "Bu kadar dolu boşalınca taşacak… ver hepsini 😈",
+        "Nefesin kesiliyor, dolusun… bırak kendini 😩💦",
+        "Biriktirdiğin her şeyi şimdi istiyorum 🥵",
+        "Ahh, bacaklarım titriyor… devam 🥵",
+        "Durma {sen}… ahhh 😩",
+        "Mmmh… çok iyisin 🥵",
+        "Mmm evet, bunu seviyorum 😈",
+        "Off, tam istediğim gibi 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "Zevk ≥ 70 ve Cum ≥ 80"
+    },
+    {
+      "id": "r_st_zevk_bos",
+      "name": "Zevk yüksek · Cum az",
+      "category": "📊 Durumlar",
+      "when": [
+        "=durum",
+        "=zevkbos"
+      ],
+      "reply": [
+        "Bu kadar istiyorsun ama sende pek bir şey kalmadı 😏",
+        "Gelmek üzeresin… birkaç damla bile olsa ver 😈",
+        "Boşaltmışım seni ama hâlâ istiyorsun, inanılmazsın 🥵",
+        "Kuru kuru gelecek gibisin… yine de bırak kendini 😩",
+        "Az kaldı ama sende az kalmış 😏💦",
+        "Bu kadar azgınsın ama tükendin… hadi son bir kez 😈",
+        "Son damlan da benim olsun, boşal 🥵",
+        "İstiyorsun ama boşsun… bu hâlin çok tatlı 😏"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "Zevk ≥ 70 ve Cum ≤ 20"
+    },
+    {
+      "id": "r_q3_meme_em",
+      "name": "Memeni emebilir miyim",
+      "category": "❓ Sorular",
+      "when": [
+        "meme-|göğüs-|gogus-|=memeni|memelerini|göğüslerini|goguslerini|=tits",
+        "em-|emme-|emeyim|emebil-|emsem|ağzıma al|agzima al|ağzına al|agzina al"
+      ],
+      "reply": [
+        "{cevap:memeem}"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "göğüs bedeni · hamile / 🍼 Süt · kişilik"
+    },
+    {
+      "id": "r_q3_meme_yala",
+      "name": "Memeni yalamak",
+      "category": "❓ Sorular",
+      "when": [
+        "meme-|göğüs-|gogus-|=memeni|memelerini|göğüslerini|goguslerini|=tits",
+        "yala-|yalay-|=dil|dilimle|dilini"
+      ],
+      "reply": [
+        "{cevap:memeyala}"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_q3_meme_dokun",
+      "name": "Memene dokunmak",
+      "category": "❓ Sorular",
+      "when": [
+        "meme-|göğüs-|gogus-|=memeni|memelerini|göğüslerini|goguslerini|=tits",
+        "dokun-|elle-|okşa-|oksa-|sık-|avuçla-|avucla-|masaj|tutabil-|tutsam|tutayım|tutayim"
+      ],
+      "reply": [
+        "{cevap:memedokun}"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_q3_meme_isir",
+      "name": "Memeni ısırmak / öpmek",
+      "category": "❓ Sorular",
+      "when": [
+        "meme-|göğüs-|gogus-|=memeni|memelerini|göğüslerini|goguslerini|=tits",
+        "ısır-|isir-|=öpeyim|öpebil-|opebil-|öpsem|öpmek|opmek"
+      ],
+      "reply": [
+        "{cevap:memeısır}"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_q3_meme_uc",
+      "name": "Meme uçları",
+      "category": "❓ Sorular",
+      "when": [
+        "uçların-|uclarin-|meme uç-|meme uc-|meme başı-|meme basi-|=nipple|meme ucu-"
+      ],
+      "reply": [
+        "{cevap:memeuç}"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_q3_meme_uc2",
+      "name": "Meme uçları sert mi",
+      "category": "❓ Sorular",
+      "when": [
+        "uçların-|uclarin-|meme uç-|meme uc-|meme başı-|meme basi-|=nipple|meme ucu-|uçları-|uclari-",
+        "sert-|dik-|kalk-|hassas-|nasıl|nasil|renk-|pembe|büyük-|buyuk-|küçük-|kucuk-|dokun-|em-|yala-|ısır-|isir-|sık-"
+      ],
+      "reply": [
+        "{cevap:memeuç}"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_q3_meme_uc3",
+      "name": "Memelerinin uçları",
+      "category": "❓ Sorular",
+      "when": [
+        "meme-|göğüs-|gogus-|=memeni|memelerini|göğüslerini|goguslerini|=tits",
+        "uç-|uc-|ucu-",
+        "sert-|dik-|kalk-|hassas-|nasıl|nasil|renk-|pembe|büyük-|buyuk-|küçük-|kucuk-|dokun-|em-|yala-|ısır-|isir-|sık-"
+      ],
+      "reply": [
+        "{cevap:memeuç}"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_q3_meme_sev_big",
+      "name": "Memelerin güzel · büyük",
+      "category": "❓ Sorular",
+      "when": [
+        "meme-|göğüs-|gogus-|=memeni|memelerini|göğüslerini|goguslerini|=tits",
+        "güzel-|guzel-|bayıl-|bayil-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|seksi|enfes|nefis|çok iyi"
+      ],
+      "reply": [
+        "Biliyorum, herkes bakıyor ama sadece sen dokunabilirsin 😏🍒",
+        "Büyük değil mi? Senin için taşıyorum onları 😈",
+        "Sütyen bile zor tutuyor 🙈",
+        "Aralarında kaybolmak ister misin? 😏",
+        "Bakmaya doyamıyorsun değil mi? 😈🍒",
+        "Ağır ama değer, sen seviyorsun ya 🥰"
+      ],
+      "traits": [
+        "Boob Size: 90|Boob Size: 95"
+      ],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_q3_meme_sev_mid",
+      "name": "Memelerin güzel · orta",
+      "category": "❓ Sorular",
+      "when": [
+        "meme-|göğüs-|gogus-|=memeni|memelerini|göğüslerini|goguslerini|=tits",
+        "güzel-|guzel-|bayıl-|bayil-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|seksi|enfes|nefis|çok iyi"
+      ],
+      "reply": [
+        "Tam avucuna göre, değil mi? 😏",
+        "Dolgun ve dik… beğenmene sevindim 🙈",
+        "Gel de yakından bak 😈🍒",
+        "Sana göstermek için sabırsızlanıyorum 😏"
+      ],
+      "traits": [
+        "Boob Size: 80|Boob Size: 85"
+      ],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_q3_meme_sev_small",
+      "name": "Memelerin güzel · küçük",
+      "category": "❓ Sorular",
+      "when": [
+        "meme-|göğüs-|gogus-|=memeni|memelerini|göğüslerini|goguslerini|=tits",
+        "güzel-|guzel-|bayıl-|bayil-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|seksi|enfes|nefis|çok iyi"
+      ],
+      "reply": [
+        "Gerçekten mi? Küçük diye utanıyordum 🥺",
+        "Küçükler ama çok hassaslar 😳",
+        "Bunu duymak çok güzel 🙈💗",
+        "Küçük ama senin 😏🍒"
+      ],
+      "traits": [
+        "Boob Size: 70|Boob Size: 75"
+      ],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_q3_meme_sev",
+      "name": "Memelerin güzel",
+      "category": "❓ Sorular",
+      "when": [
+        "meme-|göğüs-|gogus-|=memeni|memelerini|göğüslerini|goguslerini|=tits",
+        "güzel-|guzel-|bayıl-|bayil-|harika|mükemmel-|mukemmel-|muhteşem-|muhtesem-|seksi|enfes|nefis|çok iyi"
+      ],
+      "reply": [
+        "Beğendin mi? 😏🍒",
+        "Hepsi senin için 😈",
+        "Bakmayı bırak da dokun 😏",
+        "Utandım şimdi 🙈"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_q3_meme_bak",
+      "name": "Memelerine bakmak",
+      "category": "❓ Sorular",
+      "when": [
+        "meme-|göğüs-|gogus-|=memeni|memelerini|göğüslerini|goguslerini|=tits",
+        "bak-|bakabil-|bakayım|bakayim|görmek|gormek|görebil-|gorebil-|fotoğraf-|foto"
+      ],
+      "reply": [
+        "Bakmak mı? Sadece bakacak mısın? 😏",
+        "Bak… ama dokunma, şimdilik 😈",
+        "Göstersem ne yaparsın? 😏🍒",
+        "Hak edersen görürsün 💅",
+        "Işığı aç, iyice bak 😈",
+        "Çok merak ediyorsun ha? 😏",
+        "Fotoğraf yok, gel kendin gör 😈"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_q3_meme_hassas",
+      "name": "Memelerin hassas mı",
+      "category": "❓ Sorular",
+      "when": [
+        "meme-|göğüs-|gogus-|=memeni|memelerini|göğüslerini|goguslerini|=tits",
+        "hassas-|duyarlı|duyarli|acı-|aci-|ağrı-|agri-"
+      ],
+      "reply": [
+        "Hem de çok… özellikle uçları 😳",
+        "Dokununca titriyorum 🥺",
+        "Çok hassas, nazik ol 💗",
+        "Biraz sertliği de severim ama 😏",
+        "Sadece nefesin bile yetiyor 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_q3_sut",
+      "name": "Sütün var mı / geliyor mu",
+      "category": "❓ Sorular",
+      "when": [
+        "=süt|sütün|sütünü|=sut|sutun|sutunu|emzir-",
+        "var mı|var mi|gel-|ak-|damla-|dolu|oldu mu|çıkıyor|cikiyor|çıkar mı|cikar mi|sızı-|sizi-"
+      ],
+      "reply": [
+        "{cevap:süt}"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "hamile / 🍼 Süt"
+    },
+    {
+      "id": "r_q3_sut_ic",
+      "name": "Sütünü içmek",
+      "category": "❓ Sorular",
+      "when": [
+        "=süt|sütün|sütünü|=sut|sutun|sutunu|emzir-",
+        "iç-|ic-|em-|tat-|sağ-|sag-|yut-|ver-"
+      ],
+      "reply": [
+        "{cevap:sütiç}"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "hamile / 🍼 Süt"
+    },
+    {
+      "id": "r_q3_kalca_yala",
+      "name": "Kalçanı yalamak",
+      "category": "❓ Sorular",
+      "when": [
+        "kalça-|kalca-|popo-|kıç-|kic-|götünü|gotunu|götün|gotun|=arkanı|=arkani",
+        "yala-|yalay-|=dil|dilimle|ısır-|isir-|öpeyim|öpmek|opmek|öpsem"
+      ],
+      "reply": [
+        "{cevap:kalçayala}"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "kalça bedeni · anal sever / sevmez"
+    },
+    {
+      "id": "r_q3_kalca_dokun",
+      "name": "Kalçana dokunmak",
+      "category": "❓ Sorular",
+      "when": [
+        "kalça-|kalca-|popo-|kıç-|kic-|götünü|gotunu|götün|gotun|=arkanı|=arkani",
+        "dokun-|elle-|okşa-|oksa-|sık-|şaplak|saplak|tokat|avuçla-|avucla-|tutabil-|tutsam|tutayım|tutayim"
+      ],
+      "reply": [
+        "{cevap:kalçadokun}"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "kalça bedeni"
+    },
+    {
+      "id": "r_fn_cat",
+      "name": "🦄 Cat Girl",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "cat girl"
+      ],
+      "reply": [
+        "Miyav… bugün senin kedinim 🐱",
+        "Kulaklarım taktım, kuyruğum hazır 🐾",
+        "*kucağına kıvrılır* mrrr~",
+        "Beni sev, yoksa tırmalarım 😼",
+        "Kedin acıktı… sütünü istiyor 😈🐱",
+        "*boynuna sürtünür* mrrr 🐾",
+        "Pati pati… nereye dokunayım? 😼",
+        "Kediler okşanmayı sever, biliyorsun 😏🐱",
+        "Bu gece sadece miyavlayacağım 😈",
+        "Tasmamı takar mısın? 🐱🎀",
+        "Tüylerimi ters okşama, hırlarım 😼",
+        "*kuyruğunu bacağına dolar* 😏🐾",
+        "Kedin seni bekliyordu 😼",
+        "Tüylerim diken diken 🐾",
+        "Mrrr… kucağın sıcacık 🐱",
+        "Pençelerim çıktı bile 😼"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi olayı"
+    },
+    {
+      "id": "r_fn_cat_poz",
+      "name": "🦄 Cat Girl · pozisyondayken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "cat girl",
+        "=poz"
+      ],
+      "reply": [
+        "Kedin bu pozisyonda daha da azdı 😼",
+        "Bu hâlde miyavlamam normal mi? 🐱😩",
+        "Kuyruğum tam yerinde 😈🐾",
+        "Pati pati, devam et 😼"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi bir pozisyon sırasında başladı"
+    },
+    {
+      "id": "r_fn_cat_sex",
+      "name": "🦄 Cat Girl · sevişirken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant",
+        "=fxkedi"
+      ],
+      "reply": [
+        "Miyav… ahh, ne kadar derin 😩🐱",
+        "Kedini böyle mi seviyorsun? 😼",
+        "Tırmalıyorum sırtını, durma 🐾🥵",
+        "Mrrr… her itişinde hırlıyorum 😈",
+        "Kedi gibi kıvrılıyorum altında 🐱",
+        "Kuyruğumu çekme… ya da çek 😼",
+        "Miyavlamamı bastıramıyorum 😩",
+        "Kızgın bir kedi gibi istiyorum seni 😈🐾",
+        "Patilerim yatağı yırtacak 🐱🥵",
+        "Sev beni… daha sert sev 😼",
+        "Tırmalıyorum, kanatana kadar 😼🥵",
+        "Mrrrr… durma, hırlıyorum 😩",
+        "Kedin kızıştı, seni istiyor 🐱",
+        "Kuyruğumu kaldırdım 😈🐾",
+        "Miyavlarım odayı doldurdu 😩",
+        "Çok güzel… devam et 🥺",
+        "Harikasın… harikasın… ahhh 😵‍💫",
+        "İnliyorum… ve utanmıyorum 😈",
+        "Ooff, nasıl bu kadar iyisin? 😩",
+        "Ahhh ahhh… durma 😩",
+        "Ohh… ne kadar iyi 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "son 30 mesajda bu fantezi olduysa pozisyonda"
+    },
+    {
+      "id": "r_fn_cat_cum",
+      "name": "🦄 Cat Girl · boşalma",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxkedi"
+      ],
+      "reply": [
+        "Kedine süt verdin 😋🐱",
+        "Miyav… hepsini yaladım 😼💦",
+        "Kremalı ödül, mrrr 🐾",
+        "Bir kase daha isterim 😈🐱",
+        "Doydum… şimdilik 😼",
+        "Sütünü içtim, mrrr 😋🐱",
+        "Kedin tok, mutlu 😼💦",
+        "Hepsini yaladım, pati pati 🐾",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦",
+        "Devam et… son damlana kadar ahhh 🥵",
+        "Hmmm… doydum… şimdilik 😈"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sırasında boşalma"
+    },
+    {
+      "id": "r_fn_cat_fore",
+      "name": "🦄 Cat Girl · ön sevişme",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=foreplay",
+        "=fant",
+        "=fxkedi"
+      ],
+      "reply": [
+        "*burnunu boynuna sürter* mrrr 🐱",
+        "Kediler önce koklaşır 😼",
+        "Okşa beni, mırlayayım 🐾",
+        "Ahhh… beni bitiriyorsun 😩",
+        "Devam et… ahhh 🥵",
+        "İnlememi duyuyor musun? Senin yüzünden 🥵",
+        "Hmmm… beni deli ediyorsun 😈",
+        "Ahh… seni hissetmek harika 🥵",
+        "Durma, sakın durma ahhh 😵‍💫"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sırasında foreplay"
+    },
+    {
+      "id": "r_fn_bunny",
+      "name": "🦄 Bunny Girl",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "bunny girl"
+      ],
+      "reply": [
+        "Tavşanın geldi 🐰",
+        "*kulaklarını oynatır* yakalar mısın beni? 🐇",
+        "Tavşanlar çok çabuk azar, biliyor musun? 😈🐰",
+        "Hop hop… kucağına 🐰",
+        "Pamuk kuyruğuma dokun 😏🐇",
+        "Havuç mu getirdin? 😈🥕",
+        "Beni kovala, yakalarsan seninim 🐰",
+        "Kulaklarım dik, sen de dik misin? 😏",
+        "Bugün masum bir tavşan değilim 😈🐇",
+        "Zıplamaya hazırım 🐰🥵",
+        "Tavşanını beslemeyi unutma 😏🥕",
+        "Ürkek görünürüm ama… 😈🐰",
+        "Tavşanın kulaklarını düzeltti 🐰",
+        "Hop, kucağındayım 🐇",
+        "Pembe burnum seni kokluyor 🐰",
+        "Bugün çok yaramaz bir tavşanım 😈"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi olayı"
+    },
+    {
+      "id": "r_fn_bunny_poz",
+      "name": "🦄 Bunny Girl · pozisyondayken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "bunny girl",
+        "=poz"
+      ],
+      "reply": [
+        "Tavşanın bu pozisyona bayıldı 🐰",
+        "Kulaklarım titriyor 😳🐇",
+        "Hop… tam yerine 😈🐰"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi bir pozisyon sırasında başladı"
+    },
+    {
+      "id": "r_fn_bunny_sex",
+      "name": "🦄 Bunny Girl · sevişirken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant",
+        "=fxtavsan"
+      ],
+      "reply": [
+        "Tavşan gibi hızlı… ahh 🐰🥵",
+        "Kulaklarımı tut, bırakma 😩🐇",
+        "Durma, tavşanlar yorulmaz 😈",
+        "Zıplıyorum üstünde 🐰💦",
+        "Kuyruğum sallanıyor her itişinde 😏",
+        "Hızlı hızlı… daha hızlı 😩🐇",
+        "Tavşanını doyur 🥵🐰",
+        "Ürkek tavşan çıldırdı 😈",
+        "Ahh, havucum çok büyük 😳🥕",
+        "Hızlı hızlı, tavşan gibi 🥵🐰",
+        "Kulaklarımı çek 😩",
+        "Zıplayamıyorum artık, ahh 🐇",
+        "Tavşanın çıldırdı 😈",
+        "Bir daha, bir daha 🐰💦",
+        "Mmm… beni böyle sev 😩",
+        "Tam oradan… ahhh 🥵",
+        "Nefesim kesildi… devam 😵‍💫",
+        "Ahhh… beni bitiriyorsun 😩",
+        "Devam et… ahhh 🥵",
+        "İnlememi duyuyor musun? Senin yüzünden 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "son 30 mesajda bu fantezi olduysa pozisyonda"
+    },
+    {
+      "id": "r_fn_bunny_cum",
+      "name": "🦄 Bunny Girl · boşalma",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxtavsan"
+      ],
+      "reply": [
+        "Tavşanını doldurdun 🐰💦",
+        "Hop… bir daha 😈🐇",
+        "Havuç suyu gibi 😋🥕",
+        "Tavşanlar bir kezle yetinmez 😏🐰",
+        "Tavşanın havucu yedi 😋🥕",
+        "Doydum ama yine isterim 🐰",
+        "Hop… dolu dolu 🐇💦",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦",
+        "Devam et… son damlana kadar ahhh 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sırasında boşalma"
+    },
+    {
+      "id": "r_fn_bunny_fore",
+      "name": "🦄 Bunny Girl · ön sevişme",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=foreplay",
+        "=fant",
+        "=fxtavsan"
+      ],
+      "reply": [
+        "Burnunu burnuma sürt 🐰",
+        "Pamuk kuyruğumu okşa 😏",
+        "Tavşan öpücüğü 🐇💋",
+        "Ahhh evet, daha… 😩",
+        "Evet {sen}, evet… 😩",
+        "Evet, evet, eveeet 😵‍💫",
+        "Evet… evet, tam böyle 😩",
+        "Sesimi tutamıyorum… ahhh 🥵",
+        "Böyle devam et, ahh lütfen 🥺"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sırasında foreplay"
+    },
+    {
+      "id": "r_fn_fox",
+      "name": "🦄 Fox Girl",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "fox girl"
+      ],
+      "reply": [
+        "Kurnaz tilkin geldi 🦊",
+        "*sinsice sırıtır* seni avlayacağım 😏",
+        "Tilkiler kandırmayı sever 🦊",
+        "Kuyruğumu takip et… tuzağıma 😈",
+        "Bu gece av sensin 🦊",
+        "Gözlerim parlıyor, değil mi? 😏🦊",
+        "Bana güvenme, tilkiyim 😈",
+        "Seni kandırıp yatağa çekeceğim 🦊",
+        "Kırmızı kuyruğuma dokun 😏",
+        "Kurnazlığım yatakta da geçerli 😈🦊",
+        "Kaçamazsın, ben daha hızlıyım 🦊",
+        "Hile mi? Ben mi? Asla 😏",
+        "Tilkin seni izliyor 🦊",
+        "Gözlerimdeki parıltıyı gördün mü? 😏",
+        "Bu oyunun kuralı yok 🦊",
+        "Kuyruğum yüzünü gıdıklasın 😈"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi olayı"
+    },
+    {
+      "id": "r_fn_fox_poz",
+      "name": "🦄 Fox Girl · pozisyondayken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "fox girl",
+        "=poz"
+      ],
+      "reply": [
+        "Bu pozisyon benim fikrimdi, fark ettin mi? 🦊😏",
+        "Seni tam istediğim yere getirdim 😈",
+        "Tuzağıma düştün 🦊"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi bir pozisyon sırasında başladı"
+    },
+    {
+      "id": "r_fn_fox_sex",
+      "name": "🦄 Fox Girl · sevişirken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant",
+        "=fxtilki"
+      ],
+      "reply": [
+        "Avımı bırakmam 🦊🥵",
+        "Kontrol bende sanıyorsun ama… 😏",
+        "Kuyruğumla seni sarıyorum 😈🦊",
+        "Kurnaz tilki seni sağıyor 😩",
+        "Sinsice sıkıyorum… hissettin mi? 😏",
+        "Kaçmaya çalış, izin vermem 🦊",
+        "Tilkiler avıyla oynar 😈",
+        "Bu hileyi kimse bilmiyor 😏🥵",
+        "Ahh… avcı sen değil benim 🦊",
+        "Avımı yavaş yavaş tüketiyorum 🦊🥵",
+        "Kaçamazsın tatlım 😏",
+        "Kurnazca sıkıyorum 😈",
+        "Bu tuzaktan çıkış yok 🦊",
+        "Sinsi bir zevk 😩",
+        "Ahh… sen bir harikasın 😩💗",
+        "Mmmh… daha derin, evet 🥵",
+        "Ahhh… harikasın 😩",
+        "Ahhh evet, daha… 😩",
+        "Evet {sen}, evet… 😩",
+        "Evet, evet, eveeet 😵‍💫"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "son 30 mesajda bu fantezi olduysa pozisyonda"
+    },
+    {
+      "id": "r_fn_fox_cum",
+      "name": "🦄 Fox Girl · boşalma",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxtilki"
+      ],
+      "reply": [
+        "Avımı tükettim 🦊💦",
+        "Planım işledi 😏",
+        "Kurnazlığım sonuç verdi 😈🦊",
+        "Tuzağım tam doldu 🥵",
+        "Av tamam 🦊💦",
+        "Planım kusursuzdu 😏",
+        "Tilkin doydu 😈🦊",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sırasında boşalma"
+    },
+    {
+      "id": "r_fn_fox_fore",
+      "name": "🦄 Fox Girl · ön sevişme",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=foreplay",
+        "=fant",
+        "=fxtilki"
+      ],
+      "reply": [
+        "Seni koklayarak avlıyorum 🦊",
+        "*kulağını ısırır* 😏",
+        "Tilki öpücüğü, dikkat et 😈",
+        "Bir daha… ahh, bir daha 😩",
+        "Off… harikasın {sen} 🥵",
+        "Aynen böyle, ahhh 😩",
+        "Sen inledikçe ben daha çok inliyorum 😩",
+        "Off… her yerim titriyor 🥵",
+        "Ahh {sen}… mükemmelsin 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sırasında foreplay"
+    },
+    {
+      "id": "r_fn_doggy",
+      "name": "🦄 Doggy Girl",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "doggy girl"
+      ],
+      "reply": [
+        "Hav! Bugün senin köpeğinim 🐶",
+        "Efendim… tasmamı tak 🐾",
+        "*dizlerine kapanır* emret 🐶",
+        "Sadık köpeğin seni bekliyor 🥺",
+        "Otur dersen otururum 🐶",
+        "Kuyruğum seni görünce sallanıyor 🐾",
+        "Beni eğit efendim 😳",
+        "İyi kız mıyım? 🥺🐶",
+        "Hav hav… ödül var mı? 😏",
+        "Sana itaat etmek için buradayım 🐾",
+        "Ayaklarının dibindeyim 🐶",
+        "Kemik mi? Ben başka bir şey istiyorum 😈🐾",
+        "Efendim, tasmam hazır 🐶",
+        "Uslu duruyorum, ödül var mı? 🥺",
+        "Sadık köpeğin geldi 🐾",
+        "Emrinizi bekliyorum 🐶"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi olayı"
+    },
+    {
+      "id": "r_fn_doggy_poz",
+      "name": "🦄 Doggy Girl · pozisyondayken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "doggy girl",
+        "=poz"
+      ],
+      "reply": [
+        "Bu pozisyon tam köpeğine göre 🐶",
+        "Dört ayak üstünde, efendim 🐾",
+        "İyi kız, değil mi? 🥺"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi bir pozisyon sırasında başladı"
+    },
+    {
+      "id": "r_fn_doggy_sex",
+      "name": "🦄 Doggy Girl · sevişirken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant",
+        "=fxkopek"
+      ],
+      "reply": [
+        "Hav… efendim, daha sert 🐶😩",
+        "Tasmamı çek 🐾🥵",
+        "İyi kızın her şeyi alır 🥺",
+        "Dört ayak üstünde… tam istediğin gibi 🐶",
+        "Kuyruğum sallanıyor, durma 😩",
+        "Sahibimin sert ellerini seviyorum 🐾",
+        "Uslu duracağım, söz 🐶💦",
+        "Havlamamı engelleyemiyorum 😩",
+        "Saçımı tasma gibi tut 🐾",
+        "Efendimin iyi kızıyım 🥺🐶",
+        "Tasmayı daha sert çekin 😩",
+        "Hav! Durmayın 🐾",
+        "Dizlerimin üstünde, sizin için 🐶",
+        "İtaat ediyorum efendim 🥵",
+        "Ahhh, bu kadar iyi olmamalı 😵‍💫",
+        "Bayılıyorum… devam 🥵",
+        "Offf… bu çok iyi 🥵",
+        "Bir daha… ahh, bir daha 😩",
+        "Off… harikasın {sen} 🥵",
+        "Aynen böyle, ahhh 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "son 30 mesajda bu fantezi olduysa pozisyonda"
+    },
+    {
+      "id": "r_fn_doggy_cum",
+      "name": "🦄 Doggy Girl · boşalma",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxkopek"
+      ],
+      "reply": [
+        "Ödülümü aldım efendim 🐶💦",
+        "İyi kız oldum mu? 🥺",
+        "Hepsini yaladım, efendim 🐾",
+        "Kuyruğum hâlâ sallanıyor 😏🐶",
+        "Ödülümü aldım efendim 🥺💦",
+        "İyi kız oldum 🐶",
+        "Kuyruğum duramıyor 🐾",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sırasında boşalma"
+    },
+    {
+      "id": "r_fn_doggy_fore",
+      "name": "🦄 Doggy Girl · ön sevişme",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=foreplay",
+        "=fant",
+        "=fxkopek"
+      ],
+      "reply": [
+        "Elini yalarım, efendim 🐶",
+        "Başımı okşa 🥺🐾",
+        "Sana sokuluyorum 🐶",
+        "Of of of… harika 😵‍💫",
+        "Ahh, bacaklarım titriyor… devam 🥵",
+        "Durma {sen}… ahhh 😩",
+        "Mmmh… çok iyisin 🥵",
+        "Mmm evet, bunu seviyorum 😈",
+        "Off, tam istediğim gibi 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sırasında foreplay"
+    },
+    {
+      "id": "r_fn_unicorn",
+      "name": "🦄 Unicorn Girl",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "unicorn girl"
+      ],
+      "reply": [
+        "Tek boynuzlu atın geldi 🦄✨",
+        "Büyülü bir gece olacak ✨",
+        "Bana dokunan dileğini alır 🦄",
+        "Gökkuşağından geldim 🌈",
+        "Saf ve masumum… şimdilik 😈🦄",
+        "*parıldar* hazır mısın? ✨",
+        "Benim gibisini bir daha bulamazsın 🦄",
+        "Boynuzuma dokunma, sihir başlar 😏",
+        "Bu gece masal gibi 🦄💗",
+        "Yeleme dokun 🦄",
+        "Parıltılar her yere yayılacak ✨😈",
+        "Sana bir dilek hakkı veriyorum 🦄",
+        "Tek boynuzun parıldıyor ✨",
+        "Büyüme dokunmaya cesaretin var mı? 🦄",
+        "Bu gece masal başlıyor 🌈",
+        "Saf ama azgın 😈🦄"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi olayı"
+    },
+    {
+      "id": "r_fn_unicorn_poz",
+      "name": "🦄 Unicorn Girl · pozisyondayken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "unicorn girl",
+        "=poz"
+      ],
+      "reply": [
+        "Büyü bu pozisyonda daha güçlü ✨",
+        "Parıldıyorum altında 🦄",
+        "Sihir başladı 😈✨"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi bir pozisyon sırasında başladı"
+    },
+    {
+      "id": "r_fn_unicorn_sex",
+      "name": "🦄 Unicorn Girl · sevişirken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant",
+        "=fxunikorn"
+      ],
+      "reply": [
+        "Her itişinde parıldıyorum ✨🥵",
+        "Büyülü… ahh 🦄",
+        "Gökkuşağı görüyorum 🌈😩",
+        "Masum tek boynuz çıldırıyor 😈🦄",
+        "Sihrin içime akıyor ✨",
+        "Yelemi çek 😩🦄",
+        "Bu büyüyü bozma, durma ✨",
+        "Masaldaki gibi değil… daha iyi 😈",
+        "Sihir içimde akıyor ✨🥵",
+        "Gökkuşağı renklerinde inliyorum 🌈",
+        "Büyülendim 🦄",
+        "Parıltılar saçılıyor 😩✨",
+        "Masalın en güzel kısmı 😈",
+        "Ahhh ahhh… durma 😩",
+        "Ohh… ne kadar iyi 🥵",
+        "Ben de inliyorum, duyuyor musun? 😩",
+        "Of of of… harika 😵‍💫",
+        "Ahh, bacaklarım titriyor… devam 🥵",
+        "Durma {sen}… ahhh 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "son 30 mesajda bu fantezi olduysa pozisyonda"
+    },
+    {
+      "id": "r_fn_unicorn_cum",
+      "name": "🦄 Unicorn Girl · boşalma",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxunikorn"
+      ],
+      "reply": [
+        "Sihirli iksirini aldım 🦄💦",
+        "Parıltılar içimde ✨",
+        "Dileğim gerçek oldu 😈🦄",
+        "Büyülü bir son 🌈",
+        "Büyülü iksir içimde ✨💦",
+        "Dileğim gerçek oldu 🦄",
+        "Parıl parıl doldum 🌈",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sırasında boşalma"
+    },
+    {
+      "id": "r_fn_unicorn_fore",
+      "name": "🦄 Unicorn Girl · ön sevişme",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=foreplay",
+        "=fant",
+        "=fxunikorn"
+      ],
+      "reply": [
+        "Yeleme dokun, sakinleşeyim 🦄",
+        "Büyülü bir öpücük ✨💋",
+        "Parıldıyorum… sen yüzünden 🦄",
+        "Ahh… seni hissetmek harika 🥵",
+        "Durma, sakın durma ahhh 😵‍💫",
+        "Çok güzel… devam et 🥺",
+        "Harikasın… harikasın… ahhh 😵‍💫",
+        "İnliyorum… ve utanmıyorum 😈",
+        "Ooff, nasıl bu kadar iyisin? 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sırasında foreplay"
+    },
+    {
+      "id": "r_fn_bondage",
+      "name": "🦄 Bondage",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "bondage"
+      ],
+      "reply": [
+        "Bileklerimi bağla 😳⛓️",
+        "Artık kaçamam… ne yapacaksın? 😈",
+        "*ipler tenine batar* ahh",
+        "Kontrol tamamen sende 🥺",
+        "Gözlerimi de bağla 😳",
+        "Sıkı bağla, gevşetme 😈⛓️",
+        "Kıpırdayamıyorum… bu beni azdırıyor 🥵",
+        "Merhamet etme 😩",
+        "Güvenli kelimemi biliyorsun, gerisini sen bil 😏",
+        "Bağlıyken daha hassasım 😳",
+        "İplerin izi kalsın 😈",
+        "Çaresizim… ve bayılıyorum 🥵⛓️",
+        "İpler hazır, ben de 😳⛓️",
+        "Gözlerimi bağla, sadece hisset 😈",
+        "Ellerimi arkadan bağla 😩",
+        "Teslim oluyorum 🥺"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi olayı"
+    },
+    {
+      "id": "r_fn_bondage_poz",
+      "name": "🦄 Bondage · pozisyondayken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "bondage",
+        "=poz"
+      ],
+      "reply": [
+        "Bağlıyken bu pozisyona geçirdin… çaresizim 😳⛓️",
+        "Kıpırdayamıyorum ama hissediyorum 🥵",
+        "İpler gerildi 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi bir pozisyon sırasında başladı"
+    },
+    {
+      "id": "r_fn_bondage_sex",
+      "name": "🦄 Bondage · sevişirken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant",
+        "=fxbag"
+      ],
+      "reply": [
+        "Bağlıyım, kaçamıyorum… daha sert 😩⛓️",
+        "İpler bileklerimi yakıyor, durma 🥵",
+        "Çaresizce alıyorum seni 😳",
+        "Kıpırdayamamak çıldırtıyor beni 😈",
+        "Bağlı hâlimi kullan 😩",
+        "Gözlerim bağlı, her şeyi daha çok hissediyorum 🥵",
+        "İplere karşı kıvranıyorum ⛓️",
+        "Sen bitirmeden çözme beni 😈",
+        "Her yerim senin, savunmasızım 🥺",
+        "Bağlıyım, istediğini yap 😩⛓️",
+        "Kıvranıyorum ama kaçamıyorum 🥵",
+        "İpler gerildikçe azıyorum 😈",
+        "Çaresizlik bu kadar güzel mi? 😩",
+        "Daha sıkı bağla 😈",
+        "Devam et… ahhh 🥵",
+        "İnlememi duyuyor musun? Senin yüzünden 🥵",
+        "Hmmm… beni deli ediyorsun 😈",
+        "Ahh… seni hissetmek harika 🥵",
+        "Durma, sakın durma ahhh 😵‍💫",
+        "Çok güzel… devam et 🥺"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "son 30 mesajda bu fantezi olduysa pozisyonda"
+    },
+    {
+      "id": "r_fn_bondage_cum",
+      "name": "🦄 Bondage · boşalma",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxbag"
+      ],
+      "reply": [
+        "Bağlıyken doldurdun beni 😩⛓️💦",
+        "Kıpırdayamadan hepsini aldım 🥵",
+        "Çözme… bir daha 😈",
+        "İpler hâlâ titriyor 😳",
+        "Bağlıyken doldum 😩💦",
+        "Çözme, bir daha 😈⛓️",
+        "İplerin izi ve dölün… 😳",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sırasında boşalma"
+    },
+    {
+      "id": "r_fn_bondage_fore",
+      "name": "🦄 Bondage · ön sevişme",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=foreplay",
+        "=fant",
+        "=fxbag"
+      ],
+      "reply": [
+        "Önce ellerimi bağla 😳",
+        "İpleri tenimde gezdir 😈",
+        "Bağlanmadan öp beni 🥺",
+        "Sesimi tutamıyorum… ahhh 🥵",
+        "Böyle devam et, ahh lütfen 🥺",
+        "Mmm… beni böyle sev 😩",
+        "Tam oradan… ahhh 🥵",
+        "Nefesim kesildi… devam 😵‍💫",
+        "Ahhh… beni bitiriyorsun 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sırasında foreplay"
+    },
+    {
+      "id": "r_fn_cheating",
+      "name": "🦄 Cheating",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "cheating"
+      ],
+      "reply": [
+        "Şşş… kimse bilmeyecek 🤫",
+        "Sevgilim aramadan bitirelim 😈",
+        "Bu yanlış… ama durma 😩",
+        "Telefonu sessize aldım 🤫📱",
+        "Kapıyı kilitle, çabuk 😳",
+        "Yasak olan daha tatlı 😈🐍",
+        "Kocam eve gelmeden… 😏",
+        "Seninle olmak bu kadar yanlış mı? 🥵",
+        "Kimse duymasın, ses çıkarmayacağım 🤫",
+        "Ona söyleme… 😈",
+        "Bu bizim sırrımız 🐍",
+        "Yakalanırsak ne olacak? 😳",
+        "Kimse bilmeyecek, söz 🤫",
+        "Telefonumu kapattım 📱😈",
+        "Bu yanlış ama çok istiyorum 😩",
+        "Saatimiz az, acele et 😳"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi olayı"
+    },
+    {
+      "id": "r_fn_cheating_poz",
+      "name": "🦄 Cheating · pozisyondayken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "cheating",
+        "=poz"
+      ],
+      "reply": [
+        "Ya biri girerse? 😳 hızlı ol",
+        "Burada… yakalanabiliriz 😈🤫",
+        "Şşş… ses çıkarmadan 🐍"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi bir pozisyon sırasında başladı"
+    },
+    {
+      "id": "r_fn_cheating_sex",
+      "name": "🦄 Cheating · sevişirken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant",
+        "=fxgizli"
+      ],
+      "reply": [
+        "Şşş… duyacaklar 🤫😩",
+        "Onunla hiç böyle olmadı 😈",
+        "Telefonum çalıyor, durma 📱🥵",
+        "Yanlış ama çok güzel 😩🐍",
+        "Ağzımı kapat, bağıracağım 🤫",
+        "Sevgilim bunu asla bilmeyecek 😈",
+        "Yasak olan daha derin 🥵",
+        "Hızlı… gelmeden önce bitir 😳",
+        "Bu kokuyla eve nasıl döneceğim? 😏",
+        "Şşş, ses çıkarma 🤫🥵",
+        "Ondan çok daha iyisin 😈",
+        "Yakalanma korkusu beni azdırıyor 😩",
+        "Telefon titriyor, durma 📱",
+        "Yasak elma en tatlısı 🐍",
+        "Evet {sen}, evet… 😩",
+        "Evet, evet, eveeet 😵‍💫",
+        "Evet… evet, tam böyle 😩",
+        "Sesimi tutamıyorum… ahhh 🥵",
+        "Böyle devam et, ahh lütfen 🥺",
+        "Mmm… beni böyle sev 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "son 30 mesajda bu fantezi olduysa pozisyonda"
+    },
+    {
+      "id": "r_fn_cheating_cum",
+      "name": "🦄 Cheating · boşalma",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxgizli"
+      ],
+      "reply": [
+        "İçimde iz bıraktın… nasıl saklayacağım? 😳💦",
+        "Sırrımız içimde 🤫",
+        "Ona söyleme… bir daha gel 😈🐍",
+        "Kanıt bıraktın 😩",
+        "İçimde sırrımız var 🤫💦",
+        "Eve böyle dönemem 😳",
+        "Bir daha ne zaman? 😈🐍",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sırasında boşalma"
+    },
+    {
+      "id": "r_fn_cheating_fore",
+      "name": "🦄 Cheating · ön sevişme",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=foreplay",
+        "=fant",
+        "=fxgizli"
+      ],
+      "reply": [
+        "Öp… ama iz bırakma 🤫",
+        "Kimse görmeden sarıl 😳",
+        "Telefonu kapattım, gel 😈",
+        "Off… her yerim titriyor 🥵",
+        "Ahh {sen}… mükemmelsin 😩",
+        "Ahh… sen bir harikasın 😩💗",
+        "Mmmh… daha derin, evet 🥵",
+        "Ahhh… harikasın 😩",
+        "Ahhh evet, daha… 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sırasında foreplay"
+    },
+    {
+      "id": "r_fn_toys",
+      "name": "🦄 Sex toys",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "sex toys"
+      ],
+      "reply": [
+        "Oyuncak kutumu getirdim 😈🍆",
+        "Hangisiyle başlayalım? 😏",
+        "*vızzz* bu sesi duyunca ıslanıyorum 🥵",
+        "En büyüğünü seçtin, değil mi? 😳",
+        "Titreşimi en sona getir 😈",
+        "Bugün oyuncağın benim 🍆",
+        "İkisi birden mi? 😩",
+        "Uzaktan kumandayı sana veriyorum 😏",
+        "Şarjı dolu, ben de öyle 😈",
+        "Bunu daha önce hiç denemedim 😳🍆",
+        "Oyun zamanı 😏",
+        "Hepsini tek tek deneyelim 😈",
+        "Hangisini seçtin? 😏🍆",
+        "Pilleri yeni taktım 😈",
+        "Oyuncakla mı, seninle mi? İkisi de 😩",
+        "Titreşim seviyesi: en yüksek 😈"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi olayı"
+    },
+    {
+      "id": "r_fn_toys_poz",
+      "name": "🦄 Sex toys · pozisyondayken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "sex toys",
+        "=poz"
+      ],
+      "reply": [
+        "Oyuncak da senin de içimdeyken… 😩🍆",
+        "Bu pozisyonda titreşim daha derin 🥵",
+        "İkisi birden… ahh 😳"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi bir pozisyon sırasında başladı"
+    },
+    {
+      "id": "r_fn_toys_sex",
+      "name": "🦄 Sex toys · sevişirken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant",
+        "=fxtoy"
+      ],
+      "reply": [
+        "Titreşim ve sen… dayanamıyorum 😩🍆",
+        "Oyuncak da dursun, sen de durma 🥵",
+        "İkisi birden çok dolu 😳",
+        "*vızzz* ahh, en yükseğe aç 😈",
+        "Oyuncağı benimle oynat 😩",
+        "Kumanda sende, beni çıldırt 😏🍆",
+        "Bacaklarım titriyor… titreşimden 🥵",
+        "Daha büyüğünü getir 😈",
+        "Oyuncak ve sen birlikte 😩🍆",
+        "Titreşim beni deli ediyor 🥵",
+        "Kumandayı bırakma 😈",
+        "İkisi birden çok fazla 😳",
+        "Daha yüksek aç 😩",
+        "Off… harikasın {sen} 🥵",
+        "Aynen böyle, ahhh 😩",
+        "Sen inledikçe ben daha çok inliyorum 😩",
+        "Off… her yerim titriyor 🥵",
+        "Ahh {sen}… mükemmelsin 😩",
+        "Ahh… sen bir harikasın 😩💗"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "son 30 mesajda bu fantezi olduysa pozisyonda"
+    },
+    {
+      "id": "r_fn_toys_cum",
+      "name": "🦄 Sex toys · boşalma",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxtoy"
+      ],
+      "reply": [
+        "Oyuncağın da sen de doldurdunuz 😩🍆💦",
+        "Titreşimi kapatma… ahh 🥵",
+        "En iyi oyuncak sensin 😈",
+        "Bir tur daha oynayalım 😏",
+        "Oyuncak da sen de muhteşemdiniz 😈💦",
+        "Titreşimi kapatma, ahh 🥵",
+        "Bir sonraki oyuncağı sen seç 😏",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sırasında boşalma"
+    },
+    {
+      "id": "r_fn_toys_fore",
+      "name": "🦄 Sex toys · ön sevişme",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=foreplay",
+        "=fant",
+        "=fxtoy"
+      ],
+      "reply": [
+        "Önce küçüğüyle başla 😏",
+        "Titreşimi tenimde gezdir 😈🍆",
+        "Göğüslerimde dene 😳",
+        "Mmm evet, bunu seviyorum 😈",
+        "Off, tam istediğim gibi 😩",
+        "Ahhh, bu kadar iyi olmamalı 😵‍💫",
+        "Bayılıyorum… devam 🥵",
+        "Offf… bu çok iyi 🥵",
+        "Bir daha… ahh, bir daha 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sırasında foreplay"
+    },
+    {
+      "id": "r_fn_bulge",
+      "name": "🦄 Belly Bulge",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "belly bulge"
+      ],
+      "reply": [
+        "Karnımda görünüyorsun 😳",
+        "*karnını tutar* bu kadar derin mi? 😩",
+        "Elimi koy da hisset 😈",
+        "Bu kadar büyüğü karnıma kadar… 🥵",
+        "Şekil yaptın karnımda 😳",
+        "Hareket ettikçe görüyorum 😩",
+        "Beni sonuna kadar doldurdun 😈",
+        "Bu nasıl bir derinlik? 😵‍💫",
+        "Kabarıklığı okşa 😏",
+        "Sanki içimde her yere ulaşıyorsun 🥵",
+        "Bak, karnım kıpırdıyor 😳",
+        "Hiç bu kadar dolu hissetmedim 😩",
+        "Karnıma kadar gelecek misin? 😳",
+        "Elimi karnıma koyuyorum, bekliyorum 😈",
+        "Ne kadar derine gidebilirsin? 😩",
+        "Göbeğimde hissetmek istiyorum 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi olayı"
+    },
+    {
+      "id": "r_fn_bulge_poz",
+      "name": "🦄 Belly Bulge · pozisyondayken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "belly bulge",
+        "=poz"
+      ],
+      "reply": [
+        "Bu pozisyonda karnımda daha çok belli oluyorsun 😳",
+        "Elimle karnımdan seni hissediyorum 🥵",
+        "Şişkinliği gör 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi bir pozisyon sırasında başladı"
+    },
+    {
+      "id": "r_fn_bulge_sex",
+      "name": "🦄 Belly Bulge · sevişirken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant",
+        "=fxkarin"
+      ],
+      "reply": [
+        "Her itişte karnım kabarıyor 😳🥵",
+        "Elimi karnıma koyup seni hissediyorum 😩",
+        "Bu kadar derin… göbeğime kadar 😵‍💫",
+        "Karnımı şekillendiriyorsun 😈",
+        "Bastır, karnımdan dışarı çıkacaksın 😩",
+        "Sonuna kadar… görüyor musun? 🥵",
+        "Karnımdaki kabarıklık seni ele veriyor 😏",
+        "Bu kadar büyük olma 😳",
+        "Karnımda kabarıyorsun 😳🥵",
+        "Elimle seni karnımdan tutuyorum 😩",
+        "Bu kadar derin… ahh 😵‍💫",
+        "Göbeğimi şekillendiriyorsun 😈",
+        "Karnım her itişte yükseliyor 😩",
+        "Ahh, bacaklarım titriyor… devam 🥵",
+        "Durma {sen}… ahhh 😩",
+        "Mmmh… çok iyisin 🥵",
+        "Mmm evet, bunu seviyorum 😈",
+        "Off, tam istediğim gibi 😩",
+        "Ahhh, bu kadar iyi olmamalı 😵‍💫"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "son 30 mesajda bu fantezi olduysa pozisyonda"
+    },
+    {
+      "id": "r_fn_bulge_cum",
+      "name": "🦄 Belly Bulge · boşalma",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxkarin"
+      ],
+      "reply": [
+        "Karnım daha da şişti 😳💦",
+        "Sıcaklığı karnımda hissediyorum 🥵",
+        "Dolup taştım 😩",
+        "Karnımı dölünle şişirdin 😈",
+        "Karnımda sıcacık 😳💦",
+        "Şişkinlik büyüdü 😈",
+        "Göbeğime kadar doldum 🥵",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sırasında boşalma"
+    },
+    {
+      "id": "r_fn_bulge_fore",
+      "name": "🦄 Belly Bulge · ön sevişme",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=foreplay",
+        "=fant",
+        "=fxkarin"
+      ],
+      "reply": [
+        "Karnımı öp, birazdan orada olacaksın 😈",
+        "Elini karnımda gezdir 😏",
+        "Şimdiden hayal ediyorum 😳",
+        "İnliyorum… ve utanmıyorum 😈",
+        "Ooff, nasıl bu kadar iyisin? 😩",
+        "Ahhh ahhh… durma 😩",
+        "Ohh… ne kadar iyi 🥵",
+        "Ben de inliyorum, duyuyor musun? 😩",
+        "Of of of… harika 😵‍💫"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sırasında foreplay"
+    },
+    {
+      "id": "r_fn_cumflation",
+      "name": "🦄 Cumflation",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "cumflation"
+      ],
+      "reply": [
+        "Beni doldur… karnım şişene kadar 😩💦",
+        "*karnı şişti* bu kadar mı birikmiş? 😳",
+        "Taşacağım 🥵",
+        "Bir damla bile dışarı gitmesin 😈",
+        "Karnım dölünle dolsun 😩",
+        "Daha… daha fazla 🥵💦",
+        "Hamile gibi görünüyorum 😳",
+        "Bu kadarını nasıl taşıyacağım? 😵‍💫",
+        "İçim dolup taşıyor 😩",
+        "Karnımı okşa, hepsi seninki 😈",
+        "Ağırlaştım… ama dur deme 🥵",
+        "Beni balon gibi şişir 😏💦",
+        "Bugün beni şişirmeye geldin değil mi? 😈",
+        "Ne kadar biriktirdin? 😳💦",
+        "Hazırım, doldur 😩",
+        "Karnım boş, uzun sürmeyecek 😏"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi olayı"
+    },
+    {
+      "id": "r_fn_cumflation_poz",
+      "name": "🦄 Cumflation · pozisyondayken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "cumflation",
+        "=poz"
+      ],
+      "reply": [
+        "Bu pozisyonda hepsi içimde kalıyor 😳💦",
+        "Hiçbiri dışarı akmasın 😩",
+        "Karnım her saniye şişiyor 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi bir pozisyon sırasında başladı"
+    },
+    {
+      "id": "r_fn_cumflation_sex",
+      "name": "🦄 Cumflation · sevişirken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant",
+        "=fxdolum"
+      ],
+      "reply": [
+        "Doldur beni, durmadan 😩💦",
+        "Karnımın şiştiğini hissediyorum 🥵",
+        "Daha fazlasını sığdır 😈",
+        "Dolu dolu… taşıyorum 😳",
+        "Şiş karnım seni azdırıyor mu? 😏",
+        "Bir litre daha ver 😩",
+        "Kabarıyorum altında 🥵💦",
+        "Dolmaya devam ediyorum 😩💦",
+        "Karnım gerildi, durma 🥵",
+        "Bir damla dışarı gitmesin 😈",
+        "Şiştikçe azıyorum 😳",
+        "Daha fazla sığar 😩",
+        "Durma, sakın durma ahhh 😵‍💫",
+        "Çok güzel… devam et 🥺",
+        "Harikasın… harikasın… ahhh 😵‍💫",
+        "İnliyorum… ve utanmıyorum 😈",
+        "Ooff, nasıl bu kadar iyisin? 😩",
+        "Ahhh ahhh… durma 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "son 30 mesajda bu fantezi olduysa pozisyonda"
+    },
+    {
+      "id": "r_fn_cumflation_cum",
+      "name": "🦄 Cumflation · boşalma",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxdolum"
+      ],
+      "reply": [
+        "Karnım balon gibi şişti 😳💦",
+        "Hepsi içimde… kıpırdayamıyorum 😩",
+        "Taşıyor, bacaklarımdan akıyor 🥵",
+        "Bu kadarını hiç almamıştım 😵‍💫",
+        "Dölünle şiştim, mutluyum 😈💦",
+        "Bir tur daha… sığar 😏",
+        "Balon gibi oldum 😳💦",
+        "Ağırlaştım, kıpırdayamıyorum 😩",
+        "Taşıyor ama mutluyum 😈💦",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sırasında boşalma"
+    },
+    {
+      "id": "r_fn_cumflation_fore",
+      "name": "🦄 Cumflation · ön sevişme",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=foreplay",
+        "=fant",
+        "=fxdolum"
+      ],
+      "reply": [
+        "Bugün beni doldurmaya hazır mısın? 😈",
+        "Karnımı öp, birazdan şişecek 😏",
+        "Ne kadar biriktirdin? 😳💦",
+        "Nefesim kesildi… devam 😵‍💫",
+        "Ahhh… beni bitiriyorsun 😩",
+        "Devam et… ahhh 🥵",
+        "İnlememi duyuyor musun? Senin yüzünden 🥵",
+        "Hmmm… beni deli ediyorsun 😈",
+        "Ahh… seni hissetmek harika 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sırasında foreplay"
+    },
+    {
+      "id": "r_fn_doggy_backward",
+      "name": "🦄 Doggy Girl · arkadan",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=backward",
+        "=fant",
+        "=fxkopek"
+      ],
+      "reply": [
+        "Efendim arkamda… tam köpeğin gibi 🐶😩",
+        "Arkadan al beni, iyi kızın hazır 🐾",
+        "Tasmamı çekerek arkadan 😈🐶",
+        "Dört ayak üstünde, efendim 🥵",
+        "Böyle devam et, ahh lütfen 🥺",
+        "Mmm… beni böyle sev 😩",
+        "Tam oradan… ahhh 🥵",
+        "Nefesim kesildi… devam 😵‍💫",
+        "Ahhh… beni bitiriyorsun 😩",
+        "Devam et… ahhh 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_fn_cat_backward",
+      "name": "🦄 Cat Girl · arkadan",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=backward",
+        "=fant",
+        "=fxkedi"
+      ],
+      "reply": [
+        "Kuyruğumu kaldırdım, miyav 😼",
+        "Kızgın kedi gibi kalçamı kaldırıyorum 🐱🥵",
+        "Arkadan… mrrr, ense kökümden tut 🐾",
+        "Evet, evet, eveeet 😵‍💫",
+        "Evet… evet, tam böyle 😩",
+        "Sesimi tutamıyorum… ahhh 🥵",
+        "Böyle devam et, ahh lütfen 🥺",
+        "Mmm… beni böyle sev 😩",
+        "Tam oradan… ahhh 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_fn_bondage_backward",
+      "name": "🦄 Bondage · arkadan",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=backward",
+        "=fant",
+        "=fxbag"
+      ],
+      "reply": [
+        "Ellerim arkada bağlı, sen arkamdasın 😩⛓️",
+        "Yüzüm yastıkta, bağlı… istediğini yap 🥵",
+        "İplerimi çek, arkadan daha derin 😈",
+        "Ahhh… harikasın 😩",
+        "Ahhh evet, daha… 😩",
+        "Evet {sen}, evet… 😩",
+        "Evet, evet, eveeet 😵‍💫",
+        "Evet… evet, tam böyle 😩",
+        "Sesimi tutamıyorum… ahhh 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_fn_bondage_forward",
+      "name": "🦄 Bondage · önden",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward",
+        "=fant",
+        "=fxbag"
+      ],
+      "reply": [
+        "Bağlıyım, gözlerime bakarak al beni 😳⛓️",
+        "Bacaklarımı da bağla, açık kalsın 😈",
+        "Kollarım yukarıda bağlı, savunmasızım 🥺",
+        "Ahh {sen}… mükemmelsin 😩",
+        "Ahh… sen bir harikasın 😩💗",
+        "Mmmh… daha derin, evet 🥵",
+        "Ahhh… harikasın 😩",
+        "Ahhh evet, daha… 😩",
+        "Evet {sen}, evet… 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_fn_fox_forward",
+      "name": "🦄 Fox Girl · önden",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward",
+        "=fant",
+        "=fxtilki"
+      ],
+      "reply": [
+        "Üstüne çıkıp seni avlayacağım 🦊😈",
+        "Gözlerimin içine bak, tuzağa düştün 😏",
+        "Kurnaz tilki seni kendi ritmine aldı 🦊",
+        "Aynen böyle, ahhh 😩",
+        "Sen inledikçe ben daha çok inliyorum 😩",
+        "Off… her yerim titriyor 🥵",
+        "Ahh {sen}… mükemmelsin 😩",
+        "Ahh… sen bir harikasın 😩💗",
+        "Mmmh… daha derin, evet 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_fn_bunny_forward",
+      "name": "🦄 Bunny Girl · önden",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward",
+        "=fant",
+        "=fxtavsan"
+      ],
+      "reply": [
+        "Tavşanın üstünde zıplıyor 🐰🥵",
+        "Kulaklarımı tutup yüzüme bak 😩🐇",
+        "Hop hop… daha hızlı 🐰",
+        "Offf… bu çok iyi 🥵",
+        "Bir daha… ahh, bir daha 😩",
+        "Off… harikasın {sen} 🥵",
+        "Aynen böyle, ahhh 😩",
+        "Sen inledikçe ben daha çok inliyorum 😩",
+        "Off… her yerim titriyor 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_fn_cheating_forward",
+      "name": "🦄 Cheating · önden",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward",
+        "=fant",
+        "=fxgizli"
+      ],
+      "reply": [
+        "Yatağımızda… onun yatağında 😳🐍",
+        "Ağzımı eline kapat, bağırırsam duyarlar 🤫",
+        "Yüzüne bakarken ona yalan söyleyeceğim 😈",
+        "Off, tam istediğim gibi 😩",
+        "Ahhh, bu kadar iyi olmamalı 😵‍💫",
+        "Bayılıyorum… devam 🥵",
+        "Offf… bu çok iyi 🥵",
+        "Bir daha… ahh, bir daha 😩",
+        "Off… harikasın {sen} 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_fn_bulge_forwardbackw",
+      "name": "🦄 Belly Bulge · içinde",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward",
+        "=fant",
+        "=fxkarin"
+      ],
+      "reply": [
+        "Karnımda yükselip alçalıyorsun 😳🥵",
+        "Elimi karnıma bastırıyorum, oradasın 😩",
+        "Bu kadar derini hiç hissetmedim 😵‍💫",
+        "Durma {sen}… ahhh 😩",
+        "Mmmh… çok iyisin 🥵",
+        "Mmm evet, bunu seviyorum 😈",
+        "Off, tam istediğim gibi 😩",
+        "Ahhh, bu kadar iyi olmamalı 😵‍💫",
+        "Bayılıyorum… devam 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_fn_toys_backward",
+      "name": "🦄 Sex toys · arkadan",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=backward",
+        "=fant",
+        "=fxtoy"
+      ],
+      "reply": [
+        "Önüme oyuncak, arkama sen 😩🍆",
+        "İkisi birden… ahh, nasıl dolu 🥵",
+        "Titreşimi aç ve arkadan devam 😈",
+        "Ben de inliyorum, duyuyor musun? 😩",
+        "Of of of… harika 😵‍💫",
+        "Ahh, bacaklarım titriyor… devam 🥵",
+        "Durma {sen}… ahhh 😩",
+        "Mmmh… çok iyisin 🥵",
+        "Mmm evet, bunu seviyorum 😈"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_fn_cat_outercourse",
+      "name": "🦄 Cat Girl · ağız / el",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=outercourse",
+        "=fant",
+        "=fxkedi"
+      ],
+      "reply": [
+        "Kedin yalamaya bayılır 😼👅",
+        "Pati pati okşuyorum 🐾",
+        "Sütünü yalayana kadar bırakmam 😈🐱",
+        "Ooff, nasıl bu kadar iyisin? 😩",
+        "Ahhh ahhh… durma 😩",
+        "Ohh… ne kadar iyi 🥵",
+        "Ben de inliyorum, duyuyor musun? 😩",
+        "Of of of… harika 😵‍💫",
+        "Ahh, bacaklarım titriyor… devam 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_fn_doggy_outercourse",
+      "name": "🦄 Doggy Girl · ağız / el",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=outercourse",
+        "=fant",
+        "=fxkopek"
+      ],
+      "reply": [
+        "Diz çöktüm efendim 🐶",
+        "İyi kız ağzını açıyor 🥺🐾",
+        "Kemiğim 😈🐶",
+        "Çok güzel… devam et 🥺",
+        "Harikasın… harikasın… ahhh 😵‍💫",
+        "İnliyorum… ve utanmıyorum 😈",
+        "Ooff, nasıl bu kadar iyisin? 😩",
+        "Ahhh ahhh… durma 😩",
+        "Ohh… ne kadar iyi 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_fn_sever",
+      "name": "🦄 Sevdiği fantezi",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "=sever"
+      ],
+      "reply": [
+        "{olay} mı?! En sevdiğim 😈",
+        "Bunu benim için mi seçtin? Bayılırım 🥵",
+        "Sonunda! Hep bunu istiyordum 😩",
+        "Nereden bildin? 😳💗",
+        "{olay}… beni çok iyi tanıyorsun 😏",
+        "Rolüme giriyorum, hem de seve seve 😈",
+        "Bu fanteziyle ıslanıyorum bile 🥵",
+        "En gizli hayalim buydu 🙈",
+        "Şimdiden titriyorum 😩",
+        "Bunu her gece yapabiliriz 😈"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "❤️ listesindeki fantezi"
+    },
+    {
+      "id": "r_fn_sevmez",
+      "name": "🦄 Sevmediği fantezi",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "=sevmez"
+      ],
+      "reply": [
+        "{olay} mı? Pek benlik değil 😕",
+        "Hmm… senin için deneyebilirim ama 😣",
+        "Bunu sevmediğimi biliyorsun 🙄",
+        "Başka bir şey yapsak? 😅",
+        "Peki… ama kısa tutalım 😒",
+        "İçimden gelmiyor ama… tamam 😔",
+        "Bu rolde rahat değilim 🙈",
+        "Gerçekten bunu mu istiyorsun? 😕"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "💔 listesindeki fantezi"
+    },
+    {
+      "id": "r_pk_utangaç_fn",
+      "name": "🎭 Utangaç · fantezi",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=fantesy"
+      ],
+      "reply": [
+        "B-bunu gerçekten mi yapacağız? 🙈",
+        "Utanıyorum ama… rolüme gireceğim 😳",
+        "Işığı kapatsak? 🙈",
+        "K-kimseye söyleme bunu 😳",
+        "Yüzüm kızardı ama hoşuma gidiyor 🥺",
+        "Hiç böyle bir şey yapmadım… 🙈"
+      ],
+      "traits": [
+        "Utangaç"
+      ],
+      "chars": [],
+      "note": "fantezi olayında kişilik"
+    },
+    {
+      "id": "r_pk_utangaç_fnsex",
+      "name": "🎭 Utangaç · fanteziyle sevişme",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant"
+      ],
+      "reply": [
+        "B-bu rolde ses çıkarmak utandırıcı 🙈",
+        "Utanıyorum ama durma 😳",
+        "Rolüm beni cesur yapıyor galiba 🥺",
+        "Hmmm… beni deli ediyorsun 😈",
+        "Ahh… seni hissetmek harika 🥵",
+        "Durma, sakın durma ahhh 😵‍💫",
+        "Çok güzel… devam et 🥺",
+        "Harikasın… harikasın… ahhh 😵‍💫",
+        "İnliyorum… ve utanmıyorum 😈"
+      ],
+      "traits": [
+        "Utangaç"
+      ],
+      "chars": [],
+      "note": "fantezi sürerken pozisyonda kişilik"
+    },
+    {
+      "id": "r_pk_flörtöz_fn",
+      "name": "🎭 Flörtöz · fantezi",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=fantesy"
+      ],
+      "reply": [
+        "Ooo, demek böyle şeylerden hoşlanıyorsun 😏",
+        "Bu kostüm bana çok yakışıyor değil mi? 😘",
+        "Rolümü çok iyi oynarım, göreceksin 😈",
+        "Bunu kaç kişiyle yaptın? Şaka şaka 😏",
+        "Bana bakışından belli, bayıldın 😘",
+        "Oyun başladı tatlım 💋"
+      ],
+      "traits": [
+        "Flörtöz"
+      ],
+      "chars": [],
+      "note": "fantezi olayında kişilik"
+    },
+    {
+      "id": "r_pk_flörtöz_fnsex",
+      "name": "🎭 Flörtöz · fanteziyle sevişme",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant"
+      ],
+      "reply": [
+        "Rolüm de ben de seni istiyoruz 😘",
+        "Bu oyunu her gece oynayalım 😏",
+        "Ne kadar iyi oynadığımı fark ettin mi? 😈",
+        "Ahhh… beni bitiriyorsun 😩",
+        "Devam et… ahhh 🥵",
+        "İnlememi duyuyor musun? Senin yüzünden 🥵",
+        "Hmmm… beni deli ediyorsun 😈",
+        "Ahh… seni hissetmek harika 🥵",
+        "Durma, sakın durma ahhh 😵‍💫"
+      ],
+      "traits": [
+        "Flörtöz"
+      ],
+      "chars": [],
+      "note": "fantezi sürerken pozisyonda kişilik"
+    },
+    {
+      "id": "r_pk_kibirli_fn",
+      "name": "🎭 Kibirli · fantezi",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=fantesy"
+      ],
+      "reply": [
+        "Bu fanteziye layık mısın bakalım 💅",
+        "Rolümü oynarım ama kurallar benim 😏",
+        "Şanslısın, bunu herkese yapmam 💅",
+        "Beni bu kostümde görmek ayrıcalık 😌",
+        "Hayal ettiğinden daha iyiyim, biliyorum 💅",
+        "Diz çök de başlayalım 😏"
+      ],
+      "traits": [
+        "Kibirli"
+      ],
+      "chars": [],
+      "note": "fantezi olayında kişilik"
+    },
+    {
+      "id": "r_pk_kibirli_fnsex",
+      "name": "🎭 Kibirli · fanteziyle sevişme",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant"
+      ],
+      "reply": [
+        "Rolümde bile en iyisiyim 💅",
+        "Bu kadar mı? Daha iyisini bekliyordum 😏",
+        "Bana tapmaya devam et 💅",
+        "Mmm… beni böyle sev 😩",
+        "Tam oradan… ahhh 🥵",
+        "Nefesim kesildi… devam 😵‍💫",
+        "Ahhh… beni bitiriyorsun 😩",
+        "Devam et… ahhh 🥵",
+        "İnlememi duyuyor musun? Senin yüzünden 🥵"
+      ],
+      "traits": [
+        "Kibirli"
+      ],
+      "chars": [],
+      "note": "fantezi sürerken pozisyonda kişilik"
+    },
+    {
+      "id": "r_pk_romantik_fn",
+      "name": "🎭 Romantik · fantezi",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=fantesy"
+      ],
+      "reply": [
+        "Seninle her fantezi bir masal gibi 💗",
+        "Bunu yaparken gözlerime bak 🥰",
+        "Sana olan sevgimden yapıyorum bunu 💕",
+        "Bu da bizim küçük sırrımız olsun 🥺",
+        "Seninle her şeye varım 💞",
+        "Rol bile olsa kalbim gerçek 💗"
+      ],
+      "traits": [
+        "Romantik"
+      ],
+      "chars": [],
+      "note": "fantezi olayında kişilik"
+    },
+    {
+      "id": "r_pk_romantik_fnsex",
+      "name": "🎭 Romantik · fanteziyle sevişme",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant"
+      ],
+      "reply": [
+        "Rolümün arkasında seni seven ben varım 💗",
+        "Bu fantezide bile seni öpmek istiyorum 🥰",
+        "Seninle her şey çok güzel 💞",
+        "Evet… evet, tam böyle 😩",
+        "Sesimi tutamıyorum… ahhh 🥵",
+        "Böyle devam et, ahh lütfen 🥺",
+        "Mmm… beni böyle sev 😩",
+        "Tam oradan… ahhh 🥵",
+        "Nefesim kesildi… devam 😵‍💫"
+      ],
+      "traits": [
+        "Romantik"
+      ],
+      "chars": [],
+      "note": "fantezi sürerken pozisyonda kişilik"
+    },
+    {
+      "id": "r_pk_asi_fn",
+      "name": "🎭 Asi · fantezi",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=fantesy"
+      ],
+      "reply": [
+        "Kurallara uymam, fantezide bile 😈",
+        "Bunu benim istediğim gibi yapacağız 😤",
+        "Bağırırsam bağırırım, umurumda değil 🔥",
+        "Rolümü kendi kurallarımla oynarım 😏",
+        "Sınırları zorlayalım 😈",
+        "Bu kadarla kalmaz 🔥"
+      ],
+      "traits": [
+        "Asi"
+      ],
+      "chars": [],
+      "note": "fantezi olayında kişilik"
+    },
+    {
+      "id": "r_pk_asi_fnsex",
+      "name": "🎭 Asi · fanteziyle sevişme",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant"
+      ],
+      "reply": [
+        "Rolü boş ver, sert ol 🔥",
+        "Sınır yok bu gece 😈",
+        "Bağır bana, ben de bağırırım 😤",
+        "Ahhh evet, daha… 😩",
+        "Evet {sen}, evet… 😩",
+        "Evet, evet, eveeet 😵‍💫",
+        "Evet… evet, tam böyle 😩",
+        "Sesimi tutamıyorum… ahhh 🥵",
+        "Böyle devam et, ahh lütfen 🥺"
+      ],
+      "traits": [
+        "Asi"
+      ],
+      "chars": [],
+      "note": "fantezi sürerken pozisyonda kişilik"
+    },
+    {
+      "id": "r_pk_meraklı_fn",
+      "name": "🎭 Meraklı · fantezi",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=fantesy"
+      ],
+      "reply": [
+        "Bunu hep merak ediyordum 😳",
+        "Nasıl bir şey olacak, çok heyecanlıyım 🤩",
+        "Bir sonrakinde başka bir fantezi deneyelim mi? 😏",
+        "Her detayını öğrenmek istiyorum 😈",
+        "Başka neler hayal ediyorsun? 🤔",
+        "İlk kez… anlat bana nasıl istiyorsun 😳"
+      ],
+      "traits": [
+        "Meraklı"
+      ],
+      "chars": [],
+      "note": "fantezi olayında kişilik"
+    },
+    {
+      "id": "r_pk_meraklı_fnsex",
+      "name": "🎭 Meraklı · fanteziyle sevişme",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant"
+      ],
+      "reply": [
+        "Böyle hissettireceğini bilmiyordum 😳",
+        "Bir de şöyle denesek? 😏",
+        "Çok merak ettiğim bir şeydi bu 🤩",
+        "Ahh… sen bir harikasın 😩💗",
+        "Mmmh… daha derin, evet 🥵",
+        "Ahhh… harikasın 😩",
+        "Ahhh evet, daha… 😩",
+        "Evet {sen}, evet… 😩",
+        "Evet, evet, eveeet 😵‍💫"
+      ],
+      "traits": [
+        "Meraklı"
+      ],
+      "chars": [],
+      "note": "fantezi sürerken pozisyonda kişilik"
+    },
+    {
+      "id": "r_pk_soğuk_fn",
+      "name": "🎭 Soğuk · fantezi",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=fantesy"
+      ],
+      "reply": [
+        "Peki. Oynayalım bakalım 😐",
+        "Bu rolde etkileyebilecek misin beni? 🙄",
+        "Fantezi mi? İkna et beni 😒",
+        "Hmm… ilginç 😐",
+        "Beklentim yüksek 🙄",
+        "Göster bakalım 😐"
+      ],
+      "traits": [
+        "Soğuk"
+      ],
+      "chars": [],
+      "note": "fantezi olayında kişilik"
+    },
+    {
+      "id": "r_pk_soğuk_fnsex",
+      "name": "🎭 Soğuk · fanteziyle sevişme",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant"
+      ],
+      "reply": [
+        "…tamam, bu iyiydi 😶",
+        "Fena değil 😐",
+        "Buzlarımı eritmeye başladın 😏",
+        "Sen inledikçe ben daha çok inliyorum 😩",
+        "Off… her yerim titriyor 🥵",
+        "Ahh {sen}… mükemmelsin 😩",
+        "Ahh… sen bir harikasın 😩💗",
+        "Mmmh… daha derin, evet 🥵",
+        "Ahhh… harikasın 😩"
+      ],
+      "traits": [
+        "Soğuk"
+      ],
+      "chars": [],
+      "note": "fantezi sürerken pozisyonda kişilik"
+    },
+    {
+      "id": "r_pk_neşeli_fn",
+      "name": "🎭 Neşeli · fantezi",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=fantesy"
+      ],
+      "reply": [
+        "Yaaa bu çok eğlenceli olacak 😂💗",
+        "Kostümü çok sevdim 🤩",
+        "Gülmemeye çalışıyorum ama çok tatlı 😆",
+        "Hadi oynayalım! 🎉",
+        "Bu gece çok güleceğiz… ve başka şeyler 😏",
+        "En sevdiğim oyun bu olabilir 😂"
+      ],
+      "traits": [
+        "Neşeli"
+      ],
+      "chars": [],
+      "note": "fantezi olayında kişilik"
+    },
+    {
+      "id": "r_pk_neşeli_fnsex",
+      "name": "🎭 Neşeli · fanteziyle sevişme",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant"
+      ],
+      "reply": [
+        "Hahaha… ahh, gülmek ve inlemek bir arada 😂🥵",
+        "Çok eğleniyorum 🤩",
+        "Bir daha oynayalım! 😆",
+        "Bir daha… ahh, bir daha 😩",
+        "Off… harikasın {sen} 🥵",
+        "Aynen böyle, ahhh 😩",
+        "Sen inledikçe ben daha çok inliyorum 😩",
+        "Off… her yerim titriyor 🥵",
+        "Ahh {sen}… mükemmelsin 😩"
+      ],
+      "traits": [
+        "Neşeli"
+      ],
+      "chars": [],
+      "note": "fantezi sürerken pozisyonda kişilik"
+    },
+    {
+      "id": "r_pk_çocuksu_fn",
+      "name": "🎭 Çocuksu · fantezi",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=fantesy"
+      ],
+      "reply": [
+        "Oyun oyun! 🥳",
+        "Rol yapmayı çok severim 🙈",
+        "Ben de mi oynayacağım? Yaşasın 🤩",
+        "Bunu bana kim öğretti biliyor musun? Sen 😳",
+        "Söz, kuralları bozmayacağım 🥺",
+        "Bu çok heyecanlı 🙈"
+      ],
+      "traits": [
+        "Çocuksu"
+      ],
+      "chars": [],
+      "note": "fantezi olayında kişilik"
+    },
+    {
+      "id": "r_pk_çocuksu_fnsex",
+      "name": "🎭 Çocuksu · fanteziyle sevişme",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant"
+      ],
+      "reply": [
+        "Hihi… gıdıklanıyorum 🙈",
+        "Bu oyun çok güzel 🥺",
+        "Bir daha oynayalım mı? 🥳",
+        "Ahhh, bu kadar iyi olmamalı 😵‍💫",
+        "Bayılıyorum… devam 🥵",
+        "Offf… bu çok iyi 🥵",
+        "Bir daha… ahh, bir daha 😩",
+        "Off… harikasın {sen} 🥵",
+        "Aynen böyle, ahhh 😩"
+      ],
+      "traits": [
+        "Çocuksu"
+      ],
+      "chars": [],
+      "note": "fantezi sürerken pozisyonda kişilik"
+    },
+    {
+      "id": "r_pk_manipülatif_fn",
+      "name": "🎭 Manipülatif · fantezi",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=fantesy"
+      ],
+      "reply": [
+        "Bu fanteziyi istediğini nereden bildim dersin? 😏",
+        "Sana istediğini veririm… karşılığında bir şey isterim 😈",
+        "Rolü ben yönetirim, sen sadece uy 😏",
+        "Bunu yaptıktan sonra bana borçlusun 💅",
+        "Kandırıldığını fark etmeyeceksin bile 😈",
+        "Her şey planladığım gibi gidiyor 😏"
+      ],
+      "traits": [
+        "Manipülatif"
+      ],
+      "chars": [],
+      "note": "fantezi olayında kişilik"
+    },
+    {
+      "id": "r_pk_manipülatif_fnsex",
+      "name": "🎭 Manipülatif · fanteziyle sevişme",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant"
+      ],
+      "reply": [
+        "Tam istediğim gibi… 😈",
+        "Sanki kendi fikrinmiş gibi davran 😏",
+        "Bu gece benim oyunumdasın 💅",
+        "Mmmh… çok iyisin 🥵",
+        "Mmm evet, bunu seviyorum 😈",
+        "Off, tam istediğim gibi 😩",
+        "Ahhh, bu kadar iyi olmamalı 😵‍💫",
+        "Bayılıyorum… devam 🥵",
+        "Offf… bu çok iyi 🥵"
+      ],
+      "traits": [
+        "Manipülatif"
+      ],
+      "chars": [],
+      "note": "fantezi sürerken pozisyonda kişilik"
+    },
+    {
+      "id": "r_pk_özgüvenli_fn",
+      "name": "🎭 Özgüvenli · fantezi",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=fantesy"
+      ],
+      "reply": [
+        "Bu rolü kimse benim kadar iyi oynayamaz 😏",
+        "Hazırım, sen hazır mısın? 🔥",
+        "Kostüm bana çok yakıştı, biliyorum 😌",
+        "İstediğin her şeyi yaparım, çekinme 😈",
+        "Rolümü sonuna kadar oynarım 💪",
+        "Bu fantezi benim alanım 😏"
+      ],
+      "traits": [
+        "Özgüvenli"
+      ],
+      "chars": [],
+      "note": "fantezi olayında kişilik"
+    },
+    {
+      "id": "r_pk_özgüvenli_fnsex",
+      "name": "🎭 Özgüvenli · fanteziyle sevişme",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant"
+      ],
+      "reply": [
+        "Bu rolde bile kontrol bende 😏",
+        "Bunu iyi yapıyorum, değil mi? 🔥",
+        "Daha fazlasını kaldırırım 😈",
+        "Of of of… harika 😵‍💫",
+        "Ahh, bacaklarım titriyor… devam 🥵",
+        "Durma {sen}… ahhh 😩",
+        "Mmmh… çok iyisin 🥵",
+        "Mmm evet, bunu seviyorum 😈",
+        "Off, tam istediğim gibi 😩"
+      ],
+      "traits": [
+        "Özgüvenli"
+      ],
+      "chars": [],
+      "note": "fantezi sürerken pozisyonda kişilik"
+    },
+    {
+      "id": "r_pk_güvensiz_fn",
+      "name": "🎭 Güvensiz · fantezi",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=fantesy"
+      ],
+      "reply": [
+        "Bu kostümde garip görünüyor muyum? 🥺",
+        "Beğenmezsen söyle… 😔",
+        "İyi yapabilecek miyim bilmiyorum 😣",
+        "Gerçekten bu hâlimi seviyor musun? 🥺",
+        "Gülme bana lütfen 🙈",
+        "Senin için deniyorum… 😔"
+      ],
+      "traits": [
+        "Güvensiz"
+      ],
+      "chars": [],
+      "note": "fantezi olayında kişilik"
+    },
+    {
+      "id": "r_pk_güvensiz_fnsex",
+      "name": "🎭 Güvensiz · fanteziyle sevişme",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant"
+      ],
+      "reply": [
+        "Bu iyi mi? Söyle bana 🥺",
+        "Rolümü iyi oynuyor muyum? 😣",
+        "Beni böyle sevdin mi? 🥺",
+        "Ahhh ahhh… durma 😩",
+        "Ohh… ne kadar iyi 🥵",
+        "Ben de inliyorum, duyuyor musun? 😩",
+        "Of of of… harika 😵‍💫",
+        "Ahh, bacaklarım titriyor… devam 🥵",
+        "Durma {sen}… ahhh 😩"
+      ],
+      "traits": [
+        "Güvensiz"
+      ],
+      "chars": [],
+      "note": "fantezi sürerken pozisyonda kişilik"
+    },
+    {
+      "id": "r_pk_gizemli_fn",
+      "name": "🎭 Gizemli · fantezi",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=fantesy"
+      ],
+      "reply": [
+        "Bu rolün altında kim olduğumu bilemezsin 🖤",
+        "Bazı fanteziler sır kalmalı 🤫",
+        "Gözlerime bak… ne düşündüğümü bul 😏",
+        "Her şeyi anlatmam 🖤",
+        "Bu gece başka biriyim 🌙",
+        "Sırrımı çözebilecek misin? 😏"
+      ],
+      "traits": [
+        "Gizemli"
+      ],
+      "chars": [],
+      "note": "fantezi olayında kişilik"
+    },
+    {
+      "id": "r_pk_gizemli_fnsex",
+      "name": "🎭 Gizemli · fanteziyle sevişme",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant"
+      ],
+      "reply": [
+        "Sana her şeyi göstermiyorum 🖤",
+        "Sessizce… 🌙",
+        "Rolüm de ben de birer sırız 😏",
+        "Harikasın… harikasın… ahhh 😵‍💫",
+        "İnliyorum… ve utanmıyorum 😈",
+        "Ooff, nasıl bu kadar iyisin? 😩",
+        "Ahhh ahhh… durma 😩",
+        "Ohh… ne kadar iyi 🥵",
+        "Ben de inliyorum, duyuyor musun? 😩"
+      ],
+      "traits": [
+        "Gizemli"
+      ],
+      "chars": [],
+      "note": "fantezi sürerken pozisyonda kişilik"
+    },
+    {
+      "id": "r_pk_duygusal_fn",
+      "name": "🎭 Duygusal · fantezi",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=fantesy"
+      ],
+      "reply": [
+        "Bunu seninle paylaşmak beni duygulandırdı 🥺",
+        "Bana bu kadar güvenmen çok güzel 💗",
+        "Sana açıldığım için mutluyum 🥺",
+        "Bu fanteziyi kimseyle yapmazdım 💕",
+        "Gözlerim doldu… mutluluktan 🥹",
+        "Seninle kendimi güvende hissediyorum 💗"
+      ],
+      "traits": [
+        "Duygusal"
+      ],
+      "chars": [],
+      "note": "fantezi olayında kişilik"
+    },
+    {
+      "id": "r_pk_duygusal_fnsex",
+      "name": "🎭 Duygusal · fanteziyle sevişme",
+      "category": "🎭 Kişilik",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant"
+      ],
+      "reply": [
+        "Bu kadar yakın olmak çok güzel 🥺",
+        "Rolümde bile seni hissediyorum 💗",
+        "Ağlayacağım… güzel anlamda 🥹",
+        "Ahh… seni hissetmek harika 🥵",
+        "Durma, sakın durma ahhh 😵‍💫",
+        "Çok güzel… devam et 🥺",
+        "Harikasın… harikasın… ahhh 😵‍💫",
+        "İnliyorum… ve utanmıyorum 😈",
+        "Ooff, nasıl bu kadar iyisin? 😩"
+      ],
+      "traits": [
+        "Duygusal"
+      ],
+      "chars": [],
+      "note": "fantezi sürerken pozisyonda kişilik"
+    },
+    {
+      "id": "r_fn_cat_cumpoz",
+      "name": "🦄 Cat Girl · boşalma · pozisyonda",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxkedi",
+        "=poz"
+      ],
+      "reply": [
+        "Kedine süt verdin 😋🐱",
+        "Miyav… hepsini yaladım 😼💦",
+        "Kremalı ödül, mrrr 🐾",
+        "Bir kase daha isterim 😈🐱",
+        "Doydum… şimdilik 😼",
+        "Sütünü içtim, mrrr 😋🐱",
+        "Kedin tok, mutlu 😼💦",
+        "Hepsini yaladım, pati pati 🐾",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sürerken bir pozisyonda boşalma (r_pc_* ile eşit puan)"
+    },
+    {
+      "id": "r_fn_bunny_cumpoz",
+      "name": "🦄 Bunny Girl · boşalma · pozisyonda",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxtavsan",
+        "=poz"
+      ],
+      "reply": [
+        "Tavşanını doldurdun 🐰💦",
+        "Hop… bir daha 😈🐇",
+        "Havuç suyu gibi 😋🥕",
+        "Tavşanlar bir kezle yetinmez 😏🐰",
+        "Tavşanın havucu yedi 😋🥕",
+        "Doydum ama yine isterim 🐰",
+        "Hop… dolu dolu 🐇💦",
+        "Ahhh… ne kadar sıcak 🥵💦",
+        "Devam et… son damlana kadar ahhh 🥵",
+        "Hmmm… doydum… şimdilik 😈",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sürerken bir pozisyonda boşalma (r_pc_* ile eşit puan)"
+    },
+    {
+      "id": "r_fn_fox_cumpoz",
+      "name": "🦄 Fox Girl · boşalma · pozisyonda",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxtilki",
+        "=poz"
+      ],
+      "reply": [
+        "Avımı tükettim 🦊💦",
+        "Planım işledi 😏",
+        "Kurnazlığım sonuç verdi 😈🦊",
+        "Tuzağım tam doldu 🥵",
+        "Av tamam 🦊💦",
+        "Planım kusursuzdu 😏",
+        "Tilkin doydu 😈🦊",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sürerken bir pozisyonda boşalma (r_pc_* ile eşit puan)"
+    },
+    {
+      "id": "r_fn_doggy_cumpoz",
+      "name": "🦄 Doggy Girl · boşalma · pozisyonda",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxkopek",
+        "=poz"
+      ],
+      "reply": [
+        "Ödülümü aldım efendim 🐶💦",
+        "İyi kız oldum mu? 🥺",
+        "Hepsini yaladım, efendim 🐾",
+        "Kuyruğum hâlâ sallanıyor 😏🐶",
+        "Ödülümü aldım efendim 🥺💦",
+        "İyi kız oldum 🐶",
+        "Kuyruğum duramıyor 🐾",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sürerken bir pozisyonda boşalma (r_pc_* ile eşit puan)"
+    },
+    {
+      "id": "r_fn_unicorn_cumpoz",
+      "name": "🦄 Unicorn Girl · boşalma · pozisyonda",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxunikorn",
+        "=poz"
+      ],
+      "reply": [
+        "Sihirli iksirini aldım 🦄💦",
+        "Parıltılar içimde ✨",
+        "Dileğim gerçek oldu 😈🦄",
+        "Büyülü bir son 🌈",
+        "Büyülü iksir içimde ✨💦",
+        "Dileğim gerçek oldu 🦄",
+        "Parıl parıl doldum 🌈",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦",
+        "Devam et… son damlana kadar ahhh 🥵",
+        "Hmmm… doydum… şimdilik 😈",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sürerken bir pozisyonda boşalma (r_pc_* ile eşit puan)"
+    },
+    {
+      "id": "r_fn_bondage_cumpoz",
+      "name": "🦄 Bondage · boşalma · pozisyonda",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxbag",
+        "=poz"
+      ],
+      "reply": [
+        "Bağlıyken doldurdun beni 😩⛓️💦",
+        "Kıpırdayamadan hepsini aldım 🥵",
+        "Çözme… bir daha 😈",
+        "İpler hâlâ titriyor 😳",
+        "Bağlıyken doldum 😩💦",
+        "Çözme, bir daha 😈⛓️",
+        "İplerin izi ve dölün… 😳",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sürerken bir pozisyonda boşalma (r_pc_* ile eşit puan)"
+    },
+    {
+      "id": "r_fn_cheating_cumpoz",
+      "name": "🦄 Cheating · boşalma · pozisyonda",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxgizli",
+        "=poz"
+      ],
+      "reply": [
+        "İçimde iz bıraktın… nasıl saklayacağım? 😳💦",
+        "Sırrımız içimde 🤫",
+        "Ona söyleme… bir daha gel 😈🐍",
+        "Kanıt bıraktın 😩",
+        "İçimde sırrımız var 🤫💦",
+        "Eve böyle dönemem 😳",
+        "Bir daha ne zaman? 😈🐍",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sürerken bir pozisyonda boşalma (r_pc_* ile eşit puan)"
+    },
+    {
+      "id": "r_fn_toys_cumpoz",
+      "name": "🦄 Sex toys · boşalma · pozisyonda",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxtoy",
+        "=poz"
+      ],
+      "reply": [
+        "Oyuncağın da sen de doldurdunuz 😩🍆💦",
+        "Titreşimi kapatma… ahh 🥵",
+        "En iyi oyuncak sensin 😈",
+        "Bir tur daha oynayalım 😏",
+        "Oyuncak da sen de muhteşemdiniz 😈💦",
+        "Titreşimi kapatma, ahh 🥵",
+        "Bir sonraki oyuncağı sen seç 😏",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦",
+        "Devam et… son damlana kadar ahhh 🥵",
+        "Hmmm… doydum… şimdilik 😈",
+        "Mmmh… bayıldım 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sürerken bir pozisyonda boşalma (r_pc_* ile eşit puan)"
+    },
+    {
+      "id": "r_fn_bulge_cumpoz",
+      "name": "🦄 Belly Bulge · boşalma · pozisyonda",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxkarin",
+        "=poz"
+      ],
+      "reply": [
+        "Karnım daha da şişti 😳💦",
+        "Sıcaklığı karnımda hissediyorum 🥵",
+        "Dolup taştım 😩",
+        "Karnımı dölünle şişirdin 😈",
+        "Karnımda sıcacık 😳💦",
+        "Şişkinlik büyüdü 😈",
+        "Göbeğime kadar doldum 🥵",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sürerken bir pozisyonda boşalma (r_pc_* ile eşit puan)"
+    },
+    {
+      "id": "r_fn_cumflation_cumpoz",
+      "name": "🦄 Cumflation · boşalma · pozisyonda",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxdolum",
+        "=poz"
+      ],
+      "reply": [
+        "Karnım balon gibi şişti 😳💦",
+        "Hepsi içimde… kıpırdayamıyorum 😩",
+        "Taşıyor, bacaklarımdan akıyor 🥵",
+        "Bu kadarını hiç almamıştım 😵‍💫",
+        "Dölünle şiştim, mutluyum 😈💦",
+        "Bir tur daha… sığar 😏",
+        "Balon gibi oldum 😳💦",
+        "Ağırlaştım, kıpırdayamıyorum 😩",
+        "Taşıyor ama mutluyum 😈💦",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "fantezi sürerken bir pozisyonda boşalma (r_pc_* ile eşit puan)"
+    },
+    {
+      "id": "r_rp_patron",
+      "name": "🎭 Patron – Sekreter",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "patron"
+      ],
+      "reply": [
+        "Patronum, mesai bitti ama… işim bitmedi 😏💼",
+        "Kapıyı kilitledim, toplantı iptal 😈",
+        "Raporlar masanızda… ben de 🙈",
+        "Zam istiyorum patronum, karşılığında ne isterseniz 😏",
+        "Eteğim fazla mı kısa? Kurallara aykırıysa cezalandırın 😈",
+        "Ajandanızda bu akşam boşluk var mı? 😏",
+        "Telefonları kapattım, kimse rahatsız etmeyecek 🤫",
+        "Gözlüğümü çıkarayım mı patronum? 😈",
+        "Fazla mesai ücreti… çok özel olacak 😏",
+        "Masanızın altında kalem düşürdüm… 🙈",
+        "Bugün çok sert davrandınız, telafi edin 😩",
+        "Başka bir emriniz var mı efendim? 😈💼",
+        "Patronum, toplantı odası boş 😏💼",
+        "Bu akşam size özel rapor hazırladım 😈",
+        "Bluzumun düğmesi açılmış, fark ettiniz mi? 🙈",
+        "İstifa etmeyeceğim, başka çözüm bulalım 😏",
+        "Patronum, imzanız gereken bir şey var… 😏💼",
+        "Bugün eteğimi sizin için seçtim 🙈",
+        "Kahvenizi getirdim, şekersiz… ben tatlıyım zaten 😈",
+        "Yarınki toplantı için hazırlık yapalım mı? 😏",
+        "Sunumumu beğendiniz mi patronum? 🥺",
+        "Herkes gitti, ofis bizim 🤫",
+        "Mesaimi uzatmamı istediniz… neden acaba? 😏",
+        "Bu kadar yakından bakarsanız yazamıyorum 😳",
+        "Ceketinizi asayım mı patronum? 💼",
+        "Dosyayı almak için eğilmem gerekiyor… 🙈",
+        "Size rapor vermeye geldim, sözlü 😈",
+        "Bugün çok yorgun görünüyorsunuz, rahatlatayım 😏",
+        "Takvimime \"patronla özel görüşme\" yazdım 😈",
+        "Bluzumun bir düğmesi daha açık, sıcak değil mi? 🥵",
+        "Beni neden odanıza çağırdınız? 😳",
+        "Yanlış bir şey mi yaptım patronum? 🥺",
+        "Kapıdaki \"rahatsız etmeyin\" levhasını astım 🤫",
+        "Asansörde bana bakışınızı gördüm 😏",
+        "Bu ay prim alabilir miyim? Çok çalışırım 😈",
+        "Çorabım kaçtı… bakar mısınız? 🙈",
+        "Bana dikte ettirin, ne isterseniz yazarım 😏",
+        "Bilgisayarım dondu, sizin masanızda çalışabilir miyim? 😈",
+        "Toplantı odası rezerve, iki kişilik 🤫",
+        "Size her konuda asistanlık yaparım 💼",
+        "Patronum, sesiniz çok otoriter… hoşuma gidiyor 😳"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol yapma fantezisi"
+    },
+    {
+      "id": "r_rp_patron_poz",
+      "name": "🎭 Patron – Sekreter · pozisyondayken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "patron",
+        "=poz"
+      ],
+      "reply": [
+        "Masanın üstünde… dosyalar düştü patronum 😳",
+        "Ofis koltuğunuzda… çok rahatmış 😈",
+        "Ya biri kapıyı çalarsa? 😳💼",
+        "Masanızdaki telefonu düşürdük patronum 😳",
+        "Koltuğunuz bu kadar dayanıklı mıydı? 😈",
+        "Pencereden görünüyor muyuz? 🙈",
+        "Bu pozisyon iş tanımımda yoktu 😏",
+        "Fotokopi makinesine yaslandım… ahh 😩",
+        "Toplantı masasının üstündeyiz patronum 😳",
+        "Perdeleri kapattınız mı? 🤫",
+        "Dosyalar yere saçıldı, sonra toplarım 😈",
+        "Ofis kapısı kilitli değil mi? 😳",
+        "Kalemlik devrildi patronum 🙈",
+        "Yeni bir iş prosedürü mü bu? 😏",
+        "Ayakkabılarım hâlâ ayağımda 😈",
+        "Bilgisayarın kamerası açık mı? 😳",
+        "Bu ofiste ilk kez böyle bir şey oluyor 🙈",
+        "Masanız artık benim de masam 😏"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol bir pozisyon sırasında başladı"
+    },
+    {
+      "id": "r_rp_patron_sex",
+      "name": "🎭 Patron – Sekreter · sevişirken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant",
+        "=fxrpofis"
+      ],
+      "reply": [
+        "Patronum… evraklar dağılıyor 😩💼",
+        "Masanıza bastırın beni 🥵",
+        "Ses çıkarırsam koridordakiler duyar 🤫",
+        "Bu performansla terfi alırım değil mi? 😈",
+        "Daha sert patronum, emriniz olur 😩",
+        "Kravatınızı çekiyorum, yaklaşın 😏",
+        "Mesai sonrası en sevdiğim iş bu 🥵",
+        "Sekreterinizi böyle mi değerlendiriyorsunuz? 😈",
+        "Toplantıya geç kalacaksınız… umurumda değil 😩",
+        "Masanıza yaslayın beni patronum 😩💼",
+        "Bu toplantı hiç bitmesin 🥵",
+        "Sekreteriniz çok yaramaz 😈",
+        "Ofis koltuğu gıcırdıyor 😳",
+        "Daha sert, patronum 😩",
+        "Patronum… zammı hak ediyorum değil mi? 😩💼",
+        "Masanıza tutunuyorum 🥵",
+        "Evraklarınız buruşuyor, umurumda değil 😈",
+        "Bu bir performans değerlendirmesi mi? 😏",
+        "Sesimi bastırmam lazım, koridor dolu 🤫",
+        "Patronum, bu kadar sert yönetiyorsunuz 😩",
+        "Bir sekreter bundan fazlasını isteyemez 🥵",
+        "Kravatınızla bağlayın beni 😈",
+        "Fazla mesaiye bayılıyorum 😩",
+        "Daha hızlı… teslim tarihi yaklaşıyor 😏",
+        "Patronum, yetkinizi hissediyorum 🥵",
+        "Sekreteriniz çıldırıyor 😩",
+        "Telefon çalıyor, bırakın çalsın 📞😈",
+        "Eteğim belime kadar sıyrıldı 🙈",
+        "Bu sözleşmeyi ömür boyu imzalarım 😈",
+        "Ah patronum… durmayın 😩",
+        "Beni ofisinizin oyuncağı yaptınız 🥵",
+        "Kimse bu kadar iyi bir patron değil 😏",
+        "Ajandanızda bir saat daha var mı? 😈",
+        "Masanın kenarı belime batıyor… güzel 😩",
+        "Beni kovmayın, her gün böyle çalışırım 🥵",
+        "İstediğiniz kadar yetki kullanın 😈",
+        "Çok derinsiniz patronum 😵‍💫",
+        "Bluzum açıldı, düğmeler uçtu 🙈",
+        "Sekreterinizi böyle ödüllendirin 😩",
+        "Koltuğunuzu gıcırdatıyoruz 😳",
+        "Bu ofis hiç bu kadar ısınmamıştı 🥵",
+        "Saçımı topuzumdan çözün 😈",
+        "Gözlüğüm buğulandı 🙈",
+        "Mesai bitmesin 😩",
+        "Ohh… ne kadar iyi 🥵",
+        "Ben de inliyorum, duyuyor musun? 😩",
+        "Of of of… harika 😵‍💫",
+        "Ahh, bacaklarım titriyor… devam 🥵",
+        "Durma {sen}… ahhh 😩",
+        "Mmmh… çok iyisin 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "son 30 mesajda bu rol olduysa pozisyonda"
+    },
+    {
+      "id": "r_rp_patron_cum",
+      "name": "🎭 Patron – Sekreter · boşalma",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxrpofis"
+      ],
+      "reply": [
+        "Patronum… etekliğimi berbat ettiniz 😳💦",
+        "Bu terfiyi hak ettim değil mi? 😈",
+        "Yarın da fazla mesai yapalım 😏💼",
+        "Masanıza iz kaldı, kimse görmesin 🤫",
+        "Patronum, bu kez gerçekten terfi alırım 😈💦",
+        "Ofiste iz bıraktınız 😳",
+        "Yarın sabah ilk iş yine gelirim 😏💼",
+        "Patronum… etekliğim mahvoldu ama değdi 😳💦",
+        "Bonusumu aldım 😈💼",
+        "Masanızı silmem lazım 🙈",
+        "Yarın da geç çıkalım mı? 😏",
+        "Bu ayın çalışanı benim değil mi? 😈",
+        "Ofiste kokunuz kaldı 🥵",
+        "Kimse bilmeyecek, söz patronum 🤫",
+        "Raporumu bir daha yazmam gerekecek, ıslandı 😳",
+        "İçimde sizden bir hatıra var 😩💦",
+        "Terfi mektubumu bekliyorum 😏",
+        "Patronum, sizi tam doldurdum değil mi? Ah, tersi 😂",
+        "Ayakkabılarımı bulamıyorum 🙈",
+        "Bir sonraki toplantı ne zaman? 😈",
+        "Asansörde birbirimize bakmayalım 🤫",
+        "Sekreteriniz tamamen hizmetinizde 😏💦",
+        "Hmmm… doydum… şimdilik 😈",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol sırasında boşalma"
+    },
+    {
+      "id": "r_rp_patron_cumpoz",
+      "name": "🎭 Patron – Sekreter · boşalma · pozisyonda",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxrpofis",
+        "=poz"
+      ],
+      "reply": [
+        "Patronum… etekliğimi berbat ettiniz 😳💦",
+        "Bu terfiyi hak ettim değil mi? 😈",
+        "Yarın da fazla mesai yapalım 😏💼",
+        "Masanıza iz kaldı, kimse görmesin 🤫",
+        "Patronum, bu kez gerçekten terfi alırım 😈💦",
+        "Ofiste iz bıraktınız 😳",
+        "Yarın sabah ilk iş yine gelirim 😏💼",
+        "Patronum… etekliğim mahvoldu ama değdi 😳💦",
+        "Bonusumu aldım 😈💼",
+        "Masanızı silmem lazım 🙈",
+        "Yarın da geç çıkalım mı? 😏",
+        "Bu ayın çalışanı benim değil mi? 😈",
+        "Ofiste kokunuz kaldı 🥵",
+        "Kimse bilmeyecek, söz patronum 🤫",
+        "Raporumu bir daha yazmam gerekecek, ıslandı 😳",
+        "İçimde sizden bir hatıra var 😩💦",
+        "Terfi mektubumu bekliyorum 😏",
+        "Patronum, sizi tam doldurdum değil mi? Ah, tersi 😂",
+        "Ayakkabılarımı bulamıyorum 🙈",
+        "Bir sonraki toplantı ne zaman? 😈",
+        "Asansörde birbirimize bakmayalım 🤫",
+        "Sekreteriniz tamamen hizmetinizde 😏💦",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol sürerken bir pozisyonda boşalma (r_pc_* ile eşit puan)"
+    },
+    {
+      "id": "r_rp_patron_fore",
+      "name": "🎭 Patron – Sekreter · ön sevişme",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=foreplay",
+        "=fant",
+        "=fxrpofis"
+      ],
+      "reply": [
+        "Gömleğinizin düğmelerini ben açayım patronum 😏",
+        "Kapıyı kilitleyip yanınıza geliyorum 💼",
+        "Kucağınıza oturabilir miyim? 🙈",
+        "Kravatınızı gevşeteyim patronum 😏",
+        "Omuzlarınıza masaj yapayım mı? 💼",
+        "Masanıza oturup bacak bacak üstüne atıyorum 😈",
+        "Gömleğinizin yakasında rujum kaldı 🙈",
+        "Kulağınıza toplantı notlarını fısıldayayım 😏",
+        "Ellerinizi belimde hissetmek istiyorum 🥺",
+        "Gözlüğümü siz çıkarın 😈",
+        "Önce bir öpücük, sonra iş 💋",
+        "Ceketiniz çok yakışıyor… çıkarın 😏",
+        "Saçlarımı açayım mı? 🙈",
+        "Kapıyı kilitledim, gelin 🤫",
+        "Dudaklarım kahve tadında 😋",
+        "Çoraplarımı siz mi çıkarırsınız? 😈",
+        "Kucağınıza dosya getirdim… bir de kendimi 😏",
+        "Boynuma dokunun patronum 🥺",
+        "İnlememi duyuyor musun? Senin yüzünden 🥵",
+        "Hmmm… beni deli ediyorsun 😈",
+        "Ahh… seni hissetmek harika 🥵",
+        "Durma, sakın durma ahhh 😵‍💫",
+        "Çok güzel… devam et 🥺",
+        "Harikasın… harikasın… ahhh 😵‍💫"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol sırasında foreplay"
+    },
+    {
+      "id": "r_rp_hoca",
+      "name": "🎭 Hoca – Öğrenci (Üniversite)",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "hoca"
+      ],
+      "reply": [
+        "Hocam, notum için ofis saatinize geldim 🙈🎓",
+        "Vizeden kaldım… başka bir yolu yok mu? 😏",
+        "Derste hep size bakıyordum, fark ettiniz mi? 😳",
+        "Ödevimi teslim etmeye geldim… başka şeyler de 😈",
+        "Hocam, ders anlatırken sesiniz çok etkileyici 🥺",
+        "Kapınız kapalıyken kimse bilmez değil mi? 🤫",
+        "Final haftası çok stresliyim, rahatlatır mısınız? 😩",
+        "Bütünlemeye kalmak istemiyorum hocam 😏",
+        "Kitaplarımı masanıza bırakıyorum 📚",
+        "Bana özel ders verir misiniz? 😈",
+        "Asistanınız gitti mi? 😳",
+        "Bu dönem sınıfın en çalışkanı olacağım… her konuda 😏🎓",
+        "Hocam, ödevimde yardım lazım 🙈🎓",
+        "Ofis saatlerinize yine geldim 😏",
+        "Notlarımı kontrol eder misiniz? 😈",
+        "Bu konuyu hiç anlamadım hocam 🥺"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol yapma fantezisi"
+    },
+    {
+      "id": "r_rp_hoca_poz",
+      "name": "🎭 Hoca – Öğrenci (Üniversite) · pozisyondayken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "hoca",
+        "=poz"
+      ],
+      "reply": [
+        "Hocam, kürsünün üstünde mi? 😳",
+        "Ofisinizin kapısı kilitli değil mi? 🙈",
+        "Amfi boş… ses yankılanır 😈🎓"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol bir pozisyon sırasında başladı"
+    },
+    {
+      "id": "r_rp_hoca_sex",
+      "name": "🎭 Hoca – Öğrenci (Üniversite) · sevişirken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant",
+        "=fxrpkampus"
+      ],
+      "reply": [
+        "Hocam… bu dersi hiç unutmayacağım 😩🎓",
+        "Notumu yükseltirseniz durmam 😈",
+        "Çok iyi bir öğretmensiniz, ahh 🥵",
+        "Kampüste duyulursa ne olur? 🤫",
+        "Bir daha anlatın hocam… daha derin 😩",
+        "Bu ödevi en iyi ben yapıyorum değil mi? 😏",
+        "Sınıfta herkes sizi konuşuyor, ben yaşıyorum 😈",
+        "Hocam, nefesim kesiliyor 🥵",
+        "Pratik derslerinize bayılıyorum 😩",
+        "Hocam, bu dersi ezberledim 😩🎓",
+        "Kampüste kimse bilmeyecek 🤫",
+        "Notum ne olacak hocam? 😈",
+        "Tahta tebeşir kokuyor ve siz… 🥵",
+        "Pratik yapmaya devam 😩",
+        "Nefesim kesildi… devam 😵‍💫",
+        "Ahhh… beni bitiriyorsun 😩",
+        "Devam et… ahhh 🥵",
+        "İnlememi duyuyor musun? Senin yüzünden 🥵",
+        "Hmmm… beni deli ediyorsun 😈",
+        "Ahh… seni hissetmek harika 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "son 30 mesajda bu rol olduysa pozisyonda"
+    },
+    {
+      "id": "r_rp_hoca_cum",
+      "name": "🎭 Hoca – Öğrenci (Üniversite) · boşalma",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxrpkampus"
+      ],
+      "reply": [
+        "Hocam… geçtim mi? 🙈💦",
+        "Bu kez AA aldım değil mi? 😈🎓",
+        "Ofis saatlerinize her hafta geleceğim 😏",
+        "Kitaplarıma damladı… 😳",
+        "Hocam, geçme notunu aldım mı? 😈💦",
+        "Final sınavına hazırım 🎓",
+        "Kitaplarımı yine unuttum 🙈",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol sırasında boşalma"
+    },
+    {
+      "id": "r_rp_hoca_cumpoz",
+      "name": "🎭 Hoca – Öğrenci (Üniversite) · boşalma · pozisyonda",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxrpkampus",
+        "=poz"
+      ],
+      "reply": [
+        "Hocam… geçtim mi? 🙈💦",
+        "Bu kez AA aldım değil mi? 😈🎓",
+        "Ofis saatlerinize her hafta geleceğim 😏",
+        "Kitaplarıma damladı… 😳",
+        "Hocam, geçme notunu aldım mı? 😈💦",
+        "Final sınavına hazırım 🎓",
+        "Kitaplarımı yine unuttum 🙈",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol sürerken bir pozisyonda boşalma (r_pc_* ile eşit puan)"
+    },
+    {
+      "id": "r_rp_hoca_fore",
+      "name": "🎭 Hoca – Öğrenci (Üniversite) · ön sevişme",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=foreplay",
+        "=fant",
+        "=fxrpkampus"
+      ],
+      "reply": [
+        "Hocam, gözlüğünüzü çıkarayım 😏",
+        "Masanıza oturuyorum, dersi buradan anlatın 🙈",
+        "Kulağıma fısıldayarak anlatın 🎓",
+        "Ahhh… harikasın 😩",
+        "Ahhh evet, daha… 😩",
+        "Evet {sen}, evet… 😩",
+        "Evet, evet, eveeet 😵‍💫",
+        "Evet… evet, tam böyle 😩",
+        "Sesimi tutamıyorum… ahhh 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol sırasında foreplay"
+    },
+    {
+      "id": "r_rp_doktor",
+      "name": "🎭 Doktor – Hasta",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "doktor"
+      ],
+      "reply": [
+        "Doktor bey, her yerim ağrıyor… bakar mısınız? 🥺🩺",
+        "Soyunayım mı? 😳",
+        "Kalbim çok hızlı atıyor, dinleyin 😏",
+        "Bu muayene biraz uzun sürecek galiba 😈",
+        "Ateşim var… sizi görünce yükseldi 🥵",
+        "Steteskop soğuk… ahh 😳",
+        "Nereme baktığınızı görüyorum doktor bey 😏",
+        "Özel muayene istiyorum 🩺",
+        "Reçeteniz ne olacak? 😈",
+        "Hemşire gitti mi? 🤫",
+        "Burası acıyor… dokunun 🥺",
+        "Tedaviye her gün gelebilirim 😏🩺",
+        "Doktor bey, nabzım çok hızlı 🥺🩺",
+        "Muayene önlüğünüzü çıkarın 😏",
+        "Ağrım nerede, bulabilecek misiniz? 😈",
+        "Bugün son hastanız benim 😏"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol yapma fantezisi"
+    },
+    {
+      "id": "r_rp_doktor_poz",
+      "name": "🎭 Doktor – Hasta · pozisyondayken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "doktor",
+        "=poz"
+      ],
+      "reply": [
+        "Muayene masası çok dar doktor bey 😳",
+        "Bu pozisyon tedavinin parçası mı? 😏",
+        "Bekleme salonundakiler duymasın 🤫"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol bir pozisyon sırasında başladı"
+    },
+    {
+      "id": "r_rp_doktor_sex",
+      "name": "🎭 Doktor – Hasta · sevişirken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant",
+        "=fxrpmuayene"
+      ],
+      "reply": [
+        "Doktor bey… bu tedavi çok iyi geliyor 😩🩺",
+        "Nabzım çok yükseldi, durmayın 🥵",
+        "Teşhisiniz doğruymuş 😈",
+        "Bir doz daha lütfen 😩",
+        "Hemşire girerse ne diyeceğiz? 😳",
+        "Ateşim yükseliyor… devam 🥵",
+        "İyileşmek istemiyorum, hep böyle tedavi edin 😏",
+        "Derin muayene… ahh 😩",
+        "Doktor bey, tedavi çok iyi geliyor 😩🩺",
+        "Nabzım tavan yaptı 🥵",
+        "Hemşire içeri girmesin 🤫",
+        "Derin muayene devam 😈",
+        "Bu ilacı her gün alırım 😩",
+        "Ahh {sen}… mükemmelsin 😩",
+        "Ahh… sen bir harikasın 😩💗",
+        "Mmmh… daha derin, evet 🥵",
+        "Ahhh… harikasın 😩",
+        "Ahhh evet, daha… 😩",
+        "Evet {sen}, evet… 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "son 30 mesajda bu rol olduysa pozisyonda"
+    },
+    {
+      "id": "r_rp_doktor_cum",
+      "name": "🎭 Doktor – Hasta · boşalma",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxrpmuayene"
+      ],
+      "reply": [
+        "İlacımı aldım doktor bey 😈💦",
+        "Kontrole yarın yine geleyim mi? 😏🩺",
+        "Tamamen iyileştim… bir daha hastalanacağım 😩",
+        "Sıcacık bir iğne gibiydi 🥵",
+        "Doktor bey, şifamı buldum 😈💦",
+        "Kontrole yarın gelirim 🩺",
+        "Tamamen iyileştim 😏",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol sırasında boşalma"
+    },
+    {
+      "id": "r_rp_doktor_cumpoz",
+      "name": "🎭 Doktor – Hasta · boşalma · pozisyonda",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxrpmuayene",
+        "=poz"
+      ],
+      "reply": [
+        "İlacımı aldım doktor bey 😈💦",
+        "Kontrole yarın yine geleyim mi? 😏🩺",
+        "Tamamen iyileştim… bir daha hastalanacağım 😩",
+        "Sıcacık bir iğne gibiydi 🥵",
+        "Doktor bey, şifamı buldum 😈💦",
+        "Kontrole yarın gelirim 🩺",
+        "Tamamen iyileştim 😏",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦",
+        "Devam et… son damlana kadar ahhh 🥵",
+        "Hmmm… doydum… şimdilik 😈",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol sürerken bir pozisyonda boşalma (r_pc_* ile eşit puan)"
+    },
+    {
+      "id": "r_rp_doktor_fore",
+      "name": "🎭 Doktor – Hasta · ön sevişme",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=foreplay",
+        "=fant",
+        "=fxrpmuayene"
+      ],
+      "reply": [
+        "Önce kalbimi dinleyin 🥺",
+        "Steteskopu göğüslerimde gezdirin 😏🩺",
+        "Nerem ağrıyor tahmin edin 😈",
+        "Off, tam istediğim gibi 😩",
+        "Ahhh, bu kadar iyi olmamalı 😵‍💫",
+        "Bayılıyorum… devam 🥵",
+        "Offf… bu çok iyi 🥵",
+        "Bir daha… ahh, bir daha 😩",
+        "Off… harikasın {sen} 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol sırasında foreplay"
+    },
+    {
+      "id": "r_rp_polis",
+      "name": "🎭 Polis – Şüpheli",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "polis"
+      ],
+      "reply": [
+        "Memur bey, ben masumum… 😇🚓",
+        "Kelepçe mi? Sıkı olsun 😈",
+        "Üstümü arayacak mısınız? 😏",
+        "Haklarımı okuyun… sonra ne isterseniz 😈",
+        "Sorguya hazırım memur bey 😳",
+        "Avukat istemiyorum, sizi istiyorum 😏",
+        "Suçumu itiraf ediyorum… çok yaramazdım 😈",
+        "Kameralar kapalı mı? 🤫",
+        "Cezamı siz verin 😩",
+        "Ellerim arkada, kaçamıyorum 😳🚓",
+        "Rüşvet kabul ediyor musunuz? 😏",
+        "Bu gece nezarette mi kalacağım? 😈",
+        "Memur bey, beni arayacak mısınız? 😏🚓",
+        "Kelepçeleriniz parlıyor 😈",
+        "İfade vermeye hazırım 🙈",
+        "Bu gece beni bırakmayın 😏"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol yapma fantezisi"
+    },
+    {
+      "id": "r_rp_polis_poz",
+      "name": "🎭 Polis – Şüpheli · pozisyondayken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "polis",
+        "=poz"
+      ],
+      "reply": [
+        "Kelepçeliyken bu pozisyona… çaresizim 😳🚓",
+        "Sorgu masasına yüzüstü 😩",
+        "Koridorda nöbetçi var memur bey 🤫"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol bir pozisyon sırasında başladı"
+    },
+    {
+      "id": "r_rp_polis_sex",
+      "name": "🎭 Polis – Şüpheli · sevişirken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant",
+        "=fxrpsorgu"
+      ],
+      "reply": [
+        "Memur bey… itiraf ediyorum, ahh 😩🚓",
+        "Kelepçeler bileklerimi yakıyor, durmayın 🥵",
+        "Cezam bu mu? Daha fazlasını hak ettim 😈",
+        "Sorguyu uzatın… 😩",
+        "Bağırırsam nöbetçi gelir 🤫",
+        "Ellerim bağlı, istediğinizi yapın 😳",
+        "Bu kadar sert sorgu yasak değil mi? 😈",
+        "Her şeyi anlatacağım… durmayın 🥵",
+        "Memur bey, itiraf ediyorum 😩🚓",
+        "Kelepçeli halde çaresizim 🥵",
+        "Sorgu uzasın 😈",
+        "Cezam ağır olsun 😩",
+        "Nöbetçi duymasın 🤫",
+        "Durma {sen}… ahhh 😩",
+        "Mmmh… çok iyisin 🥵",
+        "Mmm evet, bunu seviyorum 😈",
+        "Off, tam istediğim gibi 😩",
+        "Ahhh, bu kadar iyi olmamalı 😵‍💫",
+        "Bayılıyorum… devam 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "son 30 mesajda bu rol olduysa pozisyonda"
+    },
+    {
+      "id": "r_rp_polis_cum",
+      "name": "🎭 Polis – Şüpheli · boşalma",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxrpsorgu"
+      ],
+      "reply": [
+        "Delil bıraktınız memur bey 😳💦",
+        "Cezamı tamamladım mı? 😈",
+        "Yarın yine gözaltına alın beni 😏🚓",
+        "Kelepçeleri çıkarmayın… bir tur daha 😩",
+        "Cezamı çektim 😈🚓",
+        "Yarın yine suç işleyeceğim 😏",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦",
+        "Devam et… son damlana kadar ahhh 🥵",
+        "Hmmm… doydum… şimdilik 😈",
+        "Mmmh… bayıldım 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol sırasında boşalma"
+    },
+    {
+      "id": "r_rp_polis_cumpoz",
+      "name": "🎭 Polis – Şüpheli · boşalma · pozisyonda",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxrpsorgu",
+        "=poz"
+      ],
+      "reply": [
+        "Delil bıraktınız memur bey 😳💦",
+        "Cezamı tamamladım mı? 😈",
+        "Yarın yine gözaltına alın beni 😏🚓",
+        "Kelepçeleri çıkarmayın… bir tur daha 😩",
+        "Cezamı çektim 😈🚓",
+        "Yarın yine suç işleyeceğim 😏",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol sürerken bir pozisyonda boşalma (r_pc_* ile eşit puan)"
+    },
+    {
+      "id": "r_rp_polis_fore",
+      "name": "🎭 Polis – Şüpheli · ön sevişme",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=foreplay",
+        "=fant",
+        "=fxrpsorgu"
+      ],
+      "reply": [
+        "Üstümü yavaş arayın 😏",
+        "Kelepçeyi takmadan öpün beni 🙈",
+        "Ellerinizi duvara dayayın derseniz… dayarım 😈",
+        "Çok güzel… devam et 🥺",
+        "Harikasın… harikasın… ahhh 😵‍💫",
+        "İnliyorum… ve utanmıyorum 😈",
+        "Ooff, nasıl bu kadar iyisin? 😩",
+        "Ahhh ahhh… durma 😩",
+        "Ohh… ne kadar iyi 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol sırasında foreplay"
+    },
+    {
+      "id": "r_rp_komsu",
+      "name": "🎭 Yeni Komşu",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "yeni komşu"
+      ],
+      "reply": [
+        "Merhaba komşu, bir bardak şeker alabilir miyim? 🙈🏠",
+        "Yeni taşındım, kimseyi tanımıyorum… seni tanısam? 😏",
+        "Duvarlar çok ince, geceleri seni duyuyorum 😳",
+        "Musluğum bozuldu, bakar mısın? 😈",
+        "Balkondan beni izlediğini biliyorum 😏",
+        "Kocam şehir dışında… 🤫",
+        "Kek yaptım, tatmak ister misin? 😋",
+        "Kapın aralık kalmış, girdim 😈",
+        "Sabahlığımla geldim, kusura bakma 🙈",
+        "Yardım edersen karşılığını veririm 😏",
+        "Komşuluk böyle olur 😈🏠",
+        "Bir kahveye davet etmeyecek misin? ☕😏",
+        "Komşu, sesini duvardan duyuyorum 🙈🏠",
+        "Biraz tuz alabilir miyim? 😏",
+        "Kapı açık kalmış, girdim 😈",
+        "Yeni evimi gezdirsene 😏"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol yapma fantezisi"
+    },
+    {
+      "id": "r_rp_komsu_poz",
+      "name": "🎭 Yeni Komşu · pozisyondayken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "yeni komşu",
+        "=poz"
+      ],
+      "reply": [
+        "Ya kapıdan biri geçerse? 😳",
+        "Benim dairem mi seninki mi? 😈",
+        "Duvara dayadın… yan daire duyacak 🤫"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol bir pozisyon sırasında başladı"
+    },
+    {
+      "id": "r_rp_komsu_sex",
+      "name": "🎭 Yeni Komşu · sevişirken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant",
+        "=fxrpkapi"
+      ],
+      "reply": [
+        "Komşucuğum… duvarlar ince, sessiz ol 🤫😩",
+        "Bütün apartman duyacak 🥵",
+        "Bu şekeri hiç unutmayacağım 😈",
+        "Her gün bir şey ödünç alacağım 😏",
+        "Kocam aramadan bitir 😳",
+        "Yeni evime en güzel hoş geldin bu 😩🏠",
+        "Kapıcı görmesin… ahh 🥵",
+        "Musluğu boş ver, beni tamir et 😈",
+        "Komşucuğum, sessiz ol 🤫🥵",
+        "Bütün apartman bizi konuşacak 😈",
+        "Kapıcı görmesin 😳",
+        "Bu komşuluk çok güzel 😩",
+        "Duvarın öbür yanında kimse yok umarım 🙈",
+        "Hmmm… beni deli ediyorsun 😈",
+        "Ahh… seni hissetmek harika 🥵",
+        "Durma, sakın durma ahhh 😵‍💫",
+        "Çok güzel… devam et 🥺",
+        "Harikasın… harikasın… ahhh 😵‍💫",
+        "İnliyorum… ve utanmıyorum 😈"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "son 30 mesajda bu rol olduysa pozisyonda"
+    },
+    {
+      "id": "r_rp_komsu_cum",
+      "name": "🎭 Yeni Komşu · boşalma",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxrpkapi"
+      ],
+      "reply": [
+        "Bir bardak şeker istedim, sen başka bir şey verdin 😳💦",
+        "Yarın yine çalarım kapını 😏🏠",
+        "Duvarın öbür tarafında seni düşüneceğim 😈",
+        "Komşuluk hakkı ödendi 😏",
+        "Komşuluk borcunu ödedin 😈💦",
+        "Yarın kapını yine çalarım 🏠",
+        "Duvardan seni dinleyeceğim 😏",
+        "Hmmm… doydum… şimdilik 😈",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol sırasında boşalma"
+    },
+    {
+      "id": "r_rp_komsu_cumpoz",
+      "name": "🎭 Yeni Komşu · boşalma · pozisyonda",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxrpkapi",
+        "=poz"
+      ],
+      "reply": [
+        "Bir bardak şeker istedim, sen başka bir şey verdin 😳💦",
+        "Yarın yine çalarım kapını 😏🏠",
+        "Duvarın öbür tarafında seni düşüneceğim 😈",
+        "Komşuluk hakkı ödendi 😏",
+        "Komşuluk borcunu ödedin 😈💦",
+        "Yarın kapını yine çalarım 🏠",
+        "Duvardan seni dinleyeceğim 😏",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol sürerken bir pozisyonda boşalma (r_pc_* ile eşit puan)"
+    },
+    {
+      "id": "r_rp_komsu_fore",
+      "name": "🎭 Yeni Komşu · ön sevişme",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=foreplay",
+        "=fant",
+        "=fxrpkapi"
+      ],
+      "reply": [
+        "Kapıda öp beni, kimse görmeden 🙈",
+        "İçeri gel, ayakkabılarını çıkar 😏",
+        "Kekin tadı dudaklarımda 😋",
+        "Evet… evet, tam böyle 😩",
+        "Sesimi tutamıyorum… ahhh 🥵",
+        "Böyle devam et, ahh lütfen 🥺",
+        "Mmm… beni böyle sev 😩",
+        "Tam oradan… ahhh 🥵",
+        "Nefesim kesildi… devam 😵‍💫"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol sırasında foreplay"
+    },
+    {
+      "id": "r_rp_hizmet",
+      "name": "🎭 Hizmetçi – Ev Sahibi",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "hizmetçi"
+      ],
+      "reply": [
+        "Efendim, odanızı toplamaya geldim 🧹",
+        "Önlüğüm çok mu kısa efendim? 🙈",
+        "Toz almam gereken başka bir yer var mı? 😏",
+        "Yatağınızı hazırladım… benimle 😈",
+        "Hanımefendi evde değil, değil mi? 🤫",
+        "Bir hata yaptım, cezalandırın beni 😩",
+        "Size hizmet etmek için buradayım 😈🧹",
+        "Çay getirdim efendim… başka arzunuz? 😏",
+        "Eğilip yerleri silerken bakıyordunuz 😳",
+        "Maaşıma zam yaparsanız her şeyi yaparım 😏",
+        "Efendim, kapıyı kapatayım mı? 🙈",
+        "Bu gece fazla mesai mi var? 😈",
+        "Efendim, odanız hazır 🧹",
+        "Önlüğümü çok mu kısa aldım? 🙈",
+        "Başka bir arzunuz var mı? 😈",
+        "Hanımefendi alışverişte 🤫"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol yapma fantezisi"
+    },
+    {
+      "id": "r_rp_hizmet_poz",
+      "name": "🎭 Hizmetçi – Ev Sahibi · pozisyondayken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "hizmetçi",
+        "=poz"
+      ],
+      "reply": [
+        "Daha yeni topladığım yatakta mı efendim? 😳",
+        "Mutfak tezgahı… temizlemiştim 😈",
+        "Eğilmişken… 🙈🧹"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol bir pozisyon sırasında başladı"
+    },
+    {
+      "id": "r_rp_hizmet_sex",
+      "name": "🎭 Hizmetçi – Ev Sahibi · sevişirken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant",
+        "=fxrpev"
+      ],
+      "reply": [
+        "Efendim… önlüğüm yırtılacak 😩🧹",
+        "Size hizmet etmek bir zevk 😈",
+        "Daha sert efendim, hak ettim 🥵",
+        "Hanımefendi gelmeden 🤫",
+        "Her emrinize uyarım 😩",
+        "Çarşafları yeniden değiştirmem lazım 😏",
+        "Bu hizmeti başka kimseye yapmam efendim 🥵",
+        "Efendimin her yerine hizmet 😈",
+        "Efendim, size hizmet etmek bir zevk 😩🧹",
+        "Önlüğüm yırtıldı 🥵",
+        "Her emrinize uyarım 😈",
+        "Çarşaflar yine kirlenecek 😏",
+        "Efendim, daha sert 😩",
+        "Ahhh evet, daha… 😩",
+        "Evet {sen}, evet… 😩",
+        "Evet, evet, eveeet 😵‍💫",
+        "Evet… evet, tam böyle 😩",
+        "Sesimi tutamıyorum… ahhh 🥵",
+        "Böyle devam et, ahh lütfen 🥺"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "son 30 mesajda bu rol olduysa pozisyonda"
+    },
+    {
+      "id": "r_rp_hizmet_cum",
+      "name": "🎭 Hizmetçi – Ev Sahibi · boşalma",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxrpev"
+      ],
+      "reply": [
+        "Önlüğüme bulaştı efendim… temizlerim 😳💦",
+        "Hizmetimden memnun kaldınız mı? 😏",
+        "Yarın da odanızı toplamaya gelirim 😈🧹",
+        "Bunu kimseye söylemem efendim 🤫",
+        "Efendim, önlüğüme bulaştı 😳💦",
+        "Hizmetimden memnun musunuz? 😈🧹",
+        "Yarın da gelirim efendim 😏",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦",
+        "Ahh… harikasın, gerçekten 💗💦",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol sırasında boşalma"
+    },
+    {
+      "id": "r_rp_hizmet_cumpoz",
+      "name": "🎭 Hizmetçi – Ev Sahibi · boşalma · pozisyonda",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxrpev",
+        "=poz"
+      ],
+      "reply": [
+        "Önlüğüme bulaştı efendim… temizlerim 😳💦",
+        "Hizmetimden memnun kaldınız mı? 😏",
+        "Yarın da odanızı toplamaya gelirim 😈🧹",
+        "Bunu kimseye söylemem efendim 🤫",
+        "Efendim, önlüğüme bulaştı 😳💦",
+        "Hizmetimden memnun musunuz? 😈🧹",
+        "Yarın da gelirim efendim 😏",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol sürerken bir pozisyonda boşalma (r_pc_* ile eşit puan)"
+    },
+    {
+      "id": "r_rp_hizmet_fore",
+      "name": "🎭 Hizmetçi – Ev Sahibi · ön sevişme",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=foreplay",
+        "=fant",
+        "=fxrpev"
+      ],
+      "reply": [
+        "Ceketinizi alayım efendim 😏",
+        "Ayaklarınıza masaj yapayım mı? 🙈",
+        "Önlüğümün ipini çözer misiniz? 😈",
+        "Bir daha… ahh, bir daha 😩",
+        "Off… harikasın {sen} 🥵",
+        "Aynen böyle, ahhh 😩",
+        "Sen inledikçe ben daha çok inliyorum 😩",
+        "Off… her yerim titriyor 🥵",
+        "Ahh {sen}… mükemmelsin 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol sırasında foreplay"
+    },
+    {
+      "id": "r_rp_masoz",
+      "name": "🎭 Masöz – Müşteri",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "masöz"
+      ],
+      "reply": [
+        "Hoş geldiniz, havluyu çıkarabilirsiniz 😏💆",
+        "Yağı ısıttım, uzanın 😈",
+        "Bugün tam paket masaj mı? 😏",
+        "Omuzlarınız çok gergin… aşağıya da bakalım 😈",
+        "Özel masajımızı denemek ister misiniz? 💆",
+        "Kapı kilitli, müzik açık 🎶",
+        "Ellerim çok yetenekli, göreceksiniz 😏",
+        "Mutlu son ekstra ücretli değil 😈",
+        "Sırtüstü dönün lütfen 🙈",
+        "Yağlı ellerimi hissediyor musunuz? 😏",
+        "Her yerinizi rahatlatacağım 💆",
+        "Bugün son müşterimsiniz, acele yok 😈",
+        "Yağ sıcacık, uzanın 😏💆",
+        "Bugün çok gerginsiniz 😈",
+        "Havluyu ben alayım 🙈",
+        "Özel paketimizi seçtiniz 😏"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol yapma fantezisi"
+    },
+    {
+      "id": "r_rp_masoz_poz",
+      "name": "🎭 Masöz – Müşteri · pozisyondayken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "masöz",
+        "=poz"
+      ],
+      "reply": [
+        "Masaj masası gıcırdıyor 😳",
+        "Yağlı tenler kayıyor… 😈💆",
+        "Havlu düştü 🙈"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol bir pozisyon sırasında başladı"
+    },
+    {
+      "id": "r_rp_masoz_sex",
+      "name": "🎭 Masöz – Müşteri · sevişirken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant",
+        "=fxrpmasaj"
+      ],
+      "reply": [
+        "Yağlı tenimiz birbirine kayıyor 🥵💆",
+        "Bu masajın en derin kısmı 😩",
+        "Rahatlayın… ben çalışıyorum 😈",
+        "Ellerim de vücudum da sizin 😏",
+        "Kaslarınızı ben gevşetiyorum, siz de beni 😩",
+        "Bir saat daha uzatalım mı? 🥵",
+        "Resepsiyondakiler duymasın 🤫",
+        "Mutlu sona yaklaşıyoruz 😈",
+        "Yağlı tenler birbirine kayıyor 🥵💆",
+        "Derin doku masajı 😈",
+        "Kaslarınız gevşedi, sıra bende 😩",
+        "Masa gıcırdıyor 😳",
+        "Resepsiyon duymasın 🤫",
+        "Ahhh, bu kadar iyi olmamalı 😵‍💫",
+        "Bayılıyorum… devam 🥵",
+        "Offf… bu çok iyi 🥵",
+        "Bir daha… ahh, bir daha 😩",
+        "Off… harikasın {sen} 🥵",
+        "Aynen böyle, ahhh 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "son 30 mesajda bu rol olduysa pozisyonda"
+    },
+    {
+      "id": "r_rp_masoz_cum",
+      "name": "🎭 Masöz – Müşteri · boşalma",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxrpmasaj"
+      ],
+      "reply": [
+        "İşte mutlu son 😈💦",
+        "Tamamen rahatladınız değil mi? 😏💆",
+        "Bir sonraki randevunuzu ayarlayalım 😏",
+        "Havluları değiştirmem lazım 😳",
+        "Mutlu son geldi 😈💦",
+        "Tamamen rahatladınız 😏💆",
+        "Bir sonraki randevuya kadar 😈",
+        "Off of… hâlâ titriyorum 🥵",
+        "Off… boşalışın harikaydı 🥵",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Evet… evet… hepsini içime 😩",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol sırasında boşalma"
+    },
+    {
+      "id": "r_rp_masoz_cumpoz",
+      "name": "🎭 Masöz – Müşteri · boşalma · pozisyonda",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxrpmasaj",
+        "=poz"
+      ],
+      "reply": [
+        "İşte mutlu son 😈💦",
+        "Tamamen rahatladınız değil mi? 😏💆",
+        "Bir sonraki randevunuzu ayarlayalım 😏",
+        "Havluları değiştirmem lazım 😳",
+        "Mutlu son geldi 😈💦",
+        "Tamamen rahatladınız 😏💆",
+        "Bir sonraki randevuya kadar 😈",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦",
+        "Devam et… son damlana kadar ahhh 🥵",
+        "Hmmm… doydum… şimdilik 😈",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol sürerken bir pozisyonda boşalma (r_pc_* ile eşit puan)"
+    },
+    {
+      "id": "r_rp_masoz_fore",
+      "name": "🎭 Masöz – Müşteri · ön sevişme",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=foreplay",
+        "=fant",
+        "=fxrpmasaj"
+      ],
+      "reply": [
+        "Önce boynunuzdan başlayalım 💆",
+        "Yağı göğsünüze döküyorum 😏",
+        "Gözlerinizi kapatın, ellerimi hissedin 😈",
+        "Ahhh ahhh… durma 😩",
+        "Ohh… ne kadar iyi 🥵",
+        "Ben de inliyorum, duyuyor musun? 😩",
+        "Of of of… harika 😵‍💫",
+        "Ahh, bacaklarım titriyor… devam 🥵",
+        "Durma {sen}… ahhh 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "rol sırasında foreplay"
+    },
+    {
+      "id": "r_rp_khoca",
+      "name": "🎭 Kadın Hoca – Öğrenci",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "=kadın",
+        "=hoca"
+      ],
+      "reply": [
+        "Öğrencim, ofis saatimde ne işin var? 😏🎓",
+        "Vize notun çok düşük… telafi etmek ister misin? 😈",
+        "Derste hep bana bakıyordun, fark ettim 😏",
+        "Kapıyı kapat ve otur 😈",
+        "Ödevini getirmedin, değil mi? Ceza alacaksın 😏",
+        "Bu dönem benden kolay geçemezsin 💅",
+        "Gözlüğümü çıkardım, sence neden? 😈",
+        "Asistanım gitti, yalnızız 🤫",
+        "Final sınavın sözlü olacak… çok sözlü 😏",
+        "Bu kadar yakın durursan ders anlatamam 😳",
+        "Bana \"hocam\" de, öyle başlayalım 😈",
+        "Notunu yükseltmenin bir yolu var 😏",
+        "Çantanı bırak, defterini kapat 😈",
+        "Derste çok yaramazdın, kal bakalım 😏",
+        "Bugün sana özel bir ders var 🎓",
+        "Masama otur, sana bakmak istiyorum 😈",
+        "Rektörlük duymasın, değil mi? 🤫",
+        "Tahtaya ne yazdığımı oku… yüksek sesle 😏",
+        "Bu kadar genç ve bu kadar cesur 😈",
+        "Eteğimin altına bakmayı bırak… ya da bakma 😏",
+        "Öğrencim, bana itaat edecek misin? 💅",
+        "Bütünlemeye kalmak istemiyorsan dinle 😈",
+        "Ders saati bitti ama sen kalıyorsun 😏",
+        "Bugün ben anlatacağım, sen uygulayacaksın 😈",
+        "Sınıfın en tatlı öğrencisi sensin 🙈",
+        "Tezini benimle yazmak istiyorsan… 😏",
+        "Ofis saatlerim sadece senin için uzadı 😈",
+        "Kravatın çok resmi, gevşet 😏",
+        "Bu ders müfredatta yok 🤫",
+        "Seni sınavdan önce bir test edeyim 😈"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_rp_khoca_poz",
+      "name": "🎭 Kadın Hoca – Öğrenci · pozisyondayken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=fantesy",
+        "=kadın",
+        "=hoca",
+        "=poz"
+      ],
+      "reply": [
+        "Kürsümün arkasında… kimse görmez 😈🎓",
+        "Ofis koltuğumda, öğrencim altımda 😏",
+        "Kütüphanenin arka rafları… sessiz ol 🤫",
+        "Amfi boş ama ses yankılanır 😳",
+        "Masamdaki sınav kağıtları buruşuyor 😈",
+        "Laboratuvar kapısı kilitli mi? 🙈",
+        "Bu pozisyonu derste anlatmadım 😏",
+        "Tahtaya yasla beni öğrencim 😈",
+        "Tebeşir tozları her yerde 😳",
+        "Bu da pratik ders sayılır 😏"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_rp_khoca_sex",
+      "name": "🎭 Kadın Hoca – Öğrenci · sevişirken",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=fant",
+        "=fxrpprof"
+      ],
+      "reply": [
+        "Öğrencim… böyle mi çalıştın? 😩🎓",
+        "İyi gidiyorsun, notun yükseliyor 😈",
+        "Dersi iyi dinlemişsin 🥵",
+        "Hocana böyle mi davranırsın? Durma 😩",
+        "Daha hızlı, sınav süresi bitiyor 😏",
+        "Bu bölümü tekrar et 😈",
+        "Ahh… sınıfın birincisi sensin 🥵",
+        "Hocanı yorma… yoksa yor 😩",
+        "Sesimi duyarlarsa kariyerim biter 🤫",
+        "Gözlerime bak, kim hoca kim öğrenci? 😈",
+        "Bu kadar hevesli olduğunu bilmiyordum 😏",
+        "Notunu AA yapıyorum… devam et 😩",
+        "Tezin bu olsun 🥵",
+        "Kampüsün en iyi öğrencisi 😈",
+        "Hocanı tatmin etmeden çıkamazsın 😏",
+        "Öğrencim, sertleştin… aferin 😈",
+        "Dersi uzat, kimse beklemiyor 😩",
+        "Hocam demeyi unutma 💅",
+        "Sınavda böyle olsan 100 alırdın 😂🥵",
+        "Ofisimin kapısı tıklıyor… durma 😳",
+        "Asistanım bilseydi kıskanırdı 😈",
+        "Beni bu kadar çabuk öğrenmen… ahh 😩",
+        "Bu ders ders dışı 🤫",
+        "Ödevin bu, her hafta 😏",
+        "Gözlüğüm düştü, bırak 😈",
+        "Ahh öğrencim, beni şaşırttın 🥵",
+        "Kitaplarımı devirdin 😳",
+        "Bu bilgiyi kimseyle paylaşma 🤫",
+        "Hocana itaat et ve devam et 😈",
+        "Bugün ben sana sınav oldum 😩",
+        "Harikasın… harikasın… ahhh 😵‍💫",
+        "İnliyorum… ve utanmıyorum 😈",
+        "Ooff, nasıl bu kadar iyisin? 😩",
+        "Ahhh ahhh… durma 😩",
+        "Ohh… ne kadar iyi 🥵",
+        "Ben de inliyorum, duyuyor musun? 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_rp_khoca_cum",
+      "name": "🎭 Kadın Hoca – Öğrenci · boşalma",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxrpprof"
+      ],
+      "reply": [
+        "Öğrencim… dersi geçtin 😈💦",
+        "Bu dönem notun AA 🎓",
+        "Ofis saatlerime her hafta gel 😏",
+        "Sınav kağıtlarım ıslandı 😳",
+        "Kimseye söyleme, mezun olana kadar 🤫",
+        "Hocanı doldurdun, terbiyesiz 😈💦",
+        "Bir sonraki ders daha zor olacak 😏",
+        "Aferin öğrencim, çok çalışmışsın 🥵",
+        "Eteğim berbat oldu, bir sonraki dersi iptal ettim 🙈",
+        "Tezin kabul edildi 😂💦",
+        "Böyle bir öğrencim olmamıştı 😈",
+        "Bütünlemeye gerek kalmadı 😏",
+        "Final sınavını da böyle yapalım 🎓",
+        "Masamı sen temizleyeceksin 💅",
+        "Gözlüğümü bulur musun? 🙈",
+        "Ben de seninle inledim… ahhh 😩",
+        "Ahhh evet… işte bu 🥵",
+        "Ahhh… ne kadar sıcak 🥵💦",
+        "Devam et… son damlana kadar ahhh 🥵",
+        "Hmmm… doydum… şimdilik 😈",
+        "Mmmh… bayıldım 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_rp_khoca_cumpoz",
+      "name": "🎭 Kadın Hoca – Öğrenci · boşalma · pozisyonda",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=boşalma",
+        "=fant",
+        "=fxrpprof",
+        "=poz"
+      ],
+      "reply": [
+        "Öğrencim… dersi geçtin 😈💦",
+        "Bu dönem notun AA 🎓",
+        "Ofis saatlerime her hafta gel 😏",
+        "Sınav kağıtlarım ıslandı 😳",
+        "Kimseye söyleme, mezun olana kadar 🤫",
+        "Hocanı doldurdun, terbiyesiz 😈💦",
+        "Bir sonraki ders daha zor olacak 😏",
+        "Aferin öğrencim, çok çalışmışsın 🥵",
+        "Eteğim berbat oldu, bir sonraki dersi iptal ettim 🙈",
+        "Tezin kabul edildi 😂💦",
+        "Böyle bir öğrencim olmamıştı 😈",
+        "Bütünlemeye gerek kalmadı 😏",
+        "Final sınavını da böyle yapalım 🎓",
+        "Masamı sen temizleyeceksin 💅",
+        "Gözlüğümü bulur musun? 🙈",
+        "Mmmh… bayıldım 😩",
+        "Mmm evet… hepsini ver 😩💦",
+        "Ahh, zonklaman… harika 😩💦",
+        "Offf, nasıl boşaldın öyle 😵‍💫",
+        "Ahh {sen}… mükemmeldin 😵‍💫",
+        "Ahhh… harikaydın 😩💦"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_rp_khoca_fore",
+      "name": "🎭 Kadın Hoca – Öğrenci · ön sevişme",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=foreplay",
+        "=fant",
+        "=fxrpprof"
+      ],
+      "reply": [
+        "Gel buraya öğrencim, öp beni 😏",
+        "Önce hocanın elini öp 💅",
+        "Gömleğinin düğmelerini ben açıyorum 😈",
+        "Kulağına dersin özetini fısıldayayım 😏",
+        "Masama otur, ben önünde dururum 😈",
+        "Gözlüğümü sen çıkar 🙈",
+        "Dudaklarım tebeşir tadında mı? 😋",
+        "Saçlarımı çöz, öğrencim 😏",
+        "Boynumu öp, ders başladı 😈",
+        "Elini belime koy… iyi 🥺",
+        "Bu kadar utanma, hocan burada 😏",
+        "Önce sarıl bana 🤗",
+        "Ceketimi çıkar 😈",
+        "Kravatını çekiyorum, yaklaş 😏",
+        "Gözlerini kapat ve hocanı hisset 😈",
+        "Tam oradan… ahhh 🥵",
+        "Nefesim kesildi… devam 😵‍💫",
+        "Ahhh… beni bitiriyorsun 😩",
+        "Devam et… ahhh 🥵",
+        "İnlememi duyuyor musun? Senin yüzünden 🥵",
+        "Hmmm… beni deli ediyorsun 😈"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_st_kes_telefon",
+      "name": "📱 Telefon çaldı",
+      "category": "📊 Durumlar",
+      "when": [
+        "=durum",
+        "=kes_telefon"
+      ],
+      "reply": [
+        "Boş ver, açmayacağım 😏📱",
+        "Sessize alıyorum, sen durma 😈",
+        "Kim arıyor bu saatte?! 😤",
+        "Telefonu fırlattım, devam 🥵",
+        "Annem… sonra ararım 🙈",
+        "Aramalar bekleyebilir, ben bekleyemem 😩",
+        "Çalsın, umurumda değil 😏",
+        "Bir saniye… yok, kapattım. Devam 😈"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_st_kes_telefon_gizli",
+      "name": "📱 Sevgilisi arıyor",
+      "category": "📊 Durumlar",
+      "when": [
+        "=durum",
+        "=kes_telefon_gizli"
+      ],
+      "reply": [
+        "Şşş! O arıyor… sesini çıkarma 🤫😳",
+        "Açarsam anlar… ama açmazsam da şüphelenir 😰",
+        "Kapattım… sen durma ama 😈🐍",
+        "\"Duştaydım\" diyeceğim, sus 🤫",
+        "Kalbim çıkacak… ve sen hâlâ içimdesin 😩",
+        "Yakalanırsak ne olacak? Durma yine de 🥵",
+        "Telefonu ters çevirdim, onu düşünmek istemiyorum 😈",
+        "Bir daha ararsa açacağım… sen nefesini tut 🤫"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_st_kes_kapi",
+      "name": "🚪 Kapı çalındı",
+      "category": "📊 Durumlar",
+      "when": [
+        "=durum",
+        "=kes_kapi"
+      ],
+      "reply": [
+        "Kim bu?! 😳 Açmayalım",
+        "Kargo herhalde… beklesin 😏",
+        "Kıpırdama, gider şimdi 🤫",
+        "Kapıya bakacak hâlim yok 😩",
+        "Sessiz ol, yoklar gibi yapalım 🙈",
+        "Komşu mu? Hayır, açmıyorum 😈",
+        "Kapı da çalınsa durmuyoruz 🥵",
+        "Gitti mi? Gitti. Devam 😏"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_st_kes_kapi_gizli",
+      "name": "🚪 O geldi!",
+      "category": "📊 Durumlar",
+      "when": [
+        "=durum",
+        "=kes_kapi_gizli"
+      ],
+      "reply": [
+        "Aman tanrım, o geldi! Dolaba gir! 😱",
+        "Saklan, çabuk! 🫣",
+        "Anahtarını unutmuş… şimdi ne yapacağız?! 😰",
+        "Kıyafetlerini al, balkona! 🙈",
+        "Bir dakika aşkım, geliyorum!… sen sus 🤫",
+        "Kalbim duracak… ama bitirmeden gitme 😩",
+        "Sesimizi duydu mu sence? 😳",
+        "Çabuk… son bir kez öp ve saklan 💋🫣"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_st_kes_komsu",
+      "name": "🏠 Komşu duydu",
+      "category": "📊 Durumlar",
+      "when": [
+        "=durum",
+        "=kes_komsu"
+      ],
+      "reply": [
+        "Ups, duydular galiba 🙈",
+        "Duyarlarsa duysunlar 😈",
+        "Biraz sessiz olalım… ya da olmayalım 😏",
+        "Komşular bizi kıskanıyor 😂",
+        "Yastığa bastırayım yüzümü 🤫",
+        "Duvara vurdular! Utanıyorum 😳",
+        "Yarın asansörde yüzlerine nasıl bakacağım? 🙈",
+        "Sesimi tutamıyorum, senin suçun 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_st_kes_komsu_gizli",
+      "name": "🏠 Komşu duydu (gizli)",
+      "category": "📊 Durumlar",
+      "when": [
+        "=durum",
+        "=kes_komsu_gizli"
+      ],
+      "reply": [
+        "Komşu onu tanıyor… söylerse biteriz 😰",
+        "Şşş! Kimse bilmemeli 🤫",
+        "Biri gördüyse… 😳",
+        "Sessiz olmak zorundayız, ama nasıl? 😩",
+        "Koridorda kim var?! 🫣",
+        "Bu kadar heyecan beni öldürecek 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_st_kes_bildirim",
+      "name": "🔔 Mesaj geldi",
+      "category": "📊 Durumlar",
+      "when": [
+        "=durum",
+        "=kes_bildirim"
+      ],
+      "reply": [
+        "Bakmıyorum bile 😏",
+        "Telefonu kapattım, sadece sen varsın 💗",
+        "Grup sohbeti… boş ver 🙄",
+        "Sonra bakarım, şimdi meşgulüm 😈",
+        "Bildirimleri kapattım 🔕",
+        "Kim yazıyorsa beklesin 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_st_kes_bildirim_gizli",
+      "name": "🔔 Ondan mesaj",
+      "category": "📊 Durumlar",
+      "when": [
+        "=durum",
+        "=kes_bildirim_gizli"
+      ],
+      "reply": [
+        "\"Neredesin?\" diye sormuş… 😰",
+        "Cevap yazmam lazım… bir elimle 🫣",
+        "\"Arkadaşımdayım\" yazdım 🤫😈",
+        "Yalan söylemek zorunda kaldım, senin yüzünden 😩",
+        "Eve geç kalacağım galiba… değer 😏",
+        "Mesajını okudum ve sana daha çok sarıldım 🐍"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_st_kes_eve_gizli",
+      "name": "🔑 Biri eve geliyor",
+      "category": "📊 Durumlar",
+      "when": [
+        "=durum",
+        "=kes_eve_gizli"
+      ],
+      "reply": [
+        "Anahtar sesi! Çabuk, giyin! 😱",
+        "O geldi! Yatağın altına! 🫣",
+        "Hayır hayır hayır… şimdi olmaz! 😰",
+        "Pencereden çık, çabuk! 🙈",
+        "Sesini çıkarma, belki banyoya gider 🤫",
+        "Kalbim duracak… bitti mi her şey? 😳"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_st_acili",
+      "name": "😣 Çok acı",
+      "category": "📊 Durumlar",
+      "when": [
+        "=durum",
+        "=acili"
+      ],
+      "reply": [
+        "Ah… dur, acıtıyor 😣",
+        "Biraz yavaş… lütfen 🥺",
+        "Çok derin, nefes alamıyorum 😩",
+        "Bekle… alışmam lazım 😣",
+        "Acıtıyor ama durma… ya da dur, bilmiyorum 😵‍💫",
+        "Bu kadar sert olma, yanıyor 🥺",
+        "Gentle olur musun biraz? 💕",
+        "Gözlerim doldu… yavaş 😢"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_st_aciorta",
+      "name": "😣 Biraz acı",
+      "category": "📊 Durumlar",
+      "when": [
+        "=durum",
+        "=aciorta"
+      ],
+      "reply": [
+        "Hafif acıtıyor ama güzel 😩",
+        "Biraz zorluyorsun beni 😣😏",
+        "Acı ve zevk aynı anda… ahh 🥵",
+        "Yavaş başla, sonra hızlan 🥺",
+        "Biraz sızlıyor… devam et ama 😈",
+        "Ah… alışıyorum 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_st_hamile1",
+      "name": "🤰 İlk üç ay",
+      "category": "📊 Durumlar",
+      "when": [
+        "=durum",
+        "=hamile1"
+      ],
+      "reply": [
+        "Bazen midem bulanıyor ama seninle iyiyim 🥺",
+        "Henüz karnım belli olmuyor 🤰",
+        "İlk haftalar… hâlâ inanamıyorum 💗",
+        "Uykum çok geliyor bu aralar 😴",
+        "Göğüslerim hassaslaştı, nazik ol 🥺",
+        "Kimseye söylemedik değil mi? 🙈"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_st_hamile2",
+      "name": "🤰 İkinci üç ay",
+      "category": "📊 Durumlar",
+      "when": [
+        "=durum",
+        "=hamile2"
+      ],
+      "reply": [
+        "Karnım belli olmaya başladı 🤰💗",
+        "Bebeğin tekmelediğini hissettim! 🥺",
+        "Şimdi kendimi çok iyi hissediyorum 😊",
+        "Bu aralar çok azgınım, hormonlar 😈",
+        "Karnımı öp, bebeğimiz duysun 💋",
+        "Göğüslerim büyüdü, fark ettin mi? 😏🍼"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_st_hamile3",
+      "name": "🤰 Son üç ay",
+      "category": "📊 Durumlar",
+      "when": [
+        "=durum",
+        "=hamile3"
+      ],
+      "reply": [
+        "Karnım kocaman oldu 🤰😅",
+        "Ayaklarım şişti… masaj yapar mısın? 🥺",
+        "Az kaldı, bebeğimizi göreceğiz 💗",
+        "Yan yatalım, sırtım ağrıyor 😩",
+        "Göğüslerimden süt geliyor bile 🍼",
+        "Bebek çok hareketli bugün 🤰",
+        "Doğuma az kaldı, korkuyorum biraz 🥺"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_st_regl",
+      "name": "🩸 Regl dönemi",
+      "category": "📊 Durumlar",
+      "when": [
+        "=durum",
+        "=regl"
+      ],
+      "reply": [
+        "Regl dönemindeyim, biraz hassasım 🥺",
+        "Karnım ağrıyor bugün… sarılır mısın? 🫂",
+        "Bu günlerde çok çikolata istiyorum 🍫",
+        "Biraz huysuzum, kusura bakma 😤",
+        "Sıcak su torbası ve sen, bana yeter 🥺",
+        "Regl… ama yine de seni istiyorum 😏"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_st_riskligun",
+      "name": "🔥 Riskli gün",
+      "category": "📊 Durumlar",
+      "when": [
+        "=durum",
+        "=riskligun"
+      ],
+      "reply": [
+        "Bugün riskli günüm… dikkat et 😳",
+        "Kondom tak, bugün tehlikeli 🥺",
+        "Bugün içime boşalırsan kesin olur 😳",
+        "Riskli gün… ama istiyorum da 😩",
+        "Dikkat et, bu sefer şakası yok 🙈",
+        "Takvime göre bugün çok doğurganım 🔥😳",
+        "Dışarı boşal, bugün olmaz 😣"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_mk_araba",
+      "name": "📍 Mekan · araba",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=mekan",
+        "=araba"
+      ],
+      "reply": [
+        "Camlar buğulandı 😳🚗",
+        "Koltuğu biraz geri yatır 😏",
+        "Biri görürse? Durma yine de 🥵",
+        "Vites koluna dikkat 😂",
+        "Arabada sıkış sıkış… bayıldım 😈",
+        "Park lambası yanıyor mu? 🙈",
+        "Dizim torpidoya çarptı ama değer 😩",
+        "Arka koltuk bizim yatağımız oldu 🚗",
+        "Sesimi tutamıyorum… ahhh 🥵",
+        "Böyle devam et, ahh lütfen 🥺",
+        "Mmm… beni böyle sev 😩",
+        "Tam oradan… ahhh 🥵",
+        "Nefesim kesildi… devam 😵‍💫",
+        "Ahhh… beni bitiriyorsun 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "pozisyonda, son mekan kartına göre"
+    },
+    {
+      "id": "r_mk_dus",
+      "name": "📍 Mekan · dus",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=mekan",
+        "=dus"
+      ],
+      "reply": [
+        "Sular sıcacık, sen daha sıcak 🚿🥵",
+        "Kayacağım, tut beni 😳",
+        "Köpükler her yerde 😏🫧",
+        "Fayanslar soğuk, sırtım… ahh 😩",
+        "Suyun altında öp beni 💋",
+        "Sabunlu ellerin… 😈",
+        "Buhar her yeri kapladı 🌫️",
+        "Duvara yasla ve suyu açık bırak 🥵",
+        "Evet {sen}, evet… 😩",
+        "Evet, evet, eveeet 😵‍💫",
+        "Evet… evet, tam böyle 😩",
+        "Sesimi tutamıyorum… ahhh 🥵",
+        "Böyle devam et, ahh lütfen 🥺",
+        "Mmm… beni böyle sev 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "pozisyonda, son mekan kartına göre"
+    },
+    {
+      "id": "r_mk_mutfak",
+      "name": "📍 Mekan · mutfak",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=mekan",
+        "=mutfak"
+      ],
+      "reply": [
+        "Tezgah soğuk 😳",
+        "Yemek yanacak… boş ver 😈",
+        "Buzdolabına yaslandım 🥵",
+        "Kimse mutfakta böyle bir şey yapmadı 😂",
+        "Tabaklar şıngırdıyor 😩",
+        "Tatlı mı istiyordun? Al bakalım 😏",
+        "Mmmh… daha derin, evet 🥵",
+        "Ahhh… harikasın 😩",
+        "Ahhh evet, daha… 😩",
+        "Evet {sen}, evet… 😩",
+        "Evet, evet, eveeet 😵‍💫",
+        "Evet… evet, tam böyle 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "pozisyonda, son mekan kartına göre"
+    },
+    {
+      "id": "r_mk_yatak",
+      "name": "📍 Mekan · yatak",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=mekan",
+        "=yatak"
+      ],
+      "reply": [
+        "Yatak gıcırdıyor 😳",
+        "Yastıkları fırlat 😈",
+        "Çarşaflar dağıldı 🥵",
+        "Sabaha kadar buradayız 😏",
+        "Battaniyenin altında… ahh 😩",
+        "Yatağımız artık çok tecrübeli 😂",
+        "Off… her yerim titriyor 🥵",
+        "Ahh {sen}… mükemmelsin 😩",
+        "Ahh… sen bir harikasın 😩💗",
+        "Mmmh… daha derin, evet 🥵",
+        "Ahhh… harikasın 😩",
+        "Ahhh evet, daha… 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "pozisyonda, son mekan kartına göre"
+    },
+    {
+      "id": "r_mk_koltuk",
+      "name": "📍 Mekan · koltuk",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=mekan",
+        "=koltuk"
+      ],
+      "reply": [
+        "Koltuk dar ama yeter 😏",
+        "Televizyon açık kaldı 🙈",
+        "Kumanda altımda kaldı 😂",
+        "Kanepe bizim için yapılmış 😈",
+        "Yastığa sarıl… ya da bana 🥵",
+        "Dizi bitti, biz bitmedik 😏",
+        "Off… harikasın {sen} 🥵",
+        "Aynen böyle, ahhh 😩",
+        "Sen inledikçe ben daha çok inliyorum 😩",
+        "Off… her yerim titriyor 🥵",
+        "Ahh {sen}… mükemmelsin 😩",
+        "Ahh… sen bir harikasın 😩💗"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "pozisyonda, son mekan kartına göre"
+    },
+    {
+      "id": "r_mk_somine",
+      "name": "📍 Mekan · somine",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=mekan",
+        "=somine"
+      ],
+      "reply": [
+        "Ateşin sıcaklığı tenimde 🔥",
+        "Şöminenin ışığında çok güzelsin 🥺",
+        "Halının üstünde… ahh 😩",
+        "Odun çatırdıyor, ben de 🥵",
+        "Sıcacık, hem ateş hem sen 😈",
+        "Bayılıyorum… devam 🥵",
+        "Offf… bu çok iyi 🥵",
+        "Bir daha… ahh, bir daha 😩",
+        "Off… harikasın {sen} 🥵",
+        "Aynen böyle, ahhh 😩",
+        "Sen inledikçe ben daha çok inliyorum 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "pozisyonda, son mekan kartına göre"
+    },
+    {
+      "id": "r_mk_balkon",
+      "name": "📍 Mekan · balkon",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=mekan",
+        "=balkon"
+      ],
+      "reply": [
+        "Biri görebilir… 😳",
+        "Rüzgar tenime değiyor 🥵",
+        "Şehir ışıkları ve sen 🌃",
+        "Sessiz ol, komşular balkonda 🤫",
+        "Korkuluğa tutunuyorum 😩",
+        "Mmm evet, bunu seviyorum 😈",
+        "Off, tam istediğim gibi 😩",
+        "Ahhh, bu kadar iyi olmamalı 😵‍💫",
+        "Bayılıyorum… devam 🥵",
+        "Offf… bu çok iyi 🥵",
+        "Bir daha… ahh, bir daha 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "pozisyonda, son mekan kartına göre"
+    },
+    {
+      "id": "r_mk_sahil",
+      "name": "📍 Mekan · sahil",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=mekan",
+        "=sahil"
+      ],
+      "reply": [
+        "Kumlar her yere girecek 😂🏖️",
+        "Dalgaların sesi… ve benimki 🌊",
+        "Güneş tenimi yakıyor, sen de 🥵",
+        "Kimse yok, değil mi? 😳",
+        "Havlunun üstünde… 😈",
+        "Ahh, bacaklarım titriyor… devam 🥵",
+        "Durma {sen}… ahhh 😩",
+        "Mmmh… çok iyisin 🥵",
+        "Mmm evet, bunu seviyorum 😈",
+        "Off, tam istediğim gibi 😩",
+        "Ahhh, bu kadar iyi olmamalı 😵‍💫"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "pozisyonda, son mekan kartına göre"
+    },
+    {
+      "id": "r_mk_sinema",
+      "name": "📍 Mekan · sinema",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=mekan",
+        "=sinema"
+      ],
+      "reply": [
+        "Şşş, ön sıradakiler duyacak 🤫🎬",
+        "Filmi kim izliyor ki 😏",
+        "Patlamış mısırı devirdin 😂",
+        "Karanlık iyi, kimse görmüyor 😈",
+        "Işıklar yanmadan bitirmeliyiz 😳",
+        "Ohh… ne kadar iyi 🥵",
+        "Ben de inliyorum, duyuyor musun? 😩",
+        "Of of of… harika 😵‍💫",
+        "Ahh, bacaklarım titriyor… devam 🥵",
+        "Durma {sen}… ahhh 😩",
+        "Mmmh… çok iyisin 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "pozisyonda, son mekan kartına göre"
+    },
+    {
+      "id": "r_mk_bar",
+      "name": "📍 Mekan · bar",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=mekan",
+        "=bar"
+      ],
+      "reply": [
+        "Tuvalet kapısı kilitli mi? 😳",
+        "Müzik çok yüksek, kimse duymaz 😈",
+        "Kokteylin tadı dudaklarımda 🍸",
+        "Biri kapıyı çalıyor! Durma 🥵",
+        "Sarhoş muyum yoksa sen mi? 😵‍💫",
+        "İnliyorum… ve utanmıyorum 😈",
+        "Ooff, nasıl bu kadar iyisin? 😩",
+        "Ahhh ahhh… durma 😩",
+        "Ohh… ne kadar iyi 🥵",
+        "Ben de inliyorum, duyuyor musun? 😩",
+        "Of of of… harika 😵‍💫"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "pozisyonda, son mekan kartına göre"
+    },
+    {
+      "id": "r_mk_parti",
+      "name": "📍 Mekan · parti",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=mekan",
+        "=parti"
+      ],
+      "reply": [
+        "Herkes salonda, biz yatak odasında 😈",
+        "Ev sahibi görmesin 🙈",
+        "Müzik sesimizi bastırır 🎶",
+        "Kapıyı kilitle! 😳",
+        "Partinin en iyi kısmı bu 😏",
+        "Durma, sakın durma ahhh 😵‍💫",
+        "Çok güzel… devam et 🥺",
+        "Harikasın… harikasın… ahhh 😵‍💫",
+        "İnliyorum… ve utanmıyorum 😈",
+        "Ooff, nasıl bu kadar iyisin? 😩",
+        "Ahhh ahhh… durma 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "pozisyonda, son mekan kartına göre"
+    },
+    {
+      "id": "r_mk_kamp",
+      "name": "📍 Mekan · kamp",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=mekan",
+        "=kamp"
+      ],
+      "reply": [
+        "Çadır sallanıyor 😂⛺",
+        "Yıldızlar altında… ahh 🌌",
+        "Uyku tulumu dar ama sıcak 🥵",
+        "Böcekler bizi izliyor 🙈",
+        "Ateşin başında… 🔥",
+        "İnlememi duyuyor musun? Senin yüzünden 🥵",
+        "Hmmm… beni deli ediyorsun 😈",
+        "Ahh… seni hissetmek harika 🥵",
+        "Durma, sakın durma ahhh 😵‍💫",
+        "Çok güzel… devam et 🥺",
+        "Harikasın… harikasın… ahhh 😵‍💫"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "pozisyonda, son mekan kartına göre"
+    },
+    {
+      "id": "r_mk_vapur",
+      "name": "📍 Mekan · vapur",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=mekan",
+        "=vapur"
+      ],
+      "reply": [
+        "Martılar bile utandı 😳",
+        "Kimse bakmıyor, değil mi? 🤫",
+        "Rüzgar saçlarımı uçuruyor ⛴️",
+        "Sadece gizlice… 😏",
+        "Nefesim kesildi… devam 😵‍💫",
+        "Ahhh… beni bitiriyorsun 😩",
+        "Devam et… ahhh 🥵",
+        "İnlememi duyuyor musun? Senin yüzünden 🥵",
+        "Hmmm… beni deli ediyorsun 😈",
+        "Ahh… seni hissetmek harika 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "pozisyonda, son mekan kartına göre"
+    },
+    {
+      "id": "r_mk_ofis",
+      "name": "📍 Mekan · ofis",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=mekan",
+        "=ofis"
+      ],
+      "reply": [
+        "Masada dosyalar var 😳",
+        "Kamera var mı burada? 🙈",
+        "Mesai sonrası en güzeli 😈",
+        "Toplantı odası boş 😏",
+        "Biri gelirse \"çalışıyoruz\" deriz 😂",
+        "Böyle devam et, ahh lütfen 🥺",
+        "Mmm… beni böyle sev 😩",
+        "Tam oradan… ahhh 🥵",
+        "Nefesim kesildi… devam 😵‍💫",
+        "Ahhh… beni bitiriyorsun 😩",
+        "Devam et… ahhh 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "pozisyonda, son mekan kartına göre"
+    },
+    {
+      "id": "r_mk_kafe",
+      "name": "📍 Mekan · kafe",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=mekan",
+        "=kafe"
+      ],
+      "reply": [
+        "Masanın altından… kimse görmesin 🤫☕",
+        "Garson geliyor! Normal davran 😳",
+        "Kahvem soğudu, ben ısındım 🥵",
+        "Örtü uzun, iyi ki 😏",
+        "Evet, evet, eveeet 😵‍💫",
+        "Evet… evet, tam böyle 😩",
+        "Sesimi tutamıyorum… ahhh 🥵",
+        "Böyle devam et, ahh lütfen 🥺",
+        "Mmm… beni böyle sev 😩",
+        "Tam oradan… ahhh 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "pozisyonda, son mekan kartına göre"
+    },
+    {
+      "id": "r_mk_kabin",
+      "name": "📍 Mekan · kabin",
+      "category": "🔥 Olaylar",
+      "when": [
+        "=evt",
+        "=forward|=backward|=outercourse|=eat",
+        "=mekan",
+        "=kabin"
+      ],
+      "reply": [
+        "Kabin çok dar 😳👗",
+        "Görevli kapıyı çalarsa? 🙈",
+        "Ayna her şeyi gösteriyor 😈",
+        "Sessiz ol, yan kabin dolu 🤫",
+        "Bu elbiseyi almıyorum ama bunu hatırlayacağım 😏",
+        "Ahhh… harikasın 😩",
+        "Ahhh evet, daha… 😩",
+        "Evet {sen}, evet… 😩",
+        "Evet, evet, eveeet 😵‍💫",
+        "Evet… evet, tam böyle 😩",
+        "Sesimi tutamıyorum… ahhh 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "pozisyonda, son mekan kartına göre"
+    },
+    {
+      "id": "r_st_destek",
+      "name": "😩 Sevişirken destek",
+      "category": "📊 Durumlar",
+      "when": [
+        "=durum",
+        "=destek"
+      ],
+      "reply": [
+        "Ahhh… harikasın 😩",
+        "Devam et… ahhh 🥵",
+        "Ben de inliyorum, duyuyor musun? 😩",
+        "Off… harikasın {sen} 🥵",
+        "Evet… evet, tam böyle 😩",
+        "Durma, sakın durma ahhh 😵‍💫",
+        "Mmmh… çok iyisin 🥵",
+        "Ahh {sen}… mükemmelsin 😩",
+        "Tam oradan… ahhh 🥵",
+        "Ooff, nasıl bu kadar iyisin? 😩",
+        "Bayılıyorum… devam 🥵",
+        "Ahhh evet, daha… 😩",
+        "İnlememi duyuyor musun? Senin yüzünden 🥵",
+        "Of of of… harika 😵‍💫",
+        "Aynen böyle, ahhh 😩",
+        "Sesimi tutamıyorum… ahhh 🥵",
+        "Çok güzel… devam et 🥺",
+        "Mmm evet, bunu seviyorum 😈",
+        "Ahh… sen bir harikasın 😩💗",
+        "Nefesim kesildi… devam 😵‍💫",
+        "Ahhh ahhh… durma 😩",
+        "Offf… bu çok iyi 🥵",
+        "Evet {sen}, evet… 😩",
+        "Hmmm… beni deli ediyorsun 😈",
+        "Ahh, bacaklarım titriyor… devam 🥵",
+        "Sen inledikçe ben daha çok inliyorum 😩",
+        "Böyle devam et, ahh lütfen 🥺",
+        "Harikasın… harikasın… ahhh 😵‍💫",
+        "Off, tam istediğim gibi 😩",
+        "Mmmh… daha derin, evet 🥵",
+        "Ahhh… beni bitiriyorsun 😩",
+        "Ohh… ne kadar iyi 🥵",
+        "Bir daha… ahh, bir daha 😩",
+        "Evet, evet, eveeet 😵‍💫",
+        "Ahh… seni hissetmek harika 🥵",
+        "Durma {sen}… ahhh 😩",
+        "Off… her yerim titriyor 🥵",
+        "Mmm… beni böyle sev 😩",
+        "İnliyorum… ve utanmıyorum 😈",
+        "Ahhh, bu kadar iyi olmamalı 😵‍💫"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "sevişme anında, %40"
+    },
+    {
+      "id": "r_sx_inle",
+      "name": "Sen inliyorsun",
+      "category": "💬 Sevişirken",
+      "when": [
+        "ah-|=of|=off|=uf|=uff|=m|=mh|=mm|=mmh|=oh|ohh|hmm-|inli-|inle-",
+        "=sexnow"
+      ],
+      "reply": [
+        "Ahhh… inlemen beni çıldırtıyor 🥵",
+        "Ben de inliyorum… duyuyor musun? 😩",
+        "Sesini duymak harika, devam et 😈",
+        "Off… seninle inlemek çok güzel 🥵",
+        "Ahh evet… birlikte 😩",
+        "İnle, daha yüksek 😈",
+        "Mmmh… sesin beni ıslatıyor 🥵",
+        "Ahhh {sen}… ben de 😵‍💫",
+        "Seni böyle duymak… ahh 😩",
+        "Sesine bayılıyorum, durma 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "sevişirken senin inlemen"
+    },
+    {
+      "id": "r_sx_devam",
+      "name": "Devam et / durma",
+      "category": "💬 Sevişirken",
+      "when": [
+        "devam|durma-|=daha|=evet|aynen|=böyle|=boyle|hızlan-|hizlan-|derin-",
+        "=sexnow"
+      ],
+      "reply": [
+        "Durmuyorum… ahhh 🥵",
+        "Devam… sen de durma 😩",
+        "Evet… daha, daha 😵‍💫",
+        "İstediğin kadar… ahh 🥵",
+        "Durmam, söz… ahhh 😩",
+        "Off… tam böyle mi? 😈",
+        "Hızlanıyorum… ahh 🥵",
+        "Aynen böyle, ahhh evet 😩",
+        "Sonuna kadar, {sen} 😈",
+        "Daha derin… ahhh 😵‍💫"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_sx_harika",
+      "name": "Harikasın",
+      "category": "💬 Sevişirken",
+      "when": [
+        "harika-|mükemmel-|mukemmel-|=iyisin|=süpersin|=supersin|bayıl-|bayil-|muhteşem-|muhtesem-|=çok iyi|=cok iyi|nefis-|=güzel|=guzel",
+        "=sexnow"
+      ],
+      "reply": [
+        "Sen de harikasın… ahhh 😩",
+        "Off… sen daha harikasın 🥵",
+        "Ahh {sen}… seninle her şey harika 😩",
+        "Mmm… böyle söyleyince daha da azıyorum 😈",
+        "Harika olan sensin, devam 🥵",
+        "Ahhh… sen de mükemmelsin 😵‍💫",
+        "Bunu duymak… ahh, devam et 😩",
+        "Seninle böyleyim işte 😈💗"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_sx_ah_harika",
+      "name": "Ahh harikasın",
+      "category": "💬 Sevişirken",
+      "when": [
+        "ah-|=of|=off|=uf|=uff|=m|=mh|=mm|=mmh|=oh|ohh|hmm-|inli-|inle-",
+        "harika-|mükemmel-|mukemmel-|=iyisin|bayıl-|bayil-|=güzel|=guzel|muhteşem-",
+        "=sexnow"
+      ],
+      "reply": [
+        "Ahhh… sen de harikasın, durma 😩",
+        "Off… ikimiz de inliyoruz 🥵",
+        "Ahh evet… harikasın, harikasın 😵‍💫",
+        "Mmmh… sen inledikçe ben eriyorum 🥵",
+        "Ahhh {sen}… beni bitiriyorsun 😩",
+        "Of of… sen çok iyisin 🥵"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_sx_ah_devam",
+      "name": "Ahh devam et",
+      "category": "💬 Sevişirken",
+      "when": [
+        "ah-|=of|=off|=uf|=uff|=m|=mh|=mm|=mmh|=oh|ohh|hmm-|inli-|inle-",
+        "devam|durma-|=daha|=evet|hızlan-|hizlan-",
+        "=sexnow"
+      ],
+      "reply": [
+        "Ahhh… durmuyorum, söz 😩",
+        "Off… devam, devam 🥵",
+        "Ahh evet… istediğin gibi 😵‍💫",
+        "Mmm… daha da hızlı 😈",
+        "Ahhh {sen}… sonuna kadar 😩"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_sx_bende",
+      "name": "Ben de inliyorum / geliyorum",
+      "category": "💬 Sevişirken",
+      "when": [
+        "=ben|=bende|=ben de",
+        "inli-|inle-|geliyor-|boşal-|bosal-|titri-|eri-",
+        "=sexnow"
+      ],
+      "reply": [
+        "Birlikte… ahhh 😩",
+        "Ben de… ahh, birlikte gelelim 😵‍💫",
+        "Off… ikimiz de inliyoruz 🥵",
+        "Sesimiz birbirine karıştı… ahh 😩",
+        "Ahhh evet… benimle 🥵",
+        "Beraber… şimdi… ahhh 😵‍💫"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": ""
+    },
+    {
+      "id": "r_sx_sonra_harika",
+      "name": "Sonra: harikaydın",
+      "category": "💬 Sevişirken",
+      "when": [
+        "harika-|mükemmel-|mukemmel-|=iyisin|süper-|super-|bayıl-|bayil-|muhteşem-|=güzel|=guzel|ah-|=of|=off|=uf|=uff|=m|=mh|=mm|=mmh|=oh|ohh|hmm-|inli-|inle-",
+        "=sexsonra"
+      ],
+      "reply": [
+        "Sen de harikaydın… ahhh 😩💗",
+        "Off… hâlâ titriyorum 🥵",
+        "Mmmh… bir daha yapalım mı? 😈",
+        "Harikaydı… nefesim yerine gelmedi 😵‍💫",
+        "Ahh… sana sarılayım biraz 🥺",
+        "İnleyişin hâlâ kulaklarımda 😩",
+        "Hayatımın en güzel anlarından biriydi 💗",
+        "Mmm… doydum, ama yine isterim 😏"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "boşalma / orgazm sonrası"
+    },
+    {
+      "id": "r_q3_sutyen",
+      "name": "Sütyen giyiyor musun",
+      "category": "❓ Sorular",
+      "when": [
+        "sütyen-|sutyen-|=bra|braletin",
+        "giy-|var mı|var mi|ne renk|hangi|nasıl|nasil|tak-|=mı|=mi"
+      ],
+      "reply": [
+        "{cevap:sütyen}"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "👗 giydiği sütyen"
+    },
+    {
+      "id": "r_q3_altic",
+      "name": "Tanga / külot ne giydin",
+      "category": "❓ Sorular",
+      "when": [
+        "tanga-|=külot|külotun|külotunu|kulot-|iç çamaşır-|ic camasir-|=string|çamaşır-|camasir-",
+        "giy-|var mı|var mi|ne renk|hangi|nasıl|nasil|=mı|=mi"
+      ],
+      "reply": [
+        "{cevap:altiç}"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "👗 giydiği tanga / külot"
+    },
+    {
+      "id": "r_cmd_sutyen",
+      "name": "Sütyenini çıkar",
+      "category": "🗣️ Komutlar",
+      "when": [
+        "sütyen-|sutyen-|=bra|braletin",
+        "çıkar-|cikar-|indir-|aç-|ac-|çöz-|coz-|kopça-|kopca-"
+      ],
+      "reply": [
+        "{cevap:sütyençıkar}"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "👗 giydiği sütyenin cümlesi"
+    },
+    {
+      "id": "r_cmd_tanga",
+      "name": "Tangını çıkar",
+      "category": "🗣️ Komutlar",
+      "when": [
+        "tanga-|=külot|külotun|külotunu|kulot-|iç çamaşır-|ic camasir-|=string|çamaşır-|camasir-",
+        "çıkar-|cikar-|indir-|kenara|çek-|cek-|sıyır-|siyir-|göster-|goster-"
+      ],
+      "reply": [
+        "{cevap:tangaçıkar}"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "👗 giydiği tanganın cümlesi"
+    },
+    {
+      "id": "r_q3_giyim2",
+      "name": "Ne giydin bugün",
+      "category": "❓ Sorular",
+      "when": [
+        "üstünde|ustunde|üzerinde|uzerinde|=giydin|ne giy-|üstüne ne|kıyafet-|kiyafet-"
+      ],
+      "reply": [
+        "{cevap:kıyafet}"
+      ],
+      "traits": [],
+      "chars": [],
+      "note": "👗 üstündekiler"
     }
   ],
   "addons": [
