@@ -18,6 +18,20 @@ Stories.SYSTEM = {
    "mix": [],
    "tags": [
     "ön_sevişme"
+   ],
+   "onEffects": [
+    {
+     "p": "p:guven",
+     "d": 1
+    },
+    {
+     "p": "p:ask",
+     "d": 5
+    },
+    {
+     "p": "p:samimiyet",
+     "d": 4
+    }
    ]
   },
   {
@@ -38,7 +52,17 @@ Stories.SYSTEM = {
     "penetrasyon",
     "vajinal"
    ],
-   "base": "b:extra:Missionary"
+   "base": "b:extra:Missionary",
+   "onEffects": [
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvglz4rsqnt81",
@@ -134,7 +158,17 @@ Stories.SYSTEM = {
    "desc": "",
    "base": "b:extra:Cowgirl",
    "color": "#ff5f5f",
-   "emojis": "🔥"
+   "emojis": "🔥",
+   "onEffects": [
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgm3rau8do5q",
@@ -161,7 +195,16 @@ Stories.SYSTEM = {
    "outcomes": [],
    "subs": [],
    "sub": "",
-   "onEffects": []
+   "onEffects": [
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgm4iruwu659",
@@ -183,7 +226,17 @@ Stories.SYSTEM = {
    "desc": "",
    "base": "b:extra:Full Nelson",
    "color": "#ff5f5f",
-   "emojis": "🔥"
+   "emojis": "🔥",
+   "onEffects": [
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgm7k1qvkwtd",
@@ -205,7 +258,17 @@ Stories.SYSTEM = {
    "desc": "",
    "base": "b:extra:Doggy",
    "color": "#ff5f5f",
-   "emojis": "🔥🍑"
+   "emojis": "🔥🍑",
+   "onEffects": [
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgm83nsm79yh",
@@ -224,7 +287,21 @@ Stories.SYSTEM = {
    "tags": [],
    "desc": "",
    "color": "#ff6fa8",
-   "emojis": "💞🍑"
+   "emojis": "💞🍑",
+   "onEffects": [
+    {
+     "p": "p:guven",
+     "d": 1
+    },
+    {
+     "p": "p:ask",
+     "d": 5
+    },
+    {
+     "p": "p:samimiyet",
+     "d": 4
+    }
+   ]
   },
   {
    "id": "mvgm8lhd7fl09",
@@ -243,7 +320,21 @@ Stories.SYSTEM = {
    "tags": [],
    "desc": "",
    "color": "#ff6fa8",
-   "emojis": "💞💋"
+   "emojis": "💞💋",
+   "onEffects": [
+    {
+     "p": "p:guven",
+     "d": 1
+    },
+    {
+     "p": "p:ask",
+     "d": 5
+    },
+    {
+     "p": "p:samimiyet",
+     "d": 4
+    }
+   ]
   },
   {
    "id": "mvgm9qa6qmzyp",
@@ -265,7 +356,17 @@ Stories.SYSTEM = {
    "desc": "",
    "base": "b:extra:Anal",
    "color": "#ff8a65",
-   "emojis": "🍑"
+   "emojis": "🍑",
+   "onEffects": [
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgmad7eeli38",
@@ -286,7 +387,17 @@ Stories.SYSTEM = {
    ],
    "desc": "",
    "color": "#ff5f5f",
-   "emojis": "🍑"
+   "emojis": "🍑",
+   "onEffects": [
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgmeoej9bt44",
@@ -307,7 +418,17 @@ Stories.SYSTEM = {
    ],
    "desc": "",
    "color": "#ff5f5f",
-   "emojis": "🍑🔥"
+   "emojis": "🍑🔥",
+   "onEffects": [
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgmfjwle8osk",
@@ -326,7 +447,21 @@ Stories.SYSTEM = {
    "tags": [],
    "desc": "",
    "color": "#5f8bff",
-   "emojis": "🤩🍒"
+   "emojis": "🤩🍒",
+   "onEffects": [
+    {
+     "p": "p:guven",
+     "d": 1
+    },
+    {
+     "p": "p:ask",
+     "d": 5
+    },
+    {
+     "p": "p:samimiyet",
+     "d": 4
+    }
+   ]
   },
   {
    "id": "mvgmgauadwb9f",
@@ -345,7 +480,21 @@ Stories.SYSTEM = {
    "tags": [],
    "desc": "",
    "color": "#5f8bff",
-   "emojis": "🤩🍑"
+   "emojis": "🤩🍑",
+   "onEffects": [
+    {
+     "p": "p:guven",
+     "d": 1
+    },
+    {
+     "p": "p:ask",
+     "d": 5
+    },
+    {
+     "p": "p:samimiyet",
+     "d": 4
+    }
+   ]
   },
   {
    "id": "mvgn330iuerl9",
@@ -367,7 +516,17 @@ Stories.SYSTEM = {
    "desc": "",
    "color": "#c86bff",
    "emojis": "🔥",
-   "base": "b:extra:Footjob"
+   "base": "b:extra:Footjob",
+   "onEffects": [
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgn38xheahr0",
@@ -389,7 +548,17 @@ Stories.SYSTEM = {
    "desc": "",
    "color": "#c86bff",
    "emojis": "✋🏻",
-   "base": "b:extra:Handjob"
+   "base": "b:extra:Handjob",
+   "onEffects": [
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgn3kogq16sz",
@@ -411,7 +580,17 @@ Stories.SYSTEM = {
    "desc": "",
    "color": "#c86bff",
    "emojis": "🍒",
-   "base": "b:extra:Titfuck"
+   "base": "b:extra:Titfuck",
+   "onEffects": [
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgn3ueunf4m8",
@@ -433,7 +612,17 @@ Stories.SYSTEM = {
    "desc": "",
    "color": "#c86bff",
    "emojis": "🍑",
-   "base": "b:extra:Buttjob"
+   "base": "b:extra:Buttjob",
+   "onEffects": [
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgn435quw76j",
@@ -455,7 +644,17 @@ Stories.SYSTEM = {
    "desc": "",
    "color": "#c86bff",
    "emojis": "🔥😮",
-   "base": "b:extra:Blowjob"
+   "base": "b:extra:Blowjob",
+   "onEffects": [
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgn4n99fqpqs",
@@ -477,7 +676,17 @@ Stories.SYSTEM = {
    "desc": "",
    "color": "#c86bff",
    "emojis": "👅",
-   "base": "b:extra:69"
+   "base": "b:extra:69",
+   "onEffects": [
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgtcglt4wyr9",
@@ -499,7 +708,17 @@ Stories.SYSTEM = {
    "desc": "",
    "color": "#c86bff",
    "emojis": "😮",
-   "base": "b:extra:Oral Sex"
+   "base": "b:extra:Oral Sex",
+   "onEffects": [
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgtgk480xv5l",
@@ -528,6 +747,14 @@ Stories.SYSTEM = {
     {
      "p": "p:sehvet",
      "d": 10
+    },
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
     }
    ]
   },
@@ -551,7 +778,17 @@ Stories.SYSTEM = {
    "desc": "",
    "color": "#c86bff",
    "emojis": "🔥😮",
-   "base": "b:extra:Deepthroat"
+   "base": "b:extra:Deepthroat",
+   "onEffects": [
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgth2g0puosh",
@@ -580,6 +817,14 @@ Stories.SYSTEM = {
     {
      "p": "p:sehvet",
      "d": 10
+    },
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
     }
    ]
   },
@@ -609,6 +854,14 @@ Stories.SYSTEM = {
     {
      "p": "p:sehvet",
      "d": 10
+    },
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
     }
    ]
   },
@@ -631,7 +884,17 @@ Stories.SYSTEM = {
    ],
    "desc": "",
    "color": "#c86bff",
-   "emojis": "🍑"
+   "emojis": "🍑",
+   "onEffects": [
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgtkrq4x8uhu",
@@ -660,6 +923,14 @@ Stories.SYSTEM = {
     {
      "p": "p:sehvet",
      "d": 10
+    },
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
     }
    ]
   },
@@ -683,7 +954,17 @@ Stories.SYSTEM = {
    "desc": "",
    "color": "#c86bff",
    "emojis": "✋🏻",
-   "base": "b:extra:Masturbation"
+   "base": "b:extra:Masturbation",
+   "onEffects": [
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgtr1ypdfvys",
@@ -704,7 +985,17 @@ Stories.SYSTEM = {
    ],
    "desc": "",
    "color": "#ff5f5f",
-   "emojis": "🔥"
+   "emojis": "🔥",
+   "onEffects": [
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgtrdjc30zsd",
@@ -725,7 +1016,17 @@ Stories.SYSTEM = {
    ],
    "desc": "",
    "color": "#ff8a65",
-   "emojis": "🍑"
+   "emojis": "🍑",
+   "onEffects": [
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgtrthg45zj1",
@@ -746,7 +1047,17 @@ Stories.SYSTEM = {
    ],
    "desc": "",
    "color": "#ff5f5f",
-   "emojis": "🔥"
+   "emojis": "🔥",
+   "onEffects": [
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgttvgx6g7ss",
@@ -767,7 +1078,17 @@ Stories.SYSTEM = {
    ],
    "desc": "",
    "color": "#ff5f5f",
-   "emojis": "🍑"
+   "emojis": "🍑",
+   "onEffects": [
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgtvhpg1479j",
@@ -788,7 +1109,17 @@ Stories.SYSTEM = {
    ],
    "desc": "",
    "color": "#ff5f5f",
-   "emojis": "🔥"
+   "emojis": "🔥",
+   "onEffects": [
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgtw38q47zl0",
@@ -807,7 +1138,21 @@ Stories.SYSTEM = {
    "tags": [],
    "desc": "",
    "color": "#ff5f5f",
-   "emojis": "💞🔥"
+   "emojis": "💞🔥",
+   "onEffects": [
+    {
+     "p": "p:guven",
+     "d": 1
+    },
+    {
+     "p": "p:ask",
+     "d": 5
+    },
+    {
+     "p": "p:samimiyet",
+     "d": 4
+    }
+   ]
   },
   {
    "id": "mvgu0061fziue",
@@ -828,7 +1173,17 @@ Stories.SYSTEM = {
    ],
    "desc": "",
    "color": "#c86bff",
-   "emojis": "🍒"
+   "emojis": "🍒",
+   "onEffects": [
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
+    }
+   ]
   },
   {
    "id": "mvgu4y0tl5jpn",
@@ -1046,9 +1401,59 @@ Stories.SYSTEM = {
    "color": "#ff5f5f",
    "emojis": "🔥",
    "level": "",
-   "outcomes": [],
+   "outcomes": [
+    {
+     "id": "mvl37yxxqrikr",
+     "text": "{ben} seni durdurdu, biraz daha biriktiriyorsun 😈",
+     "pct": 55,
+     "next": "",
+     "effects": [
+      {
+       "p": "p:umvjoe339asss4",
+       "d": -20
+      },
+      {
+       "p": "p:umvjof3wzh5hej",
+       "d": 10
+      }
+     ]
+    },
+    {
+     "id": "mvl37yxxqlbfk",
+     "text": "Son anda tuttun, dölün birikiyor 💦",
+     "pct": 25,
+     "next": "",
+     "effects": [
+      {
+       "p": "p:umvjoe339asss4",
+       "d": -30
+      },
+      {
+       "p": "p:umvjof3wzh5hej",
+       "d": 15
+      },
+      {
+       "p": "p:umvjy7ucpiosps",
+       "d": -1
+      }
+     ]
+    },
+    {
+     "id": "mvl37yxxa3pmm",
+     "text": "Tutamadın… 😩",
+     "pct": 20,
+     "next": "",
+     "effects": [
+      {
+       "p": "p:umvjoe339asss4",
+       "d": 100
+      }
+     ]
+    }
+   ],
    "subs": [],
-   "sub": ""
+   "sub": "",
+   "onEffects": []
   },
   {
    "id": "mvgv5570hd9os",
@@ -1285,7 +1690,58 @@ Stories.SYSTEM = {
    "tags": [],
    "desc": "",
    "color": "#ff5f5f",
-   "emojis": "🔥💦"
+   "emojis": "🔥💦",
+   "outcomes": [
+    {
+     "id": "mvl37yxx0f0df",
+     "text": "Halka seni tutuyor, boşalamıyorsun 😈",
+     "pct": 60,
+     "next": "",
+     "effects": [
+      {
+       "p": "p:umvjoe339asss4",
+       "d": -25
+      },
+      {
+       "p": "p:umvjof3wzh5hej",
+       "d": 15
+      }
+     ]
+    },
+    {
+     "id": "mvl37yxxyrq6c",
+     "text": "Halka sıkıyor, her şey içinde birikiyor 💦",
+     "pct": 30,
+     "next": "",
+     "effects": [
+      {
+       "p": "p:umvjoe339asss4",
+       "d": -20
+      },
+      {
+       "p": "p:umvjof3wzh5hej",
+       "d": 20
+      },
+      {
+       "p": "p:umvjy7ucpiosps",
+       "d": -1
+      }
+     ]
+    },
+    {
+     "id": "mvl37yxxfh286",
+     "text": "Halkaya rağmen taştın… 😩",
+     "pct": 10,
+     "next": "",
+     "effects": [
+      {
+       "p": "p:umvjoe339asss4",
+       "d": 100
+      }
+     ]
+    }
+   ],
+   "onEffects": []
   },
   {
    "id": "mvgvl5soiuah0",
@@ -1306,9 +1762,63 @@ Stories.SYSTEM = {
    "color": "#ff5f5f",
    "emojis": "🔥🥵",
    "level": "",
-   "outcomes": [],
+   "outcomes": [
+    {
+     "id": "mvl37yxxu1jms",
+     "text": "{ben} seni sıkıca tuttu; geri çekildin, birikiyor 😈",
+     "pct": 50,
+     "next": "",
+     "effects": [
+      {
+       "p": "p:umvjoe339asss4",
+       "d": -35
+      },
+      {
+       "p": "p:umvjof3wzh5hej",
+       "d": 20
+      },
+      {
+       "p": "p:umvjy7ucpiosps",
+       "d": -1
+      }
+     ]
+    },
+    {
+     "id": "mvl37yxxy84rv",
+     "text": "Zor tuttun ama tuttun, döl yoğunlaşıyor 🥵",
+     "pct": 35,
+     "next": "",
+     "effects": [
+      {
+       "p": "p:umvjoe339asss4",
+       "d": -30
+      },
+      {
+       "p": "p:umvjof3wzh5hej",
+       "d": 25
+      },
+      {
+       "p": "p:umvjy7ucpiosps",
+       "d": -1
+      }
+     ]
+    },
+    {
+     "id": "mvl37yxxw3l79",
+     "text": "Bu kadar sıkıya dayanamadın… 😩",
+     "pct": 15,
+     "next": "",
+     "effects": [
+      {
+       "p": "p:umvjoe339asss4",
+       "d": 100
+      }
+     ]
+    }
+   ],
    "subs": [],
-   "sub": ""
+   "sub": "",
+   "onEffects": []
   },
   {
    "id": "mvgvt82i4vp08",
@@ -2071,8 +2581,184 @@ Stories.SYSTEM = {
     {
      "p": "p:umvjzd17h5twc2",
      "d": -30
+    },
+    {
+     "p": "p:ask",
+     "d": 5
+    },
+    {
+     "p": "p:guven",
+     "d": 2
     }
    ]
+  },
+  {
+   "id": "mvl2lpjnq7amv",
+   "title": "Patron – Sekreter",
+   "cat": "c:mvgwj75108lqd",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [
+    "roleplay"
+   ],
+   "desc": "Ofiste, mesai sonrası: o sekreter, sen patron",
+   "color": "#5c6bc0",
+   "emojis": "💼"
+  },
+  {
+   "id": "mvl2lpjn6v2mt",
+   "title": "Hoca – Öğrenci (Üniversite)",
+   "cat": "c:mvgwj75108lqd",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [
+    "roleplay"
+   ],
+   "desc": "Kampüste, ofis saatinde: o öğrenci, sen hoca",
+   "color": "#8d6e63",
+   "emojis": "🎓"
+  },
+  {
+   "id": "mvl2lpjnc3qqq",
+   "title": "Doktor – Hasta",
+   "cat": "c:mvgwj75108lqd",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [
+    "roleplay"
+   ],
+   "desc": "Muayenehanede: o hasta, sen doktor",
+   "color": "#26a69a",
+   "emojis": "🩺"
+  },
+  {
+   "id": "mvl2lpjo0qq34",
+   "title": "Polis – Şüpheli",
+   "cat": "c:mvgwj75108lqd",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [
+    "roleplay"
+   ],
+   "desc": "Sorgu odasında: o şüpheli, sen polis",
+   "color": "#1e88e5",
+   "emojis": "🚓"
+  },
+  {
+   "id": "mvl2lpjoqun3d",
+   "title": "Yeni Komşu",
+   "cat": "c:mvgwj75108lqd",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [
+    "roleplay"
+   ],
+   "desc": "Kapıya şeker istemeye gelen yeni komşu",
+   "color": "#ef6c00",
+   "emojis": "🏠"
+  },
+  {
+   "id": "mvl2lpjoxd74l",
+   "title": "Hizmetçi – Ev Sahibi",
+   "cat": "c:mvgwj75108lqd",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [
+    "roleplay"
+   ],
+   "desc": "O hizmetçi, sen ev sahibi",
+   "color": "#6d4c41",
+   "emojis": "🧹"
+  },
+  {
+   "id": "mvl2lpjo41a5w",
+   "title": "Masöz – Müşteri",
+   "cat": "c:mvgwj75108lqd",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [
+    "roleplay"
+   ],
+   "desc": "Masaj salonunda: o masöz, sen müşteri",
+   "color": "#ab47bc",
+   "emojis": "💆"
+  },
+  {
+   "id": "mvl2lpjo2n7z5",
+   "title": "Kadın Hoca – Öğrenci (Üniversite)",
+   "cat": "c:mvgwj75108lqd",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [
+    "roleplay"
+   ],
+   "desc": "Kampüste, ofis saatinde: o hoca, sen öğrenci",
+   "color": "#7e57c2",
+   "emojis": "👩‍🏫"
   }
  ],
  "places": [],
@@ -2284,7 +2970,8 @@ Stories.SYSTEM = {
    "kalça",
    "el",
    "boşalma",
-   "orgazm"
+   "orgazm",
+   "roleplay"
   ]
  },
  "cats": [
@@ -2492,6 +3179,14 @@ Stories.SYSTEM = {
    "min": 0,
    "max": 100,
    "start": 30
+  },
+  {
+   "id": "umvl2lpjpbiqzo",
+   "icon": "😣",
+   "label": "Acı",
+   "min": 0,
+   "max": 100,
+   "start": 0
   }
  ],
  "triggers": [
@@ -2572,6 +3267,54 @@ Stories.SYSTEM = {
   }
  ],
  "sharedOuts": [
+  {
+   "id": "mvl2lpjl6tdav",
+   "title": "Foreplay ısınma",
+   "evs": [
+    "mvgkvtgs4970g",
+    "mvgm83nsm79yh",
+    "mvgm8lhd7fl09",
+    "mvgmfjwle8osk",
+    "mvgmgauadwb9f",
+    "mvgtw38q47zl0"
+   ],
+   "ctags": [],
+   "outs": [
+    {
+     "id": "mvl2lpjlrd1t8",
+     "text": "",
+     "pct": 60,
+     "effects": [
+      {
+       "p": "p:umvjoe339asss4",
+       "d": 1
+      }
+     ]
+    },
+    {
+     "id": "mvl2lpjlko2se",
+     "text": "",
+     "pct": 30,
+     "effects": [
+      {
+       "p": "p:umvjoe339asss4",
+       "d": 2
+      }
+     ]
+    },
+    {
+     "id": "mvl2lpjlnlu7x",
+     "text": "",
+     "pct": 10,
+     "effects": [
+      {
+       "p": "p:umvjoe339asss4",
+       "d": 3
+      }
+     ]
+    }
+   ]
+  },
   {
    "id": "mvjv3iiyvtlef",
    "title": "Cumming",
@@ -2760,6 +3503,22 @@ Stories.SYSTEM = {
     "to": "00:00",
     "p": "p:sehvet",
     "d": -5
+   },
+   {
+    "id": "mvl2lpjhaye4g",
+    "every": "hour",
+    "from": "00:00",
+    "to": "00:00",
+    "p": "p:kiskanclik",
+    "d": -2
+   },
+   {
+    "id": "mvl2lpjp2d1v5",
+    "every": "hour",
+    "from": "00:00",
+    "to": "00:00",
+    "p": "p:umvl2lpjpbiqzo",
+    "d": -10
    }
   ]
  },
@@ -2893,5 +3652,885 @@ Stories.SYSTEM = {
     }
    ]
   }
- ]
+ ],
+ "botOuts": {
+  "r_seni_seviyorum": [
+   {
+    "id": "mvl2lpjt84up0",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 3
+     }
+    ]
+   }
+  ],
+  "r_seviyorum_seni": [
+   {
+    "id": "mvl2lpjt6w7n8",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 3
+     }
+    ]
+   }
+  ],
+  "r_seni_seviyorum_soguk": [
+   {
+    "id": "mvl2lpjtonkjz",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 3
+     }
+    ]
+   }
+  ],
+  "r_ozledim": [
+   {
+    "id": "mvl2lpjtknodf",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp": [
+   {
+    "id": "mvl2lpjt2rqna",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_utangaç": [
+   {
+    "id": "mvl2lpjtnytpr",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_soğuk": [
+   {
+    "id": "mvl2lpjts6xg0",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_kibirli": [
+   {
+    "id": "mvl2lpjtvquik",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_romantik": [
+   {
+    "id": "mvl2lpjtsrs5n",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_alaycı": [
+   {
+    "id": "mvl2lpjtl13bw",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_duygusal": [
+   {
+    "id": "mvl2lpjtt6cdw",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_flörtöz": [
+   {
+    "id": "mvl2lpjtuvrjx",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_şımarık": [
+   {
+    "id": "mvl2lpjtvp8uz",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_çocuksu": [
+   {
+    "id": "mvl2lpjtn9uz5",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_güvensiz": [
+   {
+    "id": "mvl2lpjtt59c4",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_love_romantik": [
+   {
+    "id": "mvl2lpjtylm7o",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 3
+     }
+    ]
+   }
+  ],
+  "r_love_utangaç": [
+   {
+    "id": "mvl2lpjt70hlw",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 3
+     }
+    ]
+   }
+  ],
+  "r_love_duygusal": [
+   {
+    "id": "mvl2lpjtqntp9",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 3
+     }
+    ]
+   }
+  ],
+  "r_love_kibirli": [
+   {
+    "id": "mvl2lpjtebyuz",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 3
+     }
+    ]
+   }
+  ],
+  "r_love_flörtöz": [
+   {
+    "id": "mvl2lpjtgwmht",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 3
+     }
+    ]
+   }
+  ],
+  "r_love_çocuksu": [
+   {
+    "id": "mvl2lpjt19lrz",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 3
+     }
+    ]
+   }
+  ],
+  "r_rude": [
+   {
+    "id": "mvl2lpjtfougb",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:guven",
+      "d": -3
+     },
+     {
+      "p": "p:ask",
+      "d": -1
+     }
+    ]
+   }
+  ],
+  "r_rude_duygusal": [
+   {
+    "id": "mvl2lpjtra670",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:guven",
+      "d": -3
+     },
+     {
+      "p": "p:ask",
+      "d": -1
+     }
+    ]
+   }
+  ],
+  "r_rude_asi": [
+   {
+    "id": "mvl2lpjthgjmv",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:guven",
+      "d": -3
+     },
+     {
+      "p": "p:ask",
+      "d": -1
+     }
+    ]
+   }
+  ],
+  "r_rude_kibirli": [
+   {
+    "id": "mvl2lpjtydxek",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:guven",
+      "d": -3
+     },
+     {
+      "p": "p:ask",
+      "d": -1
+     }
+    ]
+   }
+  ],
+  "r_rude_soğuk": [
+   {
+    "id": "mvl2lpjtvqqvx",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:guven",
+      "d": -3
+     },
+     {
+      "p": "p:ask",
+      "d": -1
+     }
+    ]
+   }
+  ],
+  "r_rude_utangaç": [
+   {
+    "id": "mvl2lpjt7eu70",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:guven",
+      "d": -3
+     },
+     {
+      "p": "p:ask",
+      "d": -1
+     }
+    ]
+   }
+  ],
+  "r_rude_alaycı": [
+   {
+    "id": "mvl2lpjth5egl",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:guven",
+      "d": -3
+     },
+     {
+      "p": "p:ask",
+      "d": -1
+     }
+    ]
+   }
+  ],
+  "r_ans_k_sevgi_evet": [
+   {
+    "id": "mvl2lpjtczkub",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 3
+     }
+    ]
+   }
+  ],
+  "r_ans_k_sevgi_hayir": [
+   {
+    "id": "mvl2lpjtex0mc",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": -3
+     },
+     {
+      "p": "p:guven",
+      "d": -1
+     }
+    ]
+   }
+  ],
+  "r_cmp_yer_meme": [
+   {
+    "id": "mvl2lpjttz5l4",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_yer_meme_0": [
+   {
+    "id": "mvl2lpjtm4gq6",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_yer_meme_1": [
+   {
+    "id": "mvl2lpjt9x6ym",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_yer_agiz": [
+   {
+    "id": "mvl2lpjtas8a1",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_yer_agiz_0": [
+   {
+    "id": "mvl2lpjtbxwok",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_yer_got": [
+   {
+    "id": "mvl2lpjtgnhon",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_yer_got_0": [
+   {
+    "id": "mvl2lpjt7m2re",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_yer_got_1": [
+   {
+    "id": "mvl2lpjthpicu",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_yer_boyun": [
+   {
+    "id": "mvl2lpjtfvxpb",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_yer_yanak": [
+   {
+    "id": "mvl2lpjttk7mg",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_yer_bacak": [
+   {
+    "id": "mvl2lpjtyzeqd",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_yer_ayak": [
+   {
+    "id": "mvl2lpjtyl74o",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_yer_am": [
+   {
+    "id": "mvl2lpjtty97u",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_yer_am_0": [
+   {
+    "id": "mvl2lpjt9xhhp",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_yer_karin": [
+   {
+    "id": "mvl2lpjtu7g3f",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_yer_seni": [
+   {
+    "id": "mvl2lpjtx2wkx",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_yer_her": [
+   {
+    "id": "mvl2lpjtgeoba",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_yer_pk_utangaç": [
+   {
+    "id": "mvl2lpjtdkyon",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_yer_pk_kibirli": [
+   {
+    "id": "mvl2lpjtin6i5",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_yer_pk_soğuk": [
+   {
+    "id": "mvl2lpjtkaqmy",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_yer_pk_romantik": [
+   {
+    "id": "mvl2lpjto489f",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_yer_pk_çocuksu": [
+   {
+    "id": "mvl2lpjt730in",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_yer_pk_asi": [
+   {
+    "id": "mvl2lpjt2ga2b",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ],
+  "r_cmp_yer_pk_flörtöz": [
+   {
+    "id": "mvl2lpjtdpfsj",
+    "text": "",
+    "pct": 100,
+    "effects": [
+     {
+      "p": "p:ask",
+      "d": 2
+     },
+     {
+      "p": "p:samimiyet",
+      "d": 1
+     }
+    ]
+   }
+  ]
+ }
 };
