@@ -34,7 +34,7 @@ html[data-theme="dark"] .sy-hero, html[data-theme="dark"] .sy-go { background: #
 .theme-pick button { flex: 1; padding: 10px 8px; border-radius: 12px; background: var(--chip); color: var(--text); font-weight: 700; font-size: 14px; border: 2px solid transparent; }
 .theme-pick button.on { border-color: var(--purple); background: var(--purple-soft); }
 
-/* ---------- üretilen karşılıklar (450 bildirim) ---------- */
+/* ---------- üretilen karşılıklar (458 bildirim) ---------- */
 html[data-theme="dark"] .splash { background: #181c2e; }
 html[data-theme="dark"] .nav { background: rgba(24, 28, 46, 0.96); }
 html[data-theme="dark"] .badge-count { border: 2px solid #2c3150; }
@@ -316,6 +316,14 @@ html[data-theme="dark"] .hl-go { background: #181c2e; }
 html[data-theme="dark"] .cm-tabs button.on { color: #e9ebf5; }
 html[data-theme="dark"] .cm-badge.vip { color: #e9ebf5; }
 html[data-theme="dark"] .cm-ct b i { color: #e9ebf5; }
+html[data-theme="dark"] .ig-sbars i.done { background: #181c2e; }
+html[data-theme="dark"] .ig-sbars i.run::after { background: #181c2e; }
+html[data-theme="dark"] .ig-stk { background: rgba(24, 28, 46, 0.92); color: #e9ebf5; }
+html[data-theme="dark"] .ig-srep input { border: 1px solid #2c3150; }
+html[data-theme="dark"] .fx-studio { color: #f39095; }
+html[data-theme="dark"] .cf-write textarea { border: 1px solid #2c3150; }
+html[data-theme="dark"] .cf-wr select,
+html[data-theme="dark"] .cf-wr input { border: 1px solid #2c3150; }
 html[data-theme="dark"] .net-flix b i { color: #f39095; }
 html[data-theme="dark"] .fx-play { background: #181c2e; color: #e9ebf5; }
 html[data-theme="dark"] .fx-top > b { color: #e9ebf5; }
