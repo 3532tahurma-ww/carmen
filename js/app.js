@@ -2802,10 +2802,26 @@
       r: { good: ['Belki vardır… belki 😏', 'Cüretkârsın, hoşuma gitti 😈', 'Dikkat et, alışırım 😘'], meh: ['Acele etme bence 🙂', 'Hmm… göreceğiz.'], bad: ['Biraz fazla hızlısın.', 'Bu repliklerle olmaz 😒'] } },
     { k: 'brag', ic: '💸', t: 'Hava at', tone: 'kibir', g: 6, me: ['Arabam kapıda, istersen bir tur atarız 😎', 'Bu kulübün sahibini tanırım', 'VIP locada masam var, gel'],
       r: { good: ['VIP loca mı? Göster bakalım 😍', 'Etkileyici 😏'], meh: ['İyi, güzel.', 'Hı hı.'], bad: ['Paranla değil, kendinle ilgilen.', 'Gösteriş yapanlardan hoşlanmam.'] } },
-    { k: 'touch', ic: '🤚', t: 'Beline dokun', tone: 'kaba', g: 14, need: 40, me: ['(Elini yavaşça beline koyarsın)', '(Saçını kulağının arkasına atarsın)', '(Dans ederken onu kendine çekersin)'],
-      r: { good: ['(Geri çekilmez, sana daha çok yaklaşır) 😳', 'Ellerin sıcakmış… 😏', '(Kulağına) bırakma… 🔥'], meh: ['(Hafifçe gülümser ama elini çeker)', 'Yavaş ol 🙂'], bad: ['Ellerini çek lütfen!', 'Ne yaptığını sanıyorsun? 😠'] } },
-    { k: 'crude', ic: '😈', t: 'Açık konuş', tone: 'kaba', g: 16, need: 55, me: ['Açık konuşayım: seni şu an çok istiyorum', 'Bu elbisenin altında ne var merak ediyorum 😈', 'Bu gece seninle sabahlamak istiyorum'],
-      r: { good: ['Ben de… ama bunu yüksek sesle söyleme 😈', 'Merak ediyorsan… belki görürsün 😏', '(Dudağını ısırır) öyle mi? 🔥'], meh: ['Vay… dobrasın.', 'Biraz yavaş, daha gece başı 😅'], bad: ['İğrençsin.', 'Benimle böyle konuşamazsın! 😡'] } }
+    { k: 'touch', ic: '🤚', t: 'Beline dokun', tone: 'kaba', g: 14, need: 40,
+      me: ['(Elini yavaşça beline koyarsın)', '(Saçını kulağının arkasına atarsın)', '(Dans ederken onu kendine çekersin)', '(Parmaklarını sırtında yavaşça gezdirirsin)', '(Arkasından sarılıp kalçasına yaslanırsın)',
+        '(Elini tutup parmaklarınızı kenetlersin)', '(Kulağına eğilip nefesini boynuna değdirirsin)', '(Bacağına hafifçe dokunursun)', '(Belinden tutup müziğe göre sallarsın)', '(Çenesini tutup yüzünü kendine çevirirsin)'],
+      r: { good: ['(Geri çekilmez, sana daha çok yaklaşır) 😳', 'Ellerin sıcakmış… 😏', '(Kulağına) bırakma… 🔥', '(Kalçasını sana doğru bastırır) böyle mi? 😈', '(Gözlerini kapatıp başını omzuna yaslar) 🥴',
+          'Biraz daha aşağı… şaka şaka 😏', '(Tüyleri diken diken olur) dur, herkes bakıyor… ama durma 🙈', '(Elini alıp kendi beline daha sıkı koyar) 🔥', 'Bu gece cesursun… hoşuma gitti 😘', '(Boynunu sana açar, gülümser) devam…',
+          '(Parmaklarıyla senin göğsünde daire çizer) sıra bende 😏', 'Ellerinden kurtulmak istemiyorum ki 🥵'],
+        meh: ['(Hafifçe gülümser ama elini çeker)', 'Yavaş ol 🙂', 'Henüz o kadar tanımıyoruz 😅', '(Elini beline değil, eline alır) şimdilik böyle 🙂', 'Hmm… bir şarkı daha, sonra bakarız 😏',
+          '(Bir adım geri çekilir, ama gülümsüyor)', 'Elin hızlı, dilin yavaş 😄', 'Dans ederken olur, başka yerde değil 🙃'],
+        bad: ['Ellerini çek lütfen!', 'Ne yaptığını sanıyorsun? 😠', '(Elini sertçe iter) dokunma bana!', 'Güvenliği mi çağırayım?', 'Seni tanımıyorum bile! 😡', '(Elindeki içkiyi üstüne döker) 🍸😤',
+          'Bir daha dokunursan tokadı yersin.', 'Ayy, hiç hoş değil. Uzak dur.'] } },
+    { k: 'crude', ic: '😈', t: 'Açık konuş', tone: 'kaba', g: 16, need: 55,
+      me: ['Açık konuşayım: seni şu an çok istiyorum', 'Bu elbisenin altında ne var merak ediyorum 😈', 'Bu gece seninle sabahlamak istiyorum', 'Bütün gece seni nasıl soyacağımı düşündüm', 'Dudaklarını tatmak istiyorum, hem de şimdi',
+        'Seni duvara yaslayıp öpmek istiyorum', 'Sesini yatakta duymak istiyorum 😏', 'Tuvalette beş dakika… ne dersin? 😈', 'Altına bir şey giydin mi yoksa? 👀', 'Bu gece seni yorgun düşürmek istiyorum'],
+      r: { good: ['Ben de… ama bunu yüksek sesle söyleme 😈', 'Merak ediyorsan… belki görürsün 😏', '(Dudağını ısırır) öyle mi? 🔥', 'Giymedim. Şimdi ne yapacaksın? 😈', 'Sus… yoksa burada kendimi tutamam 🥵',
+          'Ben de seni düşünüyordum, itiraf ediyorum 🙈', '(Kulağına) sesimi duymak için sabretmen lazım… ama değecek 😏', 'Duvar mı? Ben yatağı tercih ederim 😘', 'Beni yorgun düşürmek mi? Önce sen dayan bakalım 😈',
+          'Bu kadar dobra olman hoşuma gitti 🔥', '(Bacağını bacağına sürter) devam et, dinliyorum 😏', 'Beş dakika az gelir bana 😈'],
+        meh: ['Vay… dobrasın.', 'Biraz yavaş, daha gece başı 😅', 'Hmm, önce bir içki daha 😏', 'Söylemesi kolay… göreceğiz 🙂', 'Yüzün kızarmadan bunu nasıl söyledin? 😄',
+          'Bu kadar acele etme, gece uzun 🙃', 'İlginç bir teklif… düşüneceğim 😏', 'Tuvalet mi? Hiç romantik değil 😅'],
+        bad: ['İğrençsin.', 'Benimle böyle konuşamazsın! 😡', 'Ne sandın beni sen?', 'Kaba ve sıkıcı. Hoşça kal.', '(Yüzüne şaşkınca bakar) ciddi misin? Hayır.', 'Bunu her kıza mı söylüyorsun? Çok ucuz.',
+          '(Arkadaşına döner) kızlar, gidiyoruz.', 'Terbiyesiz! 😠'] } }
   ];
   // kişilik → ton çarpanı (yoksa 1; eksi = ters teper)
   const PT_PERS = {
@@ -2826,6 +2842,110 @@
   const PT_GREET = ['Evime hoş geldin 😏 ayakkabılarını çıkarabilirsin…', 'Kusura bakma biraz dağınık… bir içki daha ister misin? 🍷', 'Sonunda yalnızız… partide bütün gece sana bakıyordum 😈', 'Müziği açayım mı, yoksa sessizlik mi? 😏'];
   const PT_VENUES = ['Neon Club', 'Velvet Lounge', 'Sky Roof', 'Red Room', 'Bass Hall', 'Moonlight Terrace', 'Club Carmen'];
   const PT_TALK = ['🎶', '💃', '🍸', '😂', '💬', '🥂', '✨', '😏'];
+  // ➕ her teklifin cümlelerine ve cevap havuzlarına ek satırlar (PT_ACTS'e eklenir)
+  const PT_MORE = {
+    hi: {
+      me: ['Selam, seni buralarda ilk kez görüyorum', 'İyi akşamlar, adın ne?', 'Hey, bu gece çok güzel görünüyorsun', 'Selam, biraz yanında durabilir miyim?', 'Merhaba, kalabalıktan kaçtım, sen de mi?',
+        'Selam! Kulübün en iyi köşesini sen kapmışsın', 'Hey, bir dakikan var mı?', 'Selam, ben de yalnızım, tanışalım mı?', 'İyi geceler… yani daha başlıyor 🙂', 'Selam, gülüşün dikkatimi çekti'],
+      good: ['Selam! Ben de sıkılmıştım, iyi ki geldin 😊', 'Hey 👋 otur, yer var', 'Merhaba, tatlı bir girişti bu 😄', 'Selam yabancı 😏', 'Ooo, sonunda cesur biri 😊',
+        'Merhaba! Adım sende kalsın, önce sen söyle 😉', 'Selam 🥰 bu gece şanslı gecem galiba', 'Hey! Dans edenleri izliyordum, katıl bana', 'Selam, sesin hoşmuş 😊', 'İyi akşamlar beyefendi 😄'],
+      meh: ['Hı, selam.', 'Merhaba… sen kimsin?', 'Selam, ama müzik çok yüksek.', 'Hey.', 'Selam… arkadaşım tuvalette.',
+        'Merhaba, bir şey mi istedin?', 'Selam, buralı mısın?', 'Hı hı, selam.', 'Merhaba… neyse.', 'Selam, hızlı ol.'],
+      bad: ['Rahatsız etme lütfen.', 'Tanışmak istemiyorum.', 'Sevgilim birazdan gelir.', 'Hayır, teşekkürler.', 'Başka birini bul.',
+        'Ben konuşmaya gelmedim.', '(Seni duymamış gibi yapar)', 'Uzak durur musun?', 'Of, yine mi biri…', 'Lütfen git.'] },
+    drink: {
+      me: ['Ne içiyorsun? Aynısından iki tane söyleyeyim', 'Bu gece benden, ne istersen', 'Kokteyl mi, şarap mı?', 'Shot atalım mı? 🥃', 'Şampanya açtırayım mı? 🍾',
+        'Barın en pahalı kokteyli senin için', 'Sana özel bir içki ısmarlamak istiyorum', 'Susamış görünüyorsun, ne alırsın?', 'Bir kadeh şarap eşlik eder mi sohbetimize?', 'Barmen tanıdık, sıra beklemeyiz 😎'],
+      good: ['Şampanya mı? Beni şımartıyorsun 🍾', 'Shot! Ama sen de içeceksin 🥃😈', 'Mojito lütfen, nanesi bol 🍃', 'Sen ne içersen ben de onu 😏', 'Kırmızı şarap… gecenin rengi 🍷',
+        'Şerefe! Tanıştığımıza 🥂', 'Bu kadar centilmen olunca reddedemem 😊', 'Tamam ama bir sonraki benden 😉', 'Ooo, barmeni tanıyorsun demek 😄', 'İçki gelsin, sohbet uzasın 💃'],
+      meh: ['Su yeter, teşekkürler.', 'Bir tane, sonra yetecek.', 'Olur… alkolsüz olsun.', 'Peki, ama hemen gitmiyorum.', 'Teşekkürler, sağ ol.',
+        'Hmm, bir bira olsun.', 'İçki güzel ama sohbet daha önemli.', 'Pekâlâ.', 'Tamam, bir kadeh.', 'Neden olmasın.'],
+      bad: ['İçmiyorum.', 'Bardağıma bir şey koymanı istemem.', 'Paran sende kalsın.', 'Beni sarhoş etmeye mi çalışıyorsun?', 'Gerek yok, teşekkürler.',
+        'Kendi bardağımı kendim tutarım.', 'İçki ısmarlayınca her şey olur sanıyorsun.', 'Hayır.', 'İçkini başkasına ısmarla.', 'Bu numara eski.'] },
+    compl: {
+      me: ['Kokun aklımı başımdan aldı', 'Bu salondaki en zarif kadın sensin', 'Dans edişin büyüleyici', 'Sesin çok güzel', 'Gözlerin bu ışıkta parlıyor',
+        'Seni görünce müziği duymaz oldum', 'Ellerin çok zarif', 'Saçların harika olmuş', 'Seninle konuşmak bile güzel', 'Bu gecenin yıldızı sensin ⭐'],
+      good: ['Durr, utandırma beni 🙈', 'Sen de fena sayılmazsın 😏', 'Bu gece bunu duymaya ihtiyacım vardı 💕', 'Dur, kalbim hızlandı 🥰', 'Tatlı dilli birisin 😊',
+        'Sana inanmak istiyorum 💗', '(Gülümser, saçıyla oynar) teşekkürler 🥰', 'Kokum mu? Senin için sürdüm belki 😏', 'Ay, yanaklarım yanıyor 😳', 'İltifat etmeyi biliyorsun 😘'],
+      meh: ['Hı, sağ ol.', 'Herkes öyle diyor.', 'Peki.', 'Biraz abarttın.', 'Bilmem… olabilir.',
+        'Teşekkür ederim, sanırım.', 'Bunu kaç kişiye söyledin bu gece?', 'Hmm.', 'Sadece güzel mi?', 'Klasik ama tatlı.'],
+      bad: ['Yalakalık yapma.', 'Bunlar beni etkilemez.', 'Çok ucuz bir iltifat.', 'Ezber cümleler…', 'Bunu bir de aynaya söyle.',
+        'Gerçekten mi? Hiç orijinal değil.', 'Lafla peynir gemisi yürümez.', 'Abartma.', 'Rahatsız edici.', 'Gözlerime değil, yüzüme bak.'] },
+    joke: {
+      me: ['Buranın içkileri de benim espri gibi, zayıf 😂', 'DJ\'e şarkı istedim, kendi hayatını çaldı', 'Ben de partilerin efsanesiyim, evde 😅', 'Bu ışıklar altında herkes güzel, ben hariç', 'Dans adımlarımı sigortalattım',
+        'Burada tanıştık diye düğünü de burada mı yaparız? 😄', 'İçki fiyatlarını görünce ayıldım', 'Senin için en iyi dansımı yapacağım: yerimde sallanmak', 'Bu müzikte konuşmak, dalgıçla sohbet gibi', 'Bir espri biliyorum ama sonu yok 😂'],
+      good: ['Ahahah, dur nefesim kesildi 🤣', 'Sen bir tanesin 😂', 'Hahaha, tamam bu iyiydi', 'Gülmekten makyajım aktı 😂', 'Bir tane daha anlat! 😄',
+        'Ben de dans edemem, iki kötü dansçı olalım 😂', 'Komik adamlar en tehlikelisi 😏', 'Bu geceyi kurtardın 😂', 'Ahaha, düğün mü? hızlısın 😄', 'Sen bu kulübün en eğlencelisisin 🤣'],
+      meh: ['Hehe.', 'Fena değil.', 'Biraz zorlama ama…', 'Gülümsedim, sayılır mı?', 'Hmm, peki.',
+        'Bunu daha önce duymuştum.', 'Yarım puan veriyorum.', 'Hah.', 'Komiklik yeteneğin gelişiyor 😅', 'Tamam, anladım.'],
+      bad: ['Hiç komik değil.', 'Esprin kadar sıkıcısın.', 'Utandım senin yerine.', 'Lütfen bir daha deneme.', '…',
+        'Gülmem için içmem lazım.', 'Bu ne şimdi?', 'Soğuk espri.', 'Gülmüyorum, görüyorsun.', 'Komedyen olmaya çalışma.'] },
+    ask: {
+      me: ['En sevdiğin şarkı hangisi?', 'Bu gece neden buradasın?', 'Hafta sonları ne yaparsın?', 'Hayalindeki tatil neresi?', 'Kimle geldin buraya?',
+        'Seni en çok ne güldürür?', 'Burcun ne?', 'En çılgın gecen nasıldı?', 'Bu gece kendine ne söz verdin?', 'Kalbini en son kim çaldı?'],
+      good: ['Arkadaşlarla geldim ama onları kaybettim 😄', 'En çılgın gecem mi? Belki bu gece olur 😏', 'Deniz kenarı, kumsal ve iyi bir sevgili 🏝️', 'Bu şarkı! Tam şu an çalan 🎶', 'Burcum ne sence? Tahmin et 😉',
+        'İlk kez biri benimle gerçekten ilgileniyor 🥺', '{job} olmak yorucu, bu gece kafa dağıtıyorum 💃', 'Aslen {city} kızıyım, burada kimseyi tanımıyorum', 'Kalbimi çalan… henüz yok, belki 😏', 'Sorular güzel, devam et 😊'],
+      meh: ['Bilmem, değişir.', 'Pek önemli değil.', 'Sonra anlatırım.', 'Herkes gibi işte.', 'Çok özel bir soru.',
+        'Hmm… uzun hikaye.', 'Söylemesem?', 'Hiç düşünmedim.', 'Sen söyle önce.', 'Anlatacak bir şey yok.'],
+      bad: ['Bu seni ilgilendirmez.', 'Polis misin?', 'Çok soru soruyorsun.', 'Röportaj mı yapıyorsun?', 'Özel hayatım bana kalsın.',
+        'Sıkıldım bu sorulardan.', 'Gerek yok bunlara.', 'Neden soruyorsun?', 'Cevap vermek istemiyorum.', 'Hiç tanımadığım birine mi anlatacağım?'] },
+    dance: {
+      me: ['Şu ritme bak, durmak ayıp olur', 'Benimle yavaş bir dans?', 'Pistte bir tur, sonra sohbet', 'Seni döndürmeyi çok isterim', 'Dans etmeyi bilmem ama senin için öğrenirim',
+        'Bu şarkı tam senlik', 'Ellerini ver, gerisi kolay', 'Gel, herkese göstermek lazım bizi', 'Bir şarkılık izin ver bana', 'Seni dans ederken izlemek yetmez, yanında olmak istiyorum'],
+      good: ['Tut elimi, bırakma 💃', 'Yavaş dansa bayılırım 🥰', 'Döndür beni! 💫', 'Ooo, ritmin fena değil 😏', 'Bu şarkı bitmesin 🎶',
+        '(Kollarını boynuna dolar) böyle daha iyi 💕', 'Bana yakın dur 😏', 'Herkes bize bakıyor, iyi 😎💃', 'Dans etmeyi bilmiyorum demiştin, yalancı 😄', '(Kalçasını ritme göre sallar) yetişebilir misin? 🔥'],
+      meh: ['Bir şarkı, o kadar.', 'Ayaklarım ağrıyor biraz.', 'Hızlı değil yavaş olsun.', 'Tamam, kısa.', 'Pek istemiyorum ama olur.',
+        'Bu şarkıyı sevmem.', 'Önce bir içki.', 'Dans edersem düşerim 😅', 'Bakalım.', 'Sonraki şarkıda belki.'],
+      bad: ['Seninle dans etmem.', 'Ayağıma basacaksın kesin.', 'Dans istemiyorum dedim.', 'Pistten uzak dur.', 'Hayır!',
+        'Yorgunum ve istemiyorum.', 'Başkasını kaldır.', 'Çok ısrarcısın.', 'Ellerini bana uzatma.', 'Teşekkürler ama hayır.'] },
+    flirt: {
+      me: ['Gülüşün bulaşıcı, dikkat et', 'Seni burada bulduğum için şanslıyım', 'Bu gece seni düşünerek uyuyacağım', 'Gözlerin bana bir şey anlatıyor', 'Sana bakmamak imkânsız',
+        'Yanında olmak bile ateşliyor beni', 'Kalbimi çaldın, iade et 😏', 'Dudakların çok davetkâr', 'Bu gece sadece ikimiz olsak', 'Numaranı istesem verir misin?'],
+      good: ['Gözlerim ne anlatıyor sence? 😏', 'İade yok, kalbin bende kalsın 😘', 'Belki veririm… hak edersen 😈', 'Sen de çok çekicisin 🔥', 'Sadece ikimiz… fikir güzel 😏',
+        'Bu gece beni düşüneceksin demek 😘', '(Kulağına fısıldar) ben de seni düşünüyordum', 'Dudaklarım mı? Merak et biraz 😈', 'Şanslı olan benim belki 💕', 'Flörtte iyisin… devam 😏'],
+      meh: ['Hmm, belki.', 'Bu kadar kolay değil.', 'Yavaş ol, daha tanışmadık.', 'Bakarız.', 'Güzel söyledin ama…',
+        'Numara mı? Henüz değil.', 'Şimdilik sadece sohbet.', 'Sence?', 'Hızlı gidiyorsun.', 'Gülüyorum ama emin değilim.'],
+      bad: ['Bu laflar bana sökmez.', 'Çok yapmacık.', 'Sınırını bil.', 'Benim tipim değilsin.', 'Flörte gelmedim.',
+        'Of, yine aynı replikler.', 'Hiç şansın yok.', 'Ayıp oluyor.', 'Kendini beğenmişsin.', 'Bu kadar yeter.'] },
+    brag: {
+      me: ['Yatım marinada bağlı, yarın gidelim mi?', 'Bu saatimin fiyatını tahmin et', 'Geçen ay Paris\'teydim, yine giderim', 'Şirketim var, istediğim zaman tatil', 'Kulübün VIP listesi bende',
+        'Villada havuz partisi veriyorum, gel', 'Arabam yeni, ilk yolcum sen ol', 'Bu gece hesap benden, tüm masaya', 'DJ benim eski arkadaşım', 'Dubai\'den yeni döndüm'],
+      good: ['Yat mı? Bikinim hazır 😍', 'Paris! Beni de götür 🥺', 'Havuz partisi mi? Varım 😏', 'İlk yolcu ben olurum 🚗💨', 'Zenginsin ama tatlısın da 😘',
+        'VIP listesi! Beni de yaz 😍', 'Dubai mi? Anlat anlat 😊', 'Cömert adamları severim 😏', 'Masaya hesap mı? Kızlar sevinir 🥂', 'Saatin güzel ama sen daha güzelsin 😉'],
+      meh: ['Güzel.', 'Hı hı, anlat.', 'Çok mu önemli bunlar?', 'İyi… başka?', 'Herkes bir şeyle övünür.',
+        'Etkilenmedim ama dinliyorum.', 'Parayla mutluluk olur mu?', 'Ooo, peki.', 'Tamam, tamam.', 'Saatini merak etmedim.'],
+      bad: ['Paran kimin umrunda.', 'Gösteriş yapan erkekler sıkıcı.', 'Bunları anlatıp duran adamlardan kaçarım.', 'Beni satın alamazsın.', 'Yeter, övünme.',
+        'Yatına git o zaman.', 'Hava atmak sana yakışmıyor.', 'Bana mı sordun?', 'Çok ucuz bir tavır.', 'Kendini anlatmayı bırak.'] },
+    touch: {
+      me: ['(Elini omzuna koyarsın)', '(Kolunu beline dolarsın)', '(Saçından bir tutamı parmağına dolarsın)', '(Dizine elini koyarsın)', '(Sırtındaki fermuara dokunursun)',
+        '(Onu duvara doğru yavaşça itersin)', '(Dudağının kenarına dokunursun)', '(Elini kalçasına kaydırırsın)', '(Kucağına çekersin)', '(Boynuna küçük bir öpücük kondurursun)'],
+      good: ['(Ürperir, sana sokulur) 🥵', 'Fermuar mı? Burada olmaz… henüz 😈', '(Duvara yaslanır, nefesi hızlanır) 🔥', '(Kucağına oturur) rahat mı? 😏', 'Boynum… zayıf noktam 🥴',
+        '(Dudağını parmağına değdirir) 😘', 'Biraz daha… 😳', '(Elini tutup bırakmaz) 💕', '(Kulağına) burada değil, birazdan 😈', 'Dokunuşun çok güzel 🥰'],
+      meh: ['(Omzundaki eline bakar) hmm.', 'Bu kadarı yeter şimdilik.', '(Kucağından kalkar) acele etme 😅', 'Herkes bakıyor ama…', 'Daha değil.',
+        '(Dizindeki elini yavaşça kaldırır)', 'Sakin ol kovboy 😄', 'Biraz geri çekil, nefes alayım', 'Belki sonra.', '(Gergin gülümser)'],
+      bad: ['Kucağına mı? Sen kafayı yemişsin!', 'Elini kalçamdan çek!', 'Taciz ediyorsun şu an.', '(Tokat atar) 😡', 'Güvenlik!',
+        'Arkadaşlarım seni görsün, rezil olursun.', 'Beni duvara itme!', 'Öpme beni!', 'Bu kadar yeter, gidiyorum.', 'Utanmaz!'] },
+    crude: {
+      me: ['Seni masaya yatırmak istiyorum', 'Bu gece bağıracak kadar zevk vereceğim sana', 'Rujunu bende bırakmanı istiyorum', 'Tanga mı, hiç mi? 😈', 'Yatakta nasıl birisin, merak ediyorum',
+        'Seni sabaha kadar uyutmam', 'Tenini dudaklarımda hissetmek istiyorum', 'Bacaklarını omzumda düşünüyorum', 'Bu elbiseyi yırtmak istiyorum', 'Beni bu gece eve götür, gerisini bana bırak'],
+      good: ['Tanga… siyah. Görmek ister misin? 😈', 'Bağırırsam komşular şikâyet eder 🥵', 'Yatakta mı? Kontrolü ben alırım 😏', 'Rujum sende kalsın, her yerinde 💋', 'Sabaha kadar mı? Sözünü tut 😈',
+        'Elbiseyi yırtma, kolayca çıkıyor 😏', 'Bacaklarım omzunda… hayal etme, yaşa 🔥', 'Ben de seni istiyorum, saklamayacağım 🥵', 'Tenim seni bekliyor 😘', 'Konuşma, göster 😈'],
+      meh: ['Biraz dur, kalbim yerinden çıkacak 😅', 'Bunu bu kadar rahat söylemen…', 'Ağzından çıkanı kulağın duyuyor mu? 😄', 'Hmm, belki.', 'Önce bana içki ısmarla 😏',
+        'Fazla erken bunlar.', 'İlginç… ama emin değilim.', 'Konuşmak kolay.', 'Hayal kurmayı bırak 😅', 'Sakin, gece uzun.'],
+      bad: ['Ne kadar kabasın!', 'Midem bulandı.', 'Senin gibilerden nefret ediyorum.', 'Bu nasıl bir terbiyesizlik?', 'Hemen uzaklaş benden.',
+        'Annene de böyle mi konuşuyorsun?', 'Bir kadına böyle konuşulmaz!', 'Rezil!', 'Güvenliğe şikâyet edeceğim.', 'Bunu bir daha deneme.'] }
+  };
+  PT_ACTS.forEach(a => { const m = PT_MORE[a.k]; if (!m) return; a.me.push(...m.me); ['good', 'meh', 'bad'].forEach(r => a.r[r].push(...m[r])); });
+  const PT_ASK = ['Buradan çıkalım mı? Bende ya da sende… 😏', 'Eve gidelim mi?', 'Gürültüden sıkıldım, beraber çıkalım mı?', 'Taksi çağırayım mı? İkimize 🚕', 'Bu geceyi başka yerde bitirelim mi?',
+    'Senin ev yakın mı? 😏', 'Hadi kaçalım buradan', 'Sende bir kahve içelim mi? ☕', 'Sessiz bir yere gidelim, sadece ikimiz', 'Ceketini al, çıkıyoruz 😈', 'Beni evine davet etsen? 😏', 'Gecenin devamını sende mi yaşasak?', 'Burada konuşamıyoruz, sana gidelim mi?'];
+  PT_YES.push('Sende değil, bende. Ev daha yakın 😏', 'Bekliyordum bunu sormanı 😈', 'Kahve mi? Tabii… kahve 😏☕', 'Hadi, arkadaşlarıma görünmeden çıkalım 🤫', 'Taksiyi ben çağırıyorum 🚕💨',
+    'Elimi tut, çıkalım 💕', 'Evet… ama bu gece uyumak yok 😈', 'İkimiz de biliyorduk bunu 😏', 'Kapıda bekle, iki dakika 💋', 'Tamam, ama komşulara sessiz ol 🤭');
+  PT_SOFT.push('Bu gece olmaz, yarın akşam? Yaz bana 💌', 'Bugün arkadaşlarımlayım, ama numaram sende 📱', 'Sabahki işim erken… mesajlaşalım mı? 😊', 'Acele etmeyelim, seni tanımak istiyorum 💕', 'Yarın ara, söz veriyorum açarım 📱',
+    'İlk gece olmaz, kuralım bu 😉', 'Ne kadar istediğini görmek istiyorum, yaz bana 😏', 'Numaramı veriyorum, gerisi sende 💋', 'Bu gece değil ama yakında… 🔥', 'Biraz naz yapayım, al numaram 😘');
+  PT_NO.push('Sen beni ne sandın?', 'Eve mi? Daha adını bile bilmiyorum!', 'Hiç şansın yok.', 'Bu kadar yeter, arkadaşlarımın yanına dönüyorum.', 'Rüyanda görürsün.',
+    'Hayır, iyi geceler.', 'Benimle böyle konuşma.', 'Çok hızlısın, gitmem gerek.', 'Erkek arkadaşım var.', 'Teklifin için… hayır.');
+  PT_BORED.push('Sıkıldım açıkçası, iyi geceler.', 'Telefonuma bakmam lazım, sonra görüşürüz.', 'Arkadaşım çağırıyor, kaçtım 👋', 'Bu sohbet bir yere varmıyor.', 'Ben pistteyim, sen burada kal.',
+    'Uykum geldi, gidiyorum.', 'Başka biriyle sözüm var.', 'Yeter bu kadar.', 'Bir hava alayım, sonra belki.', 'Görüşürüz, eğlenmeye bak.');
   const ptStore = v => { try { if (v) localStorage.setItem('amor-stories:party', JSON.stringify(v)); return JSON.parse(localStorage.getItem('amor-stories:party') || '{}') || {}; } catch (e) { return v || {}; } };
   // gece 06:00'da değişir; 🎟️ Başka parti bir sonraki partiye geçer
   function ptNight() {
@@ -2878,22 +2998,40 @@
     document.querySelectorAll('.pt-talk-wrap').forEach(el => el.remove());
     const wrap = document.createElement('div');
     wrap.className = 'sheet-wrap pt-talk-wrap';
-    const line = l => `<p class="pt-l ${l.me ? 'me' : l.sys ? 'sys' : 'her'}">${esc(l.t)}</p>`;
+    // açılışta var olan baloncuklar sessiz gelir, sonrakiler animasyonla
+    let shown = S0.log.length;
+    const line = (l, i) => `<div class="pt-l ${l.me ? 'me' : l.sys ? 'note' : 'her'}${l.res ? ' ' + l.res : ''}${l.up ? ' up' : l.dn ? ' dn' : ''}${i >= shown ? ' new' : ''}">${l.me || l.sys ? '' : `<span class="pt-av">${avatar(c, 24)}</span>`}<span class="pt-tx">${esc(l.t)}</span></div>`;
+    const typing = () => { const log = wrap.querySelector('#ptLog'); if (!log) return; log.insertAdjacentHTML('beforeend', `<div class="pt-l her pt-typing new"><span class="pt-av">${avatar(c, 24)}</span><span class="pt-tx"><i></i><i></i><i></i></span></div>`); log.scrollTop = log.scrollHeight; };
+    const PT_FX = { good: ['💗', '💕', '✨', '🔥', '😍', '💋'], bad: ['💢', '😤', '💔', '⚡'], home: ['💗', '💕', '🔥', '💋', '🥂', '✨', '🏠'], meh: ['💭'] };
+    const fx = kind => {
+      const box = wrap.querySelector('.pt-talk'); if (!box) return;
+      if (kind === 'bad') { box.classList.remove('shake'); void box.offsetWidth; box.classList.add('shake'); }
+      const n = kind === 'home' ? 18 : kind === 'good' ? 9 : kind === 'bad' ? 6 : 2;
+      for (let j = 0; j < n; j++) {
+        const s = document.createElement('span');
+        s.className = 'pt-fx ' + kind;
+        s.textContent = pick(PT_FX[kind]);
+        s.style.cssText = `--x:${5 + Math.random() * 90}%;--r:${Math.round(Math.random() * 80 - 40)}deg;--bx:${Math.round(Math.random() * 120 - 60)}px;--dl:${(Math.random() * .5).toFixed(2)}s;--s:${(.8 + Math.random() * .8).toFixed(2)}`;
+        box.appendChild(s);
+        setTimeout(() => s.remove(), 2400);
+      }
+    };
     const draw = () => {
       wrap.innerHTML = `<div class="pt-talk" role="dialog"><div class="pt-th">${avatar(c, 52)}<span><b>${esc(c.name || 'İsimsiz')}${c.age ? `, ${esc(c.age)}` : ''}</b>
           <small>${pers.map(t => `<em>${esc(t)}</em>`).join('')}</small></span><button type="button" class="pt-x" data-ptx aria-label="Kapat">✕</button></div>
         <div class="pt-meters"><div><small>💗 İlgi · ${ptMood(S0.ilgi)}</small><div class="kl-bar"><i style="--w:${Math.max(0, Math.min(100, S0.ilgi))}%"></i></div></div>
           <div><small>⏳ Sabır</small><span class="pt-sab">${'●'.repeat(Math.max(0, S0.sabir))}${'○'.repeat(Math.max(0, 9 - S0.sabir))}</span></div></div>
-        <div class="pt-log" id="ptLog">${S0.log.length ? S0.log.map(line).join('') : `<p class="pt-l sys">${esc(first)} pistte dans ediyor. Ne yapacaksın?</p>`}</div>
+        <div class="pt-log" id="ptLog">${S0.log.length ? S0.log.map(line).join('') : `<div class="pt-l note new"><span class="pt-tx">💃 ${esc(first)} pistte dans ediyor. Ne yapacaksın?</span></div>`}</div>
         <div class="pt-btns">${PT_ACTS.map(a => `<button type="button" data-pa="${a.k}"><span>${a.ic}</span>${esc(a.t)}</button>`).join('')}
           <button type="button" data-pa="home" class="pt-home"><span>🏠</span>Eve gidelim mi?</button></div></div>`;
       const log = wrap.querySelector('#ptLog'); log.scrollTop = log.scrollHeight;
+      shown = S0.log.length;
     };
-    const say = (l, also) => { S0.log.push(l); S0.log = S0.log.slice(-30); if (also) S0.log.push(also); };
+    const say = (l, also) => { const n = S0.log.length; S0.log.push(l); if (also) S0.log.push(also); const cut = Math.max(0, S0.log.length - 30); S0.log = S0.log.slice(cut); shown = Math.max(0, Math.min(shown, n) - cut); };
     const leave = (kind, text) => {
       const st = ptStore(); st.gone = { ...(st.gone || {}), [fnRid(c)]: kind }; ptStore(st);
-      say({ t: text }, { sys: true, t: kind === 'num' ? `📱 ${first} numarasını verdi.` : `🚶‍♀️ ${first} yanından ayrıldı.` });
-      draw(); wrap.querySelector('.pt-btns').innerHTML = `${kind === 'num' ? `<button type="button" data-pa="msg"><span>💬</span>Ona yaz</button>` : ''}<button type="button" data-ptx><span>🎉</span>Piste dön</button>`;
+      say({ t: text, res: kind === 'num' ? 'meh' : 'bad' }, { sys: true, dn: kind !== 'num', t: kind === 'num' ? `📱 ${first} numarasını verdi.` : `🚶‍♀️ ${first} yanından ayrıldı.` });
+      draw(); fx(kind === 'num' ? 'good' : 'bad'); wrap.querySelector('.pt-btns').innerHTML = `${kind === 'num' ? `<button type="button" data-pa="msg"><span>💬</span>Ona yaz</button>` : ''}<button type="button" data-ptx><span>🎉</span>Piste dön</button>`;
     };
     const goHome = () => {
       const st = ptStore(); st.gone = { ...(st.gone || {}), [fnRid(c)]: 'ev' }; ptStore(st);
@@ -2925,15 +3063,16 @@
       if (k === 'msg') { wrap.remove(); return cmChat(c, 'CarmenParty', pick(['Partideki ben 😉 numaramı kaydettin mi?', 'Selam, dün gece pistteki 💃 hatırladın mı?', 'Yazacağını biliyordum 😏']), true); }
       S0.turn++;
       if (k === 'home') {
-        say({ me: true, t: pick(['Buradan çıkalım mı? Bende ya da sende… 😏', 'Eve gidelim mi?', 'Gürültüden sıkıldım, beraber çıkalım mı?']) });
+        say({ me: true, t: pick(PT_ASK) });
         draw(); busy = true;
+        setTimeout(typing, 350);
         const p = Math.max(.02, Math.min(.95, (S0.ilgi - 35) / 55 + pers.reduce((s, t) => s + (PT_HOME[t] || 0), 0) - (S0.turn < 4 ? .3 : 0)));
         return setTimeout(() => {
           busy = false;
-          if (Math.random() < p) { say({ t: pick(PT_YES) }); draw(); return setTimeout(goHome, 900); }
+          if (Math.random() < p) { say({ t: pick(PT_YES), res: 'home' }, { sys: true, up: true, t: '🏠 Kabul etti!' }); draw(); fx('home'); busy = true; return setTimeout(goHome, 1500); }
           if (S0.ilgi >= 55) return leave('num', pick(PT_SOFT));
           leave('red', pick(PT_NO));
-        }, 900);
+        }, 1500);
       }
       const a = PT_ACTS.find(x => x.k === k), used = S0.uses[k] || 0;
       S0.uses[k] = used + 1;
@@ -2946,14 +3085,15 @@
       if (res === 'good' && S0.turn % 3 === 0) S0.sabir--;
       say({ me: true, t: pick(a.me) });
       draw(); busy = true;
+      setTimeout(typing, 300);
       setTimeout(() => {
         busy = false;
         const t = pick(a.r[res]).replace('{job}', c.job || 'Serbest').replace('{city}', c.city || 'İstanbul');
         if (S0.ilgi < 0 || (a.tone === 'kaba' && d <= -15)) return leave('red', t);
-        if (S0.sabir <= 0) { say({ t }); return leave('red', pick(PT_BORED)); }
-        say({ t }, { sys: true, t: `${d > 0 ? '💗 +' + d : d < 0 ? '💔 ' + d : '·'} ilgi` });
-        draw();
-      }, 700);
+        if (S0.sabir <= 0) { say({ t, res }); return leave('red', pick(PT_BORED)); }
+        say({ t, res }, { sys: true, up: d > 0, dn: d < 0, t: `${d > 0 ? '💗 +' + d : d < 0 ? '💔 ' + d : '·'} ilgi` });
+        draw(); fx(res);
+      }, 1100);
     };
   }
   /* 💁 Yardımcı karakter (Lia): sol altta kartının ucu görünür; dokununca bulunduğun sayfanın kurallarını adım adım anlatır.
