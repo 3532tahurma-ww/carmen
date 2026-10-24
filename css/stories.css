@@ -1895,6 +1895,7 @@ button.cs-cond { border: 0; cursor: pointer; }
 @keyframes psOpen { 0% { transform: scale(.6); } 60% { transform: scale(1.2); } 100% { transform: scale(1); } }
 .ps-got { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin-bottom: 10px; }
 .ps-foot { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 18px var(--pad) 0; color: #999; }
+.ps-scn .fp-bg { object-position: center 22%; }
 .ps-speech { margin: 10px var(--pad) 0; padding: 14px 16px; border-radius: 4px 18px 18px 18px; background: rgba(255, 255, 255, .08); border: 1px solid #3a2f55; font-size: 15px; line-height: 1.55; font-style: italic; }
 .ps-menu .ps-title { position: relative; height: min(58vh, 480px); overflow: hidden; }
 .ps-title img { width: 100%; height: 100%; object-fit: cover; object-position: center 22%; filter: saturate(1.1); }
@@ -2040,6 +2041,8 @@ button.cs-cond { border: 0; cursor: pointer; }
 .fp-cc { display: flex; gap: 10px; align-items: center; padding: 8px; border-radius: 12px; background: var(--chip); border-left: 4px solid var(--cc); }
 .fp-cc img { width: 56px; height: 56px; border-radius: 12px; object-fit: cover; object-position: center 22%; }
 .fp-cc > div { flex: 1; min-width: 0; display: grid; gap: 2px; } .fp-cc small { font-size: 11.5px; color: var(--muted); }
+.fp-gal { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+.fp-code { margin-top: 12px; flex-wrap: nowrap; } .fp-code input { flex: 1; min-width: 0; }
 .fp-bar { height: 6px; border-radius: 3px; background: var(--line); overflow: hidden; } .fp-bar i { display: block; height: 100%; width: var(--w); background: linear-gradient(90deg, #ff6a3d, #c2185b); }
 /* 🪵 oyunun kendi arayüzü gibi: koyu kahve diyalog kutusu, altın çerçeve, isim etiketi, ahşap seçenekler */
 .fp-box.fp-tb { position: relative; background: linear-gradient(#3d2e23, #2f231a); border: 3px solid #9a6a2a; box-shadow: inset 0 0 0 1px #e8d6b0, 0 10px 30px rgba(0, 0, 0, .45); border-radius: 14px; padding-top: 18px; }
@@ -2421,6 +2424,63 @@ button.cs-cond { border: 0; cursor: pointer; }
 .lv-tips b { color: #ffd740; font-size: 15px; }
 .lv-tips small { font-size: 11px; color: #ccc; }
 .ws-live .cm-foot { color: #888; }
+
+/* 🎉 CarmenParty: karanlık pist, neon ışıklar, dolaşan kartlar */
+.net-party { background: linear-gradient(135deg, #1a0533, #7b1fa2 55%, #ff4081); box-shadow: 0 14px 34px rgba(123, 31, 162, .35); }
+.net-party b i { color: #ffd6f0; }
+.ws-party { --ws: #9c27b0; }
+.pt-hero { background: linear-gradient(135deg, #2a0845, #9c27b0 60%, #ff4081); }
+.pt-floor { position: relative; height: max(440px, 64vh); margin: 0; overflow: hidden; background: radial-gradient(ellipse at 50% 110%, #3a0d5c 0%, #14051f 60%, #07020c 100%); }
+.pt-floor::after { content: ''; position: absolute; left: 0; right: 0; bottom: 0; height: 38%; background: repeating-linear-gradient(90deg, rgba(255, 64, 129, .08) 0 40px, rgba(0, 229, 255, .07) 40px 80px); transform: perspective(300px) rotateX(55deg); transform-origin: bottom; pointer-events: none; animation: ptFloor 3s linear infinite; }
+@keyframes ptFloor { 50% { filter: hue-rotate(90deg) brightness(1.4); } }
+.pt-ball { position: absolute; top: 6px; left: 50%; font-size: 34px; transform: translateX(-50%); animation: ptSpin 4s linear infinite; z-index: 1; }
+@keyframes ptSpin { to { transform: translateX(-50%) rotate(360deg); } }
+.pt-dj { position: absolute; top: 12px; right: 12px; z-index: 1; padding: 4px 10px; border-radius: 999px; background: rgba(255, 255, 255, .12); color: #fff; font-size: 12px; font-weight: 800; animation: beat 1s infinite; }
+.pt-beam { position: absolute; top: -10%; width: 120px; height: 130%; opacity: .25; pointer-events: none; transform-origin: top center; filter: blur(6px); }
+.pt-beam.a { left: 15%; background: linear-gradient(#ff4081, transparent); animation: ptBeam 5s ease-in-out infinite alternate; }
+.pt-beam.b { left: 45%; background: linear-gradient(#00e5ff, transparent); animation: ptBeam 6s ease-in-out -2s infinite alternate-reverse; }
+.pt-beam.c { left: 72%; background: linear-gradient(#ffea00, transparent); animation: ptBeam 7s ease-in-out -4s infinite alternate; }
+@keyframes ptBeam { from { transform: rotate(-25deg); } to { transform: rotate(25deg); } }
+.pt-guest { position: absolute; left: var(--x); top: var(--y); z-index: 2; width: min(19%, 100px); padding: 0; border: 0; background: none; color: #fff; text-align: center; animation: ptWander var(--d) ease-in-out var(--dl) infinite; }
+.pt-guest:hover, .pt-guest:focus-visible { animation-play-state: paused; z-index: 3; }
+@keyframes ptWander { 0%, 100% { transform: translate(0, 0); } 30% { transform: translate(var(--dx), var(--dy)); } 65% { transform: translate(calc(var(--dx) * -.7), calc(var(--dy) * -1)); } }
+.pt-pic { display: block; aspect-ratio: 3 / 4; border-radius: 14px; overflow: hidden; background: var(--mtbg); box-shadow: 0 0 0 2px rgba(255, 64, 129, .7), 0 8px 22px rgba(0, 0, 0, .5); animation: ptBob .9s ease-in-out infinite alternate; }
+.pt-guest:nth-child(odd) .pt-pic { animation-duration: 1.1s; box-shadow: 0 0 0 2px rgba(0, 229, 255, .7), 0 8px 22px rgba(0, 0, 0, .5); }
+@keyframes ptBob { to { transform: translateY(-5px) rotate(1.5deg); } }
+.pt-pic img { width: 100%; height: 100%; object-fit: cover; object-position: center 22%; }
+.pt-pic .mt-ini { display: grid; place-items: center; height: 100%; font-size: 30px; font-weight: 900; }
+.pt-guest b { display: block; margin-top: 4px; font-size: 12.5px; text-shadow: 0 1px 4px #000; }
+.pt-guest small { font-size: 12px; }
+.pt-bub { position: absolute; top: -10px; right: -6px; font-style: normal; font-size: 18px; opacity: 0; pointer-events: none; }
+.pt-bub.go { animation: ptBub 1.6s ease-out; }
+@keyframes ptBub { 15% { opacity: 1; transform: translateY(-6px) scale(1.15); } 80% { opacity: 1; } 100% { opacity: 0; transform: translateY(-22px); } }
+.pt-empty { position: absolute; inset: 0; display: grid; place-items: center; color: #ddd; font-weight: 700; }
+.pt-left { margin: 14px var(--pad) 0; padding: 12px; border-radius: 14px; background: #fff; box-shadow: 0 4px 14px rgba(0, 0, 0, .06); }
+.pt-left h3 { margin: 0 0 8px; font-size: 14px; }
+.pt-lrow { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+.pt-lrow small { flex: 1; color: #777; font-size: 12px; }
+.pt-acts0 { display: flex; justify-content: center; padding: 14px var(--pad) 0; }
+.pt-talk { box-sizing: border-box; width: 100%; max-width: 560px; max-height: 88vh; display: flex; flex-direction: column; gap: 10px; padding: 14px 16px 18px; border-radius: 22px 22px 0 0; background: linear-gradient(180deg, #2a0d42, #14061f); color: #fff; box-shadow: 0 -10px 40px rgba(156, 39, 176, .4); }
+.pt-th { display: flex; align-items: center; gap: 12px; }
+.pt-th > span { flex: 1; display: grid; gap: 4px; min-width: 0; }
+.pt-th small { display: flex; flex-wrap: wrap; gap: 4px; }
+.pt-th em { font-style: normal; font-size: 11px; padding: 2px 8px; border-radius: 999px; background: rgba(255, 255, 255, .12); }
+.pt-x { width: 34px; height: 34px; border-radius: 50%; border: 0; background: rgba(255, 255, 255, .12); color: #fff; font-size: 15px; }
+.pt-meters { display: grid; grid-template-columns: 1fr auto; gap: 14px; align-items: end; }
+.pt-meters small { font-size: 12px; color: #e6cdf5; }
+.pt-meters .kl-bar { background: rgba(255, 255, 255, .12); margin: 4px 0 0; }
+.pt-meters .kl-bar i { background: linear-gradient(90deg, #7c4dff, #ff4081); }
+.pt-sab { display: block; letter-spacing: 1px; color: #ffd740; font-size: 13px; }
+.pt-log { flex: 1; min-height: 120px; max-height: 32vh; overflow-y: auto; display: flex; flex-direction: column; gap: 6px; padding: 10px; border-radius: 14px; background: rgba(0, 0, 0, .3); }
+.pt-l { margin: 0; max-width: 82%; padding: 7px 11px; border-radius: 14px; font-size: 13.5px; line-height: 1.35; }
+.pt-l.her { align-self: flex-start; background: #3d1a5c; }
+.pt-l.me { align-self: flex-end; background: #c2185b; }
+.pt-l.sys { align-self: center; max-width: 100%; padding: 2px 8px; background: none; color: #c9a8e0; font-size: 12px; }
+.pt-btns { display: grid; grid-template-columns: repeat(auto-fill, minmax(118px, 1fr)); gap: 7px; }
+.pt-btns button { display: flex; align-items: center; gap: 6px; padding: 9px 10px; border-radius: 12px; border: 1px solid rgba(255, 255, 255, .14); background: rgba(255, 255, 255, .07); color: #fff; font: inherit; font-size: 13px; font-weight: 700; text-align: left; }
+.pt-btns button:active { transform: scale(.96); }
+.pt-btns .pt-home { grid-column: 1 / -1; justify-content: center; background: linear-gradient(90deg, #9c27b0, #ff4081); border: 0; font-size: 14.5px; }
+.pt-ok { background: linear-gradient(135deg, rgba(42, 8, 69, .96), rgba(255, 64, 129, .92)) !important; }
 
 /* 🫦 CarmenFans: açık, mavi */
 .fn-site { --fn: #00aff0; min-height: 100vh; background: #f4f7fa; color: #1b2733; padding-bottom: 30px; }

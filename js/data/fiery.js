@@ -3,6 +3,8 @@
  * Karakterler, mekanlar, haftalık program, hediyeler ve hikaye sahneleri. Mantık js/app.js (renderFP).
  * Zaman: gün = 4 dilim (0 Sabah · 1 Gündüz · 2 Akşam · 3 Gece), haftanın günü 1 Pzt … 7 Paz.
  * Sahneler: { lines: [[kim, metin]], choice: [[seçenek, aff, cevap], [seçenek, aff, cevap]] }; kim = 'c' (karakter) · 'me' (sen) · 'sys' (anlatım).
+ * Tutku sahneleri (passions, sırayla açılır): { title, place, loc (arka plan mekanı; yoksa karakterin evi), intro (giriş anlatımı), beats: [[olay kartı, anlatım, onun sözü]] }.
+ * Sahnenin ortasında 🔀 MOVES'tan biri seçilir (karakterin tepkisi react[hareket]), sonda hareketin FINS bitişlerinden biri (içe boşalmada son söz react.cin).
  * Tüm karakterler 18+ yetişkinlerdir; akrabalık yoktur.
  */
 window.Stories = window.Stories || {};
@@ -49,7 +51,33 @@ Stories.FIERY = (() => {
           choice: [['Ellerimi biraz daha tut', 12, 'Fısıldıyor: "Bu yoga değil artık…" ama çekilmiyor 😳'], ['Hareketi tek başıma deneyeyim', 3, 'Gülümsüyor: "Çok terbiyelisin."']] },
         { title: 'Gece yarısı mutfak', lines: [['sys', 'Gece; mutfakta sadece buzdolabının ışığı. Mia ince bir geceliğin içinde.'], ['c', 'Uyuyamadım… sen de mi?'], ['c', 'Bir şey itiraf edeyim mi? Son günlerde hep seni düşünüyorum.']],
           choice: [['Ben de seni', 15, 'Dudakları dudaklarına değiyor; titriyor 💋'], ['Uyumamız lazım', 2, 'Başını sallıyor: "Haklısın… haklısın."']] }],
-      passion: { place: 'Mia\'nın odası', lines: ['Lambayı kısıyor, geceliği omzundan kayıyor.', 'Yıllardır böyle hissetmemiştim…', 'Yavaş… her anını hatırlamak istiyorum.'], evs: ['Kissing', 'Cunnilingus', 'Missionary', 'Spooning', 'Lap Sex'] } },
+      react: { soft: 'Evet… böyle, yavaşça. Gözlerime bak 💗', rough: 'Ah! …yani, evet. Biraz daha sert 😳', anal: 'Orası mı? Hiç denemedim… yavaş olursan, evet 🙈', oral: 'Bırak ben yapayım… sen bana çok şey verdin.', tits: 'Bunları hep saklardım… artık senin 😳', cin: 'Uzun zamandır… kendimi bu kadar dolu hissetmemiştim. Sarıl bana, bırakma 💗' },
+      passions: [
+        { title: 'Lavanta kokulu gece', place: 'Mia\'nın odası', intro: 'Gece yarısı. Lavanta kokan odada sadece başucu lambası yanıyor; Mia kapıyı arkandan usulca kapatıyor, ince saten geceliği teninde parlıyor.', beats: [
+          ['Kissing', 'Dudakları önce çekingen, sonra aç bir şekilde dudaklarına bastırıyor; parmakları enseni kavrıyor.', 'Yıllardır kimse beni böyle öpmedi…'],
+          ['Show Tits', 'Geceliğin askısını kendi eliyle omzundan indiriyor; dolgun göğüsleri lamba ışığında inip kalkıyor.', 'Bakma öyle… yani… bak. Dokun.'],
+          ['Cunnilingus', 'Onu yatağa yatırıp bacaklarını aralıyorsun; dilinin her dokunuşunda kalçaları çarşaftan kalkıyor, parmakları saçlarına gömülüyor.', 'Ahh… orası… sakın durma 💗'],
+          ['Missionary', 'Seni üstüne çekiyor; içine yavaşça girdiğinde gözleri kapanıyor, bacaklarını beline doluyor.', 'Yavaş… her anını hatırlamak istiyorum.']] },
+        { title: 'Buğulu banyo', place: 'Banyo', loc: 'banyo', intro: 'Duşun buharı aynayı tamamen kaplamış. Mia perdenin ardında, sıcak suyun altında; kapıyı kilitlemediğini fark ediyorsun.', beats: [
+          ['Back Hugging', 'Arkasından sokulup ıslak belini sarıyorsun; sırtını göğsüne yaslayıp başını omzuna bırakıyor.', 'Kapıyı bilerek açık bıraktım… anladın, değil mi? 🙈'],
+          ['Handjob', 'Sabunlu eliyle aşağı uzanıyor; köpüklerin arasında seni ağır ağır okşarken nefesi boynunu ısıtıyor.', 'Bu kadar sertleşmişsin… benim için mi?'],
+          ['Standing', 'Onu fayanslara yaslayıp bir bacağını kaldırıyorsun; su ikinizin arasından akarken içine giriyorsun.', 'Ahh… su soğumadan… daha!'],
+          ['Standing doggy', 'Ellerini duvara dayayıp kalçasını sana doğru itiyor; her vuruşta ıslak tenden şaplaklar yankılanıyor.', 'Roxy duyacak… umurumda değil!']] },
+        { title: 'Mutfak tezgâhı', place: 'Mutfak, sabaha karşı', loc: 'mutfak', intro: 'Sabahın ilk ışıkları. Mia sadece senin gömleğinle kahve yapıyor; düğmelerin yarısı açık, çıplak bacakları tezgâha dayalı.', beats: [
+          ['Lap Kissing', 'Sandalyede kucağına oturuyor; kahve unutuluyor, gömleğin altından sıcak teni avuçlarına doluyor.', 'Kahvaltıyı unut… önce sen 😳'],
+          ['Cunnilingus', 'Onu tezgâhın üstüne oturtuyorsun; bacaklarını açarken mermerin soğukluğuna inleyip başını geriye atıyor.', 'Tezgâh buz gibi ama sen… ahh, alev gibisin.'],
+          ['Ondesk', 'Tezgâhın kenarında, bacakları omuzlarında; tencereler her vuruşta tıkırdıyor.', 'Daha derin… evet, oraya!'],
+          ['Cowgirl', 'Seni sandalyeye itip üstüne çıkıyor; göğüsleri gömlekten taşarken kalçalarını ritimle döndürüyor.', 'Roxy uyanmadan… çabuk, ama derin 💗']] },
+        { title: 'Yoga dersi', place: 'Oturma odası, yoga minderi', loc: 'salon', intro: 'Sabah dersi. Mia daracık tayt ve spor sütyeniyle minderde; "esneme hareketine yardım et" diyor ama gözleri başka bir şey söylüyor.', beats: [
+          ['Front Hugging', 'Ona destek olurken teni teninde; öne eğildiğinde kalçası tam kucağına yaslanıyor.', 'Bu… yoga değil artık, değil mi? 😳'],
+          ['Show Ass', 'Taytını yavaşça kalçalarından aşağı sıyırıyor; minderde dört ayak üstünde omzunun üstünden sana bakıyor.', 'Duruşum nasıl? 😏'],
+          ['Doggy', 'Belinden kavrayıp arkasından giriyorsun; nefes egzersizi unutuluyor, inlemeleri salonu dolduruyor.', 'Nefesimi… tutamıyorum… ahh!'],
+          ['Spooning', 'Minderde yan yana uzanıyorsunuz; bir bacağını kaldırıp seni kendine çekiyor, yavaş ve derin.', 'Bundan sonra her sabah ders var 💗']] },
+        { title: 'Fırtınalı gece', place: 'Oturma odası, şömine önü', loc: 'salon', intro: 'Dışarıda fırtına, elektrikler kesik. Mia şöminenin önüne kalın bir battaniye seriyor; alevler çıplak omuzlarında dans ediyor.', beats: [
+          ['Kissing', 'Şarap kokan dudakları dudaklarında; battaniyenin altında elleriniz birbirini keşfediyor.', 'Işıklar hiç gelmesin…'],
+          ['Titfuck', 'Dizlerinin arasına kayıp göğüslerini avuçlarında birleştiriyor; ateşin ışığında gözlerini senden ayırmıyor.', 'Bunu hep merak etmiştim… hoşuna gidiyor mu? 😳'],
+          ['Lap Sex', 'Kucağına oturup kollarını boynuna doluyor; alnı alnında, ağır ağır inip kalkıyor.', 'Seni hissediyorum… her yerimde.'],
+          ['Missionary', 'Battaniyeye uzanıp seni üstüne çekiyor; alevlerin çıtırtısı inlemelerine karışıyor.', 'Bırakma beni… bu gece hiç bırakma 💗']] }] },
     { id: 'roxy', name: 'Roxy', title: 'Ev arkadaşın · Mia\'nın kızı', age: 20, color: '#c084fc', pers: 'Tsundere: gururlu, ağzı bozuk, aslında iyi kalpli',
       bio: 'Mia\'nın kızı ve ev arkadaşın; kolejde okuyor. Yüzeyde saldırgan ve kibirli ama annesinin dediği gibi aslında "iyi bir kız". Kavgalar zamanla flörte dönüşür.',
       where: (s, d) => s === 0 ? (lesson(d) ? 'kolej' : [2, 4, 6].includes(d) ? 'park' : '') : s === 1 ? (d === 2 ? 'sahil' : 'roxyoda') : s === 2 ? (odd(d) ? 'banyo' : 'mutfak') : 'roxyoda',
@@ -65,7 +93,23 @@ Stories.FIERY = (() => {
           choice: [['Kaybetmeye razıyım 😏', 12, 'Kazanıyor ve yanına yaklaşıp fısıldıyor: "O zaman… beni öp."'], ['Yarışırım, kazanacağım', 6, 'Kıl payı kazanıyorsun; surat asıyor ama elini tutuyor.']] },
         { title: 'Kilitli kapının ardında', lines: [['sys', 'Gece; Roxy\'nin kapısı aralık. İçeriden adını fısıldıyor.'], ['c', 'Gel buraya… kimseye söylersen ölürsün, anladın mı?'], ['c', 'Sana kızgın değilim. Hiç olmadım galiba.']],
           choice: [['Biliyorum 💕', 15, 'Yatağın kenarına çekip sarılıyor; kalbinin atışı duyuluyor.'], ['Emin misin?', 3, '"Aptal! Tabii eminim!"']] }],
-      passion: { place: 'Roxy\'nin odası', lines: ['Işığı kapat… hayır, açık kalsın. Seni görmek istiyorum.', 'Bunu kimseye söylersen…', 'Sus ve öp beni 😤💕'], evs: ['Kissing', 'Blowjob', 'Cowgirl', 'Doggy', 'Standing'] } },
+      react: { soft: 'Y-yavaş mı? Ben kırılgan değilim! …ama tamam, böyle güzel 💕', rough: 'Hah! Sonunda erkek gibi davranıyorsun 😤🔥', anal: 'Ne?! Orası… tamam, ama acıtırsan seni öldürürüm 😤', oral: 'Sus. Sadece izle ve kıpırdama.', tits: 'Küçük olduklarını söyleme sakın! …hoşuna gidiyor, değil mi? 😳', cin: 'Aptal… hepsini içime bıraktın. Sorumluluğunu alacaksın, duydun mu?! 😤💕' },
+      passions: [
+        { title: 'Kilitli kapı', place: 'Roxy\'nin odası', intro: 'Kapı kilitli, müzik sonuna kadar açık. Roxy yatağın kenarında, üstünde sadece bol bir tişört; yanakları kıpkırmızı.', beats: [
+          ['Kissing', 'Yakandan tutup kendine çekiyor; öpüşü kaba ve aceleci, dişleri dudağına sürtünüyor.', 'Bunu kimseye söylersen…'],
+          ['Blowjob', 'Seni yatağa itip önünde diz çöküyor; gözlerini meydan okurcasına gözlerine dikip dudaklarını yavaşça kaydırıyor.', 'Ne bakıyorsun? …iyi mi yapıyorum? 😳'],
+          ['Cowgirl', 'Tişörtü başından sıyırıp üstüne çıkıyor; ellerini göğsüne dayayıp kalçalarını hırsla indiriyor.', 'Işığı kapat… hayır, açık kalsın. Seni görmek istiyorum.'],
+          ['Doggy', 'Dönüp yatağa kapanıyor, kalçasını havaya kaldırıyor; inlememek için yastığı ısırıyor.', 'Sus ve devam et 😤💕']] },
+        { title: 'Oyun gecesi', place: 'Roxy\'nin odası, konsol başında', intro: 'Ekranda "GAME OVER". Roxy kumandayı fırlatıp sana dönüyor: iddiayı kaybetti, kaybeden de kazananın dediğini yapacaktı.', beats: [
+          ['Lap Kissing', 'Kucağına oturuyor, kollarını boynuna dolayıp somurtarak öpüyor.', 'Tamam, kaybettim! Mutlu musun?! 😤'],
+          ['Titfuck', 'Tişörtünü yukarı sıyırıp göğüslerini aralıyor; utancından gözlerini kaçırsa da durmuyor.', 'Bakma öyle… yani bak. Sadece bana.'],
+          ['Lap Sex', 'Oyun koltuğunda kucağında; koltuk her hareketinizde gıcırdıyor.', 'Bir el daha oynasak… yine kaybederim 😏'],
+          ['Spooning', 'Halıya uzanıp seni arkasına çekiyor; boynunu öperken yavaşça içine giriyorsun.', 'Aptal… çok iyi geliyor 💕']] },
+        { title: 'Issız koy', place: 'Sahil, ıssız koy', loc: 'sahil', intro: 'Kayaların arkasında kimsenin bilmediği küçük bir koy. Roxy havluyu seriyor, etrafa bakıyor ve bikinisinin ipini çözüyor.', beats: [
+          ['Kissing', 'Tuzlu dudaklar, güneşte ısınmış ten; kumun üstünde birbirinize sarılıyorsunuz.', 'Kimse yok, değil mi? Emin misin?'],
+          ['69', 'Üstüne ters uzanıyor; dili seni bulurken sen de kalçalarını kavrayıp ona dalıyorsun.', 'Mmh… kum her yere giriyor ama umurumda değil!'],
+          ['Missionary', 'Havluya yatırıp bacaklarını aralıyorsun; dalgaların sesi inlemelerini yutuyor.', 'Daha… daha hızlı!'],
+          ['Doggy', 'Dizlerinin üstüne dönüp kumu avuçluyor; sırtında güneş, kalçasında ellerin.', 'Bunu yine yapacağız. Bu bir emir 😤🔥']] }] },
     { id: 'ava', name: 'Ava', title: 'Şirket müdürü · Mia\'nın arkadaşı', age: 34, color: '#f43f5e', pers: 'Cesur, flörtöz; altında kırılgan',
       bio: 'Yerel bir şirketin müdürü, Mia\'nın en yakın arkadaşı. Şehirde aldatılıp köye kaçmış; yalnızlığını cüretkâr bir flörtün arkasına saklar.',
       where: (s, d) => s === 3 ? 'avaev' : s === 1 && d === 6 ? 'sahil' : s === 1 && d === 7 ? 'salon' : s === 2 && [1, 3].includes(d) ? 'market' : s < 2 && wk(d) ? 'avaofis' : 'avaev',
@@ -80,7 +124,33 @@ Stories.FIERY = (() => {
           choice: [['Kilitliyorum 🔒', 14, 'Ceketini çıkarıyor: "İşte böyle."'], ['Burası iş yeri', 3, '"Sıkıcısın" diyor ama gülümsüyor.']] },
         { title: 'Kırılgan an', lines: [['c', 'Biliyor musun… beni aldatan adamdan sonra kimseye dokunmadım.'], ['c', 'Sana dokunmak istiyorum ama korkuyorum.']],
           choice: [['Ben buradayım, gitmiyorum', 16, 'Gözyaşı yanağından süzülüyor; seni öpüyor 💋'], ['Acele etmeyelim', 6, '"Teşekkürler…" diyor, eline sıkıca tutunuyor.']] }],
-      passion: { place: 'Ava\'nın evi', lines: ['Şarap kadehleri devriliyor; umurunda değil.', 'Bu gece benimsin 😈', 'Bırakma beni…'], evs: ['Kissing', 'Show Tits', 'Blowjob', 'Ondesk', 'Standing doggy', 'Full Nelson'] } },
+      react: { soft: 'Yavaş mı? Kimse bana yavaş davranmazdı… devam et 🥹', rough: 'İşte bu! Göster bakalım neler yapabiliyorsun 😈', anal: 'Hmm… cesursun. Hoşuma gitti. Yağ çekmecede 😏', oral: 'Otur. Bu benim işim.', tits: 'Bunları herkes kıskanır… ama sadece sen dokunursun.', cin: 'Hmm… sıcacık. Bunu sabaha kadar içimde taşıyacağım 😈' },
+      passions: [
+        { title: 'Şarap ve camlar', place: 'Ava\'nın evi', intro: 'Büyük camların ardında köyün ışıkları. Ava ikinci şişeyi açıyor ve kırmızı elbisesinin fermuarını indirmeni istiyor.', beats: [
+          ['Kissing', 'Şarap tadındaki dudakları; seni duvara yaslayıp kontrolü ele alıyor.', 'Bu gece benimsin 😈'],
+          ['Show Tits', 'Elbise yere süzülüyor; dantel sütyenini çıkarıp göğüslerini avuçlarına bırakıyor.', 'Beğendin mi? Herkes bakar ama kimse dokunamaz.'],
+          ['Blowjob', 'Halıda diz çöküp kemerini çözüyor; ağır, ustaca, gözleri hep gözlerinde.', 'Sabırsızlanma… gece uzun.'],
+          ['Ondesk', 'Yemek masasındaki kadehleri koluyla süpürüyor; devrilen şarap teninden süzülürken onu masaya yatırıyorsun.', 'Bırakma beni…']] },
+        { title: 'Müdür koltuğu', place: 'Ava\'nın ofis odası', loc: 'avaofis', intro: 'Öğle arası. Ava telefonu kapatıp perdeleri indiriyor; dar etek, ince gözlük ve tehlikeli bir gülümseme.', beats: [
+          ['Show Ass', 'Masasına eğilip eteğini yavaşça yukarı topluyor; altında hiçbir şey yok.', 'Toplantı iptal. Kapıyı kilitle.'],
+          ['Deepthroat', 'Seni deri koltuğa oturtup önünde diz çöküyor; ruju iz bırakarak seni sonuna kadar alıyor.', 'Sekreter duyacak… bırak duysun.'],
+          ['Ondesk', 'Raporları yere savurup masaya uzanıyor; topukluları omuzlarında.', 'Raporlar dağılsın, umurumda değil 😈'],
+          ['Cowgirl', 'Seni kendi koltuğuna oturtup üstüne çıkıyor; şehir manzaralı tablonun önünde kalçalarını savuruyor.', 'Artık patron sensin… sadece bu odada.']] },
+        { title: 'Birlikte sabah', place: 'Ava\'nın evi, sabah', intro: 'Gün ışığı çarşaflara vuruyor. Ava ilk kez birinin yanında uyanıyor; makyajsız, saçları dağınık ve hiç olmadığı kadar savunmasız.', beats: [
+          ['Back Hugging', 'Arkasından sarılıyorsun; elini tutup göğsüne bastırıyor, kalbinin hızlandığını hissediyorsun.', 'Gitme… bu sefer sabahı birlikte görelim.'],
+          ['Cunnilingus', 'Çarşafın altına kayıyorsun; sabah mahmurluğuyla gerinip uzun, kırılgan bir inilti bırakıyor.', 'Ne zamandır kimse yanımda uyanmamıştı.'],
+          ['Spooning', 'Yan yatıp seni içine alıyor; acele yok, sadece nefesler ve yavaş hareketler.', 'Böyle… hep böyle kal.'],
+          ['Missionary', 'Sırtüstü dönüp yüzünü avuçluyor; gözlerinde ilk kez korku değil, güven var.', 'Yavaş… bu sefer hiç acele yok 💕']] },
+        { title: 'Gece havuzu', place: 'Ava\'nın evi, havuz başı', intro: 'Arka bahçede ışıklı bir havuz. Misafirler gitmiş; Ava şampanya kadehini kenara bırakıp suya çırılçıplak giriyor.', beats: [
+          ['Front Hugging', 'Suyun içinde sana sarılıyor; ıslak göğüsleri göğsüne bastırılmış, bacakları belinde.', 'Su sıcak… ama sen daha sıcaksın.'],
+          ['Standing', 'Havuzun kenarına yaslanıp seni içine alıyor; su her hareketinizde dalgalanıyor.', 'Komşular görebilir… iyi 😈'],
+          ['Hotdogging', 'Havuzdan çıkıp şezlonga eğiliyor; ıslak kalçalarının arasında seni ağır ağır kaydırıyor.', 'Acele etme… önce beni deli et.'],
+          ['Standing doggy', 'Şezlongu tutup kalçasını kaldırıyor; şampanya kadehleri yere devriliyor.', 'Daha sert! Bütün köy duysun!']] },
+        { title: 'Kırmızı oda', place: 'Ava\'nın evi, gizli oda', intro: 'Ava şarap rafının arkasındaki kapıyı açıyor: kırmızı ışıklı, ipek çarşaflı, duvarında kelepçeler asılı bir oda. "Şehirden kalan tek sırrım" diyor.', beats: [
+          ['Sex toys', 'Çekmeceden titreşimli bir oyuncak çıkarıp eline tutuşturuyor; yatağa uzanıp bacaklarını açıyor.', 'Önce bununla… sonra seninle.'],
+          ['Facesitting', 'Kontrolü geri alıp yüzüne oturuyor; yatağın başlığını kavrayıp kalçalarını yavaşça dilinde döndürüyor.', 'Nefes al… ya da alma 😈'],
+          ['Cowgirl Anal', 'Yağlı parmaklarıyla seni hazırlayıp sırtını dönüyor; dişlerini sıkarak seni yavaş yavaş kalçasına alıyor.', 'Ahh… uzun zaman oldu… dur… şimdi devam!'],
+          ['Full Nelson', 'Kollarını kilitleyip onu kaldırıyorsun; çığlıkları kırmızı duvarlarda yankılanıyor.', 'Bu odaya kimseyi almadım… sen ilksin.']] }] },
     { id: 'lily', name: 'Lily', title: 'Market sahibi', age: 23, color: '#facc15', pers: 'Utangaç, tatlı, çalışkan',
       bio: 'Köydeki küçük marketin sahibi. Ağır kolileri tek başına taşıyacak kadar çok çalışır; erkek görmeye alışık olmadığı için seninle konuşurken kekeler.',
       where: (s, d) => s === 2 && d === 4 ? 'sahil' : s < 3 ? 'market' : '',
@@ -95,7 +165,23 @@ Stories.FIERY = (() => {
           choice: [['Belinden kaldırıyorum', 14, 'Raftaki kutuyu unutup sana sarılıyor 🙈'], ['Merdiveni getireyim', 3, '"Ah… evet, merdiven. Mantıklı." Biraz hayal kırıklığı.']] },
         { title: 'Sahilde gün batımı', lines: [['c', 'Hiç kimseyle gün batımı izlememiştim…'], ['c', 'Sence ben… güzel miyim?']],
           choice: [['Gördüğüm en güzel kız', 16, 'Gözlerini kapatıyor, ilk öpücüğü titrek 💕'], ['Tabii güzelsin', 6, 'Gülümsüyor, başını omzuna koyuyor.']] }],
-      passion: { place: 'Market deposu', lines: ['Kapıyı kilitledim… k-kimse gelmez.', 'Bunu hiç yapmadım… nazik ol 🥺', 'Ahh… devam et lütfen…'], evs: ['Kissing', 'Front Hugging', 'Cunnilingus', 'Missionary', 'Spooning'] } },
+      react: { soft: 'Evet… böyle… çok güzel 🥺', rough: 'S-sert mi? …t-tamam, deneyelim 😳', anal: 'O-orası mı? …yavaş ol, söz mü? 🥺', oral: 'Ben de… seni mutlu etmek istiyorum.', tits: 'Bunlar… çok mu büyük? Hep utanırdım 🙈', cin: 'İçim… sıcacık oldu. Bu his hiç geçmesin… 🥺💛' },
+      passions: [
+        { title: 'Depoda', place: 'Market deposu', intro: 'Kolilerin arasında, loş bir ampulün altında. Lily depo kapısını titreyen elleriyle kilitliyor; önlüğünün kurdelesini çözemiyor bile.', beats: [
+          ['Kissing', 'Önlüğünü sen çözüyorsun; dudakları titriyor, sonra parmak uçlarında yükselip seni öpüyor.', 'Kapıyı kilitledim… k-kimse gelmez.'],
+          ['Front Hugging', 'Göğsüne sokulup kalp atışını dinliyor; elbisesinin düğmelerini tek tek açmana izin veriyor.', 'Bunu hiç yapmadım… nazik ol 🥺'],
+          ['Cunnilingus', 'Un çuvallarının üstüne oturtup diz çöküyorsun; elleriyle ağzını kapatıp sessiz kalmaya çalışıyor ama başaramıyor.', 'Ahh… ne yapıyorsun… durma…'],
+          ['Missionary', 'Battaniye serili kolilerin üstünde; içine girerken tırnaklarını sırtına geçiriyor.', 'Ahh… devam et lütfen…']] },
+        { title: 'Kapanış saati', place: 'Pazar, kapanış saati', intro: 'Son müşteri de gitti. Lily kepengi yarıya indirip perdeyi çekiyor; tezgâhın arkasında, yüzünde yeni bir cesaret.', beats: [
+          ['Kissing', 'Tezgâha yaslanıp seni kendine çekiyor; bu sefer öpüşü daha emin.', 'Dükkânı kapattım… perdeyi de çektim 🙈'],
+          ['Blowjob', 'Tezgâhın arkasında diz çöküyor; acemice ama istekle, gözlerini kaldırıp onay bekliyor.', 'D-doğru mu yapıyorum?'],
+          ['Cowgirl', 'Seni tabureye oturtup üstüne çıkıyor; ilk kez kontrol onda ve bunu sevdiği her halinden belli.', 'Bu sefer… ben üste çıkabilir miyim?'],
+          ['Doggy', 'Tezgâha kapanıp önlüğünü sıyırıyor; meyve kasaları her vuruşta sallanıyor.', 'Sesimi duyacaklar… ahh, umurumda değil!']] },
+        { title: 'İskele altında piknik', place: 'Sahil, iskele altı', loc: 'sahil', intro: 'İskelenin gölgesinde bir piknik örtüsü, ev yapımı kurabiyeler. Lily yazlık elbisesinin altına hiçbir şey giymediğini kızararak itiraf ediyor.', beats: [
+          ['Front Hugging', 'Örtünün üstünde sarılıyorsunuz; elbisesinin eteği rüzgârla uçuşuyor.', 'Sepete sana kurabiye koydum… ve başka bir şey de 😳'],
+          ['Cunnilingus', 'Eteğinin altına kayıyorsun; ellerini kuma gömüp dalgaların sesine karışan iniltilerle titriyor.', 'Dalgalar sesimizi bastırır, değil mi?'],
+          ['Lap Sex', 'Kucağına oturup yüzünü boynuna gömüyor; yavaş, utangaç bir ritimle hareket ediyor.', 'Seni… çok derinde hissediyorum…'],
+          ['Missionary', 'Örtüye uzanıp seni üstüne çekiyor; gözleri dolu dolu.', 'Seni… seviyorum galiba 🥺💛']] }] },
     { id: 'ash', name: 'Ash', title: 'Roxy\'nin arkadaşı · gotik', age: 21, color: '#64748b', pers: 'Alaycı, dünyadan bıkmış, meydan okumayı sever',
       bio: 'Roxy\'nin arkadaşı; parkta tek başına oturan, kara mizahlı gotik kız. Ablası bilgisayarını kırdığından beri oyun oynayamıyor; sıkıntısı ve meydan okuma sevgisi seni ona bağlar.',
       where: (s, d) => s === 2 ? 'park' : s === 1 && d === 2 ? 'sahil' : '',
@@ -110,7 +196,33 @@ Stories.FIERY = (() => {
           choice: [['Senin için her şey', 13, 'Kumandayı bırakıp kucağına oturuyor 🖤'], ['Beraber oynayalım', 6, 'Sabaha kadar oynuyorsunuz; omzunda uyuyakalıyor.']] },
         { title: 'Mezarlıkta yıldızlar', lines: [['c', 'Burası köyün en sessiz yeri. Kimse bizi duymaz.'], ['c', 'Bir şey söyleyeceğim ama gülersen seni gömerim: sen… iyisin.']],
           choice: [['Sen de 🖤', 16, 'Seni yakasından çekip öpüyor; dudaklarında siyah ruj izi.'], ['Gülmüyorum', 5, '"İyi." Elini tutuyor.']] }],
-      passion: { place: 'Parkın karanlık köşesi', lines: ['Bunu yapacak kadar sıkıldım… yalan, seni istiyorum.', 'Isır. Hafif. …daha sert 🖤', 'Kimseye söyleme.'], evs: ['Kissing', 'Deepthroat', 'Facesitting', 'Doggy', 'Standing'] } },
+      react: { soft: 'Yavaş? Romantik. İğrenç. …devam et 🖤', rough: 'Sonunda. Kırmaktan korkma 🖤', anal: 'Hm. Cesur seçim. Beni şaşırttın… yap.', oral: 'Kıpırdama. Ne zaman dersem o zaman.', tits: 'Bunları kimse görmez. Sen özelsin. Şimdilik.', cin: 'İçime bıraktın. Cesur. …Bir daha yap 🖤' },
+      passions: [
+        { title: 'Karanlık köşe', place: 'Parkın karanlık köşesi', intro: 'Parkın en ıssız köşesi, bozuk bir sokak lambası. Ash deri ceketini çimlere atıp seni yaşlı bir ağaca yaslıyor.', beats: [
+          ['Kissing', 'Dudağını ısırıyor; tadında metal ve karanfilli sigara var.', 'Bunu yapacak kadar sıkıldım… yalan, seni istiyorum.'],
+          ['Deepthroat', 'Önünde çömelip zincirli kemerini çözüyor; gözünü kırpmadan seni boğazına kadar alıyor.', 'Şaşırdın mı? Ben her şeyi sonuna kadar yaparım.'],
+          ['Facesitting', 'Seni çimlere itip file çorabını yırtıyor; yüzüne oturup başını geriye atıyor.', 'Isır. Hafif. …daha sert 🖤'],
+          ['Doggy', 'Ağaca tutunup kalçasını sana yaslıyor; tırnakları ağacın kabuğunu kazıyor.', 'Kimseye söyleme.']] },
+        { title: 'Gece yüzmesi', place: 'Sahil, gece', loc: 'sahil', intro: 'Gece yarısı; ay denizin üstünde gümüş bir yol çizmiş. Ash siyah iç çamaşırlarını kuma bırakıp hiç tereddüt etmeden suya yürüyor.', beats: [
+          ['Kissing', 'Soğuk suyun içinde sana sarılıyor; ıslak siyah saçları yüzüne yapışıyor.', 'Ay ışığında yüzmek… klişe. Gel yine de.'],
+          ['Handjob', 'Suyun altında eli seni buluyor; soğuk parmakları ile sıcak nefesi arasında titriyorsun.', 'Soğuk su, sıcak sen. Güzel tezat 🖤'],
+          ['Standing', 'Belinize kadar suyun içinde bacaklarını beline doluyor; dalgalar sizi birbirinize itiyor.', 'Daha… batır beni.'],
+          ['Full Nelson', 'Onu kıyıya taşıyıp kollarının arasında kilitliyorsun; çığlıkları kumsalda yankılanıyor.', 'Bir daha… ve bu sefer bağırmama izin ver.']] },
+        { title: 'Salıncak', place: 'Park, sabaha karşı', intro: 'Sabaha karşı, köy uyuyor. Ash eski salıncakta sallanıyor ve sana bakmadan "bu saatte kural yok" diyor.', beats: [
+          ['Show Tits', 'Fileli bluzunu yukarı sıyırıp göğüslerini serin havaya açıyor; uçlarındaki halkalar parlıyor.', 'Bunları kimse görmez. Şanslısın.'],
+          ['Facesitting', 'Salıncağın altındaki kuma uzanmanı emrediyor; zincirlere tutunup yüzüne iniyor.', 'Herkes uyuyor. Kural yok.'],
+          ['Cowgirl', 'Salıncağın tahtasında kucağında; her sallanışta daha derine iniyor.', 'Bileklerimi tut. Sıkı… evet, öyle.'],
+          ['Rough', 'Bankın üstüne kapanıp saçlarını eline veriyor; sert, nefes nefese, sınırsız.', 'Kahretsin… sanırım sana bağlanıyorum 🖤']] },
+        { title: 'Kolejin çatısı', place: 'Kolejin çatısı, gece', loc: 'kolej', intro: 'Ash seni yangın merdiveninden kolejin çatısına çıkarıyor; uzakta şehrin ışıkları, havada sigara dumanı, parmaklarında kara oje.', beats: [
+          ['Kissing', 'Çatının kenarında, rüzgâr saçlarını savururken öpüşü yavaş ve tehlikeli.', 'Aşağı bakma. Bana bak.'],
+          ['Blowjob', 'Seni duvara yaslayıp diz çöküyor; dilindeki halka tenine sürtünüyor, hareketleri sabırsız.', 'Yükseklikten korkuyor musun? Ben korkmuyorum.'],
+          ['Standing Anal', 'Duvara tutunup kalçasını sana uzatıyor; kendi eliyle seni yönlendirip yavaşça içine alıyor.', 'Yavaş… sonra hiç yavaş olma 🖤'],
+          ['Standing doggy', 'Rüzgârın içinde, çatının ortasında; her vuruşta adını göğe haykırıyor.', 'Bütün köy duysun. Umurumda değil.']] },
+        { title: 'Yağmur altında', place: 'Park, çardak', loc: 'park', intro: 'Bardaktan boşanırcasına yağmur yağıyor. Ash parktaki çardağın altında seni bekliyor; makyajı akmış, gözleri yanıyor.', beats: [
+          ['Front Hugging', 'Islak tişörtü tenine yapışmış; sana sarılıp titriyor, ama soğuktan değil.', 'Bugün kötü bir gündü. Unuttur bana.'],
+          ['Titfuck', 'Çardağın bankında önünde diz çöküp ıslak göğüslerinin arasına seni alıyor.', 'Bak bana. Sadece bana.'],
+          ['Missionary', 'Bankta sırtüstü, yağmur damlaları teninde; ilk kez gözlerini kapatmadan seni izliyor.', 'Yumuşak olma… ya da ol. Bu sefer… ol.'],
+          ['Spooning', 'Çardağın zemininde, ceketinin üstünde kıvrılmış; arkasından sarılıp yavaşça hareket ediyorsun.', 'Bunu kimseye söyleme… ama bir daha yap 🖤']] }] },
     { id: 'chloe', name: 'Chloe', title: 'Hemşire', age: 29, color: '#2dd4bf', pers: 'Sakin, kuru mizahlı, pragmatik',
       bio: 'Köy hastanesinin hemşiresi; şehirdeki bir laboratuvarla gizli bir "yan iş" yürütür. En tuhaf konuları bile gülümsemeden, iş gibi konuşur.',
       where: (s, d) => s === 2 && d === 4 ? 'sahil' : s < 2 ? 'hastane' : s === 2 && d !== 3 ? 'hastane' : '',
@@ -125,7 +237,23 @@ Stories.FIERY = (() => {
           choice: [['Elini tut', 13, '"Bu muayenenin parçası değil." Ama elini çekmiyor.'], ['Nabız nasıl?', 5, '"Yüksek. Sebebini biliyorum."']] },
         { title: 'Gece nöbeti', lines: [['c', 'Hastane boş. Ben de… sıkıldım.'], ['c', 'Hipotezim şu: bana âşıksın. Test edelim mi?']],
           choice: [['Test edelim', 16, 'Önlüğünün düğmelerini çözüyor. "Bilim için." 💉'], ['Hipotez yanlış', 2, '"Veriler aksini söylüyor." Not alıyor.']] }],
-      passion: { place: 'Hastanenin boş odası', lines: ['Kapı kilitli. Kameralar kapalı. Prosedür başlıyor.', 'Bu… beklediğimden daha iyi.', 'Nabzım… dur, ölçmeyeceğim 😳'], evs: ['Handjob', 'Blowjob', 'Ondesk', 'Cowgirl', 'Standing doggy'] } },
+      react: { soft: 'Yavaş tempo. Kalp sağlığına iyi gelir. Devam.', rough: 'Fizyolojik sınırlarını test edelim 😏', anal: 'Anatomik olarak mümkün. Kayganlaştırıcı ikinci rafta.', oral: 'Normalde "ağzını aç" diyen benim. Bugün değil.', tits: 'Muayene sırası sende. Dikkatli ol.', cin: 'Klinik gözlem: hacim yüksek, sıcaklık yüksek. Tekrar ölçmemiz lazım 😏' },
+      passions: [
+        { title: 'Kilitli oda', place: 'Hastanenin boş odası', intro: 'Gece vardiyası, koridorlar bomboş. Chloe seni boş bir hasta odasına çekip kapıyı kilitliyor; eldivenlerini şaklatarak çıkarıyor.', beats: [
+          ['Handjob', 'Seni hasta yatağına oturtup ellerini uzatıyor; profesyonel, ritmik ve acımasızca yavaş.', 'Kapı kilitli. Kameralar kapalı. Prosedür başlıyor.'],
+          ['Blowjob', 'Saçlarını toplayıp önüne eğiliyor; yüzü ciddi ama dili hiç değil.', 'Bu… beklediğimden daha iyi.'],
+          ['Ondesk', 'Önlüğünü sıyırıp sedyeye uzanıyor; metal tekerlekler her vuruşta kayıyor.', 'Freni çek. …çektin mi? Boş ver.'],
+          ['Cowgirl', 'Üstüne çıkıp stetoskopu kendi göğsüne dayıyor; kalp atışlarını dinleyerek hızlanıyor.', 'Nabzım… dur, ölçmeyeceğim 😳']] },
+        { title: 'Detaylı muayene', place: 'Hastane, muayene odası', intro: 'Randevu saatin geldi. Chloe beyaz önlüğünün altına sadece dantel bir iç çamaşırı giymiş; elinde boş bir dosya, gözünde muzip bir parıltı.', beats: [
+          ['Show Tits', 'Önlüğü açıp göğüslerini serbest bırakıyor; stetoskopu senin göğsüne dayıyor.', 'Gömleğini çıkar. Muayene… detaylı olacak.'],
+          ['Titfuck', 'Muayene masasının önünde diz çöküp göğüsleriyle seni kavrıyor; soğuk tavrıyla sıcak teni çarpıcı bir tezat.', 'Kalp ritmin hızlandı. Benimki de.'],
+          ['Missionary', 'Masaya uzanıp bacaklarını üzengilere koyuyor; kâğıt örtü altında hışırdıyor.', 'Derin nefes al… sonra ver… ahh.'],
+          ['Spooning', 'Dar masada yan yana sıkışmışsınız; arkasından sarılıyorsun, önlüğünün kokusu tenine karışıyor.', 'Teşhis: bir doz daha lazım 😏']] },
+        { title: 'Nöbet sonrası', place: 'Sahil, şafak', loc: 'sahil', intro: 'On iki saatlik nöbetin ardından şafak sökerken. Chloe üniformasını kuma bırakıp yorgun ama aç gözlerle sana dönüyor.', beats: [
+          ['Kissing', 'Tuzlu rüzgâr, uykusuz gözler; öpüşü uzun ve tembel.', 'On iki saatlik nöbet. Hak ettim.'],
+          ['69', 'Seni kuma yatırıp ters uzanıyor; ikiniz aynı anda birbirinizi tadıyorsunuz.', 'Ağzın doluyken konuşma. Ben de konuşmayacağım.'],
+          ['Cowgirl', 'Üstüne çıkıp doğan güneşe bakarak hareket ediyor; saçları turuncu ışıkta yanıyor.', 'Bu sefer kontrol bende. Sakin yat.'],
+          ['Doggy', 'Kuma diz çöküp kalçasını uzatıyor; dalgalar ayak bileklerini yalıyor.', 'Reçete: her nöbetten sonra. Tekrarlanacak.']] }] },
     { id: 'liza', name: 'Liza', title: 'Kolej kraliçesi', age: 21, color: '#f472b6', pers: 'Şımarık, materyalist, sivri dilli',
       bio: 'Kolejin "küçük kraliçesi"; parası olmayanı küçümser, her şeyin peşin ödenmesini ister. Laf dalaşlarıyla yakınlaşır, becerileriyle gurur duyar.',
       where: (s, d) => s === 0 ? (lesson(d) ? 'kolej' : '') : s === 1 ? (d !== 6 ? 'park' : '') : s === 2 ? (d === 6 ? 'sahil' : '') : 'park',
@@ -140,7 +268,23 @@ Stories.FIERY = (() => {
           choice: [['Senin için riske girerim', 13, '"Ooh, kahraman." Kulağına bir öpücük.'], ['Kendin getir', 4, '"Korkak." Ama gülüyor.']] },
         { title: 'Gece parkta', lines: [['c', 'Herkes beni yüzeysel sanıyor. Haklılar galiba.'], ['c', 'Ama sen bana bakınca… pahalı hissetmiyorum. Değerli hissediyorum.']],
           choice: [['Sen değerlisin', 16, 'Topuklularını çıkarıp seni çimenlere çekiyor 💋'], ['Ve pahalı', 6, '"Aynen öyle." Gülüşü ilk kez gerçek.']] }],
-      passion: { place: 'Park, gece', lines: ['Bunu bedavaya yapmıyorum… sana özel indirim 😏', 'Becerilerimle gurur duyarım, izle.', 'Ahh… tamam, sen de iyisin.'], evs: ['Kissing', 'Deepthroat', 'Titfuck', 'Cowgirl', 'Standing'] } },
+      react: { soft: 'Romantik takılmak pahalı bir hizmettir. Bu seferlik bedava 💅', rough: 'Kimse bana böyle davranamaz… sen hariç 😏', anal: 'Normalde ekstra ücretli. Sana özel… ahh, yavaş!', oral: 'İzle ve öğren. Bu konuda en iyisi benim.', tits: 'Bunlar doğal, bu arada. Dokunmak bir ayrıcalık.', cin: 'Bu kadar cömert olacağını bilmiyordum… hm. İyiymiş 💅' },
+      passions: [
+        { title: 'Özel indirim', place: 'Park, gece', intro: 'Gece parkı. Liza tasarım çantasını banka bırakıp pembe dudaklarını büzüyor: "Bu, sana yaptığım en büyük iyilik."', beats: [
+          ['Kissing', 'Parfüm kokusu, parlak ruj; öpüşü hesaplı ama ateşli.', 'Bunu bedavaya yapmıyorum… sana özel indirim 😏'],
+          ['Deepthroat', 'Pahalı ceketini dizlerinin altına serip çöküyor; gösteriş yaparcasına seni sonuna kadar alıyor.', 'Becerilerimle gurur duyarım, izle.'],
+          ['Titfuck', 'Bluzunu açıp göğüslerini kaldırıyor; ojeli tırnakları ışıkta parıldıyor.', 'Bunlar ne kadar tuttu biliyor musun? Şaka, doğal 💅'],
+          ['Cowgirl', 'Seni banka oturtup eteğini toplayarak üstüne çıkıyor.', 'Ahh… tamam, sen de iyisin.']] },
+        { title: 'Boş amfi', place: 'Kolej, boş amfi', loc: 'kolej', intro: 'Ders bitti, amfi boş. Liza kürsünün arkasında; kısa okul eteği, topuklular ve taç gibi duran saç bandı.', beats: [
+          ['Show Ass', 'Kürsüye eğilip eteğini yavaşça kaldırıyor; pembe iç çamaşırını tek parmakla aşağı kaydırıyor.', 'Kürsünün arkası… kimse bakmaz. Bakarsa da kıskanır 💅'],
+          ['Blowjob', 'Sıraların arasında diz çöküp saçını savuruyor.', 'Sana özel, bedava. Bir kereliğine.'],
+          ['Ondesk', 'Hocanın masasına uzanıp bacaklarını açıyor; kitaplar yere dökülüyor.', 'Not ver bakalım… sadece AA kabul ederim.'],
+          ['Standing doggy', 'Kara tahtaya tutunup kalçasını sana uzatıyor; havada tebeşir tozu.', 'Tamam, itiraf: senden başkası olmaz artık.']] },
+        { title: 'Yeni bikini', place: 'Sahil', loc: 'sahil', intro: 'Liza en pahalı bikinisiyle şezlongda; güneş gözlüğünü indirip sana bakıyor, elinde bronzlaştırıcı yağ.', beats: [
+          ['Kissing', 'Şezlongun yanına çöktüğünde boynuna sarılıyor.', 'Yeni bikinim. Fiyatını sorma, sadece bak.'],
+          ['Hotdogging', 'Yağlı kalçalarını sana sürtüyor; parlayan teninde avuçların kayıyor.', 'Yağla beni… her yerimi 😏'],
+          ['Cowgirl', 'Şezlongda üstüne çıkıyor; bikininin üstü kumda unutulmuş.', 'Herkes beni kıskanıyor. Şimdi seni de kıskansınlar.'],
+          ['Missionary', 'Havluya uzanıp seni çekiyor; sandaletli ayakları sırtına bastırıyor.', 'Bu kadar iyi olmana sinir oluyorum… devam et!']] }] },
     { id: 'claire', name: 'Claire', title: 'Ofis sekreteri', age: 27, color: '#94a3b8', pers: 'Ciddi, disiplinli; içten içe çekingen ve meraklı',
       bio: 'Ava\'nın sekreteri; hep resmi takımla dolaşan "demir leydi". Ufak bir kışkırtmayla kızarır, savunmaya geçer ama merakına yenik düşer.',
       where: (s, d) => s === 0 && d === 7 ? 'sahil' : wk(d) && s < 2 ? 'ofis' : '',
@@ -155,7 +299,23 @@ Stories.FIERY = (() => {
           choice: [['En sevdiğin sahneyi oku', 13, 'Titrek sesle okuyor; son cümlede gözleri sana kalkıyor.'], ['Sırrın bende güvende', 6, '"Sağ olun." Rahatlamış.']] },
         { title: 'Mesai sonrası', lines: [['c', 'Hiç… kimseyle… yani… ben tecrübesizim.'], ['c', 'Bana öğretir misiniz? Profesyonel olarak.']],
           choice: [['Profesyonel olarak 😏', 16, 'Gözlüğünü çıkarıyor, saçını açıyor. "Başlayalım."'], ['Acele etme', 6, '"Sabırlısınız. Bu… hoşuma gitti."']] }],
-      passion: { place: 'Ofis, mesai sonrası', lines: ['Kapıyı kilitledim. İki kez kontrol ettim.', 'Bu… hiçbir kitapta yazmıyordu 😳', 'Lütfen… devam edin.'], evs: ['Kissing', 'Show Tits', 'Handjob', 'Ondesk', 'Missionary'] } },
+      react: { soft: 'Bu… çok nazik. Not alıyorum 😳', rough: 'Her zaman disiplinli olmak istemiyorum. Lütfen…', anal: 'Bunu… okumuştum. Denemek istiyorum. Yavaş, lütfen.', oral: 'Kurallara göre… ben de karşılık vermeliyim.', tits: 'Bluzumu… siz açar mısınız?', cin: 'İçimde… hâlâ sıcaklığınızı hissediyorum. Bunu bir yere not etmeliyim 😳' },
+      passions: [
+        { title: 'Mesai sonrası', place: 'Ofis, mesai sonrası', intro: 'Ofisteki son ışık Claire\'in masasında. Saçı sımsıkı topuz, gözlüğünü düzeltiyor; ama ellerinin titrediğini görüyorsun.', beats: [
+          ['Kissing', 'Topuzunu çözüyorsun; saçları omuzlarına dökülürken öpüşüne şaşkınlıkla karşılık veriyor.', 'Kapıyı kilitledim. İki kez kontrol ettim.'],
+          ['Show Tits', 'Bluzunun düğmelerini bir bir açıyor; altından sade beyaz bir sütyen çıkıyor.', 'Bu… hiçbir kitapta yazmıyordu 😳'],
+          ['Handjob', 'Masasının önünde, toplantı notları hâlâ açık; elleri çekingen ama meraklı.', 'Böyle mi? Lütfen söyleyin.'],
+          ['Ondesk', 'Klavyeyi ve dosyaları kenara itip onu masaya yatırıyorsun; eteği beline toplanmış.', 'Lütfen… devam edin.']] },
+        { title: 'Arşiv odası', place: 'Ofis, arşiv odası', intro: 'Dar bir arşiv odası, tozlu raflar, tek bir floresan. Claire elindeki klasörü düşürüyor ve almak için eğilmiyor.', beats: [
+          ['Back Hugging', 'Arkasından sarılıyorsun; nefesini tutup raflara yaslanıyor.', 'Dosyaları alfabetik dizmem lazım… sonra.'],
+          ['Blowjob', 'Dizlerinin üstüne çöküp gözlüğünü düzeltiyor; sanki rapor yazıyormuş gibi dikkatli.', 'Gözlüğümü çıkarayım mı? Hayır, kalsın dediniz.'],
+          ['Standing', 'Onu rafa yaslayıp bir bacağını kaldırıyorsun; klasörler yere yağıyor.', 'Ahh… sesimi… tutamıyorum…'],
+          ['Standing doggy', 'Raflara tutunup kalçasını uzatıyor; eteği beline sıyrılmış.', 'Bunu takvime ekliyorum. Her cuma 😳']] },
+        { title: 'Protokol dışı', place: 'Sahil, şemsiye altı', loc: 'sahil', intro: 'Hafta sonu. Claire ilk kez ofis kıyafetleri dışında: siyah tek parça mayo, açık saçlar; şemsiyenin altında kitap okuyormuş gibi yapıyor.', beats: [
+          ['Kissing', 'Kitabı kapatıp sana dönüyor; bu sefer öpen o.', 'İlk kez işten başka bir yerde buluşuyoruz.'],
+          ['Cunnilingus', 'Mayosunu yana çekiyorsun; kitabı yüzüne kapatıp sesini bastırmaya çalışıyor.', 'Kuralları bugün siz koyun. Ben… uyarım.'],
+          ['Cowgirl', 'Cesaretini toplayıp üstüne çıkıyor; ritmi bulmaya çalışırken utangaçça gülüyor.', 'Doğru mu yapıyorum? …evet, hissediyorum.'],
+          ['Spooning', 'Havlunun üstünde yan yana, şemsiyenin gölgesinde; yavaş ve uzun.', 'Ahh… protokol dışı… ama çok iyi.']] }] },
     { id: 'scarlett', name: 'Scarlett', title: 'Kolej müdürü', age: 41, color: '#dc2626', pers: 'Otoriter, baskın, kurallara tapan',
       bio: 'Kolejin müdürü; disiplin ve otorite tutkunu. Liza\'nın çaldığı kolyeyi geri alırken seni yakalar ve "cezanı çekmen" için kendi asistanı yapar. Buyurgan ama karşı konulmaz.',
       where: (s, d) => s === 0 && d === 7 ? 'sahil' : wk(d) && (s === 1 || s === 2) ? 'mudur' : '',
@@ -170,7 +330,23 @@ Stories.FIERY = (() => {
           choice: [['Emredersiniz', 13, 'Bir kaşını kaldırıyor: "İyi çocuk."'], ['Ya çıkarmazsam?', 7, 'Gülümsüyor: "O zaman eğlenceli olur."']] },
         { title: 'Sınavın sonu', lines: [['c', 'Kimse bana karşı koymadı. Sen ise… ilginçsin.'], ['c', 'Bu gece kuralları bir kez çiğneyeceğim. Senin için.']],
           choice: [['Ben de sizin için', 16, 'Kırmızı kalemini masaya bırakıyor; ceketi yere düşüyor 🔥'], ['Kurallara sadık kalalım', 4, '"Sıkıcı… ama doğru."']] }],
-      passion: { place: 'Müdür odası', lines: ['Diz çök. Şimdi kalk. İyi.', 'Kurallar bu gece benim bedenim 😈', 'Sakın durma. Bu bir emir.'], evs: ['Facesitting', 'Blowjob', 'Cowgirl', 'Ondesk', 'Full Nelson'] } },
+      react: { soft: 'Yavaş mı? Sabrını ödüllendireceğim.', rough: 'Sert mi? Hah. Sen bana uyarsın, ben sana değil 😈', anal: 'İzin veriyorum. Ama ritmi ben belirlerim.', oral: 'Bu sefer diz çöken ben olacağım. Şaşırdın mı?', tits: 'Bakmana izin verdim. Dokunmana da. Şimdilik.', cin: 'İçime bırakmana izin vermiştim. İyi iş. Bir dahaki sefere de öyle.' },
+      passions: [
+        { title: 'Emir', place: 'Müdür odası', intro: 'Ağır perdeler kapalı, masada kırmızı kalem. Scarlett deri koltuğundan kalkıp kapıyı kilitliyor ve tek bir kelime söylüyor: "Soyun."', beats: [
+          ['Facesitting', 'Seni halıya uzatıp eteğini toplayarak yüzüne oturuyor; masanın kenarına tutunup ritmi o belirliyor.', 'Diz çök. Şimdi kalk. İyi.'],
+          ['Blowjob', 'Seni koltuğuna oturtup önüne çömeliyor; kontrol hâlâ onda, gözlerini bir an indirmiyor.', 'Kurallar bu gece benim bedenim 😈'],
+          ['Cowgirl', 'Üstüne çıkıp gömleğini yırtarcasına açıyor; seni koltuğa çiviler gibi.', 'Gözlerini kapatma. Bana bak.'],
+          ['Ondesk', 'Sonunda onu masaya yatırmana izin veriyor; dosyalar dağılırken ilk kez sesini kontrol edemiyor.', 'Sakın durma. Bu bir emir.']] },
+        { title: 'Ceza saati', place: 'Kolej, boş sınıf', loc: 'kolej', intro: 'Okuldan sonra cezaya kaldın. Boş sınıfta Scarlett elinde cetvelle tahtanın önünde; dar kalem etek, sıkı topuz.', beats: [
+          ['Show Ass', 'Masaya eğilip eteğini yavaşça kaldırıyor; siyah jartiyerleri ortaya çıkıyor.', 'Tahtaya dön. …hayır, bana dön.'],
+          ['Deepthroat', 'Saçlarını kavramanı istiyor; seni boğazına kadar alıp gözünü kırpmadan bakıyor.', 'Kurallara uymayanları… ben cezalandırırım 😈'],
+          ['Standing', 'Tahtaya yaslanıp bacağını beline kaldırıyor; tebeşir tozu siyah elbisesine bulaşıyor.', 'Daha sert. Bu bir ders.'],
+          ['Rough', 'Sıranın üstüne kapanıp bileklerini arkada tutmanı emrediyor.', 'Ders bitmedi. Daha bitmedi!']] },
+        { title: 'Özel kabana', place: 'Sahil, özel kabana', loc: 'sahil', intro: 'Tatil günü. Scarlett beyaz perdeli kabanasında kırmızı mayosuyla güneşleniyor; seni görünce perdeyi çekiyor.', beats: [
+          ['Facesitting', 'Seni minderlere yatırıp yüzüne oturuyor; perdeler rüzgârla dalgalanıyor.', 'Burada müdür değilim. Ama emirler yine benden.'],
+          ['Titfuck', 'Mayosunun üstünü indirip göğüslerinin arasına seni alıyor; ilk kez gülümseyerek.', 'Bunu kimse bilmeyecek. Söz mü?'],
+          ['Cowgirl', 'Üstüne çıkıp ellerini başının üstünde kilitliyor.', 'Yat. Kıpırdama. Ben sürerim.'],
+          ['Doggy', 'Minderlere kapanıp kalçasını kaldırıyor; sonunda kontrolü sana bırakıyor.', 'İyi iş çıkardın… ödülünü hak ettin 💋']] }] },
     { id: 'luna', name: 'Luna', title: 'Ormanın cadısı', age: 30, color: '#a855f7', pers: 'Öfkeli, gizemli, sinsi ve baştan çıkarıcı',
       bio: 'Ormanın derinliklerinde tek başına yaşayan cadı. İlk karşılaşmada seni lanetlemekle tehdit eder; işine yaradığını görünce sinsi ve baştan çıkarıcı olur. Mantar ve büyülü pazarlıklar onun dünyası.',
       where: s => s === 3 ? 'orman' : '',
@@ -185,7 +361,23 @@ Stories.FIERY = (() => {
           choice: [['İçerim', 14, 'Dünya dönüyor; Luna kucağında, gözleri parlıyor: "Etkisi bende de."'], ['Önce sen iç', 6, 'Gülüyor: "Zekisin. Az da olsa."']] },
         { title: 'Dolunay', lines: [['c', 'Dolunayda büyüm en güçlüsüdür. Ve… arzum da.'], ['c', 'Kulübemde kal bu gece.']],
           choice: [['Kalırım', 16, 'Pelerinini çözüyor; ay ışığı tenini gümüşe boyuyor 🌕'], ['Sabah dönmeliyim', 4, '"Gidersen lanetlenirsin." Şaka mı?']] }],
-      passion: { place: 'Luna\'nın kulübesi', lines: ['Büyü başladı; artık geri dönüş yok 🌕', 'Seni hiç bırakmayacağım, solucanım.', 'Daha… daha… ahh!'], evs: ['Kissing', 'Cat Girl', 'Cunnilingus', 'Cowgirl', 'Doggy', 'Rough'] } },
+      react: { soft: 'Yavaş… büyü yavaş işler, solucanım 🌕', rough: 'Hah! İçindeki canavar uyandı demek 😈', anal: 'Karanlık bir ayin istiyorsun… ver bakalım 🌑', oral: 'Özünü tadacağım. Büyü için. Tabii.', tits: 'Ay ışığı bunlara yakışıyor, değil mi?', cin: 'Özün artık bende, solucanım… büyü mühürlendi 🌕' },
+      passions: [
+        { title: 'Büyü', place: 'Luna\'nın kulübesi', intro: 'Mumlar kendiliğinden yanıyor, kazandan mor bir duman yükseliyor. Luna pelerinini çözüp çıplak omuzlarına dolunayın ışığını alıyor.', beats: [
+          ['Kissing', 'Dudakları bal ve tütsü tadında; öptüğü an tenin karıncalanıyor.', 'Büyü başladı; artık geri dönüş yok 🌕'],
+          ['Cat Girl', 'Başında kedi kulakları beliriyor; kalçasından ince bir kuyruk kıvrılıp bacağına dolanıyor.', 'Miyav… şaşırma, solucanım. Tadını çıkar.'],
+          ['Cunnilingus', 'Seni kürklerin üstüne çekip bacaklarını açıyor; kuyruğu başını okşuyor.', 'Seni hiç bırakmayacağım…'],
+          ['Cowgirl', 'Üstüne çıkıp kalçalarını daireler çizerek döndürüyor; her inişinde mumlar parlıyor.', 'Daha… daha… ahh!']] },
+        { title: 'Kazan başında', place: 'Luna\'nın kulübesi, kazan başı', intro: 'Kazanın buharı odayı sarmış. Luna sana bir şişe uzatıyor; iksir dilini yakıyor ve bütün vücuduna bir ateş yayılıyor.', beats: [
+          ['Cat Girl', 'Kedi kılığına bürünüp dört ayak üstünde sana sokuluyor; mırlıyor.', 'Bu iksir dayanıklılık verir. Sana. Benim için 😈'],
+          ['Blowjob', 'Pürüzlü dili seni baştan sona yalıyor; gözleri sarı sarı parlıyor.', 'Kediye dönüşmemi istemiştin… miyav 🐾'],
+          ['Lap Sex', 'Büyü kitaplarının arasındaki koltukta kucağında.', 'Hissediyor musun? İksir çalışıyor.'],
+          ['Standing doggy', 'Kazanın kenarına tutunup kalçasını uzatıyor; buhar ikinizi sarıyor.', 'Büyü bozulmadan… bir kez daha!']] },
+        { title: 'Taş çember', place: 'Orman, taş çember', intro: 'Ormanın derinliklerinde yosunlu taşlardan bir çember. Luna seni ortasına çağırıyor; dolunay tam tepede, etrafınızda ateş böcekleri.', beats: [
+          ['Kissing', 'Çemberin ortasında sarılıyorsunuz; taşlar hafifçe parlamaya başlıyor.', 'Taşların ortasına uzan. Ay bizi izliyor 🌕'],
+          ['Facesitting', 'Yüzüne oturup ellerini göğe kaldırıyor; tuhaf bir dilde mırıldanıyor.', 'Gücünü emiyorum… hissediyor musun?'],
+          ['Cowgirl', 'Üstünde, saçları rüzgârda; her hareketinde taşlar daha çok parlıyor.', 'Ayin tamamlanmak üzere…'],
+          ['Full Nelson', 'Onu kollarına alıp kaldırıyorsun; çığlığı ormanın içinde yankılanıyor.', 'Artık bana aitsin. Sonsuza dek.']] }] },
     { id: 'maeve', name: 'Maeve', title: 'Şehirdeki patronun', age: 39, color: '#38bdf8', pers: 'Soğuk, mesafeli; altında teşhirci',
       bio: 'Şehirde çalıştığın ajansın sahibi; seni yazı Mia\'nın pansiyonunda geçirmen için köye o yolladı. Görüntülü aramaları kısa keser ama ekranın öbür ucunda saklı bir teşhircilik vardır. Sadece dizüstü bilgisayardan (akşam / gece) ulaşılır.',
       where: () => '', call: true,
@@ -200,7 +392,19 @@ Stories.FIERY = (() => {
           choice: [['Gözümü ayıramıyorum', 14, 'Bornozunu omzundan kaydırıyor. "O zaman bak."'], ['Bu doğru değil', 3, '"Haklısın." Ama kamerayı kapatmıyor.']] },
         { title: 'Gösteri', lines: [['c', 'Bu gece senin için bir şey yapacağım. Kimse bilmeyecek.']],
           choice: [['İzliyorum 👀', 16, 'Işıkları ayarlıyor; kameraya dönüp gülümsüyor 🔥'], ['Bunu yapmak zorunda değilsin', 6, '"Biliyorum. İstiyorum."']] }],
-      passion: { place: 'Görüntülü arama', lines: ['Kamera açık… sadece sen izliyorsun.', 'Beni görüyor musun? İyi.', 'Yazın sonunda şehre dön… bunu gerçekten yaşayalım.'], evs: ['Show Tits', 'Show Ass', 'Sex toys'] } }
+      passions: [
+        { title: 'Kamera açık', place: 'Görüntülü arama', intro: 'Ekranda Maeve; ofis değil, loş bir yatak odası. Saten sabahlığı gevşek, elinde şarap kadehi.', beats: [
+          ['Show Tits', 'Sabahlığı yavaşça açıyor; kamerayı göğüslerine yaklaştırıyor.', 'Kamera açık… sadece sen izliyorsun.'],
+          ['Show Ass', 'Dönüp kalçasını kameraya uzatıyor; omzunun üstünden gülümsüyor.', 'Beni görüyor musun? İyi.'],
+          ['Sex toys', 'Komodinden bir oyuncak çıkarıp yatağa uzanıyor; bacaklarını kameraya açıyor, iniltileri hoparlörden taşıyor.', 'Yazın sonunda şehre dön… bunu gerçekten yaşayalım.']] },
+        { title: 'Duş yayını', place: 'Görüntülü arama, banyodan', intro: 'Telefon buğulu aynaya dayalı. Maeve duşun altında; su çıplak bedeninden süzülüyor.', beats: [
+          ['Show Tits', 'Köpükleri göğüslerine yayıp yavaşça avuçluyor.', 'Telefonu aynaya dayadım… su sıcak.'],
+          ['Show Ass', 'Cama yaslanıp kalçasını ağır ağır sabunluyor.', 'Köpükleri izle. Yavaşça…'],
+          ['Sex toys', 'Duvara yapıştırdığı oyuncağa yaslanıp yavaşça hareket ediyor; buhar ekranı kaplıyor.', 'Sesimi duydun mu? Senin yüzünden 💦']] },
+        { title: 'Ofiste gece', place: 'Görüntülü arama, ofisten', intro: 'Gece yarısı, arkasında şehrin ışıkları. Maeve boş ofisinde masasının üstüne oturmuş; ceketi yerde.', beats: [
+          ['Show Tits', 'Gömleğinin düğmelerini birer birer açıyor; altında sütyen yok.', 'Herkes gitti. Masamdayım… eteğim yukarıda.'],
+          ['Sex toys', 'Bacaklarını masada açıp oyuncağı kullanıyor; telefonu çalıyor, bakmıyor bile.', 'Kocam aradı. Açmadım. Seni izliyorum.'],
+          ['Squirt', 'Masanın kenarını kavrayıp titreyerek boşalıyor; evraklar ıslanıyor.', 'Yaz bitince… beni bu masada al.']] }] }
   ];
 
   // 🎁 hediyeler ve eşyalar (pazardan alınır; mantar ormandan, balık sahilden, yemek mutfaktan)
@@ -213,5 +417,40 @@ Stories.FIERY = (() => {
   // 💞 ilişki kademeleri: aff eşiği → kademe adı
   const STAGES = [[0, 'Tanışma'], [20, 'Arkadaş'], [45, 'Flört'], [70, 'Yakın'], [90, 'Tutku']];
 
-  return { SLOTS, DAYS, LOCS, CHARS, ITEMS, STAGES };
+  // 🔀 tutku sahnesinde "nasıl devam?": düğme, olay kartları, her kartın anlatımı ({n} = onun adı), sonda seçilebilecek bitişler
+  const MOVES = {
+    soft: { label: '💕 Yavaş ve derin', evs: ['Missionary', 'Spooning'], fin: ['in', 'out', 'face'],
+      sys: ['Onu sırtüstü yatırıp yüzünü avuçluyorsun; her hareket yavaş, uzun ve derin. {n} bacaklarını beline kilitliyor.', 'Yan yatıp arkasından sarılıyorsun; boynunu öperken ağır ağır içinde kayıyorsun, {n} elini tutup göğsüne bastırıyor.'] },
+    rough: { label: '🔥 Sert', evs: ['Standing doggy', 'Full Nelson'], fin: ['in', 'ass', 'face'],
+      sys: ['Saçlarını kavrayıp onu öne eğiyorsun; vuruşların hızlandıkça {n} çığlıklarını bastıramıyor.', 'Bacaklarını kollarınla kilitleyip onu havaya kaldırıyorsun; {n} tamamen sana teslim, baştan aşağı titriyor.'] },
+    anal: { label: '🍑 Anal', evs: ['Spooning Anal', 'Rough Anal'], fin: ['anin', 'ass', 'face'],
+      sys: ['Parmaklarınla onu sabırla hazırlıyorsun; {n} derin bir nefes alıp seni yavaş yavaş kalçasına alıyor.', 'Alıştıkça kalçasını sana doğru itiyor; ritim hızlanıyor, {n} inlemeleri çığlığa dönüşüyor.'] },
+    oral: { label: '👅 Ağzıyla', evs: ['Blowjob', 'Deepthroat'], fin: ['mouth', 'face'],
+      sys: ['{n} önünde diz çöküp dudaklarını sana doluyor; gözleri hiç gözlerinden ayrılmıyor.', 'Saçlarını toplayıp seni boğazına kadar alıyor; {n} nefes nefese ama durmuyor.'] },
+    tits: { label: '🍒 Göğüsleri', evs: ['Titfuck', 'Reverse Titfuck'], fin: ['tits', 'mouth', 'face'],
+      sys: ['{n} göğüslerini avuçlarıyla birleştirip seni aralarına alıyor; her hareketinde dudaklarıyla karşılıyor.', 'Üstüne ters dönüp göğüslerini seninle birleştiriyor; {n} kalçasını sallayarak ritmi hızlandırıyor.'] }
+  };
+  // 💦 bitişler: düğme, olay kartı, onun sözü (biri), anlatım dizisi (biri); içe boşalmada son söz karakterin react.cin'i
+  const FINS = {
+    in: { label: '💦 İçine', ev: 'Vaginal Creampie', say: ['İçime… hepsini istiyorum 🥵', 'Çıkma! İçimde kal… ahh!', 'Bırak… hepsini içime bırak 💗'], sys: [
+      ['Son vuruşta kendini en derine gömüyorsun; bacaklarını beline kilitleyip seni bırakmıyor.', 'Zonklayarak boşalırken sıcaklığın içini dolduruyor; her atışta bütün bedeni titriyor, tırnakları sırtına geçiyor.', 'Bir süre öylece kalıyorsunuz, nefesleriniz birbirine karışıyor. Çekildiğinde sıcak bir damla bacaklarının arasından süzülüyor; eliyle tutup utangaçça gülümsüyor.'],
+      ['Onu kendine bastırıp en derinde kalıyorsun; içi seni sımsıkı kavrarken daha fazla dayanamıyorsun.', 'Kalın, sıcak dalgalar halinde içine boşalıyorsun; her birinde inliyor, kalçası istemsizce sarsılıyor.', 'Çıktığında içinden taşan beyaz iz kalçalarına doğru akıyor; parmaklarıyla dokunup sana gösteriyor, yanakları kıpkırmızı.'],
+      ['İkiniz aynı anda zirveye varıyorsunuz; onun kasılmaları seni de peşinden sürüklüyor.', 'Derinlere boşalırken eliyle karnına bastırıp seni hissetmeye çalışıyor; "sıcak… çok sıcak" diye fısıldıyor.', 'Üstünden kalkmana izin vermiyor; içinde yumuşarken alnını alnına dayayıp gülüyor, aranızdan süzülen sıcaklık çarşafa damlıyor.']] },
+    anin: { label: '💦 İçine', ev: 'Anal Creampie', say: ['Orada… bırak… ahh 🥵', 'Çıkarma! Hepsini… oraya…', 'Doldur beni… ahh!'], sys: [
+      ['Kalçalarını iki elinle kavrayıp sonuna kadar gömülüyorsun; çığlığını yastığa bastırıyor.', 'Sıcak dalgalar halinde derinliklerine boşalıyorsun; her atışta sıkıca kasılıp seni son damlana kadar sağıyor.', 'Yavaşça çekildiğinde kalçalarının arasından beyaz bir iz süzülüyor; yüzü yastıkta, titreyerek gülüyor.'],
+      ['Belini aşağı bastırıp en derinde kalıyorsun; inlemesi uzun, kesik bir hıçkırığa dönüşüyor.', 'İçini dolduran sıcaklıkla bütün bedeni gevşiyor; bacakları titremeden duramıyor.', 'Çıktığında yorgun düşüp yatağa yığılıyor; omzunun üstünden bakıp kalçasını eliyle kapatıyor, dudağını ısırıyor.']] },
+    out: { label: '🤚 Dışarı', ev: 'Leg Cumshot', say: ['Dışarı! Dışarı…', 'Çık… şimdi!'], sys: [
+      ['Son anda çıkıyorsun; sıcak damlalar bacaklarına ve karnına sıçrıyor.', 'Nefes nefese gülüp parmağıyla bir damlayı alıyor, merakla bakıyor.']] },
+    ass: { label: '🍑 Kalçalarına', ev: 'Ass Cumshot', say: ['Kalçalarıma… hadi 😏', 'Üstüme… her yerime!'], sys: [
+      ['Son anda çıkıp kalçalarına boşalıyorsun; sıcak çizgiler belinin çukuruna doğru akıyor.', 'Omzunun üstünden bakıp dudağını ısırıyor, kalçasını hafifçe sallıyor.']] },
+    face: { label: '😈 Yüzüne', ev: 'Face Cumming', say: ['Yüzüme 😈', 'Ver… yüzüme!'], sys: [
+      ['Önünde diz çöküp gözlerini kapatıyor; yanaklarına ve dudaklarına boşalıyorsun.', 'Gözlerini açıp gülümsüyor, dudaklarını yavaşça yalıyor.']] },
+    mouth: { label: '👅 Ağzına', ev: 'Mouth Cumming', say: ['Ağzıma… ver 🥵', 'Bırakma… hepsini ağzıma!'], sys: [
+      ['Dudaklarını sıkıca sarıp seni sonuna kadar alıyor; ağzına boşalırken boğazından bir inilti yükseliyor.', 'Son damlasına kadar emip ağzını açarak gösteriyor, sonra gözünü kırpmadan yutuyor.']] },
+    tits: { label: '🍒 Göğüslerine', ev: 'Tit Cumshot', say: ['Göğüslerime… evet!', 'Üstüme… göğüslerime!'], sys: [
+      ['Göğüslerini sıkıca bastırıp seni aralarında tutuyor; sıcak boşalman boynuna kadar sıçrıyor.', 'Parmaklarıyla tenine yayıp sana bakıyor, bir parmağını dudaklarına götürüyor.']] }
+  };
+  const AFTER = ['Bu… inanılmazdı 💕', 'Bir daha? 😏', 'Bırakma beni…', 'Bacaklarım titriyor… senin yüzünden 🥵'];
+
+  return { SLOTS, DAYS, LOCS, CHARS, ITEMS, STAGES, MOVES, FINS, AFTER };
 })();
