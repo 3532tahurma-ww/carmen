@@ -99,6 +99,8 @@ SRC.forEach(f => rules(fs.readFileSync(path.join(root, f), 'utf8')).forEach(r =>
   const decls = r.body.split(';').map(d => { const k = d.indexOf(':'); if (k < 0) return null; const prop = d.slice(0, k), raw = d.slice(k + 1).trim(), imp = /!important\s*$/.test(raw), val = raw.replace(/!important\s*$/, '').trim(); const nv = convertDecl(prop, val); return nv ? `${prop.trim()}: ${nv}${imp ? ' !important' : ''}` : null; }).filter(Boolean);
   // 📖 kitap sayfası (deri + parşömen) kendi temasında kalır
   if (/\.book-page|(^|[\s,])\.bk-(body|head|t|cb|cn|cev|chat)\b/.test(r.sel)) return;
+  // 🍋 oyun ekranı kendi cozy temasında kalır
+  if (/(^|[\s,])\.(ps-|ga-|hl-game|fp-)/.test(r.sel)) return;
   const sel = prefix(r.sel);
   if (!decls.length || !sel) return;
   const key = r.media || '';

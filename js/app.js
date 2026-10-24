@@ -412,6 +412,7 @@
       case 'itiraf': return renderConfess();
       case 'flix': return renderFlix(r.id, r.extra);
       case 'gram': return renderGram(r.id, r.extra);
+      case 'oyun': return r.id === 'ps' ? (r.extra === 'play' ? renderPS() : renderPSMenu()) : r.id === 'fp' ? (r.extra === 'play' ? renderFP() : renderFPMenu()) : renderGames();
       case 'canli': return renderLive(r.id);
       case 'fans': return renderFans(r.id);
       case 'otel': return renderStay(r.id);
@@ -487,6 +488,12 @@
           <span class="hl-txt"><small>İnternet</small><b>Siteler</b><span class="hl-tr"><em>🌹 Carmen.com</em><em>🫦 Fans</em><em>📸 tagram</em><em>🍿 Flix</em><em>🏨 Stay</em><em>+5</em></span></span>
           <span class="hl-go">›</span>
         </a>
+        ${(() => { const g = psData(); return `<a class="hl-meet hl-game" href="#/oyun">
+          ${pool.length ? `<img src="${esc(pool[+sysHash('adult-game') % pool.length])}" alt="" onerror="this.remove()">` : ''}<span class="hl-shade"></span>
+          <span class="hl-ic">🎮</span>
+          <span class="hl-txt"><small>Adult Game</small><b>2 oyun</b><span class="hl-tr"><em>🗂️ Problematic Subjects · B${g.level}</em><em>🔥 Fiery Passions · gün ${fpData().day}</em></span></span>
+          <span class="hl-go">›</span>
+        </a>`; })()}
         <div class="hl-deck">${cards.map((c, i) => `
           <a class="hl-card hl-${c.k}" href="${c.href}" style="--i:${i}">
             ${pics[i] ? `<img src="${esc(pics[i])}" alt="" loading="${i ? 'lazy' : 'eager'}" onerror="this.remove()">` : ''}
@@ -1604,6 +1611,633 @@
     grBind([p], () => renderGramPost(c, n));
   }
 
+  /* 🎮 Adult Game (#/oyun): oyunlar. İlki 🗂️ Problematic Subjects (#/oyun/ps): ofiste görevlisin; her gün 5 hanımefendi gelir, ricalarını
+   * en sevdikleri şeylerle karşılarsın (her ziyarette en fazla 3 hareket). Bölüm = 3 gün; bölüm puanı hedefi geçerse sonraki bölüm.
+   * Hareketler 🥉 bronz → 🥈 silver → 🥇 gold → 💜 platin → 💎 elmas (yalnızca easter egg / özel görev). Gün sonunda puana göre 📦 kutu → yeni hareket.
+   * Ziyaretler arasında 📱 mesajlar gelir: bonus, yeni hanım, ipucu, görev, gizli dosya. Durum S().game.ps */
+  const PS_TIERS = [['bronz', '🥉 Bronz', 10], ['silver', '🥈 Silver', 20], ['gold', '🥇 Gold', 35], ['platin', '💜 Platin', 55], ['elmas', '💎 Elmas', 80]];
+  const psTier = k => PS_TIERS.findIndex(t => t[0] === k);
+  const PS_POS = [['Kissing', 'bronz', 'tease'], ['Show Tits', 'bronz', 'tease'], ['Show Ass', 'bronz', 'tease'], ['Front Hugging', 'bronz', 'tease'], ['Back Hugging', 'bronz', 'tease'], ['Lap Kissing', 'bronz', 'tease'],
+    ['Handjob', 'silver', 'oral'], ['Blowjob', 'silver', 'oral'], ['Cunnilingus', 'silver', 'oral'], ['Titfuck', 'silver', 'oral'], ['69', 'silver', 'oral'], ['Facesitting', 'silver', 'oral'], ['Deepthroat', 'silver', 'oral'],
+    ['Missionary', 'gold', 'vag'], ['Cowgirl', 'gold', 'vag'], ['Spooning', 'gold', 'vag'], ['Doggy', 'gold', 'vag'], ['Standing', 'gold', 'vag'], ['Ondesk', 'gold', 'vag'], ['Lap Sex', 'gold', 'vag'],
+    ['Standing doggy', 'platin', 'rough'], ['Full Nelson', 'platin', 'rough'], ['Spooning Anal', 'platin', 'anal'], ['Cowgirl Anal', 'platin', 'anal'], ['Standing Anal', 'platin', 'anal'], ['Rough Anal', 'platin', 'anal'],
+    ['Hotdogging', 'elmas', 'special'], ['Reverse Titfuck', 'elmas', 'special'], ['Sex toys', 'elmas', 'special'], ['Cat Girl', 'elmas', 'special'], ['Breastfeeding', 'elmas', 'special'], ['Squirt', 'elmas', 'special']]
+    .map(([t, tier, cat]) => ({ t, tier, cat }));
+  const psPos = t => PS_POS.find(p => p.t === t);
+  const PS_CAT = { tease: '💋 Isınma', oral: '👅 Ağız', vag: '❤️ Önden', rough: '⚡ Sert', anal: '🍑 Arkadan', special: '💎 Sıradışı' };
+  // 🗣️ hanımın konuşması: giriş (kim, nasıl biri) + rica (türüne göre) + bazen en sevdiğine ince bir ipucu + kapanış
+  const PS_INTRO = ['Merhaba… ben {name}, {job} olarak çalışıyorum. Bana seni tavsiye ettiler.', 'İyi günler. Randevum vardı; {name} ben. Biraz erken geldim galiba 🙈',
+    'Kapıyı kapatır mısın? Kimse görmesin beni burada… Ben {name}.', 'Of, ne gün ama… Ben {name}. {job} olunca insanın hiç kendine vakti kalmıyor.',
+    'Selam yakışıklı 😏 adım {name}. Koridorda geçerken hep göz göze geliyorduk, fark ettin mi?', 'Geç kalmadım değil mi? Toplantıdan kaçtım, kimseye söyleme 🤫',
+    'Merhaba, {name}. İlk kez geliyorum, ne yapacağımı tam bilmiyorum açıkçası…', 'Sonunda! Bütün hafta bu randevuyu bekledim. Ben {name} 💋',
+    'Ben {name}. Arkadaşlarım burayı anlatınca inanmadım, kendi gözümle görmek istedim 😏', 'Hey… {name} ben. Öğle arasında geldim; çok vaktim yok ama çok isteğim var 😈'];
+  const PS_PERS = { 'Utangaç': 'Biraz utangacım, kusura bakma; yüzüm kızarırsa gülme olur mu? 🙈', 'Flörtöz': 'Gözlerime bakışından anladım, sen de beni beğendin 😏',
+    'Özgüvenli': 'Ne istediğimi bilen bir kadınım, lafı dolandırmayacağım.', 'Şımarık': 'Ben şımartılmaya alışkınım, bunu baştan söyleyeyim 💅', 'Romantik': 'Biraz romantizm, biraz yavaşlık… kalbim de dahil olsun istiyorum 🌹',
+    'Asi': 'Kurallara uymam; bugün de uymayacağım 😈', 'Soğuk': 'Herkes beni soğuk sanıyor. Bakalım sen beni eritebilecek misin ❄️', 'Gizemli': 'Benim hakkımda çok soru sorma… sadece hisset 🖤' };
+  const PS_REQ = {
+    tease: ['Bugün çok gerginim. Bütün sabah ekrana baktım; şimdi sadece biraz ilgi, sarılma, belki birkaç öpücük istiyorum 🥺', 'Yeni bluzumu kimse fark etmedi. Sen bakar mısın? Hatta… biraz daha yakından bakar mısın? 😏',
+      'Öpüşmeyi özledim. Yıllardır kimse beni doğru dürüst öpmedi; dudaklarım unuttu sanki 💋', 'Acelem yok. Önce ısınalım, yavaş yavaş… seni tanımak istiyorum.', 'Bugün sadece göstermek istiyorum; dokunmak sonra, belki 🙈'],
+    oral: ['Dilin hakkında dedikodular duydum. Söylediklerinin yarısı doğruysa bugün çok şanslı bir kadınım 😏', 'Toplantıda bütün gün konuştum; şimdi ağzımı başka bir şey için kullanmak istiyorum 😈',
+      'Masanın altına girmeye ne dersin? Ben koltukta otururken… kimse fark etmez 👅', 'Kocam bana hiç ağızla yapmadı. On iki yıl! Bugün bunu telafi etmek istiyorum 🥺', 'Bacaklarımın arasında bir sızı var; sadece dilin dindirebilir sanki…'],
+    vag: ['Bu masanın üstünde daha önce hiç… ama hep hayal ettim 😳', 'Kocam aylardır dokunmuyor. İçimde bir boşluk var; doldurulmayı bekliyor 🥺',
+      'Artık beni düzgünce bir sev. Klasik ama tam; sonuna kadar 🔥', 'Geçen hafta rüyamda sendin. Uyanınca çarşaflar ıslaktı; bugün rüyayı gerçek yapalım.', 'Sana sarılıp içimde hissetmek istiyorum. Başka hiçbir şey düşünmeden.'],
+    rough: ['Bugün nazik olma, hak ettim. Patronum bütün gün bağırdı; şimdi sıra bende bağırmakta 😈', 'Saçımı çek, beni duvara yasla. Sonra yarın sandalyeye oturamayayım ⚡',
+      'Sert bir gün geçirdim, sert bitirmek istiyorum. Bacaklarım titresin.', 'Herkes bana prenses gibi davranıyor; bıktım. Bugün beni bir kadın gibi al 🔥'],
+    anal: ['Arka kapıdan girmeye ne dersin? Hiç kimseye izin vermedim ama sana… belki 🍑', 'Hiç denemediğim bir şey var; arkadan. Korkuyorum ama çok da merak ediyorum 😳',
+      'Kalçamı herkes övüyor; sen başka türlü öv 🍑', 'Kocamın bilmediği tek yerim kaldı. Onu da sana vermek istiyorum 🤫'],
+    special: ['Bana sıradan şeyler sunma; şaşırt beni ✨', 'Hiç kimsenin bilmediği bir şey göster bana 💎'] };
+  const PS_FAVHINT = { 'Kissing': 'Dudaklarım kurudu, biliyor musun…', 'Show Tits': 'Bugün sütyen giymedim; fark ettin mi? 🙈', 'Show Ass': 'Bu etek arkadan nasıl duruyor sence? 🍑', 'Front Hugging': 'Bazen sadece sımsıkı sarılmak yeter.',
+    'Back Hugging': 'Arkadan sarılmana bayılırım.', 'Lap Kissing': 'Kucağına oturup öpüşmek… ah.', 'Handjob': 'Ellerim çok becerikli, inan bana.', 'Blowjob': 'Bir şeyi ağzımda tutmayı çok severim 🙈',
+    'Cunnilingus': 'Bacaklarımın arası seni bekliyor 😳', 'Titfuck': 'Göğüslerimle neler yapabileceğimi bilsen…', '69': 'Aynı anda ikimiz de… düşünsene 😈', 'Facesitting': 'Yüzüne oturmayı hep hayal ettim 😈',
+    'Deepthroat': 'Boğazım çok derin, söyleyeyim 😏', 'Missionary': 'Gözlerine bakarak… klasik ama en güzeli.', 'Cowgirl': 'Üstte olmayı severim; kontrol bende olsun 😏', 'Spooning': 'Yan yatıp arkadan sarılmanı severim.',
+    'Doggy': 'Dört ayak üstünde… evet, bunu söyledim 🙈', 'Standing': 'Ayakta, duvara yaslanarak…', 'Ondesk': 'Bu masa çok sağlam görünüyor 😏', 'Lap Sex': 'Kucağında olmak, yüz yüze…',
+    'Standing doggy': 'Masaya eğilmemi ister misin? 😈', 'Full Nelson': 'Bacaklarımı tamamen açmanı istiyorum.', 'Spooning Anal': 'Yan yatıp… arkadan, yavaşça 🍑', 'Cowgirl Anal': 'Üstte ama… arkadan 😳',
+    'Standing Anal': 'Ayakta, arkadan, duvara yaslanmış…', 'Rough Anal': 'Arkadan ve hiç acımadan 😈' };
+  const PS_TAIL = ['Sence bana yardım edebilir misin? 🥺', 'Ne yapacağını sen bilirsin… beni şaşırt 😈', 'Ama acele etme, bütün öğleden sonram boş.', 'Kimseye söylemeyeceğiz değil mi? 🤫',
+    'Hayal kırıklığına uğratma beni 😏', 'Bu ofisin en iyisi olduğunu söylediler; kanıtla 💋', 'Hadi… daha fazla bekletme.', 'Kocam sanıyor ki alışverişteyim 🛍️'];
+  const PS_REACT = { fav: ['Tam da bunu istiyordum!! 😍🔥', 'Nasıl bildin?! Bu benim en sevdiğim 🥵', 'Aaahh evet… işte bu ⭐'], like: ['Mmm… çok güzel 😌', 'Bunu severim 💕', 'Devam et 😏'],
+    meh: ['Hmm… fena değil 🙂', 'Olabilir…', 'Peki 😐'], bad: ['Ay hayır, bunu sevmem 😒', 'Bunu istememiştim…', 'Dur dur, başka bir şey 😣'] };
+  // 🌟 özel hanımlar: patron her bölümün 3. gününün son ziyaretçisi; diğerleri mesaja verdiğin cevapla gelir. boost: o hanımdan gelen zevk çarpanı
+  const PS_VIP = { boss: { title: '👩‍💼 Patron Hanım', pool: ['gold', 'platin'], req: 'Kapıyı kilitle. Bu şirkette herkes benden korkar ama ben de bazen… korkutulmak isterim. Ne sevdiğimi bulursan terfi senin 😏' },
+    acc: { title: '📊 Muhasebeci Hanım', pool: ['silver'], req: 'Rakamlar beni çok yordu; bütün gün bilanço, fatura, vergi… Biraz ağızdan rahatlama? Kimse hesap sormaz 😳' },
+    hr: { title: '🗂️ İK Müdürü', pool: ['gold'], req: 'Hakkında bir şikayet var. Ama dosyayı kapatmanın bir yolu olabilir… Kendini masamda savun 😈' },
+    myst: { title: '🎭 Gizemli Müşteri', pool: ['platin'], req: 'Kimse beni tanımıyor burada; maskem de çıkmayacak. Ama istediğim her şeyi yaparım… sen de yapacak mısın? 🖤' },
+    curious: { title: '😏 Meraklı Komşu', pool: ['gold', 'silver'], req: 'Mesajlaşmamızdan sonra dayanamadım, geldim. Bakalım dediğin kadar var mı 😏' },
+    eager: { title: '🏃‍♀️ Sabırsız Hanım', pool: ['silver', 'gold'], req: 'Odana gelebilir miyim diye sormuştum ya… işte geldim. Sabırsızlıktan ölüyorum 🥵' },
+    friend: { title: '👯 Arkadaşın arkadaşı', pool: ['silver', 'gold'], req: 'Arkadaşım anlata anlata bitiremedi. Kıskandım açıkçası… bana da aynısını yap, hatta daha fazlasını 😏' },
+    bday: { title: '🎂 Doğum günü kızı', pool: ['gold', 'silver'], req: 'Bugün benim günüm 🥳 Hediyemi paket yapma; burada, şimdi aç 🎁' },
+    yoga: { title: '🧘 Yoga Hocası', pool: ['gold', 'platin'], req: 'Esnekliğimi merak ediyordun ya… bacaklarımın nereye kadar açıldığını görmek ister misin? 🧘‍♀️' } };
+  const PS_BOX = [[600, 'platin', 2], [380, 'gold', 2], [200, 'silver', 2], [60, 'bronz', 1]];
+  const psTarget = L => 450 + (L - 1) * 350;
+  const PS_EGGS = { hotdog: ['Hotdogging', '🗂️ Gizli dosyayı açtın'], plant: ['Reverse Titfuck', '🪴 Saksıda bir şey vardı…'], combo: ['Sex toys', '🔗 Show Ass → Doggy → Standing doggy kombosu'],
+    boss: ['Cat Girl', '👩‍💼 Patron Hanım\'ın en sevdiğini buldun'], star: ['Breastfeeding', '⭐ Tek hanımdan 300+ zevk'], task: ['Squirt', '📋 Özel görevi tamamladın'] };
+  /* 💬 mesajlar = kısa konuşmalar: n[0]'dan başlar; her düğümde iki cevap a / b = [etiket, etki, karşılık, sonraki düğüm].
+   * Karşılık [istiyorsa, istemiyorsa] olabilir (hamilelik konuşmasında hanımın bebek isteğine göre). {name} son hanım, {fav} onun en sevdiği.
+   * Etki: lady:<vip>[+] (sıraya girer, + daha istekli) · bonus (gün sonu ×1,2) · pts:N · hint · boost:N (sıradaki ×N) · task · egg ·
+   * pill (hap alır, hamilelik yok) · nopill (risk ×1,6) · nopill+ (üstelik bebek istiyorsa +20) */
+  const PS_CONV = [
+    { k: 'eager', from: '💌 Bilinmeyen numara', n: [
+      { t: 'Acaba odana gelsem müsait olur musun? 🙈', a: ['Tabi gel, neden ki? 😏', '', 'Bilmem… belki konuşmak için, belki başka bir şey için 😏', 1], b: ['Bugün çok yoğunum', 'none', 'Peki… başka zaman 😔'] },
+      { t: 'Ne giysem? Etek mi, pantolon mu? 👗', a: ['Etek 😏', 'lady:eager', 'Altına bir şey giymeyeceğim o zaman 😈 geliyorum!'], b: ['Hiçbir şey 😈', 'lady:eager+', 'Deli! Paltoyla geliyorum o zaman 🙈🔥 (+%40)'] }] },
+    { k: 'curious', from: '😏 Komşu', n: [
+      { t: 'Çok mu uzun aletin? Kızlar konuşuyor da 🙈', a: ['Gel de gör 😏', '', 'Cesursun… peki önce bir rakam versene 📏', 1], b: ['Ayıp ama 🙈', 'pts:20', 'Utandın mı? Çok tatlısın 💕 (+20)'] },
+      { t: 'Kaç santim? Dürüst ol 😏', a: ['Gelince ölçersin', 'lady:curious', 'Cetvelimi getiriyorum 📏😈'], b: ['Yetecek kadar 😎', 'lady:curious+', 'Bu cevap daha da meraklandırdı… koşarak geliyorum! (+%40)'] }] },
+    { k: 'bonus', from: '👩‍💼 Patron Hanım', n: [
+      { t: 'Bugünkü performansına bakacağım. İyi iş çıkarırsan gün sonu güzel bir sürpriz var 😏', a: ['Sizi hayal kırıklığına uğratmam 😏', '', 'Göreceğiz. Bu arada… gün sonunda benim için de bir saat ayırabilir misin? 💼', 1], b: ['Biraz baskı yapıyorsunuz…', 'none', 'Baskı altında daha iyi çalışırsın sanmıştım 🙄'] },
+      { t: 'Ayırır mısın, ayırmaz mısın?', a: ['Sizin için her zaman', 'bonus', 'Doğru cevap. Gün sonu zevk ×1,2 💼'], b: ['Önce iş, sonra keyif', 'pts:25', 'Profesyonelliğine bayıldım (+25)'] }] },
+    { k: 'hint', from: '💌 Kulisten', n: [
+      { t: 'Sıradaki hanımın en çok neyi sevdiğini biliyorum… söyleyeyim mi? Karşılığında bir kahve ☕', a: ['Söyle, kahve benden ☕', 'hint', 'Kulağını getir: {fav} 🤫'], b: ['Kendim bulurum', 'boost:1.15', 'Özgüvenine bayıldım 😏 sıradakini bu havayla karşıla (+%15)'] }] },
+    { k: 'acc', from: '📞 Muhasebe', n: [
+      { t: 'Muhasebeci Hanım çok gergin, bütün gün bağırıyor. Ona bir randevu ayarlayayım mı? 😳', a: ['Ayarla, ben hallederim', 'lady:acc', 'Tamam, sıradan sonra yanında 📊'], b: ['Bugün olmaz', 'none', 'Peki, ama bağırırsa senin suçun 😅'] }] },
+    { k: 'hr', from: '📧 İK', n: [
+      { t: 'Hakkında bir şikayet var. Odama gelir misin, yoksa ben mi geleyim?', a: ['Siz gelin, kapım açık 😏', '', 'Cesursun… Şikayeti kimin yaptığını merak etmiyor musun?', 1], b: ['Şikayet de ne demek?!', 'pts:-30', 'Bu tavır dosyana yazıldı (−30) 📝'] },
+      { t: 'Söyleyeyim mi?', a: ['Söyleyin', 'lady:hr', 'Bendim 😈 geliyorum, savunmanı hazırla'], b: ['Önemli değil', 'lady:hr+', 'Umursamaz tavrın… çok çekici. Geliyorum (+%40) 🗂️'] }] },
+    { k: 'myst', from: '🎭 Bilinmeyen', n: [
+      { t: 'Kimse beni tanımıyor… seni ziyaret edebilir miyim?', a: ['Kapım açık 🖤', '', 'Tek şartım var: maskem çıkmayacak. Kabul mü?', 1], b: ['Tanımadığım biriyle olmaz', 'none', 'Yazık… kaçırdın 🖤'] },
+      { t: 'Maske kalacak. Kabul mü?', a: ['Kabul 🖤', 'lady:myst', 'Geliyorum…'], b: ['Maskeyi ben çıkarırım 😈', 'lady:myst+', 'Hmm… deneyebilirsin 🖤 (+%40)'] }] },
+    { k: 'task', from: '📋 Yönetim', n: [
+      { t: 'Özel görev: bugün 2 hanıma Cunnilingus yapar mısın? Ödül 💎', a: ['Kabul, görev benim', 'task', 'Görev başladı 📋 (0/2)'], b: ['Bugün değil', 'none', 'Peki, başka sefere.'] }] },
+    { k: 'egg', from: '🗂️ Gizli dosya', n: [
+      { t: '"İçeri girmeden… arkadan… sosis gibi 🌭" Bu dosyayı açmak ister misin?', a: ['Aç bakalım 👀', 'egg', 'Dosya açıldı… 💎'], b: ['Sil gitsin', 'none', 'Dosya silindi. Merak etmedin mi? 🤔'] }] },
+    { k: 'flirt', from: '😘 Resepsiyon', n: [
+      { t: 'Bugün koridorda herkes senden bahsediyor 🙈', a: ['Ne diyorlar? 😏', '', 'Söyleyemem… ama biri "elleri sihirli" dedi 😳 Doğru mu?', 1], b: ['Dedikodu sevmem', 'none', 'Sen bilirsin 🙄'] },
+      { t: 'Doğru mu bu?', a: ['Gel dene 😏', 'boost:1.2', 'Mesaim bitince… 🙈 (sıradaki +%20, söylentiler yayılıyor)'], b: ['Abartıyorlar', 'pts:10', 'Alçakgönüllü de… (+10)'] }] },
+    { k: 'soft', from: '💬 Sıradaki hanım', n: [
+      { t: 'Az sonra geleceğim. Nazik olur musun? Biraz çekiniyorum 🥺', a: ['Söz, çok nazik olacağım', 'boost:1.2', 'Rahatladım… geliyorum 💕 (+%20)'], b: ['Bugün sert günümdeyim 😈', 'boost:0.9', 'Ay… biraz korktum ama geliyorum 😳 (−%10)'] }] },
+    { k: 'late', from: '💬 Sıradaki hanım', n: [
+      { t: 'Biraz gecikeceğim, beklersin değil mi? 😇', a: ['Seni her zaman beklerim', 'boost:1.1', 'Ne tatlısın 💋 (+%10)'], b: ['Geç kalanı almıyorum', 'pts:-10', 'Pff… geliyorum işte 😤 (−10)'] }] },
+    { k: 'friend', from: '👯 Bir arkadaş', n: [
+      { t: 'Arkadaşım bana senden bahsetti… o kadar iyi misin gerçekten? 😳', a: ['Gel de karar ver', 'lady:friend', 'Tamam, geliyorum! Hayal kırıklığı istemem 😏'], b: ['Abartıyor', 'pts:10', 'Alçakgönüllülüğe bayıldım 🙈 (+10)'] }] },
+    { k: 'jealous', from: '😤 Dünkü hanım', n: [
+      { t: 'Bugün başka kadınlar da geliyor mu?! 😤', a: ['Sadece sen varsın 😇', '', 'Yalancı… ama hoşuma gitti 😏 Akşam ne yapıyorsun?', 1], b: ['İşim bu 🤷', 'pts:-10', 'Peki… ama kıskanıyorum 😒 (−10)'] },
+      { t: 'Akşam boş musun?', a: ['Senin için boşum', 'pts:20', 'Ayy 🥰 (+20)'], b: ['Mesai uzun', 'pts:-5', 'Hep mesai, hep mesai 🙄 (−5)'] }] },
+    { k: 'coffee', from: '☕ Kafeterya', n: [
+      { t: 'Sana kahve getireyim mi? Şekerli mi olsun, sade mi? ☕', a: ['Şekerli, senin gibi 😏', 'boost:1.1', 'Ay 🙈 kahven geliyor… (sıradaki +%10)'], b: ['Sade, sert', 'pts:10', 'Sert adam 😏 (+10)'] }] },
+    { k: 'photo', from: '📸 Bilinmeyen', n: [
+      { t: 'Sana bir fotoğraf atsam bakar mısın? 🙈', a: ['Bakarım 😏', '', 'Ama kimseye gösterme… söz mü?', 1], b: ['Mesaide olmaz', 'none', 'Peki sıkıcı adam 🙄'] },
+      { t: 'Söz mü? 🤞', a: ['Söz 🤞', 'pts:20', '📸 …gönderildi. Yüzüm kızardı 🙈 (+20)'], b: ['Bilmem 😈', 'boost:1.2', 'Tehlikeli adamsın… bayıldım 🔥 (sıradaki +%20)'] }] },
+    { k: 'husband', from: '💍 Bir koca', n: [
+      { t: 'Karım bugün sana geldi mi? Ne yaptınız?! 😡', a: ['Sadece iş konuştuk', '', 'Boynundaki iz ne peki?!', 1], b: ['Sizi tanımıyorum', 'none', 'Engellendin 📵'] },
+      { t: 'O iz ne?!', a: ['Sivrisinek 😅', 'pts:-15', 'Yalancı! Ama kanıtım yok… (−15)'], b: ['Sorun karına 😏', '', 'Sen… sen… Ne demek istiyorsun?!', 2] },
+      { t: 'Ne demek istiyorsun?!', a: ['Karın çok mutluydu 😈', 'pts:-30', 'Bunu ödeyeceksin!! (−30) 😡'], b: ['Hiçbir şey, iyi günler', 'pts:-5', 'Gözüm üstünde (−5) 👀'] }] },
+    { k: 'bday', from: '🎂 Resepsiyon', n: [
+      { t: 'Bugün doğum günüm 🥳 hediyem ne?', a: ['Sürpriz, odama gel 🎁', 'lady:bday', 'Yaşasın! Geliyorum 🎂'], b: ['Pasta ısmarlarım', 'pts:15', 'Çok tatlısın 🍰 (+15)'] }] },
+    { k: 'yoga', from: '🧘 Yoga hocası', n: [
+      { t: 'Esneklik dersi verir misin bana… yoksa ben mi sana vereyim? 😏', a: ['Sen bana ver', 'lady:yoga', 'Matımı alıp geliyorum 🧘'], b: ['Ben sana', 'boost:1.15', 'Bakalım… (sıradaki +%15)'] }] },
+    { k: 'review', from: '⭐ Müşteri memnuniyeti', n: [
+      { t: 'Bir hanım sana 5 yıldız verdi ⭐ teşekkür yazmak ister misin?', a: ['Yaz: Her zaman beklerim 💋', 'pts:30', 'Gönderildi; yorumların altına kalpler yağıyor (+30)'], b: ['Gerek yok', 'none', 'Peki.'] }] }];
+  // 💦 iş bittikten sonra son hanımdan gelen konuşmalar ({name}); önden pozisyon olduysa önce hamilelik konuşması gelebilir
+  const PS_PREG = { k: 'preg', n: [
+    { t: 'İçime boşaldın… hap almalı mıyım? 😳', a: ['Hap al, risk almayalım', 'pill', 'Tamam, eczaneye uğruyorum 💊'], b: ['Boşver, olursa olur 😏', 'nopill', ['Gerçekten mi?! Ben de çok istiyordum aslında 🥺💕', 'Emin misin?! Ben hazır değilim… 😰'], 1] },
+    { t: 'Yani… bir bebek ister misin? 👶', a: ['Seninle olursa isterim 💕', 'nopill+', ['Bu en güzel cevaptı 😭💕 (+20)', 'Ben… düşüneceğim 😰']], b: ['Şaka yaptım, hap al', 'pill', 'Ödümü kopardın 😅 hap alıyorum 💊'] }] };
+  const PS_AFTER = [
+    { k: 'again', n: [{ t: 'Bacaklarım hâlâ titriyor… yarın tekrar gelebilir miyim? 🥺', a: ['Gel tabi', 'pts:15', 'Yaşasın 💕 (+15)'], b: ['Sırada başkaları var', 'pts:-5', 'Hmph 😒 (−5)'] }] },
+    { k: 'mark', n: [{ t: 'Boynumda iz kaldı 🙈 kocam fark eder mi sence?', a: ['Fular tak 😏', 'pts:10', 'Akıllısın 😏 (+10)'], b: ['Fark etsin 😈', '', 'Ne?! Ya boşanmak isterse?', 1] },
+      { t: 'Ya boşanırsa?', a: ['O zaman bana gelirsin 💕', 'pts:20', 'Ah… kalbim 🥺 (+20)'], b: ['Şaka şaka, fular tak', 'pts:5', 'Ödüm koptu 😅 (+5)'] }] },
+    { k: 'bring', n: [{ t: 'Bir dahaki sefere arkadaşımı da getireyim mi? 😈', a: ['Getir!', 'lady:friend', 'Şimdi arıyorum onu 👯'], b: ['Sadece sen yeter', 'pts:15', 'Ayy 🥰 (+15)'] }] },
+    { k: 'stars', n: [{ t: 'Sana 5 yıldız verdim ⭐ ama bir şartla…', a: ['Neymiş şart?', '', 'Bir dahaki sefere {fav} yap 😏', 1], b: ['Şartsız olsun', 'pts:10', 'Peki peki 😌 (+10)'] },
+      { t: 'Söz mü?', a: ['Söz', 'pts:20', 'Anlaştık 😘 (+20)'], b: ['Bakarız', 'pts:5', 'Hmm 😏 (+5)'] }] },
+    { k: 'thanks', n: [{ t: 'Teşekkür etmek istedim… uzun zamandır böyle hissetmemiştim 🥺', a: ['Rica ederim, her zaman 💋', 'pts:15', '💕 (+15)'], b: ['İşimi yaptım', 'pts:-5', 'Ah… sadece iş miydi? 😔 (−5)'] }] }];
+  const PS_VAG = ['Missionary', 'Cowgirl', 'Spooning', 'Doggy', 'Standing', 'Ondesk', 'Lap Sex', 'Standing doggy', 'Full Nelson'];
+  const psData = () => { const s = S(); s.game = s.game || {}; const g = s.game.ps = s.game.ps || {}; if (!g.level) Object.assign(g, { level: 1, day: 1, vi: 0, dayScore: 0, levelScore: 0, best: 0, owned: PS_POS.filter(p => p.tier === 'bronz').map(p => p.t), eggs: [], inbox: [], queue: null, flags: {}, phase: 'visit', plant: 0, total: 0, served: 0, favs: 0 }); return g; };
+  const psRnd = (g, s) => fxRnd(`ps${g.level}:${g.day}:${s}`);
+  function psQueue(g) {
+    if (!g.queue) { g.queue = Array.from({ length: 5 }, (_, i) => ({ seed: 'n' + i })); if (g.day === 3) g.queue[4] = { seed: 'boss', vip: 'boss' }; }
+    return g.queue;
+  }
+  // hanımefendi: fotoğraf ilanlardan / karakterlerden; en sevdiği, sevdikleri, sevmedikleri sahip olduğun en yüksek kademenin bir üstüne kadar
+  function psLady(g, q) {
+    const r = psRnd(g, q.seed), all = cmAll(), c = all.length ? all[Math.floor(r() * all.length)] : null, vip = q.vip && PS_VIP[q.vip];
+    const top = Math.max(...g.owned.map(t => psTier((psPos(t) || {}).tier || 'bronz')));
+    const pool = PS_POS.filter(p => p.tier !== 'elmas' && (vip ? vip.pool.includes(p.tier) : psTier(p.tier) <= Math.min(3, top + 1)));
+    const pk = a => a[Math.floor(r() * a.length)], fav = pk(pool), rest = PS_POS.filter(p => p.tier !== 'elmas' && p !== fav);
+    const same = rest.filter(p => p.cat === fav.cat), liked = [...new Set([pk(same.length ? same : rest), pk(rest), pk(rest)])].filter(p => p !== fav);
+    const disliked = rest.filter(p => !liked.includes(p) && p.cat !== fav.cat).sort(() => r() - .5).slice(0, 2);
+    const name = c ? c.name.split(' ')[0] : 'Hanımefendi', job = (c && c.job) || 'ofiste', fill = s => s.replace(/\{name\}/g, name).replace(/\{job\}/g, low(job));
+    const pers = c ? persOf(c).map(t => PS_PERS[t]).filter(Boolean) : [];
+    const req = vip ? [vip.req, pk(PS_TAIL)] : [fill(pk(PS_INTRO)), pers.length && r() < .6 ? pk(pers) : '', pk(PS_REQ[fav.cat]), r() < .45 ? PS_FAVHINT[fav.t] || '' : '', pk(PS_TAIL)];
+    return { c, vip, q, title: vip ? vip.title : job, name, fav, liked, disliked, req: req.filter(Boolean).join(' '), cat: fav.cat };
+  }
+  function psScore(g, lady, picks) {
+    let prev = -1, asc = true, total = 0;
+    const rows = picks.map(t => {
+      const p = psPos(t), base = PS_TIERS[psTier(p.tier)][2], kind = p === lady.fav ? 'fav' : lady.liked.includes(p) ? 'like' : lady.disliked.includes(p) ? 'bad' : 'meh';
+      const mult = { fav: 3, like: 2, meh: 1, bad: -1 }[kind], cat = p.cat === lady.cat && kind !== 'bad' ? 1.5 : 1, pts = Math.round(base * mult * cat);
+      if (psTier(p.tier) < prev) asc = false;
+      prev = psTier(p.tier);
+      total += pts;
+      return { t, p, kind, pts, cat: cat > 1 };
+    });
+    const combo = asc && picks.length === 3 ? Math.round(total * .15) : 0, boss = lady.q.vip === 'boss' && picks.includes(lady.fav.t) ? 100 : 0, myst = lady.q.vip === 'myst' && total >= 150 ? 80 : 0;
+    const sum = total + combo + boss + myst, boost = lady.q.boost && lady.q.boost !== 1 ? Math.round(sum * (lady.q.boost - 1)) : 0;
+    return { rows, combo, boss, myst, boost, total: Math.max(0, sum + boost) };
+  }
+  function psUnlock(g, key) {
+    if (g.eggs.includes(key)) return;
+    const [t, why] = PS_EGGS[key];
+    g.eggs.push(key);
+    if (!g.owned.includes(t)) g.owned.push(t);
+    sfx('match');
+    notify(`💎 ${t} açıldı! ${why}`, '🥚');
+  }
+  // 💬 ziyaretten sonra bir konuşma (günde en fazla 4): önce son hanımdan (önden olduysa hamilelik), yoksa genel havuzdan. g.msg ekranda cevap bekler
+  const psConv = k => k === 'preg' ? PS_PREG : PS_AFTER.find(c => c.k === k) || PS_CONV.find(c => c.k === k);
+  function psMessage(g) {
+    if ((g.flags.msgs || 0) >= 4) return;
+    const used = g.flags.used || [], last = g.last, q = psQueue(g);
+    let c = null;
+    if (last && last.vag && last.pi != null && Math.random() < .45) c = PS_PREG;
+    else if (last && Math.random() < .3) c = pick(PS_AFTER.filter(x => !used.includes(x.k)) || []) || null;
+    if (!c) {
+      if (g.vi + 1 >= q.length || Math.random() > .45) return;
+      const pool = PS_CONV.filter(m => !used.includes(m.k) && (m.k !== 'egg' || (!g.eggs.includes('hotdog') && (g.level > 1 || g.day > 1))) && (m.k !== 'task' || (!g.flags.task && !g.eggs.includes('task'))) && (m.k !== 'bonus' || !g.flags.bonus));
+      if (!pool.length) return;
+      c = pick(pool);
+    }
+    const from = c === PS_PREG || PS_AFTER.includes(c) ? `💋 ${last.name}` : c.from;
+    g.flags.used = [...used, c.k];
+    g.flags.msgs = (g.flags.msgs || 0) + 1;
+    g.msg = { k: c.k, from, node: 0, log: [['her', c.n[0].t]], done: false, name: last ? last.name : '', fav: last ? last.fav : '', pi: c === PS_PREG ? last.pi : null };
+    g.last = null;
+  }
+  function psReply(g, side) {
+    const c = psConv(g.msg.k), node = c.n[g.msg.node], [label, fx, re0, nextNode] = node[side], q = psQueue(g), next = q[g.vi], P = g.msg.pi != null ? g.flags.preg[g.msg.pi] : null;
+    const fill = s => String(s).replace(/\{name\}/g, g.msg.name).replace(/\{fav\}/g, g.msg.fav);
+    let say = Array.isArray(re0) ? re0[P && P.want ? 0 : 1] : re0;
+    const lady = (vip, plus) => q.splice(g.vi, 0, { seed: 'v' + vip + g.day + g.vi, vip, boost: plus ? 1.4 : vip === 'eager' ? 1.3 : 1 });
+    if (fx.startsWith('lady:')) lady(fx.slice(5).replace('+', ''), fx.endsWith('+'));
+    else if (fx === 'bonus') g.flags.bonus = 1;
+    else if (fx.startsWith('pts:')) { const n = +fx.slice(4); g.dayScore = Math.max(0, g.dayScore + n); g.levelScore = Math.max(0, g.levelScore + n); g.total += n; }
+    else if (fx === 'hint' && next) { next.hinted = 1; say = say.replace('{fav}', psLady(g, next).fav.t); }
+    else if (fx.startsWith('boost:') && next) next.boost = +fx.slice(6);
+    else if (fx === 'task') g.flags.task = { pos: 'Cunnilingus', need: 2, n: 0 };
+    else if (fx === 'egg') psUnlock(g, 'hotdog');
+    else if (fx === 'pill' && P) { P.ch = 0; P.pill = 1; }
+    else if (fx.startsWith('nopill') && P) { P.ch = Math.min(.9, .25 * 1.6); P.pill = 0; if (fx === 'nopill+' && P.want) { g.dayScore += 20; g.levelScore += 20; g.total += 20; } }
+    g.msg.log.push(['me', label], ['her', fill(say)]);
+    if (nextNode != null) { g.msg.node = nextNode; g.msg.log.push(['her', fill(c.n[nextNode].t)]); }
+    else g.msg.done = true;
+    save();
+  }
+  // 🤰 gün sonu: önden pozisyon yaşanan hanımlar için hamilelik zarı. İstiyorsa +80, istemiyorsa −60. Bir kez uygulanır (g.flags.pregRes)
+  function psDayEnd(g) {
+    g.phase = 'dayEnd';
+    if (g.flags.pregRes) return;
+    g.flags.pregRes = (g.flags.preg || []).map((p, i) => {
+      const hit = p.ch > 0 && psRnd(g, 'pg' + i + p.name)() < p.ch, pts = hit ? (p.want ? 80 : -60) : 0;
+      g.dayScore = Math.max(0, g.dayScore + pts); g.levelScore = Math.max(0, g.levelScore + pts); g.total += pts;
+      return { name: p.name, want: p.want, pill: p.pill, hit, pts };
+    });
+  }
+  // 🎬 başlangıç menüsü (#/oyun/ps): devam / yeni oyun / nasıl oynanır / koleksiyon / istatistik
+  function renderPSMenu() {
+    const g = psData(), started = g.total > 0 || g.level > 1 || g.day > 1 || g.vi > 0, pool = homePool(), bg = pool.length ? pool[+sysHash('ps-menu') % pool.length] : '';
+    view.innerHTML = `<div class="ps-site ps-menu">${appBar('ws', 'Problematic<i> Subjects</i>', 'oyun', '#/oyun')}
+      <div class="ps-title">${bg ? `<img src="${esc(bg)}" alt="" onerror="this.remove()">` : ''}<div><small>🔞 Adult Game</small><h1>Problematic<br>Subjects</h1><p>Ofiste bir gün daha… kapın çalıyor 🚪</p></div></div>
+      <div class="ps-mbtns">
+        <a class="ps-mb main" href="#/oyun/ps/play">${started ? `▶ Devam et <small>Bölüm ${g.level} · Gün ${g.day}/3</small>` : '▶ Başla'}</a>
+        ${started ? '<button type="button" class="ps-mb" id="psNew">🆕 Yeni oyun</button>' : ''}
+        <button type="button" class="ps-mb" id="psHow">📖 Rehber kitap <small>nasıl oynanır, puanlar, kutular</small></button>
+        <button type="button" class="ps-mb" id="psColM">📦 Koleksiyon <small>${g.owned.length}/${PS_POS.length}</small></button>
+        <button type="button" class="ps-mb" id="psStat">🏆 İstatistik</button></div></div>`;
+    $('#psHow').onclick = () => openBook('oyun', 0);
+    $('#psColM').onclick = () => psCollection(g);
+    $('#psStat').onclick = () => sheet(`<div class="sheet-grip"></div><h3>🏆 İstatistik</h3><div class="ps-stats">
+      <div><b>${g.level}</b><small>bölüm</small></div><div><b>${g.best || g.level}</b><small>en iyi bölüm</small></div><div><b>${g.total}</b><small>toplam zevk</small></div>
+      <div><b>${g.served || 0}</b><small>mutlu hanım</small></div><div><b>${g.favs || 0}</b><small>⭐ favori bulundu</small></div><div><b>${g.eggs.length}/${Object.keys(PS_EGGS).length}</b><small>🥚 easter egg</small></div></div>`, 'light');
+    const nw = $('#psNew');
+    if (nw) nw.onclick = () => { if (!confirm('Yeni oyun başlasın mı? Bütün ilerleme silinir.')) return; delete S().game.ps; ui.ps = null; save(); location.hash = '#/oyun/ps/play'; };
+  }
+  const psPosBtn = (t, on) => { const p = psPos(t), e = evFind(t); return `<button type="button" class="ps-pos t-${p.tier}${on ? ' on' : ''}" data-pspick="${esc(t)}">${e && e.emojis ? esc(e.emojis) + ' ' : ''}${esc(t)}</button>`; };
+  const psCollection = g => sheet(`<div class="sheet-grip"></div><h3>📦 Koleksiyon · ${g.owned.length}/${PS_POS.length}</h3>${PS_TIERS.map(([k, l]) => `<div class="ps-tier"><small>${l}</small>${PS_POS.filter(p => p.tier === k).map(p => g.owned.includes(p.t) ? psPosBtn(p.t) : `<span class="ps-pos locked t-${k}">🔒 ${k === 'elmas' ? '???' : esc(p.t)}</span>`).join('')}</div>`).join('')}`, 'light');
+  function renderPS() {
+    const g = psData(), q = psQueue(g), U = ui.ps = ui.ps || { picks: [] }, tgt = psTarget(g.level);
+    const hud = `<div class="ps-hud"><span>📁 Bölüm <b>${g.level}</b></span><span>📅 Gün <b>${Math.min(g.day, 3)}</b>/3</span><span>🚪 <b>${Math.min(g.vi + 1, q.length)}</b>/${q.length}</span><span>💗 Gün <b>${g.dayScore}</b></span>
+      ${g.flags.bonus ? '<span>💼 ×1,2</span>' : ''}${g.flags.task ? `<span>📋 ${g.flags.task.n}/${g.flags.task.need}</span>` : ''}<button type="button" class="ps-ib" id="psCol" aria-label="Koleksiyon">📦</button></div>
+      <div class="ps-goal"><small>Bölüm hedefi ${g.levelScore} / ${tgt}</small><div class="kl-bar"><i style="--w:${Math.min(100, g.levelScore / tgt * 100)}%"></i></div></div>`;
+    let body = '';
+    if (g.phase === 'visit' && g.msg) {
+      const c = psConv(g.msg.k), node = c.n[g.msg.node];
+      body = `<div class="ps-chat"><small class="ps-cf">${esc(g.msg.from)} · ${g.msg.pi != null || PS_AFTER.some(x => x.k === g.msg.k) ? 'iş bittikten sonra' : 'yeni mesaj'}</small>
+        ${g.msg.log.map(([w, t]) => `<div class="ps-bub ${w}">${esc(t.replace(/\{name\}/g, g.msg.name).replace(/\{fav\}/g, g.msg.fav))}</div>`).join('')}
+        ${g.msg.done ? '<div class="row-btns"><button type="button" class="btn primary" id="psMsgOk">Devam ›</button></div>'
+        : `<div class="ps-replies"><button type="button" class="ps-rep" data-psrep="a">${esc(node.a[0])}</button><button type="button" class="ps-rep" data-psrep="b">${esc(node.b[0])}</button></div>`}</div>`;
+    } else if (g.phase === 'visit') {
+      const L = psLady(g, q[g.vi]), R = g.res;
+      body = `<div class="ps-office"><button type="button" class="ps-plant" id="psPlant" aria-label="Saksı">🪴</button><span class="ps-desk">🖥️ ☕ 📎</span></div>
+        <div class="ps-lady${L.vip ? ' vip' : ''}" style="--mtbg:${esc(L.c ? grad(L.c) : '#333')}">${L.c && L.c.photo ? `<img src="${esc(L.c.photo)}" alt="" onerror="this.remove()">` : ''}
+          <div class="ps-lt"><small>${esc(L.title)}</small><b>${esc(L.name)}</b>
+            <span class="ps-hints"><em>${PS_CAT[L.cat]}</em>${q[g.vi].hinted ? `<em>🤫 ${esc(L.fav.t)}</em>` : ''}${L.vip ? '<em>🌟 Özel</em>' : ''}${q[g.vi].boost && q[g.vi].boost !== 1 ? `<em>${q[g.vi].boost > 1 ? '💕 +' : '😳 −'}%${Math.round(Math.abs(q[g.vi].boost - 1) * 100)}</em>` : ''}</span></div></div>
+        <div class="ps-speech">“${esc(L.req)}”</div>
+        ${R ? `<div class="ps-res">${R.rows.map(x => `<div class="ps-rr ${x.kind}"><span>${{ fav: '⭐', like: '❤️', meh: '🙂', bad: '😒' }[x.kind]} ${esc(x.t)}${x.cat ? ' <small>+%50 istek</small>' : ''}</span><b>${x.pts > 0 ? '+' : ''}${x.pts}</b></div>`).join('')}
+            ${R.combo ? `<div class="ps-rr like"><span>🔗 Tırmanma kombosu</span><b>+${R.combo}</b></div>` : ''}${R.boss ? '<div class="ps-rr fav"><span>👩‍💼 Patron\'un favorisi!</span><b>+100</b></div>' : ''}${R.myst ? '<div class="ps-rr fav"><span>🎭 Gizemli müşteri memnun</span><b>+80</b></div>' : ''}
+            ${R.boost ? `<div class="ps-rr ${R.boost > 0 ? 'like' : 'bad'}"><span>💬 Mesajın etkisi</span><b>${R.boost > 0 ? '+' : ''}${R.boost}</b></div>` : ''}
+            <p class="ps-say">“${esc(R.say)}”</p><div class="ps-tot">💗 ${R.total} zevk</div>
+            <div class="row-btns">${L.c ? '<button type="button" class="btn ghost" id="psChat">💬 Ona yaz</button>' : ''}<button type="button" class="btn primary" id="psNext">Sonraki ›</button></div></div>`
+        : `<div class="ps-picks"><small>Sıran (${U.picks.length}/3): ${U.picks.map(t => `<b>${esc(t)}</b>`).join(' → ') || 'hareket seç'}</small>
+            ${PS_TIERS.map(([k, l]) => { const own = g.owned.filter(t => (psPos(t) || {}).tier === k); return own.length ? `<div class="ps-tier"><small>${l}</small>${own.map(t => psPosBtn(t, U.picks.includes(t))).join('')}</div>` : ''; }).join('')}
+            <div class="row-btns"><button type="button" class="btn ghost" id="psClear">Temizle</button><button type="button" class="btn primary" id="psGo"${U.picks.length ? '' : ' disabled'}>✨ Uygula</button></div></div>`}`;
+    } else if (g.phase === 'dayEnd') {
+      const sc = Math.round(g.dayScore * (g.flags.bonus ? 1.2 : 1)), box = PS_BOX.find(([n]) => sc >= n), opened = g.flags.boxGot;
+      const pr = g.flags.pregRes || [];
+      body = `<div class="ps-end"><h2>🌙 ${g.day}. gün bitti</h2>
+        ${pr.length ? `<div class="ps-preg"><b>🤰 Günün sonucu</b>${pr.map(p => `<div class="ps-rr ${p.hit ? (p.want ? 'fav' : 'bad') : 'meh'}"><span>${p.hit ? (p.want ? `🤰 ${esc(p.name)} hamile kaldı ve çok mutlu! 💕` : `😰 ${esc(p.name)} istemeden hamile kaldı`) : p.pill ? `💊 ${esc(p.name)} hap aldı` : `🍀 ${esc(p.name)}: bu sefer olmadı${p.want ? ' (biraz üzgün)' : ''}`}</span><b>${p.pts ? (p.pts > 0 ? '+' : '') + p.pts : ''}</b></div>`).join('')}</div>` : ''}
+        <p>Günün zevki: <b>${g.dayScore}</b>${g.flags.bonus ? ` × 1,2 Patron bonusu = <b>${sc}</b>` : ''}</p>
+        ${box ? (opened ? `<div class="ps-box open t-${box[1]}">📦</div><div class="ps-got">${opened.length ? opened.map(t => psPosBtn(t)).join('') : '<p>Kutu boş çıktı… bu kademede yeni hareket kalmadı (+50 zevk)</p>'}</div>`
+          : `<button type="button" class="ps-box t-${box[1]}" id="psBox">📦<small>${PS_TIERS[psTier(box[1])][1]} kutu · aç!</small></button>`) : `<p>😔 Bu gün kutu yok (en az ${PS_BOX[PS_BOX.length - 1][0]} zevk lazım)</p>`}
+        <div class="row-btns"><button type="button" class="btn primary" id="psDay"${box && !opened ? ' disabled' : ''}>${g.day < 3 ? 'Sonraki gün ›' : 'Bölümü bitir ›'}</button></div></div>`;
+    } else {
+      const ok = g.levelScore >= tgt;
+      body = `<div class="ps-end"><h2>${ok ? '🎉 Bölüm geçildi!' : '😓 Hedefe ulaşamadın'}</h2><p>Bölüm zevki <b>${g.levelScore}</b> / ${tgt}</p>
+        <p>${ok ? `Bölüm ${g.level + 1} seni bekliyor; hanımlar daha talepkâr, hedef ${psTarget(g.level + 1)}.` : 'Bölümü yeniden oyna; hareketlerin sende kalıyor.'}</p>
+        <div class="row-btns"><button type="button" class="btn primary" id="psLevel">${ok ? 'Sonraki bölüm ›' : '🔁 Yeniden dene'}</button></div></div>`;
+    }
+    view.innerHTML = `<div class="ps-site">${appBar('ws', 'Problematic<i> Subjects</i>', 'bölüm ' + g.level + ' · gün ' + g.day, '#/oyun/ps')}${hud}${body}
+      <div class="ps-foot"><small>🥚 Easter egg: ${g.eggs.length}/${Object.keys(PS_EGGS).length} · 🏆 Toplam zevk ${g.total}</small><a class="btn ghost sm" href="#/oyun/ps">☰ Menü</a></div></div>`;
+    const re = () => renderPS();
+    $('#psCol').onclick = () => psCollection(g);
+    view.querySelectorAll('[data-psrep]').forEach(b => b.onclick = () => { psReply(g, b.dataset.psrep); sfx('match'); re(); });
+    const mo = $('#psMsgOk'); if (mo) mo.onclick = () => { g.msg = null; if (g.vi >= q.length) psDayEnd(g); save(); window.scrollTo(0, 0); re(); };
+    const plant = $('#psPlant');
+    if (plant) plant.onclick = () => { g.plant = (g.plant || 0) + 1; plant.classList.remove('shake'); void plant.offsetWidth; plant.classList.add('shake'); if (g.plant >= 5) psUnlock(g, 'plant'); save(); };
+    if (g.phase === 'visit' && !g.msg) {
+      const L = psLady(g, q[g.vi]);
+      view.querySelectorAll('.ps-picks [data-pspick]').forEach(b => b.onclick = () => { const t = b.dataset.pspick; U.picks = U.picks.includes(t) ? U.picks.filter(x => x !== t) : U.picks.length < 3 ? [...U.picks, t] : U.picks; re(); });
+      const clr = $('#psClear'); if (clr) clr.onclick = () => { U.picks = []; re(); };
+      const go = $('#psGo');
+      if (go) go.onclick = () => {
+        const R = psScore(g, L, U.picks), rank = { fav: 3, like: 2, meh: 1, bad: 0 }, best = R.rows.reduce((a, x) => rank[x.kind] > rank[a] ? x.kind : a, 'bad');
+        R.say = pick(PS_REACT[best]);
+        g.res = R;
+        // 🤰 önden pozisyon olduysa hamilelik ihtimali (%25; hap → 0, "boşver" → ×1,6); hanımın bebek isteği gizli
+        const vag = U.picks.some(t => PS_VAG.includes(t)), want = psRnd(g, q[g.vi].seed + 'w')() < .3;
+        g.flags.preg = g.flags.preg || [];
+        if (vag) g.flags.preg.push({ name: L.name, want, ch: .25, pill: 0 });
+        g.last = { name: L.name, fav: L.fav.t, vag, pi: vag ? g.flags.preg.length - 1 : null };
+        g.dayScore += R.total; g.levelScore += R.total; g.total += R.total; g.served = (g.served || 0) + 1;
+        if (R.rows.some(x => x.kind === 'fav')) g.favs = (g.favs || 0) + 1;
+        // 🥚 easter egg'ler ve görev
+        if (U.picks.join('>') === 'Show Ass>Doggy>Standing doggy') psUnlock(g, 'combo');
+        if (R.boss) psUnlock(g, 'boss');
+        if (R.total >= 300) psUnlock(g, 'star');
+        const tk = g.flags.task;
+        if (tk && U.picks.includes(tk.pos) && ++tk.n >= tk.need) { psUnlock(g, 'task'); g.flags.task = null; }
+        sfx(R.total >= 100 ? 'orgasm' : 'match');
+        save(); re();
+      };
+      const nx = $('#psNext');
+      if (nx) nx.onclick = () => { psMessage(g); g.vi++; U.picks = []; g.res = null; if (g.vi >= q.length && !g.msg) psDayEnd(g); save(); window.scrollTo(0, 0); re(); };
+      const ch = $('#psChat');
+      if (ch) ch.onclick = () => cmChat(L.c, 'Problematic Subjects', pick(['Ofisteki o an aklımdan çıkmıyor 😏', 'Bir dahaki toplantıya ne zaman çağıracaksın? 😈', 'Masanda bir şey unuttum… beni 🙈']), true);
+    }
+    const bx = $('#psBox');
+    if (bx) bx.onclick = () => {
+      const sc = Math.round(g.dayScore * (g.flags.bonus ? 1.2 : 1)), [, tier, n] = PS_BOX.find(([v]) => sc >= v), lo = Math.max(0, psTier(tier) - 1);
+      const can = PS_POS.filter(p => p.tier !== 'elmas' && !g.owned.includes(p.t) && psTier(p.tier) >= lo && psTier(p.tier) <= psTier(tier));
+      const got = sample(can, n).map(p => p.t);
+      g.owned.push(...got);
+      if (!got.length) { g.levelScore += 50; g.total += 50; }
+      g.flags.boxGot = got; sfx('match'); save(); re();
+    };
+    const dn = $('#psDay');
+    if (dn) dn.onclick = () => { g.day++; g.vi = 0; g.dayScore = 0; g.queue = null; g.flags = {}; g.msg = null; g.last = null; g.phase = g.day > 3 ? 'levelEnd' : 'visit'; save(); window.scrollTo(0, 0); re(); };
+    const lv = $('#psLevel');
+    if (lv) lv.onclick = () => { if (g.levelScore >= tgt) g.level++; g.best = Math.max(g.best || 1, g.level); g.day = 1; g.vi = 0; g.levelScore = 0; g.dayScore = 0; g.queue = null; g.flags = {}; g.phase = 'visit'; save(); re(); };
+  }
+
+  function renderGames() {
+    const g = psData(), f = fpData();
+    view.innerHTML = `<div class="page-pad narrow">${pageHero('oyun', '🎮', 'Adult Game', ['18+', '2 oyun'])}
+      <a class="ga-card" href="#/oyun/ps"><span class="ga-ic">🗂️</span><span class="ga-t"><b>Problematic Subjects</b><small>Ofiste görevlisin: hanımefendilerin ricalarını en sevdikleriyle karşıla, zevk puanı topla, kutular aç, yeni pozisyonlar kazan.</small>
+        <span class="ga-chips"><em>Bölüm ${g.level}</em><em>Gün ${g.day}/3</em><em>${g.owned.length}/${PS_POS.length} hareket</em><em>🥚 ${g.eggs.length}/${Object.keys(PS_EGGS).length}</em></span></span><span class="hl-go">›</span></a>
+      <a class="ga-card ga-fp" href="#/oyun/fp"><span class="ga-ic">🔥</span><span class="ga-t"><b>Fiery Passions</b><small>Sandbox görsel roman: erkeksiz bir köyde yaz. Zamanı yönet, mekanları gez, ${FP.CHARS.length} kadınla ilişkini adım adım ateşle.</small>
+        <span class="ga-chips"><em>Gün ${f.day}</em><em>${FP.DAYS[f.dow]}</em><em>💰 ${f.money}₺</em><em>🔥 ${FP.CHARS.filter(c => fpStage(f, c.id) >= 4).length}/${FP.CHARS.length}</em></span></span><span class="hl-go">›</span></a></div>`;
+  }
+
+  /* 🔥 Fiery Passions (#/oyun/fp menü, #/oyun/fp/play oyun): köyde sandbox görsel roman. Veri js/data/fiery.js (Stories.FIERY).
+   * Gün 4 dilim (sabah, gündüz, akşam, gece) × haftanın günü; karakterler programa göre mekanlarda. Konuş / hediye / flört aff artırır,
+   * ⭐ hikaye sahneleri (aff 15 / 40 / 65) kademe atlatır, 3 sahne + aff 90 → 🔥 tutku sahnesi; sonra 💬 sohbete taşınır.
+   * Durum S().game.fp { day, dow, slot, money, inv, loc, rel: { id: { aff, met, sc, t } }, pic: { id: n }, intro, adopted: { id: charId } } */
+  const FP = Stories.FIERY || { SLOTS: [], DAYS: [], LOCS: [], CHARS: [], ITEMS: [], STAGES: [] };
+  const fpData = () => { const s = S(); s.game = s.game || {}; const g = s.game.fp = s.game.fp || {}; if (!g.day) Object.assign(g, { day: 1, dow: 1, slot: 0, money: 300, inv: {}, loc: 'oda', rel: {}, pic: {}, intro: 0, adopted: {} }); return g; };
+  const fpRel = (g, id) => g.rel[id] = g.rel[id] || { aff: 0, met: 0, sc: 0, t: '' };
+  const fpStage = (g, id) => { const a = (g.rel[id] || {}).aff || 0; return FP.STAGES.reduce((n, [v], i) => a >= v ? i : n, 0); };
+  const fpChar = id => FP.CHARS.find(c => c.id === id);
+  const fpLoc = id => FP.LOCS.find(l => l.id === id);
+  const fpHere = (g, loc) => FP.CHARS.filter(c => c.where(g.slot, g.dow) === loc);
+  // 🖼️ görseller mods/dontstop: portrait_<id>[_ifade].png, icon_<id>.png, karakterin kendi mekanında bg_*.jpg
+  const FP_IMG = 'mods/dontstop/';
+  const FP_MOODS = { ash: ['neutral', 'shy', 'smile'], ava: ['neutral', 'shy', 'smile'], chloe: ['flirty', 'shy', 'smile'], claire: ['angry', 'shy', 'smile'], lily: ['shy', 'extra_shy', 'smile'],
+    liza: ['angry', 'shy', 'smile'], luna: ['angry', 'flirty', 'smile'], mia: ['flirty', 'shy', 'smile'], roxy: ['angry', 'shy', 'smile'], scarlett: ['angry', 'neutral', 'smile'], maeve: ['angry', 'flirty', 'smile'] };
+  // 🌅 mekan arka planları (mods/dontstop/bg): saate göre day / evening / night, olmayan dilimde en yakını
+  const FP_LOCBG = { oda: 'room_me', salon: 'livingroom', mutfak: 'kitchen', banyo: 'bathroom', roxyoda: 'room_roxy', miaoda: 'room_mia', market: 'market', park: 'park', kolej: 'college',
+    mudur: 'college_cabinet', hastane: 'hospital', avaev: 'house_ava', ofis: 'office', avaofis: 'office_cabinet', sahil: 'beach', orman: 'forest_witches' };
+  const FP_BGT = { room_me: 'den', livingroom: 'den', kitchen: 'den', room_roxy: 'den', room_mia: 'den', market: 'den', park: 'den', college: 'de', college_cabinet: 'de', hospital: 'de', house_ava: 'den', office: 'de', office_cabinet: 'de', beach: 'den' };
+  function fpLocBg(loc, slot) {
+    const b = FP_LOCBG[loc], has = FP_BGT[b];
+    if (!b) return '';
+    if (!has) return `${FP_IMG}bg/${b}.jpg`;
+    const want = slot < 2 ? 'd' : slot === 2 ? 'e' : 'n', t = has.includes(want) ? want : want === 'n' && has.includes('e') ? 'e' : 'd';
+    return `${FP_IMG}bg/${b}_${{ d: 'day', e: 'evening', n: 'night' }[t]}.jpg`;
+  }
+  // 🎬 karakterli sahne görselleri: [mekan, buradakiler, dilimler (yoksa hepsi), dosya]; ilk uyan
+  const FP_SCN = [['salon', ['mia', 'ava'], null, 'livingroom_mia_ava_sitting'], ['salon', ['ava'], null, 'livingroom_ava_sitting'], ['salon', ['mia'], [0], 'livingroom_mia_yoga'], ['salon', ['mia'], null, 'livingroom_mia_sitting'],
+    ['mutfak', ['mia'], null, 'kitchen_mia'], ['mutfak', ['roxy'], null, 'kitchen_roxy'], ['banyo', ['mia'], null, 'bathroom_mia'], ['banyo', ['roxy'], null, 'bathroom_roxy'],
+    ['roxyoda', ['roxy'], [3], 'room_roxy_sleep'], ['roxyoda', ['roxy'], null, 'room_roxy_read'], ['miaoda', ['mia'], [3], 'room_mia_sleep'],
+    ['market', ['lily', 'mia'], [0, 1], 'market_day_lily_mia'], ['market', ['lily', 'ava'], [2], 'market_evening_lily_ava'], ['market', ['lily'], [2], 'market_evening_lily'], ['market', ['lily'], null, 'market_day_lily'],
+    ['market', ['ava'], [2], 'market_evening_ava'], ['market', ['mia'], null, 'market_day_mia'], ['park', ['ash'], null, 'park_ash'], ['park', ['liza'], [3], 'park_night_liza'], ['park', ['liza'], null, 'park_day_liza'], ['park', ['roxy'], null, 'park_roxy'],
+    ['kolej', ['mia', 'roxy', 'liza'], [0], 'college_all'], ['mudur', ['scarlett'], [2], 'college_cabinet_evening_scarlett'], ['mudur', ['scarlett'], null, 'college_cabinet_day_scarlett'],
+    ['hastane', ['chloe'], [2], 'hospital_evening_chloe'], ['hastane', ['chloe'], null, 'hospital_day_chloe'], ['ofis', ['claire'], null, 'office_claire'], ['avaofis', ['ava'], null, 'office_cabinet_ava'],
+    ['sahil', ['mia', 'ava'], null, 'beach_mia_ava'], ['sahil', ['lily', 'chloe'], null, 'beach_lily_chloe'], ['sahil', ['roxy', 'ash'], null, 'beach_roxy_ash'], ['sahil', ['claire', 'scarlett'], null, 'beach_claire_scarlett'],
+    ...['ash', 'ava', 'chloe', 'claire', 'lily', 'liza', 'mia', 'roxy', 'scarlett'].map(id => ['sahil', [id], null, 'beach_' + id]), ['orman', ['luna'], null, 'house_witches_luna']];
+  const fpSceneBg = (loc, slot, ids) => { const m = FP_SCN.find(([l, who, sl]) => l === loc && who.every(id => ids.includes(id)) && (!sl || sl.includes(slot))); return m ? `${FP_IMG}bg/${m[3]}.jpg` : ''; };
+  // 🏠 karakterin sahneleri için evi (hikaye / tutku arka planı)
+  const FP_HOME = { mia: 'miaoda', roxy: 'roxyoda', ava: 'avaev', lily: 'market', ash: 'park', chloe: 'hastane', liza: 'park', claire: 'ofis', scarlett: 'mudur', luna: 'orman', maeve: 'oda' };
+  // 🎵 mekan → parça (Music/fp)
+  const FP_MUS = { oda: 'house', salon: 'house', mutfak: 'house', banyo: 'house', roxyoda: 'house', miaoda: 'house', market: 'market', park: 'park', kolej: 'college', mudur: 'college', hastane: 'hospital', avaev: 'house_ava', ofis: 'office', avaofis: 'office', sahil: 'beach', orman: 'forest' };
+  const fpSoundOn = v => { try { if (v != null) localStorage.setItem('amor-stories:fpsound', v ? '1' : '0'); return localStorage.getItem('amor-stories:fpsound') !== '0'; } catch (e) { return true; } };
+  const fpMusic = id => { ui.fpMusic = id ? 'f:fp-' + id : ''; syncMusic(); };
+  // 🔔 efekt sesleri: oyunun kendi sesleri (mods/dontstop/sfx)
+  function fpSfx(name) { if (!fpSoundOn()) return; try { const a = new Audio(`${FP_IMG}sfx/${name}.ogg`); a.volume = .6; a.play().catch(() => {}); } catch (e) { /* ses yok */ } }
+  // ⌨️ yazı sesi: her iki harfte kısa bir tık (Web Audio)
+  let fpAC = null;
+  function fpBlip() {
+    if (!fpSoundOn()) return;
+    try {
+      fpAC = fpAC || new (window.AudioContext || window.webkitAudioContext)();
+      const o = fpAC.createOscillator(), gn = fpAC.createGain(), t = fpAC.currentTime;
+      o.type = 'triangle'; o.frequency.value = 520 + Math.random() * 90;
+      gn.gain.setValueAtTime(.05, t); gn.gain.exponentialRampToValueAtTime(.0001, t + .045);
+      o.connect(gn); gn.connect(fpAC.destination); o.start(t); o.stop(t + .05);
+    } catch (e) { /* ses yok */ }
+  }
+  /* ⌨️ yavaş yazılan metin: kök içindeki [data-tw] öğeleri sırayla harf harf yazılır (sn'de ~35 harf), bu sırada .fp-after (düğmeler) gizli;
+   * kutuya dokunmak hepsini anında tamamlar */
+  function fpType(root, done) {
+    clearTimeout(ui.fpTw);
+    const els = [...root.querySelectorAll('[data-tw]')];
+    if (!els.length) { if (done) done(); return; }
+    const texts = els.map(e => e.textContent);
+    els.forEach(e => { e.textContent = ''; });
+    root.classList.add('fp-typing');
+    let i = 0, k = 0;
+    const finish = () => { clearTimeout(ui.fpTw); els.forEach((e, j) => { e.textContent = texts[j]; }); root.classList.remove('fp-typing'); root.onclick = null; if (done) done(); };
+    const step = () => {
+      if (!root.isConnected) return;
+      if (i >= els.length) return finish();
+      const t = texts[i];
+      k++;
+      els[i].textContent = t.slice(0, k);
+      if (k % 2 && t[k - 1] !== ' ') fpBlip();
+      if (k >= t.length) { i++; k = 0; ui.fpTw = setTimeout(step, 260); return; }
+      ui.fpTw = setTimeout(step, /[.,!?…]/.test(t[k - 1]) ? 120 : 28);
+    };
+    root.onclick = e => { if (root.classList.contains('fp-typing') && !e.target.closest('button')) finish(); };
+    step();
+  }
+  // ifade: istenenlerden ilk olan; 📷 ile elle seçilen (g.pic) önce gelir
+  const fpMood = (c, wants) => (wants || []).find(m => (FP_MOODS[c.id] || []).includes(m)) || '';
+  const fpPic = (g, c, mood) => { const list = ['', ...(FP_MOODS[c.id] || [])], m = mood != null ? mood : list[(g.pic[c.id] || 0) % list.length]; return `${FP_IMG}portrait_${c.id}${m ? '_' + m : ''}.png`; };
+  const fpIcon = c => c.id === 'maeve' ? `${FP_IMG}portrait_maeve.png` : `${FP_IMG}icon_${c.id}.png`;
+  const fpNow = g => `${g.day}:${g.slot}`;
+  function fpTick(g, n = 1) { for (let i = 0; i < n; i++) { g.slot++; if (g.slot > 3) { g.slot = 0; g.day++; g.dow = g.dow % 7 + 1; } } }
+  function fpAff(g, id, d) { const r = fpRel(g, id), was = fpStage(g, id); r.aff = Math.max(0, Math.min(100, r.aff + d)); const now = fpStage(g, id); if (now > was) notify(`💞 ${fpChar(id).name}: ${FP.STAGES[now][1]}`, '🔥'); }
+  // ⭐ sıradaki hikaye sahnesi için gereken aff
+  const FP_SCENE_AT = [15, 40, 65];
+  // 🔥 tutku sahnesi: yer, onun satırları, olay kartları, sonda nereye (içine / dışarı / yüzüne)
+  function fpPassion(c, fin) {
+    const P = c.passion, cards = P.evs, out = [['sys', `📍 ${P.place}`]];
+    cards.forEach((t, i) => { out.push(['ev', t]); if (P.lines[i]) out.push(['c', P.lines[i]]); });
+    if (c.call) { out.push(['c', 'Kamerayı kapatmadan önce… teşekkürler 💋'], ['sys', '✨ Arama sona erdi.']); return out; }
+    out.push(['ev', 'Orgazm'], ['c', 'Geliyorum… ahhh 💗']);
+    const F = { in: ['Vaginal Creampie', 'İçime… hepsini istiyorum 🥵', 'Derinlere boşaldın; titreyerek sarılıyor.'], out: ['Leg Cumshot', 'Dışarı! Dışarı…', 'Son anda çıktın; bacaklarına boşaldın.'], face: ['Face Cumming', 'Yüzüme 😈', 'Yüzüne boşaldın; gülümseyip dudaklarını yalıyor.'] }[fin];
+    out.push(['c', F[1]], ['cum', F[0]], ['sys', F[2]], ['c', pick(['Bu… inanılmazdı 💕', 'Bir daha? 😏', 'Bırakma beni…'])]);
+    return out;
+  }
+  function fpAdopt(g, c) {
+    const have = g.adopted[c.id] && byId(g.adopted[c.id]);
+    if (have) return have;
+    const d = Object.assign(blankChar(), { id: Store.uid(), created: Date.now(), name: c.name, age: c.age, city: 'Köy', job: c.title, bio: c.bio, about: c.pers, photo: fpPic(g, c, fpMood(c, ['smile'])), album: ['', ...(FP_MOODS[c.id] || [])].map(m => fpPic(g, c, m)) });
+    chars().push(d);
+    g.adopted[c.id] = d.id;
+    return d;
+  }
+  function fpChat(g, c) {
+    const d = fpAdopt(g, c), t = currentThread(d) || newThread(d, 'Fiery Passions');
+    msgsOf(t).push({ id: Store.uid(), from: 'her', text: pick(['Dün geceyi düşünmeden duramıyorum 🔥', 'Köy çok sessiz… gel yanıma 😏', 'Bir daha ne zaman? 💋']), ts: Date.now() });
+    save();
+    location.hash = `#/chat/${t.id}`;
+  }
+  // 🎬 menü: başla / devam, yeni oyun, rehber, karakterler
+  function renderFPMenu() {
+    const g = fpData(), started = g.intro;
+    view.innerHTML = `<div class="fp-site fp-menu">${appBar('ws', 'Fiery<i> Passions</i>', 'oyun', '#/oyun')}
+      <div class="fp-title"><img src="${esc(FP_IMG + 'bg/main_menu.jpg')}" alt="" onerror="this.remove()"><img class="fp-tpor" src="${esc(FP_IMG + 'portrait_roxy_smile.png')}" alt="" onerror="this.remove()"><div><small>🔞 Adult visual novel · sandbox</small><h1>Fiery<br>Passions</h1><p>Erkeksiz bir köyde, unutulmaz bir yaz 🔥</p></div></div>
+      <div class="ps-mbtns">
+        <a class="ps-mb main" href="#/oyun/fp/play">${started ? `▶ Devam et <small>Gün ${g.day} · ${FP.DAYS[g.dow]} · ${FP.SLOTS[g.slot]}</small>` : '▶ Başla'}</a>
+        ${started ? '<button type="button" class="ps-mb" id="fpNew">🆕 Yeni oyun</button>' : ''}
+        <button type="button" class="ps-mb" id="fpHow">📖 Rehber kitap <small>zaman, mekanlar, program</small></button>
+        <button type="button" class="ps-mb" id="fpCast">💞 Karakterler <small>${FP.CHARS.length}</small></button>
+        <button type="button" class="ps-mb" id="fpSnd">${fpSoundOn() ? '🔊 Müzik ve sesler açık' : '🔇 Müzik ve sesler kapalı'}</button></div></div>`;
+    fpMusic('main_menu');
+    view.querySelectorAll('.ps-mb').forEach(b => b.addEventListener('click', () => fpSfx('click')));
+    $('#fpHow').onclick = () => openBook(...bookIdx('Fiery Passions'));
+    $('#fpCast').onclick = () => fpCastSheet(g);
+    $('#fpSnd').onclick = () => { fpSoundOn(!fpSoundOn()); renderFPMenu(); };
+    const nw = $('#fpNew');
+    if (nw) nw.onclick = () => { if (!confirm('Yeni oyun başlasın mı? İlerleme silinir.')) return; delete S().game.fp; ui.fp = null; save(); location.hash = '#/oyun/fp/play'; };
+  }
+  function fpCastSheet(g) {
+    sheet(`<div class="sheet-grip"></div><h3>💞 Karakterler</h3><div class="fp-cast">${FP.CHARS.map(c => { const r = g.rel[c.id] || {}, st = fpStage(g, c.id), loc = c.call ? '💻 dizüstünden (akşam / gece)' : (fpLoc(c.where(g.slot, g.dow)) || {}).name || '— şu an bilinmiyor';
+      return `<div class="fp-cc" style="--cc:${c.color}"><img src="${esc(fpIcon(c))}" alt=""><div><b>${esc(c.name)}, ${c.age}</b><small>${esc(c.title)} · ${esc(c.pers)}</small>
+        <span class="fp-bar"><i style="--w:${r.aff || 0}%"></i></span><small>${r.met ? `${FP.STAGES[st][1]} · ${r.aff || 0}/100 · ⭐ ${r.sc || 0}/3` : 'Henüz tanışmadınız'} · 📍 şimdi: ${esc(loc)}</small></div></div>`; }).join('')}</div>`, 'light');
+  }
+  // VN satırı: [kim, metin] → isim kutusu + yavaş yazılacak metin (typed: daha önce yazılmışsa anında)
+  const fpLineHtml = (c, [w, t], typed) => w === 'ev' || w === 'cum' ? (() => { const e = evFind(t); return `<div class="fx-ev${w === 'cum' || t === 'Orgazm' ? ' cum' : ''}">${e && e.emojis ? evEmo(e) : (w === 'cum' ? '💦 ' : '📜 ')}${esc(e ? e.title : t)}</div>`; })()
+    : `<p class="fp-l ${w}">${w === 'c' ? `<b class="fp-nm" style="--cc:${c.color}">${esc(c.name)}</b>` : w === 'me' ? '<b class="fp-nm me">Sen</b>' : ''}<span${typed ? '' : ' data-tw'}>${esc(t)}</span></p>`;
+  function renderFP() {
+    const g = fpData(), U = ui.fp = ui.fp || {};
+    clearTimeout(ui.fpTw);
+    // 🎬 giriş: Maeve'in araması + yolculuk (prolog görselleri) + pansiyona varış
+    if (!g.intro) {
+      const IN = [['sys', 'Şehirde bir yaz sabahı. Telefonun titriyor: Maeve.', 'prologue_1'], ['maeve', 'Bütün yazı dört duvar arasında geçirmek tuhaf olur. Seni köye, Mia\'nın pansiyonuna gönderiyorum. Kartına 300₺ yükledim.', 'laptop_talk'],
+        ['sys', 'Saatlerce süren bir otobüs yolculuğu…', 'prologue_2'], ['sys', 'Köyün girişinde bir tabela: "Bizim köyde sadece kızlar ve kadınlar yaşıyor."', 'prologue_3'],
+        ['mia', 'Geldiğine çok sevindim! Odanı çoktan hazırladım. Yerleş, kendini evinde hisset 🌸', 'hallway_day'], ['roxy', 'Sen de kimsin? Annemin "misafiri" mi? Banyoyu kilitlemeyi unutma 😤', 'hallway_day'],
+        ['sys', 'Yaz başlıyor. Köyün bütün gözleri senin üzerinde…', 'room_me_day']];
+      const i = U.introI || 0, [w, t, bg] = IN[i], c = fpChar(w);
+      view.innerHTML = `<div class="fp-site">${appBar('ws', 'Fiery<i> Passions</i>', 'giriş', '#/oyun/fp')}
+        <div class="fp-stage${c ? ' fp-vn' : ''}" style="--g1:#3a1010;--g2:#120505"><img class="fp-bg" src="${esc(FP_IMG + 'bg/' + bg + '.jpg')}" alt="">${c ? `<img class="fp-por" src="${esc(fpPic(g, c, fpMood(c, w === 'roxy' ? ['angry'] : ['smile'])))}" alt="">` : ''}</div>
+        <div class="fp-box fp-tb">${c ? `<b class="fp-nm" style="--cc:${c.color}">${esc(c.name)}</b>` : ''}<p><span data-tw>${esc(t)}</span></p><div class="row-btns fp-after"><button type="button" class="btn primary" id="fpIn">${i < IN.length - 1 ? 'Devam ›' : 'Yaz başlasın 🔥'}</button></div></div></div>`;
+      fpMusic(i === 1 ? '' : 'main_menu');
+      if (i === 1) fpSfx('call_laptop');
+      fpType(view.querySelector('.fp-box'));
+      $('#fpIn').onclick = () => { fpSfx('click'); if (i < IN.length - 1) { U.introI = i + 1; return renderFP(); } g.intro = 1; ['mia', 'roxy'].forEach(id => { fpRel(g, id).met = 1; }); fpAff(g, 'mia', 3); U.introI = 0; save(); renderFP(); };
+      return;
+    }
+    const L = fpLoc(g.loc) || fpLoc('oda'), here = fpHere(g, L.id), sel = U.sel && (here.find(c => c.id === U.sel) || (U.sel === 'maeve' && g.loc === 'oda' && g.slot >= 2 ? fpChar('maeve') : null));
+    const hud = `<div class="fp-hud"><span>📅 Gün <b>${g.day}</b> · ${FP.DAYS[g.dow]}</span><span>${FP.SLOTS[g.slot]}</span><span>💰 <b>${g.money}</b>₺</span>
+      <button type="button" class="fp-ib" id="fpSndB" aria-label="Ses">${fpSoundOn() ? '🔊' : '🔇'}</button><button type="button" class="fp-ib" id="fpBag" aria-label="Çanta">🎒</button><button type="button" class="fp-ib" id="fpCastB" aria-label="Karakterler">💞</button><button type="button" class="fp-ib on" id="fpMapB" aria-label="Harita">🗺️</button></div>`;
+    let body, mus = FP_MUS[L.id] || 'house';
+    if (U.map) {
+      body = `<div class="fp-map">${FP.LOCS.map(l => { const open = l.open(g.slot, g.dow), who = open ? fpHere(g, l.id) : [], bg = fpLocBg(l.id, g.slot);
+        return `<button type="button" class="fp-tile${open ? '' : ' shut'}${l.id === g.loc ? ' cur' : ''}" data-fpgo="${l.id}" style="--g1:${l.grad[0]};--g2:${l.grad[1]}">${bg ? `<img src="${esc(bg)}" alt="" loading="lazy">` : ''}<span class="fp-ti">${l.icon}</span><b>${esc(l.name)}</b>
+          <small>${open ? (who.length ? who.map(c => esc(c.name)).join(', ') : 'boş') : '🔒 kapalı'}</small>${who.length ? `<span class="fp-tw">${who.map(c => `<img src="${esc(fpIcon(c))}" alt="">`).join('')}</span>` : ''}</button>`; }).join('')}</div>`;
+    } else if (U.scene) {
+      // ⭐ hikaye / 🔥 tutku sahnesi: arka plan karakterin evi (tutkuda gece), portre, satırlar sırayla yazılır
+      const S2 = U.scene, c = fpChar(S2.id), typed = S2.typed || 0;
+      const sbg = c.call ? FP_IMG + 'bg/laptop_call.jpg' : fpLocBg(FP_HOME[c.id] || L.id, S2.kind === 'passion' ? 3 : g.slot);
+      if (S2.kind === 'passion') mus = 'sex' + (1 + FP.CHARS.indexOf(c) % 5);
+      body = `<div class="fp-stage fp-vn" style="--g1:${L.grad[0]};--g2:${L.grad[1]}">${sbg ? `<img class="fp-bg" src="${esc(sbg)}" alt="">` : ''}<img class="fp-por" src="${esc(fpPic(g, c, fpMood(c, S2.kind === 'passion' ? ['flirty', 'smile'] : S2.pick != null ? ['smile', 'shy'] : ['shy', 'neutral', 'smile'])))}" alt=""></div>
+        <div class="fp-box fp-tb fp-scene"><b class="fp-st" style="color:${c.color}">${S2.kind === 'passion' ? '🔥' : '⭐'} ${esc(S2.title)}</b>
+          ${S2.lines.map((l, i) => fpLineHtml(c, l, i < typed)).join('')}
+          <div class="fp-after">${S2.choice && S2.pick == null ? `<div class="ps-replies">${S2.choice.map((o, i) => `<button type="button" class="ps-rep" data-fpch="${i}">${esc(o[0])}</button>`).join('')}</div>`
+            : S2.fin === null ? `<div class="ps-replies fp-fin"><button type="button" class="ps-rep" data-fpfin="in">💦 İçine</button><button type="button" class="ps-rep" data-fpfin="out">🤚 Dışarı</button><button type="button" class="ps-rep" data-fpfin="face">😈 Yüzüne</button></div>`
+            : `<div class="row-btns">${S2.kind === 'passion' ? '<button type="button" class="btn ghost" id="fpToChat">💬 Sohbete taşı</button>' : ''}<button type="button" class="btn primary" id="fpSceneOk">Devam ›</button></div>`}</div></div>`;
+    } else {
+      const acts = (L.acts || []).filter(a => !(a === 'work' && !(g.slot === 1 || g.slot === 2)) && !(a === 'laptop' && g.slot < 2));
+      const ACT = { sleep: '😴 Uyu (sabaha)', rest: '⏭ Dinlen', laptop: '💻 Maeve\'i ara', cook: '🍳 Yemek pişir', shop: '🛒 Alışveriş', work: '📦 Lily\'ye yardım et (+80₺)', sell: '💱 Sat', fish: '🎣 Balık tut', mushroom: '🍄 Mantar topla' };
+      // 🖼️ seçiliyse boş mekan + portresi; değilse buradakilerin sahne görseli (yoksa boş mekan); Maeve aramasında dizüstü
+      const bgc = sel && sel.call ? FP_IMG + 'bg/laptop_talk.jpg' : sel ? fpLocBg(L.id, g.slot) : fpSceneBg(L.id, g.slot, here.map(c => c.id)) || fpLocBg(L.id, g.slot);
+      body = `<div class="fp-stage${sel ? ' fp-vn' : ''}" style="--g1:${L.grad[0]};--g2:${L.grad[1]}">${bgc ? `<img class="fp-bg" src="${esc(bgc)}" alt="">` : `<span class="fp-big">${L.icon}</span>`}
+          ${sel ? `<img class="fp-por" src="${esc(fpPic(g, sel, U.mood != null && !g.pic[sel.id] ? U.mood : undefined))}" alt="">` : ''}
+          <div class="fp-lt"><b>${esc(L.name)}</b><small>${esc(L.desc)}</small></div>
+          <div class="fp-here">${here.map(c => { const st = fpStage(g, c.id), busy = L.id === 'banyo'; return `<button type="button" class="fp-ch${U.sel === c.id ? ' on' : ''}" data-fpsel="${c.id}" style="--cc:${c.color}"><img src="${esc(fpIcon(c))}" alt="" onerror="this.remove()"><span><b>${esc(c.name)}</b><small>${busy ? '🚿 duşta' : FP.STAGES[st][1]}</small></span><i style="--w:${(g.rel[c.id] || {}).aff || 0}%"></i></button>`; }).join('') || '<small class="fp-none">Burada kimse yok.</small>'}</div></div>
+        ${sel ? fpPanel(g, sel, L) : ''}
+        <div class="fp-acts">${acts.map(a => `<button type="button" class="btn ghost sm" data-fpact="${a}">${ACT[a]}</button>`).join('')}${L.id !== 'oda' ? '<button type="button" class="btn ghost sm" data-fpact="rest">⏭ Zaman geçsin</button>' : ''}</div>`;
+    }
+    view.innerHTML = `<div class="fp-site">${appBar('ws', 'Fiery<i> Passions</i>', `${FP.DAYS[g.dow]} · ${FP.SLOTS[g.slot]}`, '#/oyun/fp')}${hud}${body}
+      ${U.say ? `<div class="fp-toast">${U.say}</div>` : ''}<div class="ps-foot"><small>📍 ${esc(L.name)}</small><a class="btn ghost sm" href="#/oyun/fp">☰ Menü</a></div></div>`;
+    U.say = '';
+    fpMusic(mus);
+    // ⌨️ yeni metinler yavaşça yazılır; sahnede yazılanlar sayılır
+    const box = view.querySelector('.fp-tb, .fp-box');
+    if (box) fpType(box, () => { if (U.scene) U.scene.typed = U.scene.lines.length; });
+    const re = () => { save(); renderFP(); };
+    view.querySelectorAll('button').forEach(b => b.addEventListener('click', () => fpSfx('click')));
+    $('#fpSndB').onclick = () => { fpSoundOn(!fpSoundOn()); renderFP(); };
+    $('#fpMapB').onclick = () => { U.map = !U.map; U.scene = null; renderFP(); };
+    $('#fpCastB').onclick = () => fpCastSheet(g);
+    $('#fpBag').onclick = () => sheet(`<div class="sheet-grip"></div><h3>🎒 Çanta · 💰 ${g.money}₺</h3><div class="fp-bag">${FP.ITEMS.filter(i => g.inv[i.id]).map(i => `<span>${i.icon} ${esc(i.name)} ×${g.inv[i.id]}</span>`).join('') || '<div class="empty">Çantan boş. Pazardan hediye alabilirsin.</div>'}</div>`, 'light');
+    view.querySelectorAll('[data-fpgo]').forEach(b => b.onclick = () => { const l = fpLoc(b.dataset.fpgo); if (!l.open(g.slot, g.dow)) { notify(l.why || 'Kapalı', '🔒'); return; } if (l.id !== g.loc) fpSfx('door'); g.loc = l.id; U.map = false; U.sel = null; if (l.id === 'banyo' && fpHere(g, 'banyo').length) setTimeout(() => fpSfx('shower'), 400); re(); });
+    view.querySelectorAll('[data-fpsel]').forEach(b => b.onclick = () => { U.sel = U.sel === b.dataset.fpsel ? null : b.dataset.fpsel; const r = fpRel(g, b.dataset.fpsel), c = fpChar(b.dataset.fpsel); if (!r.met) { r.met = 1; fpAff(g, c.id, 2); U.line = c.intro; U.mood = fpMood(c, ['angry', 'neutral', 'smile']); } else { U.line = ''; U.mood = fpMood(c, ['neutral', 'smile']); } re(); });
+    view.querySelectorAll('[data-fpact]').forEach(b => b.onclick = () => fpAct(g, b.dataset.fpact, re));
+    view.querySelectorAll('[data-fpdo]').forEach(b => b.onclick = () => fpDo(g, sel, b.dataset.fpdo, re));
+    view.querySelectorAll('[data-fpch]').forEach(b => b.onclick = () => { const S2 = U.scene, o = S2.choice[+b.dataset.fpch]; S2.typed = S2.lines.length; S2.pick = +b.dataset.fpch; S2.lines.push(['me', o[0]], ['sys', o[2]]); fpAff(g, S2.id, o[1]); fpRel(g, S2.id).sc++; re(); });
+    view.querySelectorAll('[data-fpfin]').forEach(b => b.onclick = () => { const S2 = U.scene; S2.fin = b.dataset.fpfin; S2.lines = fpPassion(fpChar(S2.id), S2.fin); S2.typed = 2; fpTick(g); sfx('orgasm'); re(); });
+    const ok = $('#fpSceneOk'); if (ok) ok.onclick = () => { if (U.scene && fpChar(U.scene.id).call) fpSfx('end_laptop'); U.scene = null; re(); };
+    const tc = $('#fpToChat'); if (tc) tc.onclick = () => { const c = fpChar(U.scene.id); U.scene = null; fpChat(g, c); };
+  }
+  // karakter paneli: VN kutusu + konuş / hediye / flört / hikaye / tutku / fotoğraf
+  function fpPanel(g, c, L) {
+    const U = ui.fp, r = fpRel(g, c.id), st = fpStage(g, c.id), now = fpNow(g), talked = r.t === now, shower = L.id === 'banyo';
+    const scOk = r.sc < 3 && r.aff >= FP_SCENE_AT[r.sc], pass = r.sc >= 3 && r.aff >= 90;
+    // söylediği satır bir kez seçilir; yeni satır yavaşça yazılır (aynısı yeniden çizilince anında)
+    if (!U.line) U.line = shower ? '🚿 İçeriden su sesi geliyor…' : talked ? '…' : pick(c.talk);
+    const line = U.line, typed = U.typedLine === c.id + line;
+    U.typedLine = c.id + line;
+    return `<div class="fp-box fp-tb"><div class="fp-bh"><img src="${esc(fpIcon(c))}" alt=""><span><b class="fp-nm" style="--cc:${c.color}">${esc(c.name)}</b><small>${esc(c.title)} · ${FP.STAGES[st][1]} ${r.aff}/100</small></span><button type="button" class="fp-pic" data-fpdo="pic" title="İfadeyi değiştir">🎭</button></div>
+      <p><span${typed ? '' : ' data-tw'}>${esc(line)}</span></p>
+      <div class="fp-do fp-after">${shower ? '<button type="button" class="btn ghost sm" data-fpdo="knock">🚪 Kapıyı çal</button>' : `<button type="button" class="btn ghost sm" data-fpdo="talk"${talked ? ' disabled' : ''}>💬 Konuş</button>
+        <button type="button" class="btn ghost sm" data-fpdo="gift"${talked || c.call ? ' disabled' : ''}>🎁 Hediye</button><button type="button" class="btn ghost sm" data-fpdo="flirt"${talked || st < 1 ? ' disabled' : ''}>😘 Flört${st < 1 ? ' 🔒' : ''}</button>`}
+        ${scOk ? `<button type="button" class="btn primary sm" data-fpdo="scene">⭐ ${esc(c.scenes[r.sc].title)}</button>` : r.sc < 3 ? `<small class="fp-next">⭐ sıradaki sahne: ${FP_SCENE_AT[r.sc]} aff</small>` : ''}
+        ${pass ? '<button type="button" class="btn primary sm fp-hot" data-fpdo="passion">🔥 Tutku</button>' : r.sc >= 3 ? '<small class="fp-next">🔥 tutku: 90 aff</small>' : ''}</div></div>`;
+  }
+  function fpDo(g, c, what, re) {
+    const U = ui.fp, r = fpRel(g, c.id), st = fpStage(g, c.id);
+    U.line = '';
+    // 🎭 elle ifade seçimi: sıradaki portre (normal → ifadeler)
+    if (what === 'pic') { g.pic[c.id] = (g.pic[c.id] || 0) + 1; U.mood = null; return re(); }
+    if (g.pic[c.id]) g.pic[c.id] = 0;
+    if (what === 'talk') { r.t = fpNow(g); fpAff(g, c.id, 3 + Math.floor(Math.random() * 3)); U.line = pick(c.talk); U.mood = fpMood(c, ['smile']); }
+    if (what === 'flirt') { r.t = fpNow(g); const ok = Math.random() < .45 + r.aff / 200; fpAff(g, c.id, ok ? 7 : -2); U.line = pick(c.flirt[ok ? 0 : 1]); U.say = ok ? '💕 Flört işe yaradı (+7)' : '😬 Olmadı (−2)'; U.mood = fpMood(c, ok ? ['flirty', 'shy', 'smile'] : ['angry', 'neutral', 'shy']); }
+    if (what === 'knock') { fpSfx('knock'); r.t = fpNow(g); fpAff(g, c.id, st >= 2 ? 4 : -2); U.line = c.knock ? c.knock[st >= 2 ? 1 : 0] : 'Meşgulüm!'; U.mood = fpMood(c, st >= 2 ? ['flirty', 'shy'] : ['angry', 'shy']); }
+    if (what === 'scene') { const s = c.scenes[r.sc]; U.scene = { id: c.id, kind: 'story', title: s.title, lines: s.lines.slice(), choice: s.choice, pick: null }; }
+    if (what === 'passion') U.scene = { id: c.id, kind: 'passion', title: 'Tutku', lines: [['sys', `📍 ${c.passion.place}`], ['c', c.passion.lines[0]]], fin: c.call ? undefined : null };
+    if (what === 'passion' && c.call) { U.scene.lines = fpPassion(c); fpTick(g); }
+    if (what === 'gift') {
+      const have = FP.ITEMS.filter(i => g.inv[i.id]);
+      if (!have.length) { U.say = '🎒 Çantan boş. Pazardan hediye al.'; return re(); }
+      const sh = sheet(`<div class="sheet-grip"></div><h3>🎁 ${esc(c.name)} için hediye</h3><div class="fp-gifts">${have.map(i => `<button type="button" class="btn ghost" data-fpg="${i.id}">${i.icon} ${esc(i.name)} ×${g.inv[i.id]}</button>`).join('')}</div>`, 'light');
+      sh.el.onclick = e => {
+        const b = e.target.closest('[data-fpg]');
+        if (!b) return;
+        const id = b.dataset.fpg, k = c.gifts.love.includes(id) ? 'love' : c.gifts.like.includes(id) ? 'like' : c.gifts.hate.includes(id) ? 'hate' : 'meh';
+        g.inv[id]--; if (!g.inv[id]) delete g.inv[id];
+        r.t = fpNow(g);
+        fpAff(g, c.id, { love: 12, like: 6, meh: 2, hate: -5 }[k]);
+        U.line = { love: 'Bunu nereden bildin?! Çok sevdim 😍', like: 'Ne düşünceli… teşekkürler 💕', meh: 'Hm, teşekkürler.', hate: 'Bunu… sevmem açıkçası 😒' }[k];
+        U.say = { love: '😍 Bayıldı (+12)', like: '💕 Sevdi (+6)', meh: '🙂 (+2)', hate: '😒 Sevmedi (−5)' }[k];
+        U.mood = fpMood(c, { love: ['smile', 'flirty'], like: ['smile'], meh: ['neutral', 'shy'], hate: ['angry', 'neutral'] }[k]);
+        sh.close(); re();
+      };
+      return;
+    }
+    re();
+  }
+  // 📍 mekan eylemleri (çoğu zaman geçirir)
+  function fpAct(g, a, re) {
+    const U = ui.fp, add = (id, n) => { g.inv[id] = (g.inv[id] || 0) + n; };
+    if (a === 'sleep') { g.slot = 3; fpTick(g); U.say = `🌅 Günaydın! ${FP.DAYS[g.dow]}, gün ${g.day}`; }
+    else if (a === 'rest') { fpTick(g); U.say = `⏳ ${FP.SLOTS[g.slot]}`; }
+    else if (a === 'laptop') { fpSfx('call_laptop'); U.sel = 'maeve'; U.line = ''; const r = fpRel(g, 'maeve'); if (!r.met) { r.met = 1; U.line = fpChar('maeve').intro; } }
+    else if (a === 'cook') { fpSfx('cooking'); add('yemek', 1); fpTick(g); U.say = '🍲 Ev yemeği hazır (çantanda)'; const who = fpHere(g, 'mutfak')[0]; if (who) fpAff(g, who.id, 3); }
+    else if (a === 'work') { if (!fpHere(g, 'market').some(c => c.id === 'lily')) { U.say = 'Lily burada değil.'; return re(); } g.money += 80; fpAff(g, 'lily', 3); fpTick(g); U.say = '📦 Kolileri taşıdın: +80₺, Lily +3'; }
+    else if (a === 'fish') { fpSfx('fun_run'); const n = Math.floor(Math.random() * 3); add('balik', n); fpTick(g); U.say = n ? `🎣 ${n} balık tuttun` : '🎣 Hiç tutmadı…'; if (!n) delete g.inv.balik; }
+    else if (a === 'mushroom') { const n = 1 + Math.floor(Math.random() * 3); add('mantar', n); fpTick(g); U.say = `🍄 ${n} mantar topladın`; }
+    else if (a === 'sell') {
+      const m = (g.inv.mantar || 0) * 15 + (g.inv.balik || 0) * 25;
+      if (!m) { U.say = 'Satacak mantar ya da balık yok.'; return re(); }
+      g.money += m; delete g.inv.mantar; delete g.inv.balik; U.say = `💱 Sattın: +${m}₺`;
+    } else if (a === 'shop') {
+      const sh = sheet(`<div class="sheet-grip"></div><h3>🛒 Pazar · 💰 ${g.money}₺</h3><div class="fp-gifts">${FP.ITEMS.filter(i => i.price).map(i => `<button type="button" class="btn ghost" data-fpbuy="${i.id}"${g.money < i.price ? ' disabled' : ''}>${i.icon} ${esc(i.name)} · ${i.price}₺</button>`).join('')}</div>`, 'light');
+      sh.el.onclick = e => { const b = e.target.closest('[data-fpbuy]'); if (!b) return; const it = FP.ITEMS.find(i => i.id === b.dataset.fpbuy); if (g.money < it.price) return; g.money -= it.price; add(it.id, 1); fpSfx('drop'); sh.close(); U.say = `🛍️ ${it.icon} ${it.name} alındı`; re(); };
+      return;
+    }
+    // zaman geçince bulunduğun mekan kapandıysa odana dönersin
+    if (!(fpLoc(g.loc) || fpLoc('oda')).open(g.slot, g.dow)) { g.loc = 'oda'; U.say += ' · 🏠 odana döndün'; }
+    if (!fpHere(g, g.loc).some(c => c.id === U.sel) && U.sel !== 'maeve') U.sel = null;
+    re();
+  }
   /* 🎬 CarmenFlix (#/flix, #/flix/<id>, #/flix/<id>/<bölüm>): Netflix gibi; film ve diziler yazışma olarak sırayla oynar.
    * Başrol: ilanlardan / karakterlerinden bir kadın (fotoğraf) + bir erkek adı. Senaryo konuya göre (FX_TROPE) ve genel havuzlardan
    * tohumla kurulur: aynı bölüm hep aynı. İzleme durumu bu tarayıcıda: amor-stories:flix { last: {id, ep}, seen: {id: [ep]}, list: [id] } */
@@ -1994,6 +2628,7 @@
     is: ['💼 Başvurunca mülakat sohbeti açılır; rol olayı ⚡ kısayolda, karakter rolün kıyafetini giyer.'],
     klinik: ['🩺 Döngü takvimi ve hamilelik haftası; zaman 🕰️ sohbet saatiyle ilerler.'],
     flix: ['🍿 Bir film ya da dizi seç, ▶ Oynat: hikaye yazışma olarak sırayla akar.', '⏸ duraklat, 1x/2x/3x hız, ⏭ hepsini göster. Dizide bölüm bitince sonraki kendiliğinden başlar.', '💬 Rolü oyna: başroldeki kızla o hikayeyi sohbette yaşarsın.', '🎨 Kendi yapımın: Monia → 🍿 Flix stüdyosu. Satır satır yaz ya da 🎲 bir konudan otomatik başlat.'],
+    oyun: ['🎮 Problematic Subjects: hanımefendinin ricasını oku, en fazla 3 hareket seç, ✨ Uygula.', '⭐ En sevdiği ×3, ricasına uyan +%50, yavaş yavaş tırmanma kombosu +%15.', '📦 Gün sonunda kutu aç; 📱 mesajlara bak, bazıları easter egg 🥚'],
     gram: ['📸 Akışta takip ettiklerin önce. Fotoğrafa iki kez dokun: ❤️ beğen.', '💬 Yorum yaz, o da cevap verir. Hikayeye yanıt ya da ✈️ DM sohbet açar.', 'Kayıtlı karakterin ilk gönderisi sohbette yaşadıklarınıza göre değişir 😏'],
     itiraf: ['🎭 İsimsiz itiraflar; her açılışta sıra karışık. 🎲 Karıştır ile yeniden.', '✍️ En üstteki kutudan sen de itiraf yaz; ✍️ Benimkiler sekmesinde durur.', 'Kadın / erkek, uzun / kısa diye süz; 🔥😂😳 ile tepki ver.']
   };
@@ -2001,7 +2636,7 @@
   const HELP_BOOK = { home: 'Sohbetin temelleri', messages: 'Sohbetin temelleri', chat: 'İdeal bir seans', create: 'İzinler ve kurallar', hikayeler: 'Sohbetin temelleri',
     monia: 'Olaylar ve sonuçlar', olay: 'Olaylar ve sonuçlar', sonuc: 'Eşik olayları', gruplar: 'Ortak sonuçlar ve etiketler', kategoriler: 'Ortak sonuçlar ve etiketler',
     kurallar: 'İzinler ve kurallar', bot: 'Olaylar ve sonuçlar', me: 'Kayıt ve kurulumlar', p: 'Parametreler ve durumlar',
-    internet: 'İnternet nedir?', carmen: 'Carmen.com', fans: 'CarmenFans', otel: 'CarmenStay', canli: 'CarmenLive', shop: 'CarmenShop', is: 'CarmenJobs', klinik: 'CarmenKlinik', itiraf: 'Confessly', flix: 'CarmenFlix', gram: 'Carmentagram' };
+    internet: 'İnternet nedir?', carmen: 'Carmen.com', fans: 'CarmenFans', otel: 'CarmenStay', canli: 'CarmenLive', shop: 'CarmenShop', is: 'CarmenJobs', klinik: 'CarmenKlinik', itiraf: 'Confessly', flix: 'CarmenFlix', gram: 'Carmentagram', oyun: 'Problematic Subjects' };
   // bölüm adı → [kitap, bölüm] (bütün kitaplarda arar)
   const bookIdx = title => { for (const b of BOOKS) { const i = b.chapters.findIndex(c => c.title === title); if (i >= 0) return [b.id, i]; } return ['carmen', 0]; };
   // Lia'nın fotoğrafı: resim havuzundan hep aynısı
@@ -9894,7 +10529,7 @@
   const CTX_BOOK = { home: 'Sohbetin temelleri', messages: 'Sohbetin temelleri', chat: 'Sohbetin temelleri', esles: 'Sohbetin temelleri', create: 'İzinler ve kurallar', p: 'Parametreler ve durumlar',
     hikayeler: 'Olaylar ve sonuçlar', monia: 'Olaylar ve sonuçlar', senaryo: 'Olaylar ve sonuçlar', olay: 'Olaylar ve sonuçlar', sonuc: 'Olaylar ve sonuçlar', gruplar: 'Ortak sonuçlar ve etiketler', kategoriler: 'Ortak sonuçlar ve etiketler',
     kurallar: 'İzinler ve kurallar', izin: 'İzinler ve kurallar', bot: 'Kural yazma rehberi', deney: 'Bot deneyi ve eksik cevaplar', me: 'Kayıt ve kurulumlar',
-    internet: 'İnternet nedir?', carmen: 'Carmen.com', fans: 'CarmenFans', otel: 'CarmenStay', canli: 'CarmenLive', shop: 'CarmenShop', is: 'CarmenJobs', klinik: 'CarmenKlinik', itiraf: 'Confessly', flix: 'CarmenFlix', gram: 'Carmentagram' };
+    internet: 'İnternet nedir?', carmen: 'Carmen.com', fans: 'CarmenFans', otel: 'CarmenStay', canli: 'CarmenLive', shop: 'CarmenShop', is: 'CarmenJobs', klinik: 'CarmenKlinik', itiraf: 'Confessly', flix: 'CarmenFlix', gram: 'Carmentagram', oyun: 'Problematic Subjects' };
   const ctxKey = () => { const r = ui.route || {}; if (r.name === 'monia') return r.id === 'flix' ? 'flix' : ['sonuc', 'gruplar', 'kategoriler', 'olay'].includes(r.id) ? r.id : r.id ? 'senaryo' : 'monia'; if (r.name === 'kurallar' && r.id === 'izin') return 'izin'; return r.name || 'home'; };
   const ctxHelp = (cls = 'icon-btn') => `<button type="button" class="${cls} ctx-help" data-ctxhelp aria-label="Bu ekranın kitap bölümü" title="❓ ${esc(CTX_BOOK[ctxKey()] || 'Sohbetin temelleri')}">❓</button>`;
   document.addEventListener('click', e => {
@@ -10668,6 +11303,54 @@
         <tr><td>İlan kızları, yorumların, Fans abonelik ve alınanlar, Stay rezervasyon listesi, Flix izlediklerin ve listen</td><td>sadece bu tarayıcı</td></tr></table>
       <p>Ücretler gösterim içindir; cüzdan ya da bakiye yok.</p>` }
   ] });
+  /* 🎮 Oyun Kitabı: Adult Game oyunları */
+  BOOKS.push({ id: 'oyun', icon: '🎮', title: 'Oyun Kitabı', sub: 'Problematic Subjects nasıl oynanır', chips: ['Adult Game', '18+'], chapters: [
+    { icon: '🗂️', title: 'Problematic Subjects', sub: 'ofiste bir gün', body: `
+      <p><b>Ana menü</b>: ▶ Başla / Devam et, 🆕 Yeni oyun, 📖 Rehber kitap (bu kitap), 📦 Koleksiyon, 🏆 İstatistik. Oyun sırasında ☰ Menü ile dönersin; ilerleme kaydedilir.</p>
+      <p>Ofiste görevlisin. Her gün <b>5 hanımefendi</b> gelir ve bir ricada bulunur: kim olduğunu, nasıl biri olduğunu, ne istediğini anlatır; bazen en sevdiği şeye dair ince bir ipucu da bırakır. Amacın her birini en sevdiği şeylerle mutlu etmek: ne kadar zevk alırlarsa o kadar <b>💗 zevk puanı</b> kazanırsın.</p>
+      <ul><li><b>Bölüm</b> = 3 gün. Bölümün sonunda toplam zevk hedefi geçerse sonraki bölüme geçersin (hedef her bölümde büyür: ${psTarget(1)}, ${psTarget(2)}, ${psTarget(3)}…); geçemezsen bölümü yeniden oynarsın, hareketlerin sende kalır.</li>
+        <li><b>Ziyaret</b>: hanımın ricasını oku, sahip olduğun hareketlerden en fazla <b>3</b> tanesini sırayla seç, ✨ Uygula.</li>
+        <li>Her 3. günün son ziyaretçisi <b>👩‍💼 Patron Hanım</b>: en sevdiğini yaparsan +100.</li>
+        <li>Sonuçtan sonra 💬 <b>Ona yaz</b> ile o hanımla sohbete geçebilirsin.</li></ul>` },
+    { icon: '💗', title: 'Puanlama', sub: 'kademe, istek, kombo', body: `
+      <table class="bk-t"><tr><th>Kademe</th><th>Taban</th><th>Örnek</th></tr>
+        <tr><td>🥉 Bronz</td><td>10</td><td>Kissing, Show Tits, Show Ass</td></tr><tr><td>🥈 Silver</td><td>20</td><td>Blowjob, Cunnilingus, Titfuck</td></tr>
+        <tr><td>🥇 Gold</td><td>35</td><td>Missionary, Cowgirl, Doggy</td></tr><tr><td>💜 Platin</td><td>55</td><td>Anal, Full Nelson, Standing doggy</td></tr>
+        <tr><td>💎 Elmas</td><td>80</td><td>sadece easter egg ve özel görevle</td></tr></table>
+      <ul><li>Hareket <b>en sevdiği</b> ise ×3 ⭐, sevdiği ×2 ❤️, nötr ×1 🙂, <b>sevmediği</b> eksi puan 😒.</li>
+        <li>Ricasının türüne (💋 ısınma, 👅 ağız, ❤️ önden, ⚡ sert, 🍑 arkadan) uyan hareket <b>+%50</b>.</li>
+        <li>3 hareket ve her biri öncekinden aşağı kademede değilse (yavaş yavaş tırmanma) <b>🔗 kombo +%15</b>.</li>
+        <li>Hanımlar senin en yüksek kademenin bir üstüne kadar şeyler ister: koleksiyon büyüdükçe talepler de büyür.</li></ul>` },
+    { icon: '📦', title: 'Kutular ve mesajlar', sub: 'yeni hareketler, ipuçları', body: `
+      <p>Günün sonunda zevke göre <b>📦 kutu</b> açarsın: ${PS_BOX.slice().reverse().map(([n, t]) => `${n}+ ${t}`).join(', ')}. Kutudan o kademe ve bir altından yeni hareketler çıkar. Oyunun başında yalnızca bronz hareketlerin vardır.</p>
+      <p><b>💬 Mesajlar</b> bazen iki hanımın arasında gelir; iki cevaptan birini seçersin ve cevabın oyunu değiştirir:</p>
+      <table class="bk-t"><tr><th>Mesaj</th><th>Cevap → etkisi</th></tr>
+        <tr><td>"Acaba odana gelsem müsait olur musun?"</td><td>"Tabi gel, neden ki?" → 🏃‍♀️ Sabırsız Hanım sıraya girer (zevki +%30)</td></tr>
+        <tr><td>"Çok mu uzun aletin?"</td><td>"Gel de gör" → 😏 Meraklı Komşu gelir · "Ayıp ama" → +20</td></tr>
+        <tr><td>👩‍💼 Patron performansına bakacak</td><td>"Hayal kırıklığına uğratmam" → gün sonu ×1,2</td></tr>
+        <tr><td>💌 Kulisten ipucu</td><td>"Söyle, kahve benden" → sıradakinin favorisi 🤫 · "Kendim bulurum" → sıradaki +%15</td></tr>
+        <tr><td>💬 Sıradaki hanım çekiniyor</td><td>"Nazik olacağım" → +%20 · "Sert günümdeyim" → −%10</td></tr>
+        <tr><td>📧 İK şikayeti</td><td>"Siz gelin" → İK Müdürü gelir · ters cevap → −30</td></tr></table>
+      <p>Muhasebeci Hanım, 🎭 Gizemli Müşteri, 📋 özel görev, 🗂️ gizli dosya, doğum günü kızı, yoga hocası, kıskanç hanım, kızgın bir koca… ${PS_CONV.length} çeşit konuşma var; bazıları 2–3 soru sürer ve her cevap bir sonrakini değiştirir.</p>
+      <p><b>💋 İş bittikten sonra</b> az önceki hanım da yazabilir: "Boynumda iz kaldı, kocam fark eder mi?", "Arkadaşımı da getireyim mi?", "5 yıldız verdim ama bir şartla…"</p>
+      <p><b>🤰 Hamilelik</b>: önden bir pozisyon (Missionary, Cowgirl, Doggy…) yaşanan her hanım için %25 ihtimal. "İçime boşaldın, hap almalı mıyım?" diye sorarsa:</p>
+      <ul><li><b>"Hap al"</b> → ihtimal sıfır.</li><li><b>"Boşver, olursa olur"</b> → ihtimal ×1,6; "Seninle olursa isterim" dersen ve o da bebek istiyorsa hemen +20.</li></ul>
+      <p>Gün sonunda sonuç çıkar: <b>bebek isteyen</b> hanım hamile kaldıysa <b>+80</b>, <b>istemeyen</b> hamile kaldıysa <b>−60</b>. Kimin istediğini cevaplarından anlarsın ("Ben de çok istiyordum 🥺" ya da "Ben hazır değilim 😰").</p>
+      <p><b>🥚 Easter egg'ler</b> (${Object.keys(PS_EGGS).length} tane, hepsi 💎 elmas hareket açar): mesajlarda, ofisin içinde, belli bir hareket sırasında, özel kişilerde ve çok yüksek bir zevkte saklı. İpucu: ofisteki her şeye dokun 🪴, Show Ass ile başlayan bir tırmanma dene 😏</p>` }
+  ] });
+  BOOKS[BOOKS.length - 1].chapters.push(
+    { icon: '🔥', title: 'Fiery Passions', sub: 'köyde bir yaz: nasıl oynanır', body: `
+      <p>Şehirdeki patronun Maeve seni yazı geçirmen için köye, Mia'nın pansiyonuna yolluyor. Köyde neredeyse hiç erkek yok; köye gelen tek genç erkek sensin ve herkes seni fark ediyor. Bütün karakterler 18 yaşından büyük ve aralarında akrabalık yok.</p>
+      <ul><li><b>Zaman</b>: gün 4 dilim (🌅 sabah, ☀️ gündüz, 🌇 akşam, 🌙 gece) ve haftanın günü. Konuşmak zaman almaz; iş, balık, mantar, yemek ve ⏭ dinlenmek bir dilim geçirir. Odanda 😴 uyursan sabaha geçersin.</li>
+        <li><b>🗺️ Harita</b>: mekana dokun, git. Kapalı mekan nedenini söyler. Kimin nerede olduğu harita kartlarında yazar.</li>
+        <li><b>Karakter</b>: dokun; ilk tanışmada kendini tanıtır. Her dilimde bir kez 💬 konuş, 🎁 hediye ver ya da 😘 flört et (flört için "Arkadaş" kademesi lazım).</li>
+        <li><b>Kademeler</b>: Tanışma → Arkadaş (20) → Flört (45) → Yakın (70) → Tutku (90).</li>
+        <li><b>⭐ Hikaye sahneleri</b>: 15, 40 ve 65 aff'ta açılır; seçimin aff'ı değiştirir. Üç sahne bitip aff 90 olunca <b>🔥 Tutku</b> sahnesi gelir; sonunda nereye boşalacağını sen seçersin. Sonra 💬 <b>Sohbete taşı</b> ile o kadın karakterlerine eklenir ve sohbet başlar.</li>
+        <li><b>💰 Para</b>: pazarda Lily'ye yardım (+80₺), balık ve mantar sat. Hediyeleri pazardan al; mantar ormandan, balık sahilden, ev yemeği mutfaktan.</li>
+        <li><b>🚪 Kapıyı çal</b>: banyoda biri duştaysa; yakınlığınız yeterliyse oyuna girer.</li></ul>` },
+    { icon: '📅', title: 'Fiery Passions: kim nerede?', sub: 'haftalık program', body: `
+      <table class="bk-t"><tr><th>Karakter</th><th>Nerede</th><th>Sevdiği hediye</th></tr>
+        ${FP.CHARS.map(c => `<tr><td><b>${esc(c.name)}</b><br><small>${esc(c.title)}</small></td><td>${esc({ mia: 'Sabah kolejde (Pzt/Çar/Cum) ya da salonda yoga; gündüz salon / pazar, Cumartesi sahil; akşam tek günler mutfak, çift günler banyo; gece odasında.', roxy: 'Sabah kolej ya da park; gündüz odası (Salı sahil); akşam tek günler banyo, çift günler mutfak; gece odası.', ava: 'Hafta içi sabah / gündüz ofis odası; Pazartesi ve Çarşamba akşam pazar; Cumartesi gündüz sahil, Pazar gündüz salon; diğer zamanlar evinde.', lily: 'Sabahtan akşama pazar; Perşembe akşam sahil.', ash: 'Her akşam park; Salı gündüz sahil.', chloe: 'Sabah / gündüz hastane, akşam hastane (Çarşamba hariç); Perşembe akşam sahil.', liza: 'Ders günleri sabah kolej; gündüz park (Cumartesi hariç); Cumartesi akşam sahil; gece park.', claire: 'Hafta içi sabah / gündüz ofis; Pazar sabah sahil.', scarlett: 'Hafta içi gündüz / akşam müdür odası; Pazar sabah sahil.', luna: 'Sadece gece, orman.', maeve: 'Odandaki dizüstünden, akşam ve gece.' }[c.id] || '')}</td><td>${c.gifts.love.map(id => { const i = FP.ITEMS.find(x => x.id === id); return i ? i.icon + ' ' + i.name : ''; }).join(', ') || '—'}</td></tr>`).join('')}</table>` });
   const bookBy =id => BOOKS.find(b => b.id === id) || BOOKS[0];
   const bookAt = (id, v) => { const n = bookBy(id).chapters.length, k = 'amor-stories:book' + (id && id !== 'carmen' ? ':' + id : ''); try { if (v != null) localStorage.setItem(k, String(v)); return Math.max(0, Math.min(n - 1, +localStorage.getItem(k) || 0)); } catch (e) { return v || 0; } };
   // 📖 kitap ayrı bir sayfa (#/kitap/<kitap>/<bölüm>); geri düğmesi kitabı açtığın sayfaya döner
@@ -11379,13 +12062,15 @@
   let musicUnlocked = false;
   function syncMusic(force) {
     if (!MU || !musicUnlocked) return;
-    const r = ui.route || {}, th = r.name === 'chat' && threadById(r.id), key = th ? 'chat:' + th.id : 'menu';
+    const r = ui.route || {}, th = r.name === 'chat' && threadById(r.id);
+    // 🔥 Fiery Passions: mekana göre kendi parçası (oyundaki 🔊 kapalıysa sessiz)
+    const fp = r.name === 'oyun' && r.id === 'fp', key = th ? 'chat:' + th.id : fp ? 'fp:' + (fpSoundOn() ? ui.fpMusic || '' : '') : 'menu';
     if (!force && ui.musicCtx === key) return;
     ui.musicCtx = key;
-    const bg = MU.background(), want = th ? th.music || '' : bg.on ? bg.id : '', now = MU.playing();
-    if (!want) { if (now && (th || ui.musicFrom === 'chat')) MU.stop(); ui.musicFrom = ''; return; }
+    const bg = MU.background(), want = th ? th.music || '' : fp ? (fpSoundOn() ? ui.fpMusic || '' : '') : bg.on ? bg.id : '', now = MU.playing();
+    if (!want) { if (now && (th || fp || ui.musicFrom === 'chat' || ui.musicFrom === 'fp')) MU.stop(); ui.musicFrom = ''; return; }
     if (!now || now.id !== want) MU.play(want);
-    ui.musicFrom = th ? 'chat' : 'menu';
+    ui.musicFrom = th ? 'chat' : fp ? 'fp' : 'menu';
   }
   // iOS dokunmada pointerdown ses izni vermez, touchend verir
   const unlockMusic = e => {
