@@ -651,7 +651,7 @@
   const cmNum = (c, k, n) => +sysHash((c.cmRid || c.id) + ':' + k) % n;
   const cmPick = (c, k, a) => a[cmNum(c, k, a.length)];
   const cmPicks = (c, k, a, n) => [...a].sort((x, y) => +sysHash((c.cmRid || c.id) + k + x) - +sysHash((c.cmRid || c.id) + k + y)).slice(0, n);
-  const CM_N = 36;
+  const CM_N = 60;
   // her ilanın kendi fotoğraf seti var: kayıtlı karakterlerin ve diğer ilanların setleri / fotoğrafları kullanılmaz
   const CM_KEY = 'amor-stories:carmen-ads2';
   function cmAds(fresh) {
@@ -660,6 +660,7 @@
       try { localStorage.removeItem('amor-stories:carmen-ads'); if (!fresh) a = JSON.parse(localStorage.getItem(CM_KEY) || '[]') || []; } catch (e) { a = []; }
       const charSets = new Set(chars().map(c => c.set).filter(Boolean)), charPics = new Set(chars().flatMap(c => [c.photo, ...(c.album || [])]).filter(Boolean));
       a = a.filter((x, i) => !charSets.has(x.set) && !charPics.has(x.photo) && a.findIndex(y => y.set === x.set) === i);
+      a.forEach(cmFix);
       const used = new Set(a.map(x => x.set)), free = sample(SETS.filter(s => !charSets.has(s.id) && !used.has(s.id) && !charPics.has(photoUrl(s, s.profile))), CM_N);
       const mod = ui.createMod;
       ui.createMod = 'amor';
@@ -668,13 +669,27 @@
         randomize(x, 'all');
         applySet(x, free.shift());
         Object.assign(x, { id: 'cm' + Store.uid(), created: Date.now() - Math.floor(Math.random() * 40) * 864e5, cmVip: Math.random() < .3, age: Math.max(18, +x.age || 18) });
-        a.push(x);
+        a.push(cmFix(x));
       }
       ui.createMod = mod;
       ui.cmAds = a;
       try { localStorage.setItem(CM_KEY, JSON.stringify(a)); } catch (e) {}
     }
     return ui.cmAds;
+  }
+  // ilan kızları: Blowjob / Missionary / Doggy hep ❤️; %70'i kondom şartlı (kondomsuz izinler ✅'den 🚫'ye), id'den sabit
+  const CM_MUST = ['blowjob', 'missionary', 'doggy'], CM_RAW = ['nothing', 'control pill', 'morning-after pill', 'pull-out method'];
+  function cmFix(x) {
+    const low = s => String(s || '').toLocaleLowerCase('tr').trim(), byT = t => allEvents().find(e => low(e.title) === t);
+    x.likes = x.likes || []; x.dislikes = x.dislikes || [];
+    CM_MUST.map(byT).filter(Boolean).forEach(e => { x.dislikes = x.dislikes.filter(id => id !== e.id); if (!x.likes.includes(e.id)) x.likes.push(e.id); });
+    if (cmNum(x, 'raw', 10) > 2) {
+      const raw = new Set(CM_RAW.map(byT).filter(Boolean).map(e => e.id));
+      const out = (x.allows || []).filter(id => raw.has(id));
+      x.allows = (x.allows || []).filter(id => !raw.has(id));
+      x.denies = [...new Set([...(x.denies || []), ...out])];
+    }
+    return x;
   }
   const cmAll = () => [...chars(), ...cmAds()].filter((c, i, a) => !c.photo || a.findIndex(x => x.photo === c.photo) === i);
   const cmFind = id => byId(id) || cmAds().find(x => x.id === id);
@@ -704,11 +719,42 @@
     const nothing = a('nothing'), pill = a('control pill'), morning = a('morning-after pill'), pull = a('pull-out method');
     return { need: !nothing && !pill && !morning && !pull, inside: nothing || pill || morning, nothing, pill, morning, pull };
   }
+  // kondom şartlılar içe boşalmadan hiç bahsetmez: iki ayrı kondom kuralı satırı
+  const CM_KON = [['Kondom şartım vardır.', 'Kondomsuz görüşme yapmıyorum, sağlığım her şeyden önce gelir.'], ['Kondomsuz asla.', 'Bu konuda pazarlık yok, ısrar edenle görüşmem biter.'],
+    ['Kondom olmadan olmaz.', 'Kendime de sana da saygım var; korunmadan hiçbir şey yapmam.'], ['Güvenli olmayan ilişkiye girmem.', 'Kuralım net: kondom her zaman, her pozisyonda.'],
+    ['Kondom benim kırmızı çizgim.', 'Gerisini konuşuruz ama bunu değil 🛡️'], ['Önce kondom, sonra keyif.', 'Takılmadan başlamıyoruz, sonrası tamamen senin 😏'],
+    ['Korunmasız görüşme yok.', 'Ne kadar ücret teklif edersen et, kuralım değişmez.'], ['Sağlığım her şeyden önemli.', 'Kondomsuz teklifler hiç cevapsız kalır.'],
+    ['Kondomu ben getiririm.', 'Çantamda her zaman var; senin düşünmene bile gerek yok 💋'], ['Kondom şart, tartışmaya kapalı.', 'Bunu kabul eden beyler benimle çok mutlu ayrılır.'],
+    ['Kurallarım temiz ve net.', 'Kondom takılmadan tek adım atmam, buna uyan herkese kapım açık.'], ['Kondom = huzur.', 'İkimizin de aklı rahat olsun, keyfimiz ona göre artsın 😘'],
+    ['Kondomsuz isteyenler yazmasın.', 'Mesajı görür görmez engellerim, kusura bakma 🙅‍♀️']];
+  const CM_KON2 = [['Kondomu ben takarım.', 'Ağzımla takmamı istersen o ayrı bir keyif 😈'], ['Her seansta yeni kondom.', 'Pozisyon değiştirdikçe değiştirmeyi bile isterim, titizimdir.'],
+    ['Oralda da kondom isterim.', 'Kuralım baştan sona aynı, istisnası yok.'], ['Kondom çeşitlerim var.', 'Çilekli, ince, tırtıklı… seçim senin 🍓'],
+    ['Çıkarmaya kalkarsan seans biter.', 'Gizlice çıkarmak gibi numaralar bende tutmaz.'], ['Kondomla da çok iyiyim.', 'Merak etme, hiçbir şeyi hissetmeden geçmeyeceksin 🔥'],
+    ['Kendi kondomunu getirebilirsin.', 'Ama açılmamış olsun, kontrol ederim 😏'], ['Lateks alerjin varsa söyle.', 'Lateksiz kondom da bulundururum, sorun değil.'],
+    ['Kondom takmak ön sevişmenin parçası.', 'Bunu da bir oyuna çeviririm, sıkılmazsın 😘'], ['Hijyen benim için şart.', 'Duş, temiz çarşaf, kondom; üçü de olmazsa olmaz.'],
+    ['İkinci tur da kondomla.', 'Her seferinde yenisi, buna dikkat ederim.']];
+  // 💦 içe boşalma: 0 pek istekli değil ama razı, 1 nötr, 2 çok istekli (id'den sabit)
+  const CM_INS = [
+    [['İçime boşalabilirsin… ama.', 'Pek sevdiğim bir şey değil açıkçası; yine de istersen hayır demem.'], ['İçime boşalabilirsin, mecbursan.', 'İlk tercihim değil ama seni kırmak istemem 🙈'],
+      ['Olur, içime bırakabilirsin.', 'Çok hevesli değilim, önceden söylersen hazırlanırım.'], ['İçime boşalmana izin veririm.', 'Sonrasında biraz mızmızlanabilirim, kusura bakma 😅'],
+      ['İstersen içime, ama bir kere.', 'İkinci turda başka yere boşalmanı tercih ederim.'], ['İçime boşalabilirsin, yavaş ol yeter.', 'Alışık değilim, biraz gerilirim ama idare ederim.'],
+      ['Tamam, içime olabilir.', 'Açıkçası dışarıyı tercih ederim ama ısrar edersen razıyım.'], ['İçime bırakmana razıyım.', 'Bunu bir iyilik olarak düşün, karşılığında beni şımart 😏'],
+      ['İçime boşalabilirsin, ama söyle önce.', 'Habersiz olunca hoşuma gitmiyor, uyarırsan sorun yok.']],
+    [['İçime boşalabilirsin.', 'Merak etme, önlemimi alırım.'], ['İçe boşalma serbest.', 'Benim için sorun değil, rahat ol.'],
+      ['İçime de olur, dışarı da.', 'Hangisi hoşuna giderse; ben ikisine de tamamım.'], ['İçime bırakabilirsin.', 'Bu konuda bir kuralım yok, keyfine bak.'],
+      ['İçe boşalmaya açığım.', 'Önlemim var, kafana takma.'], ['İçime boşalman sorun değil.', 'Sonrasında bir duş yeter, gerisi bende.'],
+      ['İstersen içime.', 'Ne sen ne ben bir şey kaybederiz 😌'], ['İçe boşalma dahildir.', 'Ekstra ücret yok, seans fiyatına dahil.'],
+      ['İçime boşalabilirsin, önemli değil.', 'Bunu büyük bir mesele yapmam, sen nasıl istersen.']],
+    [['İçime boşalabilirsin.', 'Bunu çok severim, hiç çekinme 😏'], ['Lütfen içime boşal 🥵', 'İçimde hissetmek kadar sevdiğim bir şey yok.'],
+      ['İçimden başka yere boşalma!', 'Dışarı boşalırsan küserim, ciddiyim 😤💦'], ['Her damlasını içime istiyorum.', 'Son anda bacaklarımla seni bırakmam 😈'],
+      ['İçime bırak, sonra bir daha.', 'Bir turla yetinmem, beni doldurana kadar devam 🥵'], ['İçime boşalırken gözlerime bak.', 'O an yüzündeki ifadeyi görmek beni bitiriyor 😍'],
+      ['Ne kadar çok o kadar iyi 💦', 'İçimden taşana kadar doldur beni.'], ['İçime boşalman en sevdiğim final.', 'Seansın en güzel anı o, kaçırmak istemem 😏'],
+      ['Beni içimden doldur.', '"İçime bırak" diye yalvaracağım, şimdiden söyleyeyim 🙈']]];
   function cmRules(c) {
     const p = cmProt(c);
-    return [p.need ? ['🛡️', 'Kondom şartım vardır.', 'Kondomsuz görüşme yapmıyorum, sağlığım her şeyden önce gelir.']
-      : ['🔥', 'Kondom şartım yoktur.', p.pill ? 'Doğum kontrol hapı kullanıyorum, içi rahat olsun.' : p.morning ? 'Gerekirse ertesi sabah hap alırım.' : p.pull ? 'Kondomsuz olur ama sonunda dışarı boşalman şartıyla.' : 'Hiçbir şey kullanmasan da olur 😈'],
-      p.inside ? ['💦', 'İçime boşalabilirsin.', p.nothing ? 'Bunu çok severim, hiç çekinme 😏' : 'Merak etme, önlemimi alırım.']
+    if (p.need) return [cmPick(c, 'kon', CM_KON), cmPick(c, 'kon2', CM_KON2)].map(([a, b]) => ['🛡️', a, b]);
+    return [['🔥', 'Kondom şartım yoktur.', p.pill ? 'Doğum kontrol hapı kullanıyorum, içi rahat olsun.' : p.morning ? 'Gerekirse ertesi sabah hap alırım.' : p.pull ? 'Kondomsuz olur ama sonunda dışarı boşalman şartıyla.' : 'Hiçbir şey kullanmasan da olur 😈'],
+      p.inside ? ['💦', ...cmPick(c, 'ins', CM_INS[cmNum(c, 'insT', 3)])]
         : ['🚫', 'İçe boşalmaya izin vermiyorum.', 'Lütfen ısrar etmeyin, bu konuda kesinim.']];
   }
   // 💎 seanslar: kısa / standart / uzun / gece + sevdiklerine uyan seans tipleri (SEANS_TYPES); VIP 2.5 kat; kondom şartı yoksa kondomsuz +%40
@@ -740,7 +786,78 @@
   const CM_CLOSE = ['Hemen yaz, seni bekliyorum 💌', 'Mesajını bekliyorum yakışıklı 😘', 'Randevu için mesaj at, gerisini bana bırak 🌹', 'Bu gece müsaitim… geç kalma 😉'];
   // 🫦 sevdikleri: "bunları çok iyi yaparım"
   const CM_GOOD = ['💋 {e} benim uzmanlık alanım.', '🔥 {e} konusunda çok iddialıyım, denemeden bilemezsin.', '😈 {e} yaparken kendimi kaybederim.', '✨ {e} yaptığımda kimse unutamıyor.',
-    '💦 {e} en sevdiğim, en iyi yaptığım şey.', '🌹 {e} için bana gelen bir daha gelir.', '🥵 {e} yaparken sesimi bastıramıyorum.', '👑 {e} deyince akla ilk ben gelirim.', '🫦 {e}… bunu sana göstermek için sabırsızlanıyorum.', '💯 {e} mi? Bunu çok iyi yaparım.'];
+    '💦 {e} en sevdiğim, en iyi yaptığım şey.', '🌹 {e} için bana gelen bir daha gelir.', '🥵 {e} yaparken sesimi bastıramıyorum.', '👑 {e} deyince akla ilk ben gelirim.', '🫦 {e}… bunu sana göstermek için sabırsızlanıyorum.', '💯 {e} mi? Bunu çok iyi yaparım.',
+    '😏 {e} dendi mi gözlerim parlar.', '🔥 {e} konusunda yorumlarıma bir bak, ben söylemeyeyim.', '💋 {e} yaparken acele etmem, her saniyesinin tadını çıkarırım.', '🌶️ {e} benim imza hareketim.',
+    '😈 {e} yaparken seni tamamen kontrol ederim.', '✨ {e}? Bir kez dene, sonra konuşuruz.', '🥵 {e} sırasında nefesin kesilecek, şimdiden söyleyeyim.', '💦 {e} için en çok tekrar gelen müşterilerim var.',
+    '👑 {e} benim krallığım.', '🫦 {e} yaparken yüzüme bakmanı isterim.', '🌹 {e} yavaş başlar, sen yalvarana kadar sürer.', '💎 {e} konusunda VIP\'lerden bile iyiyim.',
+    '🔥 {e} yaptıktan sonra kimse saatine bakmıyor.', '😳 {e} yaparken utanmayı unuturum.', '💋 {e} için özel bir tekniğim var, sürpriz olsun.', '🥂 {e} benim en sevdiğim ikramım.',
+    '🎯 {e}: tam isabet, her seferinde.', '🌙 {e} gece seansının yıldızıdır.', '😇 {e} yaparken masum görünürüm ama hiç değilim.', '💯 {e} mi? Gözlerini kapat ve bana bırak.'];
+  // olaya özel "iyi yaparım" cümleleri (başlık küçük harfle); listede olmayan olay CM_GOOD'dan genel cümle alır
+  const CM_GOOD_EV = {
+    'kissing': ['💋 Öpüşmem bile başlı başına bir seans; dudaklarımdan ayrılmak istemeyeceksin.', '😘 Yavaş, ıslak, derin öpüşürüm; gerisi kendiliğinden gelir.', '🫦 Dudaklarını ısırarak öpmeyi severim, nefesin kesilir.'],
+    'lap kissing': ['🪑 Kucağına oturup öpüşürken kalçamı yavaşça hareket ettiririm 😏', '💋 Kucağında, kollarım boynunda… dakikalarca öpüşürüz.'],
+    'front hugging': ['🤗 Sımsıkı sarılırım; göğüslerim göğsüne yaslanınca kalbin hızlanır.', '💞 Önden sarılınca bırakmam, tenini tenimde hissedersin.'],
+    'back hugging': ['🫂 Arkadan sarılmana bayılırım; boynuma nefesin değince eriyorum.', '💕 Arkamdan sarıl, ellerini istediğin yere koy 😏'],
+    'show tits': ['🍒 Göğüslerimi yavaş yavaş açarım, gözlerini ayıramazsın.', '👀 Sütyenimi senin önünde çıkarırım, acele etmeden…'],
+    'show ass': ['🍑 Kalçamı yavaşça sana doğru çeviririm; bakmaya doyamazsın.', '😈 Eteğimi sıyırıp kalçamı gösterdiğimde aklın gider.'],
+    'foreplay ısınma': ['🔥 Ön sevişmede acele etmem; sen dayanamaz hâle gelene kadar sürer.', '✨ Isınmayı uzun tutarım, dokunuşlarım tenini yakar.'],
+    'handjob': ['✋ Ellerim çok becerikli; ritmi tam istediğin gibi tutarım.', '💦 Yağlı ellerimle yavaş başlar, hızlanırım… dayanabilirsen 😏'],
+    'blowjob': ['👅 Ağzımla yaptıklarımı unutamayacaksın; dilim hiç durmaz.', '💋 Diz çöküp gözlerinin içine bakarak alırım ağzıma 😈', '🫦 Yavaş yavaş, derine kadar… ağzımın tadına bakan bir daha gelir.'],
+    'deepthroat': ['😮 Boğazım çok derin; sonuna kadar alırım, hiç zorlanmam.', '🥵 Derine aldığımda gözlerim dolar ama durmam, devam ederim.'],
+    'oral sex': ['👅 Oral konusunda gerçekten iddialıyım; ağzım bir sanat eseri 😏', '💋 Ağzımla başlarım, sen “dur” diyene kadar devam ederim.'],
+    'cunnilingus': ['😳 Bacaklarımı açıp yüzünü aralarına çekerim; dilinin her hareketine inlerim.', '💦 Beni yalarken nasıl titrediğimi görmen lazım.'],
+    '69': ['🔄 69\'da ikimiz de aynı anda… ben ağzımı hiç durdurmam.', '😈 Üstüne çıkıp 69 yaparız, kim önce dayanamayacak görelim.'],
+    'facesitting': ['👑 Yüzüne otururum, kontrol bende; nefesini ben ayarlarım 😈', '😏 Yüzüne oturup kalçamı yavaşça hareket ettiririm, kaçış yok.'],
+    'titfuck': ['🍒 Göğüslerimin arasına alıp sıkıştırırım; bir de ağzımla karşılarım 😈', '💦 Göğüslerimle yaptıklarım ayrı bir dünya, yağla daha da iyi.'],
+    'reverse titfuck': ['🔁 Ters titfuck: göğüslerim sana dönük, kalçam yüzüne… iki manzara bir arada.', '😳 Ters dönüp göğüslerimle sıkıştırırım; bunu çok az kız bilir.'],
+    'footjob': ['🦶 Ayaklarım bakımlıdır; ayaklarımla nasıl oynadığımı görünce şaşıracaksın.', '💅 Ayak tabanlarımla yavaş yavaş… fetişin varsa doğru adrestesin.'],
+    'legjob': ['🦵 Bacaklarımın arasında sıkıştırırım; çoraplı da olur, çıplak da.', '🔥 Uzun bacaklarımla yaptığım legjob\'u kimse unutmuyor.'],
+    'buttjob': ['🍑 Kalçamın arasında kayarsın; ben de yavaşça sürterim 😏', '😈 Kalçamla yaptığım buttjob seni sınırına getirir.'],
+    'hotdogging': ['🌭 Kalçamın arasına yerleştirip yavaşça sürtünürüm, içeri almadan çıldırtırım.', '🍑 Hotdogging benim gizli silahım; kalçam her şeyi halleder.'],
+    'missionary': ['❤️ Missionary\'de gözlerinin içine bakarım; bacaklarımı beline dolarım.', '💞 Klasik ama bende başka: altında inlerken tırnaklarımı sırtına geçiririm.', '🌹 Sırtüstü uzanıp seni üstüme çekerim; her vuruşta adını söylerim.'],
+    'cowgirl': ['🤠 Üstte olmayı severim; ritmi ben belirlerim, sen sadece izlersin.', '🔥 Üstüne çıkıp kalçamı döndürürüm, göğüslerim yüzünün önünde zıplar.'],
+    'spooning': ['🛏️ Yan yatıp arkadan sarılırsın, ben de kalçamı sana yaslarım; yavaş ve derin.', '💤 Spooning\'de boynumu öpmeni severim, sabaha kadar böyle kalabiliriz.'],
+    'doggy': ['🐾 Dört ayak üstüne geçip kalçamı sana uzatırım; belimden kavra.', '😈 Doggy\'de saçımı çekmene izin veririm, sesimi bastıramam.', '🍑 Kalçamı yukarı kaldırıp beklerim… arkadan gelmeni çok severim.'],
+    'standing doggy': ['🧍‍♀️ Masaya eğilirim, eteğimi sen sıyırırsın; ayakta arkadan çok derin.', '🔥 Duvara yaslanıp kalçamı sana uzatırım, bacaklarım titreyene kadar.'],
+    'doggy girl ( submission )': ['🐶 İtaatkâr köpek kız rolünde sana tamamen teslim olurum.', '⛓️ Emirlerini bekler, söylediğin her şeyi yaparım 🙇‍♀️'],
+    'standing': ['🧱 Ayakta, duvara yaslanmış; bir bacağımı kaldırırsın, ben sana tutunurum.', '🔥 Ayakta sevişmek için yeterince esneğim, merak etme 😏'],
+    'ondesk': ['🗂️ Masanın üstüne otururum, bacaklarımı açarım; kâğıtlar yere düşsün.', '💼 Masaya uzanırım, sen ayakta… ofis fantezin varsa tam bana göre.'],
+    'lap sex': ['🪑 Kucağına oturup yüz yüze sevişiriz; dudaklarım dudaklarında kalır.', '💞 Kucağında inip kalkarken boynuna sarılırım, bırakmam seni.'],
+    'full nelson': ['🤸‍♀️ Full Nelson\'da bacaklarım tamamen açık; derinliğe hazır ol.', '😳 Bacaklarımı başımın arkasında tutarsın, ben sadece inlerim.'],
+    'spooning anal': ['🍑 Yan yatıp arkadan, yavaş yavaş… anal için en sevdiğim yol.', '😌 Spooning anal\'de acele etmem, her santimini hissederim.'],
+    'cowgirl anal': ['😈 Üstte ama arkadan; kendimi yavaşça oturturum, kontrol bende.', '🍑 Cowgirl anal\'de ne kadar derine alacağıma ben karar veririm.'],
+    'standing anal': ['🧱 Ayakta, duvara yaslanmış, arkadan… bunu çok az kız kaldırır.', '🔥 Ayakta anal\'de bacaklarım titrese de durma.'],
+    'rough anal': ['⚡ Sert anal benim olayım; acıma, ben de acımam 😈', '🥵 Saçımı çekip arkadan sert gelmeni isterim, bağırmamı kimse duymasın.'],
+    'rough': ['⚡ Sert severim; tokat, saç çekme, hepsi serbest.', '🔥 Beni hırpalamandan korkma, ne kadar sert o kadar iyi 😈'],
+    'brutal': ['💥 Vahşi ve kontrolsüz… sınırlarını benimle zorlarsın.', '😈 Brutal seanslarım için güçlü beyleri tercih ederim.'],
+    'gentle': ['🌸 Yavaş, nazik, şefkatli; her dokunuşu hissettiririm.', '🕯️ Nazik sevişmeyi severim, sanki ilk gecemizmiş gibi.'],
+    'passionate': ['🔥 Tutkulu sevişirim; tırnaklar, ısırıklar, terli çarşaflar…', '💋 Tutku bende hiç bitmez; her seferinde ilk kezmiş gibi.'],
+    'holding': ['🤲 Sevişirken sımsıkı tutulmayı severim, beni bırakma.', '💞 Ellerini belimde hissetmek beni çok tahrik eder.'],
+    'hard holding': ['💪 Beni sertçe tut, kaçmama izin verme 😈', '🔒 Bileklerimi tutup beni yatağa bastırırsan çok severim.'],
+    'assertive': ['👠 Kontrol bende; ne zaman, nasıl, ne kadar… ben söylerim.', '😏 Baskın kadınlardan hoşlanıyorsan tam aradığın benim.'],
+    'bondage': ['⛓️ Bağlanmayı da bağlamayı da bilirim; iplerim hazır.', '🎀 Ellerimi bağla, gözlerimi kapat… gerisi senin hayal gücüne kalmış.'],
+    'sex toys 🍆': ['🍆 Oyuncak koleksiyonum geniştir; hangisini istersen getiririm.', '📳 Vibratörle başlar, seninle bitiririz 😈'],
+    'masturbation': ['🙈 Karşında kendime dokunurum; sen sadece izle.', '💦 Kendimi nasıl tatmin ettiğimi görmek ister misin? 😏'],
+    'squirt': ['💦 Squirt yaparım, çarşaflar ıslanır, uyarmadı deme 😳', '🌊 Doğru yere dokunursan fışkırırım; bunu çok az kız yapabiliyor.'],
+    'exhibitionism': ['👀 Görülme ihtimali beni deli eder; perdeyi açık bırakırım.', '🌃 Balkonda, arabada, asansörde… yakalanma riski benim afrodizyağım.'],
+    'cheating': ['🤫 Sevgilim olduğu hâlde buradayım; bu yasak tat beni çok tahrik ediyor.', '💍 Yüzüğümü çıkarmadan sevişmek… biraz kötü kızım 😈'],
+    'cat girl': ['🐱 Kedi kulaklarımı takarım, mırlarım, tırmalarım 😼', '🐾 Kedi kız rolünde sürtünür, yalar, şımarırım.'],
+    'bunny girl': ['🐰 Tavşan kostümümle zıplarım, kuyruğum da var 😏', '🎀 Bunny girl kostümü giyince bambaşka biri olurum.'],
+    'fox girl ( cunning )': ['🦊 Kurnaz tilki kız: seni oyuna getirir, sonunda istediğimi alırım 😏', '🦊 Tilki kuyruğumla seni kandırırım, haberin bile olmaz.'],
+    'unicorn girl': ['🦄 Tek boynuzlu at kızı: nadir, büyülü ve biraz yaramaz.', '✨ Unicorn girl rolünde rüya gibi bir gece yaşatırım.'],
+    'doktor – hasta': ['🩺 Beyaz önlüğümle muayene ederim; “nereniz ağrıyor?” 😏', '💉 Hemşire ya da doktor, sen seç; muayene çok detaylı olacak.'],
+    'patron – sekreter': ['📝 Sekreterin olurum; dikte etmek istediğin her şeyi yazarım 😏', '💼 Patronumsun, ben de terfi istiyorum… nasıl kazanacağımı biliyorum.'],
+    'hoca – öğrenci (üniversite)': ['📚 Yaramaz öğrencin olurum; notumu düzeltmek için her şeyi yaparım.', '🎓 Ofis saatinde kapıyı kilitleriz, ders başka türlü işlenir.'],
+    'kadın hoca – öğrenci (üniversite)': ['👓 Sert hocan olurum; ödevini yapmadıysan cezalısın 😈', '📖 Kürsüde ciddi, odamda bambaşka bir hoca…'],
+    'masöz – müşteri': ['💆‍♀️ Masaj yağlarım hazır; mutlu son dahil 😏', '🧴 Sırtından başlarım, ellerim yavaş yavaş aşağı iner.'],
+    'hizmetçi – ev sahibi': ['🧹 Hizmetçi kostümümle evini temizlerim… ve seni de 😈', '🎀 “Başka bir isteğiniz var mı efendim?” diye sorarım, cevabını bilirim.'],
+    'polis – şüpheli': ['👮‍♀️ Kelepçeler bende; sorgu çok uzun sürecek 😏', '🚔 Üst araması yapmam gerek, kollarını kaldır.'],
+    'yeni komşu': ['🏠 Yeni komşun olurum; şeker istemeye geldim ama başka şey alıp giderim 😏', '🚪 Kapını çalan yeni komşu… içeri davet edersen kalırım.'],
+    'doğruluk mu cesaret mi': ['🎲 Doğruluk mu cesaret mi? Ben hep cesareti seçerim 😈', '🍾 Oyun oynarken giysiler tek tek çıkar, kural bu.'],
+    '🏖️ tatilde': ['🏖️ Tatil aşkı gibi: güneş, bikini ve otel odası…', '🌴 Tatil fantezisinde sahildeki o kız benim 😏'],
+    '🏕️ kampta': ['🏕️ Çadırda, uyku tulumunda, sessiz olmaya çalışarak…', '🔥 Kamp ateşinin yanında başlar, çadırda biter 😏']
+  };
+  const cmGood = (c, e, i, good) => { const p = CM_GOOD_EV[String(e.title || '').toLocaleLowerCase('tr').trim()]; return p ? cmPick(c, 'ge:' + e.title, p) : good[i % good.length].replace('{e}', e.title); };
   function cmAbout(c) {
     const first = (c.name || 'Ben').split(' ')[0], pers = persOf(c), body = Object.fromEntries(cmBody(c).map(([, k, v]) => [k, v])), likes = feelEvents(c.likes || []);
     return [
@@ -763,7 +880,10 @@
       [4, 'Tam boşalacakken itti beni, "içime yok demiştim" dedi 😂'], [3, 'İçine boşalmak için ekstra para teklif ettim, yine de kabul etmedi.'], [5, 'Karnına boşalttırdı, o da ayrı güzeldi 😏'], [4, 'Kontrolü hep onda; ben dayanamayacağım dedim, hemen çıkardı.'],
       [3, 'Bir an kendimi kaybedip içine kaçırdım, seansı orada bitirdi 😬'], [4, 'Son anda ağzına aldı, içine izin yok ama bu da fena değil 🥵']],
     pill: [[5, 'Haplıymış, rahat rahat içine bıraktım.']], pull: [[4, 'Kondomsuz oldu ama sonunda dışarı boşaltmamı istedi, sözümü tuttum 😇']],
-    condom: [[4, 'Kondom şart diyor, ona göre gidin.'], [3, 'Kondomsuz istedim, kapıyı gösterdi 😂']], vip: [[5, 'VIP\'ye değer, her kuruşuna değdi 👑'], [5, 'Lüks otel, şampanya, sonra cennet. Pahalı ama değer.']],
+    condom: [[4, 'Kondom şart diyor, ona göre gidin.'], [3, 'Kondomsuz istedim, kapıyı gösterdi 😂'], [5, 'Kondomu ağzıyla taktı, o an bittim 😳'], [5, 'Kondom şartı var ama hiçbir şey kaybettirmiyor, efsaneydi.'],
+      [4, 'Çantasından kondom çıkardı, "benimkiler daha iyi" dedi, haklıymış 😅'], [3, 'Ekstra para teklif ettim kondomsuz için, gülüp geçti.'], [5, 'Kuralları net, temiz ve güvenli; içim rahat etti.'],
+      [4, 'Gizlice çıkarmaya kalkan arkadaşa duyurulur: seansı bitiriyor 😂'], [5, 'Kondomla bile bu kadar iyi olabileceğini bilmiyordum 🔥'], [5, 'Her pozisyonda yeni kondom, titiz ama değer.'],
+      [4, 'Çilekli kondom getirmiş, ayrı bir keyifti 🍓'], [5, 'Kondom takmayı bile oyuna çevirdi, inanılmaz.'], [4, 'Önce duş, sonra kondom, sonra cennet. Sıralama önemli 😇'], [3, 'Kondomsuz denemek isteyenler hiç uğraşmasın, kesin hayır.']], vip: [[5, 'VIP\'ye değer, her kuruşuna değdi 👑'], [5, 'Lüks otel, şampanya, sonra cennet. Pahalı ama değer.']],
     like: [[5, '{e} yaptı, hayatımın en iyisiydi.'], [5, '{e} konusunda ilanında yazdığı kadar iyi 🔥'], [5, '{e} için tekrar gideceğim 😏']], dislike: [[3, '{e} istedim, pek hevesli değildi 😕']]
   };
   const CM_WHO = ['Kerem_34', 'Anonim', 'Mert K.', 'gececi_adam', 'Burak', 'Ozan.T', 'sessizmisafir', 'Emre', 'Volkan_06', 'Tolga', 'yalnızkurt', 'Serkan', 'iş_adamı', 'Cem', 'Anonim üye', 'Kaan_35', 'Barış', 'Onur', 'Hakan.Y', 'misafir_42'];
@@ -771,10 +891,12 @@
   function cmReviews(c) {
     const p = cmProt(c), R = CM_REV, likes = feelEvents(c.likes || []), dis = feelEvents(c.dislikes || []), ses = cmSessions(c).map(s => s.name);
     const fx = (pool, evs) => evs.length ? pool.map(([s, t], i) => [s, t.replace('{e}', evs[i % evs.length].title)]) : [];
-    const cand = [...R.gen, ...(p.inside ? R.inside : R.noIn), ...(p.pill ? R.pill : []), ...(p.pull && !p.inside ? R.pull : []), ...(p.need ? R.condom : []), ...(cmVip(c) ? R.vip : []),
+    // kondom şartlılarda içe boşalma yorumu yok; kural yorumu kondom havuzundan
+    const rule = p.need ? R.condom : p.inside ? R.inside : R.noIn;
+    const cand = [...R.gen, ...rule, ...(p.pill ? R.pill : []), ...(p.pull && !p.inside ? R.pull : []), ...(cmVip(c) ? R.vip : []),
       ...fx(R.like, cmPicks(c, 'rl', likes, 3)), ...fx(R.dislike, cmPicks(c, 'rd', dis, 1))];
     // kuralı anlatan bir yorum hep var
-    const key = (p.inside ? R.inside : R.noIn)[cmNum(c, 'rk', 4)];
+    const key = rule[cmNum(c, 'rk', rule.length)];
     const rest = cmPicks(c, 'rv', cand.filter(x => x !== key).map(x => x.join('|')), 3 + cmNum(c, 'rn', 5)).map(x => { const [s, ...t] = x.split('|'); return [+s, t.join('|')]; });
     return [key, ...rest].map(([s, t], i) => ({ s, t, who: cmPick(c, 'w' + i, CM_WHO), ago: 1 + cmNum(c, 'a' + i, 60), ses: cmPick(c, 's' + i, ses) })).sort((a, b) => a.ago - b.ago);
   }
@@ -842,7 +964,7 @@
     const chips = evs => evs.map(e => `<span class="st-fe${evCls(e)}"${evStyle(e)}>${evEmo(e)}${esc(e.title)}</span>`).join('');
     const sec = (ic, t, body) => body ? `<section class="cm-sec"><h3>${ic} ${t}</h3>${body}</section>` : '';
     const likes = feelEvents(c.likes || []), denies = feelEvents(c.denies || []), dislikes = feelEvents(c.dislikes || []), prot = cmProt(c), ses = cmSessions(c);
-    const off = cmNum(c, 'gd', CM_GOOD.length), rid = c.cmRid || c.id;
+    const good = cmPicks(c, 'gd', CM_GOOD, CM_GOOD.length), rid = c.cmRid || c.id;
     const revs = [...(cmMyRev()[rid] || []).map((r, i) => ({ ...r, mine: true, i })).reverse(), ...cmReviews(c)];
     const avg = (revs.reduce((n, r) => n + r.s, 0) / revs.length).toFixed(1);
     view.innerHTML = `<div class="cm-site cm-prof${vip ? ' is-vip' : ''}">${cmBar()}
@@ -854,7 +976,7 @@
       <div class="cm-acts"><button type="button" class="btn primary" id="cmMsg">💬 Mesaj at</button>${saved ? `<a class="btn ghost" href="#/p/${c.id}">👤 Profil</a>` : ''}</div>
       ${sec('💌', 'Hakkımda', cmAbout(c).map(p => `<p>${esc(p)}</p>`).join('') + (c.bio ? `<p class="cm-bio">“${esc(c.bio)}”</p>` : ''))}
       ${sec('📏', 'Fiziksel özellikler', `<div class="cm-phys">${cmBody(c).map(([ic, k, v]) => `<div><small>${ic} ${k}</small><b>${esc(v)}</b></div>`).join('')}</div>`)}
-      ${sec('🫦', 'Bunları çok iyi yaparım', likes.length ? `<ul class="cm-good">${likes.map((e, i) => `<li>${esc(CM_GOOD[(off + i) % CM_GOOD.length].replace('{e}', e.title))}</li>`).join('')}</ul>
+      ${sec('🫦', 'Bunları çok iyi yaparım', likes.length ? `<ul class="cm-good">${likes.map((e, i) => `<li>${esc(cmGood(c, e, i, good))}</li>`).join('')}</ul>
         ${byCat(likes).map(([k, evs]) => `<div class="cm-cat"><small>${esc(k.icon || '')} ${esc(k.label || '')}</small>${chips(evs)}</div>`).join('')}` : '')}
       ${sec('🛡️', 'Kondom ve kurallarım', `<div class="cm-rules">${cmRules(c).map(([ic, t, d]) => `<div class="${ic === '🚫' || ic === '🛡️' ? 'no' : 'ok'}"><span>${ic}</span><p><b>${esc(t)}</b> ${esc(d)}</p></div>`).join('')}</div>
         ${denies.length ? `<div class="cm-cat cm-no"><small>İzin vermediklerim</small>${chips(denies)}</div>` : ''}`)}
@@ -1627,6 +1749,30 @@
     .map(([t, tier, cat]) => ({ t, tier, cat }));
   const psPos = t => PS_POS.find(p => p.t === t);
   const PS_CAT = { tease: '💋 Isınma', oral: '👅 Ağız', vag: '❤️ Önden', rough: '⚡ Sert', anal: '🍑 Arkadan', special: '💎 Sıradışı' };
+  /* 🪜 Kademeli Eğlence (th.kd = { lvl, done }): olaylar PS_POS'un 5 derecesine göre kademelenir (bronz 1 … elmas 5).
+   * O kademeden bir olay yapılıp boşalınca sonraki kademe açılır; üst kademedeki olayı reddeder. PS_POS'ta olmayan olaylar serbest */
+  const KD = [{ ic: '🥉', name: 'Isınma' }, { ic: '🥈', name: 'Ağız' }, { ic: '🥇', name: 'Önden' }, { ic: '💜', name: 'Sert & Arkadan' }, { ic: '💎', name: 'Sıradışı' }];
+  const kdTier = e => { const t = String((e || {}).title || '').toLocaleLowerCase('tr').replace(/[^\p{L}\d\s]/gu, '').trim(), p = PS_POS.find(x => x.t.toLocaleLowerCase('tr') === t); return p ? psTier(p.tier) + 1 : 0; };
+  const kdCum = e => { const t = String((e || {}).title || '').toLocaleLowerCase('tr'); return t === 'orgazm' || ((e || {}).tags || []).some(x => String(x).toLocaleLowerCase('tr') === 'boşalma'); };
+  // ret: istenen kademeye göre; {e} istenen olay, {k} şu anki kademe adı
+  const KD_NO = {
+    2: ['Hop hop, {e} mi? Daha öpüşmeyi bitirmedik bile 😏', 'Acele etme yakışıklı… önce beni biraz ısıt, sonra ağzımı düşünürüz 🙈', '{e} için erken. Şimdilik sadece {k}, sabret 😘',
+      'Önce dudaklarımı hak et, sonra {e} konuşuruz 💋', 'Mm-mm 🙅‍♀️ biraz daha sarıl bana, oraya sonra geleceğiz.'],
+    3: ['{e}? Daha o kadar ısınmadım 😳', 'Yavaş ol… içime almadan önce bana biraz daha emek ver 😏', 'Henüz {k} aşamasındayız, {e} sonra 💕',
+      'Sabırsız şey 😅 önce beni bir kere boşalt, sonra bakarız.', 'Hayır, daha değil. {e} için beni ikna etmen lazım 😈'],
+    4: ['{e} mi?! O kadar da hızlı değil 😳', 'Sertliği hak etmedin daha 😏 önce bildiğin gibi seviş benimle.', 'Arkadan mı? Hah, rüyanda 😂 önce {k} aşamasını bitir.',
+      'Bunu ancak güvendiğim adama yaparım… henüz o kadar değil 🙈', 'Yok yok, {e} şimdi olmaz. Bana biraz daha zaman ver 💋'],
+    5: ['{e}? Sen beni ne sandın 😳 o kadar ileri gitmedik daha.', 'Bu benim en gizli tarafım… onu en sona saklıyorum 😈', 'Daha {k} aşamasındayken {e} mi? Çok bekleyeceksin 😏',
+      'Olmaz. Önce bütün kademeleri geç, sonra seni şaşırtırım ✨', 'Hmm… belki ileride. Şimdi değil 🙅‍♀️']
+  };
+  // yeni kademe açılınca: {k} yeni kademe adı
+  const KD_UP = {
+    2: ['Mmm… beni iyice ısıttın 🥵 şimdi ağzımla teşekkür etmek istiyorum.', 'Tamam, kazandın 😏 artık dudaklarım başka işler için de hazır.', 'Off… şimdi biraz aşağı inmeme izin ver 😈'],
+    3: ['Artık seni içimde istiyorum… daha fazla bekletme 😳', 'Ağzım yetmedi, şimdi bütün vücudum seni istiyor 🔥', 'Yatağa gel… bu sefer gerçekten 💕'],
+    4: ['Biraz daha sert olabilirsin artık 😈', 'Sana güveniyorum… arkadan da olur, ama yavaş başla 🍑', 'Bu gece sınırlarımı zorlamak istiyorum 🥵'],
+    5: ['Hiç kimseye göstermediğim tarafımı göstermeye hazırım ✨', 'Artık hiçbir kuralım yok… ne istersen 😈', 'Sen bunu hak ettin; şimdi gerçek sürpriz başlıyor 💎']
+  };
+  const KD_TOP = ['Daha fazlası yok… bütün kademeleri birlikte geçtik 💎😍', 'Zirvedeyiz bebeğim, bu geceyi unutmayacağım 💎'];
   // 🗣️ hanımın konuşması: giriş (kim, nasıl biri) + rica (türüne göre) + bazen en sevdiğine ince bir ipucu + kapanış
   const PS_INTRO = ['Merhaba… ben {name}, {job} olarak çalışıyorum. Bana seni tavsiye ettiler.', 'İyi günler. Randevum vardı; {name} ben. Biraz erken geldim galiba 🙈',
     'Kapıyı kapatır mısın? Kimse görmesin beni burada… Ben {name}.', 'Of, ne gün ama… Ben {name}. {job} olunca insanın hiç kendine vakti kalmıyor.',
@@ -3317,10 +3463,38 @@
     return copy;
   }
 
+  // ➕ yeni sohbet: ad + mod (💬 Normal / 🪜 Kademeli Eğlence)
   function createThread(c) {
-    askTitle(`Sohbet ${threadsOf(c).length + 1}`, `${c.name} ile yeni sohbet`, v => {
-      location.hash = `#/chat/${newThread(c, v).id}`;
+    let kd = false;
+    const sh = sheet(`
+      <div class="sheet-grip"></div>
+      <h3>${esc(c.name)} ile yeni sohbet</h3>
+      <form id="titleForm" autocomplete="off">
+        <div class="field" style="margin-top:0"><input id="titleIn" maxlength="40" value="${esc(`Sohbet ${threadsOf(c).length + 1}`)}" placeholder="ör. 1. Bölüm: Yanlış numara"></div>
+        <div class="kd-mode"><small>Mod</small><button type="button" class="on" data-kdm="0">💬 Normal</button><button type="button" data-kdm="1">🪜 Kademeli</button></div>
+        <p class="kd-mode-tip" hidden>5 kademe: o kademeden bir olay yapıp boşalınca sonrakine geçilir; üst kademedeki bir şeyi isteyince yapmaz.</p>
+        <button class="btn primary block" type="submit">Kaydet</button>
+      </form>`, 'light');
+    const input = sh.el.querySelector('#titleIn');
+    setTimeout(() => { input.focus(); input.select(); }, 250);
+    sh.el.querySelectorAll('[data-kdm]').forEach(b => b.onclick = () => {
+      kd = b.dataset.kdm === '1';
+      sh.el.querySelectorAll('[data-kdm]').forEach(x => x.classList.toggle('on', x === b));
+      sh.el.querySelector('.kd-mode-tip').hidden = !kd;
     });
+    sh.el.querySelector('#titleForm').onsubmit = e => {
+      e.preventDefault();
+      const v = input.value.trim();
+      if (!v) return;
+      sh.close();
+      const t = newThread(c, v);
+      if (kd) {
+        t.kd = { lvl: 1, done: [] };
+        msgsOf(t).push({ id: Store.uid(), from: 'sys', text: `🪜 Kademeli Eğlence: ${KD[0].ic} 1. kademe (${KD[0].name}) ile başlıyorsunuz. Bu kademeden bir olay yapıp boşalınca sonraki kademe açılır.`, ts: Date.now() });
+        save();
+      }
+      location.hash = `#/chat/${t.id}`;
+    };
   }
 
   function groupActions(t) {
@@ -4067,6 +4241,7 @@
         </div>
 
         ${hcard}
+        ${th.kd ? '<button type="button" class="kd-bar" id="kdBar"></button>' : ''}
         <div class="st-card" id="stCard" hidden></div>
 
         <div class="msgs-wrap">
@@ -5228,6 +5403,41 @@
       bar.innerHTML = p.length ? `<span class="ev-pend-h">📜</span>${p.map((x, i) => { const look = x.sub ? withSub(x.e, x.sub) : x.e; return `<button type="button" class="ev-pend-it${evCls(look)}"${evStyle(look)} data-pendx="${i}">${evEmo(look)}${esc(look.title)} <b>✕</b></button>`; }).join('')}<small>yazıp gönder · boşken Enter olayı yazar</small>` : '';
     }
     $('#evPend').onclick = e => { const b = e.target.closest('[data-pendx]'); if (!b) return; cs.pend.splice(+b.dataset.pendx, 1); drawPend(); input.focus(); };
+    // 🪜 Kademeli Eğlence çubuğu: geçilen / şu anki / kilitli kademeler; dokununca kademelerin olayları
+    function drawKd() {
+      const bar = $('#kdBar'), k = th.kd;
+      if (!bar || !k) return;
+      bar.innerHTML = KD.map((x, i) => `<span class="${i + 1 < k.lvl ? 'done' : i + 1 === k.lvl ? 'cur' : 'lock'}"><i>${i + 1 > k.lvl ? '🔒' : x.ic}</i><small>${esc(x.name)}</small></span>`).join('');
+    }
+    drawKd();
+    if ($('#kdBar')) $('#kdBar').onclick = () => {
+      const k = th.kd, evs = n => PS_POS.filter(p => psTier(p.tier) + 1 === n).map(p => `<em${k.done.includes(p.t) ? ' class="ok"' : ''}>${esc(p.t)}</em>`).join('');
+      sheet(`<div class="sheet-grip"></div><h3>🪜 Kademeli Eğlence</h3>
+        <p class="kd-mode-tip">Şu an ${KD[k.lvl - 1].ic} ${k.lvl}. kademe. Bu kademeden bir olay yapıp boşalınca sonraki açılır; kilitli kademedeki olayı yapmaz. Listede olmayan olaylar her zaman serbest.</p>
+        ${KD.map((x, i) => `<div class="kd-row${i + 1 > k.lvl ? ' lock' : ''}"><b>${i + 1 > k.lvl ? '🔒' : x.ic} ${i + 1}. ${esc(x.name)}</b><div>${evs(i + 1)}</div></div>`).join('')}`, 'light');
+    };
+    // kilitli kademedeki olaylar çıkarılır, kadın reddeder; kalanlar kademeye işlenir, boşalma varsa kademe atlar (yeni kademe mesajı döner)
+    function kdApply(picked) {
+      const k = th.kd;
+      if (!k) return { picked, up: '' };
+      const no = picked.filter(x => kdTier(x.e) > k.lvl);
+      if (no.length) {
+        const w = Math.max(...no.map(x => kdTier(x.e)));
+        list.push({ id: Store.uid(), from: 'her', text: pick(KD_NO[w]).replace(/\{e\}/g, no[0].e.title).replace(/\{k\}/g, KD[k.lvl - 1].name), ts: Date.now() });
+        picked = picked.filter(x => !no.includes(x));
+      }
+      picked.forEach(x => { if (kdTier(x.e) === k.lvl && !k.done.includes(x.e.title)) k.done.push(x.e.title); });
+      return { picked };
+    }
+    // zincirde (seçilen ya da otomatik gelen) boşalma varsa ve bu kademeden olay yapıldıysa kademe atlar; yeni kademe mesajı ya da ''
+    function kdUp(added) {
+      const k = th.kd, all = allEvents();
+      if (!k || !added.some(m => m.ev && kdCum(all.find(e => e.id === m.ev)))) return '';
+      if (!k.done.some(t => kdTier({ title: t }) === k.lvl)) return '';
+      if (k.lvl < KD.length) { k.lvl++; k.done = []; return `${pick(KD_UP[k.lvl])}\n\n🪜 ${KD[k.lvl - 1].ic} ${k.lvl}. kademe açıldı: ${KD[k.lvl - 1].name}`; }
+      if (!k.top) { k.top = true; return pick(KD_TOP); }
+      return '';
+    }
     input.onkeydown = e => {
       if (e.key !== 'Escape') return;
       if (cs.mode) cancelMode();
@@ -5255,6 +5465,10 @@
         if (!picked.length) return;
       }
       snap('Olay');
+      // 🪜 kademe: kilitli olay reddedilir (ret mesajı hemen görünür)
+      const kd = kdApply(picked);
+      picked = kd.picked;
+      if (!picked.length) { save(); draw(); refreshList(); drawKd(); return; }
       const n0 = list.length;
       picked.forEach(x => eventMessages(x.e, x.sub));
       maybeInterrupt(picked[picked.length - 1].e);
@@ -5262,7 +5476,11 @@
       // ⏳ zincirdeki mesajlar (olay, sonuç, ⚡ boşalma, miktar…) birer birer gelir; karşı taraftan önce "yazıyor…"
       const added = list.splice(n0), who = byId(chatCharIds()[0]) || c;
       lockInput(true, who && who.name.split(' ')[0]);
-      const done = () => { save(); draw(); refreshList(); lockInput(false); if (th.bot) botEventReply(added); else th.interrupt = null; };
+      const done = () => {
+        const up = kdUp(added);
+        if (up) list.push({ id: Store.uid(), from: 'her', text: up, ts: Date.now() });
+        save(); draw(); refreshList(); drawKd(); lockInput(false); if (th.bot) botEventReply(added); else th.interrupt = null;
+      };
       let k = 0;
       const next = () => {
         const tp = $('#evTyping');
@@ -11727,10 +11945,10 @@
       <p>İlan sitesi. Kartlarda fotoğraf, yaş, şehir, ⭐ puan, boy / kilo / göğüs / kalça ve sevdiği ilk üç olay görünür. Üstte <b>👑 VIP Vitrin</b>; sekmeler Hepsi · ● Çevrimiçi · 👑 VIP · ✨ Yeni. 🔄 Yeni ilanlar bütün ilan kızlarını yeniden üretir (kayıtlı karakterlerin kalır).</p>
       <p><b>Profil sayfası</b>: 💌 Hakkımda (flörtöz tanıtım, kişiliğe göre), 📏 Fiziksel özellikler, 🫦 Bunları çok iyi yaparım (sevdikleri), 🛡️ Kondom ve kurallarım, 💔 Pek sevmediklerim, 📸 Fotoğraflar, 💎 Seanslar, 💬 Yorumlar.</p>
       <table class="bk-t"><tr><th>✅ İzinleri</th><th>İlanda yazan</th></tr>
-        <tr><td>Nothing / Control Pill / Morning-After / Pull-Out yok</td><td>🛡️ "Kondom şartım vardır"</td></tr>
+        <tr><td>Nothing / Control Pill / Morning-After / Pull-Out yok</td><td>🛡️ iki kondom kuralı (ör. "Kondom şartım vardır", "Kondomu ben takarım"); içe boşalmadan hiç bahsedilmez</td></tr>
         <tr><td>bunlardan biri var</td><td>🔥 "Kondom şartım yoktur" (+ hap, sabah hapı ya da dışarı boşalma şartı)</td></tr>
         <tr><td>Nothing / hap / sabah hapı</td><td>💦 "İçime boşalabilirsin"</td></tr>
-        <tr><td>yoksa</td><td>🚫 "İçe boşalmaya izin vermiyorum, ısrar etmeyin"</td></tr></table>
+        <tr><td>sadece Pull-Out</td><td>🚫 "İçe boşalmaya izin vermiyorum, ısrar etmeyin"</td></tr></table>
       <p><b>💎 Seanslar</b>: kısa (30 dk), standart (1 saat), uzun (2 saat), sevdiklerine uyan seans türleri (1,5 saat) ve gece. Kondom şartı yoksa kondomsuz fiyat da çıkar (%40 fazla). <b>VIP</b> fiyatları 2,5 katıdır.</p>
       <p><b>💬 Yorumlar</b> kondom kuralına uyar: içe izin verende "Gerçekten içine boşalmama izin verdi 😳", vermeyende "Ne kadar ısrar etsem de içine boşalttırmadı" ya da "Yanlışlıkla içine boşaldım, kızdı bana". Kendi yorumunu da yazabilirsin.</p>` },
     { icon: '🫦', title: 'CarmenFans', sub: 'abonelik, haftanın kostümü, özel içerik', body: `

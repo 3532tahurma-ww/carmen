@@ -2945,3 +2945,21 @@ button.cr-and:active { transform: scale(.9); }
 .bs-keys button.fn { background: #a5a5a5; color: #000; }
 .bs-keys button.op { background: #ff9f0a; }
 .bs-keys button.zero { grid-column: span 2; aspect-ratio: auto; border-radius: 999px; text-align: left; padding-left: 28px; }
+/* 🪜 Kademeli Eğlence: yeni sohbette mod seçimi + sohbetteki kademe çubuğu */
+.kd-mode { display: flex; align-items: center; gap: 8px; margin: 10px 0; }
+.kd-mode small { color: var(--muted); font-weight: 600; margin-right: 4px; }
+.kd-mode button { flex: 1; padding: 9px 10px; border-radius: 12px; background: var(--chip); color: var(--text); font-weight: 600; border: 2px solid transparent; }
+.kd-mode button.on { border-color: var(--pink); background: var(--pink-soft); }
+.kd-mode-tip { margin: 0 0 10px; font-size: 13px; color: var(--muted); }
+.kd-mode-tip[hidden] { display: none; }
+.kd-bar { display: flex; gap: 4px; margin: 6px 10px 0; padding: 6px 8px; border-radius: 14px; background: var(--card); box-shadow: 0 3px 12px rgba(20, 40, 80, .08); width: calc(100% - 20px); }
+.kd-bar span { flex: 1; display: flex; flex-direction: column; align-items: center; gap: 1px; padding: 3px 0; border-radius: 10px; opacity: .45; }
+.kd-bar span.done { opacity: .8; }
+.kd-bar span.cur { opacity: 1; background: var(--pink-soft); }
+.kd-bar i { font-style: normal; font-size: 16px; }
+.kd-bar small { font-size: 10px; font-weight: 600; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+.kd-row { margin: 10px 0; }
+.kd-row.lock { opacity: .5; }
+.kd-row div { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 5px; }
+.kd-row em { font-style: normal; font-size: 12px; padding: 3px 9px; border-radius: 999px; background: var(--chip); }
+.kd-row em.ok { background: var(--pink-soft); font-weight: 600; }
