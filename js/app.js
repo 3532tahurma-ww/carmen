@@ -410,6 +410,7 @@
       case 'klinik': return renderClinic(r.id);
       case 'is': return renderJobs(r.id);
       case 'itiraf': return renderConfess();
+      case 'creative': return renderCreative();
       case 'flix': return renderFlix(r.id, r.extra);
       case 'gram': return renderGram(r.id, r.extra);
       case 'oyun': return r.id === 'ps' ? (r.extra === 'play' ? renderPS() : renderPSMenu()) : r.id === 'fp' ? (r.extra === 'play' ? renderFP() : renderFPMenu()) : renderGames();
@@ -486,7 +487,7 @@
         <a class="hl-meet hl-net" href="#/internet">
           ${pool.length ? `<img src="${esc(pool[+sysHash('internet') % pool.length])}" alt="" onerror="this.remove()">` : ''}<span class="hl-shade"></span>
           <span class="hl-ic">🌐</span>
-          <span class="hl-txt"><small>İnternet</small><b>Siteler</b><span class="hl-tr"><em>🌹 Carmen.com</em><em>🫦 Fans</em><em>📸 tagram</em><em>🍿 Flix</em><em>🏨 Stay</em><em>+5</em></span></span>
+          <span class="hl-txt"><small>İnternet</small><b>Siteler</b><span class="hl-tr"><em>🌹 Carmen.com</em><em>🫦 Fans</em><em>📸 tagram</em><em>🍿 Flix</em><em>🏨 Stay</em><em>+7</em></span></span>
           <span class="hl-go">›</span>
         </a>
         ${(() => { const g = psData(); return `<a class="hl-meet hl-game" href="#/oyun">
@@ -1018,7 +1019,8 @@
       { k: 'shop', href: '#/shop', ic: '🛍️', logo: 'Carmen<i>Shop</i>', url: 'carmenshop.com', desc: 'Oyuncak, iç çamaşırı, kostüm. Kargo gelince sohbette "Paketin geldi, açayım mı? 😏"', chips: [`${shopProds().length} ürün`, `📦 ${shopData().orders.filter(o => !o.done).length} yolda`] },
       { k: 'jobs', href: '#/is', ic: '💼', logo: 'Carmen<i>Jobs</i>', url: 'carmenjobs.com', desc: 'Onun iş yerine başvur: mülakat Patron – Sekreter, Doktor, Hoca gibi rol fantezileriyle başlar.', chips: [`${cmAll().filter(c => c.job).length} ilan`, '🎭 rol hazır'] },
       { k: 'clinic', href: '#/klinik', ic: '🩺', logo: 'Carmen<i>Klinik</i>', url: 'carmenklinik.com', desc: 'Döngü takvimi, riskli günler, hamilelik haftası, bebeğin boyu ve ultrason notları.', chips: [`🤰 ${chars().filter(c => pregWeek(c)).length} hamile`, `${chars().length} hasta`] },
-      { k: 'conf', href: '#/itiraf', ic: '🎭', logo: 'Confess<i>ly</i>', url: 'confessly.com', desc: 'İsimsiz aldatma itirafları: kocası maç izlerken üst katta, düğünden önceki gece, balayında spa\'da… Kadın da erkek de yazar.', chips: [`${CF_POOL.length} itiraf`, '🔥😂😳'] }
+      { k: 'conf', href: '#/itiraf', ic: '🎭', logo: 'Confess<i>ly</i>', url: 'confessly.com', desc: 'İsimsiz aldatma itirafları: kocası maç izlerken üst katta, düğünden önceki gece, balayında spa\'da… Kadın da erkek de yazar.', chips: [`${CF_POOL.length} itiraf`, '🔥😂😳'] },
+      { k: 'cr', href: '#/creative', ic: '✨', logo: 'Carmen<i>Creative</i>', url: 'carmencreative.com', desc: 'Yeni pozisyon ve olay üret: her olayın mekan, tempo, rol, açı… türevleri, yepyeni fikirler ve 🎲 fikir makinesi. Beğendiğini Monia\'ya ekle.', chips: [`${CR_IDEAS.length} yeni fikir`, `🔬 ${CR_LENS.length + 1} mercek`] }
     ];
     view.innerHTML = `<div class="page-pad narrow">${pageHero('internet', '🌐', 'İnternet', [`${sites.length} site`, 'gizli sekme 🕶️'])}
       <div class="net-list">${sites.map((s, i) => `<a class="net-card net-${s.k}" href="${s.href}" style="--i:${i}">
@@ -1567,6 +1569,273 @@
       if (b.dataset.cfm === 'more') ui.cfN = n + 20;
       else { ui.cfOrder = null; ui.cfN = 20; window.scrollTo(0, 0); }
       renderConfess();
+    });
+  }
+
+  /* ✨ CarmenCreative (#/creative): yeni olay / pozisyon fikirleri. Her olayın altı mercekten (mekan, tempo, duyular, rol, açı, oyun kuralı)
+   * türevleri + aynı kategoriden bir 🔀 zincir; 💡 yepyeni fikirler; 🎲 fikir makinesi. ➕ türevi Monia'ya yeni olay olarak ekler (aynı kategori) */
+  const CR_LENS = [
+    { k: 'yer', ic: '📍', l: 'Mekan', v: [['Duşta', 'Su sesi, buğulu cam, kaygan zemin: aynı hareket ıslak ve sıcak.'], ['Mutfak tezgahında', 'Yükseklik değişir; tezgah destek olur, kahve soğur.'], ['Aynanın önünde', 'İkiniz de kendinizi izlersiniz; göz göze ama aynadan.'], ['Arabada', 'Dar alan, buğulanan camlar, yakalanma riski.'], ['Balkonda', 'Gece havası, şehir ışıkları; sessiz kalmak zorunda.'], ['Yatağın kenarında', 'Biri ayakta biri yatakta: açı ve derinlik değişir.'], ['Kanepede', 'Kolçak destek, minder altta; rahat ev hali.'], ['Otel penceresinde', 'Perde aralık, aşağıda şehir; CarmenStay rezervasyonuyla birleşir.']] },
+    { k: 'tempo', ic: '⏱️', l: 'Tempo', v: [['Yavaş çekim', 'Her hareket iki kat yavaş; sabır oyunu.'], ['Sert ve hızlı', 'Kısa, yoğun, nefes nefese.'], ['Edging', 'Doruğa yaklaşınca durur, sonra yeniden başlar.'], ['Ritim değiştiren', 'Üç yavaş, bir sert; sayıyı o tutar.'], ['Zamanlı', 'Beş dakikanız var; alarm kurulu.']] },
+    { k: 'his', ic: '🙈', l: 'Duyular', v: [['Gözler bağlı', 'Görmeden; her dokunuş sürpriz.'], ['Eller bağlı', 'Biri yönetir, diğeri teslim olur.'], ['Buzla', 'Sıcak ten, soğuk buz; ürperti.'], ['Yağ masajıyla', 'Kaygan, uzun dokunuşlarla başlar.'], ['Karanlıkta', 'Sadece sesler ve nefesler.'], ['Kulaklıkla müzik', 'Onun ritmi şarkının ritmi olur.']] },
+    { k: 'rol', ic: '🎭', l: 'Rol', v: [['Patron ve sekreter', 'Toplantı arası, kapı kilitli.'], ['Yabancılar', 'Barda tanıştınız, isim bile bilmiyorsunuz.'], ['Doktor muayenesi', '"Derin nefes alın… şimdi tutun."'], ['Yeni komşu', 'Şeker istemeye geldi, kalmaya karar verdi.'], ['Gizli', 'Kocası yan odada; ses çıkarmak yasak.'], ['Masöz', 'Masaj masasında başlar, masada biter.']] },
+    { k: 'yon', ic: '🔄', l: 'Açı', v: [['Ters', 'Yönü çevir: yüz yüze yerine sırt dönük ya da tersi.'], ['Ayakta', 'Aynı hareket ayakta, duvara yaslanarak.'], ['Yan yatarak', 'Yorulmadan, uzun süre; kaşık sıcaklığı.'], ['Bacak omuzda', 'Açı dikleşir, derinlik artar.'], ['Yastıkla', 'Kalçanın altına yastık: açı değişir.'], ['Kucakta', 'Kucağında, kolları boynunda.']] },
+    { k: 'kural', ic: '🎲', l: 'Oyun kuralı', v: [['Sessiz', 'Komşular duymasın; ses çıkaran kaybeder.'], ['O yönetir', 'Bütün kararlar onun; sen sadece "evet" dersin.'], ['Eller yasak', 'Eller arkada; sadece bedenle.'], ['Anlatarak', 'Her şeyi anlatır: ne yaptığını, ne hissettiğini.'], ['Kameraya karşı', 'Telefon kaydediyor (ya da öyle sanıyor).'], ['Zarla', 'Zar ne derse: 1-2 yavaş, 3-4 sert, 5-6 pozisyon değiştir.']] }
+  ];
+  const CR_IDEAS = [
+    ['🪞', 'Mirror Tease', 'Aynanın önünde soyunur; sadece aynadan bakmana izin verir.'], ['📞', 'Phone Call', 'O telefonda konuşurken devam; sesini titretmeden cevap vermeye çalışır.'],
+    ['🧊', 'Ice Play', 'Ağzında buz, boynundan aşağı iz bırakır.'], ['🕯️', 'Candle Wax', 'Masaj mumu; ılık damlalar sırtına.'],
+    ['🎧', 'Silent Disco', 'İkinizin kulağında aynı şarkı; ritmi şarkı belirler.'], ['🚿', 'Shower Wall', 'Duş camına yaslanır, su sesi her şeyi örter.'],
+    ['🪑', 'Chair Ride', 'Sandalyede kucağına oturur; sandalye gıcırdar.'], ['🍓', 'Food Play', 'Çilek, krema, çikolata; tabağa gerek yok.'],
+    ['📸', 'Photo Shoot', 'Poz verir; her kareden sonra bir parça kıyafet gider.'], ['🎁', 'Gift Unwrap', 'Kurdeleyle sarılı gelir; seni açtırır.'],
+    ['🛗', 'Elevator Stop', 'Asansörü durdurur; kat arasında üç dakika.'], ['🌊', 'Wave Rhythm', 'Dalga gibi: yavaşça yükselir, tepede bekler, iner.'],
+    ['🧘', 'Yoga Stretch', 'Esneme bahanesiyle başlar, pozisyonla biter.'], ['🎲', 'Dice Night', 'Her zarda yeni hareket; 6 gelirse o seçer.'],
+    ['🕶️', 'Blind Guess', 'Gözleri kapalı; dokunuştan neresi olduğunu tahmin eder.'], ['⏰', 'Countdown', '10\'dan geri sayar; sıfırda durmak yasak.'],
+    ['🪢', 'Silk Tie', 'İpek eşarpla bilekler yatak başına.'], ['🛁', 'Bubble Bath', 'Köpüklü küvette, arkadan sarılarak.'],
+    ['🌙', 'Midnight Wake', 'Gece seni uyandırır; yarı uykulu ve yavaş.'], ['🎤', 'Dirty Talk Only', 'Dokunmadan, sadece kelimelerle doruğa.'],
+    ['💌', 'Note Trail', 'Ev boyunca notlar; sonuncusu yatak odasında.'], ['🧥', 'Coat Only', 'Kapıyı sadece paltoyla açar, altında hiçbir şey yok.'],
+    ['🎰', 'Roulette', 'Çark döner: pozisyon, mekan ve süre şansa kalır.'], ['🪩', 'Lap Dance', 'Müzik açılır; sen oturursun, dokunmak yasak (şimdilik).']
+  ];
+  // 🧪 İcat makinesi parçaları: hareket (💋 foreplay / ❤️ forward / 🍑 backward) × nesne/ortam × kural × kim yönetir → sıfırdan yeni olay ("Velvet Lock" gibi)
+  // 🎭 role-play: rol çifti (o – sen) × mekan × bahane
+  const CR_ATOMS = {
+    fore: [['Tease', '😏', 'Yavaşça soyunur, dokunmana izin vermeden yaklaşır'], ['Trail', '💋', 'Boynundan aşağı öpücüklerle iz bırakır'], ['Grind', '🔥', 'Kucağında, giysilerin üstünden sürtünür'],
+      ['Whisper', '🤫', 'Kulağına ne yapacağını tek tek fısıldar'], ['Tie', '🎀', 'Bileklerini bağlar, sadece dudaklarıyla dokunur'], ['Melt', '🫠', 'Sıcak yağla sırtını ovar, elleri aşağı kayar'],
+      ['Kneel', '🧎‍♀️', 'Önünde diz çöker, gözlerini senden ayırmadan'], ['Taste', '👅', 'Ağzıyla keşfeder, hiç acele etmeden'], ['Lap', '🪑', 'Kucağına oturur, kollarını boynuna dolar'],
+      ['Strip', '👗', 'Her öpücükte bir parça giysi gider'], ['Wrap', '🫂', 'Sarmaş dolaş öpüşürsünüz, nefes nefese'], ['Hang', '🪝', 'Boynuna asılır, ayakları yerden kesik öpüşür']],
+    fwd: [['Lock', '🔐', 'Yüz yüze; bacaklarını beline kilitler, gitmene izin vermez'], ['Fold', '🪭', 'Sırtüstü, dizleri göğsüne katlanır, sen üstünden'], ['Ride', '🏇', 'Üstte, yüzü sana; ritmi o belirler'],
+      ['Cradle', '🛏️', 'Yan yana yüz yüze, bacağı kalçanın üstünde'], ['Lift', '🏋️', 'Onu kucağına kaldırırsın, sırtı duvarda'], ['Edge', '🛋️', 'Yatağın kenarında sırtüstü, sen ayakta'],
+      ['Bridge', '🌉', 'Köprü kurar, kalçası havada; sen önünde diz çökmüşsün'], ['Straddle', '🐎', 'Sandalyede kucağında, yüzü sana'], ['Anchor', '⚓', 'Bacakları omuzlarında, elleriyle başlığa tutunur'],
+      ['Tangle', '🪢', 'Bacaklar birbirine dolanır, yüz yüze, alın alına'], ['Lotus', '🪷', 'Oturmuş, o kucağında; bacakları sana sarılı'], ['Slide', '🛝', 'Sırtüstü kayarak yatağın ucuna iner, her kayışta açı değişir']],
+    back: [['Arch', '🌙', 'Dört ayak; sırtını kavis yapar, başı geriye düşer'], ['Lean', '🧱', 'Ayakta, ellerini duvara dayar; sen arkasında'], ['Spoon', '🥄', 'Yan yatar, sırtı göğsüne yaslı'],
+      ['Kneel', '🧎‍♀️', 'Dizlerinin üstünde dik, sırtı sana; ellerin belinde'], ['Flat', '🛏️', 'Yüzüstü düz yatar, kalçasının altında yastık'], ['Reverse', '🔄', 'Üstte ama sırtı sana dönük'],
+      ['Bend', '🪑', 'Masaya ya da tezgaha eğilir'], ['Twist', '🌀', 'Yüzüstü, belinden dönerek yarı yan'], ['Pin', '📌', 'Bilekleri sırtında tutulur'],
+      ['Stair', '🪜', 'Merdivende bir basamak yukarıda, eğilmiş'], ['Spiral', '🌪️', 'Arkadan başlar, yavaşça döner, her turda yeni açı'], ['Rail', '🛤️', 'Balkon korkuluğuna tutunur, sen arkasında']],
+    prop: [['Velvet', '🟣', 'kadife bir örtünün üstünde'], ['Silk', '🎀', 'ipek eşarpla'], ['Candle', '🕯️', 'mum ışığında'], ['Rain', '🌧️', 'açık pencerede yağmur sesiyle'], ['Pillow', '☁️', 'yastık yığınının üstünde'],
+      ['Shower', '🚿', 'duşun altında, su sesi her şeyi örter'], ['Swing', '🎠', 'salıncakta sallanarak'], ['Piano', '🎹', 'piyano kapağının üstünde'], ['Hammock', '🏝️', 'hamakta'], ['Midnight', '🌌', 'gece yarısı, ışıklar kapalı'],
+      ['Sauna', '🧖‍♀️', 'saunanın buharında'], ['Window', '🪟', 'cama yaslanmış, perde açık'], ['Honey', '🍯', 'bal ve krema eşliğinde'], ['Neon', '💡', 'neon ışığın altında'], ['Snow', '❄️', 'dışarıda kar yağarken şöminenin önünde'],
+      ['Mirror', '🪞', 'aynanın karşısında, ikiniz de izleyerek'], ['Kitchen', '🍳', 'mutfak tezgahında'], ['Car', '🚗', 'arabanın arka koltuğunda, camlar buğulu']],
+    twist: ['durmak yasak', 'her dakika bir giysi çıkar', 'sadece fısıltıyla konuşulur', 'göz temasını ilk kesen kaybeder', 'o "dur" diyene kadar', 'üç kez doruğa yaklaşıp geri çekilirsiniz',
+      'kapı aralık kalır', 'onun seçtiği şarkı bitene kadar', 'telefon çalınca donarsınız', 'aynı anda nefes verirsiniz', 'her dokunuştan önce izin istenir', 'zamanlayıcı 7 dakikaya kurulu', 'ses çıkaran kaybeder', 'gözler bağlı'],
+    lead: ['O yönetir', 'Sen yönetirsin', 'Sırayla yönetirsiniz', 'Kim önce sabrını kaybederse o teslim olur'],
+    role: [['Hostes', 'Yolcu', '✈️'], ['Kütüphaneci', 'Gürültücü okur', '📚'], ['Fitness hocası', 'Yeni üye', '🏋️'], ['Barmen kız', 'Son müşteri', '🍸'], ['Emlakçı', 'Ev bakan alıcı', '🏡'],
+      ['Model', 'Fotoğrafçı', '📸'], ['Prenses', 'Koruması', '👑'], ['Hemşire', 'Gece nöbetindeki hasta', '💉'], ['Stajyer', 'Müdür', '🗂️'], ['Kiracı', 'Ev sahibi', '🔑'],
+      ['Garson', 'Müşteri', '🍽️'], ['Dansçı', 'VIP misafir', '💃'], ['Yoga hocası', 'Öğrenci', '🧘'], ['Vampir', 'Kurbanı', '🧛‍♀️'], ['Ajan', 'Hedefi', '🕵️‍♀️'],
+      ['Kraliçe', 'Hizmetkârı', '👸'], ['Komşunun karısı', 'Tesisatçı', '🚰'], ['Kaptan', 'Tayfa', '⚓'], ['Sınav gözetmeni', 'Kopya çeken öğrenci', '📝'], ['Otostopçu', 'Sürücü', '🚗'],
+      ['Arkadaşının ablası', 'Kardeşinin arkadaşı', '🏠'], ['Gelinlik provasındaki gelin', 'Terzi', '👰'], ['Tatil rehberi', 'Turist', '🗺️'], ['Uzaylı', 'Dünyalı', '👽']],
+    rplace: ['Gece uçuşunda, kabin ışıkları sönükken', 'Kapanıştan sonra, ışıklar yarı açık', 'Asansörde, elektrik kesikken', 'Yağmurlu bir gecede yolda kalınca', 'Otel odasında, yanlış kapı çalınınca',
+      'Ofiste, herkes gittikten sonra', 'Bir maskeli baloda', 'Kamp çadırında', 'Tren kompartımanında', 'Soyunma odasında', 'Düğün gecesi, salonun arka odasında', 'Tekne gezisinde, kamarada'],
+    hook: ['borcunu ödeyecek parası yok', 'kurallara uymadığın için ceza vermesi lazım', 'bir sırrını öğrendi, susmanın bedelini istiyor', 'iddiayı kaybetti', 'sana bir ders vermeye kararlı',
+      'yardım istiyor ama niyeti başka', 'işini kaybetmemek için her şeyi yapar', 'seni gizlice izlerken yakalandı', 'sadece bir gecelik rol teklif ediyor', 'yakalanma riski çok yüksek', 'kimse bilmeyecek diye söz verdi', 'ilk kez yapıyor gibi davranıyor']
+  };
+  const CR_MODES = [['fwd', '❤️', 'Forward', 'forward'], ['back', '🍑', 'Backward', 'backward'], ['fore', '💋', 'Foreplay', 'foreplay']];
+  const CR_PARTS = ['fore', 'fwd', 'back', 'prop', 'twist', 'role', 'rplace', 'hook'];
+  const CR_PART_L = { fore: '💋 Foreplay hareketi', fwd: '❤️ Forward hareketi', back: '🍑 Backward hareketi', prop: '🎀 Nesne / ortam', twist: '🎲 Kural', role: '🎭 Rol çifti', rplace: '📍 Rol mekanı', hook: '🪝 Rol bahanesi' };
+  const CR_RP_COLORS = ['#5c6bc0', '#8d6e63', '#26a69a', '#1e88e5', '#ef6c00', '#ab47bc', '#c2185b', '#00897b'];
+  const crtHas = t => MO().events.some(e => low(e.title) === low(t));
+  // ✍️ eklediklerin: amor-stories (S().creative) { ideas: [[ic, t, d]], lens: { k: [[t, d]] }, newLens: [{ k, ic, l, v }], atoms: { fore|fwd|back|prop: [[ad, ic, açıklama]], role: [[o, sen, ic]], twist|rplace|hook: [metin] } }
+  const crMine = () => {
+    const s = S(); s.creative = s.creative || {}; const c = s.creative; c.ideas = c.ideas || []; c.lens = c.lens || {}; c.newLens = c.newLens || []; c.atoms = c.atoms || {};
+    CR_PARTS.forEach(k => c.atoms[k] = c.atoms[k] || []);
+    if (c.atoms.body) { c.atoms.fwd.push(...c.atoms.body); delete c.atoms.body; }   // eski sürüm: tek hareket listesi
+    return c;
+  };
+  const crLens = () => { const m = crMine(); return [...CR_LENS, ...m.newLens].map(L => ({ ...L, v: [...(L.v || []), ...(m.lens[L.k] || [])] })).filter(L => L.v.length); };
+  const crAtoms = () => { const m = crMine().atoms, o = { lead: CR_ATOMS.lead }; CR_PARTS.forEach(k => o[k] = [...CR_ATOMS[k], ...m[k]]); return o; };
+  const crCatFor = l => (moCats().find(c => low(c.label) === l) || MINE).id;
+  const crCap = s => String(s).charAt(0).toLocaleUpperCase('tr') + String(s).slice(1);
+  const crExtra = fx => fx.extra && fx.extra.length ? ` Öğeler: ${fx.extra.join(', ')}.` : '';
+  // m: fwd / back / fore; fx: kelimelerden eşleşen parçalar (body, prop, twist, word, extra)
+  const crInvent = (m, fx = {}) => {
+    const A = crAtoms(), M = CR_MODES.find(x => x[0] === m), b = fx.body || pickOne(A[m]), p = fx.prop || pickOne(A.prop);
+    const t = fx.word && !fx.prop ? `${crCap(fx.word)} ${b[0]}` : `${p[0]} ${b[0]}`;
+    return { ic: p[1] || b[1] || '✨', mode: M[1], t, d: `${b[2]}, ${p[2]}. Kural: ${fx.twist || pickOne(A.twist)}. ${pickOne(A.lead)}.${crExtra(fx)}`, cat: crCatFor(M[3]) };
+  };
+  const crRole = (fx = {}) => {
+    const A = crAtoms(), r = fx.role || pickOne(A.role), lo = s => String(s).toLocaleLowerCase('tr');
+    return { ic: r[2] || '🎭', mode: '🎭', t: `${r[0]} – ${r[1]}`, d: `${fx.place || pickOne(A.rplace)}: o ${lo(r[0])}, sen ${lo(r[1])}. Bahane: ${fx.hook || pickOne(A.hook)}.${crExtra(fx)}`,
+      cat: crCatFor(FANT_TAG), tags: ['roleplay'], color: pickOne(CR_RP_COLORS) };
+  };
+  const crMixMode = () => pickOne(['fwd', 'back', 'fwd', 'back', 'fore']);
+  // 🔑 anahtar kelimeler: parçalarda geçen kelime o parçayı seçer, eşleşmeyenler "Öğeler" olur; üç farklı sonuç
+  const crFromWords = (txt, m) => {
+    const A = crAtoms(), words = txt.split(/[,;\n]+|\s+/).map(w => w.trim().toLocaleLowerCase('tr')).filter(w => w.length > 2);
+    const hits = (list, get) => list.filter(x => words.some(w => low(get(x)).includes(w)));
+    const used = (list, get) => words.filter(w => list.some(x => low(get(x)).includes(w)));
+    if (m === 'rp') {
+      const g = { role: x => x.join(' '), rplace: x => x, hook: x => x }, H = {}, u = new Set();
+      Object.keys(g).forEach(k => { H[k] = hits(A[k], g[k]); used(A[k], g[k]).forEach(w => u.add(w)); });
+      const extra = words.filter(w => !u.has(w));
+      return Array.from({ length: 3 }, () => crRole({ role: pickOne(H.role), place: pickOne(H.rplace), hook: pickOne(H.hook), extra }));
+    }
+    const mm = m === 'mix' ? null : m, gb = x => x[0] + ' ' + x[2], u = new Set();
+    const bodies = (mm ? [mm] : ['fwd', 'back', 'fore']).flatMap(k => hits(A[k], gb).map(b => [k, b]));
+    [...['fwd', 'back', 'fore'].flatMap(k => used(A[k], gb)), ...used(A.prop, gb), ...used(A.twist, x => x)].forEach(w => u.add(w));
+    const props = hits(A.prop, gb), twists = hits(A.twist, x => x), extra = words.filter(w => !u.has(w));
+    return Array.from({ length: 3 }, () => { const bb = pickOne(bodies); return crInvent(bb ? bb[0] : mm || crMixMode(), { body: bb && bb[1], prop: pickOne(props), twist: pickOne(twists), word: extra[0], extra }); });
+  };
+  // olayın türevleri: her mercekten bir varyant (🎲 Yeniden üret tohumu değiştirir) + aynı kategoriden zincir
+  const crDerive = (e, pool) => {
+    const seed = ui.crSeed || 0, h = k => +sysHash(e.title + k + seed);
+    const out = crLens().map(L => { const [t, d] = L.v[h(L.k) % L.v.length]; return { ic: L.ic, l: L.l, t: `${e.title} · ${t}`, d }; });
+    const nx = pool.filter(x => x.title !== e.title);
+    if (nx.length) { const o = nx[h('z') % nx.length]; out.push({ ic: '🔀', l: 'Zincir', t: `${e.title} → ${o.title}`, d: `${e.title} ile başla, ritmi bozmadan ${o.title}'a geç; geçiş anı olayın kendisi.` }); }
+    return out;
+  };
+  const crPushEv = (it, cat) => MO().events.push({ id: Store.uid(), title: it.t, cat, text: '', steps: [], opener: '', starter: '', tones: [], note: '', part: '', when: '', place: '', mix: [], tags: [...(it.tags || [])],
+    desc: it.d, color: it.color || '', emojis: it.emojis || it.ic || '✨', creative: true });
+  // paneller: 🧪 İcat makinesi · 🔬 Türevler · 🎭 Role-play · ✍️ Ekle · 💡 Fikirler
+  function renderCreative() {
+    const P = ['inv', 'der', 'rp', 'add', 'ideas'].includes(ui.crP) ? ui.crP : 'inv';
+    const cats = moCats().filter(c => poolOf(c).length), evCats = tagCats(CHAT_TOP_TAG);
+    const f = cats.some(c => c.id === ui.crF) ? ui.crF : ((evCats[0] || cats[0] || {}).id);
+    const q = low(ui.crQ), n = ui.crN || 12, items = ui.crItems = [], mine = crMine(), lens = crLens(), A = crAtoms();
+    const addBtn = (it, cat) => { items.push({ ...it, cat }); return crtHas(it.t) ? '<span class="cr-ok">✓</span>' : `<button type="button" class="cr-add" data-cradd="${items.length - 1}" aria-label="Monia'ya ekle">➕</button>`; };
+    const resCard = x => `<div class="cr-dv"><span class="cr-ic">${esc(x.ic)}</span><div><b>${esc(x.t)}</b><small>${x.mode ? esc(x.mode) + ' · ' : ''}${esc(x.d)}</small></div>${addBtn({ ...x, emojis: x.ic }, x.cat)}</div>`;
+    const all = allEvents().filter(e => (catOfEv(e).tags || []).includes(CHAT_TOP_TAG));
+    const mode = ['fwd', 'back', 'fore', 'mix'].includes(ui.crMode) ? ui.crMode : 'mix';
+    const R = ui.crRes = ui.crRes || {};
+    if (P === 'inv' && !R[mode]) R[mode] = Array.from({ length: 6 }, () => crInvent(mode === 'mix' ? crMixMode() : mode));
+    if (P === 'rp' && !R.rp) R.rp = Array.from({ length: 6 }, () => crRole());
+    const del = (k, i) => `<button type="button" class="cr-add" data-crdel="${k}:${i}" aria-label="Sil">🗑</button>`;
+    const ideaCard = ([ic, t, d], i) => `<article class="cr-card${i != null ? ' cr-mine' : ''}"><div class="cr-dv"><span class="cr-ic">${esc(ic)}</span><div><b>${esc(t)}</b><small>${i != null ? '✍️ Senin fikrin · ' : ''}${esc(d)}</small></div>${addBtn({ t, d, emojis: ic, idea: 1 }, '')}${i != null ? del('idea', i) : ''}</div></article>`;
+    const myLens = Object.entries(mine.lens).flatMap(([k, v]) => v.map((x, i) => ({ k, i, x, L: lens.find(L => L.k === k) }))).filter(o => o.L);
+    const catSel = `<select id="crCat">${[...evCats, MINE].map(c => `<option value="${esc(c.id)}"${c.id === ui.crCat ? ' selected' : ''}>${esc(c.icon || '')} ${esc(c.label)}</option>`).join('')}</select>`;
+    const compose = (ph, kwHelp) => `<form class="ws-sec cr-form" id="crCompose"><h3>✍️ Kendin yaz</h3><p>${kwHelp}</p>
+        <input name="t" maxlength="60" placeholder="Ad (isteğe bağlı; olduğu gibi eklerken)">
+        <textarea name="x" rows="2" maxlength="400" placeholder="${esc(ph)}">${esc(ui.crTxt || '')}</textarea>
+        <div class="ws-btns"><button type="button" class="btn primary sm" data-crc="kw">🔑 Kelimelerden kur</button><button type="button" class="btn ghost sm" data-crc="raw">✍️ Olduğu gibi ekle</button></div></form>`;
+    const panel = {
+      inv: () => `<section class="ws-sec cr-idea"><h3>🧪 İcat makinesi</h3><p>Sıfırdan yeni olay: bir hareket + bir nesne / ortam (${A.prop.length}) + bir kural (${A.twist.length}) + kim yönetir. Eklenince türünün kategorisine (Forward, Backward, Foreplay) girer.</p>
+          ${wsTabs('crmode', [['mix', '🎲 Karışık'], ...CR_MODES.map(([k, ic, l]) => [k, `${ic} ${l} · ${A[k].length}`])], mode)}
+          <div class="cr-inv">${R[mode].map(resCard).join('')}</div>
+          <div class="ws-btns"><button type="button" class="btn primary sm" data-crm="inv">🧪 Yeniden icat et</button></div></section>
+        ${compose('ör. duş, ipek, arkadan, sessiz  —  ya da olayı baştan sona kendin yaz', 'Anahtar kelimeleri virgülle yaz (duş, ipek, Lock, sessiz…): makine eşleşen hareket, nesne ve kuralları seçer, eşleşmeyenleri öğe olarak ekler ve üç fantezi kurar. Ya da tam metni yaz, ✍️ olduğu gibi Monia\'ya eklensin (yukarıdaki türün kategorisine).')}`,
+      rp: () => `<section class="ws-sec cr-idea"><h3>🎭 Role-play icadı</h3><p>Rol çifti (${A.role.length}) + mekan (${A.rplace.length}) + bahane (${A.hook.length}). Eklenince 🦄 Fantesy kategorisine 🏷️ roleplay etiketiyle girer; sohbette rol olayı olur.</p>
+          <div class="cr-inv">${R.rp.map(resCard).join('')}</div>
+          <div class="ws-btns"><button type="button" class="btn primary sm" data-crm="rp">🎭 Yeni roller</button></div></section>
+        ${compose('ör. hemşire, gece, sır  —  ya da rol fantezisini kendin yaz', 'Kelimeler yaz (hostes, asansör, ceza…): eşleşen rol, mekan ve bahaneler seçilir, kalanlar öğe olur. Ya da tam metni yaz, ✍️ olduğu gibi rol olayı olarak eklensin.')}`,
+      der: () => {
+        const idea = ui.crIdea = ui.crIdea || (all.length ? (() => { const e = pickOne(all), [L1, L2] = sample(lens, 2), a = pickOne(L1.v), b = pickOne(L2.v);
+          return { ic: e.emojis || '✨', t: `${e.title} · ${a[0]} · ${b[0]}`, d: `${a[1]} ${b[1]}`, e }; })() : null);
+        const pool = f ? poolOf(cats.find(c => c.id === f)).filter(e => !q || low(e.title).includes(q)) : [];
+        const evCard = e => `<article class="cr-card"><div class="cr-h"><span class="cf-anon">${esc(e.emojis || '✨')}</span><b>${esc(e.title)}</b><small>${esc(catOfEv(e).icon || '')} ${esc(catOfEv(e).label || '')}</small></div>
+          ${crDerive(e, pool).map(d => `<div class="cr-dv"><span class="cr-ic" title="${esc(d.l)}">${esc(d.ic)}</span><div><b>${esc(d.t)}</b><small>${esc(d.l)} · ${esc(d.d)}</small></div>${addBtn({ ...d, emojis: e.emojis, tags: e.tags }, e.cat || 'mine')}</div>`).join('')}</article>`;
+        return `<section class="ws-sec"><h3>🔬 Türev nasıl üretilir?</h3><p>Var olan her olay mercekten geçer; biri değişince yeni bir olay doğar. Bir de aynı kategoriden ikinci olayla 🔀 zincir kurulur.</p>
+            <div class="cr-lens">${lens.map(L => `<span>${esc(L.ic)} ${esc(L.l)}<small>${L.v.length}</small></span>`).join('')}<span>🔀 Zincir</span></div>
+            <input id="crQ" class="cr-q" type="search" placeholder="🔎 Olay ara (Doggy, Kissing…)" value="${esc(ui.crQ || '')}"></section>
+          ${idea ? `<section class="ws-sec cr-idea"><h3>🎲 Türev karıştır</h3>${resCard({ ...idea, cat: idea.e.cat || 'mine', tags: idea.e.tags })}
+            <div class="ws-btns"><button type="button" class="btn primary sm" data-crm="idea">🎲 Yeni karışım</button><button type="button" class="btn ghost sm" data-crm="seed">🔁 Bütün türevleri yeniden üret</button></div></section>` : ''}
+          ${wsTabs('crf', cats.map(c => [c.id, `${esc(c.icon || '')} ${esc(c.label)}`]), f)}
+          ${pool.length ? `<div class="ws-list">${pool.slice(0, n).map(evCard).join('')}</div>${pool.length > n ? '<div class="ws-btns cf-more"><button type="button" class="btn ghost" data-crm="more">⬇️ Daha fazla</button></div>' : ''}`
+            : '<div class="cm-empty">Bu aramaya uyan olay yok 🤔</div>'}`;
+      },
+      ideas: () => `<div class="ws-sec cr-pick">💡 eklenince bu kategoriye girer: ${catSel}</div>
+        <div class="ws-list">${mine.ideas.map((x, i) => ideaCard(x, i)).join('')}${CR_IDEAS.map(x => ideaCard(x)).join('')}</div>`,
+      add: () => `<form class="ws-sec cr-form" id="crfIdea"><h3>✍️ Kendi olayını icat et</h3>
+          <div class="cr-row"><input name="ic" maxlength="4" placeholder="✨" class="cr-emo"><input name="t" maxlength="60" placeholder="Olayın adı (ör. Velvet Lock)" required></div>
+          <textarea name="d" rows="2" maxlength="300" placeholder="Nasıl oluyor? Kısa bir açıklama"></textarea>
+          <div class="cr-pick">Kategori: ${catSel}</div>
+          <label class="cr-chk"><input type="checkbox" name="mo" checked> Monia'ya da ekle</label>
+          <button type="submit" class="btn primary sm">💡 Kaydet</button></form>
+        <form class="ws-sec cr-form" id="crfAtom"><h3>🧪 İcat makinesine / 🎭 role-play'e parça ekle</h3><p>Makine bundan sonra seninkileri de kullanır; 🔑 kelimeler de onları bulur.</p>
+          <select name="k">${CR_PARTS.map(k => `<option value="${k}">${CR_PART_L[k]}</option>`).join('')}</select>
+          <div class="cr-row" data-for="fore fwd back prop role"><input name="ic" maxlength="4" placeholder="✨" class="cr-emo"><input name="n" maxlength="30" placeholder="İsimdeki kelime (ör. Lock, Velvet)"></div>
+          <input name="d" maxlength="160" placeholder="Açıklama (ör. bacaklarını beline kilitler)" required>
+          <button type="submit" class="btn primary sm">🧪 Ekle</button></form>
+        <form class="ws-sec cr-form" id="crfLens"><h3>🔬 Merceğe varyant ekle</h3><p>Bütün olayların türevlerine girer.</p>
+          <select name="k">${lens.map(L => `<option value="${esc(L.k)}">${esc(L.ic)} ${esc(L.l)}</option>`).join('')}<option value="+">➕ Yeni mercek…</option></select>
+          <div class="cr-row cr-newl" hidden><input name="nic" maxlength="4" placeholder="🌟" class="cr-emo"><input name="nl" maxlength="30" placeholder="Yeni merceğin adı (ör. Kıyafet)"></div>
+          <input name="t" maxlength="40" placeholder="Varyant (ör. Gelinlikle)" required><textarea name="d" rows="2" maxlength="200" placeholder="Ne değişiyor?"></textarea>
+          <button type="submit" class="btn primary sm">🔬 Ekle</button></form>
+        ${myLens.length || CR_PARTS.some(k => mine.atoms[k].length) || mine.newLens.length ? `<section class="ws-sec"><h3>🗂️ Eklediklerin</h3><div class="cr-inv">
+          ${mine.newLens.map((L, i) => `<div class="cr-dv"><span class="cr-ic">${esc(L.ic)}</span><div><b>${esc(L.l)}</b><small>Yeni mercek · ${(mine.lens[L.k] || []).length} varyant</small></div>${del('nl', i)}</div>`).join('')}
+          ${myLens.map(o => `<div class="cr-dv"><span class="cr-ic">${esc(o.L.ic)}</span><div><b>${esc(o.x[0])}</b><small>${esc(o.L.l)} · ${esc(o.x[1])}</small></div>${del('lens', o.k + ':' + o.i)}</div>`).join('')}
+          ${CR_PARTS.flatMap(k => mine.atoms[k].map((x, i) => { const s = typeof x === 'string', r = k === 'role';
+            return `<div class="cr-dv"><span class="cr-ic">${esc(s ? CR_PART_L[k].split(' ')[0] : r ? x[2] : x[1])}</span><div><b>${esc(s ? x : r ? `${x[0]} – ${x[1]}` : x[0])}</b><small>${esc(CR_PART_L[k])}${s || r ? '' : ' · ' + esc(x[2])}</small></div>${del(k, i)}</div>`; })).join('')}</div></section>` : ''}`
+    };
+    view.innerHTML = wsPage('cr', 'Carmen<i>Creative</i>', 'carmencreative.com', '#/internet', `
+      <div class="ws-hero"><h1>Yeni olaylar icat et ✨</h1><p>${(A.fwd.length + A.back.length + A.fore.length) * A.prop.length * A.twist.length * A.lead.length} olası icat · ${A.role.length * A.rplace.length * A.hook.length} rol · ${all.length} pozisyon × ${lens.length + 1} türev</p></div>
+      <div class="cr-panels">${[['inv', '🧪', 'İcat makinesi'], ['der', '🔬', 'Türevler'], ['rp', '🎭', 'Role-play'], ['add', '✍️', 'Ekle'], ['ideas', '💡', 'Fikirler']]
+        .map(([k, ic, l]) => `<button type="button" data-crp="${k}" class="${k === P ? 'on' : ''}"><span>${ic}</span>${l}</button>`).join('')}</div>
+      ${panel[P]()}`);
+    const qi = $('#crQ');
+    if (qi) qi.oninput = () => { ui.crQ = qi.value; ui.crN = 12; renderCreative(); const x = $('#crQ'); x.focus(); x.setSelectionRange(x.value.length, x.value.length); };
+    const cs = $('#crCat'); if (cs) cs.onchange = () => { ui.crCat = cs.value; };
+    view.querySelectorAll('[data-crp]').forEach(b => b.onclick = () => { ui.crP = b.dataset.crp; renderCreative(); });
+    view.querySelectorAll('[data-crmode]').forEach(b => b.onclick = () => { ui.crMode = b.dataset.crmode; renderCreative(); });
+    view.querySelectorAll('[data-crf]').forEach(b => b.onclick = () => { ui.crF = b.dataset.crf; ui.crN = 12; renderCreative(); });
+    view.querySelectorAll('[data-crm]').forEach(b => b.onclick = () => {
+      const m = b.dataset.crm;
+      if (m === 'more') ui.crN = n + 12; else if (m === 'idea') ui.crIdea = null; else if (m === 'inv') R[mode] = null; else if (m === 'rp') R.rp = null; else ui.crSeed = (ui.crSeed || 0) + 1;
+      renderCreative();
+    });
+    // ✍️ Kendin yaz: 🔑 kelimelerden üç sonuç (listenin başına) ya da metni olduğu gibi Monia'ya
+    const cf = $('#crCompose');
+    if (cf) view.querySelectorAll('[data-crc]').forEach(b => b.onclick = () => {
+      const x = cf.x.value.trim(), t = cf.t.value.trim(), rp = P === 'rp', key = rp ? 'rp' : mode;
+      ui.crTxt = cf.x.value;
+      if (!x) { cf.x.focus(); return; }
+      if (b.dataset.crc === 'kw') { R[key] = [...crFromWords(x, key), ...(R[key] || [])].slice(0, 12); return renderCreative(); }
+      const title = t || x.split(/\s+/).slice(0, 4).join(' ').replace(/[.,;:!?]+$/, '');
+      if (crtHas(title)) { alert(`"${title}" zaten var; başka bir ad yaz`); return; }
+      const M = CR_MODES.find(c => c[0] === (mode === 'mix' ? 'fwd' : mode));
+      const it = rp ? { t: title, d: x, ic: '🎭', tags: ['roleplay'], color: pickOne(CR_RP_COLORS) } : { t: title, d: x, ic: '✍️' };
+      crPushEv(it, rp ? crCatFor(FANT_TAG) : crCatFor(M[3]));
+      mine.ideas.unshift([it.ic, title, x]);
+      ui.crTxt = '';
+      save(); sfx('match');
+      notify(`✍️ "${title}" Monia'ya eklendi`, '✨');
+      renderCreative();
+    });
+    const form = (id, fn) => { const el = $(id); if (el) el.onsubmit = e => { e.preventDefault(); const v = Object.fromEntries(new FormData(el)); Object.keys(v).forEach(k => v[k] = String(v[k]).trim()); if (fn(v, el) === false) return; save(); sfx('match'); renderCreative(); }; };
+    form('#crfIdea', v => {
+      if (!v.t) return false;
+      const ic = v.ic || '✨', d = v.d || '';
+      mine.ideas.unshift([ic, v.t, d]);
+      if (v.mo && !crtHas(v.t)) crPushEv({ t: v.t, d, ic }, cs.value);
+      notify(`💡 "${v.t}" kaydedildi${v.mo ? ', Monia\'ya eklendi' : ''}`, '✨');
+    });
+    form('#crfLens', v => {
+      if (!v.t) return false;
+      let k = v.k;
+      if (k === '+') { if (!v.nl) { alert('Yeni merceğin adını yaz'); return false; } k = 'u' + Store.uid(); mine.newLens.push({ k, ic: v.nic || '🌟', l: v.nl, v: [] }); }
+      (mine.lens[k] = mine.lens[k] || []).push([v.t, v.d || '']);
+      ui.crSeed = (ui.crSeed || 0) + 1;
+    });
+    form('#crfAtom', v => {
+      if (!v.d) return false;
+      if (['twist', 'rplace', 'hook'].includes(v.k)) mine.atoms[v.k].push(v.d);
+      else { if (!v.n) { alert(v.k === 'role' ? 'Onun rolünü yaz (ör. Hostes)' : 'İsimdeki kelimeyi yaz (ör. Lock)'); return false; } mine.atoms[v.k].push(v.k === 'role' ? [v.n, v.d, v.ic || '🎭'] : [v.n, v.ic || '✨', v.d]); }
+      ui.crRes = null;
+    });
+    const lf = $('#crfLens'); if (lf) lf.k.onchange = () => { lf.querySelector('.cr-newl').hidden = lf.k.value !== '+'; };
+    const af = $('#crfAtom');
+    if (af) {
+      const ph = { role: ['Onun rolü (ör. Hostes)', 'Senin rolün (ör. Yolcu)'], twist: [, 'Kural (ör. ses çıkaran kaybeder)'], rplace: [, 'Mekan (ör. Gece uçuşunda, kabin ışıkları sönükken)'], hook: [, 'Bahane (ör. iddiayı kaybetti)'],
+        prop: ['İsimdeki kelime (ör. Velvet)', 'Açıklama (ör. kadife örtünün üstünde)'] };
+      const sync = () => { const k = af.k.value, p = ph[k] || ['İsimdeki kelime (ör. Lock)', 'Açıklama (ör. bacaklarını beline kilitler)'];
+        af.querySelector('[data-for]').hidden = !af.querySelector('[data-for]').dataset.for.split(' ').includes(k); af.n.placeholder = p[0] || ''; af.d.placeholder = p[1]; };
+      af.k.onchange = sync; sync();
+    }
+    view.querySelectorAll('[data-crdel]').forEach(b => b.onclick = () => {
+      const [k, ...r] = b.dataset.crdel.split(':');
+      if (!confirm('Silinsin mi?')) return;
+      if (k === 'idea') mine.ideas.splice(+r[0], 1);
+      else if (k === 'nl') { const L = mine.newLens.splice(+r[0], 1)[0]; if (L) delete mine.lens[L.k]; }
+      else if (k === 'lens') { const [lk, i] = [r.slice(0, -1).join(':'), +r[r.length - 1]]; (mine.lens[lk] || []).splice(i, 1); }
+      else mine.atoms[k].splice(+r[0], 1);
+      ui.crRes = null;
+      save(); renderCreative();
+    });
+    view.querySelectorAll('[data-cradd]').forEach(b => b.onclick = () => {
+      const it = items[+b.dataset.cradd];
+      if (!it || crtHas(it.t)) return;
+      crPushEv(it, it.idea ? (cs ? cs.value : 'mine') : it.cat);
+      save();
+      sfx('match');
+      notify(`✨ "${it.t}" Monia'ya eklendi`, '✨');
+      b.outerHTML = '<span class="cr-ok">✓</span>';
     });
   }
 
@@ -3272,13 +3541,14 @@
     flix: ['🍿 Bir film ya da dizi seç, ▶ Oynat: hikaye yazışma olarak sırayla akar.', '⏸ duraklat, 1x/2x/3x hız, ⏭ hepsini göster. Dizide bölüm bitince sonraki kendiliğinden başlar.', '💬 Rolü oyna: başroldeki kızla o hikayeyi sohbette yaşarsın.', '🎨 Kendi yapımın: Monia → 🍿 Flix stüdyosu. Satır satır yaz ya da 🎲 bir konudan otomatik başlat.'],
     oyun: ['🎮 Problematic Subjects: hanımefendinin ricasını oku, en fazla 3 hareket seç, ✨ Uygula; 🎬 ara sahnede hareketler oynanır, sonda nereye boşalacağını seçersin.', '⭐ En sevdiği ×3, ricasına uyan +%50, yavaş yavaş tırmanma kombosu +%15.', '📦 Gün sonunda kutu aç; 📱 mesajlara bak, bazıları easter egg 🥚'],
     gram: ['📸 Akışta takip ettiklerin önce. Fotoğrafa iki kez dokun: ❤️ beğen.', '💬 Yorum yaz, o da cevap verir. Hikayeye yanıt ya da ✈️ DM sohbet açar.', 'Kayıtlı karakterin ilk gönderisi sohbette yaşadıklarınıza göre değişir 😏'],
-    itiraf: ['🎭 İsimsiz itiraflar; her açılışta sıra karışık. 🎲 Karıştır ile yeniden.', '✍️ En üstteki kutudan sen de itiraf yaz; ✍️ Benimkiler sekmesinde durur.', 'Kadın / erkek, uzun / kısa diye süz; 🔥😂😳 ile tepki ver.']
+    itiraf: ['🎭 İsimsiz itiraflar; her açılışta sıra karışık. 🎲 Karıştır ile yeniden.', '✍️ En üstteki kutudan sen de itiraf yaz; ✍️ Benimkiler sekmesinde durur.', 'Kadın / erkek, uzun / kısa diye süz; 🔥😂😳 ile tepki ver.'],
+    creative: ['✨ Kategori seç: her olayın altında mekan, tempo, duyular, rol, açı, oyun kuralı türevleri ve bir 🔀 zincir.', '➕ beğendiğin türevi Monia\'ya yeni olay olarak ekler (aynı kategori). 💡 Yepyeni fikirlerde kategoriyi sen seçersin.', '🧪 İcat makinesi sıfırdan olay kurar; ❤️ Forward / 🍑 Backward / 💋 Foreplay seç. ✍️ Kendin yaz: 🔑 kelimelerden kur ya da olduğu gibi ekle.', '🎭 Role-play paneli rol çifti + mekan + bahane icat eder; ✍️ Ekle panelinden parçalarını ekle.']
   };
   // her sayfanın kitaptaki bölümü (Lia "📖 Kitapta oku" ile oraya götürür)
   const HELP_BOOK = { home: 'Sohbetin temelleri', messages: 'Sohbetin temelleri', chat: 'İdeal bir seans', create: 'İzinler ve kurallar', hikayeler: 'Sohbetin temelleri',
     monia: 'Olaylar ve sonuçlar', olay: 'Olaylar ve sonuçlar', sonuc: 'Eşik olayları', gruplar: 'Ortak sonuçlar ve etiketler', kategoriler: 'Ortak sonuçlar ve etiketler',
     kurallar: 'İzinler ve kurallar', bot: 'Olaylar ve sonuçlar', me: 'Kayıt ve kurulumlar', p: 'Parametreler ve durumlar',
-    internet: 'İnternet nedir?', carmen: 'Carmen.com', fans: 'CarmenFans', otel: 'CarmenStay', canli: 'CarmenLive', parti: 'CarmenParty', shop: 'CarmenShop', is: 'CarmenJobs', klinik: 'CarmenKlinik', itiraf: 'Confessly', flix: 'CarmenFlix', gram: 'Carmentagram', oyun: 'Problematic Subjects' };
+    internet: 'İnternet nedir?', carmen: 'Carmen.com', fans: 'CarmenFans', otel: 'CarmenStay', canli: 'CarmenLive', parti: 'CarmenParty', shop: 'CarmenShop', is: 'CarmenJobs', klinik: 'CarmenKlinik', itiraf: 'Confessly', creative: 'CarmenCreative', flix: 'CarmenFlix', gram: 'Carmentagram', oyun: 'Problematic Subjects' };
   // bölüm adı → [kitap, bölüm] (bütün kitaplarda arar)
   const bookIdx = title => { for (const b of BOOKS) { const i = b.chapters.findIndex(c => c.title === title); if (i >= 0) return [b.id, i]; } return ['carmen', 0]; };
   // Lia'nın fotoğrafı: resim havuzundan hep aynısı
@@ -11244,7 +11514,7 @@
   const CTX_BOOK = { home: 'Sohbetin temelleri', messages: 'Sohbetin temelleri', chat: 'Sohbetin temelleri', esles: 'Sohbetin temelleri', create: 'İzinler ve kurallar', p: 'Parametreler ve durumlar',
     hikayeler: 'Olaylar ve sonuçlar', monia: 'Olaylar ve sonuçlar', senaryo: 'Olaylar ve sonuçlar', olay: 'Olaylar ve sonuçlar', sonuc: 'Olaylar ve sonuçlar', gruplar: 'Ortak sonuçlar ve etiketler', kategoriler: 'Ortak sonuçlar ve etiketler',
     kurallar: 'İzinler ve kurallar', izin: 'İzinler ve kurallar', bot: 'Kural yazma rehberi', deney: 'Bot deneyi ve eksik cevaplar', me: 'Kayıt ve kurulumlar',
-    internet: 'İnternet nedir?', carmen: 'Carmen.com', fans: 'CarmenFans', otel: 'CarmenStay', canli: 'CarmenLive', parti: 'CarmenParty', shop: 'CarmenShop', is: 'CarmenJobs', klinik: 'CarmenKlinik', itiraf: 'Confessly', flix: 'CarmenFlix', gram: 'Carmentagram', oyun: 'Problematic Subjects' };
+    internet: 'İnternet nedir?', carmen: 'Carmen.com', fans: 'CarmenFans', otel: 'CarmenStay', canli: 'CarmenLive', parti: 'CarmenParty', shop: 'CarmenShop', is: 'CarmenJobs', klinik: 'CarmenKlinik', itiraf: 'Confessly', creative: 'CarmenCreative', flix: 'CarmenFlix', gram: 'Carmentagram', oyun: 'Problematic Subjects' };
   const ctxKey = () => { const r = ui.route || {}; if (r.name === 'monia') return r.id === 'flix' ? 'flix' : ['sonuc', 'gruplar', 'kategoriler', 'olay'].includes(r.id) ? r.id : r.id ? 'senaryo' : 'monia'; if (r.name === 'kurallar' && r.id === 'izin') return 'izin'; return r.name || 'home'; };
   const ctxHelp = (cls = 'icon-btn') => `<button type="button" class="${cls} ctx-help" data-ctxhelp aria-label="Bu ekranın kitap bölümü" title="❓ ${esc(CTX_BOOK[ctxKey()] || 'Sohbetin temelleri')}">❓</button>`;
   document.addEventListener('click', e => {
@@ -11924,10 +12194,10 @@
         <li><b>🫦 CarmenFans</b> / <b>🎥 CarmenLive</b>: kostüm seti ya da bahşişle kostüm giydirirsen karakter fantezi tonunda konuşur; Fantezi gecesi seansıyla birlikte dene.</li>
         <li><b>💼 CarmenJobs</b>: mülakat Patron – Sekreter, Doktor, Hoca gibi rol olaylarıyla başlar; Rol yapma seansının hazır girişi.</li></ul>` }
   ];
-  /* 🌐 İnternet Kitabı: ana sayfadaki 🌐 İnternet kartındaki on bir site */
-  BOOKS.push({ id: 'internet', icon: '🌐', title: 'İnternet Kitabı', sub: 'Carmen.com, Fans, Flix, Stay, Live, Party, Shop, Jobs, Klinik, İtiraf', chips: ['11 site', 'sohbete bağlanır'], chapters: [
+  /* 🌐 İnternet Kitabı: ana sayfadaki 🌐 İnternet kartındaki on iki site */
+  BOOKS.push({ id: 'internet', icon: '🌐', title: 'İnternet Kitabı', sub: 'Carmen.com, Fans, Flix, Stay, Live, Party, Shop, Jobs, Klinik, İtiraf, Creative', chips: ['12 site', 'sohbete bağlanır'], chapters: [
     { icon: '🌐', title: 'İnternet nedir?', sub: 'siteler ve karakterler', body: `
-      <p>Ana sayfadaki <b>🌐 İnternet</b> kartı on bir siteyi açar. Sitelerdeki her şey senin dünyana bağlıdır: kızlar senin karakterlerin ya da Carmen.com ilanlarıdır, sitede yaptığın şey sohbete, değerlere, gardıroba ve ⚡ kısayollara yansır.</p>
+      <p>Ana sayfadaki <b>🌐 İnternet</b> kartı on iki siteyi açar. Sitelerdeki her şey senin dünyana bağlıdır: kızlar senin karakterlerin ya da Carmen.com ilanlarıdır, sitede yaptığın şey sohbete, değerlere, gardıroba ve ⚡ kısayollara yansır.</p>
       <table class="bk-t"><tr><th>Site</th><th>Ne işe yarar</th><th>Sohbete etkisi</th></tr>
         <tr><td>🌹 Carmen.com</td><td>ilanlar, seanslar, kurallar, yorumlar</td><td>Mesaj at → yeni sohbet</td></tr>
         <tr><td>🫦 CarmenFans</td><td>abonelik, kilitli gönderiler, özel içerik</td><td>kostüm giydirir, sexting sohbeti</td></tr>
@@ -11939,7 +12209,8 @@
         <tr><td>🛍️ CarmenShop</td><td>oyuncak, iç çamaşırı, kostüm</td><td>⚡ yeni olay, 👗 gardırop, kargo mesajı</td></tr>
         <tr><td>💼 CarmenJobs</td><td>onun iş yerine başvuru</td><td>🎭 rol olayı + iş yeri kartı</td></tr>
         <tr><td>🩺 CarmenKlinik</td><td>döngü, hamilelik takibi</td><td>sadece gösterir</td></tr>
-        <tr><td>🎭 Confessly</td><td>isimsiz aldatma itirafları</td><td>sadece okunur (ilham için)</td></tr></table>
+        <tr><td>🎭 Confessly</td><td>isimsiz aldatma itirafları</td><td>sadece okunur (ilham için)</td></tr>
+        <tr><td>✨ CarmenCreative</td><td>yeni pozisyon / olay fikirleri, türevler</td><td>➕ Monia'ya yeni olay → ⚡ kısayol</td></tr></table>
       <p><b>İlan kızları</b>: Carmen.com'da kayıtlı karakterlerinin yanında 36 rastgele ilan kızı vardır (her birinin kendi fotoğraf seti; aynı fotoğrafta iki kişi olmaz). Bir ilan kızına mesaj atınca, rezervasyon, sipariş, başvuru yapınca ya da kostüm giydirince <b>karakterlerine eklenir</b>; ilandaki ücretleri, puanı ve yorumları aynı kalır.</p>` },
     { icon: '🌹', title: 'Carmen.com', sub: 'ilanlar, VIP, kondom şartı, seanslar', body: `
       <p>İlan sitesi. Kartlarda fotoğraf, yaş, şehir, ⭐ puan, boy / kilo / göğüs / kalça ve sevdiği ilk üç olay görünür. Üstte <b>👑 VIP Vitrin</b>; sekmeler Hepsi · ● Çevrimiçi · 👑 VIP · ✨ Yeni. 🔄 Yeni ilanlar bütün ilan kızlarını yeniden üretir (kayıtlı karakterlerin kalır).</p>
@@ -12021,6 +12292,20 @@
         <li>🔥 😂 😳 ile tepki ver (bu açılışlık).</li>
         <li><b>✍️ Sen de itiraf et</b>: en üstteki kutuya yaz, kadın / erkek ve yaş seç, Paylaş. İtirafların en üstte ve ✍️ Benimkiler sekmesinde; 🗑 ile silinir (normal kayıtta, yedeğe girer).</li></ul>
       <p>İtiraflar karakterlerine bağlı değildir; sohbette fikir arıyorsan ilham için oku 😏</p>` },
+    { icon: '✨', title: 'CarmenCreative', sub: 'yeni pozisyon ve olay üretme atölyesi', body: `
+      <p>Var olan olaylardan yenilerini türetir. Her olay altı mercekten geçer; birini değiştirmek yeni bir olay doğurur:</p>
+      <table class="bk-t"><tr><th>Mercek</th><th>Örnek (Doggy)</th></tr>
+        ${CR_LENS.map(L => `<tr><td>${L.ic} ${L.l}</td><td>Doggy · ${L.v[0][0]}: ${L.v[0][1]}</td></tr>`).join('')}
+        <tr><td>🔀 Zincir</td><td>Doggy → Spooning: geçiş anı olayın kendisi</td></tr></table>
+      <p>Üstteki beş düğme paneller arasında geçer: <b>🧪 İcat makinesi · 🔬 Türevler · 🎭 Role-play · ✍️ Ekle · 💡 Fikirler</b>.</p>
+      <p><b>🧪 İcat makinesi</b> sıfırdan olay kurar: bir hareket + bir nesne / ortam (Velvet, Silk, Rain…) + bir kural ("durmak yasak", "sadece fısıltı"…) + kim yönetir → ör. <b>Velvet Lock</b>. Tür seç: 🎲 Karışık · ❤️ Forward · 🍑 Backward · 💋 Foreplay; eklenen olay o türün kategorisine girer.</p>
+      <p><b>✍️ Kendin yaz</b> (İcat ve Role-play panelinde): <b>🔑 Kelimelerden kur</b> virgülle yazdığın kelimelere (duş, ipek, Lock, hemşire…) uyan parçaları seçer, eşleşmeyenleri "Öğeler" olarak ekler ve üç fantezi kurar. <b>✍️ Olduğu gibi ekle</b> yazdığın metni doğrudan Monia'ya olay yapar.</p>
+      <p><b>🎭 Role-play</b>: rol çifti (Hostes – Yolcu, Hemşire – Hasta…) + mekan + bahane. Eklenince Fantesy kategorisine 🏷️ roleplay etiketiyle girer.</p>
+      <ul><li><b>✍️ Ekle</b>: kendi olayını yaz (istersen doğrudan Monia'ya); icat makinesine Forward / Backward / Foreplay hareketi, nesne, kural; role-play'e rol çifti, mekan, bahane; merceklere varyant ya da yepyeni mercek. 🗂️ Eklediklerin listesinde 🗑 ile silinir; yedeğe girer.</li>
+        <li><b>Kategori sekmeleri</b>: seçtiğin kategorideki her olayın altında yedi türev; 🔎 ile olay ara, ⬇️ Daha fazla 12'şer açar.</li>
+        <li><b>➕ Ekle</b>: türev Monia'ya yeni olay olarak, aynı kategoriye girer (emojisi ve etiketleri asıl olaydan); eklenmişse ✓ görünür. Sonra 🎬 Monia'da metnini, sonuçlarını düzenlersin.</li>
+        <li><b>💡 Yepyeni</b>: ${CR_IDEAS.length} sıfırdan fikir (Mirror Tease, Phone Call, Ice Play, Elevator Stop…); hangi kategoriye gireceğini üstteki kutudan seçersin.</li>
+        <li><b>🎲 Türev karıştır</b>: rastgele bir pozisyonu iki mercekle karıştırır (ör. Cowgirl · Kanepede · Gözler bağlı). <b>🔁</b> bütün türevleri yeniden üretir.</li></ul>` },
     { icon: '🗄️', title: 'Nerede saklanır?', sub: 'kayıt ve yedek', body: `
       <table class="bk-t"><tr><th>Ne</th><th>Nerede</th></tr>
         <tr><td>Karakterler, sohbetler, gardırop, Güven / Aşk, CarmenShop siparişleri, oyuncak olayları</td><td>normal kayıt (💾 yedeğe girer)</td></tr>
