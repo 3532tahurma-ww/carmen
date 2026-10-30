@@ -1619,6 +1619,17 @@
       'kapı aralık kalır', 'onun seçtiği şarkı bitene kadar', 'telefon çalınca donarsınız', 'aynı anda nefes verirsiniz', 'her dokunuştan önce izin istenir', 'zamanlayıcı 7 dakikaya kurulu', 'ses çıkaran kaybeder', 'gözler bağlı'],
     lead: ['O yönetir', 'Sen yönetirsin', 'Sırayla yönetirsiniz', 'Kim önce sabrını kaybederse o teslim olur'],
     role: [['Hostes', 'Yolcu', '✈️'], ['Kütüphaneci', 'Gürültücü okur', '📚'], ['Fitness hocası', 'Yeni üye', '🏋️'], ['Barmen kız', 'Son müşteri', '🍸'], ['Emlakçı', 'Ev bakan alıcı', '🏡'],
+      ['Avukat', 'Müvekkil', '⚖️'], ['Dişçi', 'Hasta', '🦷'], ['Psikolog', 'Danışan', '🛋️'], ['Veteriner', 'Hayvan sahibi', '🐾'], ['Eczacı', 'Gece müşterisi', '💊'],
+      ['Kuaför', 'Müşteri', '💇‍♀️'], ['Manikürcü', 'Müşteri', '💅'], ['Dövmeci', 'İlk dövmesini yaptıran', '🖋️'], ['Gazeteci', 'Röportaj verdiği ünlü', '🎙️'], ['Muhasebeci', 'Vergi müfettişi', '📊'],
+      ['Mimar', 'Müteahhit', '📐'], ['Şef aşçı', 'Mutfak çırağı', '👩‍🍳'], ['Pastacı', 'Pasta siparişi veren', '🎂'], ['Kasiyer', 'Mağaza güvenliği', '🛒'], ['Satış danışmanı', 'Kabine giren müşteri', '👗'],
+      ['Resepsiyonist', 'Geç gelen misafir', '🛎️'], ['Banka memuru', 'Kredi isteyen müşteri', '🏦'], ['Sigortacı', 'Hasar sahibi', '📄'], ['İtfaiyeci', 'Kurtardığı kişi', '🚒'], ['Cankurtaran', 'Boğulmak üzere olan yüzücü', '🛟'],
+      ['Kayak hocası', 'Acemi kayakçı', '⛷️'], ['Tenis hocası', 'Öğrenci', '🎾'], ['Dalış eğitmeni', 'Kursiyer', '🤿'], ['Binicilik hocası', 'Öğrenci', '🐎'], ['Piyano öğretmeni', 'Özel ders öğrencisi', '🎹'],
+      ['Dans hocası', 'Düğün dansı öğrencisi', '🩰'], ['Özel şoför', 'Patronu', '🚘'], ['Taksi şoförü', 'Gece yolcusu', '🚕'], ['Kargo kuryesi', 'Kapıyı açan', '📦'], ['Pizza kuryesi', 'Parası eksik müşteri', '🍕'],
+      ['Bahçıvan', 'Villa sahibi', '🌿'], ['Fizyoterapist', 'Sakat sporcu', '🦵'], ['Diyetisyen', 'Danışan', '🥗'], ['Müze görevlisi', 'Kapanışta kalan ziyaretçi', '🏛️'], ['Galerici', 'Koleksiyoncu', '🖼️'],
+      ['Ressam', 'Çıplak model', '🎨'], ['Sunucu', 'Yapımcı', '📺'], ['Oyuncu', 'Yönetmen', '🎬'], ['Şarkıcı', 'Menajeri', '🎤'], ['DJ', 'Kulüp sahibi', '🎧'],
+      ['Yazar', 'Editörü', '✍️'], ['Gümrük memuru', 'Yolcu', '🛃'], ['Hakem', 'Futbolcu', '🟨'], ['Laborant', 'Gönüllü denek', '🧪'], ['CEO', 'Yeni asistanı', '🏢'],
+      ['Pilot', 'Kabin memuru', '🛫'], ['Krupiye', 'Kaybeden oyuncu', '🎰'], ['Sihirbazın asistanı', 'Sihirbaz', '🎩'], ['Kondüktör', 'Biletsiz yolcu', '🚆'], ['Otel müdürü', 'Şikâyetçi misafir', '🏨'],
+      ['Sörf hocası', 'Acemi sörfçü', '🏄‍♀️'], ['Golf hocası', 'Öğrenci', '⛳'], ['Gardiyan', 'Mahkum', '🔒'], ['Mağaza müdürü', 'Hırsızlıktan yakalanan müşteri', '🏬'], ['Yazılımcı', 'Proje müdürü', '💻'],
       ['Model', 'Fotoğrafçı', '📸'], ['Prenses', 'Koruması', '👑'], ['Hemşire', 'Gece nöbetindeki hasta', '💉'], ['Stajyer', 'Müdür', '🗂️'], ['Kiracı', 'Ev sahibi', '🔑'],
       ['Garson', 'Müşteri', '🍽️'], ['Dansçı', 'VIP misafir', '💃'], ['Yoga hocası', 'Öğrenci', '🧘'], ['Vampir', 'Kurbanı', '🧛‍♀️'], ['Ajan', 'Hedefi', '🕵️‍♀️'],
       ['Kraliçe', 'Hizmetkârı', '👸'], ['Komşunun karısı', 'Tesisatçı', '🚰'], ['Kaptan', 'Tayfa', '⚓'], ['Sınav gözetmeni', 'Kopya çeken öğrenci', '📝'], ['Otostopçu', 'Sürücü', '🚗'],
@@ -4845,7 +4856,8 @@
      * 🥴 Zevk = boşalma isteği, 💦 Cum = ne kadar boşalabileceği */
     // 🗣️ komut kuralının olayı (CMD_EV): varsa önce karakterin ❤️ sevdiği, 🚫 izin vermediği atlanır
     function cmdEvent(ruleId, ch) {
-      const key = String(ruleId || '').replace(/_(shy|exp|sever|sevmez)$/, '').replace(/\d+$/, '');
+      // 🔥 "seni sikmek istiyorum" (r_hz_sik*) da "gir" komutu gibi pozisyonu başlatır
+      const key = String(ruleId || '').replace(/^r_hz_sik.*/, 'r_cmd_gir').replace(/_(shy|exp|sever|sevmez)$/, '').replace(/\d+$/, '');
       return pickByTitles(CMD_EV[key], ch);
     }
     // ❔ şimdi sorulabilecek bir soru konusu (BOT_ASK): bitişten sonra "tekrar", önden pozisyonda Zevk yüksekse çoğu zaman "icine"
@@ -4897,10 +4909,11 @@
       const hits = FLAVOR.map(f => {
         const evs = all.filter(e => f.mode ? low(catOfEv(e).label) === 'mode' && low(e.title) === f.key : low(e.title).startsWith(f.key));
         return { f, a: Math.min(Infinity, ...evs.map(e => ago(e.id))) };
-      }).filter(h => h.a !== Infinity && (h.f.mode || h.a <= 30));
-      // Mode'lardan sadece en sonuncusu geçerli
+      }).filter(h => h.a !== Infinity);
+      // Mode'lardan ve fantezilerden sadece en sonuncusu geçerli (fantezi başkası gelene kadar sürer)
       const lastMode = hits.filter(h => h.f.mode).sort((x, y) => x.a - y.a)[0];
-      hits.filter(h => !h.f.mode || h === lastMode).forEach(({ f }) => {
+      const fr = fantRecent(), lastFant = fr && hits.find(h => !h.f.mode && low(fr.title).startsWith(h.f.key));
+      hits.filter(h => h === lastFant || h === lastMode).forEach(({ f }) => {
         if (Math.random() > (f.p || .5)) return;
         // cevap zaten aynı sözle başlıyorsa (ör. "Şşş…") ön ek eklenmez
         const p = f.pre && pickOne(f.pre), w = p && p.trim().split(/[\s,…]/)[0];
@@ -4987,6 +5000,16 @@
       const moodBest = ch => {
         // 🛡️ korunma olayında genel olay cevabı yerine sadece izne göre tepki (izin verdiği / vermediği / nötr)
         if (opts.events && /^izin_/.test(opts.state || '')) return { rule: { id: '_durum', reply: [] }, score: 0, fallback: false };
+        // 🦄 fantezi / rol sürerken ("… fant fxkedi …") önce o fantezinin kuralları: genel pozisyon / boşalma metinlerinin önüne geçer
+        if (opts.events && / fant fx\w+/.test(userMsg.text)) {
+          // 🥚 pozisyon / boşalma easter egg'i (r_fe_* + "=evt"): bulunmadıysa hep, bulunduysa %25
+          const eggs = { ...rules, rules: (rules.rules || []).filter(r => String(r.id).startsWith('r_fe_') && (r.when || []).includes('=evt')) };
+          const em = eggs.rules.length && BOT.best(eggs, userMsg.text, ch);
+          if (em && !em.fallback && (!fantEggOpen(em.rule) || Math.random() < .25)) return em;
+          const only = { ...rules, rules: (rules.rules || []).filter(r => (r.when || []).includes('=fant')) };
+          const m = only.rules.length && BOT.best(only, userMsg.text, ch);
+          if (m && !m.fallback) return m;
+        }
         if (yn) {
           const only = { ...rules, rules: (rules.rules || []).filter(r => (r.when || []).includes('=cevap') && (r.when || []).includes('=' + pend.t)) };
           const m = only.rules.length && BOT.best(only, `cevap ${pend.t} ${yn} ${korToken(ch)}`, ch);
@@ -5014,6 +5037,14 @@
         // 🎭 kişiliği varsa yarı yarıya önce kişilik kuralları (r_pk_*: sevişme, ısınma, boşalma, onun orgazmı)
         // kendi cevabı zaten kişiliğe göre değişen olaylar (🍼 Breastfeeding) hariç
         const own = BOT.best(rules, userMsg.text, ch, false);
+        // 🔥 azgın sözler ("çok azdım", "çok seksisin", "seni sikmek istiyorum", "içine boşalmak istiyorum"): r_hz_* kuralları;
+        // süren fantezi varsa ona özel olanlar ("… fant fxkedi"), yoksa kişiliğe göre. Daha özel bir kural (ör. göğüs iltifatı, ısrar) tutarsa o kalır
+        if (!opts.events) {
+          // 🦄 fantezi sürerken ona özel soru-cevaplar (r_fq_*) ve easter egg'ler (r_fe_*) de burada yarışır
+          const only = { ...rules, rules: (rules.rules || []).filter(r => /^r_(hz|fq|fe)_/.test(r.id)) }, f = fantRecent();
+          const m = only.rules.length && BOT.best(only, `${userMsg.text}${f ? ` fant ${fantKey(f)}` : ''}`, ch);
+          if (m && !m.fallback && (!own || own.fallback || own.score < m.score || /^r_(cmp(_(?!bd)|$)|cmd_gir$|q2_bosal$|q2_azgin$)/.test(own.rule.id))) return m;
+        }
         if (Math.random() < .5 && !(own && PK_OWN.has(own.rule.id))) {
           const only = { ...rules, rules: (rules.rules || []).filter(r => String(r.id).startsWith('r_pk_') && !(r.when || []).includes('=durum')) };
           const m = only.rules.length && BOT.best(only, userMsg.text, ch, !opts.events);
@@ -5029,6 +5060,8 @@
       const topScore = Math.max(...cands.map(x => x.m.score + (x.m.fallback ? 0 : 1000)));
       const win = cands.filter(x => x.m.score + (x.m.fallback ? 0 : 1000) === topScore);
       const { ch, m } = win[Math.floor(Math.random() * win.length)];
+      // 🥚 fantezi easter egg'i bulundu: 🦄 Fantezi Kitabı'nda açılır
+      if (String(m.rule.id).startsWith('r_fe_')) fantEggFound(m.rule);
       // 📭 yedek cevaba düşen mesaj: Bot deneyindeki eksik cevap raporuna
       if (m.fallback && !opts.events && !yn) botMiss(userMsg.text, ch);
       // 🙏 izin dışı ısrar: kaçıncı ısrar; razı olursa bu tur içine istiyormuş gibi (uyarı yok, boşalınca kızmaz)
@@ -5106,6 +5139,12 @@
         const only = { ...rules, rules: (rules.rules || []).filter(r => (r.when || []).includes('=sor') && (r.when || []).includes('=' + t)) };
         const qm = only.rules.length && BOT.best(only, `sor ${t}`, ch);
         if (qm && !qm.fallback) { parts.push(...BOT.reply(qm.rule, vars, botRecent(qm.rule.id))); th.botAsk = { t }; }
+      }
+      // 🔀 pozisyon geçişi: geçiş baloncuğu pozisyon cevabının önüne
+      if (opts.trans) {
+        const only = { ...rules, rules: (rules.rules || []).filter(r => (r.when || []).includes('=gecispoz')) };
+        const tm = only.rules.length && BOT.best(only, opts.trans, ch);
+        if (tm && !tm.fallback) parts.unshift(...BOT.reply(tm.rule, vars, botRecent(tm.rule.id)));
       }
       botRecent();
       // yer tutucular: {ö:Boob Size} {sever} {cevap:…} … (bu sohbetteki orgazm / boşalma sayılarıyla)
@@ -5380,8 +5419,8 @@
     };
     // 📍 sohbetin şu anki mekanı (son mekan kartı) → PLACE_KEY anahtarı
     const placeKey = () => { const s = lastScene(); return (s && PLACE_KEY[s.scene.place]) || ''; };
-    // 🦄 son 30 mesajdaki en son fantezi
-    const fantRecent = () => { const all = allEvents(); return list.filter(m => m.from !== 'sys').slice(-30).map(m => m.ev && all.find(y => y.id === m.ev)).filter(isFant).pop() || null; };
+    // 🦄 sohbetteki en son fantezi: başka bir fantezi gelene kadar sürer
+    const fantRecent = () => { const all = allEvents(); return list.filter(m => m.from !== 'sys').map(m => m.ev && all.find(y => y.id === m.ev)).filter(isFant).pop() || null; };
     // 🎼 Mode olayı olunca ona uygun parça kendiliğinden çalar (⋯ Diğer → 🎼 ile kapatılır)
     const MODE_MUSIC = { gentle: 'ruya', passionate: 'kalp', assertive: 'tutku', rough: 'tutku', brutal: 'tutku', inletmeli: 'gece', 'bağırtmalı': 'tutku', 'ağlatmalı': 'yagmur' };
     function modeMusic(e) {
@@ -5394,7 +5433,7 @@
       const b = $('[data-tool="music"]');
       if (b) b.classList.add('on');
     }
-    /* 📱 rastgele kesintiler: pozisyondan sonra bazen telefon çalar, kapı çalınır, komşu duyar… (%6; son 30 mesajda Cheating varsa %22 ve
+    /* 📱 rastgele kesintiler: pozisyondan sonra bazen telefon çalar, kapı çalınır, komşu duyar… (%6; Cheating fantezisi sürüyorsa %22 ve
      * "yakalanma" hâlleri). Karakter "=durum =kes_<tür>" kurallarıyla cevap verir; arka arkaya 8 mesaj içinde bir daha gelmez */
     const INTERRUPTS = [
       { k: 'telefon', n: '📱 Telefon çaldı…', g: '📱 Telefon çaldı… ekranda "Sevgilim ❤️" yazıyor' },
@@ -5782,9 +5821,9 @@
       // 💦 boşalmada hangi pozisyondayken olduğu da gider: "… poz <pozisyon> <kategorisi>" (kurallar ör. =poz, doggy)
       // 🦄 fantezi olayında da şu anki pozisyon gider ("evt fantesy Cat Girl poz Doggy Backward")
       const cum = (e.tags || []).some(t => low(t) === 'boşalma'), fan = isFant(e), pos = (cum || fan) && posNow();
-      // 🦄 son 30 mesajda bir fantezi olduysa pozisyon / boşalma çoğu zaman onunla gider: "… <olay> fant fxkedi poz …"
+      // 🦄 bir fantezi olduysa (başka fantezi gelene kadar) pozisyon / boşalma onunla gider: "… <olay> fant fxkedi poz …"
       const fmsgs = list.slice(0, Math.max(0, list.indexOf(added[0]))).filter(m => m.from !== 'sys').slice(-30);
-      const fnow = !fan && Math.random() < .6 && (fmsgs.map(m => m.ev && all.find(y => y.id === m.ev)).filter(isFant).pop() || null);
+      const fnow = !fan && (list.slice(0, Math.max(0, list.indexOf(added[0]))).map(m => m.from !== 'sys' && m.ev && all.find(y => y.id === m.ev)).filter(isFant).pop() || null);
       // 📍 pozisyonda bazen mekan da gider: "… mekan araba" (kurallar =mekan, =araba)
       const mk = isPosEv(e) && !cum && placeKey(), mekan = mk && Math.random() < .4 ? ` mekan ${mk}` : '';
       // 💥 son Mode pozisyonun şiddetini belirler (%70): "… mod mdinlet" (inletmeli), mdbagir, mdaglat, mdsert, mdvahsi, mdnaz, mdtutku, mdbaskin
@@ -5840,12 +5879,12 @@
         const fx = hurt.map(([l, d]) => { const pp = allParams().find(x => x.who !== 'me' && low(x.label) === l); return pp && { p: 'p:' + pp.id, d }; }).filter(Boolean);
         if (fx.length) applyOutcome({ text: '', effects: fx }, [ch.id]);
       }
-      if (!state && evs[0] && isPos(evs[0]) && i0 > 0) {
-        let prev = null;
-        for (let i = i0 - 1; i >= 0 && !prev; i--) { const x = list[i].ev && all.find(y => y.id === list[i].ev); if (x && isPos(x)) prev = x; }
-        const cc = low(catOfEv(evs[0]).label);
-        if (prev && low(catOfEv(prev).label) !== cc && LIA_PHASES.some(p => p.cat === cc)) state = 'gecis' + cc;
-      }
+      let prev = null;
+      if (evs[0] && isPos(evs[0]) && i0 > 0) for (let i = i0 - 1; i >= 0 && !prev; i--) { const x = list[i].ev && all.find(y => y.id === list[i].ev); if (x && isPos(x)) prev = x; }
+      const cc = evs[0] ? low(catOfEv(evs[0]).label) : '', pc = prev ? low(catOfEv(prev).label) : '';
+      if (!state && prev && pc !== cc && LIA_PHASES.some(p => p.cat === cc)) state = 'gecis' + cc;
+      // 🔀 başka bir pozisyona geçiş: pozisyon cevabından önce geçiş baloncuğu ("=gecispoz" + eski ve yeni kategori, süren fantezi)
+      const trans = prev && prev.id !== evs[0].id && [pc, cc].every(k => LIA_PHASES.some(p => p.cat === k)) ? `durum gecispoz ${pc} ${cc}${fnow ? ` fant ${fantKey(fnow)}` : ''}` : '';
       if (!state && (isPos(e) || cum || low(e.title) === 'orgazm') && i0 >= 0) {
         const n = list.slice(0, i0).filter(x => x.ev === e.id).length;
         state = n === 0 ? 'ilkkez' : n >= 2 ? 'hepbunu' : 'yine';
@@ -5855,7 +5894,7 @@
       const sizes = cum ? evs.filter(x => low(catOfEv(x).label) === 'cumming size').map(x => x.title) : [];
       // 💦 onun orgazmında ardından gelen Woter / Milk da gider: "… sivi Squirt Woter Normal Milk"
       const fluids = low(e.title) === 'orgazm' ? evs.filter(x => x !== e && low(catOfEv(x).label) === 'lactation').map(x => x.title) : [];
-      botReply({ text: `evt ${(e.tags || []).join(' ')} ${catOfEv(e).label || ''} ${e.title}${fnow ? ` fant ${fantKey(fnow)}` : ''}${mekan}${modq}${pos ? ` poz ${pos.title} ${catOfEv(pos).label || ''}` : ''}${sizes.length ? ` miktar ${sizes.join(' ')}` : ''}${fluids.length ? ` sivi ${fluids.join(' ')}` : ''}` }, { events: true, mood, state, stateP, olay: e.title, climax: cum || low(e.title) === 'orgazm' });
+      botReply({ text: `evt ${(e.tags || []).join(' ')} ${catOfEv(e).label || ''} ${e.title}${fnow ? ` fant ${fantKey(fnow)}` : ''}${mekan}${modq}${pos ? ` poz ${pos.title} ${catOfEv(pos).label || ''}` : ''}${sizes.length ? ` miktar ${sizes.join(' ')}` : ''}${fluids.length ? ` sivi ${fluids.join(' ')}` : ''}` }, { events: true, mood, state, stateP, trans, olay: e.title, climax: cum || low(e.title) === 'orgazm' });
     }
     // 💁‍♀️ Lia önerisine dokununca olay yazılır; 📖 kitabın "İdeal bir seans" bölümü; ✕ kapatır
     $('#evQuick').onclick = e => {
@@ -6858,7 +6897,7 @@
     r_cmd_meme: ['Show Tits'], r_cmd_kalca: ['Show Ass'], r_cmd_kaldir: ['Doggy', 'Standing doggy'], r_cmd_dizcok: ['Blowjob', 'Deepthroat'],
     r_cmd_agiz: ['Blowjob', 'Deepthroat'], r_cmd_hotdog: ['Hotdogging'], r_cmd_emzir: ['Breastfeeding'], r_cmd_rtit: ['Reverse Titfuck'], r_cmd_rtit2: ['Reverse Titfuck'], r_cmd_yat: ['Missionary'], r_cmd_gir: ['Missionary', 'Cowgirl', 'Spooning', 'Doggy']
   };
-  /* 🎭 ton: fantezi son 30 mesajda olduysa, Mode'lardan en sonuncusu hep (p: olasılık). pre başa, add sona eklenir */
+  /* 🎭 ton: en son fantezi (başkası gelene kadar), Mode'lardan en sonuncusu hep (p: olasılık). pre başa, add sona eklenir */
   const FLAVOR = [
     { key: 'cat girl', add: [' miyav 🐱', ' mrrr~ 🐾', ' *patisiyle dokunur* 🐾'], p: .6 },
     { key: 'bunny girl', add: [' 🐰', ' *kulaklarını oynatır* 🐰', ' *zıplar* 🐇'] },
@@ -6879,6 +6918,14 @@
     { key: 'yeni komşu', pre: ['Komşucuğum… ', 'Şşş, duvarlar ince… '], add: [' 🏠'] },
     { key: 'hizmetçi', pre: ['Efendim… ', '*önlüğünü düzeltir* '], add: [' 🧹'] },
     { key: 'masöz', add: [' *yağlı ellerle*', ' *omuzlarına bastırır*', ' 💆'] },
+    { key: 'avukat', pre: ['Müvekkilim… ', '*dosyayı kapatır* ', '*cübbesini omzundan kaydırır* '], add: [' ⚖️'] },
+    { key: 'psikolog', pre: ['Anlatın bakalım… ', '*not defterini bırakır* ', '*bacak bacak üstüne atar* '], add: [' 🛋️'] },
+    { key: 'gardiyan', pre: ['Mahkum… ', '*copunu parmaklığa vurur* ', '*kelepçeleri şakırdatır* '], add: [' 🔒'] },
+    { key: 'pizza kuryesi', pre: ['Siparişiniz… ', '*kutuyu tezgâha bırakır* ', '*kaskını çıkarır* '], add: [' 🍕'] },
+    { key: 'ressam', pre: ['Modelim… ', '*fırçayı dudağına götürür* ', '*boyalı parmaklarıyla dokunur* '], add: [' 🎨'] },
+    { key: 'dans hocası', pre: ['Beş, altı, yedi, sekiz… ', '*aynada sana bakar* ', 'Öğrencim, '], add: [' 🩰'] },
+    { key: 'fizyoterapist', pre: ['Nefes alın… ', '*kasına bastırır* ', 'Gevşeyin, '], add: [' 🦵'] },
+    { key: 'taksi şoförü', pre: ['Yolcum… ', '*dikiz aynasından bakar* ', '*taksimetreyi kapatır* '], add: [' 🚕'] },
     { key: 'gentle', mode: true, add: [' 💕', ' 🥰'] },
     { key: 'passionate', mode: true, add: [' 🔥', ' 💋'] },
     { key: 'assertive', mode: true, pre: ['*kontrolü ele alır* ', '*seni yatağa iter* '] },
@@ -8203,7 +8250,7 @@
   function poolOf(cat) {
     const raw = cat.items || [];
     const built = [...new Set(raw)].map(x => typeof x === 'string' ? { title: x, text: '' } : { title: x.title, text: x.text || '' })
-      .map(x => ({ id: `b:${cat.id}:${x.title}`, ...x, cat: cat.id, builtin: true }));
+      .map(x => ({ id: `b:${cat.id}:${x.title}`, ...x, desc: evDescOf(x.title), cat: cat.id, builtin: true }));
     // detaylandırdığın hazır olay (base) hazırın yerine geçer
     const over = new Set(MO().events.map(e => e.base).filter(Boolean));
     return [...built.filter(b => !over.has(b.id)), ...MO().events.filter(e => (e.cat || 'mine') === cat.id)];
@@ -8221,7 +8268,9 @@
   // bot sorgusunda süren fantezi bir anahtarla gider ("fant fxkopek"): adındaki "Doggy" gibi kelimeler pozisyon kurallarını tutmasın
   const FANT_KEYS = [['cat girl', 'fxkedi'], ['bunny girl', 'fxtavsan'], ['fox girl', 'fxtilki'], ['doggy girl', 'fxkopek'], ['unicorn girl', 'fxunikorn'],
     ['bondage', 'fxbag'], ['cheating', 'fxgizli'], ['sex toys', 'fxtoy'], ['belly bulge', 'fxkarin'], ['cumflation', 'fxdolum'],
-    ['kadın hoca', 'fxrpprof'], ['patron', 'fxrpofis'], ['hoca', 'fxrpkampus'], ['doktor', 'fxrpmuayene'], ['polis', 'fxrpsorgu'], ['yeni komşu', 'fxrpkapi'], ['hizmetçi', 'fxrpev'], ['masöz', 'fxrpmasaj']];
+    ['kadın hoca', 'fxrpprof'], ['patron', 'fxrpofis'], ['hoca', 'fxrpkampus'], ['doktor', 'fxrpmuayene'], ['polis', 'fxrpsorgu'], ['yeni komşu', 'fxrpkapi'], ['hizmetçi', 'fxrpev'], ['masöz', 'fxrpmasaj'],
+    ['avukat', 'fxrpavukat'], ['psikolog', 'fxrppsikolog'], ['gardiyan', 'fxrpgardiyan'], ['pizza kuryesi', 'fxrppizza'],
+    ['ressam', 'fxrpressam'], ['dans hocası', 'fxrpdans'], ['fizyoterapist', 'fxrpfizyo'], ['taksi şoförü', 'fxrptaksi']];
   const fantKey = e => (FANT_KEYS.find(([t]) => String(e.title || '').toLocaleLowerCase('tr').startsWith(t)) || [, 'fxdiger'])[1];
   const isFant = e => !!e &&((catOfEv(e).tags || []).includes(FANT_TAG) || String(catOfEv(e).label || '').toLocaleLowerCase('tr') === FANT_TAG);
   // ✅/🚫 karakterin izin verdiği / vermediği olaylar: 'if' etiketli kategorilerden (c.allows / c.denies)
@@ -11251,20 +11300,30 @@
   /* 🎭 rol yapma fantezileri (🏷️ roleplay) Fantesy kategorisine; her sürüm (S().roleV) sadece kendi yenilerini ekler,
    * aynı adlı olay varsa eklenmez. Sürüm 2: Kadın Hoca – Öğrenci (o hoca, sen öğrenci) */
   const ROLEPLAY2 = [['Kadın Hoca – Öğrenci (Üniversite)', '👩‍🏫', '#7e57c2', 'Kampüste, ofis saatinde: o hoca, sen öğrenci']];
+  // Sürüm 3: CarmenCreative mesleklerinden
+  const ROLEPLAY3 = [['Avukat – Müvekkil', '⚖️', '#455a64', 'Hukuk bürosunda, kapı kilitli: o avukat, sen ücretini ödeyemeyen müvekkil'],
+    ['Psikolog – Danışan', '🛋️', '#8e24aa', 'Seans odasında, divanda: o psikolog, sen bastırdığı arzuları olan danışan'],
+    ['Gardiyan – Mahkum', '🔒', '#37474f', 'Cezaevinde gece nöbeti, kameralar kapalı: o gardiyan, sen mahkum'],
+    ['Pizza Kuryesi – Müşteri', '🍕', '#e53935', 'Kapında gece teslimatı: o pizza kuryesi, sen parası eksik müşteri']];
+  // Sürüm 4
+  const ROLEPLAY4 = [['Ressam – Çıplak Model', '🎨', '#f4511e', 'Atölyede, tuval başında: o ressam, sen çıplak poz veren model'],
+    ['Dans Hocası – Öğrenci', '🩰', '#d81b60', 'Boş dans stüdyosunda, aynaların önünde: o dans hocası, sen özel ders alan öğrenci'],
+    ['Fizyoterapist – Sporcu', '🦵', '#00897b', 'Tedavi odasında, masaj masasında: o fizyoterapist, sen sakatlanmış sporcu'],
+    ['Taksi Şoförü – Gece Yolcusu', '🚕', '#fbc02d', 'Gece yarısı taksinin arka koltuğunda: o şoför, sen parası çıkmayan yolcu']];
   const ROLEPLAY = [['Patron – Sekreter', '💼', '#5c6bc0', 'Ofiste, mesai sonrası: o sekreter, sen patron'], ['Hoca – Öğrenci (Üniversite)', '🎓', '#8d6e63', 'Kampüste, ofis saatinde: o öğrenci, sen hoca'],
     ['Doktor – Hasta', '🩺', '#26a69a', 'Muayenehanede: o hasta, sen doktor'], ['Polis – Şüpheli', '🚓', '#1e88e5', 'Sorgu odasında: o şüpheli, sen polis'],
     ['Yeni Komşu', '🏠', '#ef6c00', 'Kapıya şeker istemeye gelen yeni komşu'], ['Hizmetçi – Ev Sahibi', '🧹', '#6d4c41', 'O hizmetçi, sen ev sahibi'], ['Masöz – Müşteri', '💆', '#ab47bc', 'Masaj salonunda: o masöz, sen müşteri']];
   function fixRole1() {
     const mo = S().monia, low = s => String(s || '').toLocaleLowerCase('tr').trim();
     const v = S().roleV || (S().roleSetup1 ? 1 : 0);
-    if (!mo || v >= 2 || !(mo.events || []).length) return;
+    if (!mo || v >= 4 || !(mo.events || []).length) return;
     const cat = moCats().find(c => low(c.label) === FANT_TAG);
     if (!cat) return;
-    [...(v < 1 ? ROLEPLAY : []), ...ROLEPLAY2].forEach(([title, emojis, color, desc]) => {
+    [...(v < 1 ? ROLEPLAY : []), ...(v < 2 ? ROLEPLAY2 : []), ...(v < 3 ? ROLEPLAY3 : []), ...ROLEPLAY4].forEach(([title, emojis, color, desc]) => {
       if (mo.events.some(e => low(e.title) === low(title))) return;
       mo.events.push({ id: Store.uid(), title, cat: cat.id, text: '', steps: [], opener: '', starter: '', tones: [], note: '', part: '', when: '', place: '', mix: [], tags: ['roleplay'], desc, color, emojis });
     });
-    S().roleV = 2;
+    S().roleV = 4;
     save();
   }
   /* ✋ bir kez (S().holdSetup1): Holding / Hard Holding / Cock Ring kendi sonuçlarını alır ("Cumming" ortak sonucu artık uygulanmaz, Cum düşmez):
@@ -11315,6 +11374,83 @@
         onEffects: fx, desc: 'Göğüslerini emersin (hamileyse sütünü içersin): Uyarılma +30, onu orgazma götürür', color: '#f8a5c2', emojis: '🍼' });
     }
     S().breastSetup1 = 1;
+    save();
+  }
+  /* 📝 her sürümde bir kez (S().descV): açıklaması boş olan bilinen olaylara açıklama (Breastfeeding / Hotdogging gibi); yazdığın açıklamaya dokunmaz */
+  const EV_DESC = {
+    // 💋 Foreplay
+    'kissing': 'Dudak dudağa öpüşme: önce yumuşak, sonra aç; ısınmanın ilk adımı', 'lap kissing': 'Kucağına oturup öpüşür; kalçası kucağında kıpırdar',
+    'front hugging': 'Yüz yüze sarılma: göğsüne sokulur, kollarını boynuna dolar', 'back hugging': 'Arkasından sarılırsın; başını omzuna yaslar',
+    'show tits': 'Bluzunu / sütyenini açıp göğüslerini gösterir', 'show ass': 'Eğilip eteğini toplar, kalçasını gösterip sallar',
+    // 👅 Eat (onu ısıt)
+    'cunnilingus': 'Bacaklarını açar, dilinle onu yalarsın: Uyarılma +25', 'facesitting': 'Yüzüne oturur, kalçalarını döndürür: Uyarılma +20',
+    'on mouth': 'Ağzına oturup sürtünür: Uyarılma +15', 'squirt': 'Fışkırtarak boşalır; ıslaklık her yere sıçrar: Uyarılma +40',
+    // 🤲 Outercourse
+    'handjob': 'Eliyle seni ağır ağır okşar', 'blowjob': 'Diz çöküp seni ağzına alır', 'oral sex': 'Ağızla sevişme: emme, yalama',
+    'deepthroat': 'Seni boğazına kadar alır; gözleri yaşarır ama durmaz', 'titfuck': 'Göğüslerini birleştirip seni aralarında kaydırır',
+    'reverse titfuck': 'Üstüne ters dönüp göğüsleriyle seni sıkar; kalçası yüzüne dönük', '69': 'Ters uzanırsınız: o seni, sen onu ağzınla',
+    'footjob': 'Ayaklarıyla seni okşar', 'sex toys': 'Titreşimli oyuncaklar: onda, sende ya da ikinizde',
+    // ❤️ Forward (önden)
+    'missionary': 'Sırtüstü uzanır, sen üstündesin; yüz yüze, göz göze', 'cowgirl': 'Üstüne çıkar, ellerini göğsüne dayayıp ritmi kendisi tutar',
+    'standing': 'Ayakta, bir bacağını beline dolayıp seni içine alır', 'ondesk': 'Masaya uzanır, bacaklarını omuzlarına koyar',
+    'lap sex': 'Kucağında yüz yüze; kollarını boynuna dolayıp iner çıkar', 'full nelson': 'Bacaklarını kollarınla kilitleyip onu havada tutarsın; tamamen teslim',
+    // 🍑 Backward (arkadan)
+    'doggy': 'Dört ayak üstünde, kalçasını sana uzatır; belinden tutup arkadan girersin', 'standing doggy': 'Ayakta öne eğilir, ellerini dayar; arkadan girersin',
+    'spooning': 'Yan yana uzanırsınız; arkasından sarılıp içine girersin', 'spooning anal': 'Yan yatarken arkadan, yavaş yavaş kalçasına',
+    'cowgirl anal': 'Sırtını dönüp üstüne çıkar, seni kalçasına indirir', 'standing anal': 'Ayakta, kapıya / duvara yaslanmış; arkadan anal',
+    'rough anal': 'Bileklerini arkada tutup sertçe anal; Acı artar',
+    // 🎭 Mode
+    'gentle': 'Nazik, yavaş, şefkatli tempo 💕', 'passionate': 'Tutkulu, öpüşmeli, sıcak tempo 🔥', 'assertive': 'Kontrolü biri ele alır; yönlendiren, kararlı tempo',
+    'rough': 'Sert ve hızlı; saç çekme, şaplak', 'brutal': 'En sert hâli: vahşi, nefes kesen; Acı artar',
+    'inletmeli': 'Onu inletmeye odaklı tempo', 'bağırtmalı': 'Onu bağırtacak kadar sert ve derin', 'ağlatmalı': 'Gözleri yaşarana kadar yoğun',
+    // 🦄 Fantezi
+    'cat girl': 'Kedi kulakları ve kuyruğuyla kedin olur: miyavlar, mırlar 🐱', 'bunny girl': 'Tavşan kulakları ve pamuk kuyruk 🐰',
+    'fox girl': 'Kurnaz tilki kızı, kabarık kuyruklu 🦊', 'doggy girl': 'Tasmalı köpeğin olur; sana "efendim" der 🐶', 'unicorn girl': 'Parıltılı tek boynuzlu masal kızı 🦄',
+    'bondage': 'Elleri / bacakları iplerle bağlı; kıpırdayamaz', 'cheating': 'Gizli ve yasak: sevgilisi / kocası yakında; yakalanma riski (📱 kesintiler sıklaşır)',
+    'belly bulge': 'O kadar derin ki karnında şeklin belli olur', 'cumflation': 'İçine o kadar çok boşalırsın ki karnı şişer',
+    // 🛡️ Korunma
+    'condom': 'Kondom takarsın', 'tight condom': 'Dar kondom: daha sıkı, daha az hissettirir', 'control pill': 'Doğum kontrol hapı kullanıyor',
+    'morning-after pill': 'Sonra sabah hapı içer', 'pull-out method': 'Son anda çekip dışarı boşalırsın', 'nothing': 'Hiç korunma yok: içine boşalırsan hamilelik riski',
+    // ✋ Tutmak
+    'holding': 'Boşalmayı tutarsın: Zevk düşer, döl birikir (bazen tutamazsın)', 'hard holding': 'Sıkıca tutarak erteleme; daha çok birikir ama zor',
+    'atlas holding': 'Onu kucağında tutarak erteleme', 'cock ring': 'Halka boşalmayı geciktirir, her şey içinde birikir',
+    // 💦 Boşalma
+    'vaginal creampie': 'İçine, vajinasına boşalırsın (korunmaya göre hamilelik ihtimali)', 'anal creampie': 'Kalçasının içine boşalırsın',
+    'oral creampie': 'Ağzının içine boşalırsın', 'mouth cumming': 'Ağzına boşalırsın; yutabilir', 'face cumming': 'Yüzüne boşalırsın',
+    'tit cumshot': 'Göğüslerine boşalırsın', 'ass cumshot': 'Kalçasına boşalırsın', 'leg cumshot': 'Bacaklarına boşalırsın', 'legs creampie': 'Bacaklarının arasına boşalırsın',
+    'orgazm': 'Onun orgazmı: Uyarılma 80\'i geçince kendiliğinden gelir, Uyarılma sıfırlanır',
+    // 💧 Miktar / yoğunluk (bilgi olayları)
+    'watery cumming': 'Sulu, az döl (💦 Cum çok düşük)', 'low-volume cumming': 'Az miktarda döl', 'normal cumming': 'Normal miktarda döl',
+    'thick white cumming': 'Koyu, bembeyaz ve bol döl', 'high sperm cumming': 'Çok bol döl (💦 Cum dolu)',
+    'hyper-concentrated (4/4)': 'Turun ilk boşalması: döl en yoğun hâlinde', 'polyzoospermia (3/4)': 'İkinci boşalma: döl hâlâ çok yoğun',
+    'normozoospermia (2/4)': 'Normal yoğunlukta döl', 'oligospermia (1/4)': 'Döl seyrelmiş (3–4. boşalma)', 'azoospermia (0/4)': 'Döl tükenmiş (5+ boşalma)',
+    // 🤲 Outercourse (devam)
+    'buttjob': 'Kalçasıyla seni okşar: kalçalarının arasında ya da üstünde sürtünür, içeri girmeden', 'legjob': 'Bacaklarının / uyluklarının arasında seni sıkıp sürter',
+    'masturbation': 'Kendine dokunur: sen izlerken parmaklarıyla kendini okşar (ya da sen kendini)', 'paizuri': 'Göğüslerinin arasında seni kaydırır (Titfuck)',
+    'breastfeeding': 'Göğüslerini emersin (hamileyse sütünü içersin): Uyarılma +30, onu orgazma götürür',
+    // 🌟 Ekstra
+    'vaginal': 'Önden, vajinal ilişki', 'anal': 'Arkadan, anal ilişki', 'huge dick': 'Çok büyük boyut: daha dolu, daha derin; Acı artabilir',
+    'lactation': 'Göğüslerinden süt gelir (🍼 Süt)', 'creampie': 'İçine boşalırsın', 'cumshot': 'Dışarı, tenine boşalırsın',
+    'female domination': 'O yönetir: emreder, sen itaat edersin', 'pregnant': 'Hamileyken ilişki', 'exhibitionism': 'Görülme heyecanı: açıkta, izlenebilecek bir yerde',
+    'voyeurism': 'Gizlice izlemek / izlenmek', 'iseme': 'Çişini yapar; ıslak fantezi', 'tutma': 'Boşalmayı tutup ertelemek', 'virginity': 'İlk kez: bakireliğini sana verir',
+    'public': 'Halka açık bir yerde, yakalanma riskiyle', 'bdsm': 'Bağlama, hükmetme, ceza ve teslimiyet oyunları',
+    // 🍒 Lactation (onun ıslaklığı / sütü; miktar)
+    'drops woter': 'Birkaç damla ıslaklık', 'low-volume woter': 'Az ıslaklık', 'normal woter': 'Normal ıslaklık', 'high-volume woter': 'Çok ıslak, akıyor',
+    'squirt woter': 'Fışkırarak ıslanır (squirt)', 'drops milk': 'Göğüslerinden birkaç damla süt', 'low-volume milk': 'Az süt gelir', 'normal milk': 'Normal miktarda süt',
+    'high-volume milk': 'Bol süt, göğüsleri taşıyor', 'squirt milk': 'Süt fışkırarak gelir',
+    // 💧 Pre-cumming (ön sıvı)
+    'low-volume pre-cumming': 'Biraz ön sıvı geliyor', 'normal pre-cumming': 'Normal miktarda ön sıvı', 'high-volume pre-cumming': 'Bol ön sıvı: boşalmaya yakınsın'
+  };
+  // ad → açıklama; "Sex toys 🍆", "Doggy Girl ( Submission )" gibi emoji / parantezli adlarda yalın hâline de bakar
+  function evDescOf(title) {
+    const k = String(title || '').toLocaleLowerCase('tr').trim();
+    return EV_DESC[k] || EV_DESC[k.replace(/\(.*?\)/g, '').replace(/[^\p{L}\p{N}\s\-\/]/gu, '').replace(/\s+/g, ' ').trim()] || '';
+  }
+  function fixDesc1() {
+    const mo = S().monia;
+    if (!mo || S().descV >= 2 || !(mo.events || []).length) return;
+    mo.events.forEach(e => { const d = evDescOf(e.title); if (d && !String(e.desc || '').trim()) e.desc = d; });
+    S().descV = 2;
     save();
   }
   // 👗 bir kez (S().wearSetup1): gardırobu olmayan kayıtlı karakterlere kişiliğine göre rastgele "genelde giydikleri" ve bir kombin
@@ -11696,8 +11832,8 @@
       <p><b>💬 Hitap</b>: <code>{sen}</code> Aşk'a göre değişir: 30'un altında adın, 30–69 adın / canım / tatlım, 70+ aşkım / bebeğim. Soğuk ve Resmi konuşur karakterler hep adınla seslenir; adın için <code>{ad}</code>.</p>
       <p><b>🕰️ Saat</b>: normal sohbette gece (22–04) "gece yarısı konuşmaları en güzeli", sabah (05–10) "günaydın… dün gece harikaydı", akşam (18–21) selamı; sevişirken 01–05 arası "uykum geldi ama durma".</p>
       <p><b>🎭 Kişilik ve ⌨️ yazım tarzı</b>: kişilik cevaba bazen kendi ekini yapar (Flörtöz 😘, Kibirli "tabii ki 💅", Çocuksu "hihi 🙈", Gizemli "…belki 🤫"…); iltifat, "seni seviyorum" ve kabalığa kişiliğe göre ayrı cevaplar vardır. Utangaç, Flörtöz, Romantik, Soğuk, Kibirli, Alaycı, Neşeli, Duygusal, Çocuksu, Şımarık, Asi ve Özgüvenli karakterlerin sevişirken, boşalınca, orgazm olunca, hamileyken ve korunma anlarında kendi konuşmaları var ("🎭 Kişilik" kuralları; olaylarda yarı yarıya, durumlarda çoğu zaman öne geçer). Yazım tarzı her cevabı dönüştürür: hep küçük harf, emoji kullanmaz (Soğuk da), emoji sever, harf uzatır, noktalama kullanmaz, çok güler (sjsjsj), kısa yazar (tek baloncuk), argo, sesli mesaj 🎤, geç cevap verir (daha uzun "yazıyor…").</p>
-      <p><b>🎭 Ton</b>: son Mode (Gentle 💕 … Brutal "*soluk soluğa*") ve son 30 mesajdaki fanteziler (Cat Girl "miyav", Bondage "*ellerim bağlı*", Cheating "*fısıldayarak*") cevaplara eklenir.</p>
-      <p><b>🦄 Fanteziler</b> (🏷️ <code>fantesy</code> kategorisi): her fantezinin kendi cevapları var; fantezi son 30 mesajda olduysa pozisyonlar, ön sevişme ve boşalma çoğu zaman o fanteziyle cevaplanır (Doggy Girl + arkadan "Dört ayak üstünde, efendim"), kişiliğe göre de değişir. Rastgele karakterde ❤️ / 💔 listelerine en fazla 2 fantezi girer.</p>
+      <p><b>🎭 Ton</b>: son Mode (Gentle 💕 … Brutal "*soluk soluğa*") ve süren fantezi (Cat Girl "miyav", Bondage "*ellerim bağlı*", Cheating "*fısıldayarak*") cevaplara eklenir.</p>
+      <p><b>🦄 Fanteziler</b> (🏷️ <code>fantesy</code> kategorisi): her fantezinin kendi cevapları var; fantezi başka bir fantezi gelene kadar sohbette kalır, pozisyonlar, ön sevişme ve boşalma çoğu zaman o fanteziyle cevaplanır (Doggy Girl + arkadan "Dört ayak üstünde, efendim"), kişiliğe göre de değişir. Rastgele karakterde ❤️ / 💔 listelerine en fazla 2 fantezi girer.</p>
       <p>Cevaplarda yer tutucular: <code>{sen}</code> <code>{ben}</code> <code>{ö:Boob Size}</code> <code>{sever}</code> <code>{sevmez}</code> <code>{izin}</code> <code>{izinyok}</code> <code>{olay}</code> <code>{cevap:yaş}</code> <code>{cevap:şehir}</code> <code>{cevap:hamile}</code>.</p>` },
     { icon: '🧭', title: 'Bir seans, baştan sona', sub: 'tetiklenmeler nasıl zincirlenir', body: `
       <ol><li>Saat 22:00. <code>#kissing</code> → 💋 Foreplay: ❤️ Aşk +5, 🫂 Samimiyet +4, 🥴 Zevk sadece +1–3 (öpüşerek boşalınmaz).</li>
@@ -11716,7 +11852,7 @@
       ${bkChat('💋 Isınma → onun orgazmı', [['ev', '📜 💋 Kissing'], ['her', 'Dudakların çok yumuşak 💗'], ['note', 'Foreplay ❤️ Aşk +5, 🫂 Samimiyet +4 verir; 🥴 Zevk sadece +1–3.'], ['ev', '📜 👅 Cunnilingus'], ['ev', '📜 💗 Orgazm · Normal Woter'], ['her', 'Ahhh! Geliyorum… geldim… 😵‍💫💦'], ['note', '💗 Uyarılma 80\'i geçti → Orgazm; 🔥 Şehvet\'e göre Woter.']])}
       ${bkChat('❔ Onay sorusu', [['ev', '📜 ❤️ Missionary'], ['her', 'Üstümde ağırlığını hissetmek çok güzel 💗'], ['her', 'Böyle iyi mi? 🥺'], ['me', 'evet çok'], ['ev', '📜 ❤️ Missionary'], ['note', '"Evet" → aynı pozisyonla devam; "hayır / başka" → önce ❤️ sevdiklerinden başka bir pozisyon.']])}
       ${bkChat('💦 Bitiş ve korunma', [['note', 'Pull-Out Method\'a ✅ izin veren karakter, 🥴 Zevk 50\'yi geçince:'], ['her', 'Hadi çıkar dışarı boşal… sakın içime 😳'], ['ev', '📜 💦 Vaginal Creampie · Thick White Cumming'], ['her', 'Gözlerimin içine bakarak içime boşaldın 😩💦'], ['her', 'Hani çıkaracaktın?! 😳'], ['note', 'Pozisyona göre bitiş cümlesi, 💦 Cum\'a göre döl miktarı, korunmasına göre ek baloncuk.']])}
-      ${bkChat('🦄 Fantezi', [['ev', '📜 🐱 Cat Girl'], ['her', 'Miyav… bugün senin kedinim 🐱'], ['ev', '📜 🍑 Doggy'], ['her', 'Kuyruğumu kaldırdım, miyav 😼'], ['note', 'Fantezi son 30 mesajda olduysa pozisyonlar o fanteziyle cevaplanır.']])}
+      ${bkChat('🦄 Fantezi', [['ev', '📜 🐱 Cat Girl'], ['her', 'Miyav… bugün senin kedinim 🐱'], ['ev', '📜 🍑 Doggy'], ['her', 'Kuyruğumu kaldırdım, miyav 😼'], ['note', 'Fantezi başkası gelene kadar sürer; pozisyonlar ve "çok azdım" gibi sözler o fanteziyle cevaplanır.']])}
       ${bkChat('🎭 Rol yapma', [['ev', '📜 👩‍🏫 Kadın Hoca – Öğrenci (Üniversite)'], ['her', 'Öğrencim, ofis saatimde ne işin var? 😏🎓'], ['ev', '📜 ❤️ Cowgirl'], ['her', 'Öğrencim… Gözlerime bak, kim hoca kim öğrenci? 😈'], ['note', 'Rol sürerken sana rolüne göre hitap eder: Patronum, Hocam, Memur bey, Öğrencim…']])}
       ${bkChat('🎭 Kişilik farkı', [['me', 'güzelsin'], ['her', 'G-gerçekten mi? 🙈💗'], ['note', 'Utangaç bir karakter. Kibirli olsaydı:'], ['her', 'Biliyorum 💅 ama söylemen hoş'], ['note', 'İltifat ❤️ Aşk +2, 🫂 Samimiyet +1; kabalık 🤝 Güven −3.']])}
       <p>Devamı bir sonraki sayfada. Kendi denemelerin için Ben → ❓ Yardım → 🧪 <b>Bot deneyi</b>: deney karakterini kur, mesajı yaz, bütün olası cevapları gör.</p>` },
@@ -12009,7 +12145,7 @@
       <p><b>🎭 Kişilik kuralları</b>: Utangaç, Flörtöz, Kibirli, Romantik, Asi, Soğuk, Neşeli, Çocuksu, Manipülatif, Özgüvenli, Güvensiz, Gizemli, Duygusal… sevişirken, boşalınca, orgazmda, fantezide ve korunma anlarında kendi cümlelerini söyler. Olaylarda yarı yarıya öne geçerler.</p>
       <p><b>Soru cevaplarında çerçeve</b>: Utangaç "S-söylemem gerekiyor mu? 🙈 …", Kibirli "… kıskandın mı? 💅".</p>
       <p><b>Kişilik eki</b>: bazen cevabın sonuna (Flörtöz 😘, Çocuksu "hihi 🙈", Gizemli "…belki 🤫").</p>
-      <p><b>🎭 Ton</b>: son Mode (Gentle 💕 … Brutal "*soluk soluğa*") ve son 30 mesajdaki fantezi (Cat Girl "miyav", Bondage "*ellerim bağlı*", rol yapmada "Patronum…", "Hocam…").</p>
+      <p><b>🎭 Ton</b>: son Mode (Gentle 💕 … Brutal "*soluk soluğa*") ve süren fantezi (Cat Girl "miyav", Bondage "*ellerim bağlı*", rol yapmada "Patronum…", "Hocam…").</p>
       <p><b>⌨️ Yazım tarzı</b> her cevabı dönüştürür: hep küçük harf, emoji kullanmaz / sever, harf uzatır (canımmm), noktalama kullanmaz, çok güler (sjsjsj), kısa yazar, argo, resmi, sesli mesaj 🎤, geç cevap verir.</p>
       <p><b>💬 Hitap</b> <code>{sen}</code>: ❤️ Aşk 30'un altında adın, 30–69 adın / canım / tatlım, 70+ aşkım / bebeğim. Soğuk ve resmi karakterler hep adınla seslenir.</p>` },
     { icon: '❓', title: 'Sorular ve karşı sorular', sub: 'kendi bilgileriyle cevap', body: `
@@ -12039,7 +12175,7 @@
       <p>Bütün pozisyon ve boşalma havuzlarında bu tarzda cümleler vardır; ayrıca pozisyona, döl miktarına, korunmaya ve kişiliğe göre ayrı cümleler.</p>
       <p><b>🥛 Süt benzetmesi</b>: karakter senin dölünü sık sık <i>süt</i> diye anar: "Seni sağayım canım", "Sütünü yutacağım, ver ağzıma", "Bembeyaz sütünü götüme sal", "Memelerimin arasında yoğun sütünü istiyorum". Oral, Titfuck, Handjob ve bütün boşalma havuzlarında; fantezide de ("Kedine sıcak sütünü verdin 🐱🥛").</p>` },
     { icon: '🦄', title: 'Fanteziler, roller ve kıyafet', sub: 'tonu değiştiren her şey', body: `
-      <p><b>🦄 Fantezi / 🎭 rol</b> olayı olunca karakter uygun <b>kostümü</b> giyer ("Kedi kostümümü giydim…", Sekreter kombini) ve son 30 mesaj boyunca pozisyonlar, ön sevişme ve boşalma çoğu zaman o fantezinin ağzından cevaplanır (%60): Doggy Girl + arkadan → "Dört ayak üstünde, efendim". Rolde sana rolüne göre seslenir.</p>
+      <p><b>🦄 Fantezi / 🎭 rol</b> olayı olunca karakter uygun <b>kostümü</b> giyer ("Kedi kostümümü giydim…", Sekreter kombini) ve başka bir fantezi gelene kadar pozisyonlar, ön sevişme ve boşalma çoğu zaman o fantezinin ağzından cevaplanır (%60): Doggy Girl + arkadan → "Dört ayak üstünde, efendim". Rolde sana rolüne göre seslenir.</p>
       <p><b>👗 Kıyafet</b>: "ne giyiyorsun?" giydiklerini anlatır; Show Tits / Show Ass, "aç memeni", "soyun" ve sohbetteki ilk sevişmede giydiği parçanın cümlesi gelir (göğüs ve kalça bir sohbette birer kez). Profilde ya da 📊 kartta 👗 ile giydirilir.</p>
       <p><b>📍 Mekan</b>: son mekan kartına göre (araba, duş, sinema…) özel cümleler (%40) ve olamayacak pozisyonlar.</p>` },
     { icon: '🛡️', title: 'İzinlere göre tepkiler', sub: 'korunma, giriş, hamilelik', body: `
@@ -12361,6 +12497,50 @@
     { icon: '📅', title: 'Fiery Passions: kim nerede?', sub: 'haftalık program', body: `
       <table class="bk-t"><tr><th>Karakter</th><th>Nerede</th><th>Sevdiği hediye</th></tr>
         ${FP.CHARS.map(c => `<tr><td><b>${esc(c.name)}</b><br><small>${esc(c.title)}</small></td><td>${esc({ mia: 'Sabah kolejde (Pzt/Çar/Cum) ya da salonda yoga; gündüz salon / pazar, Cumartesi sahil; akşam tek günler mutfak, çift günler banyo; gece odasında.', roxy: 'Sabah kolej ya da park; gündüz odası (Salı sahil); akşam tek günler banyo, çift günler mutfak; gece odası.', ava: 'Hafta içi sabah / gündüz ofis odası; Pazartesi ve Çarşamba akşam pazar; Cumartesi gündüz sahil, Pazar gündüz salon; diğer zamanlar evinde.', lily: 'Sabahtan akşama pazar; Perşembe akşam sahil.', ash: 'Her akşam park; Salı gündüz sahil.', chloe: 'Sabah / gündüz hastane, akşam hastane (Çarşamba hariç); Perşembe akşam sahil.', liza: 'Ders günleri sabah kolej; gündüz park (Cumartesi hariç); Cumartesi akşam sahil; gece park.', claire: 'Hafta içi sabah / gündüz ofis; Pazar sabah sahil.', scarlett: 'Hafta içi gündüz / akşam müdür odası; Pazar sabah sahil.', luna: 'Sadece gece, orman.', maeve: 'Odandaki dizüstünden, akşam ve gece.' }[c.id] || '')}</td><td>${c.gifts.love.map(id => { const i = FP.ITEMS.find(x => x.id === id); return i ? i.icon + ' ' + i.name : ''; }).join(', ') || '—'}</td></tr>`).join('')}</table>` });
+  /* 🦄 Fantezi Kitabı: her fantezi / rol bir bölüm; ❓ özel soru-cevaplar (r_fq_<anahtar>_*) ve 🥚 easter egg'ler (r_fe_<anahtar>_*)
+   * bot kurallarından gelir (note: soru örneği / egg ipucu). Egg'ler bulunana kadar gizli (🔒 + ipucu); 🔑 hile koduyla (FANT_CHEAT) hepsi açılır */
+  const FANT_CHEAT = 'amorfantezi';
+  const FANT_BOOK = [['fxkedi', '🐱', 'Cat Girl', 'kedin olur'], ['fxtavsan', '🐰', 'Bunny Girl', 'tavşan kulaklı'], ['fxtilki', '🦊', 'Fox Girl', 'kurnaz tilki'],
+    ['fxkopek', '🐶', 'Doggy Girl', 'sadık köpeğin'], ['fxunikorn', '🦄', 'Unicorn Girl', 'masal kızı'], ['fxbag', '🔗', 'Bondage', 'iplerle bağlı'],
+    ['fxgizli', '🤫', 'Cheating', 'gizli ve yasak'], ['fxtoy', '🍆', 'Sex toys', 'oyuncaklar'], ['fxkarin', '😳', 'Belly Bulge', 'karnında belli olur'], ['fxdolum', '💦', 'Cumflation', 'ağzına kadar dolu'],
+    ['fxrpofis', '💼', 'Patron – Sekreter', 'o sekreter, sen patron'], ['fxrpkampus', '🎓', 'Hoca – Öğrenci', 'o öğrenci, sen hoca'], ['fxrpprof', '👩‍🏫', 'Kadın Hoca – Öğrenci', 'o hoca, sen öğrenci'],
+    ['fxrpmuayene', '🩺', 'Doktor – Hasta', 'o hasta, sen doktor'], ['fxrpsorgu', '🚓', 'Polis – Şüpheli', 'o şüpheli, sen polis'], ['fxrpkapi', '🏠', 'Yeni Komşu', 'şeker istemeye gelir'],
+    ['fxrpev', '🧹', 'Hizmetçi – Ev Sahibi', 'o hizmetçi, sen ev sahibi'], ['fxrpmasaj', '💆', 'Masöz – Müşteri', 'o masöz, sen müşteri'], ['fxrpavukat', '⚖️', 'Avukat – Müvekkil', 'o avukat, sen müvekkil'],
+    ['fxrppsikolog', '🛋️', 'Psikolog – Danışan', 'o psikolog, sen danışan'], ['fxrpgardiyan', '🔒', 'Gardiyan – Mahkum', 'o gardiyan, sen mahkum'], ['fxrppizza', '🍕', 'Pizza Kuryesi – Müşteri', 'o kurye, sen müşteri'],
+    ['fxrpressam', '🎨', 'Ressam – Çıplak Model', 'o ressam, sen model'], ['fxrpdans', '🩰', 'Dans Hocası – Öğrenci', 'o hoca, sen öğrenci'], ['fxrpfizyo', '🦵', 'Fizyoterapist – Sporcu', 'o fizyoterapist, sen sporcu'],
+    ['fxrptaksi', '🚕', 'Taksi Şoförü – Gece Yolcusu', 'o şoför, sen yolcu']];
+  const fantRules = (p, key) => ((Stories.BOT_RULES || {}).rules || []).filter(r => String(r.id).startsWith(`${p}${key}_`));
+  // egg'i açan söz ya da olay: kuralın kelimelerinin ilk seçenekleri (yazım işaretleri, =evt / =fant / anahtar olmadan)
+  const fantTrig = r => (r.when || []).filter(t => !/^=(evt|fant|fx\w+)$/.test(t)).map(t => String(t).split('|')[0].replace(/^[=+@]/, '').replace(/-$/, '')).join(' + ');
+  const fantTrigL = r => (r.when || []).includes('=evt') ? `olay: ${fantTrig(r).replace(/\b\p{L}/gu, c => c.toUpperCase())}` : `yaz: "${fantTrig(r)}"`;
+  const fantEggOpen = r => !!S().fantEggsAll || !!(S().fantEggs || {})[r.id];
+  function fantEggFound(r) {
+    const f = S().fantEggs = S().fantEggs || {};
+    if (f[r.id]) return;
+    f[r.id] = 1;
+    save();
+    burst(['🥚', '✨', '🎉'], 28);
+    notify(`🥚 Easter egg bulundu: ${r.name} (🦄 Fantezi Kitabı)`, '🥚');
+  }
+  function fantBookBody(key) {
+    const qa = fantRules('r_fq_', key), eggs = fantRules('r_fe_', key), first = r => esc(String((r.reply || [])[0] || '').replace(/\|\|/g, ' · '));
+    return `<p>Bu fantezi sohbette olduysa başka bir fantezi gelene kadar sürer; o sırada aşağıdaki sözler ona özel cevaplanır.</p>
+      <h4>❓ Özel sorular</h4><table class="bk-t"><tr><th>Sor</th><th>Örnek cevap</th></tr>${qa.map(r => `<tr><td>"${esc(r.note || r.name)}"</td><td>${first(r)}</td></tr>`).join('')}</table>
+      <h4>🥚 Easter egg'ler · ${eggs.filter(fantEggOpen).length}/${eggs.length}</h4><table class="bk-t"><tr><th>Egg</th><th>Cevap</th></tr>${eggs.map(r => fantEggOpen(r)
+        ? `<tr><td>🥚 <b>${esc(r.name)}</b><br><small>${esc(fantTrigL(r))}</small></td><td>${first(r)}</td></tr>`
+        : `<tr><td>🔒 ???</td><td><small>İpucu: ${esc(r.note || '')}</small></td></tr>`).join('')}</table>`;
+  }
+  BOOKS.push({ id: 'fantezi', icon: '🦄', title: 'Fantezi Kitabı', sub: 'fantezilere özel sorular ve easter egg\'ler', chips: [`${FANT_BOOK.length} fantezi`, '🥚 gizli'], chapters: [
+    { icon: '📖', title: 'Fantezi Kitabı nasıl okunur', sub: 'sorular, easter egg\'ler, hile kodu', get body() {
+      const eggs = FANT_BOOK.flatMap(([k]) => fantRules('r_fe_', k));
+      return `<p>Sohbette bir <b>🦄 fantezi</b> ya da <b>🎭 rol</b> olayı olunca, başka bir fantezi gelene kadar karakter o fantezinin içinde kalır. Bu sırada bot moduna yazdıkların ona özel cevaplanır:</p>
+        <ul><li><b>❓ Özel sorular</b>: her bölümde yazılı; o fantezideyken sor, rolüne uygun cevap verir.</li>
+          <li><b>🥚 Easter egg'ler</b>: belli bir sözü yazınca ya da fantezideyken belli bir <b>pozisyon / boşalma</b> olunca gizli bir mesaj gelir ve egg kitapta açılır. Bulunana kadar sadece ipucu görünür.</li></ul>
+        <p>Bulunan: <b>${eggs.filter(fantEggOpen).length} / ${eggs.length}</b> 🥚</p>
+        <p>🔑 <b>Hile kodu</b>: bütün egg'leri açar.</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap"><input id="fkCode" type="text" placeholder="Kodu yaz…" autocomplete="off" style="flex:1;min-width:140px"><button type="button" class="btn sm" data-fkcode>🔓 Aç</button></div>`;
+    } },
+    ...FANT_BOOK.map(([key, icon, title, sub]) => ({ icon, title, sub, get body() { return fantBookBody(key); } }))] });
   const bookBy =id => BOOKS.find(b => b.id === id) || BOOKS[0];
   const bookAt = (id, v) => { const n = bookBy(id).chapters.length, k = 'amor-stories:book' + (id && id !== 'carmen' ? ':' + id : ''); try { if (v != null) localStorage.setItem(k, String(v)); return Math.max(0, Math.min(n - 1, +localStorage.getItem(k) || 0)); } catch (e) { return v || 0; } };
   // 📖 kitap ayrı bir sayfa (#/kitap/<kitap>/<bölüm>); geri düğmesi kitabı açtığın sayfaya döner
@@ -12519,6 +12699,17 @@
       // 💞 seans türünü tasarımcıda aç
       if (sz) { seansLoad(sz.dataset.bkseans); go(BOOK.findIndex(c => c.interactive === 'designer')); return; }
       if (lk) { e.preventDefault(); go(+lk.dataset.bkgo); return; }
+      // 🔑 Fantezi Kitabı hile kodu: doğruysa bütün easter egg'ler açılır
+      if (e.target.closest('[data-fkcode]')) {
+        const inp = pg.querySelector('#fkCode');
+        if (String(inp.value).toLocaleLowerCase('tr').replace(/\s+/g, '') !== FANT_CHEAT) { notify('❌ Yanlış kod', '🔒'); inp.select(); return; }
+        S().fantEggsAll = 1;
+        save();
+        burst(['🥚', '🔓', '✨'], 34);
+        notify('🔓 Bütün easter egg\'ler açıldı', '🥚');
+        show('');
+        return;
+      }
       const b = e.target.closest('[data-bk]');
       if (!b) return;
       if (b.dataset.bk === 'toc') {
@@ -13118,6 +13309,7 @@
   fixHold1();
   fixHotdog1();
   fixBreast1();
+  fixDesc1();
   setupBotOuts();
   initLock();
   dedupeAuto();
