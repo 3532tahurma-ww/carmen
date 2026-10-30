@@ -5458,7 +5458,7 @@
       // yer tutucular: {ö:Boob Size} {sever} {cevap:…} … (bu sohbetteki orgazm / boşalma sayılarıyla)
       const lowA = s => String(s || '').toLocaleLowerCase('tr'), allE = allEvents(), evOf = x => x.ev && allE.find(e => e.id === x.ev);
       // 🙏 izin dışı ısrar ("lütfen içine boşalayım"): bu turda kaçıncı ısrar ve korunma durumu {cevap:ısrar}'a gider
-      const fctx = { kor: kor0, israr: th.israr || 0, olay: opts.olay, text: opts.events ? '' : userMsg.text, orgN: list.filter(x => lowA((evOf(x) || {}).title) === 'orgazm').length,
+      const fctx = { kor: kor0, israr: th.israr || 0, olay: opts.olay, pos: posNow(), text: opts.events ? '' : userMsg.text, orgN: list.filter(x => lowA((evOf(x) || {}).title) === 'orgazm').length,
         cumN: list.filter(x => x.from === 'me' && ((evOf(x) || {}).tags || []).includes('boşalma')).length };
       if (!parts.length) return;
       parts.forEach((p, i) => { parts[i] = fillTraits(p, ch, fctx); });
@@ -7249,7 +7249,7 @@
    * {ö:Boob Size} özelliğin değeri ("Boob Size: 95" → 95) · {sever} / {sevmez} ❤️ / 💔 olaylarından 1-2 tanesi ·
    * {izin} / {izinyok} ✅ / 🚫 olayları · {olay} cevap verilen olayın adı · {cevap:yaş} {cevap:şehir} {cevap:hamile} hazır cümle */
   // cevabı kendi içinde kişiliğe göre değişen kurallar: 🎭 kişilik kuralları öne geçmez
-  const PK_OWN = new Set(['r_ev_breast', 'r_sx2_bosal']);
+  const PK_OWN = new Set(['r_ev_breast', 'r_sx2_bosal', 'r_sx2_bosal_sx']);
   const BOT_ANS = {
     'yaş': ch => ch.age ? pickOne([`${ch.age} yaşındayım 😊`, `${ch.age}… genç sayılırım değil mi? 😏`, `${ch.age} yaşındayım, neden sordun? 😌`]) : pickOne(['Yaşımı söylemem 😏', 'Kadına yaş sorulmaz 😌']),
     'şehir': ch => { const ben = s => s + ({ ı: 'yım', i: 'yim', u: 'yum', ü: 'yüm', a: 'yım', e: 'yim' })[s.slice(-1)];
@@ -7294,14 +7294,50 @@
       }
       return n >= 3 && a >= 80 ? pickOne(['Delirdin mi… peki, ama bu son 😰', 'Of… tamam, içime… ama korkuyorum 😳']) : pickOne(['Hayır! Korunmuyoruz, dışarı! 😰', 'Olmaz, hamile kalırım! Çık! 😣', `Lütfen ${s}, içime değil 🥺`, 'Hayır dedim, tut ve çık 😤']);
     },
-    // 💦 "boşalıcam, az kaldı": korunmasına göre nereye
+    // 💦 "boşalıcam, az kaldı, hepsi ucunda, sana boşalmak istiyorum": şu anki pozisyona göre nereye (ağız, göğüs, el, ayak,
+    // kalça, arka, önden: korunmasına göre), ardından bazen değerlere göre bir cümle (onun 💗 Uyarılma / 😣 Acı, senin 💦 Cum,
+    // bu sohbetteki boşalma / orgazm sayısı)
     'boşalıcam': (ch, ctx) => {
-      const s = hitapOf(ch), k = (ch.fields || {}).hamile ? 'koricine' : ctx.kor;
-      if (k === 'koricine' || k === 'korhap') return pickOne([`Hadi ${s}, içime boşal 😩💦`, 'Bembeyaz sütünü içime sal 🥛🥵', 'Tutma, hepsini içime ver 😈', `İçimde rahatla ${s} 😩`, 'Ben de geliyorum… birlikte, içime! 🥵', 'Doldur beni, şimdi 💦']);
-      if (k === 'korkondom') return pickOne(['Bırak kendini, kondom var 😈', `Hadi ${s}, doldur o kondomu 🥵`, 'Boşal, korkma 😩', 'İçimdeyken bitir, korunuyoruz 😏']);
-      if (k === 'korsabah') return pickOne(['İçime mi? Peki… sabah hap alırım 😳', `Boşal ${s}, gerisini sabah düşünürüz 😩`, 'Dışarı daha iyi ama… dayanamıyorsan içime 🥵']);
-      if (k === 'korpullout') return pickOne(['Çık! Dışarı boşal 😰', `Karnıma ${s}, içime değil! 😣`, 'Çek şimdi, göğüslerime ver 😩💦', 'Söz vermiştin, dışarı! 😳', 'Çık ve sütünü üstüme akıt 🥛😈']);
-      return pickOne(['Çık hemen, korunmuyoruz! 😱', 'İçime değil! Dışarı! 😰', `Lütfen ${s}, çek! 🥺`, 'Dur dur, çık! 😣']);
+      const s = hitapOf(ch), low = x => String(x || '').toLocaleLowerCase('tr'), p = ctx.pos, t = low(p && p.title), tags = ((p && p.tags) || []).map(low);
+      const where = !p ? 'yok' : /blowjob|deepthroat|oral|69/.test(t) ? 'agiz' : /titfuck/.test(t) ? 'gogus' : /handjob|masturbation/.test(t) ? 'el'
+        : /footjob|legjob/.test(t) ? 'ayak' : /buttjob|hotdog/.test(t) ? 'kalca' : tags.includes('anal') || /anal/.test(t) ? 'anal'
+        : tags.includes('vajinal') ? 'vajinal' : low(catOfEv(p).label) === 'eat' ? 'onu' : 'diger';
+      const POS = {
+        yok: ['Daha dokunmadım bile, şimdiden mi? 😏', `Gel o zaman ${s}, bekliyorum 😈`, 'Bunu yanıma gelip söyle 🥵', 'Yazarken bile mi? Ahh… gel buraya 😩', 'Tut biraz, gelince hepsini bana ver 😈'],
+        agiz: ['Ağzıma ver, hepsini yutacağım 😈💦', `Hadi ${s}, dilimin üstüne 👅`, 'Çıkarma, ağzımda boşal 🥵', 'Yüzüme mi ağzıma mı? Sen seç 😏', 'Boğazıma bırak, tek damla kaçmasın 😩', 'Gözlerime bakarak ver 👅💦'],
+        gogus: ['Göğüslerime boşal 😩💦', 'Aralarında patla, sıkıca tutuyorum 🥵', `Hadi ${s}, göğsümü boya 🥛`, 'Boynuma kadar fışkırt 😈', 'Göğüslerimi sıkıyorum, bırak kendini 😩'],
+        el: ['Elimde boşal, durmuyorum 😈', `Hadi ${s}, avucuma ver 🥵`, 'Hızlandırıyorum… bırak kendini 😩', 'Elimden akıt, sonra yalarım 😏💦', 'Zonkladığını hissediyorum, hadi 🥵'],
+        ayak: ['Ayaklarıma boşal 😏', 'Tabanlarıma akıt, bayılırım 🥵', `Hadi ${s}, bacaklarıma ver 😈`, 'Parmaklarımın arasında patla 😩'],
+        kalca: ['Kalçama boşal 🍑💦', `Hadi ${s}, belime fışkırt 😈`, 'Kalçalarımın arasında patla 🥵', 'Sırtıma kadar akıt 😩'],
+        anal: ['Arkama boşal, hepsini içime 😩💦', 'Çıkarma, en derinde bitir 🥵', `Hadi ${s}, doldur arkamı 😈`, 'Arkamda zonkluyorsun… bırak kendini 😩', 'Orada risk yok, hepsini ver 😏💦'],
+        onu: ['Bana dokunmadan mı? 😳 Önce beni bitir 😈', 'Dur bakalım, önce ben geleceğim 😏', 'Sabret, sıra sende 😩'],
+        diger: [`Hadi ${s}, bırak kendini 😩💦`, 'Hepsini ver bana 🥵', 'Boşal, istiyorum 😈', 'Gel, tutma artık 😩']
+      };
+      let a;
+      if (where !== 'vajinal') a = pickOne(POS[where]);
+      else {
+        const k = (ch.fields || {}).hamile ? 'koricine' : ctx.kor;
+        a = k === 'koricine' || k === 'korhap' ? pickOne([`Hadi ${s}, içime boşal 😩💦`, 'Bembeyaz sütünü içime sal 🥛🥵', 'Tutma, hepsini içime ver 😈', `İçimde rahatla ${s} 😩`, 'Ben de geliyorum… birlikte, içime! 🥵', 'Doldur beni, şimdi 💦'])
+          : k === 'korkondom' ? pickOne(['Bırak kendini, kondom var 😈', `Hadi ${s}, doldur o kondomu 🥵`, 'Boşal, korkma 😩', 'İçimdeyken bitir, korunuyoruz 😏'])
+          : k === 'korsabah' ? pickOne(['İçime mi? Peki… sabah hap alırım 😳', `Boşal ${s}, gerisini sabah düşünürüz 😩`, 'Dışarı daha iyi ama… dayanamıyorsan içime 🥵'])
+          : k === 'korpullout' ? pickOne(['Çık! Dışarı boşal 😰', `Karnıma ${s}, içime değil! 😣`, 'Çek şimdi, göğüslerime ver 😩💦', 'Söz vermiştin, dışarı! 😳', 'Çık ve sütünü üstüme akıt 🥛😈'])
+          : pickOne(['Çık hemen, korunmuyoruz! 😱', 'İçime değil! Dışarı! 😰', `Lütfen ${s}, çek! 🥺`, 'Dur dur, çık! 😣']);
+        // önden pozisyonun kendisi de bazen başa gelir
+        const PRE = [[/missionary/, 'Gözlerime bak… '], [/doggy/, 'Kalçamı sıkı tut… '], [/cowgirl/, 'Üstündeyken… '], [/spooning/, 'Sarıl bana sıkıca… '], [/standing/, 'Duvara bastır beni… '], [/lap/, 'Kucağındayken… ']];
+        const pre = PRE.find(([re]) => re.test(t));
+        if (pre && Math.random() < .5) a = pre[1] + a;
+      }
+      if (where === 'onu' || Math.random() > .7) return a;
+      // 📊 değerlere göre ek cümle (ilk tutan)
+      const me = l => { const q = allParams().find(x => x.who === 'me' && low(x.label) === l); return q ? paramVal(S().user, q) : null; };
+      const cum = me('cum'), ua = relV(ch, 'uyarılma'), aci = relV(ch, 'acı');
+      const add = ua >= 60 ? ['Bekle… ben de geliyorum! 😩', 'Birlikte… şimdi! 🥵', 'Ben de çok yakınım, durma! 😵‍💫']
+        : aci >= 60 ? ['Çabuk ol, acıyor 😣', 'Hadi bitir artık 😖']
+        : (ctx.orgN || 0) >= 3 ? ['Ben çoktan bittim, sıra sende 🫠', 'Bacaklarım titriyor, gel artık 😵‍💫']
+        : (ctx.cumN || 0) >= 3 ? ['Yine mi? Doymuyorsun 😏', 'Hâlâ kaldı mı sende? 😳']
+        : cum != null && cum >= 80 ? ['Ne kadar dolusun… hepsini ver 🥵', 'Biriktirdiğin her damlayı istiyorum 😈']
+        : cum != null && cum <= 20 ? ['Kaldı mı ki bende? 😏', 'Son damlalarını da ver 😩'] : null;
+      return add ? a + ' ' + pickOne(add) : a;
     },
     // 🍼 Breastfeeding: hamile ve sütü varsa süt, yoksa sadece emme
     // genel (sütlü / sütsüz) + 🍒 göğüs bedenine + 🎭 kişiliğe göre; kişilik %40, beden %30 öne geçer
@@ -13165,7 +13201,7 @@
     const evs = allEvents().slice().sort((a, b) => a.title.localeCompare(b.title, 'tr'));
     const lab = ui.botLab || (ui.botLab = { mode: 'msg', text: '', ev: '', st: states[0] || '', mood: '', poz: '', sec: 'tr' });
     // 🧪 deney karakteri: kayıtlı karakterlere dokunmadan burada kurulur (şablondan, rastgele ya da boş)
-    const labFrom = c => JSON.parse(JSON.stringify({ name: c.name || 'Deney', traits: c.traits || [], likes: c.likes || [], dislikes: c.dislikes || [], allows: c.allows || [], denies: c.denies || [], fields: c.fields || {}, params: c.params || {}, wardrobe: c.wardrobe || [], outfit: c.outfit || {} }));
+    const labFrom = c => JSON.parse(JSON.stringify({ name: c.name || 'Deney', age: c.age || '', traits: c.traits || [], likes: c.likes || [], dislikes: c.dislikes || [], allows: c.allows || [], denies: c.denies || [], fields: c.fields || {}, params: c.params || {}, wardrobe: c.wardrobe || [], outfit: c.outfit || {} }));
     const labRandom = () => { const d = blankChar(), mod = ui.createMod; ui.createMod = 'amor'; randomize(d, 'all'); ui.createMod = mod; return labFrom(d); };
     if (!lab.fake) lab.fake = chars()[0] ? labFrom(chars()[0]) : labRandom();
     view.innerHTML = `<div class="page-pad narrow monia">${pageHero('deney', '🧪', 'Bot deneyi', [`${D.rules.length} kural`, 'kendi deney karakterin'], '', { back: '#/me' })}
@@ -13201,6 +13237,7 @@
           ${(CL.combos || []).map(k => `<button type="button" class="lab-chip" data-labw="${k.id}">${k.emoji} ${esc(k.name)}${k.fant ? ' 🎭' : ''}</button>`).join('')}</div>
         ${CL.slots.map(s => `<div class="lab-row"><small>${s.icon} ${esc(s.label)}</small><select data-labwear="${s.id}"><option value="">🚫 Yok</option>${CL.items.filter(x => x.slot === s.id).map(x => opt(x.id, o[s.id] || '', `${x.emoji} ${x.name}${x.style === 'i' ? ' 🔥' : x.style === 'k' ? ' 🎭' : ''}`)).join('')}</select></div>`).join('')}`;
       cbox.innerHTML = `<div class="lab-ch-h"><input id="labName" maxlength="40" value="${esc(f.name)}" aria-label="Ad">
+          <input id="labAge" class="lab-age" inputmode="numeric" maxlength="2" value="${esc(f.age || '')}" placeholder="🎂 Yaş" aria-label="Yaş" title="${esc(B.ageTrait(f.age) || 'Yaş yok: yaşa göre kurallar tutmaz')}">
           <button type="button" class="btn ghost sm" data-labc="rnd">🎲 Rastgele</button><button type="button" class="btn ghost sm" data-labc="blank">↺ Boş</button></div>
         <div class="field"><select id="labTpl"><option value="">📋 Kayıtlı karakterden kopyala…</option>${chars().map(c => opt(c.id, '', c.name)).join('')}</select></div>
         <div class="lab-seg sm">${SECS.map(([k, l]) => `<button type="button" data-labsec="${k}" class="${lab.sec === k ? 'on' : ''}">${l}</button>`).join('')}</div>
@@ -13234,6 +13271,7 @@
     cbox.onchange = e => {
       const t = e.target, f = lab.fake;
       if (t.id === 'labName') f.name = t.value.trim() || 'Deney';
+      if (t.id === 'labAge') f.age = t.value.replace(/\D/g, '');
       if (t.id === 'labTpl' && t.value) lab.fake = labFrom(byId(t.value));
       if (t.id === 'labPreg') f.fields.hamile = t.checked;
       if (t.dataset.labtr) { const g = T.groups.find(x => x.id === t.dataset.labtr); f.traits = [...f.traits.filter(x => !g.values.includes(x)), ...(t.value ? [t.value] : [])]; }
@@ -13296,9 +13334,13 @@
       // 🔓 mesajda gevşek eşleşenler (sırası farklı / bir kelimesi eksik), düşük puanla
       const lsc = new Map(lab.mode === 'msg' && q ? D.rules.filter(r => (r.reply || []).length && B.fits(r, ch) && (r.when || []).length && !hit.includes(r)).map(r => [r, B.looseScore(msg, r, D)]).filter(([, s]) => s > 0) : []);
       groups.push(['🔓 Gevşek eşleşme (sırası farklı ya da bir kelimesi eksik)', [...lsc.keys()]]);
+      // 🎂 olaylarda sohbetteki gibi "yas …" sorgusuyla yaşa göre ek baloncuk (%60); deney karakterinin yaşı yoksa tutmaz
+      const ymsg = B.norm(`yas ${q}`);
+      groups.push(['🎂 Yaşa göre ek baloncuk (olaylarda %60)', lab.mode === 'ev' && q ? D.rules.filter(r => (r.reply || []).length && (r.when || []).includes('=yas') && B.fits(r, ch) && B.inOrder(ymsg, r.when, D)) : []]);
       const scOf = r => (lsc.has(r) ? lsc.get(r) : B.score(r));
-      const card = (r, top) => `<div class="lab-rule${top ? ' win' : ''}"><div class="lab-h"><b>${esc(r.name || r.id)}</b><small>${esc(r.category || '')} · ${scOf(r)} puan${(r.traits || []).length ? ' · ' + esc(r.traits.join(', ')) : ''}${top ? ' · 🏆' : ''}</small></div>
-        <ol>${r.reply.map(x => `<li>${esc(fill(x)).replace(/\|\|/g, '<i> ‖ </i>')}</li>`).join('')}</ol><small class="lab-w">when: ${esc((r.when || []).join(' , '))}</small></div>`;
+      // cevap listeleri açılır / kapanır; sadece kazanan açık gelir
+      const card = (r, top) => `<details class="lab-rule${top ? ' win' : ''}"${top ? ' open' : ''}><summary class="lab-h"><b>${esc(r.name || r.id)} <small>(${r.reply.length})</small></b><small>${esc(r.category || '')} · ${scOf(r)} puan${(r.traits || []).length ? ' · ' + esc(r.traits.join(', ')) : ''}${top ? ' · 🏆' : ''}</small></summary>
+        <ol>${r.reply.map(x => `<li>${esc(fill(x)).replace(/\|\|/g, '<i> ‖ </i>')}</li>`).join('')}</ol><small class="lab-w">when: ${esc((r.when || []).join(' , '))}</small></details>`;
       const out = groups.filter(([, rs]) => rs.length).map(([t, rs]) => { const top = Math.max(...rs.map(scOf)), sorted = rs.slice().sort((a, b) => scOf(b) - scOf(a));
         return `<div class="sec-title">${esc(t)} <small>(${rs.length})</small></div>${sorted.map(r => card(r, scOf(r) === top)).join('')}`; }).join('');
       const fb = lab.mode === 'msg' && !hit.length && !lsc.size ? D.rules.filter(r => !(r.when || []).length && (r.reply || []).length && B.fits(r, ch)) : [];

@@ -1324,6 +1324,7 @@ button.cs-cond { border: 0; cursor: pointer; }
 .lab-out .sec-title { margin: 14px 0 6px; }
 .lab-rule { padding: 10px 12px; margin-bottom: 8px; border-radius: 14px; background: var(--chip); }
 .lab-rule.win { background: var(--purple-soft); box-shadow: inset 0 0 0 1.5px rgba(0, 137, 196, .35); }
+summary.lab-h { cursor: pointer; }
 .lab-h b { display: block; font-size: 14px; }
 .lab-h small { font-size: 11.5px; color: var(--muted); }
 .lab-rule ol { margin: 8px 0 6px; padding-left: 20px; font-size: 13px; line-height: 1.45; }
@@ -1332,6 +1333,7 @@ button.cs-cond { border: 0; cursor: pointer; }
 .lab-char { margin-bottom: 12px; }
 .lab-ch-h { display: flex; gap: 6px; align-items: center; }
 .lab-ch-h input { flex: 1; min-width: 0; padding: 9px 12px; border-radius: 12px; border: 1px solid var(--line, #e3e6ee); font-size: 15px; font-weight: 700; background: transparent; color: inherit; }
+.lab-ch-h input.lab-age { flex: 0 0 76px; text-align: center; }
 .lab-sec { max-height: 360px; overflow-y: auto; padding-right: 2px; }
 .lab-row { display: grid; gap: 5px; margin: 8px 0; }
 .lab-row small { font-size: 12px; color: var(--muted); font-weight: 600; }
