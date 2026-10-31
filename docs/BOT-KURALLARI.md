@@ -76,6 +76,8 @@ seni  →  +sevmek  + Soğuk → "Hıh. Tamam."                     aynı kelime
 
 `traits` değerleri karakterin profilindeki özelliklerle birebir eşleşmelidir (büyük/küçük harf fark etmez): `js/data/traits.js`'teki hazır listeler ya da karakterin "Diğer özellikler"i.
 
+**Yaş özelliği:** motor karakterin yaşından bir özellik daha türetir (kullanıcı ~20 yaşında varsayılır): `Yaş: Genç` (18–22), `Yaş: Yirmili` (23–29), `Yaş: Otuzlu` (30–39), `Yaş: Olgun` (40+). Yaşı olmayan karakterde yoktur. Örnek: `"traits": ["Yaş: Otuzlu|Yaş: Olgun"]`.
+
 ---
 
 ## 4. Kelime yazımı (`when`)

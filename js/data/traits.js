@@ -19,6 +19,11 @@ Stories.Traits = (() => {
     },
     // Kendi gruplarını ekleyebilirsin: { id: 'benzersiz-id', label: '🌟 Başlık', items: ['A', 'B'] }
     // (🌟 Ekstra listesi Monia olay havuzuna taşındı: js/data/monia.js)
+    // 👑 emirlere itaat eder mi, kendisi emreder mi (bkz. app.js DOM_*): Dominant + deneyimli / Şehvet 60+ ise Strap-On ister
+    {
+      id: 'dominance', label: '👑 Dominance', single: true,
+      items: ['Submissive', 'Switch', 'Dominant']
+    },
     {
       id: 'experience', label: 'Experience', single: true,
       items: ['Virgo' , 'Little','Some','Medium','Much','A lot','Great']
@@ -32,6 +37,11 @@ Stories.Traits = (() => {
     {
       id: 'anal', label: '🍑 Anal Size', single: true,
       items: ['Extremely Tight','Very Tight','Tight','Average','Relaxed','Loose','Very Loose']
+    },
+    // kilo, Boob / Butt Size'tan önce gelir: 🎲 rastgele önce kiloyu seçer, beden ona uyar (bkz. rules)
+    {
+      id: 'weight', label: '⚖️ Weight', single: true,
+      items: ['Very Thin', 'Thin', 'Slim', 'Average', 'Curvy', 'Chubby', 'Overweight']
     },
     {
       id: 'boob', label: '🍒 Boob Size', single: true,
@@ -65,5 +75,15 @@ Stories.Traits = (() => {
 
   const all = groups.reduce((a, g) => a.concat(g.values), []);
 
-  return { groups, zodiacs, colors, all };
+  // 📏 hep geçerli kurallar (📏 Kurallar sayfasındakilere eklenir): kiloya göre olamayacak göğüs / kalça bedenleri
+  const W_RULES = {
+    'Very Thin': ['Boob Size: 90', 'Boob Size: 95', 'Butt Size: L', 'Butt Size: XL'],
+    'Thin': ['Boob Size: 95', 'Butt Size: XL'],
+    'Curvy': ['Boob Size: 70', 'Butt Size: XS'],
+    'Chubby': ['Boob Size: 70', 'Boob Size: 75', 'Butt Size: XS', 'Butt Size: S'],
+    'Overweight': ['Boob Size: 70', 'Boob Size: 75', 'Boob Size: 80', 'Butt Size: XS', 'Butt Size: S', 'Butt Size: M']
+  };
+  const rules = Object.entries(W_RULES).map(([w, not]) => ({ id: 'w_' + w.replace(/\s/g, ''), ifs: ['Weight: ' + w], not }));
+
+  return { groups, zodiacs, colors, all, rules };
 })();

@@ -30,6 +30,30 @@ Stories.MODS = (() => {
   };
   const Y = 'carmen';
 
+  // Emily: mods/emily/ içindeki her resim bir karakter (tek resim). Gothic.com ilanları bu karakterlerden oluşur.
+  // Hepsi sayko: takıntılı, kıskanç, dengesiz; isim/bio/kişilik aşağıdaki listelerden sırayla dağıtılır
+  const E = 'emily';
+  const EM = {
+    names: ['Emily Thorne', 'Lilith Crane', 'Morgana Vex', 'Raven Hollow', 'Delilah Black', 'Ophelia Grimm', 'Seraphine Voss', 'Nyx Calloway', 'Belladonna Rhys',
+      'Ivy Ashgrave', 'Lucinda Mortem', 'Salem Wraith', 'Carmilla Dusk', 'Vivienne Hex', 'Elvira Shade', 'Rosalind Bane', 'Sybil Nightshade', 'Wednesday Vale', 'Mara Cinder', 'Lenore Crowe'],
+    bios: ['Seni izliyorum. Sevgiyle 🖤', 'Mesajımı okuyup cevap vermemek… kötü bir fikir.', 'Bir kere benim oldun mu, sonsuza dek benimsin.', 'Gülümsüyorum. Bu iyi bir işaret değil.',
+      'Adını defterime yüz kere yazdım.', 'Kimseyle konuşma. Sadece benimle.', 'Kapını kilitlemene gerek yok, anahtarın bende.', 'Tatlıyım… ta ki beni kızdırana kadar 🔪'],
+    traits: [['Kıskanç', 'Manipülatif', 'Gizemli', 'Takıntılı'], ['Soğuk', 'Kibirli', 'Dengesiz', 'Resmi konuşur'], ['Flörtöz', 'Kıskanç', 'Takıntılı', 'Harf uzatır (canımmm)'],
+      ['Sakin', 'Manipülatif', 'Sayko', 'Kısa yazar'], ['Neşeli', 'Dengesiz', 'Kıskanç', 'Emoji sever'], ['Gizemli', 'Soğuk', 'Takıntılı', 'Hep küçük harf'],
+      ['Romantik', 'Sayko', 'Kıskanç', 'Uzun yazar'], ['Çocuksu', 'Dengesiz', 'Manipülatif', 'Çok güler (sjsjsj)']],
+    about: [
+      'Tatlı görünür, yumuşak konuşur; ama ilk mesajından sonra seni çoktan sahiplenmiştir.\nBaşka bir kızın adını anarsan sesi buz keser. Seni kaybetmektense her şeyi yakmaya hazırdır.',
+      'Gece seni pencerenden izlediğini itiraf eder, sonra "şaka" der. Şaka değildir.\nHer mesajına saniyesinde cevap verir; sen geç kalırsan on mesaj atar.',
+      'Gülerken gözleri gülmez. Sevgisi bir kafes gibidir: içi sıcak, kapısı kilitli.\nSeni "sadece benim" diye çağırır ve bunu çok ciddi söyler.',
+      'Bir an çok tatlı, bir an buz gibi; ruh hali dolunay gibi değişir.\nSana hediye olarak saç tutamını gönderir. Seninkini de ister.',
+      'Kimseye güvenmez, sana hiç güvenmez ama seni bırakmaz da.\nTelefonunu karıştırmak onun için sevgi göstermektir.'],
+    colors: [['#3a0d12', '#8b0000'], ['#1a1a1a', '#5b0e2d'], ['#2b0f3a', '#7b1fa2'], ['#0d0d0d', '#b71c1c'], ['#20102a', '#4a148c']]
+  };
+  const emily = Object.keys((Stories.MOD_PHOTOS || {})[E] || {}).map((k, i) => scanned(E, k, {
+    name: EM.names[i % EM.names.length], bio: EM.bios[i % EM.bios.length], traits: EM.traits[i % EM.traits.length],
+    about: EM.about[i % EM.about.length], colors: EM.colors[i % EM.colors.length]
+  }));
+
   return [
     { id: 'amor', name: 'Amor', icon: '💜', desc: 'Fotoğraf setleri · özellikleri 🎲 ile belirle' },
     {
@@ -49,6 +73,7 @@ Stories.MODS = (() => {
         scanned(Y, 'isabeau', { name: 'Isabeau Quill', colors: ['#e2b3f5', '#a855c7'] })
       ]
     },
+    { id: E, name: 'Emily', icon: '🔪', desc: 'Sayko kızlar · her resim bir karakter · Gothic.com ilanları buradan gelir (resimleri mods/emily/ klasörüne ekle)', characters: emily },
     {
       id: 'dontstop', name: "Don't Stop", icon: `${D}icon_luna.png`, desc: 'Oyunun karakterleri · profil ve kişilik hazır',
       characters: [

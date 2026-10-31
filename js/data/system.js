@@ -2,6 +2,17 @@
 window.Stories = window.Stories || {};
 Stories.SYSTEM = {
  "events": [
+  { "id": "mvfd01strapon", "title": "Strap-On", "cat": "c:mvfemdom01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["femdom", "strapon"], "desc": "Belindeki kemerle sana arkadan girer; bu kez kontrol tamamen onda", "color": "#7b2cbf", "emojis": "👑🍆" },
+  { "id": "mvfd02trampl", "title": "Trampling", "cat": "c:mvfemdom01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["femdom"], "desc": "Çıplak ayaklarıyla göğsüne ve karnına basar, ağırlığını yavaşça verir", "color": "#9d4edd", "emojis": "👣👑" },
+  { "id": "mvfd03crush", "title": "Cock Crush", "cat": "c:mvfemdom01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["femdom"], "desc": "Ayağının tabanıyla aletine hafifçe bastırır, ne kadar dayanacağını izler", "color": "#c77dff", "emojis": "👠😈" },
+  { "id": "mvfd04smoth", "title": "Face Smothering", "cat": "c:mvfemdom01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["femdom"], "desc": "Yüzüne bütün ağırlığıyla oturur; nefes alman onun iznine bağlı", "color": "#7b2cbf", "emojis": "🍑😈" },
+  { "id": "mvfd05foot", "title": "Foot Worship", "cat": "c:mvfemdom01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["femdom"], "desc": "Diz çökersin; ayaklarını öper, yalar, tapar gibi seversin", "color": "#9d4edd", "emojis": "👣💋" },
+  { "id": "mvfd07cocksq", "title": "Cock Squeeze", "cat": "c:mvfemdom01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["femdom"], "desc": "Penisini avucuna alıp sıkar; zonklamasını hissedip yüzünü izler", "color": "#9d4edd", "emojis": "✊😈" },
+  { "id": "mvfd08ballsq", "title": "Ball Squeeze", "cat": "c:mvfemdom01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["femdom"], "desc": "Taşaklarını avucuna alır, parmaklarıyla yavaş yavaş sıkar", "color": "#c77dff", "emojis": "🤏😏" },
+  { "id": "mvfd09ballcr", "title": "Ball Crush", "cat": "c:mvfemdom01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["femdom"], "desc": "Dizini ya da ayağını taşaklarına bastırıp ezer; ne kadar dayanacağını izler", "color": "#7b2cbf", "emojis": "👠💥" },
+  { "id": "mvfd10grip", "title": "Death Grip", "cat": "c:mvfemdom01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["femdom", "tutma"], "desc": "Boşalmaman için penisinin dibini bütün gücüyle sıkar; izin vermeden bitiremezsin", "color": "#5a189a", "emojis": "✊🚫" },
+  { "id": "mvfd11denial", "title": "Orgasm Denial", "cat": "c:mvfemdom01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["femdom", "tutma"], "desc": "Tam boşalmak üzereyken seni içinden çıkarır; boşalmana izin vermez", "color": "#5a189a", "emojis": "🚫💦" },
+  { "id": "mvfd06femdom", "title": "Female Domination", "cat": "c:mvfemdom01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["femdom"], "desc": "Bütün kontrol onda: ne yapacağını, ne zaman yapacağını o söyler", "color": "#5a189a", "emojis": "👑" },
   {
    "id": "mvgkvtgs4970g",
    "title": "Kissing",
@@ -2780,6 +2791,711 @@ Stories.SYSTEM = {
    "desc": "Kalçanın iki yanağı arasında sürtme (🌭 sosisli gibi): içeri girmeden, kalçaların arasında",
    "color": "#ff8a65",
    "emojis": "🍑🌭"
+  },
+  {
+   "id": "mvs1stdmis01a",
+   "title": "Standing Missionary",
+   "cat": "c:mvglvwdtam0h7",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [
+    "penetrasyon",
+    "vajinal"
+   ],
+   "desc": "Ayakta, sırtı duvara yaslı; onu kaldırıp duvara dayayarak zıplatırsın",
+   "color": "#ff5f5f",
+   "emojis": "🔥🧱",
+   "onEffects": [
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "id": "mvs1drymis02b",
+   "title": "Dry Missionary",
+   "cat": "c:mvgn2ubfw2eoh",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [
+    "kıyafet"
+   ],
+   "desc": "Missionary gibi ama kıyafetler üstünde: içeri girmeden sadece sürtünürsün",
+   "color": "#ff8a65",
+   "emojis": "👖🔥"
+  },
+  {
+   "id": "mvs1drydog03c",
+   "title": "Dry Doggy",
+   "cat": "c:mvgn2ubfw2eoh",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [
+    "kıyafet"
+   ],
+   "desc": "Doggy gibi ama kıyafetler üstünde: arkasından kalçasına sürtünürsün",
+   "color": "#ff8a65",
+   "emojis": "👖🍑"
+  },
+  {
+   "id": "mvs1drycrp04d",
+   "title": "Dry Creampie",
+   "cat": "c:mvgu3rsuko7km",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [
+    "kıyafet",
+    "boşalma"
+   ],
+   "desc": "Sürtünürken dayanamazsın, kendi pantolonunun içine boşalırsın",
+   "color": "#5f8bff",
+   "emojis": "💦👖",
+   "onEffects": [
+    {
+     "p": "p:umvjy7ucpiosps",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "id": "mvs2drtit01a",
+   "title": "Dressed Tit Cumshot",
+   "cat": "c:mvgu3rsuko7km",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [
+    "kıyafet",
+    "boşalma"
+   ],
+   "desc": "O giyinikken göğüslerine, kıyafetinin üstüne boşalırsın",
+   "color": "#5f8bff",
+   "emojis": "💦👚",
+   "onEffects": [
+    {
+     "p": "p:umvjy7ucpiosps",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "id": "mvs2drass02b",
+   "title": "Dressed Ass Cumshot",
+   "cat": "c:mvgu3rsuko7km",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [
+    "kıyafet",
+    "boşalma"
+   ],
+   "desc": "O giyinikken kalçasına, kıyafetinin üstüne boşalırsın",
+   "color": "#5f8bff",
+   "emojis": "💦👖",
+   "onEffects": [
+    {
+     "p": "p:umvjy7ucpiosps",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "id": "mvs2drleg03c",
+   "title": "Dressed Leg Cumshot",
+   "cat": "c:mvgu3rsuko7km",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [
+    "kıyafet",
+    "boşalma"
+   ],
+   "desc": "O giyinikken bacaklarına, kıyafetinin üstüne boşalırsın",
+   "color": "#5f8bff",
+   "emojis": "💦🦵",
+   "onEffects": [
+    {
+     "p": "p:umvjy7ucpiosps",
+     "d": 1
+    }
+   ]
+  },
+  { "id": "mvhw1vampbt01", "title": "Vampire Bite", "cat": "c:mvgm9ihwda8f5", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["vajinal", "halloween"], "desc": "Ayakta, arkasından alırken boynuna dişlerini geçirirsin", "color": "#b71c1c", "emojis": "🧛🩸" },
+  { "id": "mvhw2moondg02", "title": "Full Moon Doggy", "cat": "c:mvgm9ihwda8f5", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["vajinal", "halloween"], "desc": "Dolunay ışığında vahşi doggy: saçından çekip arkadan sertçe alırsın", "color": "#5d4037", "emojis": "🌕🐺" },
+  { "id": "mvhw3cofmis03", "title": "Coffin Missionary", "cat": "c:mvglvwdtam0h7", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["vajinal", "halloween"], "desc": "Dar bir yerde, tabut gibi sıkışık: üst üste, kıpırdayacak yer yokken missionary", "color": "#4e342e", "emojis": "⚰️🔥" },
+  { "id": "mvhw4pmpgrd04", "title": "Pumpkin Grind", "cat": "c:mvgn2ubfw2eoh", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["kıyafet", "halloween"], "desc": "Kostümler üstünde: kucağında kalçasını dairesel çevirerek sana sürtünür", "color": "#ef6c00", "emojis": "🎃👖" },
+  { "id": "mvhw5spdweb05", "title": "Spider Web", "cat": "c:mvglvwdtam0h7", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["vajinal", "halloween"], "desc": "Bilekleri başının üstünde tutulu, bacakları ağ gibi dört yana açık", "color": "#37474f", "emojis": "🕸️🕷️" },
+  { "id": "mvhw6crysbl06", "title": "Crystal Ball", "cat": "c:mvgn2ubfw2eoh", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["göğüs", "halloween"], "desc": "Göğüslerini avuçlarıyla birleştirip kristal küre yapar, arasında sürtünürsün", "color": "#7b1fa2", "emojis": "🔮🍒" },
+  { "id": "mvhw7masqrd07", "title": "Masquerade", "cat": "c:mvgn2ubfw2eoh", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["kıyafet", "halloween"], "desc": "Maskeli ve kostümlü: kimliğini saklayarak, kıyafetlerin üstünden sürtünme", "color": "#6a1b9a", "emojis": "🎭👖" },
+  { "id": "mvhw8candlk08", "title": "Candy Lick", "cat": "c:mvgtgdbp6e8xv", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["yalama", "halloween"], "desc": "Vücuduna şeker ve karamel sürülür, yalayarak temizlersin", "color": "#ff7043", "emojis": "🍬👅" },
+  { "id": "mvhw9tombst09", "title": "Tombstone", "cat": "c:mvglvwdtam0h7", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["vajinal", "halloween"], "desc": "Ayakta, sırtı soğuk bir taşa yaslı; bir bacağını kaldırıp önden alırsın", "color": "#546e7a", "emojis": "🪦🔥" },
+  { "id": "mvhw10coflid", "title": "Coffin Lid", "cat": "c:mvglvwdtam0h7", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["vajinal", "halloween"], "desc": "Sırtüstü, bacakları birleşik ve dimdik yukarıda, tabut kapağı gibi", "color": "#3e2723", "emojis": "⚰️🦵" },
+  { "id": "mvhw11ghstrd", "title": "Ghost Ride", "cat": "c:mvgm9ihwda8f5", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["vajinal", "halloween"], "desc": "Reverse cowgirl, üstünde beyaz tül bir çarşaf: hayalet gibi süzülür", "color": "#90a4ae", "emojis": "👻🍑" },
+  { "id": "mvhw12nckfst", "title": "Neck Feast", "cat": "c:mvglvwdtam0h7", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["vajinal", "halloween", "kan"], "desc": "Kaşık pozisyonu: arkadan sarılıp alırken boynuna kapanır, ısırıp içersin", "color": "#8b0000", "emojis": "🧛🩸" },
+  { "id": "mvhw13jugrd", "title": "Jugular Ride", "cat": "c:mvglvwdtam0h7", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["vajinal", "halloween", "kan"], "desc": "Üstünde oturur, öne eğilip boynuna kapanır; seni sürerken boynundan içer", "color": "#a31515", "emojis": "🩸🏇" },
+  { "id": "mvhw14wrsofr", "title": "Wrist Offering", "cat": "c:mvglvwdtam0h7", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["vajinal", "halloween", "kan"], "desc": "Missionary: bileğini ağzına uzatırsın, o emerken içine girersin", "color": "#7f0000", "emojis": "🔪🩸" },
+  { "id": "mvhw15thgbt", "title": "Thigh Bite", "cat": "c:mvgtgdbp6e8xv", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["yalama", "halloween", "kan"], "desc": "Bacaklarının arasındayken iç bacağını ısırırsın, sonra yalamaya dönersin", "color": "#9a1b1b", "emojis": "🦷🩸" },
+  { "id": "mvhw16shdmrk", "title": "Shoulder Mark", "cat": "c:mvglvwdtam0h7", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["vajinal", "halloween", "kan"], "desc": "Ayakta, duvara yaslı; alırken omzuna dişlerini geçirip iz bırakırsın", "color": "#6d0f0f", "emojis": "🦷🧱" },
+  { "id": "mvhw17chalce", "title": "Chalice", "cat": "c:mvgtgdbp6e8xv", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["yalama", "göğüs", "halloween", "kan"], "desc": "Göğüslerini kadeh gibi birleştirir, arasına kırmızı şarap döker; sen içersin", "color": "#722f37", "emojis": "🍷🍒" },
+  { "id": "mvhw18redfnt", "title": "Red Fountain", "cat": "c:mvgtgdbp6e8xv", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["yalama", "halloween", "kan"], "desc": "Sırtüstü uzanır, karnına kırmızı sıvı dökülür; aşağı akarken yalarsın", "color": "#8e1b2c", "emojis": "🍷👅" },
+  { "id": "mvhw19commun", "title": "Communion", "cat": "c:mvgm5g7q1xopl", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["ön_sevişme", "halloween", "kan"], "desc": "Aynı kadehten içer, şarabı ağzından ağzına aktarırsınız", "color": "#5e1a2b", "emojis": "🍷💋" },
+  { "id": "mvhw20bldbth", "title": "Blood Bath", "cat": "c:mvglvwdtam0h7", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["vajinal", "halloween", "kan"], "desc": "Kırmızı suyla dolu küvette, kucağında yüz yüze", "color": "#b00020", "emojis": "🛁🩸" },
+  { "id": "mvhw21btmsup", "title": "Bottoms Up", "cat": "c:mvgtgdbp6e8xv", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["yalama", "kalça", "halloween", "kan"], "desc": "Dört ayak üstünde, kalçasından aşağı şarap dökülür; götünden içersin", "color": "#6b1d2a", "emojis": "🍷🍑" },
+  { "id": "mvhw22sacrfc", "title": "Sacrifice", "cat": "c:mvglvwdtam0h7", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["vajinal", "halloween", "kan"], "desc": "Bağlı yatar, avucuna küçük bir kesik atılır; damlalar göğsüne düşerken önden alırsın", "color": "#5c0000", "emojis": "🔪🕯️" },
+  { "id": "mvhw23bldpct", "title": "Blood Pact", "cat": "c:mvglvwdtam0h7", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["vajinal", "halloween", "kan"], "desc": "İki avuç kesilip birleştirilir; sonra kucağında yüz yüze oturarak", "color": "#4a0000", "emojis": "🤝🩸" },
+  { "id": "mvhwc1chalcs", "title": "Chalice Cumshot", "cat": "c:mvgu3rsuko7km", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["göğüs", "boşalma", "halloween", "kan"], "desc": "Kadeh gibi birleştirdiği göğüslerinin arasına boşalırsın, şarapla karışır", "color": "#722f37", "emojis": "💦🍷", "onEffects": [{ "p": "p:umvjy7ucpiosps", "d": 1 }] },
+  { "id": "mvhwc2wingls", "title": "Wine Glass", "cat": "c:mvgu3rsuko7km", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["el", "boşalma", "halloween", "kan"], "desc": "Kadehe boşalırsın; o şarapla karıştırıp içer", "color": "#5e1a2b", "emojis": "💦🥂", "onEffects": [{ "p": "p:umvjy7ucpiosps", "d": 1 }] },
+  { "id": "mvhwc3btmfin", "title": "Bottoms Up Finish", "cat": "c:mvgu3rsuko7km", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["kalça", "boşalma", "halloween", "kan"], "desc": "Şarap döktüğün kalçasının üstüne boşalırsın; sonra yalayıp temizler", "color": "#6b1d2a", "emojis": "💦🍑", "onEffects": [{ "p": "p:umvjy7ucpiosps", "d": 1 }] },
+  { "id": "mvhwc4rdbthc", "title": "Red Bath Creampie", "cat": "c:mvgu3rsuko7km", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["vajinal", "boşalma", "halloween", "kan"], "desc": "Kırmızı küvette, suyun içinde içine boşalırsın", "color": "#b00020", "emojis": "💦🛁", "base": "b:extra:Creampie", "level": "",
+    "outcomes": [{ "id": "mvhwc4preg01", "text": "{ben} hamile kaldı", "pct": 50, "next": "", "effects": [{ "p": "f:hamile", "d": 1 }], "conds": [{ "k": "not", "ev": "mvh1h70jral7v" }] }], "subs": [], "sub": "",
+    "onEffects": [{ "p": "p:umvjy7ucpiosps", "d": 1 }, { "p": "p:umvjof3wzh5hej", "d": -30 }] },
+  { "id": "mvhwc5shroud", "title": "Shroud Cumshot", "cat": "c:mvgu3rsuko7km", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["kıyafet", "boşalma", "halloween"], "desc": "Hayalet tülünün ya da mumya sargısının üstüne boşalırsın; kumaşta iz kalır", "color": "#90a4ae", "emojis": "💦👻", "onEffects": [{ "p": "p:umvjy7ucpiosps", "d": 1 }] },
+  { "id": "mvhwc6potion", "title": "Potion Ingredient", "cat": "c:mvgu3rsuko7km", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["el", "boşalma", "halloween"], "desc": "Cadının kazanına ya da şişesine boşalırsın: iksirin son malzemesi", "color": "#4a148c", "emojis": "💦🧪", "onEffects": [{ "p": "p:umvjy7ucpiosps", "d": 1 }] },
+  { "id": "mvhwc7sirens", "title": "Siren's Swallow", "cat": "c:mvgu3rsuko7km", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["oral", "boşalma", "halloween"], "desc": "Ağzına boşalırsın, yutar; sonra şarkı mırıldanır", "color": "#00838f", "emojis": "💦🧜‍♀️", "onEffects": [{ "p": "p:umvjy7ucpiosps", "d": 1 }] },
+  { "id": "mvhwc8crmsmx", "title": "Crimson Mix", "cat": "c:mvgu3rsuko7km", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["göğüs", "boşalma", "halloween", "kan"], "desc": "Kesikli avucunun ya da göğsündeki kırmızı damlaların üstüne boşalırsın; iki renk karışır", "color": "#5c0000", "emojis": "💦🩸", "onEffects": [{ "p": "p:umvjy7ucpiosps", "d": 1 }] },
+  { "id": "mvhwc9vmpkss", "title": "Vampire Kiss Finish", "cat": "c:mvgu3rsuko7km", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["oral", "boşalma", "halloween", "kan"], "desc": "Ağzına boşalırsın; o kanlı dudaklarıyla seni öper", "color": "#8b0000", "emojis": "💦💋", "onEffects": [{ "p": "p:umvjy7ucpiosps", "d": 1 }] },
+  { "id": "mvhwsl1fbwrp", "title": "Full Body Wrap", "cat": "c:mvgm9ihwda8f5", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["vajinal", "halloween", "slime"], "desc": "Arkadan alırken bütün bedeniyle sana sarılır; jöle gibi her yerini kaplar", "color": "#43a047", "emojis": "🫠🍑" },
+  { "id": "mvhwsl2jlyrd", "title": "Jelly Ride", "cat": "c:mvglvwdtam0h7", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["vajinal", "halloween", "slime"], "desc": "Yüz yüze üstüne oturur; her inişte bedeni dalga dalga titrer", "color": "#66bb6a", "emojis": "💚🏇" },
+  { "id": "mvhwsl3wbldg", "title": "Wobble Doggy", "cat": "c:mvgm9ihwda8f5", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["vajinal", "halloween", "slime"], "desc": "Dört ayak üstünde; jöle kalçası her vuruşta sallanır", "color": "#2e7d32", "emojis": "🍑💚" },
+  { "id": "mvhwsl4slhug", "title": "Slime Hug", "cat": "c:mvgn2ubfw2eoh", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["göğüs", "halloween", "slime"], "desc": "Erimiş gibi göğüslerini etrafına sarar; kaygan, yapışkan bir göğüs arası", "color": "#81c784", "emojis": "🫧🍒" },
+  { "id": "mvhwsl5shpsf", "title": "Shapeshift", "cat": "c:mvglvwdtam0h7", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["vajinal", "halloween", "slime"], "desc": "Önden alırken şekil değiştirir: göğüslerini, kalçasını büyütür, içini sana göre daraltır", "color": "#00897b", "emojis": "🌀🫠" },
+  { "id": "mvhwsc1viscr", "title": "Visible Creampie", "cat": "c:mvgu3rsuko7km", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["vajinal", "boşalma", "halloween", "slime"], "desc": "İçine boşalırsın; yarı saydam bedeninde beyaz bir bulut olarak görünür", "color": "#43a047", "emojis": "💦👀", "base": "b:extra:Creampie", "level": "",
+    "outcomes": [{ "id": "mvhwsc1preg1", "text": "{ben} hamile kaldı", "pct": 50, "next": "", "effects": [{ "p": "f:hamile", "d": 1 }], "conds": [{ "k": "not", "ev": "mvh1h70jral7v" }] }], "subs": [], "sub": "",
+    "onEffects": [{ "p": "p:umvjy7ucpiosps", "d": 1 }, { "p": "p:umvjof3wzh5hej", "d": -30 }] },
+  { "id": "mvhwsc2absrb", "title": "Absorption", "cat": "c:mvgu3rsuko7km", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["kalça", "boşalma", "halloween", "slime"], "desc": "Tenine boşalırsın; her damlayı emer, hiç iz kalmaz", "color": "#2e7d32", "emojis": "💦🫠", "onEffects": [{ "p": "p:umvjy7ucpiosps", "d": 1 }] },
+  { "id": "mvhwsc3slcot", "title": "Slime Coat", "cat": "c:mvgu3rsuko7km", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["göğüs", "boşalma", "halloween", "slime"], "desc": "Göğüslerinin üstüne boşalırsın; yeşilin üstünde parlar, yavaşça içine kaybolur", "color": "#81c784", "emojis": "💦💚", "onEffects": [{ "p": "p:umvjy7ucpiosps", "d": 1 }] },
+  { "id": "mvhwsc4visw", "title": "Visible Swallow", "cat": "c:mvgu3rsuko7km", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["oral", "boşalma", "halloween", "slime"], "desc": "Ağzına boşalırsın, yutar; boğazından aşağı süzülüşü dışarıdan görünür", "color": "#66bb6a", "emojis": "💦🥤", "onEffects": [{ "p": "p:umvjy7ucpiosps", "d": 1 }] },
+  { "id": "mvhwsz1slgrw", "title": "Slime Growth", "cat": "c:mvguxicvzx0iq", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["halloween", "slime"], "desc": "Slime Girl seni fazla emdi ve büyüdü: göğüsleri, kalçası dolgunlaşır (Slime Girl'le 3. boşalmadan sonra kendiliğinden)", "color": "#1b5e20", "emojis": "🫠📈" },
+  { "id": "mvtr01prstex", "title": "Prostate Exam", "cat": "c:mvtreat01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["el", "boşalma", "tedavi"], "desc": "Eldivenli parmağıyla prostatına masaj yapar; sana dokunmadan boşaltır", "color": "#0288d1", "emojis": "🧤💦", "onEffects": [{ "p": "p:umvjy7ucpiosps", "d": 1 }] },
+  { "id": "mvtr02milkth", "title": "Milking Therapy", "cat": "c:mvtreat01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["el", "boşalma", "tedavi"], "desc": "Yağlı eldivenle yavaş yavaş sağar, son damlaya kadar boşaltır; gerginliğin gider", "color": "#0277bd", "emojis": "🧴✋", "onEffects": [{ "p": "p:umvjy7ucpiosps", "d": 1 }] },
+  { "id": "mvtr03smnsmp", "title": "Semen Sample", "cat": "c:mvtreat01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["el", "boşalma", "tedavi"], "desc": "Tahlil için numune: eliyle boşaltıp kabı ağzına kadar doldurur", "color": "#01579b", "emojis": "🧪💦", "onEffects": [{ "p": "p:umvjy7ucpiosps", "d": 1 }] },
+  { "id": "mvtr04mslrls", "title": "Muscle Release", "cat": "c:mvtreat01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["tedavi"], "desc": "Tutulan kaslarına derin doku tedavisi: düğümleri parmaklarıyla tek tek çözer", "color": "#00838f", "emojis": "💪💆" },
+  { "id": "mvtr05wrmcmp", "title": "Warm Compress", "cat": "c:mvtreat01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["tedavi"], "desc": "Ağrıyan yere sıcak kompres koyar, üstünden yavaşça ovar", "color": "#ef6c00", "emojis": "♨️🧣" },
+  { "id": "mvtr06strtch", "title": "Stretch Therapy", "cat": "c:mvtreat01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["tedavi"], "desc": "Bacağını omzuna alıp kaslarını yavaşça esnetir, üstüne eğilerek bastırır", "color": "#00695c", "emojis": "🧘🦵" },
+  { "id": "mvtr07cmfhug", "title": "Comfort Hug", "cat": "c:mvtreat01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["tedavi"], "desc": "Sıkıca sarılır, sırtını okşar; sen bırakana kadar bırakmaz", "color": "#ec407a", "emojis": "🤗💗" },
+  { "id": "mvtr08lappil", "title": "Lap Pillow", "cat": "c:mvtreat01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["tedavi"], "desc": "Başını dizine yatırır, saçlarını okşar, yavaşça mırıldanır", "color": "#f48fb1", "emojis": "🦵😌" },
+  { "id": "mvtr09hedpat", "title": "Head Pat", "cat": "c:mvtreat01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["tedavi"], "desc": "Başını okşar, \"aferin sana\" der; kendini değerli hissettirir", "color": "#ce93d8", "emojis": "🫳💕" },
+  { "id": "mvtr10cudthr", "title": "Cuddle Therapy", "cat": "c:mvtreat01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["tedavi"], "desc": "Muayene yatağında arkandan kaşık gibi sarılıp yanına uzanır", "color": "#ba68c8", "emojis": "🛏️🥰" },
+  { "id": "mvtr11intthr", "title": "Intimate Therapy", "cat": "c:mvglvwdtam0h7", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["vajinal", "tedavi"], "desc": "Elle olmayınca doktor kendi rızasıyla bedeniyle tedavi eder: kondomla, sedyede üstüne yavaşça oturarak", "color": "#0097a7", "emojis": "🩺💗" },
+  { "id": "mvtr12bbkthr", "title": "Bareback Therapy", "cat": "c:mvglvwdtam0h7", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["vajinal", "tedavi"], "desc": "Kondomla da rahat olamayan hasta için: kondomsuz, yavaş ve şefkatli; içinde boşalmana izin verir (içe izin veren doktor)", "color": "#00796b", "emojis": "🩺🔥" },
+  { "id": "mvtr13bbpull", "title": "Bareback Pull Out", "cat": "c:mvglvwdtam0h7", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["vajinal", "tedavi"], "desc": "Kondomla da rahat olamayan hasta için kondomsuz; ama içe izin vermez, gelmeden çeker ve dışarıda bitirtir", "color": "#00897b", "emojis": "🩺↩️" },
+  { "id": "mvtr14intdgy", "title": "Intimate Doggy", "cat": "c:mvgm9ihwda8f5", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["vajinal", "tedavi"], "desc": "Yüz yüze utanan doktor için: kondomla, sedyeye eğilip arkasını döner; yüzünü görmeden tedavi eder", "color": "#0097a7", "emojis": "🩺🍑" },
+  { "id": "mvtrrpklnk01", "title": "Klinik Doktoru – Hasta", "cat": "c:mvgwj75108lqd", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["roleplay", "tedavi"], "desc": "CarmenKlinik'te muayene: o şefkatli doktor, sen tedaviye gelen hasta", "color": "#26a69a", "emojis": "🥼🩺" },
+  { "id": "mvdr01redwin", "title": "Red Wine", "cat": "c:mvdrinks01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": [], "desc": "Ona bir kadeh kırmızı şarap içirirsin", "color": "#722f37", "emojis": "🍷", "onEffects": [{ "p": "p:sarhos", "d": 15 }] },
+  { "id": "mvdr02tqshot", "title": "Tequila Shot", "cat": "c:mvdrinks01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": [], "desc": "Tuz, shot, limon: tek seferde", "color": "#c9a227", "emojis": "🥃🍋", "onEffects": [{ "p": "p:sarhos", "d": 25 }] },
+  { "id": "mvdr03chmpgn", "title": "Champagne", "cat": "c:mvdrinks01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": [], "desc": "Köpüklü şampanya; kadeh kadeh", "color": "#e8d27a", "emojis": "🥂", "onEffects": [{ "p": "p:sarhos", "d": 15 }] },
+  { "id": "mvdr04bldmry", "title": "Bloody Mary", "cat": "c:mvdrinks01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["halloween", "kan"], "desc": "Kan kırmızısı kokteyl; vampirlerin favorisi", "color": "#a31515", "emojis": "🍅🩸", "onEffects": [{ "p": "p:sarhos", "d": 20 }] },
+  { "id": "mvdr05wchpnc", "title": "Witch's Punch", "cat": "c:mvdrinks01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["halloween"], "desc": "Kazandan dumanı tüten mor ponç", "color": "#6a1b9a", "emojis": "🧪🟣", "onEffects": [{ "p": "p:sarhos", "d": 20 }] },
+  { "id": "mvdr06absnth", "title": "Absinthe", "cat": "c:mvdrinks01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["halloween"], "desc": "Yeşil peri: şekerli kaşığın üstünden, çok sert", "color": "#4caf50", "emojis": "🧚‍♀️🟢", "onEffects": [{ "p": "p:sarhos", "d": 35 }] },
+  { "id": "mvdr07mthsht", "title": "Mouth Shot", "cat": "c:mvdrinks01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": [], "desc": "Shotu kendi ağzından onun ağzına aktarırsın", "color": "#d81b60", "emojis": "💋🥃", "onEffects": [{ "p": "p:sarhos", "d": 20 }] },
+  { "id": "mvdr08bdysht", "title": "Body Shot", "cat": "c:mvdrinks01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": [], "desc": "Göbeğinden içersin, limonu dudaklarından alırsın; sonra o senden", "color": "#ff8f00", "emojis": "🍋👅", "onEffects": [{ "p": "p:sarhos", "d": 25 }] },
+  { "id": "mvdr09water1", "title": "Water", "cat": "c:mvdrinks01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": [], "desc": "Ayılsın diye bir bardak su", "color": "#4fc3f7", "emojis": "💧", "onEffects": [{ "p": "p:sarhos", "d": -25 }] },
+  { "id": "mvdr10coffee", "title": "Black Coffee", "cat": "c:mvdrinks01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": [], "desc": "Sade, sert bir kahve; kendine gelsin", "color": "#4e342e", "emojis": "☕", "onEffects": [{ "p": "p:sarhos", "d": -20 }] },
+  { "id": "mvdr12mlkwin", "title": "Milk & Wine", "cat": "c:mvdrinks01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": [], "desc": "Sütünü kırmızı şarapla karıştırıp sana içirir", "color": "#c48b9f", "emojis": "🍼🍷", "onEffects": [{ "p": "p:sarhos", "d": 15 }, { "p": "p:umvjzd17h5twc2", "d": -10 }] },
+  { "id": "mvlc01crmmlk", "title": "Crimson Milk", "cat": "c:mvgwupu3we8yl", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["halloween", "kan"], "desc": "Lanetliyken süt pembe-kırmızı gelir (Succubus Curse ya da Vampir / Succubus'la kan olayından sonra kendiliğinden)", "color": "#d81b60", "emojis": "🍼🩸" },
+  { "id": "mvlc02wrmmlk", "title": "Warm Milk", "cat": "c:mvgwupu3we8yl", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": [], "desc": "Sıcacık süt", "color": "#ffcc80", "emojis": "🍼🔥" },
+  { "id": "mvlc03cldmlk", "title": "Cold Milk", "cat": "c:mvgwupu3we8yl", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": [], "desc": "Serin, ürperten süt", "color": "#b3e5fc", "emojis": "🍼🥶" },
+  { "id": "mvlc04swtmlk", "title": "Sweet Milk", "cat": "c:mvgwupu3we8yl", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": [], "desc": "Tadı tatlı; tadını sorar", "color": "#f8bbd0", "emojis": "🍼🍬" },
+  { "id": "mvlc05hnymlk", "title": "Honey Milk", "cat": "c:mvgwupu3we8yl", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": [], "desc": "Bal gibi koyu ve tatlı; tadını sorar", "color": "#ffb300", "emojis": "🍼🍯" },
+  { "id": "mvlc06spray1", "title": "Milk Spray", "cat": "c:mvgwupu3we8yl", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": [], "desc": "Göğüslerine dokununca fışkırır", "color": "#e1f5fe", "emojis": "🍒💦" },
+  { "id": "mvlc07drip01", "title": "Milk Drip", "cat": "c:mvgwupu3we8yl", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": [], "desc": "Kendiliğinden damlar; üstü giyinikse kıyafetini ıslatır", "color": "#fff3e0", "emojis": "🍼💧" },
+  { "id": "mvlc08letdwn", "title": "Let-down", "cat": "c:mvgwupu3we8yl", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": [], "desc": "Emmeye başlayınca süt birden boşalır, irkilir", "color": "#fce4ec", "emojis": "🍼⚡" },
+  { "id": "mvhw24mlkbth", "title": "Milk Bath", "cat": "c:mvglvwdtam0h7", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["vajinal", "halloween"], "desc": "Süt dolu küvette, kucağında yüz yüze: Blood Bath'in beyaz eşi", "color": "#fafafa", "emojis": "🛁🍼" },
+  { "id": "mvdr11passot", "title": "Passed Out", "cat": "c:mvdrinks01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": [], "desc": "Çok içti, sızdı (Sarhoşluk 95'e varınca kendiliğinden)", "color": "#607d8b", "emojis": "😵‍💫💤" },
+  { "id": "mvhws01ectop", "title": "Ectoplasm", "cat": "c:mvguxicvzx0iq", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["halloween"], "desc": "Parlak ve yapış yapış; tende uzun süre kalır", "color": "#b2ff59", "emojis": "👻✨" },
+  { "id": "mvhws02bmoon", "title": "Blood Moon Load", "cat": "c:mvguxicvzx0iq", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["halloween"], "desc": "Dolunay gecesine özel: normalin iki katı", "color": "#c62828", "emojis": "🌕💦" },
+  { "id": "mvhws03vfeas", "title": "Vampire Feast", "cat": "c:mvguxicvzx0iq", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["halloween"], "desc": "Çok bol; vampir \"sonunda doydum\" der", "color": "#8b0000", "emojis": "🧛‍♀️💦" },
+  { "id": "mvhws04cauld", "title": "Cauldron Overflow", "cat": "c:mvguxicvzx0iq", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["halloween"], "desc": "O kadar çok ki taşar: kadehten, göğüslerden, küvetten", "color": "#4a148c", "emojis": "🫕💦" },
+  { "id": "mvhws05wbrew", "title": "Witch's Brew", "cat": "c:mvguxicvzx0iq", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["halloween"], "desc": "Koyu ve yoğun; iksir için mükemmel kıvam", "color": "#311b92", "emojis": "🧙‍♀️🧪" },
+  { "id": "mvhws06sshot", "title": "Single Shot", "cat": "c:mvguxicvzx0iq", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": [], "desc": "Tek bir atış", "color": "#90caf9", "emojis": "1️⃣💦" },
+  { "id": "mvhws07mrope", "title": "Multiple Ropes", "cat": "c:mvguxicvzx0iq", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": [], "desc": "Üç beş atış, art arda", "color": "#64b5f6", "emojis": "🔢💦" },
+  { "id": "mvhws08erope", "title": "Endless Ropes", "cat": "c:mvguxicvzx0iq", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": [], "desc": "Bitmek bilmeyen atışlar", "color": "#1e88e5", "emojis": "♾️💦" },
+  { "id": "mvhws09hotld", "title": "Hot Load", "cat": "c:mvguxicvzx0iq", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": [], "desc": "Yakıcı sıcaklıkta", "color": "#ff5722", "emojis": "🔥💦" },
+  { "id": "mvhws10cldsh", "title": "Cold Shiver", "cat": "c:mvguxicvzx0iq", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": [], "desc": "Ürperten bir serinlikte", "color": "#80deea", "emojis": "🥶💦" },
+  { "id": "mvhws11sweet", "title": "Sweet", "cat": "c:mvguxicvzx0iq", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": [], "desc": "Tadı tatlı", "color": "#f48fb1", "emojis": "🍯💦" },
+  { "id": "mvhws12salty", "title": "Salty", "cat": "c:mvguxicvzx0iq", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": [], "desc": "Tadı tuzlu", "color": "#b0bec5", "emojis": "🧂💦" },
+  { "id": "mvhws13sccrs", "title": "Succubus Curse", "cat": "c:mvguxicvzx0iq", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["halloween", "kan"], "desc": "Succubus enerjini fazla emdi: son boşalman kırmızı gelir (Succubus'la 3. boşalmadan sonra kendiliğinden)", "color": "#b71c1c", "emojis": "😈🩸" },
+  { "id": "mvhwr1vampir", "title": "Vampir Kontes – Misafir", "cat": "c:mvgwj75108lqd", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["roleplay", "halloween"], "desc": "Şatosunda gece yarısı: o vampir kontes, sen kapısını çalan misafir", "color": "#b71c1c", "emojis": "🧛‍♀️" },
+  { "id": "mvhwr2cadi01", "title": "Cadı – Çırak", "cat": "c:mvgwj75108lqd", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["roleplay", "halloween"], "desc": "Kazanın başında: o cadı, sen iksirinin bedelini ödeyecek çırak", "color": "#4a148c", "emojis": "🧙‍♀️" },
+  { "id": "mvhwr3falci1", "title": "Falcı – Müşteri", "cat": "c:mvgwj75108lqd", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["roleplay", "halloween"], "desc": "Mum ışıklı çadırda: o falcı, kristal kürede geleceğini okuduğu müşteri sensin", "color": "#7b1fa2", "emojis": "🔮" },
+  { "id": "mvhwr4perili", "title": "Perili Ev Rehberi – Ziyaretçi", "cat": "c:mvgwj75108lqd", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["roleplay", "halloween"], "desc": "Tur bitti, kapılar kilitlendi: o perili evin rehberi, sen son ziyaretçi", "color": "#37474f", "emojis": "🏚️" },
+  { "id": "mvhwr5maske1", "title": "Maskeli Yabancı – Kostüm Partisi", "cat": "c:mvgwj75108lqd", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["roleplay", "halloween"], "desc": "Kostüm partisinde adını söylemeyen maskeli kadın; sen onu kalabalıktan çekip götüren", "color": "#6a1b9a", "emojis": "🎭" },
+  { "id": "mvhwr6kkedi1", "title": "Kara Kedi – Sahibi", "cat": "c:mvgwj75108lqd", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["roleplay", "halloween"], "desc": "Cadılar gecesi: o cadının kara kedisi, sen yeni sahibi", "color": "#212121", "emojis": "🐈‍⬛" },
+  { "id": "mvhwr7mumya1", "title": "Mumya Kraliçe – Kâşif", "cat": "c:mvgwj75108lqd", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["roleplay", "halloween"], "desc": "Lahdin kapağını açtın: o bin yıl sonra uyanan kraliçe, sen onu uyandıran kâşif", "color": "#c8a24a", "emojis": "🏺" },
+  { "id": "mvhwr8sucbs1", "title": "Succubus – Rüya", "cat": "c:mvgwj75108lqd", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["roleplay", "halloween"], "desc": "Uykunda gelir: o rüyalarına giren succubus, sen uyanamayan rüya sahibi", "color": "#c62828", "emojis": "😈" },
+  { "id": "mvhwr9hylt01", "title": "Hayalet – Evin Yeni Sahibi", "cat": "c:mvgwj75108lqd", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["roleplay", "halloween"], "desc": "Eski bir eve taşındın: o evde yaşayan yalnız hayalet, sen yeni sahibi", "color": "#90a4ae", "emojis": "👻" },
+  { "id": "mvhwr10peri1", "title": "Peri – Ormandaki Gezgin", "cat": "c:mvgwj75108lqd", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["roleplay", "halloween"], "desc": "Mantar halkasının ortasında: o orman perisi, sen yolunu kaybeden gezgin", "color": "#43a047", "emojis": "🧚‍♀️" },
+  { "id": "mvhwr11dnzk1", "title": "Deniz Kızı – Denizci", "cat": "c:mvgwj75108lqd", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["roleplay", "halloween"], "desc": "Ay ışığında kayalıklarda: o deniz kızı, sen ağına onu takan denizci", "color": "#00838f", "emojis": "🧜‍♀️" },
+  { "id": "mvhwr12slime1", "title": "Slime Girl – Laborant", "cat": "c:mvgwj75108lqd", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["roleplay", "halloween"], "desc": "Gece yarısı laboratuvarda kavanoz çatladı: o yarı saydam, jöle gibi slime girl; sen onu serbest bırakan laborant", "color": "#43a047", "emojis": "🫠💚" },
+  {
+   "id": "mvs1msbgrb05e",
+   "title": "Boob Grab",
+   "cat": "c:mvs1massage0z",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [
+    "göğüs"
+   ],
+   "desc": "Masaj sırasında arkadan sarılıp göğüslerini avuçlarsın",
+   "color": "#26a69a",
+   "emojis": "💆🍒",
+   "onEffects": [
+    {
+     "p": "p:umvjzd17hys1oy",
+     "d": 10
+    },
+    {
+     "p": "p:sehvet",
+     "d": 5
+    },
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "id": "mvs1msagrb06f",
+   "title": "Ass Grab",
+   "cat": "c:mvs1massage0z",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [
+    "kalça"
+   ],
+   "desc": "Masaj sırasında kalçasını avuçlayıp yoğurursun",
+   "color": "#26a69a",
+   "emojis": "💆🍑",
+   "onEffects": [
+    {
+     "p": "p:umvjzd17hys1oy",
+     "d": 10
+    },
+    {
+     "p": "p:sehvet",
+     "d": 5
+    },
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "id": "mvs1msvfng07g",
+   "title": "Vagina Fingering",
+   "cat": "c:mvs1massage0z",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [],
+   "desc": "Masajın sonunda parmaklarını vajinasına kaydırırsın: Uyarılma +20",
+   "color": "#26a69a",
+   "emojis": "💆👆",
+   "onEffects": [
+    {
+     "p": "p:umvjzd17hys1oy",
+     "d": 20
+    },
+    {
+     "p": "p:sehvet",
+     "d": 10
+    },
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    },
+    {
+     "p": "p:guven",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "id": "mvs1msafng08h",
+   "title": "Asshole Fingering",
+   "cat": "c:mvs1massage0z",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [],
+   "desc": "Kalçasını yağlayıp parmağını yavaşça arka deliğine sokarsın: Uyarılma +15, biraz Acı",
+   "color": "#26a69a",
+   "emojis": "💆🍑👆",
+   "onEffects": [
+    {
+     "p": "p:umvjzd17hys1oy",
+     "d": 15
+    },
+    {
+     "p": "p:sehvet",
+     "d": 10
+    },
+    {
+     "p": "p:umvl2lpjpbiqzo",
+     "d": 5
+    },
+    {
+     "p": "p:guven",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "id": "mvs1lktits09i",
+   "title": "Lick Tits",
+   "cat": "c:mvgtgdbp6e8xv",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [
+    "yalama"
+   ],
+   "desc": "Göğüslerini, uçlarını yalarsın: Uyarılma +15",
+   "color": "#ff5f5f",
+   "emojis": "👅🍒",
+   "onEffects": [
+    {
+     "p": "p:umvjzd17hys1oy",
+     "d": 15
+    },
+    {
+     "p": "p:sehvet",
+     "d": 5
+    },
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "id": "mvs1lkass010j",
+   "title": "Lick Ass",
+   "cat": "c:mvgtgdbp6e8xv",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [
+    "yalama"
+   ],
+   "desc": "Kalçasını, yanaklarını yalayıp öpersin: Uyarılma +15",
+   "color": "#ff5f5f",
+   "emojis": "👅🍑",
+   "onEffects": [
+    {
+     "p": "p:umvjzd17hys1oy",
+     "d": 15
+    },
+    {
+     "p": "p:sehvet",
+     "d": 5
+    },
+    {
+     "p": "p:samimiyet",
+     "d": 1
+    }
+   ]
+  },
+  {
+   "id": "mvs1lkback11k",
+   "title": "Lick Back",
+   "cat": "c:mvgtgdbp6e8xv",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [
+    "yalama"
+   ],
+   "desc": "Sırtını belinden ensesine kadar yalarsın: Uyarılma +10",
+   "color": "#ff5f5f",
+   "emojis": "👅✨",
+   "onEffects": [
+    {
+     "p": "p:umvjzd17hys1oy",
+     "d": 10
+    },
+    {
+     "p": "p:samimiyet",
+     "d": 2
+    }
+   ]
+  },
+  {
+   "id": "mvs1lklegs12l",
+   "title": "Lick Legs",
+   "cat": "c:mvgtgdbp6e8xv",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [
+    "yalama"
+   ],
+   "desc": "Bileğinden iç bacağına kadar yalayarak çıkarsın: Uyarılma +10",
+   "color": "#ff5f5f",
+   "emojis": "👅🦵",
+   "onEffects": [
+    {
+     "p": "p:umvjzd17hys1oy",
+     "d": 10
+    },
+    {
+     "p": "p:sehvet",
+     "d": 5
+    }
+   ]
+  },
+  {
+   "id": "mvs1lkneck13m",
+   "title": "Lick Neck",
+   "cat": "c:mvgtgdbp6e8xv",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [
+    "yalama"
+   ],
+   "desc": "Boynunu, kulak arkasını yalayıp öpersin: Uyarılma +10",
+   "color": "#ff5f5f",
+   "emojis": "👅💋",
+   "onEffects": [
+    {
+     "p": "p:umvjzd17hys1oy",
+     "d": 10
+    },
+    {
+     "p": "p:ask",
+     "d": 2
+    },
+    {
+     "p": "p:samimiyet",
+     "d": 2
+    }
+   ]
+  },
+  {
+   "id": "mvs1lkfeet14n",
+   "title": "Lick Feet",
+   "cat": "c:mvgtgdbp6e8xv",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [
+    "yalama"
+   ],
+   "desc": "Ayaklarını, parmaklarını tek tek yalarsın: Uyarılma +10",
+   "color": "#ff5f5f",
+   "emojis": "👅🦶",
+   "onEffects": [
+    {
+     "p": "p:umvjzd17hys1oy",
+     "d": 10
+    },
+    {
+     "p": "p:sehvet",
+     "d": 5
+    }
+   ]
+  },
+  {
+   "id": "mvs2slpass15o",
+   "title": "Slap Ass",
+   "cat": "c:mvgm5g7q1xopl",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [
+    "kalça"
+   ],
+   "desc": "Kalçasına şaplak atarsın; teni pembeleşir: Uyarılma +8, biraz Acı",
+   "color": "#ff6fa8",
+   "emojis": "👋🍑",
+   "onEffects": [
+    {
+     "p": "p:umvjzd17hys1oy",
+     "d": 8
+    },
+    {
+     "p": "p:sehvet",
+     "d": 5
+    },
+    {
+     "p": "p:umvl2lpjpbiqzo",
+     "d": 3
+    }
+   ]
+  },
+  {
+   "id": "mvs2slpboo16p",
+   "title": "Slap Boob",
+   "cat": "c:mvgm5g7q1xopl",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [
+    "göğüs"
+   ],
+   "desc": "Göğüslerine hafif şaplaklar atarsın; titreyip sallanırlar: Uyarılma +8, biraz Acı",
+   "color": "#ff6fa8",
+   "emojis": "👋🍒",
+   "onEffects": [
+    {
+     "p": "p:umvjzd17hys1oy",
+     "d": 8
+    },
+    {
+     "p": "p:sehvet",
+     "d": 5
+    },
+    {
+     "p": "p:umvl2lpjpbiqzo",
+     "d": 3
+    }
+   ]
   }
  ],
  "places": [],
@@ -2992,7 +3708,9 @@ Stories.SYSTEM = {
    "el",
    "boşalma",
    "orgazm",
-   "roleplay"
+   "roleplay",
+   "kıyafet",
+   "yalama"
   ]
  },
  "cats": [
@@ -3065,6 +3783,26 @@ Stories.SYSTEM = {
    "tags": []
   },
   {
+   "id": "c:mvdrinks01x",
+   "icon": "🍷",
+   "label": "Drinks",
+   "tags": []
+  },
+  {
+   "id": "c:mvtreat01x",
+   "icon": "🩺",
+   "label": "Treatment",
+   "tags": []
+  },
+  {
+   "id": "c:mvfemdom01x",
+   "icon": "👑",
+   "label": "Femdom",
+   "tags": [
+    "event"
+   ]
+  },
+  {
    "id": "c:mvgwj75108lqd",
    "icon": "🦄",
    "label": "Fantesy",
@@ -3083,6 +3821,14 @@ Stories.SYSTEM = {
    "icon": "💦",
    "label": "Pre-cumming",
    "tags": []
+  },
+  {
+   "id": "c:mvs1massage0z",
+   "icon": "💆",
+   "label": "Massage",
+   "tags": [
+    "event"
+   ]
   }
  ],
  "catEdits": {},
@@ -3208,6 +3954,14 @@ Stories.SYSTEM = {
    "min": 0,
    "max": 100,
    "start": 0
+  },
+  {
+   "id": "sarhos",
+   "icon": "🍷",
+   "label": "Sarhoşluk",
+   "min": 0,
+   "max": 100,
+   "start": 0
   }
  ],
  "triggers": [
@@ -3236,18 +3990,32 @@ Stories.SYSTEM = {
      "d": -100
     }
    ]
+  },
+  {
+   "id": "mvdrtrgpass1",
+   "p": "p:sarhos",
+   "op": ">=",
+   "v": 95,
+   "ev": "mvdr11passot",
+   "effects": [
+    {
+     "p": "p:sarhos",
+     "d": -45
+    }
+   ]
   }
  ],
  "catOrder": [
   "c:mvglyw2ax79uj",
   "c:mvgm5g7q1xopl",
+  "c:mvs1massage0z",
+  "c:mvdrinks01x",
   "c:mvglvwdtam0h7",
   "c:mvgm9ihwda8f5",
   "c:mvgn2ubfw2eoh",
   "c:mvgtgdbp6e8xv",
   "c:mvgu3rsuko7km",
-  "genel",
-  "extra",
+  "c:mvfemdom01x",
   "c:mvguxicvzx0iq",
   "c:mvgvrcewukjlt",
   "c:mvgwj75108lqd",

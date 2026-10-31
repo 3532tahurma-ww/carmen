@@ -31,7 +31,9 @@ Stories.Themes = {
     { id: 'ucan-kalpler', label: 'Uçan kalpler', cls: 'bg-ucan-kalpler' },
     { id: 'kalp-kolye', label: 'Mücevher kalp', cls: 'bg-kalp-kolye' },
     { id: 'pembe-ruya', label: 'Pembe rüya', cls: 'bg-pembe-ruya' },
-    { id: 'galaksi', label: 'Galaksi', css: 'radial-gradient(circle at 30% 20%, #4c1d95 0%, #1e1b4b 40%, #0b0820 100%)' }
+    { id: 'galaksi', label: 'Galaksi', css: 'radial-gradient(circle at 30% 20%, #4c1d95 0%, #1e1b4b 40%, #0b0820 100%)' },
+    // 🎃 Halloween: mor gece, köşelerde mum ışığı
+    { id: 'halloween', label: '🎃 Halloween', css: 'radial-gradient(circle at 12% 92%, rgba(255, 170, 60, .45) 0, rgba(255, 120, 20, .12) 12%, transparent 26%), radial-gradient(circle at 90% 86%, rgba(255, 150, 40, .38) 0, rgba(255, 110, 20, .1) 10%, transparent 22%), radial-gradient(circle at 50% -10%, rgba(156, 39, 176, .45) 0, transparent 55%), linear-gradient(180deg, #2a0f3d 0%, #1a0b26 55%, #0d0612 100%)' }
   ],
   bubbles: [
     // 🍬 pastel baloncuklar (açık arka planlara uygun). Varsayılan: pastel-gul
@@ -63,12 +65,14 @@ Stories.Themes = {
     { id: 'seker', label: 'Pamuk şeker', me: 'linear-gradient(135deg, #ffb3d9, #b8c6ff)', meFg: '#4a2a5a', her: 'linear-gradient(135deg, #d7f3ff, #ffe0f0)', herFg: '#4a2a5a', meBorder: '1.5px solid rgba(255,255,255,.7)', herBorder: '1.5px solid rgba(255,255,255,.7)' },
     { id: 'altin-isilti', label: 'Altın ışıltı', me: 'linear-gradient(135deg, #fde68a, #f59e0b 55%, #fbbf24)', meFg: '#4a2c00', her: '#2c2442', herBorder: '1.5px solid #f8d34a', shadow: '0 4px 14px rgba(245,158,11,.35)' },
     { id: 'gece-neonu', label: 'Gece neonu', me: 'rgba(40,5,30,.7)', meBorder: '2px solid #ec4899', her: 'rgba(15,10,35,.75)', herBorder: '2px solid #22d3ee', shadow: '0 0 12px rgba(236,72,153,.6)' },
-    { id: 'galaksi', label: 'Galaksi', me: 'radial-gradient(circle at 15% 25%, rgba(255,255,255,.8) 0 1px, transparent 2px), radial-gradient(circle at 72% 60%, rgba(255,255,255,.7) 0 1px, transparent 2px), radial-gradient(circle at 45% 82%, rgba(255,255,255,.6) 0 1px, transparent 2px), linear-gradient(135deg, #6d28d9, #db2777)', her: 'radial-gradient(circle at 15% 25%, rgba(255,255,255,.8) 0 1px, transparent 2px), radial-gradient(circle at 72% 60%, rgba(255,255,255,.7) 0 1px, transparent 2px), radial-gradient(circle at 45% 82%, rgba(255,255,255,.6) 0 1px, transparent 2px), linear-gradient(135deg, #1e1b4b, #4c1d95)' }
+    { id: 'galaksi', label: 'Galaksi', me: 'radial-gradient(circle at 15% 25%, rgba(255,255,255,.8) 0 1px, transparent 2px), radial-gradient(circle at 72% 60%, rgba(255,255,255,.7) 0 1px, transparent 2px), radial-gradient(circle at 45% 82%, rgba(255,255,255,.6) 0 1px, transparent 2px), linear-gradient(135deg, #6d28d9, #db2777)', her: 'radial-gradient(circle at 15% 25%, rgba(255,255,255,.8) 0 1px, transparent 2px), radial-gradient(circle at 72% 60%, rgba(255,255,255,.7) 0 1px, transparent 2px), radial-gradient(circle at 45% 82%, rgba(255,255,255,.6) 0 1px, transparent 2px), linear-gradient(135deg, #1e1b4b, #4c1d95)' },
+    { id: 'halloween', label: '🎃 Halloween', me: 'linear-gradient(135deg, #ff9a3c, #ff6a00 60%, #e65100)', meFg: '#2a0f00', her: 'linear-gradient(135deg, #3b1457, #24103a)', herFg: '#ffe0b8', herBorder: '1.5px solid rgba(255, 140, 40, .55)', radius: '18px', shadow: '0 0 14px rgba(255, 140, 40, .35)' }
   ],
   // Hazır temalar: arka plan + baloncuk birlikte (Amor'daki kalp düzeyi temaları)
   presets: [
     { id: 'kalp', label: 'Kalp teması', icon: '💖', bg: 'ucan-kalpler', bubble: 'kalp', note: 'Amor Lv.4: uçan kalpler + kalpli baloncuklar' },
-    { id: 'mucevher', label: 'Mücevher kalp', icon: '💎', bg: 'kalp-kolye', bubble: 'kalp', note: 'Amor Lv.5: mücevher kalp + kalpli baloncuklar' }
+    { id: 'mucevher', label: 'Mücevher kalp', icon: '💎', bg: 'kalp-kolye', bubble: 'kalp', note: 'Amor Lv.5: mücevher kalp + kalpli baloncuklar' },
+    { id: 'halloween', label: 'Halloween', icon: '🎃', bg: 'halloween', bubble: 'halloween', note: 'Turuncu-mor, mum ışıklı Cadılar Bayramı' }
   ],
   // Grupta üyelere tek tek verilebilen baloncuk renkleri
   memberColors: [
