@@ -69,12 +69,63 @@ Stories.Pools = (() => {
     'Arkeolog', 'Tarihçi', 'Kütüphaneci', 'Akademisyen', 'Araştırmacı', 'Kimyager', 'Biyolog', 'Genetik mühendisi', 'Veri bilimci', 'Yapay zeka mühendisi',
     'Oyun tasarımcısı', 'UX tasarımcısı', 'Web tasarımcısı', 'Siber güvenlik uzmanı', 'Sistem yöneticisi', 'Proje yöneticisi', 'Mimar asistanı', 'Peyzaj mimarı', 'Şehir plancısı', 'İnşaat mühendisi',
     'Hakim', 'Savcı', 'Noter', 'Diplomat', 'Tercüman', 'Polis', 'Asker', 'İtfaiyeci', 'Psikiyatrist', 'Sosyolog', 'Eğitim koordinatörü', 'Kreş öğretmeni', 'Dil öğretmeni', 'Matematik öğretmeni',
-    'Kitap editörü', 'Ses teknisyeni', 'Kameraman', 'Yönetmen', 'Senarist', 'Kostüm tasarımcısı', 'Sahne tasarımcısı']
+    'Kitap editörü', 'Ses teknisyeni', 'Kameraman', 'Yönetmen', 'Senarist', 'Kostüm tasarımcısı', 'Sahne tasarımcısı'],
+  // 🧩 genel meslek grupları: Oluştur sadece bunlardan seçer (🎲 yaşa uygun grup → meslek).
+  //   re: eski / elle yazılmış meslekleri gruba bağlar; doing: şu an ne yapıyor; talk: sohbette mesleğinden bahsetmesi
+  jobGroups: [
+    { id: 'saglik', name: 'Sağlık', ic: '🩺', min: 22, jobs: ['Hemşire', 'Doktor', 'Eczacı', 'Psikolog'],
+      re: /hemşire|doktor|hekim|eczacı|ebe|diyetisyen|fizyoterap|psikolog|psikiyatr|veteriner|cerrah|laborant|radyolog|anestezi|kardiyolog|dermatolog|tıp/,
+      doing: ['nöbetteyim', 'nöbetten yeni çıktım', 'hastaneden çıktım, ayaklarım koptu'],
+      talk: ['Bugün nöbette çok yoruldum, biraz şımart beni 🩺', 'Önlüğü çıkardım, artık sadece seninim 😏', 'Doktor gözüyle söylüyorum: bana iyi geliyorsun 🩺', 'Vardiya arasında seni düşündüm 🙈'] },
+    { id: 'egitim', name: 'Eğitim', ic: '👩‍🏫', min: 23, jobs: ['Öğretmen', 'Akademisyen', 'Dil öğretmeni'],
+      re: /öğretmen|akademisyen|profesör|hoca|okutman|eğitim|araştırma/,
+      doing: ['ödev okuyorum', 'yarınki derse hazırlanıyorum', 'sınav kağıdı okuyorum'],
+      talk: ['Bugün sınıf beni çok yordu 👩‍🏫', 'Yine kağıt okuyorum… biraz ara verdim senin için 😌', 'Hoca olarak not veriyorum: bugün 10 üzerinden 10 sin 😏', 'Derste aklım hep sendeydi, ayıp 🙈'] },
+    { id: 'ogrenci', name: 'Öğrenci', ic: '🎒', max: 25, jobs: ['Üniversite öğrencisi', 'Tıp öğrencisi', 'Hukuk öğrencisi'],
+      re: /öğrenci|stajyer/,
+      doing: ['ders çalışıyorum güya', 'kütüphanedeyim', 'vize çalışıyorum'],
+      talk: ['Vizeler kapıda, sen beni oyalıyorsun 🙈', 'Kütüphanede gizlice yazıyorum sana 🤫', 'Ödev bitmedi ama sana yazmak daha güzel 😌', 'Bu dönem tek sevdiğim ders sensin 😏'] },
+    { id: 'ofis', name: 'Ofis', ic: '💼', min: 22, jobs: ['Sekreter', 'Bankacı', 'Avukat', 'Muhasebeci', 'İnsan kaynakları uzmanı'],
+      re: /sekreter|asistan|bankacı|avukat|hakim|savcı|noter|muhasebe|finans|borsa|sigorta|insan kaynak|pazarlama|marka|reklam|yönetici|müdür|emlak|danışman|satış|ofis/,
+      doing: ['ofisteyim', 'toplantıdan yeni çıktım', 'rapor hazırlıyorum'],
+      talk: ['Toplantılar bitmek bilmedi 💼', 'Patron yine fazla mesai istedi, kaçtım sana 😏', 'Masamda gizlice telefonla yazıyorum 🙈', 'Ofiste etek giydim bugün, herkes baktı 😌'] },
+    { id: 'sanat', name: 'Sanat & Tasarım', ic: '🎨', min: 20, jobs: ['Grafik tasarımcı', 'Fotoğrafçı', 'Mimar', 'İç mimar'],
+      re: /tasarım|fotoğraf|mimar|ressam|heykel|seramik|sanatçı|kuyumcu|stilist|editör|yazar|senarist|yönetmen|kamera/,
+      doing: ['çizim yapıyorum', 'fotoğraf düzenliyorum', 'müşteri revizesiyle uğraşıyorum'],
+      talk: ['Bugün ilhamım sendin 🎨', 'Seni çizmek istiyorum… modelim olur musun? 😏', 'Müşteri yine revize istedi, sinirim bozuk 😤', 'Gözüm hep güzel şeylere bakar, şu an sana 😌'] },
+    { id: 'sahne', name: 'Sahne & Medya', ic: '🎤', max: 40, jobs: ['Model', 'Oyuncu', 'DJ', 'İçerik üreticisi'],
+      re: /model|oyuncu|tiyatro|dj|içerik|influencer|youtuber|şarkıcı|dansçı|bale|spiker|muhabir|gazeteci|podcast|radyo|sosyal medya|piyanist|kemancı|müzik/,
+      doing: ['çekimdeyim', 'provadan çıktım', 'video kurguluyorum'],
+      talk: ['Çekimden yeni çıktım, makyajım hâlâ üstümde 📸', 'Bugün herkes bana baktı ama ben seni düşündüm 😏', 'Takipçilerim seni bilmiyor, sırrımızsın 🤫', 'Sahnede değilken de rol yaparım, dikkat et 😈'] },
+    { id: 'guzellik', name: 'Güzellik & Spor', ic: '💆', min: 20, jobs: ['Kuaför', 'Makyaj artisti', 'Masöz', 'Pilates eğitmeni'],
+      re: /kuaför|makyaj|masöz|masaj|spa|estetisyen|güzellik|nail|dövme|yoga|pilates|fitness|antrenör|eğitmen/,
+      doing: ['salondayım, müşterim var', 'dersim yeni bitti', 'randevular arasındayım'],
+      talk: ['Bütün gün başkalarını güzelleştirdim, şimdi sıra bende 💅', 'Ellerim çok yetenekli, bir gün göstereyim 😏', 'Bugün çok terledim, duşa giriyorum 🙈', 'Esnemem çok iyidir, bilesin 😈'] },
+    { id: 'hizmet', name: 'Hizmet & Seyahat', ic: '☕', min: 18, jobs: ['Barista', 'Garson', 'Kabin memuru', 'Otel resepsiyonisti'],
+      re: /barista|garson|barmen|aşçı|şef|pastacı|kabin|hostes|otel|resepsiyon|rehber|seyahat|kaptan|çiçekçi|butik|restoran|kafe/,
+      doing: ['vardiyadayım', 'uçuştan yeni indim', 'kafede yoğunluk var'],
+      talk: ['Vardiya bitti, ayaklarım ağrıyor ☕', 'Bugün bir müşteri bana asıldı ama aklım sendeydi 😏', 'Gel de sana özel bir kahve yapayım ☕😌', 'Üniformamı çıkarmadan yazıyorum 🙈'] },
+    { id: 'teknoloji', name: 'Teknoloji', ic: '💻', min: 22, jobs: ['Yazılımcı', 'Mühendis', 'Veri bilimci'],
+      re: /yazılım|mühendis|veri|yapay zeka|siber|sistem|oyun|ux|web|proje yönetici|teknisyen/,
+      doing: ['kod yazıyorum', 'bug çözüyorum', 'toplantıdayım'],
+      talk: ['Kod derlenirken sana yazıyorum 💻', 'Bugün bir bug beni deli etti 😤', 'Sen de bir bug gibisin, aklımdan çıkmıyorsun 😏', 'Mesaiden sonra bilgisayarı kapatıp sana döndüm 😌'] },
+    { id: 'guvenlik', name: 'Güvenlik', ic: '🚓', min: 22, jobs: ['Polis', 'Asker'],
+      re: /polis|güvenlik|asker|bekçi|dedektif|komiser|itfaiye/,
+      doing: ['devriyedeyim', 'nöbetten yeni çıktım', 'karakoldayım'],
+      talk: ['Bugün devriye çok uzun sürdü 🚓', 'Kelepçelerim hâlâ belimde 😏', 'Kuralları ben koyarım, haberin olsun 😈', 'Üniformayı çıkardım ama sertliğim yerinde 😌'] }
+  ]
   };
 
   const eras = A.NAMES || null;
   const allAmor = eras ? Object.values(eras).reduce((a, l) => a.concat(l), []) : [];
+  // mesleğin grubu: önce listedeki ad, sonra anahtar kelime (eski / elle yazılmış meslekler için)
+  const jobGroupOf = job => {
+    const j = String(job || '').toLocaleLowerCase('tr');
+    if (!j) return null;
+    return own.jobGroups.find(g => g.jobs.some(x => x.toLocaleLowerCase('tr') === j)) || own.jobGroups.find(g => g.re.test(j)) || null;
+  };
   return Object.assign(own, {
+    jobGroupOf,
     names: { '♀': allAmor.length ? allAmor : own.names['♀'], '♂': own.names['♂'] },
     eras,
     eraAge: A.NAME_AGE || {},
