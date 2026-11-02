@@ -592,7 +592,7 @@ Stories.ME_DICK = {
 };
 Stories.ME_HUG_LINES = {
   doggy: {
-    label: '🤗 Sarılma · Doggy', events: ['Doggy', 'Standing doggy'],
+    label: '🤗 Sarılma · Doggy', events: ['Doggy'], rp: 'pos',
     lines: [
       'Sana arkadan sarılıp {kalca} kalçana çarparak doggy yapıyorum, sarılırken {gogus} memelerini sıkıyorum; bedenin pamuk gibi yumuşak… ahhh 😩',
       'Göğsüm yumuşacık sırtına gömüldü, kollarım seni sarıyor; {kalcaHis}, zevkten başım dönüyor offf 🔥',
@@ -609,7 +609,7 @@ Stories.ME_HUG_LINES = {
     ]
   },
   missionary: {
-    label: '🤗 Sarılma · Missionary', events: ['Missionary', 'Standing Missionary'],
+    label: '🤗 Sarılma · Missionary', events: ['Missionary'], rp: 'pos',
     lines: [
       'Üstüne tamamen kapanıp sana sımsıkı sarıldım, {gogus} göğüslerin göğsüme yumuşacık eziliyor… ahhh 😩',
       'Kollarımı sırtının altından geçirip yumuşak bedenini kendime bastırıyorum, zevkten gözlerim kararıyor offf 🔥',
@@ -646,8 +646,8 @@ Stories.ME_HUG_LINES = {
 
   /* 💦 boşalırken sarılma · pos: o anki pozisyon bunlardan biriyse · rub: vajinal ve kondomluyken bunlar */
   cumBack: {
-    label: '🤗💦 Sarılma · arkadan boşalma',
-    events: ['Vaginal Creampie', 'Anal Creampie', 'Legs Creampie', 'Visible Creampie'],
+    label: '🤗💦 Sarılma · arkadan boşalma · Vaginal Creampie',
+    events: ['Vaginal Creampie'], rp: 'in',
     pos: ['Doggy', 'Standing doggy', 'Spooning', 'Spooning Anal', 'Standing Anal', 'Rough Anal', 'Wobble Doggy', 'Full Moon Doggy', 'Vampire Bite', 'Intimate Doggy', 'Full Body Wrap', 'Neck Feast'],
     lines: [
       'Arkandan sımsıkı sarılıp {kalca} kalçana son kez çarptım; o kadar birikmişti ki içine boşalırken bütün gerginliğim akıp gidiyor… ahhhh 😩💦',
@@ -675,8 +675,8 @@ Stories.ME_HUG_LINES = {
     ]
   },
   cumFront: {
-    label: '🤗💦 Sarılma · önden boşalma',
-    events: ['Vaginal Creampie', 'Anal Creampie', 'Legs Creampie', 'Visible Creampie', 'Red Bath Creampie'],
+    label: '🤗💦 Sarılma · önden boşalma · Vaginal Creampie',
+    events: ['Vaginal Creampie'], rp: 'in',
     pos: ['Missionary', 'Standing Missionary', 'Lap Sex', 'Cowgirl', 'Cowgirl Anal', 'Standing', 'Coffin Missionary', 'Spider Web', 'Wrist Offering', 'Blood Bath', 'Blood Pact', 'Milk Bath', 'Intimate Therapy', 'Bareback Therapy', 'Jugular Ride', 'Jelly Ride'],
     lines: [
       'Seni sımsıkı sarıp alnımı alnına dayadım; o kadar uzun tuttum ki içine boşalırken bütün bedenim rahatlıyor… ahhhh 😩💦',
@@ -704,8 +704,8 @@ Stories.ME_HUG_LINES = {
     ]
   },
   cumOut: {
-    label: '🤗💦 Sarılma · dışarı boşalma',
-    events: ['Ass Cumshot', 'Dressed Ass Cumshot', 'Leg Cumshot'],
+    label: '🤗💦 Sarılma · dışarı boşalma · Ass Cumshot',
+    events: ['Ass Cumshot'], rp: 'out',
     lines: [
       'Arkandan sarılıyken son anda çıktım; o kadar birikmişti ki {kalca} kalçana fışkırırken bütün bedenim gevşiyor… ahhhh 😩💦',
       'Seni kendime bastırıp yumuşak kalçanın kıvrımına bırakıyorum; tuttuğum her şey akıp gidiyor, rahatladım offf 🔥',
@@ -720,8 +720,8 @@ Stories.ME_HUG_LINES = {
     ]
   },
   cumHold: {
-    label: '🤗 Sarılma · tutma',
-    events: ['Holding', 'Hard Holding', 'Cock Ring', 'Death Grip'],
+    label: '🤗 Sarılma · tutma · Holding',
+    events: ['Holding'], rp: 'hold',
     lines: [
       'Seni sımsıkı sarıp bütün bedenimi kasıyorum; taşaklarımdan yükselen dölü sıka sıka geri tutuyorum… offf 😣',
       'Yumuşacık bedenin bu kadar güzelken tutmak işkence; karnımı, kalçamı kasıp boşalmayı engelliyorum ahh 😩',
@@ -735,6 +735,725 @@ Stories.ME_HUG_LINES = {
       'Bu zevke rağmen tutuyorum; biriktikçe şişiyor, zonkluyor… hepsini sana saklıyorum ahh 💗',
       'Yumuşak bedenine gömülüp nefesimi tutuyorum; dibimden yükselen sıcaklığı sıkarak geri gönderiyorum… offf 😣',
       'Sarılı ve kıpırdamadan; her kasılmayla taşaklarım biraz daha doluyor, ama bırakmıyorum ahhh 😩'
+    ]
+  }
+};
+
+/* 🤗 olay başına ayrı sarılma grupları (her olay kendi mesajlarıyla) · rp: süren rolde ME_RP_HUG_LINES grubu (pos / in / out / hold) */
+(H => Object.assign(H, {
+  standDoggy: {
+    label: '🤗 Sarılma · Standing doggy', events: ['Standing doggy'], rp: 'pos',
+    lines: [
+      'Ayakta arkandan sımsıkı sarıldım, sırtın göğsüme yapıştı; {kalca} kalçan her vuruşta kasıklarıma çarpıyor… ahhh 😩',
+      'Seni duvara yaslayıp arkandan kucaklıyorum, {gogus} göğüslerin avuçlarımda; {gogusHis} offf 🔥',
+      'Dizlerin titriyor, düşmeyesin diye belinden sarıp kendime bastırıyorum; {kalcaHis}… ahh {o} 🥵',
+      'Ayakta bütün bedenimle sana yaslandım, ensene gömülüp derine iniyorum; yumuşacıksın offf 😮‍💨',
+      'Bir kolum göğüslerinin altında, bir kolum karnında; seni ayakta kalıp gibi tutup vuruyorum… ahhh 💦',
+      'Sırtını göğsüme çektim, başın omzuma düştü; {kalca} kalçana sertçe çarparken kulağına inliyorum offf 😩',
+      'Ayakta sarılıyken her vuruşta parmak uçlarına kalkıyorsun; {kalcaHis}… ahh 🔥',
+      'Ellerimi {gogus} memelerine kapattım, seni ayakta sımsıkı sarıp zevkin doruğunda tutuyorum offf 🥵',
+      'Sırtın terli ve sıcak, göğsüme kayıyor; arkandan sarılıp boynunu öperek derine gömülüyorum… ahhh {o} 😮‍💨',
+      'Ayakta kollarımda eriyorsun, bütün ağırlığını bana verdin; her santimindeki yumuşaklığı hissediyorum ahhh 💦'
+    ]
+  },
+  standMissionary: {
+    label: '🤗 Sarılma · Standing Missionary', events: ['Standing Missionary'], rp: 'pos',
+    lines: [
+      'Seni ayakta karşıdan sımsıkı sardım, {gogus} göğüslerin göğsüme eziliyor; bir bacağın belimde… ahhh 😩',
+      'Sırtın duvarda, kollarım seni sarıyor; gözlerine bakarak önden derine iniyorum offf 🔥',
+      'Seni kaldırıp bacaklarını belime doluyorum, sarılı halde {kalca} kalçanı avuçlarımla taşıyorum… ahh {o} 🥵',
+      'Ayakta göğüs göğüse sarıldık, nefesin boynumda; {gogusHis} offf 😮‍💨',
+      'Kollarını boynuma doladın, ben belini sardım; ayakta tek beden gibi sallanıyoruz… ahhh 💦',
+      'Duvara yaslanmış yumuşak bedenini kendime bastırıyorum, {kalcaHis}; doruktayım offf 😩',
+      'Seni ayakta kucaklayıp dudaklarını öperken önden vuruyorum, bacakların titremeye başladı… ahh 🔥',
+      'Ellerim {kalca} kalçanın altında, seni havada sarılı tutuyorum; her inişte en derine oturuyorsun offf 🥵',
+      'Alnım alnında, ayakta sımsıkı sarılıyız; {gogus} memelerinin uçları göğsüme sürtünüyor… ahhh {o} 😮‍💨',
+      'Ayakta sarılıp yavaşça vuruyorum; sıcak karnın, yumuşak göğüslerin, belime dolanan bacağın… her şeyini hissediyorum ahhh 💦'
+    ]
+  },
+  cumBackAnal: {
+    label: '🤗💦 Sarılma · arkadan boşalma · Anal Creampie', events: ['Anal Creampie'], pos: H.cumBack.pos, rp: 'in',
+    lines: [
+      'Arkandan sımsıkı sarılıp {kalca} kalçana son kez bastırdım; o dar sıcaklığın içine boşalırken bütün gerginliğim akıyor… ahhhh 😩💦',
+      'Sırtına yapışık, {gogus} memelerini sıkarak en derine gömülüyorum; tuttuğum her şey arkana fışkırıyor offf 🔥',
+      'Dar kalçan beni sıktıkça bırakıyorum kendimi; dakikalardır biriken döl dalga dalga içine doluyor… ahhh {o} 🥵',
+      'Ensene inleyerek boşalıyorum, {kalcaHis}; arkandaki sımsıkı sıcaklık son damlamı sağıyor… offf 💦',
+      'Bütün ağırlığımla sırtına kapandım, kalçalarının arasına sonuna kadar gömülüp doluyorum; kasılmam çözülüyor ahhh 😮‍💨',
+      'Bir elim göğsünde bir elim karnında, o kadar çok birikmiş ki arkan taşıyor; {gogusHis}, rahatlama tarifsiz ahh 😩',
+      'Çıkmıyorum, arkandan sarılı kalıp dar içine son damlaya kadar boşaltıyorum… offf 💦',
+      'Kulağına adını fısıldayarak kalçana bastırıyorum; uzun tutmanın karşılığı bu taşkınlık… ahhh {o} 🔥',
+      'Titreyen bedenini kollarımda tutarken arkan beni sıkıp bırakmıyor, her zonklamada biraz daha hafifliyorum… ahh 💦',
+      'Boşaldıktan sonra arkandan sarılı kalıyorum; yavaşça çıktığımda kalçalarının arasından süzülüyor… mmm 😌'
+    ]
+  },
+  cumBackLegs: {
+    label: '🤗💦 Sarılma · arkadan boşalma · Legs Creampie', events: ['Legs Creampie'], pos: H.cumBack.pos, rp: 'in', rub: H.cumBack.rub,
+    lines: [
+      'Arkandan sarılıp bacaklarının arasına sıkıştım, uyluklarını birleştirdin; o yumuşaklığın arasına boşalırken bütün yüküm akıyor… ahhhh 😩💦',
+      'Sırtına yapışık, {gogus} memelerini sıkıyorum; bacaklarının arasında zonklayıp sıcacık boşalıyorum offf 🔥',
+      'Uyluklarını sımsıkı kapattın, beni sağıyorsun; dakikalardır biriken döl bacaklarının arasına doluyor… ahhh {o} 🥵',
+      'Ensene gömülüp inliyorum, {kalcaHis}; döl uyluklarının iç tarafından aşağı süzülüyor… offf 💦',
+      'Bütün bedenimle arkana yaslandım, bacaklarının arasında kayarak boşalıyorum; kasılmam çözülüyor ahhh 😮‍💨',
+      'Bir elim karnında seni kendime çekiyor, o kadar çok geliyor ki dizlerine kadar akıyor; rahatlama tarifsiz ahh 😩',
+      'Sarılmayı bırakmadan bacaklarının arasında son damlaya kadar boşaltıyorum, yük kalktı… offf 💦',
+      'Kulağına fısıldayarak bırakıyorum kendimi; sıcak dölüm uyluklarını yapış yapış ediyor… ahhh {o} 🔥',
+      'Yumuşacık bacakların beni sıktıkça zonkluyorum, her atışta biraz daha hafifliyorum… ahh 💦',
+      'Bitirince arkandan sarılı kalıp nefesleniyoruz; bacaklarının arası sıcacık ve ıslak… mmm 😌'
+    ]
+  },
+  cumBackVisible: {
+    label: '🤗💦 Sarılma · arkadan boşalma · Visible Creampie', events: ['Visible Creampie'], pos: H.cumBack.pos, rp: 'in', rub: H.cumBack.rub,
+    lines: [
+      'Arkandan sımsıkı sarılıp içine boşalıyorum; yarı saydam bedeninde beyaz bir bulut yayılıyor, görüyorum… ahhhh 😳💦',
+      'Sırtına yapışık, {gogus} memelerini sıkarken boşalıyorum; dölüm şeffaf içinde süzülüyor offf 🔥',
+      'Seni kollarımla sarıp bırakıyorum kendimi; biriken her şey içinde beyaz dalgalar halinde görünüyor… ahhh {o} 🥵',
+      'Omzunun üstünden bakıyorum: karnının içinde dölüm parlıyor; {kalcaHis}… offf 💦',
+      'Bütün ağırlığımla sırtına kapandım, her zonklamada içindeki beyaz bulut büyüyor… ahhh 😮‍💨',
+      'Bir elim karnında, avucumun altında dolduğunu hem hissediyor hem görüyorum; rahatlama tarifsiz ahh 😩',
+      'Çıkmıyorum, sarılı kalıp son damlayı da veriyorum; yarı saydam tenin bembeyaz oldu… offf 💦',
+      'Kulağına fısıldıyorum: bak, ne kadar birikmiş; içinde süzülüşünü birlikte izliyoruz… ahhh {o} 🔥',
+      'Titreyen jöle bedenin kollarımda dalgalanıyor, içindeki dölüm de onunla salınıyor… ahh 💦',
+      'Boşaldıktan sonra arkandan sarılı kalıp karnını okşuyorum; içinde hâlâ beyaz bir bulut görünüyor… mmm 😌'
+    ]
+  },
+  cumFrontAnal: {
+    label: '🤗💦 Sarılma · önden boşalma · Anal Creampie', events: ['Anal Creampie'], pos: H.cumFront.pos, rp: 'in',
+    lines: [
+      'Seni sımsıkı sarıp alnımı alnına dayadım; dar sıcaklığın içine boşalırken bütün bedenim rahatlıyor… ahhhh 😩💦',
+      '{gogus} göğüslerin göğsüme ezilmiş, bacakların omuzlarımda; biriken her şey arkana akıyor offf 🔥',
+      'Gözlerine bakarak en derine bastırıyorum, kasarak tuttuğum döl dar içini dolduruyor… ahhh {o} 🥵',
+      'Dudaklarını öperek bırakıyorum kendimi, arkan beni sıktıkça inlememiz karışıyor… offf 💦',
+      'Ellerim {kalca} kalçanın altında, seni kendime çekip sonuna kadar gömülerek doluyorum; hafifledim… ahhh 😮‍💨',
+      'Karın karına sarılıyken o kadar çok geliyor ki durmuyor; dar kalçan her zonklamamı sağıyor ahh 😩',
+      'Boynuna gömülüp sarılarak boşalıyorum, uzun birikmenin taşkını arkanda… offf 💦',
+      'Seni bırakmıyorum, kollarımda titriyorsun ve ben hâlâ doluyorum… ahhh {o} 🔥',
+      'Kalbimiz aynı anda çarpıyor, sımsıkı sarılı içine bırakıyorum; içimde düğümlenen her şey çözüldü… ahh 💗💦',
+      'Boşaldıktan sonra yumuşacık bedenine gömülüp gevşiyorum; yavaşça çıkınca kalçalarının arasından süzülüyor… mmm 😌'
+    ]
+  },
+  cumFrontLegs: {
+    label: '🤗💦 Sarılma · önden boşalma · Legs Creampie', events: ['Legs Creampie'], pos: H.cumFront.pos, rp: 'in', rub: H.cumFront.rub,
+    lines: [
+      'Seni karşıdan sarıp uyluklarının arasına sıkıştım; o yumuşaklığa boşalırken bütün yüküm akıyor… ahhhh 😩💦',
+      '{gogus} göğüslerin göğsüme ezilmiş, bacaklarını birleştirip beni sağıyorsun; sıcacık boşalıyorum offf 🔥',
+      'Gözlerine bakarak bacaklarının arasında zonkluyorum, döl iç uyluklarına doluyor… ahhh {o} 🥵',
+      'Dudaklarını öperek bırakıyorum kendimi; dölüm bacaklarının arasından çarşafa süzülüyor… offf 💦',
+      'Ellerim {kalca} kalçanda, seni kendime çekip uyluklarının arasına son kez kayıyorum; hafifledim… ahhh 😮‍💨',
+      'Karın karına sarılıyken o kadar çok geliyor ki dizlerine kadar akıyor; rahatlama tarifsiz ahh 😩',
+      'Boynuna gömülüp bacaklarının arasında boşalıyorum, uzun birikmenin hepsi tenine… offf 💦',
+      'Seni bırakmıyorum, kollarımda titriyorsun, uyluklarının arası sıcacık doldu… ahhh {o} 🔥',
+      'Sımsıkı sarılı bırakıyorum kendimi, yumuşak bacakların beni son damlaya kadar sıkıyor… ahh 💗💦',
+      'Bitirince gevşeyip sana sarılı kalıyorum; bacaklarının arası ıslak ve sıcak… mmm 😌'
+    ]
+  },
+  cumFrontVisible: {
+    label: '🤗💦 Sarılma · önden boşalma · Visible Creampie', events: ['Visible Creampie'], pos: H.cumFront.pos, rp: 'in', rub: H.cumFront.rub,
+    lines: [
+      'Seni sımsıkı sarıp içine boşalıyorum; yarı saydam karnında beyaz bir bulut yayılıyor, gözlerimin önünde… ahhhh 😳💦',
+      '{gogus} göğüslerin göğsüme ezilmiş, aşağı bakınca dölümün içinde süzüldüğünü görüyorum offf 🔥',
+      'Bacakların belime kilitli, her zonklamada içindeki beyaz bulut büyüyor… ahhh {o} 🥵',
+      'Dudaklarını öperken bırakıyorum kendimi, sen de karnına bakıp kızarıyorsun… offf 💦',
+      'Ellerim {kalca} kalçanın altında, en derine bastırıp doldurduğumu izliyorum… ahhh 😮‍💨',
+      'Karın karına sarılıyken bile şeffaf teninin arasından dölümü görüyorum; rahatlama tarifsiz ahh 😩',
+      'Boynuna gömülüp boşalıyorum, içinde bembeyaz bir iz bıraktım… offf 💦',
+      'Kollarımda titreyen jöle bedeninde dölüm dalga dalga salınıyor… ahhh {o} 🔥',
+      'Sımsıkı sarılı bıraktım kendimi, yarı saydam karnın sütlü bir renge döndü… ahh 💗💦',
+      'Boşaldıktan sonra karnını okşuyorum; içinde hâlâ beyaz bir bulut parlıyor… mmm 😌'
+    ]
+  },
+  cumFrontRed: {
+    label: '🤗💦 Sarılma · önden boşalma · Red Bath Creampie', events: ['Red Bath Creampie'], pos: H.cumFront.pos, rp: 'in', rub: H.cumFront.rub,
+    lines: [
+      'Kırmızı suyun içinde sana sımsıkı sarıldım; içine boşalırken su etrafımızda dalgalanıyor… ahhhh 😩💦',
+      '{gogus} göğüslerin ıslak göğsüme ezilmiş, sıcak kırmızı suda biriken her şey içine akıyor offf 🔥',
+      'Bacakların belime kilitli, küvetin kenarına yaslanıp seni kendime bastırarak doluyorum… ahhh {o} 🥵',
+      'Islak dudaklarını öperek bırakıyorum kendimi, su taşıp yere dökülüyor… offf 💦',
+      'Ellerim suyun altında {kalca} kalçanda, seni kendime çekip en derinde boşaltıyorum… ahhh 😮‍💨',
+      'Kırmızı suda karın karına sarılıyken o kadar çok geliyor ki durmuyor; her zonklamada hafifliyorum ahh 😩',
+      'Boynuna gömülüp sıcak suyun içinde doluyorum, buhar yüzümüze vuruyor… offf 💦',
+      'Kollarımda titriyorsun, kırmızı su tenine yapışmış; ben hâlâ boşalıyorum… ahhh {o} 🔥',
+      'Sımsıkı sarılı bırakıyorum kendimi, küvetin içinde kalbimiz aynı anda çarpıyor… ahh 💗💦',
+      'Boşaldıktan sonra sıcak kırmızı suda sana sarılı gevşiyorum… mmm 😌'
+    ]
+  },
+  cumOutDressed: {
+    label: '🤗💦 Sarılma · dışarı boşalma · Dressed Ass Cumshot', events: ['Dressed Ass Cumshot'], rp: 'out',
+    lines: [
+      'Arkandan sarılıyken son anda çıktım; eteğinin üstüne, {kalca} kalçana fışkırırken bütün bedenim gevşiyor… ahhhh 😩💦',
+      'Seni kendime bastırıp kıyafetinin üstüne bırakıyorum; kumaş ıslanıp tenine yapışıyor offf 🔥',
+      'Göğsüm sırtında, {gogus} memelerini sıkarken dakikalardır biriken döl eteğini boyuyor… ahhh {o} 🥵',
+      'Sımsıkı sarılı halde külotunun üstüne sürtünerek boşalıyorum; kumaşın arasından sızıyor… offf 💦',
+      'Ensende inleyerek bırakıyorum kendimi, kıyafetinin üstü sıcacık ıslandı ahh 😮‍💨',
+      'O kadar çok geliyor ki eteğinden aşağı süzülüyor; her fışkırışta hafifliyorum… ahhh 😩',
+      'Bir elim karnında seni tutuyor, uzun tutmanın bütün birikimi kıyafetine akıyor… offf 💦',
+      'Kalçandaki kumaşa son damlayı da bırakıyorum; giyinikken bile işaretledim seni… ahh {o} 🔥',
+      'Eteğin ve sırtın ıslandı, ikimiz nefes nefese; bu rahatlama tarifsiz… ahhh 💦',
+      'Bitirince arkandan sarılıp ıslak eteğini düzeltiyorum; böyle dışarı çıkamazsın… mmm 😏'
+    ]
+  },
+  cumOutLeg: {
+    label: '🤗💦 Sarılma · dışarı boşalma · Leg Cumshot', events: ['Leg Cumshot'], rp: 'out',
+    lines: [
+      'Arkandan sarılıyken son anda çıktım; o kadar birikmişti ki uyluklarına fışkırırken bütün bedenim gevşiyor… ahhhh 😩💦',
+      'Seni kendime bastırıp yumuşak bacaklarına bırakıyorum; döl dizlerine doğru süzülüyor offf 🔥',
+      'Göğsüm sırtında, {gogus} memelerini sıkarken dakikalardır biriken döl bacaklarını boyuyor… ahhh {o} 🥵',
+      'Sımsıkı sarılı halde uyluğuna sürtünerek boşalıyorum; içimdeki baskı dalga dalga çıkıyor… offf 💦',
+      'Ensende inleyerek bırakıyorum kendimi, sıcaklık bacaklarından aşağı yayılıyor ahh 😮‍💨',
+      'O kadar çok geliyor ki baldırlarına kadar akıyor; her fışkırışta hafifliyorum… ahhh 😩',
+      'Bir elim karnında seni tutuyor, uzun tutmanın bütün birikimi bacaklarına akıyor… offf 💦',
+      'İç uyluklarına son damlayı da bırakıyorum, sarılmayı bırakmadan; yük kalktı… ahh {o} 🔥',
+      'Bacakların ıslandı, ikimiz nefes nefese; bu rahatlama tarifsiz… ahhh 💦',
+      'Bitirince arkandan sarılıp ıslak bacaklarını okşuyorum… mmm 😌'
+    ]
+  },
+  holdHard: {
+    label: '🤗 Sarılma · tutma · Hard Holding', events: ['Hard Holding'], rp: 'hold',
+    lines: [
+      'Seni sımsıkı sarıp kendi dibimi parmaklarımla sıkıyorum; döl ucuma dayandı ama geri itiyorum… offf 😣',
+      'Bedenin o kadar yumuşak ki dayanmak imkânsız; bütün kaslarımı kasıp sertçe tutuyorum ahh 😩',
+      'Sarılırken {gogus} göğüslerin göğsüme sürtünüyor, dişlerimi sıkıp boşalmayı zorla durduruyorum… offf {o} 🥵',
+      'Bu sefer daha sıkı tutuyorum; taşaklarım şişiyor, zonkluyor ama bırakmıyorum… ahh 😮‍💨',
+      'Kalçanı tutup kıpırdatmıyorum, nefesimi kesip yükselen her damlayı aşağı bastırıyorum… offf 😣',
+      'Kulağına "kıpırdama" diye fısıldıyorum, sınırdayım; kasılarak tutuyorum ahh 😳',
+      'Kollarımda o yumuşaklık, içimde patlamak üzere bir baskı; daha sert sıkıyorum… offf 😩',
+      '{kalca} kalçan bir kez kıpırdasa biter; ter içinde, kasıklarımı kilitleyip tutuyorum… ahh 🥵',
+      'Tenine yapıştım, kalbim göğsümden fırlayacak; biriken dölü geri gönderiyorum offf 🔥',
+      'Zor tutuyorum ama değecek; biriktikçe kocaman bir yük oluyor, hepsi senin için ahh 💗'
+    ]
+  },
+  holdRing: {
+    label: '🤗 Sarılma · tutma · Cock Ring', events: ['Cock Ring'], rp: 'hold',
+    lines: [
+      'Seni sımsıkı sarıyorum, halka dibimi sıkıyor; döl içimde birikiyor ama çıkamıyor… offf 😣',
+      'Halka yüzünden daha da sertim, yumuşak bedenine sarıldıkça zonkluyorum ahh 😩',
+      'Sarılırken {gogus} göğüslerin göğsüme eziliyor, halka boşalmama izin vermiyor… offf {o} 🥵',
+      'Halka sımsıkı, ben kıpkırmızı; kollarımda eriyorsun, ben patlayamıyorum… ahh 😮‍💨',
+      'Kalçanı kendime bastırıyorum, halka her zonklamayı içimde hapsediyor… offf 😣',
+      'Kulağına inliyorum, halka yüzünden sınırda asılı kaldım ahh 😳',
+      'Kollarımda o yumuşaklık, dibimde halkanın baskısı; taşaklarım dolup dolup taşıyor… offf 😩',
+      '{kalca} kalçan bana sürtündükçe halka daha da sıkıyor gibi… ahh 🥵',
+      'Tenine yapıştım, halka her şeyi tutuyor; çıkardığında sel gibi olacak offf 🔥',
+      'Sarılı ve kıpırdamadan; halka sayesinde her şey sana saklanıyor ahhh 💗'
+    ]
+  },
+  holdGrip: {
+    label: '🤗 Sarılma · tutma · Death Grip', events: ['Death Grip'], rp: 'hold',
+    lines: [
+      'Sana sımsıkı sarıldım ama sen dibimi bütün gücünle sıkıyorsun; boşalamıyorum… offf 😣',
+      'Yumuşacık bedenine gömüldüm, elin dibimde mengene gibi; izin vermeden bitiremem ahh 😩',
+      'Sarılırken {gogus} göğüslerin göğsüme eziliyor, sen gülümseyip sıkmaya devam ediyorsun… offf {o} 🥵',
+      'Kulağına yalvarıyorum ama elin gevşemiyor; döl ucumda kapana kısıldı ahh 😮‍💨',
+      'Kalçanı kendime çekiyorum, sen daha sert sıkıyorsun; titreyerek sana sarılıyorum… offf 😣',
+      'Lütfen {o}… sarılıyorum, öpüyorum, ama bırakmıyorsun ahh 😳',
+      'Kollarımda o yumuşaklık, dibimde senin demir gibi elin; deliriyorum… offf 😩',
+      '{kalca} kalçana sürtündükçe zonkluyorum, ama parmakların her şeyi geri itiyor… ahh 🥵',
+      'Tenine yapıştım, sana teslim oldum; ne zaman istersen o zaman… offf 💗',
+      'Seni bırakmadan sarılıyorum, izin vermeni bekliyorum; biriktikçe kocaman şişiyor ahhh 😩'
+    ]
+  }
+}))(Stories.ME_HUG_LINES);
+
+/* 🎭🤗 Rolde sarılma: süren rol (fantKey) bu listedeyse sarılma mesajı o rolün ağzından gelir (🎭 Role-play açıkken %70, değilse %45).
+ * Grup sarılma olayının rp alanından: pos (Doggy / Missionary …) · in (içine boşalma) · out (dışarı boşalma) · hold (tutma); kondomluyken yok */
+Stories.ME_RP_HUG_LINES = {
+  fxrpklinik: {
+    pos: [
+      'Doktor hanım, size sımsıkı sarıldım; önlüğünüzün altındaki {gogus} göğüsleriniz göğsüme eziliyor… ahhh 🩺😩',
+      'Muayene masasında arkanızdan sarılıyorum, stetoskop sallanıyor; {kalcaHis} offf 🥵',
+      'Nabzımı ölçmek ister misiniz? Size sarılınca kalbim deli gibi atıyor… ahh 💓',
+      'Önlüğünüz açıldı, sıcak teninize yapıştım; bu tedavi hiç bitmesin doktor hanım 😩',
+      'Sarıldıkça soğuk masa ısınıyor, {kalca} kalçanız kasıklarıma çarpıyor offf 🔥',
+      'Kapı kilitli değil ama sizi bırakamıyorum, sımsıkı sarılıp derine iniyorum… ahhh 😳',
+      'Gözlüğünüz kaydı, ben boynunuza gömüldüm; reçeteye sarılmayı yazın ahh 🥼',
+      'Hemşire girerse ne deriz? Umurumda değil, size sarılı kalıyorum offf 🙈',
+      'Yumuşacık bedeninizi kollarıma aldım doktor hanım, {gogusHis}… ahh 💗',
+      'Bu muayene en sevdiğim tedavi; size sarılıp her vuruşta inliyorum ahhh 😮‍💨'
+    ],
+    in: [
+      'Doktor hanım, size sımsıkı sarılıp içinize boşalıyorum… numune kabına gerek kalmadı ahhhh 😩💦',
+      'Önlüğünüzün altında sarılı kalıp biriken her şeyi içinize bırakıyorum; tedavi tamamlandı offf 🩺',
+      'Kollarımda titriyorsunuz, ben hâlâ doluyorum; bunu dosyaya yazmayın… ahhh 🙈💦',
+      'Stetoskopu göğsüme koyun, boşalırken kalbimin nasıl attığını duyun ahh 💓',
+      'Muayene masasında size kapanıp en derine bırakıyorum, bütün şikayetim geçti… offf 😮‍💨',
+      'Size sarılıp doldurdum doktor hanım; kontrol randevusu yarın mı? 😏💦',
+      'Boynunuza gömülüp inleyerek boşalıyorum, gözlüğünüz buğulandı… ahhh 🥼',
+      'Biriken her şeyi içinize akıttım, kendimi hiç bu kadar sağlıklı hissetmemiştim ahh 💗',
+      'Hasta tamamen rahatladı, doktoru da doldurdu… size sarılı kalıyorum offf 😳💦',
+      'Boşaldıktan sonra önlüğünüze sarılıp nefesleniyorum… mmm iyileştim 😌'
+    ],
+    out: [
+      'Doktor hanım, size sarılıyken son anda çıktım; önlüğünüzün üstüne fışkırıyor… özür dilerim ahhhh 😩💦',
+      'Arkanızdan sarılıp {kalca} kalçanıza boşalıyorum, muayene masasına damlıyor offf 🩺',
+      'Önlüğünüz bembeyaz oldu ama bambaşka bir beyaz… ahh 😳💦',
+      'Sımsıkı sarılı halde teninize bırakıyorum, numune almak ister misiniz? 😏',
+      'Kollarımda tutarken bacaklarınıza akıyor doktor hanım, bütün gerginliğim gitti… offf 😮‍💨',
+      'Size sarılıp sırtınıza boşalıyorum, stetoskopunuz bile ıslandı ahhh 🙈',
+      'Biriken her şey teninize aktı, tedavi işe yaradı… ahh 💗',
+      'Muayene kâğıdı sırılsıklam oldu, hemşire görmesin offf 😆💦',
+      'Sarılmayı bırakmadan son damlayı da kalçanıza bırakıyorum… ahhh 🥵',
+      'Bitirince arkanızdan sarılıp kulağınıza fısıldıyorum: teşekkürler doktor hanım… mmm 😌'
+    ],
+    hold: [
+      'Doktor hanım, size sarılıyım ama tutmam gerekiyor; bu da tedavinin parçası mı? offf 😣',
+      'Sabırlı olun dediniz; dişlerimi sıkıp boşalmayı geri itiyorum… ahh 🩺',
+      'Sarılırken {gogus} göğüsleriniz göğsüme eziliyor, nasıl tutayım? offf 😩',
+      'Nabzım 180, ama talimatınıza uyuyorum, bırakmıyorum ahh 💓',
+      'Önlüğünüze sımsıkı sarılıp kasıklarımı kilitliyorum, biriktir diyorsunuz… offf 🥵',
+      'Kulağıma "daha değil" diye fısıldadınız, titreyerek tutuyorum ahh 😳',
+      'Muayene masası sallanıyor, ben sınırdayım ama bırakmıyorum doktor hanım… offf 😣',
+      'Size sarıldıkça zonkluyorum, biriken numune büyüyor… ahh 😮‍💨',
+      'Tedavi bitince hepsini size vereceğim, söz; şimdilik tutuyorum offf 💗',
+      'Gözlerinize bakıp kasılarak tutuyorum, aferin dediğinizi duymak istiyorum ahh 🥼'
+    ]
+  },
+  fxrpvampir: {
+    pos: [
+      'Soğuk bedenine sımsıkı sarıldım kontesim, {gogus} göğüslerin göğsüme buz gibi eziliyor… ahhh 🧛‍♀️😩',
+      'Pelerininin altında arkandan sarılıyorum, şatonun duvarları inlemeni yansıtıyor offf 🏰',
+      'Boynumu dudaklarına uzatıp sana sarılıyorum, {kalcaHis}… ahh 🩸',
+      'Soğuk tenin kollarımda ısınıyor, her vuruşta biraz daha canlanıyorsun offf 🥵',
+      'Mum ışığında sana sarıldım, kırmızı gözlerin gözlerimde… ahhh 🕯️',
+      'Tabutun kenarında sımsıkı sarılıyız, {kalca} kalçan kasıklarıma çarpıyor offf 🖤',
+      'Dişlerini omzumda hissediyorum, ben seni daha sıkı sarıyorum… ahh 😈',
+      'Ölümsüz bedenini kendime bastırıyorum, kalbim ikimiz için atıyor offf 💓',
+      'Şafağa kadar sarılı kalacağım kontes, {gogusHis}… ahhh 🌙',
+      'Saçların siyah ipek gibi yüzüme dökülüyor, sana gömülüp derine iniyorum… ahh 🦇'
+    ],
+    in: [
+      'Soğuk bedenine sımsıkı sarılıp içine boşalıyorum kontesim; sıcaklığım içine yayılıyor… ahhhh 🧛‍♀️💦',
+      'Dişlerin boynumda, kollarım sende; biriken her şeyi ölümsüz içine bırakıyorum offf 🩸',
+      'Şafak sökmeden seni doldurdum, sarılı kalıyorum… ahhh 🌙',
+      'Buz gibi için benimle ısınıyor, her zonklamada biraz daha canlanıyorsun ahh 🥵',
+      'Pelerinine sarılıp en derinde boşaltıyorum, mumlar titriyor… offf 🕯️',
+      'Kanımı değil, başka bir şeyimi aldın; hepsini içine verdim kontes ahhh 😈💦',
+      'Kollarımda titreyen soğuk bedenin ilk kez sıcak… ahh 🖤',
+      'Boynuna gömülüp inleyerek doluyorum, şato yankılanıyor offf 🏰',
+      'Ölümlü misafirin her şeyini içine akıttı, sımsıkı sarılıyım ahh 💗💦',
+      'Boşaldıktan sonra soğuk tenine sarılı gevşiyorum… mmm sıcaklığım sende kaldı 😌'
+    ],
+    out: [
+      'Arkandan sarılıyken son anda çıktım kontes; soğuk kalçana sıcacık fışkırıyor… ahhhh 🧛‍♀️💦',
+      'Pelerinine, bembeyaz tenine boşalıyorum; şatoda ilk kez böyle bir iz offf 🏰',
+      'Buz gibi tenin dölümle ısınıyor, sana sarılıp son damlayı da bırakıyorum… ahh 🥵',
+      'Mum ışığında {kalca} kalçan parlıyor, ben hâlâ fışkırıyorum offf 🕯️',
+      'Sımsıkı sarılı halde sırtına boşalıyorum, siyah saçlarına bile sıçradı ahhh 🖤',
+      'Kırmızı gözlerin omzunun üstünden bana bakıyor, tenine akıttım her şeyi… ahh 😈',
+      'Soğuk bacaklarından süzülüyor, sarılmayı bırakmıyorum offf 💦',
+      'Ölümsüz bedenini işaretledim kontes, şafak bile silemez ahh 🌙',
+      'Tabutun kadife örtüsü de ıslandı, pardon… offf 😆',
+      'Bitirince arkandan sarılıp boynunu öpüyorum, bu sefer ben ısırmadım… mmm 😌'
+    ],
+    hold: [
+      'Soğuk bedenine sarılıyım ama tutmam gerek kontes; boşalmama izin ver diye yalvarıyorum… offf 😣',
+      'Dişlerin boynumda, döl ucumda; ikisine birden dayanamıyorum ahh 🩸',
+      'Sarılırken {gogus} göğüslerin buz gibi göğsüme eziliyor, kasılarak tutuyorum… offf 🥵',
+      'Şafağa kadar dayanmamı istiyorsun, dişlerimi sıkıp geri itiyorum ahh 🌙',
+      'Pelerinine sımsıkı sarılıp kasıklarımı kilitliyorum, yükseleni geri gönderiyorum… offf 😩',
+      'Kırmızı gözlerin bana "daha değil" diyor, titreyerek tutuyorum ahh 🧛‍♀️',
+      'Ölümsüz sabrın var ama benim yok; yine de bırakmıyorum offf 😣',
+      'Soğuk tenine yapıştım, kalbim deli gibi atıyor, biriken yük büyüyor… ahh 💓',
+      'Hepsini sana saklıyorum kontes, şafak sökünce vereceğim offf 🖤',
+      'Mum ışığında ter içinde sana sarılı tutuyorum, aferin dediğini duymak istiyorum ahh 🕯️'
+    ]
+  },
+  fxrpcadi: {
+    pos: [
+      'Hocam, size sımsıkı sarıldım; cübbenizin altındaki {gogus} göğüsleriniz göğsüme eziliyor… ahhh 🧙‍♀️😩',
+      'Kazanın yanında arkanızdan sarılıyorum, buhar etrafımızı sarıyor; {kalcaHis} offf 🫕',
+      'Şapkanız düştü, saçlarınıza gömülüp sarılıyorum; bu hangi büyü? ahh 🔮',
+      'Sarıldıkça bedenim yanıyor, iksir mi içirdiniz bana? offf 🥵',
+      'Mum ışığında sımsıkı sarılıyız, {kalca} kalçanız kasıklarıma çarpıyor… ahhh 🕯️',
+      'Büyü kitabı yere düştü, ben size sarılı derine iniyorum offf 📖',
+      'Kulağıma büyü fısıldıyorsunuz, ben daha sıkı sarılıyorum… ahh 😈',
+      'Çırağınız sizi bırakamıyor hocam, lanetlendim herhalde offf 😩',
+      'Kristal küre parlıyor, size sarılıyım; {gogusHis}… ahhh 🔮',
+      'Ay ışığında yumuşacık bedeninize sarılıp her vuruşta inliyorum ahh 🌙'
+    ],
+    in: [
+      'Hocam, size sımsıkı sarılıp içinize boşalıyorum; iksirin son malzemesi bu… ahhhh 🧪💦',
+      'Cübbenizin altında sarılı kalıp biriken her şeyi içinize akıtıyorum offf 🧙‍♀️',
+      'Kazan taştı, ben de taştım; sizi kollarımda tutarken doluyorsunuz… ahhh 🫕',
+      'Büyü tuttu mu? İçinize bıraktıkça bedeniniz parlıyor ahh 🔮',
+      'Boynunuza gömülüp inleyerek boşalıyorum, mumlar söndü… offf 🕯️',
+      'Çırağınız görevini yaptı hocam, hepsi içinizde ahhh 😈💦',
+      'Kollarımda titriyorsunuz, ben hâlâ doluyorum; lanet bu mu? ahh 😩',
+      'Ay ışığında sarılı en derine bırakıyorum, büyü tamamlandı… offf 🌙',
+      'Biriken her şeyi verdim, beni kurbağaya çevirmeyin ahh 😆💦',
+      'Boşaldıktan sonra cübbenize sarılı gevşiyorum… mmm büyülendim 😌'
+    ],
+    out: [
+      'Hocam, sarılıyken son anda çıktım; cübbenize fışkırıyor… ahhhh 🧙‍♀️💦',
+      'Arkanızdan sarılıp {kalca} kalçanıza boşalıyorum, iksir şişesine bile damladı offf 🧪',
+      'Büyü kitabının üstüne aktı, sayfalar yapıştı… ahh 📖😳',
+      'Sımsıkı sarılı halde teninize bırakıyorum, iksire koyacak mısınız? 😏💦',
+      'Kazanın başında bacaklarınıza akıyor, buhar yükseliyor offf 🫕',
+      'Sırtınıza boşalıyorum, saçlarınıza kadar sıçradı hocam ahhh 🔮',
+      'Biriken her şey teninize aktı, büyü bozuldu mu? ahh 😈',
+      'Süpürgenin sapına bile bulaştı, pardon offf 🧹😆',
+      'Sarılmayı bırakmadan son damlayı da kalçanıza bırakıyorum… ahhh 🥵',
+      'Bitirince arkanızdan sarılıp kulağınıza fısıldıyorum: ders bitti mi? mmm 😌'
+    ],
+    hold: [
+      'Hocam, size sarılıyım ama tutmam lazım; bu da büyünün parçası mı? offf 😣',
+      'İksir için biriktirmem gerek dediniz, dişlerimi sıkıp geri itiyorum… ahh 🧪',
+      'Sarılırken {gogus} göğüsleriniz göğsüme eziliyor, nasıl dayanayım? offf 😩',
+      'Kulağıma bir büyü fısıldıyorsunuz, döl ucumda donup kalıyor ahh 🔮',
+      'Cübbenize sımsıkı sarılıp kasıklarımı kilitliyorum offf 🥵',
+      'Kazan kaynıyor, ben de; ama bırakmıyorum hocam… ahh 🫕',
+      'Lanet beni tutuyor sanki, sınırdayım ama gelmiyor offf 😣',
+      'Size sarıldıkça zonkluyorum, biriken yük iksiri güçlendirecek… ahh 😮‍💨',
+      'Ay dolunca hepsini vereceğim, şimdilik tutuyorum offf 🌙',
+      'Çırağınız sabırlı, ter içinde sarılı tutuyorum; aferin deyin ahh 💗'
+    ]
+  },
+  fxrpofis: {
+    pos: [
+      'Masanın başında arkandan sımsıkı sarıldım, gömleğinin altındaki {gogus} göğüslerini avuçluyorum… ahhh 💼😩',
+      'Etek kalemin yukarı sıyrıldı, seni kendime bastırıyorum; {kalcaHis} offf 🔥',
+      'Kapı kilitli, sana sarılıp ensene inliyorum; muhasebe duymasın… ahh 🤫',
+      'Masaya eğilmişsin, ben sırtına kapandım; dosyalar yere döküldü offf 📂',
+      'Saten gömleğin açıldı, sıcak tenine yapıştım; mesai bitmesin ahhh 👔',
+      'Koltuğumda seni kucaklayıp sarılıyorum, {kalca} kalçan kucağımda… offf 🥵',
+      'Telefon çalıyor, açmıyorum; sana sımsıkı sarılıp derine iniyorum ahh 📞',
+      'Jartiyerin göründü, sarıldıkça çıldırıyorum… offf 😈',
+      'Asansörden beri bunu bekliyordum, sana sarılıyım; {gogusHis}… ahhh 💗',
+      'Pencerenin önünde sana sarılıyım, bütün şehir izliyor gibi… ahh 🏙️'
+    ],
+    in: [
+      'Masanın üstünde sana sımsıkı sarılıp içine boşalıyorum; mesai resmen bitti… ahhhh 💼💦',
+      'Gömleğinin altında sarılı kalıp biriken her şeyi içine bırakıyorum offf 👔',
+      'Kollarımda titriyorsun, ben hâlâ doluyorum; bunu kimse öğrenmeyecek… ahhh 🤫💦',
+      'Koltuğumda kucağımda sarılıyken en derine bıraktım, terfiyi hak ettin ahh 😏',
+      'Ensene gömülüp inleyerek boşalıyorum, yan odadakiler duydu mu? offf 😳',
+      'Toplantıya geç kalıyoruz ama seni doldurmadan bırakmam ahhh 😈',
+      'Dosyaların arasında sarılı kalıp son damlaya kadar veriyorum… ahh 📂',
+      'Biriken bütün stresimi içine akıttım, sekreterim harika offf 💗💦',
+      'Jartiyerin yerinde, ama içine taşan her şey benim… ahh 🥵',
+      'Boşaldıktan sonra sana sarılı koltukta gevşiyorum… mmm rapor yarına kalsın 😌'
+    ],
+    out: [
+      'Arkandan sarılıyken son anda çıktım; etek kaleminin üstüne fışkırıyor… ahhhh 💼💦',
+      'Seni masaya bastırıp {kalca} kalçana boşalıyorum, raporlara damlıyor offf 📂',
+      'Saten gömleğinin sırtı ıslandı, kuru temizleme benden… ahh 😏',
+      'Sımsıkı sarılı halde çoraplarına akıyor, jartiyerine kadar… offf 🥵',
+      'Ensende inleyerek bırakıyorum kendimi, sıcaklık beline yayılıyor ahh 😮‍💨',
+      'Klavyeye bile sıçradı, o mail gönderilmesin offf 😆',
+      'Biriken her şey kalçana aktı, bütün stres gitti… ahhh 💦',
+      'Sarılmayı bırakmadan son damlayı da eteğine bırakıyorum… ahh 🔥',
+      'Böyle çıkarsan herkes anlar, biraz daha odamda kal offf 🤫',
+      'Bitirince arkandan sarılıp boynunu öpüyorum, mesai sonu… mmm 😌'
+    ],
+    hold: [
+      'Sana sarılıyım ama toplantıdan önce bitiremem; dişlerimi sıkıp tutuyorum… offf 😣',
+      'Telefon çalıyor, sen kıpırdama; boşalmayı geri itiyorum ahh 📞',
+      'Sarılırken {gogus} göğüslerin gömleğinin altından göğsüme eziliyor, zor tutuyorum… offf 😩',
+      'Kapının önünden biri geçti, sınırdayım ama sessizce tutuyorum ahh 🤫',
+      'Koltukta sana sımsıkı sarılıp kasıklarımı kilitliyorum offf 🥵',
+      'Mesai bitene kadar biriktireceğim, hepsi akşam senin… ahh 💼',
+      'Jartiyerine dokundukça patlayacağım ama bırakmıyorum offf 😣',
+      'Sana sarıldıkça zonkluyorum, biriken yük büyüyor… ahh 😮‍💨',
+      'Patron sabırlıdır; ter içinde sarılı tutuyorum offf 👔',
+      'Gözlerine bakıp kasılarak tutuyorum, sen gülümsüyorsun ahh 😈'
+    ]
+  },
+  fxinek: {
+    pos: [
+      'Arkandan sımsıkı sarılıp {gogus} göğüslerini sıkıyorum, sütün parmaklarımdan fışkırıyor… ahhh 🐮🍼',
+      'Sana sarıldıkça çanın şıngırdıyor, {kalcaHis} offf 🔔',
+      'Benekli tenine yapıştım, sütün göğsüme akıyor; bırakmıyorum seni… ahh 🍼😩',
+      'Boynuzlarını tutup sarılıyorum, sütün çarşafı ıslattı offf 🥵',
+      'Seni kucaklayıp ucunu ağzıma alıyorum, emerken derine iniyorum… ahhh 🍼',
+      'Sımsıkı sarılıyım, süt kokun her yerde; {gogusHis} offf 😩',
+      'Göğüslerin aramızda eziliyor, ikimiz de sütüne bulandık… ahh 🐮💦',
+      'Kollarımda möölüyorsun, ben daha sıkı sarılıyorum offf 😆',
+      'Sana sarılıp sağıyorum, bir yandan da {kalca} kalçana vuruyorum… ahhh 🍼🔥',
+      'Yumuşacık, sıcacık, süt kokulu… sana gömülüp eriyorum ahh 💗'
+    ],
+    in: [
+      'Sana sımsıkı sarılıp içine boşalıyorum, göğüslerinden süt fışkırıyor… ahhhh 🐮💦🍼',
+      'Ucunu emerken sarılı kalıp biriken her şeyi içine bırakıyorum offf 🍼',
+      'Çanın şıngırdıyor, ben seni dolduruyorum… ahhh 🔔💦',
+      'Sütün göğsüme akarken sarılı en derine boşaltıyorum ahh 🥵',
+      'İkimizin sütü karıştı, sana sarılı kalıyorum offf 😳💦',
+      'Kollarımda titriyorsun, göğüslerin taşıyor, ben de içine taşıyorum ahhh 🍼',
+      'Boynuzlarına tutunup son damlaya kadar veriyorum… ahh 🐮',
+      'Sen süt verdin, ben içine verdim; sarılı ödeştik offf 😈💦',
+      'Sütüne bulanmış bedenine sarılıyım, boşalmam bitmiyor… ahhh 🥵',
+      'Boşaldıktan sonra göğsüne gömülüp sütünü emerek gevşiyorum… mmm 🍼😌'
+    ],
+    out: [
+      'Arkandan sarılıyken son anda çıktım; benekli kalçana fışkırıyor… ahhhh 🐮💦',
+      'Senin sütün göğsünden, benimki {kalca} kalçana… her yer bembeyaz offf 🍼',
+      'Sımsıkı sarılı halde sırtına boşalıyorum, çanın hâlâ şıngırdıyor ahh 🔔',
+      'Bacaklarına akıyor, sütünle karışıyor… offf 😳💦',
+      'Göğüslerini sıkarken boşalıyorum, ikimiz aynı anda fışkırıyoruz ahhh 🍼',
+      'Benekli tenin beyaz beneklerle doldu… ahh 😆',
+      'Biriken her şey tenine aktı, süt kokusuna karıştı offf 💦',
+      'Sarılmayı bırakmadan son damlayı da kalçana bırakıyorum… ahhh 🐮',
+      'Saman bile ıslandı, çiftlik sahibi görmesin ahh 😆',
+      'Bitirince arkandan sarılıp göğüslerini okşuyorum, sütün hâlâ damlıyor… mmm 🍼😌'
+    ],
+    hold: [
+      'Sana sarılıyım, sütün göğsüme akıyor; ama tutuyorum… offf 😣🍼',
+      'Ucunu emerken boşalmamak işkence, dişlerimi sıkıyorum ahh 🐮',
+      'Sarılırken {gogus} göğüslerin sütle eziliyor, nasıl tutayım? offf 😩',
+      'Çanın her şıngırtısında az kalsın bitiyorum, kasılarak tutuyorum ahh 🔔',
+      'Benekli tenine sımsıkı sarılıp kasıklarımı kilitliyorum offf 🥵',
+      'Sen sağılıyorsun, ben biriktiriyorum… ahh 🍼',
+      'Süt kokusu aklımı alıyor ama bırakmıyorum offf 😣',
+      'Sana sarıldıkça zonkluyorum, biriken yük senin sütün kadar bol… ahh 😮‍💨',
+      'Hepsini sana saklıyorum ineğim, şimdilik tutuyorum offf 🐮',
+      'Ter ve süt içinde sarılı tutuyorum, möö deyip gülüyorsun ahh 😆'
+    ]
+  },
+  fxrplimon: {
+    pos: [
+      'Arkandan sımsıkı sarıldım, jöle bedenin bana kalıp gibi oturdu; ekşi suyun karnıma akıyor… ahhh 🍋😩',
+      'Sana sarıldıkça sıkılıyorsun, limon suyun fışkırıyor; {kalcaHis} offf 💦',
+      'Yarı saydam tenine yapıştım, parmaklarım limon kokuyor… ahh 💛',
+      '{gogus} göğüslerini avuçlayınca ekşi damlalar parmaklarımdan süzülüyor offf 🍋',
+      'Seni kucaklayıp boynunu yalıyorum, dilim karıncalanıyor… ahhh 😆',
+      'Sımsıkı sarılıyım, yumuşacık bedenin her vuruşta dalgalanıyor; {gogusHis} offf 🥵',
+      'Sana gömüldükçe yüzüm buruşuyor ama bırakmıyorum… ahh 😖',
+      'Kollarımda sapsarı parlıyorsun, limon kokun odayı sardı offf 🍋',
+      'Jöle kalçan bana yapıştı, sarıldıkça içine daha çok çekiyorsun… ahhh 🫠',
+      'Serin ve ekşi bedenine sarılıp ısınıyorum, limonata gibi köpürüyoruz ahh 💦'
+    ],
+    in: [
+      'Sana sımsıkı sarılıp içine boşalıyorum; yarı saydam karnında beyaz bir bulut yayılıyor… ahhhh 🍋💦',
+      'Ekşi için beni sağıyor, sarılı kalıp her şeyi bırakıyorum offf 💛',
+      'Limonlu krema oldun, kollarımda titriyorsun… ahhh 😳',
+      'Jöle bedenin beni sarıyor, son damlaya kadar içine akıyor ahh 🫠',
+      'Sıktıkça suyun fışkırıyor, ben de içine fışkırıyorum offf 🍋💦',
+      'Tuzlu ve ekşi karıştı, sana sarılı tekila gibi olduk… ahhh 🧂',
+      'Ensene gömülüp boşalıyorum, limon kokusu başımı döndürüyor ahh 😩',
+      'Biriken her şeyi ekşi içine verdim, sımsıkı sarılıyım offf 💗💦',
+      'İçindeki beyazlık sarı teninden görünüyor, okşuyorum… ahh 👀',
+      'Boşaldıktan sonra serin jöle bedenine sarılı gevşiyorum… mmm 🍋😌'
+    ],
+    out: [
+      'Arkandan sarılıyken son anda çıktım; sarı kalçana fışkırıyor, limonlu krema oldun… ahhhh 🍋💦',
+      'Yarı saydam sırtına boşalıyorum, damlalar teninde inci gibi parlıyor offf 💛',
+      'Sımsıkı sarılı halde jöle bedenine akıyor, yavaşça emiliyor… ahh 🫠',
+      'Ekşi suyunla benimki karıştı, her yer yapış yapış offf 😆',
+      'Bacaklarına süzülüyor, limon kokusuna karışıyor… ahhh 💦',
+      'Limon turtası gibi oldun, üstü kremalı ahh 🥧',
+      'Biriken her şey teninde parlıyor, sarılmayı bırakmıyorum offf 🍋',
+      'Kalçanı sıkınca suyun da fışkırdı, ikimiz aynı anda ahhh 💦',
+      'Tezgâh limonata gölü oldu… ahh 😆',
+      'Bitirince arkandan sarılıp yapış yapış sırtını öpüyorum… mmm ekşi 😌'
+    ],
+    hold: [
+      'Sana sarılıyım, jöle bedenin beni sıkıyor; ama tutuyorum… offf 😣🍋',
+      'Ekşi içinde boşalmamak işkence, dişlerimi sıkıyorum ahh 💛',
+      'Sarılırken {gogus} göğüslerin göğsüme eziliyor, limon suyun akıyor; nasıl tutayım? offf 😩',
+      'Sıktıkça sen fışkırıyorsun, ben biriktiriyorum… ahh 💦',
+      'Yarı saydam tenine yapıştım, kasıklarımı kilitliyorum offf 🥵',
+      'Yüzüm buruşuyor ama ekşiden değil, tutmaktan… ahh 😖',
+      'Limon kokusu aklımı alıyor, bırakmıyorum offf 😣',
+      'Sana sarıldıkça zonkluyorum, biriken yük limonlu kremadan bol olacak… ahh 😮‍💨',
+      'Son damlana kadar sıkacağım dedin, ben de son anıma kadar tutuyorum offf 🍋',
+      'Ter ve limon suyu içinde sarılı tutuyorum ahh 💗'
+    ]
+  },
+  fxrpcilek: {
+    pos: [
+      'Arkandan sımsıkı sarıldım, kıpkırmızı jöle bedenin bana yapıştı; reçel gibi akıyorsun… ahhh 🍓😩',
+      'Sana sarıldıkça daha da kızarıyorsun, {kalcaHis} offf 💗',
+      'Yumuşacık tenine yapıştım, ezmemek için yavaş sarılıyorum… ahh 🥺',
+      '{gogus} göğüslerini avuçladım, tatlı suyun parmaklarımdan süzülüyor offf 🍓',
+      'Minik tohumların göğsümü gıdıklıyor, gülüyorsun ama inliyorsun… ahhh 😆',
+      'Sımsıkı sarılıyım, çilek reçeli kokun başımı döndürüyor; {gogusHis} offf 🥵',
+      'Kollarımda utanıp yüzünü saklıyorsun, ben daha sıkı sarılıyorum… ahh 🙈',
+      'Pembe tenin terle parlıyor, sana gömülüp derine iniyorum offf 💗',
+      'Jöle kalçan bana kalıp gibi oturdu, sarıldıkça eriyorsun… ahhh 🫠',
+      'Tatlı mı tatlı bedenine sarılıp her vuruşta biraz daha eziliyoruz ahh 🍓'
+    ],
+    in: [
+      'Sana sımsıkı sarılıp içine boşalıyorum; çilekli milkshake oldun… ahhhh 🍓💦',
+      'Pembe teninin ardından dölüm görünüyor, sarılı kalıp her şeyi bırakıyorum offf 💗',
+      'Utançtan kızardın ama bırakmıyorsun, içine doluyorum… ahhh 🙈',
+      'Jöle bedenin beni sarıyor, son damlaya kadar içine akıyor ahh 🫠',
+      'Çilekle krema, klasik tatlı… kollarımda titriyorsun offf 🍦',
+      'Tohumlarına kadar titriyorsun, ben hâlâ doluyorum ahhh 🍓',
+      'Ensene gömülüp boşalıyorum, reçel kokusu her yerde ahh 😩',
+      'Biriken her şeyi tatlı içine verdim, sımsıkı sarılıyım offf 💗💦',
+      'Kıpkırmızı karnında beyaz bir parıltı, okşuyorum… ahh 👀',
+      'Boşaldıktan sonra yumuşacık pembe bedenine sarılı gevşiyorum… mmm 🍓😌'
+    ],
+    out: [
+      'Arkandan sarılıyken son anda çıktım; kırmızı kalçana kremalı süsleme yaptım… ahhhh 🍓💦',
+      'Pembe sırtına boşalıyorum, pasta gibi oldun offf 🎂',
+      'Sımsıkı sarılı halde jöle tenine akıyor, sen kızarıyorsun… ahh 🙈',
+      'Çilekli sundae, üstü bol kremalı… offf 🍨',
+      'Bacaklarına süzülüyor, reçel kokusuna karışıyor… ahhh 💦',
+      'Utanıyorsun ama kalçanı geri itiyorsun, son damlayı da bırakıyorum ahh 😳',
+      'Biriken her şey kırmızı teninde bembeyaz parlıyor offf 💗',
+      'Kremayı sen istedin, ben sıktım… ahhh 😏',
+      'Çarşaflar pembe beyaz oldu ahh 😆',
+      'Bitirince arkandan sarılıp tatlı sırtını öpüyorum… mmm 🍓😌'
+    ],
+    hold: [
+      'Sana sarılıyım, tatlı bedenin beni eritiyor; ama tutuyorum… offf 😣🍓',
+      'Bu kadar tatlıyken boşalmamak işkence, dişlerimi sıkıyorum ahh 🥺',
+      'Sarılırken {gogus} göğüslerin göğsüme eziliyor, nasıl tutayım? offf 😩',
+      'Utanarak "daha değil" dedin, kasılarak tutuyorum ahh 🙈',
+      'Pembe tenine sımsıkı sarılıp kasıklarımı kilitliyorum offf 🥵',
+      'Kremayı sonra sıkacağım, şimdilik biriktiriyorum… ahh 🍦',
+      'Reçel kokusu aklımı alıyor ama bırakmıyorum offf 😣',
+      'Sana sarıldıkça zonkluyorum, biriken yük büyüyor… ahh 😮‍💨',
+      'Tatlıya son dokunuşu bekletiyorum, söz hepsi senin offf 🍓',
+      'Ter içinde sarılı tutuyorum, kızaran yanaklarını öpüyorum ahh 💗'
+    ]
+  },
+  fxrpportakal: {
+    pos: [
+      'Arkandan sımsıkı sarıldım, turuncu jöle bedenin güneş gibi sıcak; suyun karnıma akıyor… ahhh 🍊😩',
+      'Sana sarıldıkça sıkılıyorsun, taze suyun fışkırıyor; {kalcaHis} offf 💦',
+      'Portakal çiçeği kokan tenine yapıştım, enerjin bana geçiyor… ahh 🌼',
+      '{gogus} göğüslerini avuçladım, sulu sulu parmaklarımdan taşıyor offf 🍊',
+      'Kıpır kıpırsın, sarılı tutmakta zorlanıyorum… ahhh 😆',
+      'Sımsıkı sarılıyım, güneş gibi ısıtıyorsun; {gogusHis} offf 🥵',
+      'Kabuğunu soyar gibi sırtını öpüyorum, sarıldıkça parlıyorsun… ahh 🧡',
+      'Dilim dilim ayrılıyorsun kollarımda, ben daha sıkı sarılıyorum offf 🍊',
+      'Jöle kalçan bana kalıp gibi oturdu, enerjinle bana çarpıyorsun… ahhh ☀️',
+      'Sulu ve sıcak bedenine sarılıp her vuruşta taze sıkılıyoruz ahh 💦'
+    ],
+    in: [
+      'Sana sımsıkı sarılıp içine boşalıyorum; portakallı milkshake oldun… ahhhh 🍊💦',
+      'Turuncu teninin ardından dölüm görünüyor, sarılı kalıp her şeyi bırakıyorum offf 🧡',
+      'Güneş içinde doğdu sanki, kollarımda titriyorsun… ahhh ☀️',
+      'Jöle bedenin beni sarıyor, son damlaya kadar içine akıyor ahh 🫠',
+      'Sıktıkça suyun fışkırıyor, ben de içine fışkırıyorum offf 🍊💦',
+      'Vitamin takviyesi içten, sana sarılıyım… ahhh 😆',
+      'Ensene gömülüp boşalıyorum, portakal çiçeği kokusu başımı döndürüyor ahh 🌼',
+      'Biriken her şeyi sulu içine verdim, sımsıkı sarılıyım offf 💗💦',
+      'Turuncu karnında beyaz bir güneş, okşuyorum… ahh 👀',
+      'Boşaldıktan sonra sıcacık bedenine sarılı gevşiyorum… mmm 🍊😌'
+    ],
+    out: [
+      'Arkandan sarılıyken son anda çıktım; turuncu kalçana fışkırıyor, glazürlü kek oldun… ahhhh 🍊💦',
+      'Güneş gibi parlayan sırtına boşalıyorum offf ☀️',
+      'Sımsıkı sarılı halde jöle tenine akıyor, portakal suyuna karışıyor… ahh 🫠',
+      'Taze sıkılmış, ikimiz de… offf 😆',
+      'Bacaklarına süzülüyor, portakal kokusuna karışıyor… ahhh 💦',
+      'Enerjinle kalçanı geri itiyorsun, son damlayı da bırakıyorum ahh 🧡',
+      'Biriken her şey turuncu teninde bembeyaz parlıyor offf 🍊',
+      'Kahvaltı masası gibi her yer meyve suyu ve krema… ahhh 🥐',
+      'Hamak sallandı, ikimiz taştık ahh 😆',
+      'Bitirince arkandan sarılıp sıcak sırtını öpüyorum… mmm 🍊😌'
+    ],
+    hold: [
+      'Sana sarılıyım, enerjik bedenin beni zorluyor; ama tutuyorum… offf 😣🍊',
+      'Bu kadar kıpır kıpırken boşalmamak işkence, dişlerimi sıkıyorum ahh ☀️',
+      'Sarılırken {gogus} göğüslerin göğsüme eziliyor, nasıl tutayım? offf 😩',
+      'Kıpırdama dedim ama enerjin durmuyor, kasılarak tutuyorum ahh 😆',
+      'Turuncu tenine sımsıkı sarılıp kasıklarımı kilitliyorum offf 🥵',
+      'Taze sıkılmış finali bekletiyorum, biriktiriyorum… ahh 🍊',
+      'Portakal çiçeği kokusu aklımı alıyor ama bırakmıyorum offf 😣',
+      'Sana sarıldıkça zonkluyorum, biriken yük büyüyor… ahh 😮‍💨',
+      'Güneş batana kadar dayanacağım, söz offf 🌅',
+      'Ter ve meyve suyu içinde sarılı tutuyorum ahh 💗'
+    ]
+  },
+  fxrpsarap: {
+    pos: [
+      'Arkandan sımsıkı sarıldım, bordo jöle bedenin mum ışığında parlıyor; şarap kokuyorsun… ahhh 🍷😩',
+      'Sana sarıldıkça kadehin çalkalanıyor, {kalcaHis} offf 🥂',
+      'Yarı saydam bordo tenine yapıştım, başım dönüyor… ahh 🍇',
+      '{gogus} göğüslerini avuçladım, parmaklarım bordo oldu offf 🍷',
+      'Acele etmeden sarılıyorum, iyi şarap beklemeyi sever… ahhh 😏',
+      'Sımsıkı sarılıyım, sarhoş eden kokun başımı döndürüyor; {gogusHis} offf 🥵',
+      'Boynundan bir yudum alıp sana gömülüyorum… ahh 💋',
+      'Kollarımda ağırbaşlı ama sıcacıksın, daha sıkı sarılıyorum offf 🕯️',
+      'Jöle kalçan bana kalıp gibi oturdu, fıçı gibi çalkalanıyoruz… ahhh 🍷',
+      'Sarhoş edici bedenine sarılıp her vuruşta daha derin bir tat alıyorum ahh 🍇'
+    ],
+    in: [
+      'Sana sımsıkı sarılıp içine boşalıyorum; kırmızıyla beyaz karıştı, rosé olduk… ahhhh 🍷💦',
+      'Bordo teninin ardından dölüm görünüyor, sarılı kalıp her şeyi bırakıyorum offf 🥂',
+      'Kadehini ağzına kadar doldurdum, kollarımda titriyorsun… ahhh 🍷',
+      'Jöle bedenin beni sarıyor, son damlaya kadar içine akıyor ahh 🫠',
+      'İçinde yıllanmaya bırakıyorum, sımsıkı sarılıyım offf 🍇',
+      'Sarhoş oldum, sen de; içine doluyorum… ahhh 🥴',
+      'Ensene gömülüp boşalıyorum, şarap kokusu başımı döndürüyor ahh 😩',
+      'Biriken her şeyi bordo içine verdim, şerefe… offf 🥂💦',
+      'Bordo karnında beyaz bir dalga, okşuyorum… ahh 👀',
+      'Boşaldıktan sonra mum ışığında sana sarılı gevşiyorum… mmm 🍷😌'
+    ],
+    out: [
+      'Arkandan sarılıyken son anda çıktım; bordo kalçana fışkırıyor, tablo gibi oldun… ahhhh 🍷💦',
+      'Mum ışığında parlayan sırtına boşalıyorum offf 🕯️',
+      'Sımsıkı sarılı halde jöle tenine akıyor, şaraba karışıyor… ahh 🫠',
+      'Rosé lekesi çarşafa da geçti… offf 😆',
+      'Bacaklarına süzülüyor, üzüm kokusuna karışıyor… ahhh 💦',
+      'Ağır ağır kalçanı geri itiyorsun, son damlayı da bırakıyorum ahh 😏',
+      'Biriken her şey bordo teninde bembeyaz parlıyor offf 🍷',
+      'Fıçıdan taşan bu sefer bendim… ahhh 🍇',
+      'Şerefe, tenine… ahh 🥂',
+      'Bitirince arkandan sarılıp şarap kokulu sırtını öpüyorum… mmm 😌'
+    ],
+    hold: [
+      'Sana sarılıyım, sarhoş edici bedenin beni zorluyor; ama tutuyorum… offf 😣🍷',
+      'Acele etme dedin, iyi şarap gibi bekletiyorum ahh 🍇',
+      'Sarılırken {gogus} göğüslerin göğsüme eziliyor, nasıl tutayım? offf 😩',
+      'Başım dönüyor, sınırdayım ama kasılarak tutuyorum ahh 🥴',
+      'Bordo tenine sımsıkı sarılıp kasıklarımı kilitliyorum offf 🥵',
+      'Yıllanmış bir final için biriktiriyorum… ahh 🍷',
+      'Mum ışığında ter içindeyim, bırakmıyorum offf 🕯️',
+      'Sana sarıldıkça zonkluyorum, kadeh doluyor ama taşmıyor… ahh 😮‍💨',
+      'Tıpayı açmadan önce biraz daha bekleyelim offf 🍾',
+      'Kadehimi kaldırıp tutuyorum, gülümsüyorsun ahh 😏'
+    ]
+  },
+  fxrpvodka: {
+    pos: [
+      'Arkandan sımsıkı sarıldım, buz gibi şeffaf bedenin göğsüme yapıştı; ürperdim… ahhh 🍸😩',
+      'Sana sarıldıkça eriyorsun, {kalcaHis} offf ❄️',
+      'Şeffaf tenine yapıştım, nefesimle ısıtıyorum… ahh 🔥',
+      '{gogus} göğüslerini avuçladım, buz gibi uçları parmaklarımda sertleşti offf 🧊',
+      'Davay diye fısıldıyorsun, ben daha sıkı sarılıyorum… ahhh 🇷🇺',
+      'Sımsıkı sarılıyım, soğuk tenin benim sıcaklığımla eriyor; {gogusHis} offf 🥵',
+      'Kürk battaniyenin altında sana gömülüyorum… ahh 🧸',
+      'Kollarımda Rusça inliyorsun, anlamıyorum ama durmuyorum offf 😆',
+      'Jöle kalçan bana kalıp gibi oturdu, buz gibi çarpıyor… ahhh 🍸',
+      'Soğuk ve yakıcı bedenine sarılıp her vuruşta biraz daha ısınıyoruz ahh 🔥'
+    ],
+    in: [
+      'Sana sımsıkı sarılıp içine boşalıyorum; şeffaf içinde kar fırtınası gibi yayılıyor… ahhhh 🍸💦',
+      'Buz gibi içine sıcacık akıyor, sarılı kalıp her şeyi bırakıyorum offf 🔥',
+      'Beyaz Rus oldun, kollarımda titriyorsun… ahhh 🥛',
+      'Jöle bedenin beni sarıyor, son damlaya kadar içine akıyor ahh 🫠',
+      'Da, da diye inliyorsun, ben içine doluyorum offf 🇷🇺',
+      'Buzun eridi, için de benimle ısındı… ahhh ❄️',
+      'Ensene gömülüp boşalıyorum, vodka kokusu başımı yakıyor ahh 😩',
+      'Biriken her şeyi şeffaf içine verdim, na zdorovye… offf 🥃💦',
+      'Şeffaf karnında beyaz bir bulut, okşuyorum… ahh 👀',
+      'Boşaldıktan sonra kürk battaniyenin altında sana sarılı gevşiyorum… mmm 🍸😌'
+    ],
+    out: [
+      'Arkandan sarılıyken son anda çıktım; buz gibi kalçana sıcacık fışkırıyor… ahhhh 🍸💦',
+      'Şeffaf sırtına boşalıyorum, buhar yükseliyor offf ❄️',
+      'Sımsıkı sarılı halde jöle tenine akıyor, kristal gibi parlıyor… ahh 🧊',
+      'Beyaz Rus kokteyli teninde… offf 🥛',
+      'Bacaklarına süzülüyor, soğukla sıcak karışıyor… ahhh 💦',
+      'Davay deyip kalçanı geri itiyorsun, son damlayı da bırakıyorum ahh 🇷🇺',
+      'Biriken her şey şeffaf teninde bembeyaz parlıyor offf 🍸',
+      'Kar gibi beyaz oldun… ahhh 😆',
+      'Na zdorovye, tenine… ahh 🥃',
+      'Bitirince arkandan sarılıp buz gibi sırtını öpüyorum… mmm 😌'
+    ],
+    hold: [
+      'Sana sarılıyım, buz gibi bedenin beni zorluyor; ama tutuyorum… offf 😣🍸',
+      'Rus kızları sabırlı adam sever dedin, dişlerimi sıkıyorum ahh 🇷🇺',
+      'Sarılırken {gogus} göğüslerin göğsüme buz gibi eziliyor, nasıl tutayım? offf 😩',
+      'Soğuk tenin beni ürpertiyor, ürperti tutmama yardım ediyor ahh ❄️',
+      'Şeffaf tenine sımsıkı sarılıp kasıklarımı kilitliyorum offf 🥵',
+      'Bir shot daha içmeden bitirmeyeceğim, biriktiriyorum… ahh 🥃',
+      'Davay diye zorluyorsun ama bırakmıyorum offf 😣',
+      'Sana sarıldıkça zonkluyorum, biriken yük büyüyor… ahh 😮‍💨',
+      'Sibirya kadar dayanıklıyım, şimdilik tutuyorum offf 🧊',
+      'Ter içinde sarılı tutuyorum, horosho dediğini duymak istiyorum ahh 😏'
     ]
   }
 };
@@ -4340,3 +5059,507 @@ Object.entries({
     ]
   }
 }).forEach(([k, v]) => { const h = Stories.ME_HUG_LINES[k]; if (h) Object.keys(v).forEach(f => { h[f] = (h[f] || []).concat(v[f]); }); });
+
+/* ➕ Eksik olaylar: onun orgazmı, Halloween boşalması / kıvamı ve içkisi */
+(EXTRA => Object.keys(EXTRA).forEach(k => { Stories.ME_EV_LINES[k] = (Stories.ME_EV_LINES[k] || []).concat(EXTRA[k]); }))({
+  'Orgazm': [
+    'Titremeni hissediyorum… durma, gel benim için {o} 😩',
+    'Bacakların omuzlarımı sıkıyor, geliyorsun değil mi? Bırak kendini 💗',
+    'İçin beni sımsıkı kavradı offf… hissediyorum, geliyorsun 🥵',
+    'Yüzüne bakıyorum, gözlerini kapattın… işte bu, gel 😈',
+    'Sesin titriyor {o}, durmuyorum, sonuna kadar götürüyorum seni 🔥',
+    'Kalçan kendiliğinden kalkıyor… tut beni, gel aşkım 💞',
+    'Nefesin kesildi, sırtın kavislendi… ne güzel geliyorsun 😮‍💨',
+    'İnlemen odayı doldurdu, seni böyle görmeye bayılıyorum 😏',
+    'Tırnakların sırtımda… bırak, ben buradayım, gel 🤍',
+    'Bütün bedenin dalga dalga sarsılıyor, sarılıyorum sana, geç bırakmıyorum 💗',
+    'Islaklığın her yere yayıldı… sen gelirken ben de deliriyorum ahhh 💦',
+    'Adımı söyledin geldiğin an… bir daha söyle {o} 😩'
+  ],
+  "Siren's Swallow": [
+    'Dudakların sımsıkı, hepsini ağzına bırakıyorum… ahhh {o} 😩💦',
+    'Yutuşunu izliyorum, sonra o şarkıyı mırıldanmaya başladın 🧜‍♀️',
+    'Sesin bile tuzlu deniz gibi… her damlayı yuttun offf 🌊',
+    'Gözlerin dalga gibi parlıyor, bir yudum daha alıyorsun 😈',
+    'Şarkın kulaklarımda, bacaklarım titriyor… ahhh 💦',
+    'Denizci olsam gemiyi kayalara sürerdim senin için 😮‍💨',
+    'Son damlayı da dilinle aldın, sonra gülümsedin 🧜‍♀️',
+    'Boğazından inen her yudumu hissediyorum… offf {o} 🥵',
+    'Mırıltın tenimde titreşiyor, hâlâ zonkluyorum 😩',
+    'Sirenler böyle mi yutar? Bir daha olsa bir daha veririm 🌊💦'
+  ],
+  "Witch's Brew": [
+    'Koyu ve yoğun geldi… iksirin için tam kıvam {o} 🧪',
+    'Bak ne kadar ağır akıyor, kazan bunu sever 🧙‍♀️',
+    'Bu kıvamda biriktirmek uzun sürdü, hepsi senin 😈',
+    'Yoğun bir damla bile yerinden kıpırdamıyor offf 🥵',
+    'Büyü tutacak bu sefer, malzeme fazlasıyla güçlü 🔮',
+    'Koyu koyu tenine yapıştı… ahhh 😩',
+    'İksire bir kaşık yeter, gerisi sana kalsın 😏',
+    'Bu kadar yoğun olmamıştı hiç, sen ne büyü yaptın bana? 🧪',
+    'Kazanın kenarından ağır ağır süzülüyor 🫕',
+    'Çırağın görevini yaptı hocam… tam istediğin kıvamda 🧙‍♀️💦'
+  ],
+  "Witch's Punch": [
+    'Kazandan dumanı tüten mor ponç… şerefe {o} 🧪',
+    'Mor bir yudum, sonra seninle bir öpücük 😏🟣',
+    'Tadı böğürtlen ve büyü gibi, başım hafifçe dönüyor 😵‍💫',
+    'Bir bardak daha doldur, bu gece kimse uyumuyor 🎃',
+    'Dudağında mor iz kaldı, yalayıp alıyorum 💋',
+    'Bu ponçun içinde ne var? Sana daha çok yakınlaşmak istiyorum 😈',
+    'Duman yüzüne vuruyor, gözlerin mor parlıyor 🔮',
+    'Kadehleri tokuşturalım, sonra kazanın başına dönelim 🧙‍♀️',
+    'Sıcacık indi boğazımdan, şimdi sıra sende 🥂',
+    'İkinci bardaktan sonra cadı sen misin ben mi, karıştı 😆'
+  ]
+});
+
+/* 🎭 Rol katmanı: süren rol (🦄 Fantesy, fantKey) bu listedeyse pozisyon / boşalma mesajın o rolün ağzından gelir
+ * (🎭 Role-play açıkken %70, değilse %45; sarılma mesajı seçildiyse yok). pos: pozisyonlar · cum: 💦 Cumming */
+Stories.ME_RP_LINES = {
+  fxrpklinik: {
+    pos: [
+      'Doktor hanım… bu da tedavinin parçası mı? 😳',
+      'Muayene masası soğuk ama siz çok sıcaksınız… ahh 😩',
+      'Nabzım yükseldi galiba, ölçmek ister misiniz? 🩺',
+      'Bunu dosyama yazmayacaksınız değil mi? 🙈',
+      'Kapı kilitli mi? Hemşire girerse… offf, durmayın ama 😳',
+      'Şikayetim geçiyor sanki… bir doz daha lütfen 😮‍💨',
+      'Önlüğünüz açıldı doktor hanım, gözümü alamıyorum 🥼',
+      'Böyle tedavi görsem her gün hasta olurum 😏',
+      'Utanıyorum ama… çok iyi geliyor, ahhh 💗',
+      'Reçeteye ne yazacaksınız? "Her akşam tekrar" mı? 😆',
+      'Stetoskopu bırakın, kalbimi zaten duyuyorsunuzdur 🩺💓',
+      'Gözlerimi kapattım, sadece söylediklerinizi yapıyorum… 😌'
+    ],
+    cum: [
+      'Doktor hanım… sanırım tedavi tamamlandı, ahhhh 😩💦',
+      'Özür dilerim, tutamadım… numune gibi oldu 😳',
+      'Bütün gerginliğim aktı gitti, siz harikasınız 🩺',
+      'Bunu kontrole yazın: hasta tamamen rahatladı 😮‍💨',
+      'Nefesim düzene girsin, sonra kontrol randevusu alalım mı? 😏',
+      'Ahh… hiçbir ilaç bu kadar iyi gelmemişti 💗',
+      'Önlüğünüze bulaştı galiba… özür dilerim 🙈',
+      'Utancımdan yüzüm kızardı ama pişman değilim 😳💦',
+      'Muayene masası titriyor mu yoksa ben mi? 😵‍💫',
+      'Doktor hanım, iyileştim sanırım… ama yarın yine gelirim 😈'
+    ]
+  },
+  fxrpvampir: {
+    pos: [
+      'Boynum sende, ama önce ben seni alıyorum 🩸',
+      'Şatonun duvarları bile inlemeni duyuyor kontesim 🏰',
+      'Dişlerini hissetmeden önce beni hisset… offf 😈',
+      'Ölümsüz olabilirsin ama bu gece benimsin 🧛‍♀️',
+      'Soğuk tenin altımda ısınıyor, hissediyorum 🥵',
+      'Mum ışığında gözlerin kıpkırmızı, durmuyorum 🕯️',
+      'Bir yudum al istersen, ben de seni sonuna kadar alacağım 🩸',
+      'Misafirliğim uzun sürecek kontes, şafağa kadar 🌙',
+      'Kalbim deli gibi atıyor, kanımı tatlandırıyor mu? 😏',
+      'Pelerinini sırtımda hissediyorum, sarılıyorsun bana… ahhh 🖤'
+    ],
+    cum: [
+      'Kanımı alamadın ama başka bir şeyimi aldın kontesim… ahhh 🩸💦',
+      'Şafak sökmeden doldurdum seni 🌙',
+      'Ölümlü misafirin her şeyini sana verdi 🧛‍♀️',
+      'Dişlerin boynumda, ben içinde… patlıyorum offf 😩',
+      'Bu gece ölümsüzlüğe en çok yaklaştığım an buydu 🖤',
+      'Sıcağım soğuk tenine yayılıyor, hissediyor musun? 🥵',
+      'Kırmızı dudaklarına bak… hepsini aldın 💋',
+      'Mumlar söndü, ben de söndüm… ahhh 🕯️',
+      'Şatonda kalmak istiyorum, her gece böyle 🏰',
+      'Kanım değil, sütüm sana kaldı kontes 😈💦'
+    ]
+  },
+  fxrpcadi: {
+    pos: [
+      'Hocam, büyü böyle mi yapılıyordu? 🧙‍♀️',
+      'Kazan kaynıyor, ben de kaynıyorum offf 🫕',
+      'Bu iksirin tarifi sende mi bende mi? 😏',
+      'Süpürgen köşede kaldı, bu gece başka şeye biniyorsun 😈',
+      'Bir büyü daha söyle kulağıma… ahhh 🔮',
+      'Çırağın çok hızlı öğreniyor, değil mi? 🧪',
+      'Mum ışığında şapkan düştü, umurumda değil 🕯️',
+      'Lanetlendim galiba, senden kopamıyorum 😩',
+      'Kristal küre bunu gördü mü? Göstermeyelim kimseye 🙈',
+      'Ders bitmedi hocam, devam ediyorum 🥵'
+    ],
+    cum: [
+      'İksirin son malzemesi bu muydu hocam? Ahhh 🧪💦',
+      'Kazan taştı, ben de taştım 🫕',
+      'Büyü tamam… ben bittim 😩',
+      'Çırağın görevini yaptı, hepsi senin 🧙‍♀️',
+      'Ay ışığında patladım, büyü tuttu mu? 🌙',
+      'Şimdi beni kurbağaya çevirme lütfen 😆',
+      'Bir damlası bile israf olmadı, iksire ya da sana 😈',
+      'Kazanın dumanı gibi uçuyorum… ahhh 😮‍💨',
+      'Lanetin bu muydu? Her gece olsun 🔮',
+      'Sihirli değneğin ben miyim artık? 😏💦'
+    ]
+  },
+  fxrpofis: {
+    pos: [
+      'Toplantı bekleyebilir, sen buraya gel 💼',
+      'Etek kalemin kırışacak, umurumda değil 😈',
+      'Kapıyı kilitledin mi? Telefon çalarsa açma… offf 😩',
+      'Masadaki dosyaları yere itiyorum, yer aç bana 📂',
+      'Bunu performans değerlendirmene yazıyorum, çok iyisin 😏',
+      'Jartiyerin göründü, mesai bitti sayılır 🥵',
+      'Asansörde gördüğümden beri bunu bekliyordum 💗',
+      'Sessiz ol, yan odada muhasebe var 🤫',
+      'Saten gömleğin açıldı, toparlarız sonra 👔',
+      'Terfi istiyorsan devam et… şaka şaka, sadece devam et 😆'
+    ],
+    cum: [
+      'Mesai bitti… ben de bittim, ahhh 💼💦',
+      'Masanın üstünde dağıttım her şeyi, seni de 😩',
+      'Bunu kimse öğrenmeyecek, değil mi? 🤫',
+      'Rapor yarına kalsın, bugün yeterince çalıştık 😮‍💨',
+      'Eteğine bak… kuru temizleme bizden 😏',
+      'Bir dahaki toplantıya da geç kal 😈',
+      'Patronun sana bayılıyor, bilmiş ol 💗',
+      'Kravatım nerede? Neyse, sende kalsın 👔',
+      'Ahhh… bu ofis bir daha aynı olmayacak 🥵',
+      'Fazla mesai ücreti ödüyorum, söz 😆💦'
+    ]
+  }
+};
+
+/* 🎚️ Mode katmanı: sohbetteki son Mode (Gentle, Rough, ağlatmalı…) pozisyon mesajlarına karışır (boşalmada yok) */
+Stories.ME_MODE_LINES = {
+  gentle: [
+    'Yavaş yavaş, her santimini hissederek… acele yok 🤍',
+    'Alnını öpüyorum, ritmi hiç bozmadan 💗',
+    'Nefesini dinleyip ona göre hareket ediyorum 😌',
+    'Sanki ilk kezmiş gibi, nazikçe… 🌸',
+    'Saçlarını okşuyorum, yavaşça devam ediyorum 🤍',
+    'Seni incitmeden, en tatlı haliyle {o} 💞',
+    'Usul usul, sadece ikimiz ve nefesimiz 😮‍💨',
+    'Yumuşacık, dalga gibi geliyorum sana 🌊'
+  ],
+  passionate: [
+    'Dudaklarımı bırakmadan sana daha sıkı sarılıyorum 🔥',
+    'Her hareketle biraz daha tutkuyla {o} 💋',
+    'Kalbim göğsünde atıyor, sen de hissediyor musun? 💓',
+    'Gözlerimi senden ayıramıyorum, deli gibi istiyorum seni 😩',
+    'Öpüşerek, inleyerek, birbirimize gömülerek 🥵',
+    'Adını fısıldıyorum, sonra bir daha, bir daha 💗',
+    'Ellerimiz kenetli, tutkuyla hızlanıyorum 🔥',
+    'Bu gece bitmesin istiyorum {o} 💞'
+  ],
+  assertive: [
+    'Bileklerini tutuyorum, ritmi ben belirliyorum 😈',
+    'Bana bak {o}, söylediğimi yap 😏',
+    'Kalçanı kavrayıp kendime çekiyorum 🔥',
+    'Kontrol bende, sen sadece hisset 🥵',
+    'Kararlı ve derin, hiç tereddüt etmeden 😤',
+    'Çeneni tutup gözlerime bakmanı istiyorum 😈',
+    'Nerede duracağını ben söyleyeceğim 😏',
+    'Ritmimi bozma, böyle kal 💪'
+  ],
+  rough: [
+    'Saçlarını kavrayıp sertçe çekiyorum 😤',
+    'Yatak duvara vuruyor, durmuyorum 🔥',
+    'Sert ve hızlı, nefes almana fırsat vermeden 🥵',
+    'Kalçana bir şaplak, sonra daha da sert 👋',
+    'Bastırıyorum, kaçamazsın {o} 😈',
+    'Her vuruşta biraz daha derine, biraz daha sert 💥',
+    'Tırnaklarım teninde iz bırakıyor 😩',
+    'İnlemen çığlığa dönüyor, hızlanıyorum 🔥'
+  ],
+  brutal: [
+    'Hiç acımadan, bütün gücümle 💥',
+    'Seni yatağa çiviliyorum, kıpırdayamıyorsun 😤',
+    'Vahşi gibiyim, kendimi tutamıyorum {o} 🔥',
+    'Bütün ağırlığımla bastırıp durmadan vuruyorum 😈',
+    'Nefesin kesiliyor, ben daha da hızlanıyorum 🥵',
+    'Odada sadece ten sesi ve çığlıkların var 💥',
+    'Sınırını zorluyorum, dayan biraz daha 😩',
+    'Bu gece seni dağıtacağım 😤'
+  ],
+  inletmeli: [
+    'Her vuruşta inlemeni dinliyorum, bir daha 😩',
+    'O sesi tekrar duymak için yavaşlayıp derine iniyorum 😮‍💨',
+    'İnle {o}, kimse duymuyor 😈',
+    'Sesin kulaklarımda müzik gibi, durmuyorum 🎶',
+    'Bir inleme daha… işte böyle 💗',
+    'Dudağını ısırma, bırak sesin çıksın 😏',
+    'İnledikçe ben de daha çok istiyorum 🥵',
+    'Kulağına eğilip inlememi duyuruyorum… ahhh 😩'
+  ],
+  'bağırtmalı': [
+    'Bağır {o}, bütün bina duysun 😈',
+    'Çığlığın duvarlarda yankılanıyor, durmuyorum 🔥',
+    'Sesin kısılana kadar devam 😤',
+    'Komşular ne düşünürse düşünsün, bağır 😏',
+    'Her vuruşta çığlığın daha yüksek 💥',
+    'Yastığa gömme yüzünü, bağır bana 🥵',
+    'Adımı bağır, bir daha 😩',
+    'Bu sesi bir ay unutmayacağım 🔥'
+  ],
+  'ağlatmalı': [
+    'Gözlerin yaşardı… durayım mı? Hayır mı? Devam 😈',
+    'Gözyaşını öpüyorum, sonra daha derine 💧',
+    'Ağlarken bile bana daha sıkı sarılıyorsun 😩',
+    'Yanağından süzülen yaşı başparmağımla siliyorum 🤍',
+    'Hıçkırıkla inlemen karışıyor, deliriyorum 🥵',
+    'Ağla {o}, ama bırakma beni 💧',
+    'Islak kirpiklerinle bana bakışın… offf 😮‍💨',
+    'Bu kadar hissettiğin için ağlıyorsun, biliyorum 💗'
+  ]
+};
+
+/* 📊 Değer katmanı: pozisyondayken (boşalmada değil) değere göre %40 bu mesajlardan biri gelir
+ * zevk: senin 🥴 Zevk'in 60+ · aci: onun 😣 Acı'sı 30+ · uyarilma: onun 💗 Uyarılma'sı 60+ (birden çoğu tutarsa karışır) */
+Stories.ME_STATE_LINES = {
+  zevk: [
+    'Yaklaşıyorum… tutamayacağım 😩',
+    'Az kaldı {o}, çok az… offf 🥵',
+    'Böyle devam edersen gelirim, haberin olsun 😮‍💨',
+    'Kasıklarım geriliyor, sınırdayım 😩',
+    'Bir dakika… yoksa şimdi bitiririm 🔥',
+    'Dayanamıyorum, sen çok iyisin ahhh 💦',
+    'Gözlerim kararıyor, geliyor… 😵‍💫',
+    'Nereye istiyorsun? Çabuk söyle 😈'
+  ],
+  aci: [
+    'Acıttım mı? Yavaşlıyorum 🤍',
+    'Yüzünü buruşturdun, biraz duralım mı? 🥺',
+    'Söyle bana, fazla mı geldi? 💗',
+    'Nefes al {o}, ben bekliyorum 😌',
+    'Daha nazik olacağım, söz 🤍',
+    'Acırsa elimi sık, hemen dururum 🫂',
+    'Yavaşça, alışana kadar böyle kalıyorum 🌸',
+    'Alnını öpüp ritmi düşürüyorum, rahatla 💞'
+  ],
+  uyarilma: [
+    'Gelmek üzeresin, hissediyorum 😈',
+    'Titremeye başladın {o}… biraz daha 🥵',
+    'İçin beni sıkıştırıyor, az kaldı değil mi? 😩',
+    'Durmayacağım, seni oraya götürüyorum 🔥',
+    'Nefesin hızlandı, yüzün kızardı… gel bana 💗',
+    'Bacakların titriyor, hissediyorum seni 😏',
+    'Bırak kendini, ben tutuyorum seni 🤍',
+    'Sesin değişti… geliyorsun, biliyorum 😮‍💨'
+  ]
+};
+
+/* 🐮 Cow Girl: fantezi olayının kendisi ve süren fantezide pozisyon / boşalma mesajların (rol katmanı, fantKey 'fxinek') */
+Stories.ME_EV_LINES['Cow Girl'] = [
+  'Boynuzlu bandını taktın, çanın şıngırdıyor… benim ineğim geldi {o} 🐮🔔',
+  'Benekli üstün göğüslerini zor tutuyor, uçlarından süt damlıyor bile 🍼😳',
+  'Göğüslerin sütten şişmiş… sağmamı mı bekliyorsun? 😏🍼',
+  'Çanının sesini duyunca deliriyorum, gel buraya 🔔',
+  'Bir damla süt göbeğine süzüldü, dilimle yakalıyorum 👅🍼',
+  'Bu gece seni sağacağım, sen de beni emzireceksin 😈',
+  'Benekli kostüm sana çok yakışmış, göğüslerin taşıyor 🐮',
+  'Avuçlarıma alıyorum, ağırlar… dolu dolu 🍼🥵',
+  'Möö mü dedin? Bir daha de {o} 😆🐮',
+  'Göğüslerine dokunur dokunmaz süt fışkırdı, ellerim ıslandı 😳🍼',
+  'Çiftliğin en güzel ineği benim kucağımda 🐮💗',
+  'Süt kokuyorsun… bütün gece bırakmam seni 😈'
+];
+Stories.ME_RP_LINES.fxinek = {
+  pos: [
+    'Her vuruşta göğüslerin sallanıyor, sütün göğsüme sıçrıyor… ahhh {o} 🍼😩',
+    'Sütün karnına akıyor, ben içindeyim… offf 🥵',
+    'Göğüslerini sıkıyorum, süt fışkırıyor, durmuyorum 🍼🔥',
+    'Çanın her itişte şıngırdıyor, sütün çarşafa damlıyor 🔔💦',
+    'Eğilip ucunu ağzıma alıyorum, emerken hızlanıyorum 😩🍼',
+    'Sütün sıcacık tenime akıyor, seni böyle görmeye bayılıyorum 🥵',
+    'Emzir beni {o}… içindeyken emzir 🍼😈',
+    'Göğüslerin dudaklarımda, sütün boğazımdan iniyor, kalçan bana çarpıyor 😮‍💨',
+    'Uçlarından süt damlıyor, her damla bir inleme gibi 🍼',
+    'Sağıyorum seni, bir yandan da derine iniyorum… ahhh 🐮🔥',
+    'Yatak süt kokuyor, sen sırılsıklamsın, ben deliriyorum 🥵',
+    'Sütünle ıslanmış göğsüne yüzümü gömüyorum 😩🍼'
+  ],
+  cum: [
+    'Sen beni emzirirken içine boşalıyorum… ahhhh {o} 😩💦🍼',
+    'Sütün dudaklarımda, benimki içinde… ikimiz de taştık 🥵',
+    'Göğsünü emerken patladım, durmuyor offf 🍼💦',
+    'Sen süt verdin, ben de sana verdim 😈💦',
+    'Göğüslerinden süt fışkırırken doldurdum seni ahhh 🐮',
+    'Boşalırken ucunu bırakmadım, sütün ağzımı doldurdu 😮‍💨🍼',
+    'Çanın şıngırdadı, ben bittim… ahhh 🔔💦',
+    'Sütüne bulanmış bedenine sarılıp bitiriyorum 🥵',
+    'İkimizin sütü karıştı, her yer bembeyaz 😳💦',
+    'Bir damla bile bırakmadım: ne seninkini ne benimkini 😏🍼'
+  ]
+};
+
+/* 🍓 Meisove kızları: rol olayının kendisi ve süren rolde pozisyon / boşalma mesajların (rol katmanı, fantKey 'fxrp…') */
+Object.assign(Stories.ME_EV_LINES, {
+  'Limon Kız': [
+    'Sapsarı, yarı saydam tenin parlıyor… dokunuyorum, parmaklarım limon kokuyor 🍋',
+    'Bastırınca jöle gibi geri geliyorsun {o}, çok yumuşaksın 💛',
+    'Dudaklarını öptüm, dilim karıncalandı… ekşisin 😆🍋',
+    'Seni hafifçe sıkıyorum, ekşi suyun bileğime akıyor 💦',
+    'Boynuna biraz tuz serpip yalıyorum 🧂😈',
+    'Yüzümü buruşturdum ama bırakmıyorum seni 😏',
+    'Limon kokun bütün odayı sardı {o} 🍋',
+    'Bu gece seni son damlana kadar sıkacağım 😈'
+  ],
+  'Çilek Kız': [
+    'Kıpkırmızı tenin parlıyor {o}, yanakların daha da kızardı 🍓😳',
+    'Seni avuçluyorum, jöle gibi yumuşacıksın, ezmekten korkuyorum 💗',
+    'Çilek reçeli kokuyorsun, ısırmamak için zor duruyorum 🍓',
+    'Göğüslerine biraz krema sıkıyorum 🍦😈',
+    'Dudaklarını öptüm, tatlı mı tatlı 💋',
+    'Minik tohumların parmaklarımı gıdıklıyor 😆',
+    'Utandın mı {o}? Kırmızılığın her yerine yayıldı 😏',
+    'Tatlım hazır, krema da bende 🍓🍦'
+  ],
+  'Portakal Kız': [
+    'Turuncu tenin güneş gibi parlıyor {o} 🍊☀️',
+    'Kabuğunu yavaşça soyuyorum, içinden portakal çiçeği kokusu yayılıyor 😏',
+    'Seni sıkıyorum, tatlı suyun avucuma doluyor 💦',
+    'Jöle gibi yumuşacık belini kavrıyorum 🧡',
+    'Dudaklarını öptüm, taze sıkılmış gibisin 💋🍊',
+    'Enerjin bana da geçti, deli gibi istiyorum seni 😈',
+    'Bir dilimini ısırdım, sulu sulu {o} 🍊',
+    'Sıcacık tenine yaslanıyorum, güneş gibisin 🧡'
+  ],
+  'Şarap Kız': [
+    'Bordo, yarı saydam tenin mum ışığında parlıyor {o} 🍷',
+    'Seni kadeh gibi çeviriyorum, kokunu içime çekiyorum 😏',
+    'Boynundan bir yudum aldım, başım döndü bile 🥂',
+    'Jöle gibi yumuşacıksın, parmaklarım bordo oldu 🍷',
+    'Dudakların şarap lekesi bıraktı dudaklarımda 💋',
+    'Acele etmiyorum {o}, iyi şarap beklemeyi sever 😈',
+    'Şerefe… sana 🍷',
+    'Bu gece sarhoş olacağım, ama senden 😏'
+  ],
+  'Vodka Kız': [
+    'Privet {o}… buz gibi, şeffaf tenine dokunuyorum, ürperdim ❄️',
+    'Seni bir shot gibi dudaklarıma götürüyorum, boğazım yanıyor 🍸🔥',
+    'Jöle gibi yumuşacıksın ama soğuksun… ısıtacağım seni 😈',
+    'Na zdorovye! Kadehimi tenine tokuşturuyorum 🥃',
+    '"Da, moy dorogoy" deyişine bayılıyorum 🇷🇺',
+    'Buz gibi göğüslerini avuçluyorum, uçları sertleşti 🧊😏',
+    'Rus kızı… bu gece Sibirya\'yı erittim sanırım 🔥',
+    'Bir yudum daha {o}, sonra bir yudum daha 🍸'
+  ]
+});
+Object.assign(Stories.ME_RP_LINES, {
+  fxrplimon: {
+    pos: [
+      'Her vuruşta ekşi suyun fışkırıyor, karnıma akıyor… ahhh {o} 🍋💦',
+      'Jöle gibi titriyorsun, seni daha sıkı kavrıyorum 💛',
+      'İçin serin ve ekşi, ben sıcacığım… offf 🥵',
+      'Kalçanı sıkıyorum, suyun parmaklarımdan süzülüyor 🍋',
+      'Yarı saydam tenin altında kendimi görüyorum 👀',
+      'Limon kokun her nefesimde, deliriyorum 😩',
+      'Boynunu yalıyorum, ekşi tadın dilimde 😈🍋',
+      'Yumuşacık bedenin bana göre şekil alıyor, durmuyorum 💛',
+      'Sıktıkça daha çok akıyorsun {o}, böyle devam 💦',
+      'Yüzümü buruşturdum ama hızlanıyorum 😆🔥'
+    ],
+    cum: [
+      'Limonumu sıkarken içine boşalıyorum… ahhhh {o} 🍋💦',
+      'Ekşi suyunla benimki karıştı, tekila gibi 🧂😈',
+      'Sarı tenin bembeyaz oldu, offf 💛',
+      'Son damlama kadar sıktın beni 😩💦',
+      'Yarı saydam içinde görünüyor, bak 👀🍋',
+      'Limon kokulu bedenine sarılıp bitiriyorum 🥵',
+      'Sen fışkırdın, ben fışkırdım… her yer sırılsıklam 😳',
+      'Dilim karıncalanırken bitirdim seni 🍋'
+    ]
+  },
+  fxrpcilek: {
+    pos: [
+      'Kıpkırmızı oldun, her vuruşta daha da kızarıyorsun… ahhh {o} 🍓',
+      'Yavaşça giriyorum, ezilmeni istemem 💗',
+      'Tatlı suyun çarşafa akıyor, reçel gibi 🍓💦',
+      'Jöle gibi yumuşacık göğüslerine yüzümü gömüyorum 😩',
+      'Çilek kokun her nefesimde 🍓',
+      'Dudaklarını öpüyorum, tatlı tatlı inliyorsun 💋',
+      'Minik tohumların tenimi gıdıklıyor, gülme {o} 😆',
+      'Kremalı göğüslerini yalıyorum, durmuyorum 🍦😈',
+      'Utancından titriyorsun ama bırakmıyorsun beni 😏',
+      'Seni yiyecek gibi öpüyorum, çok tatlısın 🍓🥵'
+    ],
+    cum: [
+      'Kremamı çileğime sıkıyorum… ahhhh {o} 🍓🍦',
+      'İçin çilekli milkshake oldu 😳💦',
+      'Kırmızı tenin bembeyaz damlalarla kaplandı 🍓',
+      'Ezilmeden, tatlı tatlı bitirdim seni 💗',
+      'Pembe tenin ardından görünüyor, bak 👀',
+      'Reçel kokulu bedenine sarılıp boşalıyorum 🥵',
+      'Kıpkırmızı yanaklarını öperken bittim 💋',
+      'Tatlıma son dokunuşu yaptım 😈🍓'
+    ]
+  },
+  fxrpportakal: {
+    pos: [
+      'Her vuruşta tatlı suyun fışkırıyor… ahhh {o} 🍊💦',
+      'Sıcacık, güneş gibi içindeyim 🧡🥵',
+      'Kabuğunu tamamen soydum, şimdi yiyorum seni 😈',
+      'Jöle gibi titriyorsun, kalçan bana çarpıyor 🍊',
+      'Portakal çiçeği kokun başımı döndürüyor 😩',
+      'Enerjin bitmiyor, ben de durmuyorum 🔥',
+      'Sulu tenine dudaklarımı bastırıyorum 💋',
+      'Seni sıktıkça daha çok akıyorsun {o} 💦',
+      'Turuncu tenin ter içinde parlıyor 🧡',
+      'Dilim dilim titriyorsun, offf 🍊'
+    ],
+    cum: [
+      'Taze sıkılmış seni doldururken bitiyorum… ahhhh {o} 🍊💦',
+      'İçin portakallı krema oldu 🍦😳',
+      'Turuncu tenin bembeyaz damlalarla kaplandı 🧡',
+      'Güneşim battı, sıcacık boşaldım 🥵',
+      'Turuncu tenin ardından görünüyor, bak 👀',
+      'Suyun ve benimki karıştı, her yer sırılsıklam 💦',
+      'Sulu bedenine sarılıp bitiriyorum 🍊',
+      'Vitamin depomu boşalttım sana 😆😈'
+    ]
+  },
+  fxrpsarap: {
+    pos: [
+      'Kadeh gibi çalkalanıyorsun, her vuruşta… ahhh {o} 🍷',
+      'Yavaş ve derin, iyi şarap gibi 😏',
+      'Bordo tenin titriyor, başım dönüyor 🥵',
+      'Şarap kokun bütün odayı sardı 🍇',
+      'Dudaklarını öptüm, sarhoş oldum 💋🍷',
+      'Jöle gibi yumuşacık beline sarılıyorum 😩',
+      'Yarı saydam bordo içinde kendimi görüyorum 👀',
+      'Sarhoş gibi sallanıyoruz, durmuyorum 🥂',
+      'Seni yudum yudum içiyorum {o} 🍷😈',
+      'Yıllanmış tadın her nefesimde, offf 🍷'
+    ],
+    cum: [
+      'Kadehini dolduruyorum… ahhhh {o} 🍷💦',
+      'Kırmızın beyazla karıştı, rosé olduk 🥂😈',
+      'Bordo tenin bembeyaz damlalarla kaplandı 🍷',
+      'Başım dönerek içine boşaldım 🥵',
+      'Şerefe… ikimize 🍷',
+      'Şarap kokulu bedenine sarılıp bitiriyorum 😩',
+      'İçinde yıllansın diye bıraktım 😏',
+      'Sarhoş gibi titreyerek bittim 🍷💦'
+    ]
+  },
+  fxrpvodka: {
+    pos: [
+      'Buz gibi içinde yanıyorum… davay, davay {o} 🍸🔥',
+      'Şeffaf tenin titriyor, buzun eriyor 🧊💦',
+      '"Da, da" diye inledikçe hızlanıyorum 🇷🇺😩',
+      'Soğuk göğüslerin sıcak göğsüme yapıştı ❄️',
+      'Boğazım yanıyor gibi, sen beni yakıyorsun 🔥',
+      'Jöle gibi yumuşacık, buz gibi kalçanı sıkıyorum 😈',
+      'Sibirya kadar sert istiyorsun, veriyorum 🍸',
+      'Şeffaf içinde kendimi görüyorum, offf 👀',
+      'Bozhe moy diye bağırdın, durmuyorum {o} 🥵',
+      'Seni shot gibi tek dikişte istiyorum 🥃😈'
+    ],
+    cum: [
+      'Na zdorovye… içine boşalıyorum ahhhh {o} 🍸💦',
+      'Şeffaf içinde bembeyaz, beyaz Rus oldun 🥛🍸',
+      'Buzunu tamamen erittim, sıcacık doldurdum 🔥',
+      '"Horosho" dedin, ben de bittim 🇷🇺😩',
+      'Soğuk tenin bembeyaz damlalarla kaplandı ❄️',
+      'Buz gibi bedenine sarılıp boşalıyorum 🥵',
+      'Boğazım yanıyor gibi, ama bu sefer senden 🔥',
+      'Bir shot daha, moy dorogaya 🥃😈'
+    ]
+  }
+});

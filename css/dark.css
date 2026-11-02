@@ -34,7 +34,7 @@ html[data-theme="dark"] .sy-hero, html[data-theme="dark"] .sy-go { background: #
 .theme-pick button { flex: 1; padding: 10px 8px; border-radius: 12px; background: var(--chip); color: var(--text); font-weight: 700; font-size: 14px; border: 2px solid transparent; }
 .theme-pick button.on { border-color: var(--purple); background: var(--purple-soft); }
 
-/* ---------- üretilen karşılıklar (461 bildirim) ---------- */
+/* ---------- üretilen karşılıklar (483 bildirim) ---------- */
 html[data-theme="dark"] .splash { background: #181c2e; }
 html[data-theme="dark"] .nav { background: rgba(24, 28, 46, 0.96); }
 html[data-theme="dark"] .badge-count { border: 2px solid #2c3150; }
@@ -313,6 +313,9 @@ html[data-theme="dark"] .cs-tools { background: #181c2e; }
 html[data-theme="dark"] .cs-acts button.on { background: linear-gradient(135deg, #433d35, #ffb72b); color: #e9ebf5; }
 html[data-theme="dark"] .cs-grp-tags select { background: #181c2e; }
 html[data-theme="dark"] .hl-go { background: #181c2e; }
+html[data-theme="dark"] .bb-logo i:nth-child(4) { color: #e497b5; }
+html[data-theme="dark"] .hl-cm-vip { color: #e9ebf5; }
+html[data-theme="dark"] .hl-ad-cta { background: #181c2e; color: #e9ebf5; }
 html[data-theme="dark"] .cm-tabs button.on { color: #e9ebf5; }
 html[data-theme="dark"] .cm-badge.vip { color: #e9ebf5; }
 html[data-theme="dark"] .cm-ct b i { color: #e9ebf5; }
@@ -329,6 +332,9 @@ html[data-theme="dark"] .fx-play { background: #181c2e; color: #e9ebf5; }
 html[data-theme="dark"] .fx-top > b { color: #e9ebf5; }
 html[data-theme="dark"] .fx-cast small { color: #a4a9c4; }
 html[data-theme="dark"] .fx-site .cm-foot { color: #a4a9c4; }
+html[data-theme="dark"] .cm-mo.hot { color: #e9ebf5; }
+html[data-theme="dark"] .cm-mo.hot small { color: #e9ebf5; }
+html[data-theme="dark"] .ch-acts .ch-go { color: #e9ebf5; }
 html[data-theme="dark"] .ws-site { background: #20253c; color: #e9ebf5; }
 html[data-theme="dark"] .ws-bar { background: #181c2e; border-bottom: 1px solid #2c3150; }
 html[data-theme="dark"] .ws-bar .cm-back { color: #e9ebf5; background: #20253c; }
@@ -373,6 +379,19 @@ html[data-theme="dark"] .cf-guess > small { color: #a4a9c4; }
 html[data-theme="dark"] .cf-guess button { background: #20253c; border: 1px solid #2c3150; }
 html[data-theme="dark"] .cf-guess .cf-clue { color: #bc98d2; }
 html[data-theme="dark"] .cf-res { background: #20253c; }
+html[data-theme="dark"] .cr-card { background: #181c2e; }
+html[data-theme="dark"] .cr-h small { color: #a4a9c4; }
+html[data-theme="dark"] .cr-dv { background: #20253c; }
+html[data-theme="dark"] .cr-dv small { color: #a4a9c4; }
+html[data-theme="dark"] .cr-ic { background: #282d46; }
+html[data-theme="dark"] .cr-add { border: 1px solid #4d4b62; background: #181c2e; }
+html[data-theme="dark"] .cr-lens span { background: #282d46; color: #bc98d2; }
+html[data-theme="dark"] .cr-pick select { border: 1px solid #2c3150; }
+html[data-theme="dark"] .cr-panels button { background: #181c2e; border: 1px solid #2c3150; color: #e9ebf5; }
+html[data-theme="dark"] .cr-q { border: 1px solid #2c3150; }
+html[data-theme="dark"] .cr-form input:not([type=checkbox]),
+html[data-theme="dark"] .cr-form select,
+html[data-theme="dark"] .cr-form textarea { border: 1px solid #2c3150; }
 html[data-theme="dark"] .ws-live .kl-bar i { background: linear-gradient(90deg, #ff5252, #433d2d); }
 html[data-theme="dark"] .ws-live .cm-foot { color: #a4a9c4; }
 html[data-theme="dark"] .pt-beam.c { background: linear-gradient(#434120, transparent); }

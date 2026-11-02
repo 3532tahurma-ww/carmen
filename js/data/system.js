@@ -2100,6 +2100,26 @@ Stories.SYSTEM = {
    "emojis": "🐱"
   },
   {
+   "id": "mvcowgirl01x",
+   "title": "Cow Girl",
+   "cat": "c:mvgwj75108lqd",
+   "text": "",
+   "steps": [],
+   "opener": "",
+   "starter": "",
+   "tones": [],
+   "note": "",
+   "part": "",
+   "when": "",
+   "place": "",
+   "mix": [],
+   "tags": [],
+   "desc": "Benekli kostüm, boynuzlar ve çan; göğüsleri sütle dolu, pozisyonlarda bile süt akar, emzirmek ister",
+   "color": "#f5f5f5",
+   "emojis": "🐮🍼",
+   "onEffects": [{ "p": "p:umvjzd17h5twc2", "d": 50 }]
+  },
+  {
    "id": "mvgwpw434irlk",
    "title": "Bunny Girl",
    "cat": "c:mvgwj75108lqd",
@@ -3085,6 +3105,11 @@ Stories.SYSTEM = {
   { "id": "mvhwr10peri1", "title": "Peri – Ormandaki Gezgin", "cat": "c:mvgwj75108lqd", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["roleplay", "halloween"], "desc": "Mantar halkasının ortasında: o orman perisi, sen yolunu kaybeden gezgin", "color": "#43a047", "emojis": "🧚‍♀️" },
   { "id": "mvhwr11dnzk1", "title": "Deniz Kızı – Denizci", "cat": "c:mvgwj75108lqd", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["roleplay", "halloween"], "desc": "Ay ışığında kayalıklarda: o deniz kızı, sen ağına onu takan denizci", "color": "#00838f", "emojis": "🧜‍♀️" },
   { "id": "mvhwr12slime1", "title": "Slime Girl – Laborant", "cat": "c:mvgwj75108lqd", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["roleplay", "halloween"], "desc": "Gece yarısı laboratuvarda kavanoz çatladı: o yarı saydam, jöle gibi slime girl; sen onu serbest bırakan laborant", "color": "#43a047", "emojis": "🫠💚" },
+  { "id": "mvmsv1limon1", "title": "Limon Kız", "cat": "c:mvmeisove01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["roleplay", "meisove"], "desc": "Meisove kızı: slime gibi yumuşacık, sapsarı ve yarı saydam; teni ekşi limon kokar, sıkınca suyu fışkırır", "color": "#fbc02d", "emojis": "🍋" },
+  { "id": "mvmsv2cilek1", "title": "Çilek Kız", "cat": "c:mvmeisove01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["roleplay", "meisove"], "desc": "Meisove kızı: kıpkırmızı, utangaç ve jöle gibi yumuşak; çilek reçeli kokar, kremaya bayılır", "color": "#e53935", "emojis": "🍓" },
+  { "id": "mvmsv3prtkl1", "title": "Portakal Kız", "cat": "c:mvmeisove01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["roleplay", "meisove"], "desc": "Meisove kızı: güneş gibi enerjik, turuncu ve sulu sulu; kabuğunu soyunca portakal çiçeği kokar", "color": "#fb8c00", "emojis": "🍊" },
+  { "id": "mvmsv4sarap1", "title": "Şarap Kız", "cat": "c:mvmeisove01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["roleplay", "meisove"], "desc": "Meisove kızı: bordo, yıllanmış ve ağırbaşlı; jöle teni şarap kokar, acele etmez ama başını döndürür", "color": "#880e4f", "emojis": "🍷" },
+  { "id": "mvmsv5vodka1", "title": "Vodka Kız", "cat": "c:mvmeisove01x", "text": "", "steps": [], "opener": "", "starter": "", "tones": [], "note": "", "part": "", "when": "", "place": "", "mix": [], "tags": ["roleplay", "meisove"], "desc": "Meisove kızı: Rusya'dan gelen buz gibi, şeffaf vodka kız; \"Da, moy dorogoy\" der, boğazını yakar, içinde erir", "color": "#90caf9", "emojis": "🍸🇷🇺" },
   {
    "id": "mvs1msbgrb05e",
    "title": "Boob Grab",
@@ -3811,6 +3836,14 @@ Stories.SYSTEM = {
    ]
   },
   {
+   "id": "c:mvmeisove01x",
+   "icon": "🍓",
+   "label": "Meisove",
+   "tags": [
+    "fantesy"
+   ]
+  },
+  {
    "id": "c:mvgwupu3we8yl",
    "icon": "🍒",
    "label": "Lactation",
@@ -4019,6 +4052,7 @@ Stories.SYSTEM = {
   "c:mvguxicvzx0iq",
   "c:mvgvrcewukjlt",
   "c:mvgwj75108lqd",
+  "c:mvmeisove01x",
   "c:mvgwupu3we8yl",
   "c:mvh0zv4nv7f1i",
   "mine"

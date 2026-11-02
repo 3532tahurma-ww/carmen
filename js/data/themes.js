@@ -70,6 +70,8 @@ Stories.Themes = {
   ],
   // Hazır temalar: arka plan + baloncuk birlikte (Amor'daki kalp düzeyi temaları)
   presets: [
+    // 🌗 Otomatik (varsayılan): açık temada Lila pastel + Gül kurusu, koyu temada Amor (app.js themeLive)
+    { id: 'auto', label: 'Otomatik', icon: '🌗', bg: 'auto', bubble: 'auto', css: 'linear-gradient(135deg, #c9b8ff 0%, #c9b8ff 50%, #241444 50%, #241444 100%)', note: 'Açık temada pastel, koyu temada Amor' },
     { id: 'kalp', label: 'Kalp teması', icon: '💖', bg: 'ucan-kalpler', bubble: 'kalp', note: 'Amor Lv.4: uçan kalpler + kalpli baloncuklar' },
     { id: 'mucevher', label: 'Mücevher kalp', icon: '💎', bg: 'kalp-kolye', bubble: 'kalp', note: 'Amor Lv.5: mücevher kalp + kalpli baloncuklar' },
     { id: 'halloween', label: 'Halloween', icon: '🎃', bg: 'halloween', bubble: 'halloween', note: 'Turuncu-mor, mum ışıklı Cadılar Bayramı' }

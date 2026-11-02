@@ -17,6 +17,7 @@
  * reply: seçeneklerden biri rastgele; "||" ayrı baloncuk; {sen} kullanıcının, {ben} karakterin adı.
  * traits: karakterde HEPSİ olmalı; bir öğede "|" ile alternatifler (ör. "Pussy Size: Tight|Pussy Size: Very Tight" = biri yeter).
  *   Yaştan gelen özellik de sayılır: "Yaş: Genç" (18–22), "Yaş: Yirmili", "Yaş: Otuzlu", "Yaş: Olgun" (40+); bkz. ageTrait.
+ *   Şehirden gelen memleket de: "Memleket: Türk", "Memleket: Latin", "Memleket: Akdeniz"… (js/data/world.js); bkz. originTrait.
  * chars: sadece bu adlar (tam ad ya da ilk ad).
  * Eşleşenler arasında en özel kural kazanır: daha çok kelime > kişilik şartı > karakter şartı. Eşitlikte rastgele.
  * best(..., loose) ile sırası farklı ya da (3+ kelimede) bir kelimesi eksik kurallar da düşük puanla yarışır.
@@ -81,9 +82,13 @@ Stories.Bot = (() => {
   // 🎂 Yaş da bir özellik gibi eşleşir (kullanıcı ~20 yaşında varsayılır): "Yaş: Genç" 18–22 (yaşıt), "Yaş: Yirmili" 23–29,
   // "Yaş: Otuzlu" 30–39, "Yaş: Olgun" 40+. Yaşı yoksa ya da 18'den küçükse yaş özelliği yok
   const ageTrait = age => { const a = parseInt(age, 10); return !(a >= 18) ? '' : a <= 22 ? 'Yaş: Genç' : a <= 29 ? 'Yaş: Yirmili' : a <= 39 ? 'Yaş: Otuzlu' : 'Yaş: Olgun'; };
+  // 🌍 Memleket de bir özellik: şehrin ülkesinin kültür bölgesi ("Memleket: Latin", "Memleket: Doğu Asya"…; bkz. js/data/world.js)
+  const originTrait = city => { const r = Stories.World && Stories.World.regionOf(city); return r ? 'Memleket: ' + r : ''; };
   function fits(rule, ch) {
     const traits = (rule.traits || []).filter(Boolean);
-    const have = [...(ch.traits || []), ageTrait(ch.age)].filter(Boolean);
+    // 🛡️ korunma seçiminden gelenler: "Kondom: Var", "İçe: İzin yok", "Hap: Alıyor"… (app.js protTraits)
+    const prot = Stories.protTraits ? Stories.protTraits(ch) : [];
+    const have = [...(ch.traits || []), ageTrait(ch.age), originTrait(ch.city), ...prot].filter(Boolean);
     if (traits.length && !traits.every(t => String(t).split('|').some(a => have.some(x => lower(x) === lower(a))))) return false;
     const names = (rule.chars || []).map(lower).filter(Boolean);
     if (names.length) {
@@ -100,7 +105,7 @@ Stories.Bot = (() => {
 
   // 🔓 Gevşek eşleşme (kullanıcının yazdığı mesajda): kelimeler başka sırada da olabilir (−30 puan), 3+ kelimelik
   // kuralda biri eksik olabilir (eksik kelimenin puanı yok, −60). İç sorgu kuralları (=evt, =durum, =sor, =cevap) hariç
-  const INNER = ['=evt', '=durum', '=sor', '=cevap'];
+  const INNER = ['=evt', '=durum', '=sor', '=cevap', '=memleket'];
   function looseScore(msg, r, data) {
     const w = words(r);
     if (w.some(t => INNER.includes(t))) return -1;
@@ -170,5 +175,5 @@ Stories.Bot = (() => {
     return txt.split('||').map(s => s.trim()).filter(Boolean);
   }
 
-  return { norm, expand, inOrder, fits, ageTrait, best, reply, score, looseScore, catches, addons, addText, ADD_MODES };
+  return { norm, expand, inOrder, fits, ageTrait, originTrait, best, reply, score, looseScore, catches, addons, addText, ADD_MODES };
 })();
